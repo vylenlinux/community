@@ -1,0 +1,15 @@
+description="Password generator for creating easily memorable passwords"
+homepage="https://sourceforge.net/projects/pwgen/"
+maintainer="Vylen Linux Team"
+
+name=pwgen
+version=2.08
+release=1
+source="http://download.sourceforge.net/$name/$name-$version.tar.gz"
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
