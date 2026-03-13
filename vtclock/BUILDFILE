@@ -1,0 +1,17 @@
+description="Text-mode full-screen digital clock"
+homepage="http://github.com/dse/vtclock"
+maintainer="Vylen Linux Team"
+
+name=vtclock
+version=0.99.1
+release=1
+source="$name-$version.tar.gz::https://github.com/dse/$name/archive/refs/tags/v$version.tar.gz"
+
+build() {
+	cd $name-$version
+
+	make
+  	install -d $PKG/usr/bin
+	make prefix=$PKG/usr/ install
+}
+
