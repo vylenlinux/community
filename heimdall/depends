@@ -1,0 +1,4 @@
+cmake
+ninja
+qt5
+android-udev
