@@ -1,0 +1,15 @@
+description="All your games in one place Steam, GoG, Humble, etc"
+homepage="https://tkashkin.tk/projects/gamehub/"
+maintainer="Vylen Linux Team"
+
+name=gamehub
+vrsn=0.16.3-2
+version=$(printf '%s' "$vrsn" | sed 's/-/\./g')
+release=1
+source="https://github.com/tkashkin/GameHub/archive/${vrsn}-master/$name-${vrsn}-master.tar.gz"
+
+build() {
+	vylen-meson GameHub-${vrsn}-master build
+	meson compile -C build
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
