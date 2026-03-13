@@ -1,0 +1,4 @@
+dconf
+gsettings-desktop-schemas
+gtksourceview4
+python3-gobject3
