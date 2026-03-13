@@ -1,0 +1,17 @@
+description="An office suite that combines text, spreadsheet and presentation editors"
+homepage="https://www.onlyoffice.com/"
+maintainer="Vylen Linux Team"
+
+name=onlyoffice-bin
+version=9.3.1
+release=1
+source="onlyoffice-bin-${version}.deb::https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v${version}/onlyoffice-desktopeditors_amd64.deb
+        010-onlyoffice-bin-fix-document-opening.patch"
+
+build() {
+	mkdir -p "onlyoffice-${version}/pkg"
+	bsdtar -xf "${SRC}/onlyoffice-bin-${version}.deb" -C "onlyoffice-${version}"
+	bsdtar -xf "onlyoffice-${version}/data.tar.xz" -C "onlyoffice-${version}/pkg"
+	patch -d "onlyoffice-${version}/pkg" -Np1 -i "${SRC}/010-onlyoffice-bin-fix-document-opening.patch"
+	cp -dr --no-preserve='ownership' "onlyoffice-${version}"/pkg/* "$PKG"
+}
