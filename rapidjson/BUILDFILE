@@ -1,0 +1,32 @@
+description="Fast JSON parser/generator for C++ with both SAX/DOM style API"
+homepage="https://github.com/miloyip/rapidjson"
+maintainer="Vylen Linux Team"
+
+name=rapidjson
+version=1.1.0
+release=1
+source="https://github.com/miloyip/$name/archive/v$version/$name-$version.tar.gz
+	gcc14.patch::https://github.com/Tencent/rapidjson/commit/3b2441b8.patch"
+
+build () {
+#	export CXXFLAGS="$CXXFLAGS -std=c++14"
+	patch -d $name-$version -Np1 -i $SRC/gcc14.patch
+
+	cmake -S $name-$version -B build -G Ninja \
+		-D CMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_INSTALL_LIBDIR=lib \
+		-DCMAKE_INSTALL_LIBEXECDIR=lib \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
+		-DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
+		-DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
+		-DRAPIDJSON_BUILD_DOC=OFF \
+		-DRAPIDJSON_BUILD_EXAMPLES=OFF \
+		-DRAPIDJSON_BUILD_TESTS=OFF \
+		-DRAPIDJSON_BUILD_CXX11=ON \
+		-Wno-dev
+	cmake --build build
+	DESTDIR=$PKG cmake --install build
+
+	rm -r $PKG/usr/share
+}
