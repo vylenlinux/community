@@ -1,0 +1,18 @@
+description="BitTorrent library with a focus on high performance and good code"
+homepage="https://rakshasa.github.io/rtorrent/"
+maintainer="Vylen Linux Team"
+
+name=libtorrent
+version=0.16.7
+release=1
+source="$name-$version.tar.gz::https://github.com/rakshasa/$name/archive/refs/tags/v$version.tar.gz"
+
+build() {
+	cd libtorrent-$version
+
+	autoreconf -fiv
+
+	./configure --prefix=/usr --disable-debug
+	make
+	make DESTDIR=$PKG install
+}
