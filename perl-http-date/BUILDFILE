@@ -1,0 +1,17 @@
+description="Perl module date conversion routines"
+homepage="https://metacpan.org/pod/HTTP::Date"
+maintainer="Vylen Linux Team"
+
+name=perl-http-date
+version=6.06
+release=1
+source="$name-$version.tar.gz::https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Date-$version.tar.gz"
+
+build() {
+        cd HTTP-Date-$version
+	perl -I. Makefile.PL INSTALLDIRS=vendor
+        make
+        make DESTDIR=$PKG install
+
+}
+
