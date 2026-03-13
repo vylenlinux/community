@@ -1,0 +1,18 @@
+description="Library that provides an API shared by several applications on the GNOME Desktop"
+homepage="https://www.gnome.org/"
+maintainer="Vylen Linux Team"
+
+name=gnome-desktop
+version=44.5
+release=1
+source="http://ftp.gnome.org/pub/gnome/sources/gnome-desktop/${version%.*}/gnome-desktop-$version.tar.xz"
+
+build() {
+	vylen-meson $name-$version build \
+		-Ddesktop_docs=false \
+		-Ddebug_tools=false \
+		-Dsystemd=disabled \
+		-Dbuild_gtk4=false 
+	meson compile -C build
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
