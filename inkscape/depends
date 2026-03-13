@@ -1,0 +1,11 @@
+gsl
+boost
+gc
+poppler-glib
+popt
+gtkmm3
+double-conversion
+potrace
+libsoup
+python3-lxml
+python3-numpy
