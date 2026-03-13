@@ -1,0 +1,15 @@
+description="A simple TUI audio mixer for PipeWire"
+homepage="https://github.com/tsowell/wiremix"
+maintainer="Vylen Linux Team"
+
+name=wiremix
+version=0.10.0
+release=1
+source="$name-$version.tar.gz::https://github.com/tsowell/wiremix/archive/v$version.tar.gz"
+
+build() {
+	cd $name-$version
+	cargo fetch --locked --target "$(rustc -vV | sed -n 's/host: //p')"
+	cargo build --release --frozen
+	install -Dm 755 "target/release/$name" "$PKG/usr/bin/$name"
+}
