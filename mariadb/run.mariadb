@@ -1,0 +1,6 @@
+#!/bin/sh
+
+exec 2>&1
+
+install -o mysql -g mysql -m 0755 -d /run/mysqld
+exec /usr/sbin/mariadbd --pid-file=/run/mysqld/mysqld.pid --user=mysql
