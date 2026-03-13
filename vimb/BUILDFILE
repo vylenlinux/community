@@ -1,0 +1,14 @@
+description="Fast and lightweight web browser based on WebKit/GTK+"
+homepage="https://github.com/fanglingsu/vimb"
+maintainer="Vylen Linux Team"
+
+name=vimb
+version=3.7.1
+release=1
+source="https://github.com/fanglingsu/vimb/archive/$version/$name-$version.tar.gz"
+
+build() {
+	cd $name-$version
+	make PREFIX=/usr
+	make PREFIX=/usr DESTDIR=$PKG install
+}
