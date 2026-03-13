@@ -1,0 +1,20 @@
+description="RandR-based backlight control application"
+homepage="https://xorg.freedesktop.org/"
+maintainer="Vylen Linux Team"
+
+name=xbacklight
+version=1.2.4
+release=1
+source="http://ftp.x.org/pub/individual/app/xbacklight-$version.tar.xz"
+
+build() {
+	cd $name-$version
+
+  	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--localstatedir=/var \
+		--disable-static
+	make
+	make DESTDIR=$PKG install
+}
