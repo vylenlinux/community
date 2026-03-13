@@ -1,0 +1,15 @@
+description="A featherweight, lemon-scented, bar based on xcb"
+homepage="https://github.com/LemonBoy/bar"
+maintainer="Vylen Linux Team"
+
+name=lemonbar
+version=1.5
+release=1
+source="https://github.com/LemonBoy/bar/archive/v$version/$name-$version.tar.gz"
+
+build() {
+	cd bar-$version
+
+	make VERSION=${version}
+	make VERSION=${version} DESTDIR=$PKG install
+}
