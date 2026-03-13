@@ -1,0 +1,17 @@
+description="GTK+ based scientific calculator"
+homepage="http://galculator.sourceforge.net/"
+maintainer="Vylen Linux Team"
+
+name=galculator
+version=2.1.4
+release=1
+source="http://galculator.mnim.org/downloads/$name-$version.tar.bz2"
+
+build() {
+	export CFLAGS="$CFLAGS -fcommon"
+
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
