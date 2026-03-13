@@ -1,0 +1,15 @@
+description="A GNOME Spreadsheet Program"
+homepage="http://www.gnumeric.org/"
+maintainer="Vylen Linux Team"
+
+name=gnumeric
+version=1.12.60
+release=1
+source="https://download.gnome.org/sources/$name/${version%.*}/$name-$version.tar.xz"
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make PREFIX=$PKG/usr DESTDIR=$PKG install
+}
