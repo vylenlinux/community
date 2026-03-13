@@ -1,0 +1,18 @@
+description="Implementation library for the hypr config language"
+homepage="https://github.com/hyprwm/hyprlang"
+maintainer="Vylen Linux Team"
+
+name=hyprlang
+version=0.6.8
+release=1
+source="$name-$version.tar.gz::https://github.com/hyprwm/$name/archive/v$version/$name-$version.tar.gz"
+
+build() {
+	cd $name-$version
+	cmake -B build \
+		-D CMAKE_INSTALL_PREFIX=/usr \
+		-D CMAKE_BUILD_TYPE=Release
+	cmake --build build
+	DESTDIR=$PKG cmake --install build
+}
+
