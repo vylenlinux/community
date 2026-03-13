@@ -1,0 +1,13 @@
+description="Papirus icon theme"
+homepage="https://github.com/PapirusDevelopmentTeam"
+maintainer="Vylen Linux Team"
+
+name=papirus-icon-theme
+version=20250501
+release=1
+source="https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/archive/$version/$name-$version.tar.gz"
+
+build() {
+	cd $name-$version
+make DESTDIR="$PKG" ICON_THEMES="Papirus Papirus-Dark Papirus-Light" install
+}
