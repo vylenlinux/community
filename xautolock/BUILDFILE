@@ -1,0 +1,19 @@
+description="An automatic X screen-locker/screen-saver"
+homepage="https://ibiblio.org/pub/Linux/X11/screensavers/"
+maintainer="Vylen Linux Team"
+
+name=xautolock
+version=2.2
+release=1
+source="https://ibiblio.org/pub/Linux/X11/screensavers/$name-$version.tgz union-wait.patch"
+
+build() {
+	cd $name-$version
+
+	patch -p1 -i $SRC/union-wait.patch
+	xmkmf
+	make
+
+       make DESTDIR=$PKG install
+       make DESTDIR=$PKG install.man
+}
