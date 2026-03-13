@@ -1,0 +1,19 @@
+description="An interactive post-processing tool for scanned pages"
+homepage="https://github.com/ScanTailor-Advanced/scantailor-advanced"
+maintainer="Vylen Linux Team"
+
+name=scantailor-advanced
+version=1.0.19
+release=1
+source="https://github.com/ScanTailor-Advanced/scantailor-advanced/archive/v$version/$name-$version.tar.gz"
+
+build() {
+	sed -e '/native/d' -i $name-$version/CMakeLists.txt
+
+	cmake -B build -S $name-$version -DCMAKE_INSTALL_PREFIX=/usr
+	cmake --build build
+	DESTDIR="$PKG/" cmake --install build
+
+	install -Dm0644 "$name-$version/src/resources/appicon.svg" "$PKG/usr/share/icons/hicolor/scalable/apps/scantailor-advanced.svg"
+	install -Dm0644 "$name-$version/src/resources/unix/scantailor.desktop" "$PKG/usr/share/applications/scantailor.desktop"
+}
