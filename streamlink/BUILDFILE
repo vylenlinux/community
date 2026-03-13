@@ -1,0 +1,16 @@
+description="CLI program that launches streams from various streaming services in a custom video player (livestreamer fork)"
+homepage="https://streamlink.github.io/"
+maintainer="Vylen Linux Team"
+
+name=streamlink
+version=8.2.1
+release=1
+source="https://github.com/$name/$name/releases/download/$version/$name-$version.tar.gz"
+
+build() {
+	cd $name-$version
+	sed -i 's/versioningit >=2.0.0, <3/versioningit/' pyproject.toml
+	python3 -m build --wheel --no-isolation
+	python3 -m installer --destdir=$PKG dist/*.whl
+	
+}

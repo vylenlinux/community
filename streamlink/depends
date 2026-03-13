@@ -1,0 +1,9 @@
+python3-pysocks
+python3-websocket-client
+python3-iso3166
+python3-iso-639
+python3-requests
+python3-pycryptodome
+python3-isodate
+python3-build
+python3-wheel
