@@ -1,0 +1,18 @@
+description="serd lightweight C library for RDF syntax "
+homepage="https://download.drobilla.net "
+maintainer="Vylen Linux Team"
+
+name=serd
+version=0.32.8
+release=1
+source="$name-$version.tar.gz::https://gitlab.com/drobilla/$name/-/archive/v$version/$name-v$version.tar.gz"
+
+build() {
+	vylen-meson $name-v$version build \
+		-Ddocs=disabled \
+		-Dhtml=disabled \
+		-Dsinglehtml=disabled \
+		-Dtests=disabled 
+	meson compile -C build
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
