@@ -1,0 +1,16 @@
+description="Multi-purpose desktop calculator"
+homepage="https://qalculate.github.io/"
+maintainer="Vylen Linux Team"
+
+name=libqalculate
+version=5.9.0
+release=1
+source="$name-$version.tar.gz::https://github.com/Qalculate/libqalculate/archive/v$version.tar.gz"
+
+build() {
+	cd $name-$version
+	./autogen.sh
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
