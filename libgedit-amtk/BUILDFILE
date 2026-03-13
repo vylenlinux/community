@@ -1,0 +1,15 @@
+description="Basic GTKUIManager replacement based on GAction"
+homepage="https://gedit-technology.net/"
+maintainer="Vylen Linux Team"
+
+name=libgedit-amtk
+version=5.9.2
+release=1
+source="https://gitlab.gnome.org/World/gedit/libgedit-amtk/-/archive/$version/$name-$version.tar.gz"
+
+build() {
+	vylen-meson $name-$version build -Dgtk_doc=false
+	meson compile -C build
+	DESTDIR=$PKG meson install --no-rebuild -C build
+
+}
