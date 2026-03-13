@@ -1,0 +1,17 @@
+description="The World-Wide Web library for Perl"
+homepage="https://metacpan.org/release/libwww-perl/"
+maintainer="Vylen Linux Team"
+
+name=perl-libwww
+version=6.81
+release=1
+source="$name-$version.tar.gz::https://cpan.metacpan.org/authors/id/O/OA/OALDERS/libwww-perl-$version.tar.gz"
+
+build() {
+        cd libwww-perl-$version
+	perl -I. Makefile.PL INSTALLDIRS=vendor
+        make
+        make DESTDIR=$PKG install
+
+}
+
