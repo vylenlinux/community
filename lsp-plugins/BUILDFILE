@@ -1,0 +1,18 @@
+description="Collection of free plugins compatible with LADSPA, LV2 and LinuxVST"
+homepage="https://lsp-plug.in/"
+maintainer="Vylen Linux Team"
+
+name=lsp-plugins
+version=1.2.27
+release=1
+source="https://github.com/lsp-plugins/lsp-plugins/releases/download/$version/$name-src-$version.tar.gz"
+
+build() {
+	cd $name
+
+	make config PREFIX=/usr SHARE_PATH=/usr/share ADD_FEATURES="xdg" SUB_FEATURES="doc"
+	make
+	make DESTDIR=$PKG install
+
+	rm -fr $PKG/usr/share/doc
+}
