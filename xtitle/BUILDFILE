@@ -1,0 +1,14 @@
+description="Outputs X window titles "
+homepage="https://github.com/baskerville/xtitle"
+maintainer="Vylen Linux Team"
+
+name=xtitle
+version=0.4.4
+release=1
+source="https://github.com/baskerville/xtitle/archive/$version/$name-$version.tar.gz"
+
+build() {
+	cd $name-$version
+	make PREFIX=/usr
+	make PREFIX=/usr DESTDIR=$PKG install
+}
