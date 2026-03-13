@@ -1,0 +1,11 @@
+mjwm-5.1.0-1
+drwxr-xr-x root/root    usr/
+drwxr-xr-x root/root    usr/bin/
+-rwxr-xr-x root/root    usr/bin/mjwm
+drwxr-xr-x root/root    usr/share/
+drwxr-xr-x root/root    usr/share/man/
+drwxr-xr-x root/root    usr/share/man/man1/
+-rw-r--r-- root/root    usr/share/man/man1/mjwm.1.gz
+drwxr-xr-x root/root    usr/share/mjwm/
+-rw-r--r-- root/root    usr/share/mjwm/default.mjwm
+-rw-r--r-- root/root    usr/share/mjwm/puppy.mjwm
