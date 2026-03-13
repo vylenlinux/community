@@ -1,0 +1,17 @@
+description="HTTP style message"
+homepage="https://metacpan.org/release/HTTP-Message/"
+maintainer="Vylen Linux Team"
+
+name=perl-http-message
+version=7.01
+release=1
+source="$name-$version.tar.gz::https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Message-$version.tar.gz"
+
+build() {
+        cd HTTP-Message-$version
+	perl -I. Makefile.PL INSTALLDIRS=vendor
+        make
+        make DESTDIR=$PKG install
+
+}
+
