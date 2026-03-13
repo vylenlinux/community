@@ -1,0 +1,19 @@
+description="A C++ library for resampling audio signals"
+homepage="https://kokkinizita.linuxaudio.org/linuxaudio/"
+maintainer="Vylen Linux Team"
+
+name=zita-resampler-libs
+version=1.11.2
+release=1
+source="https://kokkinizita.linuxaudio.org/linuxaudio/downloads/zita-resampler-$version.tar.xz"
+
+build() {
+	cd zita-resampler-$version/source
+
+	# strip march=native
+	sed -e '/native/d' -i Makefile
+	sed -e '/ldconfig/d' -i Makefile
+
+	make
+	make SUFFIX="" PREFIX=/usr DESTDIR=$PKG install
+}
