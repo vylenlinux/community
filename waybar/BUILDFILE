@@ -1,0 +1,27 @@
+description="Highly customizable Wayland bar for Sway and Wlroots based compositors"
+homepage="https://github.com/Alexays/Waybar"
+maintainer="Vylen Linux Team"
+ 
+
+name=waybar
+version=0.15.0
+release=1
+backup=/etc/xdg/waybar/config
+backup=/etc/xdg/waybar/style.css
+source="$name-$version.tar.gz::https://github.com/Alexays/Waybar/archive/$version.tar.gz"
+
+build() {
+	vylen-meson Waybar-$version build \
+		-Dcpp_std=c++20 \
+		-Dexperimental=true \
+		-Dcava=disabled \
+		-Dlogind=disabled \
+		-Dman-pages=disabled \
+		-Dsystemd=disabled \
+		-Dtests=disabled 
+          meson compile -C build
+          DESTDIR=$PKG meson install --no-rebuild -C build 
+}
+
+
+   

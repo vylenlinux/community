@@ -1,0 +1,9 @@
+gtkmm3
+jsoncpp
+spdlog
+pulseaudio
+libnl
+libappindicator
+libmpdclient
+playerctl
+gtk-layer-shell
