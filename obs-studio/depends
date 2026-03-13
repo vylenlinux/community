@@ -1,0 +1,13 @@
+extra-cmake-modules
+jansson
+luajit
+mbedtls
+nlohmann-json
+pciutils
+pipewire
+qt6-svg
+speexdsp
+swig
+uthash
+v4l-utils
+simde
