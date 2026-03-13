@@ -1,0 +1,16 @@
+description="Script to get system information"
+homepage="https://smxi.org/docs/inxi.htm"
+maintainer="Vylen Linux Team"
+
+name=inxi
+version=3.3.40.1
+_ver=${version%.*}
+_sion=${version##*.}
+release=1
+source="$name-$version.tar.gz::https://codeberg.org/smxi/inxi/archive/${_ver}-${_sion}.tar.gz"
+
+build() {
+	cd $name
+	install -D -m755 inxi $PKG/usr/bin/inxi
+	install -D -m755 inxi.1 $PKG/usr/share/man/man1/inxi.1
+}
