@@ -1,0 +1,19 @@
+description="Dynamic, any to any, pixel format translation library"
+homepage="https://gegl.org/babl/"
+maintainer="Vylen Linux Team"
+
+name=babl
+version=0.1.124
+release=1
+source="https://download.gimp.org/pub/$name/${version%.*}/$name-$version.tar.xz"
+
+build() {
+	cd $name-$version
+
+	# https://gitlab.gnome.org/GNOME/babl/-/merge_requests/45
+	sed 's/Description/description/' -i meson.build
+	
+	vylen-meson build
+	meson compile -C build
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
