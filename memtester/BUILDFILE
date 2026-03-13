@@ -1,0 +1,16 @@
+description="A userspace utility for testing the memory subsystem for faults"
+homepage="http://pyropus.ca/software/memtester/"
+maintainer="Vylen Linux Team"
+
+name=memtester
+version=4.7.1
+release=1
+source="http://pyropus.ca/software/memtester/old-versions/${name}-${version}.tar.gz"
+
+build() {
+	cd $name-$version
+	export CFLAGS="$CFLAGS -Wno-incompatible-pointer-types"
+	make
+	install -D -m755 memtester "${PKG}/usr/bin/memtester"
+	install -D -m644 memtester.8 "${PKG}/usr/share/man/man8/memtester.8"
+}
