@@ -1,0 +1,20 @@
+description="a packaging friendly copy of the AudioProcessing module from the WebRTC project "
+homepage="https://freedesktop.org/software/pulseaudio/webrtc-audio-processing/"
+maintainer="Vylen Linux Team"
+
+name=webrtc-audio-processing
+version=2.1
+release=1
+source="https://gitlab.freedesktop.org/pulseaudio/webrtc-audio-processing/-/archive/v2.1/webrtc-audio-processing-v$version.tar.bz2
+	58.patch
+	60.patch"
+
+build() {
+	patch -Np1 -d $name-v$version -i $SRC/58.patch
+	patch -Np1 -d $name-v$version -i $SRC/60.patch
+	vylen-meson $name-v$version build \
+		-Dcpp_std=c++17 \
+		-Dneon=disabled
+	meson compile -C build
+	DESTDIR=$PKG meson install -C build
+}
