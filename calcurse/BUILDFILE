@@ -1,0 +1,15 @@
+description="A text-based personal organizer"
+homepage="https://calcurse.org/"
+maintainer="Vylen Linux Team"
+
+name=calcurse
+version=4.8.2
+release=1
+source="https://calcurse.org/files/$name-$version.tar.gz"
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr --enable-docs --without-asciidoc 
+  	make
+	make DESTDIR=$PKG install
+}
