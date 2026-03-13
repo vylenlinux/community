@@ -1,0 +1,4 @@
+cmake
+qt6-svg
+qt6-tools
+ninja
