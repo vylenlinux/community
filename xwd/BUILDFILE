@@ -1,0 +1,21 @@
+description="X Window System image dumping utility"
+homepage="https://xorg.freedesktop.org/"
+maintainer="Vylen Linux Team"
+
+name=xwd
+version=1.0.9
+release=1
+source="http://ftp.x.org/pub/individual/app/xwd-$version.tar.xz"
+
+build() {
+	cd $name-$version
+
+  	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--localstatedir=/var \
+		--disable-static
+	make
+	make DESTDIR=$PKG install
+}
+
