@@ -1,0 +1,16 @@
+description="Advanced postgres pager"
+homepage="https://github.com/okbob/pspg"
+maintainer="Vylen Linux Team"
+
+name=pspg
+version=5.8.16
+release=1
+source="$name-$version.tar.gz::https://github.com/okbob/pspg/archive/refs/tags/$version.tar.gz"
+
+build() {
+	cd $name-$version
+	./autogen.sh
+	./configure --prefix=/usr 
+	make
+	make DESTDIR=$PKG install
+}
