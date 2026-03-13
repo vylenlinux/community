@@ -1,0 +1,26 @@
+description="nwg-shell configuration utility"
+homepage="https://github.com/nwg-piotr/nwg-shell-config"
+maintainer="Vylen Linux Team"
+
+name=nwg-shell-config
+version=0.5.62
+release=1
+
+source="$name-$version.tar.gz::https://github.com/nwg-piotr/nwg-shell-config/archive/v$version.tar.gz
+    vylenupdates
+    add_support_for_emerald.patch"
+
+build() {
+	cd $name-$version
+	patch -p1 < $SRC/add_support_for_emerald.patch
+	python3 setup.py install --root=$PKG --optimize=1
+	install -D -t $PKG/usr/share/pixmaps nwg-shell-config.svg
+	install -D -t $PKG/usr/share/pixmaps nwg-shell-update.svg
+	install -D -t $PKG/usr/share/pixmaps nwg-shell-translate.svg
+	install -D -t $PKG/usr/share/pixmaps nwg-update-noupdate.svg
+	install -D -t $PKG/usr/share/pixmaps nwg-update-available.svg
+	install -D -t $PKG/usr/share/pixmaps nwg-update-checking.svg
+	install -D -t $PKG/usr/share/applications nwg-shell-config.desktop
+	install -Dm755 nwg-system-update -t $PKG/usr/bin
+	install -Dm755 $SRC/vylenupdates -t $PKG/usr/bin
+}

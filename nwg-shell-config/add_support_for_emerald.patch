@@ -1,0 +1,53 @@
+diff '--color=auto' -Naur a/nwg_shell_config/update_indicator.py b/nwg_shell_config/update_indicator.py
+--- a/nwg_shell_config/update_indicator.py	2026-03-13 14:46:54.285232567 +0100
++++ b/nwg_shell_config/update_indicator.py	2026-03-13 14:56:23.019278993 +0100
+@@ -117,6 +117,8 @@
+                     return "arch"
+                 elif "Venom" in line:
+                     return "venom"
++                elif "Vylen" in line:
++                    return "vylen"
+                 # add elif for other distros
+ 
+             if line.startswith("ID"):
+@@ -124,6 +126,8 @@
+                     return "arch"
+                 elif "venom" in line:
+                     return "venom"
++                elif "vylen" in line:
++                    return "vylen"
+                 # add elif for other distros
+ 
+     elif os.path.isfile("/etc/lsb=release"):
+@@ -247,6 +251,21 @@
+             if scratch:
+                 update_details = f"scratch: {scratch}"
+ 
++        elif self.distro == "vylen":
++            nwg_system_update_arg = "-emerald"
++            eprint("Using emerald")
++
++            emerald: int = 0
++
++            try:
++                output: list[str] = subprocess.check_output("vylenupdates".split()).decode('utf-8').splitlines()
++                emerald = len(output)
++            except subprocess.CalledProcessError:
++                pass
++
++            if emerald:
++                update_details = "emerald: " + str(emerald)
++
+         # elif self.distro == "something_else":
+         #   place your code here
+ 
+diff '--color=auto' -Naur a/nwg-system-update b/nwg-system-update
+--- a/nwg-system-update	2026-03-13 14:46:54.282232566 +0100
++++ b/nwg-system-update	2026-03-13 14:54:45.682271047 +0100
+@@ -8,5 +8,6 @@
+     "-yay") yay -Syu ;;
+     "-baph") baph -u ;;
+     "-scratch") scratch sysup ;;
++    "-emerald") emerald sysup ;;
+ esac
+ echo "$1"; read -r;
