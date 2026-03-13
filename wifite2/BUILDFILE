@@ -1,0 +1,16 @@
+description="Tool to attack multiple WEP and WPA encrypted networks at the same time"
+homepage="https://github.com/kimocoder/wifite2"
+maintainer="Vylen Linux Team"
+# optionals	: wireshark
+
+name=wifite2
+version=2.8.2
+release=1
+source="https://github.com/kimocoder/$name/archive/$version/$name-$version.tar.gz"
+
+build() {
+  cd $name-$version
+  sed 's|sbin|bin|g' -i setup.cfg
+  python3 setup.py build
+  python3 setup.py install --root=$PKG -O1 --skip-build
+}
