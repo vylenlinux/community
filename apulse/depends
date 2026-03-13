@@ -1,0 +1,3 @@
+cmake
+alsa-lib
+glib
