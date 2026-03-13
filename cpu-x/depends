@@ -1,0 +1,6 @@
+gtkmm3
+libcpuid
+nasm
+pciutils
+procps-ng
+vulkan-icd-loader
