@@ -1,0 +1,7 @@
+python3-gobject3
+python3-i3ipc
+python3-cairo
+python3-dasbus
+python3-psutil
+python3-requests
+wlr-randr

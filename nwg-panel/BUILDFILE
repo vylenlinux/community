@@ -1,0 +1,20 @@
+description="GTK3-based panel for sway and Hyprland Wayland compositors"
+homepage="https://github.com/nwg-piotr/nwg-panel"
+maintainer="Vylen Linux Team"
+
+name=nwg-panel
+version=0.10.13
+release=1
+source="$name-$version.tar.gz::https://github.com/nwg-piotr/$name/archive/refs/tags/v$version.tar.gz
+	config"
+
+build() {
+	cd $name-$version
+	python3 setup.py install --root=$PKG --optimize=1
+	install -D -t $PKG/usr/share/pixmaps nwg-panel.svg
+	install -D -t $PKG/usr/share/pixmaps nwg-shell.svg
+	install -D -t $PKG/usr/share/pixmaps nwg-processes.svg
+	install -D -t $PKG/usr/share/applications nwg-panel-config.desktop
+	install -D -t $PKG/usr/share/applications nwg-processes.desktop
+	install -Dm644 $SRC/config $PKG/usr/lib/python*/site-packages/nwg_panel/config/
+}
