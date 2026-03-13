@@ -1,0 +1,24 @@
+description="SimpleScreenRecorder, a screen recorder for Linux "
+homepage="https://github.com/MaartenBaert/ssr"
+maintainer="Vylen Linux Team"
+
+name=simplescreenrecorder
+version=0.4.4
+release=1
+source="https://github.com/MaartenBaert/ssr/archive/$version/ssr-$version.tar.gz
+	ffmpeg7.patch"
+
+build() {
+	cd ssr-$version
+
+	patch -p1 -i $SRC/ffmpeg7.patch
+
+	cmake -DCMAKE_INSTALL_PREFIX="/usr" \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DWITH_QT5=on \
+		-DCMAKE_INSTALL_LIBDIR='lib'
+	make
+	make DESTDIR="$PKG" install	
+
+}
+
