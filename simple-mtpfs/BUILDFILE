@@ -1,0 +1,17 @@
+description="A FUSE filesystem that supports reading/writing from MTP devices "
+homepage="https://github.com/phatina/simple-mtpfs/"
+maintainer="Vylen Linux Team"
+
+name=simple-mtpfs
+version=0.4.0
+release=1
+commit=5dfd25c72caf83bc85fc636804f1456bc0f6c1c6
+source="$name-$version.tar.gz::https://github.com/phatina/simple-mtpfs/archive/$commit.tar.gz"
+
+build() {
+	cd $name-$commit
+	./autogen.sh
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
