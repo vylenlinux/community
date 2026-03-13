@@ -1,0 +1,31 @@
+description="Open Source API and interchange format for editorial timeline information"
+homepage="http://opentimeline.io"
+maintainer="Vylen Linux Team"
+
+name=opentimelineio
+version=0.18.1
+release=1
+source="$name-$version.tar.gz::https://github.com/AcademySoftwareFoundation/OpenTimelineIO/archive/refs/tags/v$version.tar.gz
+	opentimelineio-rapidjson.tar.gz::https://github.com/Tencent/rapidjson/archive/24b5e7a8b27f42fa16b96fc70aade9106cf7102f.tar.gz"
+
+build() {
+	mv $SRC/rapidjson*/* OpenTimelineIO-$version/src/deps/rapidjson
+	cmake -S OpenTimelineIO-$version -B build \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_INSTALL_LIBDIR=lib \
+		-DCMAKE_INSTALL_LIBEXECDIR=lib \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
+		-DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
+		-DOTIO_FIND_IMATH=ON \
+		-DOTIO_AUTOMATIC_SUBMODULES=OFF \
+		-DOTIO_DEPENDENCIES_INSTALL=OFF \
+		-Wno-dev
+	cmake --build build
+
+	# Workaround messy build system
+#	export CXXFLAGS="$CXXFLAGS -I/usr/include/Imath"
+#	python3 -m build --wheel --no-isolation
+
+	DESTDIR=$PKG cmake --install build
+}
