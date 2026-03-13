@@ -1,0 +1,14 @@
+description="Configurable talking cow (and a bit more)"
+homepage="https://cowsay.diamonds/"
+maintainer="Vylen Linux Team"
+
+name=cowsay
+version=3.8.4
+release=1
+source="$name-$version.tar.gz::https://github.com/cowsay-org/cowsay/archive/v$version.tar.gz"
+
+build() {
+	cd $name-$version
+	make DESTDIR=$PKG install prefix=/usr
+	rm -r $PKG/usr/etc
+}
