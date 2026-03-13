@@ -1,0 +1,21 @@
+description="Extensible Python-based build utility"
+homepage="https://scons.org/"
+maintainer="Vylen Linux Team"
+
+name=scons
+version=4.10.1
+release=1
+source="https://github.com/SCons/scons/archive/$version/scons-$version.tar.gz
+	https://downloads.sourceforge.net/project/scons/scons/$version/SCons-$version.tar.gz
+	"
+
+build() {
+	cd scons-$version
+	sed -i 's/env python/&3/' SCons/Utilities/*.py
+	sed -i 's:build/doc/man/::' setup.cfg
+	python3 setup.py install --prefix=/usr \
+	        --root="$PKG" \
+	        --optimize=1 \
+	        --install-data=/usr/share/man/man1
+
+}
