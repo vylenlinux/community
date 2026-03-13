@@ -1,0 +1,17 @@
+description="Adjusts the color temperature of your screen according to your surroundings"
+homepage="http://jonls.dk/redshift/"
+maintainer="Vylen Linux Team"
+
+name=redshift
+version=1.12
+release=1
+source="https://github.com/jonls/$name/releases/download/v$version/$name-$version.tar.xz"
+
+build() {
+	cd $name-$version
+	autoreconf -vif
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+
+}
