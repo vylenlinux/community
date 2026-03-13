@@ -1,0 +1,5 @@
+libgcrypt
+gnutls
+lua
+zstd
+cjson
