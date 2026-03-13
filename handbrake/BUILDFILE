@@ -1,0 +1,18 @@
+description="Multithreaded video transcoder"
+homepage="https://handbrake.fr/"
+maintainer="Vylen Linux Team"
+
+name=handbrake
+version=1.11.0
+release=1
+source="$name-$version.tar.bz2::https://github.com/HandBrake/HandBrake/releases/download/$version/HandBrake-$version-source.tar.bz2"
+
+build() {
+	cd HandBrake-$version
+
+	ln -s "$SOURCE_DIR" download
+
+	./configure --prefix=/usr --disable-df-fetch --enable-fdk-aac --enable-qsv --lto
+	make -C build
+	make -C build DESTDIR=$PKG install
+}

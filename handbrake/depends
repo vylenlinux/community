@@ -1,0 +1,10 @@
+numactl
+gst-plugins-base
+libass
+lame
+gtk3
+speex
+jansson
+opus
+libvpx
+x264
