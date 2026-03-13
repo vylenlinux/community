@@ -1,0 +1,15 @@
+fuse3
+cups
+libxcursor
+libxdamage
+libxkbcommon
+libxinerama
+libxtst
+wayland
+ffmpeg
+json-c
+krb5
+pulseaudio
+libwebp
+pkcs11-helper
+sdl2_ttf
