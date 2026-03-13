@@ -1,0 +1,26 @@
+description="Modern, advanced, portable, multiprotocol bootloader."
+homepage="https://limine-bootloader.org "
+maintainer="Vylen Linux Team"
+
+name=limine
+version=10.8.5
+release=1
+source="https://codeberg.org/Limine/Limine/releases/download/v$version/$name-$version.tar.gz"
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		TOOLCHAIN_FOR_TARGET=gnu \
+		CC_FOR_TARGET=gcc \
+		LD_FOR_TARGET=ld \
+		OBJCOPY_FOR_TARGET=objcopy \
+		OBJDUMP_FOR_TARGET=objdump \
+		READELF_FOR_TARGET=readelf \
+		--enable-bios-cd \
+		--enable-bios-pxe \
+		--enable-bios \
+		--enable-uefi-x86-64 \
+		--enable-uefi-cd 
+	make
+	make DESTDIR=$PKG install
+}
