@@ -1,0 +1,17 @@
+description="Iconic font designed for Bootstrap"
+homepage="https://fontawesome.com/"
+maintainer="Vylen Linux Team"
+
+name=ttf-awesome
+_name=awesome-font
+version=7.2.0
+release=1
+source="https://github.com/FortAwesome/Font-Awesome/archive/$version/$_name-$version.tar.gz"
+
+build() {
+	cd Font-Awesome-$version
+
+	install -d $PKG/usr/share/fonts/WOFF2 $PKG/usr/share/fonts/OTF
+	install -m644 webfonts/*.woff2 $PKG/usr/share/fonts/WOFF2/
+	install -m644 otfs/*.otf $PKG/usr/share/fonts/OTF/
+}
