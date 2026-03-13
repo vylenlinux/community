@@ -1,0 +1,24 @@
+description="Support programs for Network File Systems"
+homepage="http://nfs.sourceforge.net/"
+maintainer="Vylen Linux Team"
+
+name=nfs-utils
+version=2.8.6
+release=1
+source="https://www.kernel.org/pub/linux/utils/$name/$version/$name-$version.tar.xz"
+
+build() {
+	cd $name-$version
+
+        ./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--libexecdir=/usr/sbin \
+		--with-statedir=/var/lib/nfs \
+		--with-systemd=no \
+		--without-tcp-wrappers \
+		--disable-gss \
+		--enable-libmount-mount
+	make
+	make PREFIX=$PKG/usr DESTDIR=$PKG install
+}
