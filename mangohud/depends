@@ -1,0 +1,8 @@
+dbus
+glew
+glfw
+nlohmann-json
+sdl2-compat
+spdlog
+vulkan-icd-loader
+wayland

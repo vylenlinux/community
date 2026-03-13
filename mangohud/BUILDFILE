@@ -1,0 +1,34 @@
+description="Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more"
+homepage="https://github.com/flightlessmango/MangoHud"
+maintainer="Vylen Linux Team"
+
+name=mangohud
+nm=MangoHud
+version=0.8.2
+vrsn="${version}-1"
+release=1
+source="$name-$version.tar.xz::https://github.com/flightlessmango/MangoHud/releases/download/v${version}/${nm}-v${version}-Source.tar.xz"
+
+build() {
+	cd ${nm}-v${version} 
+
+	# Use system cmocka instead of subproject
+	sed -i "s/  cmocka = subproject('cmocka')//g" meson.build
+	sed -i "s/cmocka_dep = cmocka.get_variable('cmocka_dep')/cmocka_dep = dependency('cmocka')/g" meson.build
+
+
+	vylen-meson build \
+		-Dappend_libdir_mangohud=false \
+		-Dimgui:glfw=enabled \
+		-Dimgui:opengl=enabled \
+		-Dimgui:sdl2=enabled \
+		-Dimgui:vulkan=enabled \
+		-Dmangoapp=true \
+		-Dmangohudctl=true \
+		-Dtests=disabled \
+		-Dwith_dbus=enabled \
+		-Dwith_wayland=enabled \
+		-Dwith_xnvctrl=disabled
+	meson compile -C build
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
