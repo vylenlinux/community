@@ -1,0 +1,15 @@
+description="Linux resource monitor "
+homepage="https://github.com/aristocratos/bashtop"
+maintainer="Vylen Linux Team"
+
+name=bashtop
+version=0.9.25
+release=1
+source="https://github.com/aristocratos/${name}/archive/v${version}/$name-$version.tar.gz"
+
+build() {
+	cd $name-$version
+	# disable update check
+	sed -ri 's,^update_check="true"$,update_check="false",' bashtop
+	install -Dm755 bashtop -t "$PKG/usr/bin"
+}

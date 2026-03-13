@@ -1,0 +1,6 @@
+coreutils
+grep
+sed
+gawk
+procps-ng
+python3-psutil
