@@ -1,0 +1,10 @@
+libspng-0.7.4-1
+drwxr-xr-x root/root    usr/
+drwxr-xr-x root/root    usr/include/
+-rw-r--r-- root/root    usr/include/spng.h
+drwxr-xr-x root/root    usr/lib/
+lrwxrwxrwx root/root    usr/lib/libspng.so -> libspng.so.0
+lrwxrwxrwx root/root    usr/lib/libspng.so.0 -> libspng.so.0.7.4
+-rwxr-xr-x root/root    usr/lib/libspng.so.0.7.4
+drwxr-xr-x root/root    usr/lib/pkgconfig/
+-rw-r--r-- root/root    usr/lib/pkgconfig/spng.pc
