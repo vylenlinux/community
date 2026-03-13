@@ -3,7 +3,7 @@ homepage="https://www.freerdp.com/"
 maintainer="Vylen Linux Team"
 
 name=freerdp
-version=3.23.0
+version=3.24.0
 release=1
 source="https://github.com/freerdp/freerdp/archive/$version/$name-$version.tar.gz"
 
