@@ -1,0 +1,5 @@
+libxml2
+libarchive
+libgcrypt
+gobject-introspection
+meson
