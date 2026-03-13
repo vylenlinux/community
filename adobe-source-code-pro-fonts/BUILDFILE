@@ -1,0 +1,15 @@
+description="Monospaced font family for user interface and coding environments"
+homepage="https://github.com/adobe-fonts/source-code-pro"
+maintainer="Vylen Linux Team"
+
+name=adobe-source-code-pro-fonts
+_relver=2.042R-u/1.062R-i/1.026R-vf
+version=$(printf '%s' "$_relver" | sed 's/R-//g;s|/|+|g')
+_name=$(printf '%s' "$_relver" | sed 's|\/|-|g')
+release=1
+source="$name-$version.tar.gz::https://github.com/adobe-fonts/source-code-pro/archive/$_relver.tar.gz"
+
+build() {
+	cd source-code-pro-$_name
+	install -Dt "$PKG/usr/share/fonts/${name%-fonts}" -m644 OTF/*.otf VF/*.otf
+}
