@@ -1,0 +1,33 @@
+description="Multi-panel tabbed file manager (GTK3 version) "
+homepage="https://ignorantguru.github.io/spacefm/"
+maintainer="Vylen Linux Team"
+
+name=spacefm
+version=1.0.6
+release=1
+source="$name-$version.tar.gz::https://github.com/IgnorantGuru/spacefm/archive/$version.tar.gz
+	dash.patch
+	fix-build-gcc14.patch
+	fix-wayland.patch
+	fno-common.patch
+	include-sysmacros.patch"
+
+build() {
+	cd $name-$version
+
+	for p in $SRC/*patch; do 
+		patch -Np1 -i $p
+	done
+
+	CONFIG_SHELL='/bin/bash' \
+	./configure \
+		--prefix=/usr \
+		--with-gtk3 \
+		--disable-hal \
+		--disable-pixmaps \
+		--enable-inotify \
+		--enable-startup-notification \
+		--enable-video-thumbnails 
+	make
+	make DESTDIR=$PKG install
+}
