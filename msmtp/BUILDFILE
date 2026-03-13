@@ -1,0 +1,16 @@
+description="A mini smtp client"
+homepage="https://marlam.de/msmtp/"
+maintainer="Vylen Linux Team"
+
+name=msmtp
+version=1.8.32
+release=1
+source="https://marlam.de/$name/releases/$name-$version.tar.xz"
+
+build() {
+    cd $name-$version
+    ./configure --prefix=/usr \
+                --with-tls=openssl
+    make
+    make DESTDIR=$PKG install
+}
