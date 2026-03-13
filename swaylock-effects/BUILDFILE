@@ -1,0 +1,21 @@
+description="A fancier screen locker for Wayland."
+homepage="https://github.com/jirutka/swaylock-effects"
+maintainer="Vylen Linux Team"
+
+name=swaylock-effects
+version=1.7.0.0
+release=1
+source="$name-$version.tar.gz::https://github.com/jirutka/$name/archive/refs/tags/v$version.tar.gz"
+
+build() {
+	vylen-meson $name-$version build \
+		-D pam=enabled \
+		-Dbash-completions=$(emerald isinstalled bash-completions && printf "true" || printf "false") \
+		-Dfish-completions=$(emerald isinstalled fish-completions && printf "true" || printf "false") \
+		-Dzsh-completions=$(emerald isinstalled zsh-completions && printf "true" || printf "false")
+	meson compile -C build
+	DESTDIR=$PKG meson install --no-rebuild -C build
+
+	# Adapt pam file to vylen
+	sed -i 's|login|system-auth|' $PKG/etc/pam.d/swaylock
+}
