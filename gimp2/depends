@@ -1,0 +1,9 @@
+gegl
+appstream-glib
+gtk2
+mypaint-brushes1
+gexiv2
+libgudev
+libexif
+libjxl
+libtiff
