@@ -1,0 +1,14 @@
+description="GNU Image Manipulation Program"
+homepage="https://www.gimp.org/"
+maintainer="Vylen Linux Team"
+
+name=gimp
+version=3.0.8
+release=1
+source="https://download.gimp.org/pub/gimp/v${version%.*}/$name-$version.tar.xz"
+
+build() {
+	vylen-meson $name-$version build -Ddebug=false -Db_lto=false
+	meson compile -C build
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
