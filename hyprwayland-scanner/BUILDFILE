@@ -1,0 +1,16 @@
+description="A Hyprland implementation of wayland-scanner, in and for C++"
+homepage="https://github.com/hyprwm/hyprwayland-scanner"
+maintainer="Vylen Linux Team"
+
+name=hyprwayland-scanner
+version=0.4.5
+release=1
+source="$name-$version.tar.gz::https://github.com/hyprwm/hyprwayland-scanner/archive/refs/tags/v$version.tar.gz"
+
+build() {
+	cd $name-$version
+	cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX=/usr -S . -B ./build
+	cmake --build ./build --config Release
+	DESTDIR="${PKG}" cmake --install build
+}
+

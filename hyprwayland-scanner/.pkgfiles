@@ -1,0 +1,11 @@
+hyprwayland-scanner-0.4.5-1
+drwxr-xr-x root/root    usr/
+drwxr-xr-x root/root    usr/bin/
+-rwxr-xr-x root/root    usr/bin/hyprwayland-scanner
+drwxr-xr-x root/root    usr/lib/
+drwxr-xr-x root/root    usr/lib/cmake/
+drwxr-xr-x root/root    usr/lib/cmake/hyprwayland-scanner/
+-rw-r--r-- root/root    usr/lib/cmake/hyprwayland-scanner/hyprwayland-scanner-config-version.cmake
+-rw-r--r-- root/root    usr/lib/cmake/hyprwayland-scanner/hyprwayland-scanner-config.cmake
+drwxr-xr-x root/root    usr/lib/pkgconfig/
+-rw-r--r-- root/root    usr/lib/pkgconfig/hyprwayland-scanner.pc
