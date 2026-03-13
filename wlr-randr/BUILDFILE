@@ -1,0 +1,14 @@
+description="Utility to manage outputs of a Wayland compositor"
+homepage="https://sr.ht/~emersion/wlr-randr/"
+maintainer="Vylen Linux Team"
+
+name=wlr-randr
+version=0.5.0
+release=1
+source="$name-$version.tar.gz::https://gitlab.freedesktop.org/emersion/$name/-/releases/v$version/downloads/$name-$version.tar.gz"
+      
+build() {
+	  vylen-meson ${name}-${version} build
+          meson compile -C build
+          DESTDIR=$PKG meson install --no-rebuild -C build
+}
