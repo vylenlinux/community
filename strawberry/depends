@@ -1,0 +1,11 @@
+boost
+protobuf
+qt6-tools
+taglib
+fftw
+pulseaudio
+libcdio
+libmtp
+chromaprint
+kdsingleapplication
+sparsehash
