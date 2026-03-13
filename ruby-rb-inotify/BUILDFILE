@@ -1,0 +1,22 @@
+description="Thorough inotify wrapper for Ruby using FFI"
+homepage="https://github.com/guard/rb-inotify"
+maintainer="Vylen Linux Team"
+
+name=ruby-rb-inotify
+version=0.11.1
+release=1
+source="https://rubygems.org/downloads/${name#*-}-$version.gem"
+
+build() {
+	_gemdir="$(gem env gemdir)"
+
+	gem install \
+		--ignore-dependencies \
+		--no-user-install \
+		--no-document \
+		-i "$PKG/$_gemdir" \
+		-n "$PKG"/usr/bin \
+		${name#*-}-$version.gem
+
+	rm "$PKG/$_gemdir/cache/${name#*-}-$version.gem"
+}
