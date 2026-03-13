@@ -1,0 +1,15 @@
+hyprland-protocols-0.7.0-1
+drwxr-xr-x root/root    usr/
+drwxr-xr-x root/root    usr/share/
+drwxr-xr-x root/root    usr/share/hyprland-protocols/
+drwxr-xr-x root/root    usr/share/hyprland-protocols/protocols/
+-rw-r--r-- root/root    usr/share/hyprland-protocols/protocols/hyprland-ctm-control-v1.xml
+-rw-r--r-- root/root    usr/share/hyprland-protocols/protocols/hyprland-focus-grab-v1.xml
+-rw-r--r-- root/root    usr/share/hyprland-protocols/protocols/hyprland-global-shortcuts-v1.xml
+-rw-r--r-- root/root    usr/share/hyprland-protocols/protocols/hyprland-input-capture-v1.xml
+-rw-r--r-- root/root    usr/share/hyprland-protocols/protocols/hyprland-lock-notify-v1.xml
+-rw-r--r-- root/root    usr/share/hyprland-protocols/protocols/hyprland-surface-v1.xml
+-rw-r--r-- root/root    usr/share/hyprland-protocols/protocols/hyprland-toplevel-export-v1.xml
+-rw-r--r-- root/root    usr/share/hyprland-protocols/protocols/hyprland-toplevel-mapping-v1.xml
+drwxr-xr-x root/root    usr/share/pkgconfig/
+-rw-r--r-- root/root    usr/share/pkgconfig/hyprland-protocols.pc
