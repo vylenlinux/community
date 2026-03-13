@@ -1,0 +1,20 @@
+description="Tool and library for running OCI-based containers in pods"
+homepage="https://github.com/containers/libpod"
+maintainer="Vylen Linux Team"
+
+name=podman
+version=5.8.1
+release=1
+source="https://github.com/containers/podman/archive/v$version/$name-$version.tar.gz"
+
+build() {
+	cd $name-$version
+	export GOCACHE=$PWD/gocache
+	export GOPATH=$PWD/gopath
+	export GOFLAGS="-buildmode=pie"
+	make  BUILDTAGS="seccomp exclude_graphdriver_devicemapper exclude_graphdriver_btrfs"
+	make install PREFIX=/usr DESTDIR=$PKG LIBEXECDIR=/usr/lib
+
+	# not use in vylen: usr/lib/systemd
+	rm -rf $PKG/usr/lib/systemd
+}
