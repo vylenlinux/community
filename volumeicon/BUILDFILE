@@ -1,0 +1,18 @@
+description="Volume control for your system tray"
+homepage="https://github.com/Maato/volumeicon"
+maintainer="Vylen Linux Team"
+
+name=volumeicon
+version=0.5.1
+release=1
+source="$name-$version.tar.gz::https://github.com/Maato/$name/archive/refs/tags/$version.tar.gz"
+
+build() {
+	cd $name-$version
+	
+	autoreconf -fvi
+  	./configure --prefix=/usr --enable-notify
+	make
+	make DESTDIR=$PKG install
+
+}
