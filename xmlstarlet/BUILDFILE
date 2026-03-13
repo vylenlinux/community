@@ -1,0 +1,15 @@
+description="A set of tools to transform, query, validate, and edit XML documents"
+homepage="http://xmlstar.sourceforge.net/"
+maintainer="Vylen Linux Team"
+
+name=xmlstarlet
+version=1.6.1
+release=1
+source="http://downloads.sourceforge.net/sourceforge/xmlstar/$name-$version.tar.gz"
+
+build() {
+	cd $name-$version
+        ./configure --prefix=/usr
+	make
+	make PREFIX=$PKG/usr DESTDIR=$PKG install
+}
