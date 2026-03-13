@@ -1,0 +1,15 @@
+description="GNU EFI library"
+homepage="https://sourceforge.net/projects/gnu-efi/"
+maintainer="Vylen Linux Team"
+
+name=gnu-efi
+version=4.0.4
+release=1
+source="https://github.com/ncroxon/gnu-efi/archive/$version/$name-$version.tar.gz"
+
+build() {
+	unset LDFLAGS
+	cd $name-$version
+	make
+	make INSTALLROOT=$PKG PREFIX=/usr install
+}
