@@ -1,0 +1,7 @@
+mingw-w64-crt
+mingw-w64-winpthreads
+libgmp
+libisl
+libmpc
+libmpfr
+zlib
