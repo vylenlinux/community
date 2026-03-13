@@ -1,0 +1,21 @@
+description="HTTP and WebDAV client library, with a C interface"
+homepage="https://notroj.github.io/neon/"
+maintainer="Vylen Linux Team"
+
+name=neon
+version=0.37.0
+release=1
+source="https://notroj.github.io/$name/$name-$version.tar.gz"
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr \
+	            --with-ssl \
+	            --enable-shared \
+	            --disable-static \
+		    --disable-nls
+	make
+	make DESTDIR=$PKG install
+
+}
