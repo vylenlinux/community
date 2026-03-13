@@ -1,0 +1,17 @@
+description="Protocol Buffers implementation in C"
+homepage="https://github.com/protobuf-c/protobuf-c"
+maintainer="Vylen Linux Team"
+
+name=protobuf-c
+version=1.5.2
+release=1
+source="https://github.com/protobuf-c/protobuf-c/releases/download/v$version/$name-$version.tar.gz"
+
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr --disable-static
+	make
+	make DESTDIR=$PKG install
+}
