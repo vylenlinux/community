@@ -1,0 +1,19 @@
+description="Provides a series of utilities for media devices"
+homepage="https://www.linuxtv.org"
+maintainer="Vylen Linux Team"
+
+name=v4l-utils
+version=1.32.0
+release=1
+source="https://www.linuxtv.org/downloads/v4l-utils/$name-$version.tar.xz"
+
+build() {
+
+	export CFLAGS="$CFLAGS -O2 -flto=auto"
+	export CXXFLAGS="$CXXFLAGS -O2 -flto=auto"
+
+	vylen-meson $name-$version build \
+		    -Dgconv=disabled
+	meson compile -C build
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
