@@ -1,0 +1,14 @@
+description="Display graphical dialog boxes from shell scripts"
+homepage="https://gitlab.gnome.org/GNOME/zenity"
+maintainer="Vylen Linux Team"
+
+name=zenity
+version=4.2.1
+release=1
+source="https://ftp.gnome.org/pub/gnome/sources/zenity/${version%.*}/zenity-$version.tar.xz"
+
+build() {
+	vylen-meson $name-$version build 
+	meson compile -C build
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
