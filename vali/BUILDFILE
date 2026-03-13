@@ -1,0 +1,14 @@
+description="A C library and code generator for Varlink"
+maintainer="Vylen Linux Team"
+homepage="https://gitlab.freedesktop.org/emersion/vali"
+
+name=vali
+version=0.1.1
+release=1
+source="https://gitlab.freedesktop.org/emersion/vali/-/releases/v$version/downloads/$name-$version.tar.gz"
+
+build() {
+	vylen-meson $name-$version build
+	meson compile -C build
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
