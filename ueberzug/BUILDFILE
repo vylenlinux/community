@@ -1,0 +1,18 @@
+description="Command line util which allows to display images in combination with X11"
+homepage="https://github.com/seebye/ueberzug"
+maintainer="Vylen Linux Team"
+
+name=ueberzug
+version=18.3.1
+release=1
+source="$name-$version.tar.gz::https://github.com/ueber-devel/ueberzug/archive/$version.tar.gz"
+
+build() {
+	cd $name-$version
+
+	 gpep517 build-wheel \
+		   --wheel-dir .dist \
+		   --output-fd 3 3>&1 >&2
+	   python3 -m installer -d $PKG \
+			.dist/*.whl
+}

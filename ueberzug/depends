@@ -1,0 +1,6 @@
+libxext
+python3-attrs
+python3-docopt
+python3-pillow
+meson-python
+python3-gpep517
