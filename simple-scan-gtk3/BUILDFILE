@@ -1,0 +1,14 @@
+description="Simple Scanning Utility (GTK3 version)"
+homepage="https://github.com/GNOME/simple-scan"
+maintainer="Vylen Linux Team"
+
+name=simple-scan-gtk3
+version=44.0
+release=1
+source="http://packages.linuxmint.com/pool/upstream/s/${name%-*}/${name%-*}_${version}-${release}+wilma.tar.xz"
+
+build() {
+	vylen-meson ${name%-*} build 
+	meson compile -C build
+	DESTDIR=$PKG meson install --no-rebuild -C build 
+}
