@@ -1,0 +1,17 @@
+description="Disk usage analyzer with an ncurses interface"
+homepage="https://dev.yorhel.nl/ncdu"
+maintainer="Vylen Linux Team"
+
+name=ncdu
+version=2.9.2
+release=1
+source="https://dev.yorhel.nl/download/$name-$version.tar.gz"
+
+build() {
+	cd $name-$version
+	DESTDIR=$PKG zig build \
+		--prefix /usr \
+		--search-prefix /usr \
+		--release=fast \
+		-Dpie=true
+}
