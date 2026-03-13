@@ -1,0 +1,4 @@
+libevent
+intltool
+cmake
+ninja
