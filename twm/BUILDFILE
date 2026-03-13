@@ -1,0 +1,22 @@
+description="Tom's or Tab Window Manager for the X Window System"
+homepage="https://www.x.org/archive/X11R6.8.1/doc/twm.1.html"
+maintainer="Vylen Linux Team"
+
+name=twm
+version=1.0.13.1
+release=1
+source="https://www.x.org/pub/individual/app/$name-$version.tar.xz"
+
+build() {
+	cd $name-$version
+
+	sed -i -e '/^rcdir =/s,^\(rcdir = \).*,\1/etc/X11/app-defaults,' src/Makefile.in
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--localstatedir=/var \
+		--disable-static
+	make
+	make DESTDIR=$PKG install
+}
+
