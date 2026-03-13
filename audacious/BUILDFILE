@@ -1,0 +1,21 @@
+description="Lightweight, advanced audio player focused on audio quality"
+homepage="https://audacious-media-player.org/"
+maintainer="Vylen Linux Team"
+
+name=audacious
+version=4.5.1
+release=1
+source="http://distfiles.audacious-media-player.org/$name-$version.tar.bz2"
+
+build() {
+	vylen-meson $name-$version build \
+		-Dgtk=false \
+		-Dgtk2=false \
+		-Dqt=true \
+		-Dqt5=true \
+		-Dbuildstamp="Vylen Linux"
+	meson compile -C build
+	DESTDIR=$PKG meson install --no-rebuild -C build
+
+	rm -r $PKG/usr/share/$name
+}
