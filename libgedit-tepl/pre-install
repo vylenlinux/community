@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# libgedit-tepl is tepl replacement
+emerald isinstalled tepl && emerald remove -y tepl
