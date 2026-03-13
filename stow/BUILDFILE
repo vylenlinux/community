@@ -1,0 +1,16 @@
+description="Manage installation of multiple softwares in the same directory tree"
+homepage="https://ftp.gnu.org/gnu/stow"
+maintainer="Vylen Linux Team"
+
+name=stow
+version=2.4.1
+release=1
+source="https://ftp.gnu.org/gnu/$name/$name-$version.tar.gz"
+
+build() {
+	cd $name-$version
+
+    ./configure --prefix=/usr --sysconfdir=/etc --sbindir=/usr/sbin --disable-nfsv4 --disable-gss
+    make
+	make PREFIX=$PKG/usr DESTDIR=$PKG install
+}
