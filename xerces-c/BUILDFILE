@@ -1,0 +1,16 @@
+description="Apache Xerces-C validating XML parser"
+homepage="xerces.apache.org"
+maintainer="Vylen Linux Team"
+
+name=xerces-c
+version=3.3.0
+release=1
+source="https://archive.apache.org/dist/xerces/c/3/sources/${name}-${version}.tar.gz"
+
+build() {
+
+	cd $name-$version
+	./configure --prefix=/usr --sysconfdir=/etc
+	make
+	make DESTDIR=$PKG install
+}
