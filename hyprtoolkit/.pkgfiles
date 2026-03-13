@@ -1,0 +1,46 @@
+hyprtoolkit-0.5.3-1
+drwxr-xr-x root/root    usr/
+drwxr-xr-x root/root    usr/include/
+drwxr-xr-x root/root    usr/include/hyprtoolkit/
+drwxr-xr-x root/root    usr/include/hyprtoolkit/core/
+-rw-r--r-- root/root    usr/include/hyprtoolkit/core/Backend.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/core/CoreMacros.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/core/Input.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/core/LogTypes.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/core/Output.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/core/SessionLock.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/core/Timer.hpp
+drwxr-xr-x root/root    usr/include/hyprtoolkit/element/
+-rw-r--r-- root/root    usr/include/hyprtoolkit/element/Button.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/element/Checkbox.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/element/ColumnLayout.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/element/Combobox.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/element/Element.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/element/Image.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/element/Line.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/element/Null.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/element/Rectangle.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/element/RowLayout.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/element/ScrollArea.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/element/Slider.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/element/Spinbox.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/element/Text.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/element/Textbox.hpp
+drwxr-xr-x root/root    usr/include/hyprtoolkit/palette/
+-rw-r--r-- root/root    usr/include/hyprtoolkit/palette/Color.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/palette/Palette.hpp
+drwxr-xr-x root/root    usr/include/hyprtoolkit/system/
+-rw-r--r-- root/root    usr/include/hyprtoolkit/system/Icons.hpp
+drwxr-xr-x root/root    usr/include/hyprtoolkit/types/
+-rw-r--r-- root/root    usr/include/hyprtoolkit/types/FontTypes.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/types/ImageTypes.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/types/PointerShape.hpp
+-rw-r--r-- root/root    usr/include/hyprtoolkit/types/SizeType.hpp
+drwxr-xr-x root/root    usr/include/hyprtoolkit/window/
+-rw-r--r-- root/root    usr/include/hyprtoolkit/window/Window.hpp
+drwxr-xr-x root/root    usr/lib/
+lrwxrwxrwx root/root    usr/lib/libhyprtoolkit.so -> libhyprtoolkit.so.5
+-rwxr-xr-x root/root    usr/lib/libhyprtoolkit.so.0.5.3
+lrwxrwxrwx root/root    usr/lib/libhyprtoolkit.so.5 -> libhyprtoolkit.so.0.5.3
+drwxr-xr-x root/root    usr/lib/pkgconfig/
+-rw-r--r-- root/root    usr/lib/pkgconfig/hyprtoolkit.pc
