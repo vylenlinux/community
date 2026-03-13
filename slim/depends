@@ -1,0 +1,11 @@
+libx11
+libxft
+libxrender
+libxrandr
+libxmu
+freetype2
+libjpeg-turbo
+libpng
+zlib
+consolekit2
+linux-pam
