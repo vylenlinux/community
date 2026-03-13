@@ -1,0 +1,17 @@
+description="Document transformations from Yelp"
+homepage="https://gitlab.gnome.org/GNOME/yelp-xsl"
+maintainer="Vylen Linux Team"
+
+name=yelp-xsl
+version=42.4
+release=1
+source="http://ftp.gnome.org/pub/gnome/sources/yelp-xsl/${version%.*}/yelp-xsl-$version.tar.xz"
+
+build() {
+
+
+	vylen-meson $name-$version build -Ddita=true
+	meson compile -C build
+	DESTDIR=$PKG meson install --no-rebuild -C build
+
+}
