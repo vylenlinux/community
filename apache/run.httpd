@@ -1,0 +1,6 @@
+#!/bin/sh
+
+exec 2>&1
+
+install -d -m0710 -o root -g _apache /var/run/httpd
+exec httpd -DNO_DETACH
