@@ -1,0 +1,3 @@
+1d24a712c6831695908626ed357cfbab56541ebc9c4927fd3ff7c2ddab81a311  polybar-3.7.2-fontconfig.patch
+48dfb60492e8a592bb5c7daf3affff0197f38dc819add778c46130743c687480  polybar-3.7.2-gcc15-cstdint-includes.patch
+ca1aee48f2a4fc5fd41ab815927cb0e290ab0c3f2083e90508a075b0031aa5c8  polybar-3.7.2.tar.gz

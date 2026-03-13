@@ -1,0 +1,6 @@
+cmake
+cairo
+xcb-util-image
+xcb-util-wm
+python3-sphinx
+python3-babel
