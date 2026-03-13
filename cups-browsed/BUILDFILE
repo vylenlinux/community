@@ -1,0 +1,31 @@
+description="Helper daemon to browse the network for remote CUPS queues and IPP network printers"
+homepage="https://github.com/OpenPrinting/cups-browsed"
+maintainer="Vylen Linux Team"
+
+name=cups-browsed
+version=2.1.1
+release=1
+
+source="https://github.com/OpenPrinting/$name/releases/download/$version/$name-$version.tar.xz
+	run.cups-browsed"
+
+build() {
+	cd $name-$version
+	
+	# disable avahi
+	emerald isinstalled avahi || OPTS=' --disable-avahi'
+
+	./configure $OPTS \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--runstatedir=/run \
+		--with-cups-rundir=/run/cups \
+		--without-rcdir
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/doc
+
+	install -Dm755 $SRC/run.$name $PKG/etc/sv/$name/run
+	ln -s /run/runit/supervise.$name $PKG/etc/sv/$name/supervise
+}
