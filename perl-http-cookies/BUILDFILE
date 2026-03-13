@@ -1,0 +1,17 @@
+description="HTTP cookie jars"
+homepage="https://metacpan.org/release/HTTP-Cookies"
+maintainer="Vylen Linux Team"
+
+name=perl-http-cookies
+version=6.11
+release=1
+source="$name-$version.tar.gz::https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Cookies-$version.tar.gz"
+
+build() {
+        cd HTTP-Cookies-$version
+	perl -I. Makefile.PL INSTALLDIRS=vendor
+        make
+        make DESTDIR=$PKG install
+
+}
+
