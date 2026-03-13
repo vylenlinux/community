@@ -1,0 +1,3 @@
+#!/bin/sh
+
+printf " Run 'vylen-java-manager help' to switching between JVM\n"
