@@ -1,0 +1,26 @@
+description="GTK+ Bluetooth Manager"
+homepage="https://github.com/blueman-project/blueman"
+maintainer="Vylen Linux Team"
+
+name=blueman
+version=2.4.6
+release=1
+source="$name-$version.tar.gz::https://github.com/blueman-project/blueman/archive/$version.tar.gz"
+
+build() {
+	cd $name-$version
+	./autogen.sh
+	./configure \
+	    --prefix=/usr \
+	    --sysconfdir=/etc \
+	    --libexecdir=/usr/lib/$name \
+	    --disable-schemas-compile \
+	    --disable-nls \
+	    --disable-runtime-deps-check
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/doc/
+	rm -r $PKG/usr/lib/systemd/
+
+}
