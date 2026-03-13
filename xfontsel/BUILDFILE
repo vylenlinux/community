@@ -1,0 +1,15 @@
+description="Point and click selection of X11 font names"
+homepage="https://xorg.freedesktop.org"
+maintainer="Vylen Linux Team"
+
+name=xfontsel
+version=1.1.1
+release=1
+source="https://xorg.freedesktop.org/archive/individual/app/$name-$version.tar.gz"
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
