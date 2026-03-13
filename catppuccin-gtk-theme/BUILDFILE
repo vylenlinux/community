@@ -1,0 +1,16 @@
+description="A GTK theme based on the Catppuccin colour palette"
+homepage="https://github.com/Fausto-Korpsvart/Catppuccin-GTK-Theme"
+maintainer="Vylen Linux Team"
+
+name=catppuccin-gtk-theme
+rname=Catppuccin-GTK-Theme
+version=250821
+commit=98c2f63f7c9e55da69575378094f2987eb6b0b20
+release=1
+source="$name-$version.tar.gz::https://github.com/Fausto-Korpsvart/Catppuccin-GTK-Theme/archive/$commit.tar.gz"
+
+build() {
+	cd $rname-$commit/themes
+	./build.sh
+	./install.sh --dest $PKG/usr/share/themes --theme all --color light dark
+}
