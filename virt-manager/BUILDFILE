@@ -1,0 +1,15 @@
+description="A desktop user interface for managing virtual machines through libvirt"
+homepage="https://virt-manager.org/"
+maintainer="Vylen Linux Team"
+
+name=virt-manager
+version=5.1.0
+release=1
+source="https://releases.pagure.org/virt-manager/$name-$version.tar.xz"
+
+build() {
+	vylen-meson $name-$version build 
+	meson compile -C build
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
+
