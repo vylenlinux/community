@@ -1,0 +1,22 @@
+description="Listens to file modifications and notifies you about the changes"
+homepage="https://github.com/sass/listen"
+maintainer="Vylen Linux Team"
+
+name=ruby-sass-listen
+version=4.0.0
+release=1
+source="https://rubygems.org/downloads/${name#*-}-$version.gem"
+
+build() {
+	_gemdir="$(gem env gemdir)"
+
+	gem install \
+		--ignore-dependencies \
+		--no-user-install \
+		--no-document \
+		-i "$PKG/$_gemdir" \
+		-n "$PKG"/usr/bin \
+		${name#*-}-$version.gem
+
+	rm "$PKG/$_gemdir/cache/${name#*-}-$version.gem"
+}
