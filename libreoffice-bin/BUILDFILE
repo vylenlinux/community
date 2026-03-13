@@ -1,0 +1,18 @@
+description="LibreOffice - Binary package for the full office suite"
+homepage="https://www.libreoffice.org/"
+maintainer="Vylen Linux Team"
+
+name=libreoffice-bin
+version=26.2.1
+release=1
+source="$name-$version.tar.gz::http://download.documentfoundation.org/libreoffice/stable/${version}/rpm/x86_64/LibreOffice_${version}_Linux_x86-64_rpm.tar.gz"
+
+build() {
+	for rpm in $SRC/LibreOffice_${version}*/RPMS/*.rpm; do
+		bsdtar -xf $rpm -p -o -C $PKG
+	done
+	
+	rm $PKG/opt/libreoffice*/CREDITS* \
+	   $PKG/opt/libreoffice*/LICENSE* \
+	   $PKG/opt/libreoffice*/NOTICE
+}
