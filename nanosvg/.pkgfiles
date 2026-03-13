@@ -1,0 +1,15 @@
+nanosvg-20231229-1
+drwxr-xr-x root/root    usr/
+drwxr-xr-x root/root    usr/include/
+drwxr-xr-x root/root    usr/include/nanosvg/
+-rw-r--r-- root/root    usr/include/nanosvg/nanosvg.h
+-rw-r--r-- root/root    usr/include/nanosvg/nanosvgrast.h
+drwxr-xr-x root/root    usr/lib/
+drwxr-xr-x root/root    usr/lib/cmake/
+drwxr-xr-x root/root    usr/lib/cmake/NanoSVG/
+-rw-r--r-- root/root    usr/lib/cmake/NanoSVG/NanoSVGConfig.cmake
+-rw-r--r-- root/root    usr/lib/cmake/NanoSVG/NanoSVGConfigVersion.cmake
+-rw-r--r-- root/root    usr/lib/cmake/NanoSVG/NanoSVGTargets-release.cmake
+-rw-r--r-- root/root    usr/lib/cmake/NanoSVG/NanoSVGTargets.cmake
+-rwxr-xr-x root/root    usr/lib/libnanosvg.so
+-rwxr-xr-x root/root    usr/lib/libnanosvgrast.so

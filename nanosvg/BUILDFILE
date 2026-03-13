@@ -1,0 +1,23 @@
+description="Simple stupid SVG parser"
+homepage="https://github.com/memononen/nanosvg"
+maintainer="Vylen Linux Team"
+
+name=nanosvg
+version=20231229
+release=1
+commit=93ce879dc4c04a3ef1758428ec80083c38610b1f
+source="$name-$version.tar.gz::https://github.com/memononen/nanosvg/archive/$commit.tar.gz"
+
+build() {
+	cmake -S $name-$commit -B build \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_INSTALL_LIBDIR=lib \
+		-DCMAKE_INSTALL_LIBEXECDIR=lib \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
+		-DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
+		-DBUILD_SHARED_LIBS=ON \
+		-Wno-dev 
+	cmake --build build
+	DESTDIR=$PKG cmake --install build
+}
