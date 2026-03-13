@@ -1,0 +1,30 @@
+description="Ham radio equipment control libraries"
+homepage="https://hamlib.github.io"
+maintainer="Vylen Linux Team"
+
+name=hamlib
+version=4.7.0
+release=1
+source="https://github.com/Hamlib/Hamlib/releases/download/$version/$name-$version.tar.gz
+	fix-unknown-type.patch"
+
+build() {
+	cd $name-$version
+
+	export PYTHON_VERSION="3.14"
+
+	patch -Np1 -i $SRC/fix-unknown-type.patch
+
+	./configure \
+  		--prefix=/usr \
+  		--sbindir=/usr/bin \
+  		--with-perl-binding \
+  		--with-python-binding \
+  		--with-tcl-binding \
+  		--with-lua-binding \
+  		--with-xml-support \
+  		--disable-uhd
+
+	make
+	make DESTDIR=$PKG install
+}
