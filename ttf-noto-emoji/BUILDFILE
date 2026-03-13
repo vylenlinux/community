@@ -1,0 +1,12 @@
+description="Google Noto emoji fonts "
+homepage="https://fonts.google.com/noto"
+maintainer="Vylen Linux Team"
+
+name=ttf-noto-emoji
+version=2.051
+release=1
+source="$name-$version.tar.gz::https://github.com/googlefonts/noto-emoji/archive/refs/tags/v$version.tar.gz"
+build() {
+	mkdir -p $PKG/usr/share/fonts/noto
+	install -m644 noto-emoji-$version/fonts/NotoColorEmoji.ttf $PKG/usr/share/fonts/noto
+}
