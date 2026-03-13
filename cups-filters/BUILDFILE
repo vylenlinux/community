@@ -1,0 +1,29 @@
+description="Backends and filters for CUPS"
+homepage="https://wiki.linuxfoundation.org/openprinting/cups-filters"
+maintainer="Vylen Linux Team"
+
+name=cups-filters
+version=2.0.1
+release=1
+source="$name-$version.tar.gz::https://github.com/OpenPrinting/cups-filters/archive/$version.tar.gz
+	9871a50b5c1f9c2caa2754aac1f5db70c886021b.patch"
+
+build() {
+	cd $name-$version
+
+	emerald isinstalled avahi || OPTAVA=' --disable-avahi'
+	emerald isinstalled mupdf || OPTMUP=' --disable-mutool'
+	emerald isinstalled poppler || OPTPOP=' --disable-poppler'
+	
+	patch -Np1 -i $SRC/9871a50b5c1f9c2caa2754aac1f5db70c886021b.patch
+	
+	./autogen.sh
+	./configure $OPTAVA $OPTMUP $OPTPOP \
+		--prefix=/usr        \
+		--sysconfdir=/etc    \
+		--localstatedir=/var \
+		--docdir=/usr/share/doc/$name \
+		--disable-static     
+	make
+	make DESTDIR=$PKG install
+}
