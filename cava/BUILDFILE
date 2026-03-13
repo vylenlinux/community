@@ -1,0 +1,19 @@
+description="Console-based Audio Visualizer for ALSA "
+homepage="https://github.com/karlstav/cava"
+maintainer="Vylen Linux Team"
+
+name=cava
+version=0.10.7
+release=1
+source="https://github.com/karlstav/cava/releases/download/$version/$name-$version.tar.gz"
+
+build() {
+	cd $name-$version
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--mandir=/usr/share/man \
+		--localstatedir=/var
+	make
+	make DESTDIR=$PKG install
+}
