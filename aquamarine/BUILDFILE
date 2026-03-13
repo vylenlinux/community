@@ -1,0 +1,17 @@
+description="A very light linux rendering backend library"
+homepage="https://github.com/hyprwm/$name"
+maintainer="Vylen Linux Team"
+
+name=aquamarine
+version=0.10.0
+release=1
+source="https://github.com/hyprwm/$name/archive/v$version/$name-$version.tar.gz"
+
+build() {
+	cmake -S $name-$version -B build \
+		-D CMAKE_INSTALL_PREFIX=/usr \
+		-D CMAKE_BUILD_TYPE=Release
+	cmake --build build
+	DESTDIR=$PKG cmake --install build
+}
+

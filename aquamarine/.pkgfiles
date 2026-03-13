@@ -1,0 +1,34 @@
+aquamarine-0.10.0-1
+drwxr-xr-x root/root    usr/
+drwxr-xr-x root/root    usr/include/
+drwxr-xr-x root/root    usr/include/aquamarine/
+drwxr-xr-x root/root    usr/include/aquamarine/allocator/
+-rw-r--r-- root/root    usr/include/aquamarine/allocator/Allocator.hpp
+-rw-r--r-- root/root    usr/include/aquamarine/allocator/DRMDumb.hpp
+-rw-r--r-- root/root    usr/include/aquamarine/allocator/GBM.hpp
+-rw-r--r-- root/root    usr/include/aquamarine/allocator/Swapchain.hpp
+drwxr-xr-x root/root    usr/include/aquamarine/backend/
+-rw-r--r-- root/root    usr/include/aquamarine/backend/Backend.hpp
+-rw-r--r-- root/root    usr/include/aquamarine/backend/DRM.hpp
+-rw-r--r-- root/root    usr/include/aquamarine/backend/Headless.hpp
+-rw-r--r-- root/root    usr/include/aquamarine/backend/Misc.hpp
+-rw-r--r-- root/root    usr/include/aquamarine/backend/Null.hpp
+-rw-r--r-- root/root    usr/include/aquamarine/backend/Session.hpp
+-rw-r--r-- root/root    usr/include/aquamarine/backend/Wayland.hpp
+drwxr-xr-x root/root    usr/include/aquamarine/backend/drm/
+-rw-r--r-- root/root    usr/include/aquamarine/backend/drm/Atomic.hpp
+-rw-r--r-- root/root    usr/include/aquamarine/backend/drm/Legacy.hpp
+drwxr-xr-x root/root    usr/include/aquamarine/buffer/
+-rw-r--r-- root/root    usr/include/aquamarine/buffer/Buffer.hpp
+drwxr-xr-x root/root    usr/include/aquamarine/input/
+-rw-r--r-- root/root    usr/include/aquamarine/input/Input.hpp
+drwxr-xr-x root/root    usr/include/aquamarine/misc/
+-rw-r--r-- root/root    usr/include/aquamarine/misc/Attachment.hpp
+drwxr-xr-x root/root    usr/include/aquamarine/output/
+-rw-r--r-- root/root    usr/include/aquamarine/output/Output.hpp
+drwxr-xr-x root/root    usr/lib/
+lrwxrwxrwx root/root    usr/lib/libaquamarine.so -> libaquamarine.so.9
+-rwxr-xr-x root/root    usr/lib/libaquamarine.so.0.10.0
+lrwxrwxrwx root/root    usr/lib/libaquamarine.so.9 -> libaquamarine.so.0.10.0
+drwxr-xr-x root/root    usr/lib/pkgconfig/
+-rw-r--r-- root/root    usr/lib/pkgconfig/aquamarine.pc
