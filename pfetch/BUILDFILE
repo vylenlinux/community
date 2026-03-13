@@ -1,0 +1,15 @@
+description="System information tool written in POSIX sh"
+homepage="https://github.com/Un1q32/pfetch"
+maintainer="Vylen Linux Team"
+
+name=pfetch
+version=1.10.0
+release=1
+source="$name-$version.tar.gz::https://github.com/Un1q32/$name/archive/refs/tags/$version.tar.gz"
+
+build() {
+
+    cd $name-$version
+    install -Dm755 pfetch -t $PKG/usr/bin
+
+    }
