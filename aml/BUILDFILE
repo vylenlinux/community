@@ -1,0 +1,14 @@
+description="Another Main Loop"
+maintainer="Vylen Linux Team"
+homepage="https://github.com/any1/aml"
+
+name=aml
+version=1.0.0
+release=1
+source="$name-$version.tar.gz::https://github.com/any1/aml/archive/refs/tags/v$version.tar.gz"
+
+build() {
+	vylen-meson $name-$version build
+	meson compile -C build
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
