@@ -1,0 +1,4 @@
+perl-json
+spirv-tools
+vulkan-icd-loader
+xcb-util-keysyms
