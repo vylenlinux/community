@@ -1,0 +1,15 @@
+description="Browse the fediverse"
+homepage="https://tuba.geopjr.dev/"
+maintainer="Vylen Linux Team"
+
+name=tuba
+version=0.10.3
+release=1
+source="$name-$version.tar.gz::https://github.com/GeopJr/Tuba/archive/refs/tags/v$version.tar.gz"
+
+build() {
+	vylen-meson Tuba-$version build
+	meson compile -C build
+	DESTDIR=$PKG meson install --no-rebuild -C build
+	ln -s /usr/bin/dev.geopjr.Tuba $PKG/usr/bin/tuba
+}
