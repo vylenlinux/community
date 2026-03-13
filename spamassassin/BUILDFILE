@@ -1,0 +1,29 @@
+description="Mail filter to identify spam"
+homepage="http://www.spamassassin.org"
+maintainer="Vylen Linux Team"
+
+name=spamassassin
+version=4.0.2
+release=1
+
+source="https://www.apache.org/dist/spamassassin/source/Mail-SpamAssassin-$version.tar.bz2
+    run.spamd"
+
+build(){
+  cd Mail-SpamAssassin-$version
+
+  export PERL_USE_UNSAFE_INC=1
+  PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor CONFDIR=/etc/"$name"
+  make
+  make DESTDIR="$PKG" install
+
+  install -d -m 755 $PKG/var/lib/spamassassin
+
+  install -Dm755 $SRC/run.spamd $PKG/etc/sv/spamd/run
+  ln -s /run/runit/supervise.spamd $PKG/etc/sv/spamd/supervise
+
+  find "$PKG/usr/lib" -depth \
+    -type f \( -name .packlist -o -name \*.bs -o -name perllocal.pod \) -delete , \
+    -type f -name autosplit.ix \( -exec grep -q '^[[:space:]]*package' {} \; -o -delete \) , \
+    -type d -empty -exec rmdir {} +
+}
