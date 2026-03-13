@@ -1,0 +1,8 @@
+qt5
+openal
+pulseaudio
+dbus
+libusb
+libxv
+v4l-utils
+ffmpeg
