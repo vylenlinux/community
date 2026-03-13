@@ -1,0 +1,16 @@
+description="Simple and lightweight GTK calendar"
+homepage="https://dmedvinsky.github.io/gsimplecal/"
+maintainer="Vylen Linux Team"
+
+name=gsimplecal
+version=2.5.2
+release=1
+source="$name-$version.tar.gz::https://github.com/dmedvinsky/$name/archive/v$version.tar.gz"
+
+build() {
+	cd $name-$version
+	./autogen.sh
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
