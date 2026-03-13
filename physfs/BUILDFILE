@@ -1,0 +1,21 @@
+description="Library to provide abstract access to various archives."
+homepage="http://icculus.org/physfs/"
+maintainer="Vylen Linux Team"
+
+name=physfs
+version=3.2.0
+release=1
+source="https://github.com/icculus/$name/archive/release-$version/$name-$version.tar.gz"
+
+build() {
+  cmake -S $name-release-$version -B build -G Ninja \
+    -D CMAKE_INSTALL_PREFIX=/usr \
+    -D CMAKE_INSTALL_LIBDIR=lib \
+    -D CMAKE_BUILD_TYPE=Release \
+    -D CMAKE_C_FLAGS_RELEASE="$CFLAGS" \
+    -D PHYSFS_BUILD_TEST=OFF \
+    -Wno-dev
+
+  cmake --build build
+  DESTDIR=$PKG cmake --install build
+}
