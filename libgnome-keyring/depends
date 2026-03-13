@@ -1,0 +1,6 @@
+dbus
+libgcrypt
+libgpg-error
+vala
+gobject-introspection
+intltool
