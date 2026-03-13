@@ -1,0 +1,7 @@
+meson
+pango
+gdk-pixbuf
+startup-notification
+libxkbcommon
+xcb-util-wm
+xcb-util-cursor
