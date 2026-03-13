@@ -1,0 +1,17 @@
+gst-plugins-bad
+gst-plugins-good
+gst-plugins-ugly
+lcms2
+libunwind
+libva
+libxcomposite
+libxcursor
+libxinerama
+libxkbcommon
+mingw-w64-gcc
+mpg123
+opencl-headers
+pulseaudio
+v4l-utils
+vkd3d
+x265
