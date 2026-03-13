@@ -1,0 +1,28 @@
+description="Graphical user interface for CUPS administration"
+homepage="https://github.com/OpenPrinting/system-config-printer"
+maintainer="Vylen Linux Team"
+
+name=system-config-printer
+version=1.5.18
+release=1
+source="https://github.com/OpenPrinting/system-config-printer/releases/download/v$version/${name}-$version.tar.xz"
+
+build() {
+	export XML_CATALOG_FILES=/etc/xml/catalog
+
+	cd $name-$version
+
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--mandir=/usr/share/man \
+		--localstatedir=/var \
+		--with-cups-serverbin-dir=/usr/lib/cups \
+		--with-systemdsystemunitdir=no \
+		--with-udevdir=/usr/lib/udev \
+		--with-udev-rules  \
+		--with-xmlto
+	make
+	make DESTDIR=$PKG install
+
+}
