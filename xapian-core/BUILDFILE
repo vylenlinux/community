@@ -1,0 +1,16 @@
+description="Open source search engine library"
+homepage="https://oligarchy.co.uk/xapian.html"
+maintainer="Vylen Linux Team"
+
+name=xapian-core
+version=1.5.0
+release=1
+source="https://oligarchy.co.uk/xapian/$version/$name-$version.tar.xz"
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr --disable-static
+	make
+	make DESTDIR=$PKG install
+
+}
