@@ -1,0 +1,16 @@
+mpv
+perl-module-build
+perl-data-dump
+perl-json
+perl-lwp-protocol-https
+perl-clone
+perl-http-date
+perl-try-tiny
+perl-http-cookies
+perl-encode-locale
+perl-html-parser
+perl-term-readline-gnu
+perl-unicode-linebreak
+perl-text-charwidth
+perl-http-message
+yt-dlp
