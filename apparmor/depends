@@ -1,0 +1,11 @@
+autoconf
+bison
+flex
+gettext
+libtool
+linux-api-headers
+linux-pam
+perl
+python3-setuptools
+sed
+swig
