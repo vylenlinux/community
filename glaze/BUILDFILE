@@ -1,0 +1,22 @@
+description="An Extremely fast, In-Memory JSON and Interface Library for Modern C++"
+homepage="https://github.com/stephenberry/glaze"
+maintainer="Vylen Linux Team"
+
+name=glaze
+version=7.2.0
+release=1
+source="https://github.com/stephenberry/$name"/archive/v$version/$name-$version.tar.gz
+
+build() {
+	cmake -S $name-$version -B build \
+	        -DCMAKE_INSTALL_PREFIX=/usr \
+	        -DCMAKE_INSTALL_LIBDIR=lib \
+	        -DCMAKE_BUILD_TYPE=Release \
+	        -DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
+	        -DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
+		-DBUILD_TESTING=OFF \
+		-Wno-devcd 
+	cmake --build build
+	DESTDIR=$PKG cmake --install build
+}
+
