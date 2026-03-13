@@ -1,0 +1,18 @@
+description="Cantarell font family"
+homepage="https://gitlab.gnome.org/GNOME/cantarell-fonts"
+maintainer="Vylen Linux Team"
+
+name=ttf-cantarell
+_name=cantarell-fonts
+version=0.311
+release=1
+source="$name-$version.tar.gz::https://gitlab.gnome.org/GNOME/cantarell-fonts/-/archive/$version/$_name-$version.tar.gz"
+
+build() {
+	cd $_name-$version
+	uv sync
+	. $SRC/$_name-$version/.venv/bin/activate
+	vylen-meson build
+	meson compile -C build
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
