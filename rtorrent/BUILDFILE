@@ -1,0 +1,18 @@
+description="Ncurses BitTorrent client based on libTorrent"
+homepage="https://rakshasa.github.io/rtorrent/"
+maintainer="Vylen Linux Team"
+
+name=rtorrent
+version=0.16.6
+release=1
+source="https://github.com/rakshasa/$name/releases/download/v$version/$name-$version.tar.gz"
+
+build() {
+	cd $name-$version
+
+	autoreconf -fvi
+
+	./configure --prefix=/usr --disable-debug
+	make
+	make DESTDIR=$PKG install
+}
