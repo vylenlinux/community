@@ -1,0 +1,14 @@
+description="C command-line client for tldr pages "
+homepage="https://github.com/tldr-pages/tldr-c-client"
+maintainer="Vylen Linux Team"
+
+name=tldr
+version=1.6.1
+release=1
+source="https://github.com/tldr-pages/tldr-c-client/archive/v$version/$name-$version.tar.gz"
+
+build() {
+	cd $name-c-client-$version
+	make
+	make PREFIX=$PKG/usr DESTDIR=$PKG install
+}
