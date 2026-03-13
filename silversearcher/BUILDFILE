@@ -1,0 +1,15 @@
+description="A code-searching tool similar to ack, but faster"
+homepage="https://github.com/ggreer/the_silver_searcher"
+maintainer="Vylen Linux Team"
+
+name=silversearcher
+version=2.2.0
+release=1
+commit=7b571a8a94d0e22a06e3313cb0d9672b416fb2c1
+source="$name-$version$commit.tar.gz::https://github.com/ggreer/the_silver_searcher/archive/$commit.tar.gz"
+
+build() {
+	cd the_silver_searcher-$commit
+	./build.sh
+	make DESTDIR=$PKG install
+}
