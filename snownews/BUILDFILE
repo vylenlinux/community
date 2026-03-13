@@ -1,0 +1,15 @@
+description="RSS feed reader for the command-line"
+homepage="https://sourceforge.net/projects/snownews/ "
+maintainer="Vylen Linux Team"
+
+name=snownews
+version=1.11
+release=1
+source="https://sourceforge.net/projects/$name/files/$name-$version.tar.gz"
+
+build() {
+    cd $name-$version
+	./configure --prefix=/usr
+	make
+	make PREFIX=/usr DESTDIR=$PKG install
+}
