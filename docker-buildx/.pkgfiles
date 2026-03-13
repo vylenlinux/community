@@ -1,0 +1,6 @@
+docker-buildx-0.32.1-1
+drwxr-xr-x root/root    usr/
+drwxr-xr-x root/root    usr/lib/
+drwxr-xr-x root/root    usr/lib/docker/
+drwxr-xr-x root/root    usr/lib/docker/cli-plugins/
+-rwxr-xr-x root/root    usr/lib/docker/cli-plugins/docker-buildx
