@@ -1,0 +1,13 @@
+description="suckless dhcp client"
+homepage="https://suckless.org/"
+maintainer="Vylen Linux Team"
+
+name=sdhcp
+version=git
+release=1
+source="https://gvp.cz/www/BILEKM/programming/ports/sources/sdhcp.tar"
+
+build() {
+	cd $name
+	make PREFIX=/usr DESTDIR=$PKG install
+}
