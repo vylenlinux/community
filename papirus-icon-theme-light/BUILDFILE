@@ -1,0 +1,14 @@
+description="Papirus icon theme (Light)"
+homepage="https://github.com/PapirusDevelopmentTeam"
+maintainer="Vylen Linux Team"
+_name=papirus-icon-theme
+
+name=$_name-light
+version=20250501
+release=1
+source="https://github.com/PapirusDevelopmentTeam/$_name/archive/$version/$_name-$version.tar.gz"
+
+build() {
+	cd $_name-$version
+	make DESTDIR="$PKG" ICON_THEMES="Papirus-Light" install
+}
