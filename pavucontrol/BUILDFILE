@@ -1,0 +1,14 @@
+description="PulseAudio Volume Control"
+homepage="https://gitlab.freedesktop.org/pulseaudio/pavucontrol"
+maintainer="Vylen Linux Team"
+
+name=pavucontrol
+version=6.2
+release=1
+source="https://gitlab.freedesktop.org/pulseaudio/pavucontrol/-/archive/v$version/$name-v$version.tar.gz"
+
+build() {
+	vylen-meson $name-v$version build -Dlynx=disabled
+	meson compile -C build
+	meson install -C build --destdir $PKG
+}

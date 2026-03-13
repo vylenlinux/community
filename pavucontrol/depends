@@ -1,0 +1,5 @@
+gtkmm4
+libsigc++
+libcanberra
+pulseaudio
+json-glib
