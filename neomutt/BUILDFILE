@@ -1,0 +1,29 @@
+description="A version of mutt with added features"
+homepage="https://neomutt.org/"
+maintainer="Vylen Linux Team"
+
+name=neomutt
+version=20260105
+release=1
+source="https://github.com/neomutt/neomutt/archive/$version/$name-$version.tar.gz"
+
+build() {
+	cd $name-$version
+
+	./configure \
+	        --prefix=/usr \
+	        --sysconfdir=/etc \
+	        --libexecdir=/usr/lib \
+	        --gpgme \
+	        --enable-lua \
+	        --gss \
+	        --ssl \
+	        --with-ui=ncurses \
+	        --with-idn=/usr \
+        	--gdbm \
+		--disable-nls \
+		--disable-doc
+	make
+	make DESTDIR=$PKG install
+
+}
