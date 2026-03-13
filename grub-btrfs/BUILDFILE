@@ -1,0 +1,27 @@
+description="Include btrfs snapshots in GRUB boot options"
+homepage="https://github.com/Antynea/grub-btrfs"
+maintainer="Vylen Linux Team"
+
+name=grub-btrfs
+version=4.14
+release=1
+backup="etc/default/grub-btrfs/config"
+
+source="$name-$version.tar.gz::https://github.com/Antynea/grub-btrfs/archive/refs/tags/v$version.tar.gz
+	run.$name
+	conf"
+
+build() {
+	cd $name-$version
+
+	make DESTDIR=$PKG install
+
+	# remove systemd things
+	rm -rf $PKG/usr/lib/systemd
+	rm -rf $PKG/usr/share/licenses
+
+	install -Dm755 $SRC/run.$name $PKG/etc/sv/$name/run
+	install $SRC/conf $PKG/etc/sv/$name/conf
+
+	ln -s /run/runit/supervise.$name $PKG/etc/sv/$name/supervise
+}
