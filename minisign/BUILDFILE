@@ -1,0 +1,26 @@
+description="A dead simple tool to sign files and verify digital signatures."
+homepage="https://jedisct1.github.io/minisign/"
+maintainer="Vylen Linux Team"
+
+name=minisign
+version=0.12
+release=1
+source="https://github.com/jedisct1/$name/releases/download/$version/$name-$version.tar.gz"
+
+bsdtar() {
+	tar $@
+}
+
+build() {
+	cmake -B build -G Ninja \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_INSTALL_LIBDIR=lib \
+		-DCMAKE_INSTALL_LIBEXECDIR=lib \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
+		-DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
+		-Wno-dev 
+	cmake --build build
+	DESTDIR=$PKG cmake --install build
+}
+
