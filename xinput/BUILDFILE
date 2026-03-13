@@ -1,0 +1,20 @@
+description="Small commandline tool to configure devices"
+homepage="https://xorg.freedesktop.org"
+maintainer="Vylen Linux Team"
+
+name=xinput
+version=1.6.4
+release=1
+source="http://ftp.x.org/pub/individual/app/xinput-$version.tar.xz"
+
+build() {
+	cd $name-$version
+
+  	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--localstatedir=/var \
+		--disable-static
+	make
+	make DESTDIR=$PKG install
+}
