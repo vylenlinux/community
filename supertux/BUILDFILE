@@ -1,0 +1,27 @@
+description="Open-source classic 2D jump'n run sidescroller game"
+homepage="https://www.supertux.org/"
+maintainer="Vylen Linux Team"
+
+name=supertux
+version=0.6.3
+release=1
+source="https://github.com/SuperTux/supertux/releases/download/v$version/SuperTux-v$version-Source.tar.gz
+	     missing-include-for-FLT_EPSILON.patch
+	     gcc12.patch
+             gcc-14.patch"
+              
+build() {
+        cd "SuperTux-v${version}-Source"
+        
+	patch -Np1 -i $SRC/gcc12.patch
+        patch -Np1 -i $SRC/missing-include-for-FLT_EPSILON.patch
+        patch -Np1 -i $SRC/gcc-14.patch
+        
+	cmake \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DINSTALL_SUBDIR_BIN=bin \
+                -DENABLE_DISCORD=On \
+		-DCMAKE_BUILD_TYPE=none
+	make
+        make DESTDIR=$PKG install
+}
