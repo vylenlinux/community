@@ -3,7 +3,7 @@ homepage="http://www.linuxprinting.org/foomatic.html"
 maintainer="Vylen Linux Team"
 
 name=foomatic-db-engine
-version=20240405
+version=20260209
 release=1
 commit=a2b12271e145fe3fd34c3560d276a57e928296cb
 source="$name-$version.tar.gz::https://github.com/OpenPrinting/foomatic-db-engine/archive/$commit.tar.gz"

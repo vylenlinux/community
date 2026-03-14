@@ -3,7 +3,7 @@ homepage="http://www.linuxprinting.org/foomatic.html"
 maintainer="Vylen Linux Team"
 
 name=foomatic-db-ppds
-version=20251122
+version=20260209
 release=1
 commit=d4774d0c39bcdf970ccb335452f48d9241ec1f71
 source="${name%-*}-$version-$commit.tar.gz::https://github.com/OpenPrinting/foomatic-db/archive/$commit.tar.gz"
