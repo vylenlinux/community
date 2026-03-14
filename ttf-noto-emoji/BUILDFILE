@@ -5,8 +5,9 @@ maintainer="Vylen Linux Team"
 name=ttf-noto-emoji
 version=2.051
 release=1
-source="$name-$version.tar.gz::https://github.com/googlefonts/noto-emoji/archive/refs/tags/v$version.tar.gz"
+source="${name}-${version}.tar.zst::https://london.mirror.pkgbuild.com/extra/os/x86_64/noto-fonts-emoji-1:${version}-${release}-any.pkg.tar.zst"
+
 build() {
-	mkdir -p $PKG/usr/share/fonts/noto
-	install -m644 noto-emoji-$version/fonts/NotoColorEmoji.ttf $PKG/usr/share/fonts/noto
+    rm -rf "usr/share/licenses"
+    cp -r "usr" "${PKG}"
 }

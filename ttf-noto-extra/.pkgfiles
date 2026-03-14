@@ -767,7 +767,6 @@ drwxr-xr-x root/root    usr/share/fonts/noto/
 -rw-r--r-- root/root    usr/share/fonts/noto/NotoSansOriya-ExtraCondensedBlack.ttf
 -rw-r--r-- root/root    usr/share/fonts/noto/NotoSansOriya-ExtraCondensedBold.ttf
 -rw-r--r-- root/root    usr/share/fonts/noto/NotoSansOriya-ExtraCondensedThin.ttf
--rw-r--r-- root/root    usr/share/fonts/noto/NotoSansSinhala-BlackCondensed.ttf
 -rw-r--r-- root/root    usr/share/fonts/noto/NotoSansSinhala-Condensed.ttf
 -rw-r--r-- root/root    usr/share/fonts/noto/NotoSansSinhala-CondensedBlack.ttf
 -rw-r--r-- root/root    usr/share/fonts/noto/NotoSansSinhala-CondensedBold.ttf
@@ -798,7 +797,6 @@ drwxr-xr-x root/root    usr/share/fonts/noto/
 -rw-r--r-- root/root    usr/share/fonts/noto/NotoSansSinhala-SemiCondensedMedium.ttf
 -rw-r--r-- root/root    usr/share/fonts/noto/NotoSansSinhala-SemiCondensedSemiBold.ttf
 -rw-r--r-- root/root    usr/share/fonts/noto/NotoSansSinhala-SemiCondensedThin.ttf
--rw-r--r-- root/root    usr/share/fonts/noto/NotoSansSinhala-ThinCondensed.ttf
 -rw-r--r-- root/root    usr/share/fonts/noto/NotoSansSinhalaUI-Condensed.ttf
 -rw-r--r-- root/root    usr/share/fonts/noto/NotoSansSinhalaUI-CondensedBlack.ttf
 -rw-r--r-- root/root    usr/share/fonts/noto/NotoSansSinhalaUI-CondensedBold.ttf

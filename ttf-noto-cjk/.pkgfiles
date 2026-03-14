@@ -1,11 +1,6 @@
-ttf-noto-cjk-2026.03.01-1
+ttf-noto-cjk-20240730-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/share/
-drwxr-xr-x root/root    usr/share/fontconfig/
-drwxr-xr-x root/root    usr/share/fontconfig/conf.avail/
--rw-r--r-- root/root    usr/share/fontconfig/conf.avail/70-noto-cjk.conf
-drwxr-xr-x root/root    usr/share/fontconfig/conf.default/
-lrwxrwxrwx root/root    usr/share/fontconfig/conf.default/70-noto-cjk.conf -> ../conf.avail/70-noto-cjk.conf
 drwxr-xr-x root/root    usr/share/fonts/
 drwxr-xr-x root/root    usr/share/fonts/noto-cjk/
 -rw-r--r-- root/root    usr/share/fonts/noto-cjk/NotoSansCJK-Black.ttc
