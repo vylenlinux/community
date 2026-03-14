@@ -7,11 +7,13 @@ version=1.4.3
 release=1
 source="https://media.inkscape.org/dl/resources/file/$name-$version.tar.xz
 	inkscape-1.4.3-poppler-26.01.patch
-	inkscape-1.4.3-poppler-26.02.patch"
+	inkscape-1.4.3-poppler-26.02.patch
+	inkscape-1.4.3-poppler-26.03.patch"
 
 build() {
 	patch -d $name-${version}_* -Np1 -i $SRC/inkscape-1.4.3-poppler-26.01.patch
 	patch -d $name-${version}_* -Np1 -i $SRC/inkscape-1.4.3-poppler-26.02.patch
+	patch -d $name-${version}_* -Np1 -i $SRC/inkscape-1.4.3-poppler-26.03.patch
 
 	cmake -S $name-${version}_* -B build -G Ninja \
 		-DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
