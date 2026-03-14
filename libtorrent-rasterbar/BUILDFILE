@@ -3,7 +3,7 @@ homepage="https://www.rasterbar.com/products/libtorrent/"
 maintainer="Vylen Linux Team"
 
 name=libtorrent-rasterbar
-version=2.0.11
+version=2.0.12
 release=1
 source="https://github.com/arvidn/libtorrent/releases/download/v$version/$name-$version.tar.gz"
 
