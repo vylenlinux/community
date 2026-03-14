@@ -3,7 +3,7 @@ homepage="https://notmuchmail.org"
 maintainer="Vylen Linux Team"
 
 name=notmuch
-version=0.39
+version=0.40
 release=1
 source="https://notmuchmail.org/releases/$name-$version.tar.xz"
 
