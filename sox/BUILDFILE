@@ -3,7 +3,7 @@ homepage="https://sox.sourceforge.net/"
 maintainer="Vylen Linux Team"
 
 name=sox
-version=14.7.1
+version=14.7.1.1
 release=1
 source="$name-$version.tar.gz::https://codeberg.org/sox_ng/sox_ng/releases/download/sox_ng-$version/sox_ng-$version.tar.gz"
 
