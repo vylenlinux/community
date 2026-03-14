@@ -1,27 +1,24 @@
-description="Reference frontend for the libretro API "
+description="Reference frontend for the libretro API"
 homepage="http://www.libretro.com/"
 maintainer="Vylen Linux Team"
 
 name=retroarch
-version=1.21.1
+version=1.22.2
 release=1
 source="https://github.com/libretro/RetroArch/archive/v$version/$name-$version.tar.gz"
 
 build() {
 	cd RetroArch-$version
-#./configure --help | grep wayland
-#sleep 9999
 
 	./configure \
 		--prefix=/usr \
-		--disable-builtinflac \
+		--enable-builtinmbedtls \
 		--disable-builtinzlib \
 		--disable-cg \
 		--disable-jack \
 		--disable-oss \
 		--disable-sdl \
-		--enable-dbus \
-		--disable-wayland
+		--enable-dbus
 	make
 	make DESTDIR=$PKG install
 }
