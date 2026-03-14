@@ -1,11 +1,11 @@
 description="A fancier screen locker for Wayland."
-homepage="https://github.com/jirutka/swaylock-effects"
+homepage="https://github.com/hboetes/swaylock-effects"
 maintainer="Vylen Linux Team"
 
 name=swaylock-effects
-version=1.7.0.0
+version=1.8.1
 release=1
-source="$name-$version.tar.gz::https://github.com/jirutka/$name/archive/refs/tags/v$version.tar.gz"
+source="$name-$version.tar.gz::https://github.com/hboetes/$name/archive/refs/tags/v$version.tar.gz"
 
 build() {
 	vylen-meson $name-$version build \
