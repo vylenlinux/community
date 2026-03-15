@@ -3,7 +3,7 @@ homepage="https://brave.com/"
 maintainer="Vylen Linux Team"
 
 name=brave-bin
-version=1.88.127
+version=1.88.132
 release=1
 source="$name-$version.deb::https://github.com/brave/brave-browser/releases/download/v$version/brave-browser_${version}_amd64.deb"
 
