@@ -9,13 +9,13 @@ source="https://github.com/icculus/$name/archive/release-$version/$name-$version
 
 build() {
   cmake -S $name-release-$version -B build -G Ninja \
-    -D CMAKE_INSTALL_PREFIX=/usr \
-    -D CMAKE_INSTALL_LIBDIR=lib \
-    -D CMAKE_BUILD_TYPE=Release \
-    -D CMAKE_C_FLAGS_RELEASE="$CFLAGS" \
-    -D PHYSFS_BUILD_TEST=OFF \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBDIR=lib \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
+    -DPHYSFS_BUILD_TEST=OFF \
+    -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
     -Wno-dev
-
   cmake --build build
   DESTDIR=$PKG cmake --install build
 }
