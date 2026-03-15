@@ -1,4 +1,1 @@
-ab07177e622bc85187dbfc48b71fc8ff72044be41ade3f9ef9edaa66bdc06bd1  SuperTux-v0.6.3-Source.tar.gz
-37280e1aaf6b4688ff51ee0e8ffc052bdf157b854a428635688b18436b800161  gcc-14.patch
-a217816efa91ce57c87550b005882b33256a7a8996d40fc8b48b770afa8b77d0  gcc12.patch
-fe7459b7b4a49bd845fd8f5150ef98a574c54e4bcefd9f056d8a3304e31692a2  missing-include-for-FLT_EPSILON.patch
+c0beb804f8d6d91c8a1197bebf1cb1bbca8ff76fcd1f6154a763fb574036aade  supertux-0.7.0.tar.gz
