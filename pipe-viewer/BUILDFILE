@@ -3,7 +3,7 @@ homepage="github.com/trizen/pipe-viewer"
 maintainer="Vylen Linux Team"
 
 name=pipe-viewer
-version=0.5.6
+version=0.5.7
 release=1
 source="$name-$version.tar.gz::https://github.com/trizen/pipe-viewer/archive/$version.tar.gz"
 
