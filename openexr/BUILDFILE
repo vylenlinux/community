@@ -3,14 +3,11 @@ homepage="https://www.openexr.com/"
 maintainer="Vylen Linux Team"
 
 name=openexr
-version=3.4.6
+version=3.4.7
 release=1
-source="https://github.com/AcademySoftwareFoundation/$name/archive/v$version/$name-$version.tar.gz
-	glibc-2.43.patch"
+source="https://github.com/AcademySoftwareFoundation/$name/archive/v$version/$name-$version.tar.gz"
 
 build() {
-	patch -d $name-$version -Np1 -i $SRC/glibc-2.43.patch
-
 	cmake -S $name-$version -B build -G Ninja \
 	        -DCMAKE_INSTALL_PREFIX=/usr \
 	        -DCMAKE_INSTALL_LIBDIR=lib \
