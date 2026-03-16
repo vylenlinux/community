@@ -3,7 +3,7 @@ homepage="https://codeberg.org/river/river"
 maintainer="Vylen Linux Team"
 
 name=river
-version=0.3.12
+version=0.4.1
 release=1
 source="https://codeberg.org/river/river/releases/download/v$version/river-$version.tar.gz"
 
@@ -14,9 +14,6 @@ build() {
     --prefix /usr \
     -Dcpu=baseline \
     -Dstrip \
-    -Dbash-completion=$(emerald isinstalled bash-completion && printf "true" || printf "false") \
-    -Dfish-completion=$(emerald isinstalled fish && printf "true" || printf "false") \
-    -Dzsh-completion=$(emerald isinstalled zsh && printf "true" || printf "false") \
     -Dpie \
     -Dxwayland \
     -Doptimize=ReleaseSafe 
@@ -25,7 +22,4 @@ build() {
 
   install -Dm644 contrib/river.desktop -t $PKG/usr/share/wayland-sessions
   install -d $PKG/usr/share/$name
-  cp -a example $PKG/usr/share/$name
-
 }
-
