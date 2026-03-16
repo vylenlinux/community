@@ -3,7 +3,7 @@ homepage="https://github.com/opencontainers/runc"
 maintainer="Vylen Linux Team"
 
 name=runc
-version=1.4.0
+version=1.4.1
 release=1
 source="https://github.com/opencontainers/runc/archive/v${version}/$name-${version}.tar.gz"
 
