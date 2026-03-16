@@ -1,4 +1,4 @@
-glaze-7.2.0-1
+glaze-7.2.1-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/include/
 drwxr-xr-x root/root    usr/include/glaze/
@@ -255,7 +255,6 @@ drwxr-xr-x root/root    usr/include/glaze/util/
 -rw-r--r-- root/root    usr/include/glaze/util/string_literal.hpp
 -rw-r--r-- root/root    usr/include/glaze/util/tuple.hpp
 -rw-r--r-- root/root    usr/include/glaze/util/type_traits.hpp
--rw-r--r-- root/root    usr/include/glaze/util/utility.hpp
 -rw-r--r-- root/root    usr/include/glaze/util/validate.hpp
 -rw-r--r-- root/root    usr/include/glaze/util/variant.hpp
 -rw-r--r-- root/root    usr/include/glaze/version.hpp

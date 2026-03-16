@@ -3,7 +3,7 @@ homepage="https://github.com/stephenberry/glaze"
 maintainer="Vylen Linux Team"
 
 name=glaze
-version=7.2.0
+version=7.2.1
 release=1
 source="https://github.com/stephenberry/$name"/archive/v$version/$name-$version.tar.gz
 
