@@ -3,7 +3,7 @@ homepage="https://rakshasa.github.io/rtorrent/"
 maintainer="Vylen Linux Team"
 
 name=rtorrent
-version=0.16.6
+version=0.16.8
 release=1
 source="https://github.com/rakshasa/$name/releases/download/v$version/$name-$version.tar.gz"
 
