@@ -3,7 +3,7 @@ homepage="https://www.gnome.org/"
 maintainer="Vylen Linux Team"
 
 name=gnome-keyring
-version=48.0
+version=50.0
 release=1
 source="https://github.com/GNOME/gnome-keyring/archive/$version/$name-$version.tar.gz"
 
