@@ -3,11 +3,11 @@ homepage="https://github.com/ungoogled-software/ungoogled-chromium"
 maintainer="Vylen Linux Team"
 
 name=ungoogled-chromium-bin
-version=145.0.7632.116
+version=146.0.7680.80
 build=1
 arch="x86_64"
 release=1
-source="$name-$version-${build}.tar.zst::https://github.com/ungoogled-software/ungoogled-chromium-archlinux/releases/download/$version-1/ungoogled-chromium-$version-$build-x86_64.pkg.tar.zst
+source="$name-$version-${build}.tar.zst::https://mirror1.artixlinux.org/repos/galaxy/os/${arch}/${name%-bin}-${version}-${build}-${arch}.pkg.tar.zst
 	chromium.desktop"
 
 build() {
