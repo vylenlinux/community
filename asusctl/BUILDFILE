@@ -34,4 +34,5 @@ build() {
     cd -
 
     install -Dm755 "${SRC}/run.asusd" "${PKG}/etc/sv/asusd/run"
+    ln -s "/run/runit/supervise.asusd" "${PKG}/etc/sv/asusd/supervise"
 }
