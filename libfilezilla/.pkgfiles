@@ -1,4 +1,4 @@
-libfilezilla-0.54.1-1
+libfilezilla-0.55.0-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/include/
 drwxr-xr-x root/root    usr/include/libfilezilla/
@@ -69,9 +69,9 @@ drwxr-xr-x root/root    usr/include/libfilezilla/private/
 -rw-r--r-- root/root    usr/include/libfilezilla/visibility_helper.hpp
 -rw-r--r-- root/root    usr/include/libfilezilla/xml.hpp
 drwxr-xr-x root/root    usr/lib/
-lrwxrwxrwx root/root    usr/lib/libfilezilla.so -> libfilezilla.so.53.0.0
-lrwxrwxrwx root/root    usr/lib/libfilezilla.so.53 -> libfilezilla.so.53.0.0
--rwxr-xr-x root/root    usr/lib/libfilezilla.so.53.0.0
+lrwxrwxrwx root/root    usr/lib/libfilezilla.so -> libfilezilla.so.54.0.0
+lrwxrwxrwx root/root    usr/lib/libfilezilla.so.54 -> libfilezilla.so.54.0.0
+-rwxr-xr-x root/root    usr/lib/libfilezilla.so.54.0.0
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/libfilezilla.pc
 drwxr-xr-x root/root    usr/share/
