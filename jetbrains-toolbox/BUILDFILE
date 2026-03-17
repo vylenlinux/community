@@ -1,0 +1,30 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
+description="Manage all your JetBrains Projects and Tools"
+homepage="https://www.jetbrains.com/toolbox/"
+maintainer="CELESTIFYX Team <celestifyx@gmail.com>"
+
+name=jetbrains-toolbox
+version=3.3.1.75249
+release=1
+
+source="https://download.jetbrains.com/toolbox/${name}-${version}.tar.gz
+    jetbrains-toolbox.desktop
+    icon.svg"
+
+build() {
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    for dir in "usr/bin" "opt/${name}"; do
+        mkdir -p "${PKG}/${dir}"
+    done
+
+    install -Dm644 "${SRC}/${name}.desktop" -t "${PKG}/usr/share/applications/"
+    install -Dm644 "${SRC}/icon.svg" "${PKG}/usr/share/pixmaps/${name}.svg"
+
+    mv bin/* "${PKG}/opt/${name}"
+    rm -rf "${PKG}/opt/${name}/jetbrainsd"
+    ln -s "${PKG}/${name}/${name}" "${PKG}/usr/bin/${name}"
+}

@@ -1,0 +1,5 @@
+fuse3
+glib
+nss
+xcb-util-keysyms
+xdg-utils
