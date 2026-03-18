@@ -2,13 +2,13 @@ description="A general-purpose programming language and toolchain for maintainin
 homepage="https://ziglang.org/"
 maintainer="Vylen Linux Team"
 
-name=zig-bin
+name=zig
 version=0.15.2
 release=1
-source="https://ziglang.org/download/$version/${name%-*}-x86_64-linux-$version.tar.xz"
+source="${name}-${version}.tar.xz::https://ziglang.org/download/$version/${name}-x86_64-linux-$version.tar.xz"
 
 build() {
-	cd ${name%-*}-x86_64-linux-$version
+	cd ${name}-x86_64-linux-$version
 
 	install -Dm755 -t "$PKG/usr/bin/" zig
 
