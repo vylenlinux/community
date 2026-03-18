@@ -3,7 +3,7 @@ homepage="https://github.com/linuxdeepin/deepin-gtk-theme"
 maintainer="Vylen Linux Team"
 
 name=deepin-icon-theme
-version=2025.12.04
+version=2026.02.27
 release=1
 source="https://github.com/linuxdeepin/$name/archive/$version/$name-$version.tar.gz"
 

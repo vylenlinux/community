@@ -1,4 +1,4 @@
-deepin-icon-theme-2025.12.04-1
+deepin-icon-theme-2026.02.27-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/icons/
@@ -9231,6 +9231,8 @@ lrwxrwxrwx root/root    usr/share/icons/bloom-dark/cursors/left_side -> w-resize
 -rw-r--r-- root/root    usr/share/icons/bloom-dark/cursors/left_tee
 -rw-r--r-- root/root    usr/share/icons/bloom-dark/cursors/link
 -rw-r--r-- root/root    usr/share/icons/bloom-dark/cursors/ll_angle
+-rw-r--r-- root/root    usr/share/icons/bloom-dark/cursors/loginspinner
+-rw-r--r-- root/root    usr/share/icons/bloom-dark/cursors/loginspinner@2x
 -rw-r--r-- root/root    usr/share/icons/bloom-dark/cursors/lr_angle
 -rw-r--r-- root/root    usr/share/icons/bloom-dark/cursors/move
 -rw-r--r-- root/root    usr/share/icons/bloom-dark/cursors/n-resize
@@ -16376,6 +16378,8 @@ lrwxrwxrwx root/root    usr/share/icons/bloom/cursors/left_side -> w-resize
 -rw-r--r-- root/root    usr/share/icons/bloom/cursors/left_tee
 -rw-r--r-- root/root    usr/share/icons/bloom/cursors/link
 -rw-r--r-- root/root    usr/share/icons/bloom/cursors/ll_angle
+-rw-r--r-- root/root    usr/share/icons/bloom/cursors/loginspinner
+-rw-r--r-- root/root    usr/share/icons/bloom/cursors/loginspinner@2x
 -rw-r--r-- root/root    usr/share/icons/bloom/cursors/lr_angle
 -rw-r--r-- root/root    usr/share/icons/bloom/cursors/move
 -rw-r--r-- root/root    usr/share/icons/bloom/cursors/n-resize
