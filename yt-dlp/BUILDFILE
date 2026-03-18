@@ -3,7 +3,7 @@ homepage="https://github.com/yt-dlp/yt-dlp"
 maintainer="Vylen Linux Team"
 
 name=yt-dlp
-version=2026.03.13
+version=2026.03.17
 release=1
 source="https://github.com/yt-dlp/yt-dlp/archive/$version/$name-$version.tar.gz"
 
