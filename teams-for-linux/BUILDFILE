@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
+description="Unofficial Microsoft Teams for Linux client"
+maintainer="Vylen Linux Team"
+homepage="https://github.com/IsmaelMartinez/teams-for-linux"
+
+name=teams-for-linux
+version=2.7.12
+release=1
+source="${name}-${version}.rpm::https://github.com/IsmaelMartinez/${name}/releases/download/v${version}/${name}-${version}.x86_64.rpm"
+
+build() {
+    cp -r "usr" "opt" "${PKG}"
+}
