@@ -13,7 +13,7 @@ source="dotnet-${version}.tar.gz::https://builds.dotnet.microsoft.com/dotnet/Sdk
     dotnet.sh"
 
 build() {
-    for dir in bin lib share/dotnet share/dnx; do
+    for dir in bin lib share/dotnet; do
         install -dm755 "${PKG}/usr/${dir}"
     done
 
