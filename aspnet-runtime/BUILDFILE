@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
+description="The ASP.NET Core runtime"
+maintainer="Vylen Linux Team"
+homepage="https://www.microsoft.com/net/core"
+
+name=aspnet-runtime
+version=10.0.201
+release=1
+source="dotnet-${version}.tar.gz::https://builds.dotnet.microsoft.com/dotnet/Sdk/${version}/dotnet-sdk-${version}-linux-x64.tar.gz"
+
+build() {
+    install -dm755 "${PKG}/usr/share/dotnet/shared"
+    cp -dr --no-preserve='ownership' shared/Microsoft.AspNetCore.App "${PKG}/usr/share/dotnet/shared/"
+}
