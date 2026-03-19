@@ -7,7 +7,7 @@ version=1.0.0
 release=1
 source="$name-$version.tar.gz::https://git.sr.ht/~leon_plickat/wlopm/archive/v$version.tar.gz"
 
-build () {
+build() {
     
     cd $name-v$version
 	make PREFIX=/usr

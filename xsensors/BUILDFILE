@@ -8,7 +8,7 @@ release=1
 
 source="$name-$version.tar.gz::https://github.com/Mystro256/$name/archive/$version.tar.gz"
 
-build () {
+build() {
     cd $name-$version
 
     ./configure \

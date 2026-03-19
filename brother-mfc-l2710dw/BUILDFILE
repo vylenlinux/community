@@ -7,7 +7,7 @@ version=4.0.0
 release=1
 source="$name-$version.rpm::http://download.brother.com/welcome/dlf103525/mfcl2710dwpdrv-$version-$release.i386.rpm"
 
-build () {
+build() {
   _model="MFCL2710DW"
 
   # using /usr/share instead of /opt

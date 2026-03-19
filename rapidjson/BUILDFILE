@@ -8,7 +8,7 @@ release=1
 source="https://github.com/miloyip/$name/archive/v$version/$name-$version.tar.gz
 	gcc14.patch::https://github.com/Tencent/rapidjson/commit/3b2441b8.patch"
 
-build () {
+build() {
 #	export CXXFLAGS="$CXXFLAGS -std=c++14"
 	patch -d $name-$version -Np1 -i $SRC/gcc14.patch
 

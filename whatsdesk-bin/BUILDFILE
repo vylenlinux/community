@@ -7,7 +7,7 @@ version=0.3.12
 release=1
 source="${name}-${version}_amd64.deb::https://zerkc.gitlab.io/whatsdesk/whatsdesk_${version}_amd64.deb"
 
-build () {
+build() {
 	bsdtar -xvf ${name}-${version}_amd64.deb -C $SRC
 	bsdtar -xv -C ${PKG} -f ${SRC}/data.tar.xz
 	mkdir -p ${PKG}/usr/bin/
