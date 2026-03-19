@@ -1,4 +1,4 @@
-dwproton-bin-10.0.20-1
+dwproton-bin-10.0.21-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/steam/
@@ -1290,6 +1290,14 @@ drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/lib/
 -rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/files/lib/wine/nvidia-libs/nvoptix/version
 drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/lib/wine/nvidia-libs/nvoptix/x86_64-windows/
 -rwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/lib/wine/nvidia-libs/nvoptix/x86_64-windows/nvoptix.dll.so
+drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/lib/wine/vkd3d-bratan/
+drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/lib/wine/vkd3d-bratan/i386-windows/
+-rwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/lib/wine/vkd3d-bratan/i386-windows/d3d12.dll
+-rwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/lib/wine/vkd3d-bratan/i386-windows/d3d12core.dll
+-rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/files/lib/wine/vkd3d-bratan/version
+drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/lib/wine/vkd3d-bratan/x86_64-windows/
+-rwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/lib/wine/vkd3d-bratan/x86_64-windows/d3d12.dll
+-rwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/lib/wine/vkd3d-bratan/x86_64-windows/d3d12core.dll
 drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/lib/wine/vkd3d-proton/
 drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/lib/wine/vkd3d-proton/i386-windows/
 -rwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/lib/wine/vkd3d-proton/i386-windows/d3d12.dll
@@ -2756,7 +2764,7 @@ drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/shar
 drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/default_pfx/drive_c/windows/
 drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/default_pfx/drive_c/windows/Fonts/
 drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/default_pfx/drive_c/windows/Installer/
--rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/default_pfx/drive_c/windows/Installer/bb56.msi
+-rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/default_pfx/drive_c/windows/Installer/e144.msi
 drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/default_pfx/drive_c/windows/Microsoft.NET/
 drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/default_pfx/drive_c/windows/Microsoft.NET/DirectX for Managed Code/
 drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/default_pfx/drive_c/windows/Microsoft.NET/Framework/
@@ -8514,6 +8522,7 @@ lrwxrwxrwx root/root    usr/share/steam/compatibilitytools.d/dwproton/protonfixe
 -rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/protonfixes/gamefixes-steam/1277930.py
 -rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/protonfixes/gamefixes-steam/12810.py
 -rwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/protonfixes/gamefixes-steam/12840.py
+-rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/protonfixes/gamefixes-steam/1284190.py
 -rwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/protonfixes/gamefixes-steam/1284210.py
 -rwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/protonfixes/gamefixes-steam/1284410.py
 -rwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/protonfixes/gamefixes-steam/1286880.py
