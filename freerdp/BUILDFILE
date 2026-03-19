@@ -1,49 +1,53 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Free implementation of the Remote Desktop Protocol (RDP)"
 homepage="https://www.freerdp.com/"
 maintainer="Vylen Linux Team"
 
 name=freerdp
-version=3.24.0
+version=3.24.1
 release=1
-source="https://github.com/freerdp/freerdp/archive/$version/$name-$version.tar.gz"
+source="https://github.com/${name}/${name}/archive/${version}/${name}-${version}.tar.gz"
 
 build() {
-	cmake -S FreeRDP-$version -B build -G Ninja \
-		-DCMAKE_INSTALL_PREFIX=/usr \
-		-DCMAKE_INSTALL_LIBDIR=lib \
-		-DCMAKE_BUILD_TYPE=Release \
-		-DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
-		-DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
-		-DCHANNEL_URBDRC_CLIENT=ON \
-		-DCMAKE_SKIP_INSTALL_RPATH=ON \
-		-DPROXY_PLUGINDIR=/usr/lib/$name/server/proxy/plugins \
-		-DRDTK_FORCE_STATIC_BUILD=ON \
-		-DUWAC_FORCE_STATIC_BUILD=ON \
-		-DWITH_ALSA=ON \
-		-DWITH_BINARY_VERSIONING=ON \
-		-DWITH_CHANNELS=ON \
-		-DWITH_CLIENT_CHANNELS=ON \
-		-DWITH_CUPS=ON \
-		-DWITH_DSP_FFMPEG=ON \
-		-DWITH_FFMPEG=ON \
-		-DWITH_FUSE=ON \
-		-DWITH_ICU=ON \
-		-DWITH_JPEG=ON \
-		-DWITH_PCSC=ON \
-		-DWITH_PULSE=ON \
-		-DWITH_SERVER=ON \
-		-DWITH_SERVER_CHANNELS=ON \
-		-DWITH_SYSTEMD=OFF \
-		-DWITH_SWSCALE=ON \
-		-DWITH_WAYLAND=ON \
-		-DWITH_VERBOSE_WINPR_ASSERT=OFF \
-		-DWITH_WINPR_TOOLS=ON \
-		-DWITH_X11=ON \
-		-DWINPR_UTILS_IMAGE_PNG=ON \
-		-DWINPR_UTILS_IMAGE_JPEG=ON \
-		-DWINPR_UTILS_IMAGE_WEBP=ON \
-		-DWITH_CLIENT_SDL3=OFF \
-		-Wno-dev
-	cmake --build build
-	DESTDIR=$PKG cmake --install build
+    cmake -S "FreeRDP-${version}" -B build -G Ninja \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_INSTALL_LIBDIR=lib \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
+        -DCMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
+        -DCHANNEL_URBDRC_CLIENT=ON \
+        -DCMAKE_SKIP_INSTALL_RPATH=ON \
+        -DPROXY_PLUGINDIR="/usr/lib/${name}/server/proxy/plugins" \
+        -DRDTK_FORCE_STATIC_BUILD=ON \
+        -DUWAC_FORCE_STATIC_BUILD=ON \
+        -DWITH_ALSA=ON \
+        -DWITH_BINARY_VERSIONING=ON \
+        -DWITH_CHANNELS=ON \
+        -DWITH_CLIENT_CHANNELS=ON \
+        -DWITH_CUPS=ON \
+        -DWITH_DSP_FFMPEG=ON \
+        -DWITH_FFMPEG=ON \
+        -DWITH_FUSE=ON \
+        -DWITH_ICU=ON \
+        -DWITH_JPEG=ON \
+        -DWITH_PCSC=ON \
+        -DWITH_PULSE=ON \
+        -DWITH_SERVER=ON \
+        -DWITH_SERVER_CHANNELS=ON \
+        -DWITH_SYSTEMD=OFF \
+        -DWITH_SWSCALE=ON \
+        -DWITH_WAYLAND=ON \
+        -DWITH_VERBOSE_WINPR_ASSERT=OFF \
+        -DWITH_WINPR_TOOLS=ON \
+        -DWITH_X11=ON \
+        -DWINPR_UTILS_IMAGE_PNG=ON \
+        -DWINPR_UTILS_IMAGE_JPEG=ON \
+        -DWINPR_UTILS_IMAGE_WEBP=ON \
+        -DWITH_CLIENT_SDL3=OFF \
+        -Wno-dev
+
+    cmake --build build
+    DESTDIR="${PKG}" cmake --install build
 }
