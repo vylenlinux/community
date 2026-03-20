@@ -10,7 +10,7 @@ version=0.16.3.2
 release=1
 
 vrsn=0.16.3-2
-source="https://github.com/tkashkin/GameHub/archive/${vrsn}-master/$name-${vrsn}-master.tar.gz"
+source="https://github.com/tkashkin/GameHub/archive/${vrsn}-master/${name}-${vrsn}-master.tar.gz"
 
 build() {
     vylen-meson "GameHub-${vrsn}-master" build
