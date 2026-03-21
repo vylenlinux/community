@@ -1,60 +1,67 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="WINE with staging patches"
 homepage="https://www.wine-staging.com"
 maintainer="Vylen Linux Team"
 
 name=wine-staging
-version=11.4
-vgecko=2.47.4
-vmono=11.0.0
+version=11.5
 release=1
 
+vgecko=2.47.4
+vmono=11.0.0
+
 source="https://dl.winehq.org/wine/source/${version%%.*}.x/wine-${version}.tar.xz
-	https://github.com/$name/$name/archive/v$version/$name-$version.tar.gz 
-        https://dl.winehq.org/wine/wine-gecko/${vgecko}/wine-gecko-${vgecko}-x86.msi 
-        https://dl.winehq.org/wine/wine-gecko/${vgecko}/wine-gecko-${vgecko}-x86_64.msi 
-        https://dl.winehq.org/wine/wine-mono/${vmono}/wine-mono-${vmono}-x86.msi
-	30-win32-aliases.conf
-	wine-binfmt.conf"
+    https://github.com/${name}/${name}/archive/v${version}/${name}-${version}.tar.gz
+    https://dl.winehq.org/wine/wine-gecko/${vgecko}/wine-gecko-${vgecko}-x86.msi
+    https://dl.winehq.org/wine/wine-gecko/${vgecko}/wine-gecko-${vgecko}-x86_64.msi
+    https://dl.winehq.org/wine/wine-mono/${vmono}/wine-mono-${vmono}-x86.msi
+    30-win32-aliases.conf
+    wine-binfmt.conf"
 
 build() {
-	# apply staging patches
-	cd ${name%-*}-${version}
-	../wine-staging-${version}/staging/patchinstall.py DESTDIR=../wine-${version} --all
-	cd .. 
+	# shellcheck disable=SC2164
+	cd "${name%-*}-${version}"
+	    # apply staging patches
+	    "../wine-staging-${version}/staging/patchinstall.py" DESTDIR="../wine-${version}" --all
+	# shellcheck disable=SC2103
+	cd ..
 
-	install -d wine64
+    install -d wine64
+    export CPPFLAGS="${CPPFLAGS} -D_FORTIFY_SOURCE=0"
 
-	export CPPFLAGS="${CPPFLAGS} -D_FORTIFY_SOURCE=0"
-        
-	cd wine64
-	../wine-${version}/configure \
-		--prefix=/usr \
-		--libdir=/usr/lib \
-                --with-x \
-                --with-wayland \
-                --with-gstreamer \
-                --with-xattr \
-                --with-freetype \
-		--enable-win64 \
-		--enable-archs=i386,x86_64
-	make depend
-	make
-	make DESTDIR=$PKG install
+    # shellcheck disable=SC2164
+    cd wine64
 
+    ../wine-${version}/configure \
+        --prefix=/usr \
+        --libdir=/usr/lib \
+        --with-x \
+        --with-wayland \
+        --with-gstreamer \
+        --with-xattr \
+        --with-freetype \
+        --enable-win64 \
+        --enable-archs=i386,x86_64
 
-	install -d $PKG/usr/share/wine/gecko
-	install -d $PKG/usr/share/wine/mono
+    make depend
+    make
+    make DESTDIR="${PKG}" install
 
-	install -t $PKG/usr/share/wine/gecko/ \
-		$SRC/wine-gecko-${vgecko}-x86.msi \
-		$SRC/wine-gecko-${vgecko}-x86_64.msi
+    for dir in gecko mono; do
+        install -d "${PKG}/usr/share/wine/${dir}"
+    done
 
-	install $SRC/wine-mono-${vmono}-x86.msi $PKG/usr/share/wine/mono/
+    install -t "${PKG}/usr/share/wine/gecko/" \
+        "${SRC}/wine-gecko-${vgecko}-x86.msi" \
+        "${SRC}/wine-gecko-${vgecko}-x86_64.msi"
 
-	rm -r $PKG/usr/share/man/??.UTF-8
+    install "${SRC}/wine-mono-${vmono}-x86.msi" "${PKG}/usr/share/wine/mono/"
 
-	# exclude libs for revdep
-	install -d $PKG/etc/revdep.d
-	echo "/usr/lib/wine/x86_64-unix/\n" > $PKG/etc/revdep.d/$name.conf
+    rm -r "${PKG}/usr/share/man"/??.UTF-8
+
+    # exclude libs for revdep
+    install -d "${PKG}/etc/revdep.d"
+    echo "/usr/lib/wine/x86_64-unix/\n" > "${PKG}/etc/revdep.d/${name}.conf"
 }
-
