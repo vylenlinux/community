@@ -1,14 +1,17 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Papirus icon theme (Dark)"
 homepage="https://github.com/PapirusDevelopmentTeam"
 maintainer="Vylen Linux Team"
-_name=papirus-icon-theme
 
-name=$_name-dark
+name=papirus-icon-theme-dark
 version=20250501
 release=1
-source="https://github.com/PapirusDevelopmentTeam/$_name/archive/$version/$_name-$version.tar.gz"
+source="https://github.com/PapirusDevelopmentTeam/${name%-dark}/archive/${version}/${name%-dark}-${version}.tar.gz"
 
 build() {
-	cd $_name-$version
-	make DESTDIR="$PKG" ICON_THEMES="Papirus-Dark" install
+	# shellcheck disable=SC2164
+    cd "${name%-dark}-${version}"
+    make DESTDIR="${PKG}" ICON_THEMES="Papirus-Dark" install
 }
