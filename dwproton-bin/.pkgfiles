@@ -1,14 +1,14 @@
-dwproton-bin-10.0.21-1
+dwproton-bin-10.0.22-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/steam/
 drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/
 drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/
--rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/LICENSE
--rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/LICENSE.OFL
--rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/PATENTS.AV1
+-rw-rw-r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/LICENSE
+-rw-rw-r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/LICENSE.OFL
+-rw-rw-r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/PATENTS.AV1
 -rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/compatibilitytool.vdf
--rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/filelock.py
+-rw-rw-r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/filelock.py
 drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/
 drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/bin-wow64/
 -rwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/bin-wow64/msidb
@@ -2764,7 +2764,7 @@ drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/shar
 drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/default_pfx/drive_c/windows/
 drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/default_pfx/drive_c/windows/Fonts/
 drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/default_pfx/drive_c/windows/Installer/
--rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/default_pfx/drive_c/windows/Installer/e144.msi
+-rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/default_pfx/drive_c/windows/Installer/4ae8.msi
 drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/default_pfx/drive_c/windows/Microsoft.NET/
 drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/default_pfx/drive_c/windows/Microsoft.NET/DirectX for Managed Code/
 drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/default_pfx/drive_c/windows/Microsoft.NET/Framework/
@@ -4731,7 +4731,7 @@ drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/shar
 -rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/media/blank.mkv
 -rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/media/blank.ptna
 drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/openxr/
--rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/openxr/wineopenxr64.json
+-rw-rw-r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/openxr/wineopenxr64.json
 drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/wine/
 drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/wine/fonts/
 -rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/wine/fonts/arial.ttf
@@ -8347,8 +8347,8 @@ drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/files/shar
 -rw-rw-rw- root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/xalia/xalia.exe
 -rw-rw-rw- root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/xalia/xalia.exe.config
 -rw-rw-rw- root/root    usr/share/steam/compatibilitytools.d/dwproton/files/share/xalia/xalia.pdb
--rwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/proton
--rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/proton_3.7_tracked_files
+-rwxrwxr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/proton
+-rw-rw-r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/proton_3.7_tracked_files
 drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/protonfixes/
 -rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/protonfixes/__init__.py
 -rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/protonfixes/checks.py
@@ -8908,7 +8908,7 @@ drwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/protonfixe
 -rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/protonfixes/verbs/xliveless.verb
 -rwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/protonfixes/winetricks
 -rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/protonfixes/zenity.py
--rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/toolmanifest.vdf
--rwxr-xr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/user_settings.sample.py
--rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/utilities.py
+-rw-rw-r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/toolmanifest.vdf
+-rwxrwxr-x root/root    usr/share/steam/compatibilitytools.d/dwproton/user_settings.sample.py
+-rw-rw-r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/utilities.py
 -rw-r--r-- root/root    usr/share/steam/compatibilitytools.d/dwproton/version
