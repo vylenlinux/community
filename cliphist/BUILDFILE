@@ -1,0 +1,24 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
+description="Wayland clipboard manager"
+maintainer="Vylen Linux Team"
+homepage="https://github.com/sentriz/cliphist"
+
+name=cliphist
+version=0.7.0
+release=1
+source="https://github.com/sentriz/${name}/archive/v${version}/${name}-${version}.tar.gz"
+
+build() {
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    export CGO_CFLAGS="${CFLAGS}"
+    export CGO_CPPFLAGS="${CPPFLAGS}"
+    export CGO_CXXFLAGS="${CXXFLAGS}"
+    export GOFLAGS="-buildmode=pie -trimpath -mod=readonly -modcacherw"
+
+    go build -ldflags "-linkmode external -extldflags '${LDFLAGS}'" -o "${name}"
+    install -Dm0755 "${name}" -t "${PKG}/usr/bin/"
+}
