@@ -1,0 +1,28 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
+description="Custom fork of Quickshell powering Noctalia Shell"
+maintainer="Vylen Linux Team"
+homepage="https://github.com/noctalia-dev/noctalia-qs"
+
+name=noctalia-qs
+version=0.0.9
+release=1
+source="${name}-${version}.tar.gz::https://github.com/noctalia-dev/noctalia-qs/archive/v${version}.tar.gz"
+
+build() {
+    cmake -S "${name}-${version}" -B build \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_INSTALL_LIBDIR=lib \
+        -DCMAKE_INSTALL_LIBEXECDIR=lib \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
+        -DCMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
+        -DINSTALL_QML_PREFIX=lib/qt6/qml \
+        -DDISTRIBUTOR="Vylen Linux" \
+        -DSERVICE_GREETD=OFF \
+        -Wno-dev
+
+    cmake --build build
+    DESTDIR="${PKG}" cmake --install build
+}

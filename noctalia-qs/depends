@@ -1,0 +1,5 @@
+pipewire
+polkit
+qt6-wayland
+cli11
+jemalloc
