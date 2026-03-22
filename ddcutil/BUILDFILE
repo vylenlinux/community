@@ -1,0 +1,24 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
+description="Program for querying and changing monitor settings, such as brightness and color levels"
+maintainer="Vylen Linux Team"
+homepage="https://www.ddcutil.com"
+
+name=ddcutil
+version=2.2.6
+release=1
+source="https://github.com/rockowitz/ddcutil/archive/v${version}/${name}-${version}.tar.gz"
+
+build() {
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+    ./autogen.sh
+
+    ./configure \
+        --prefix=/usr \
+        --enable-drm
+
+    make
+    make DESTDIR="${PKG}" install
+}
