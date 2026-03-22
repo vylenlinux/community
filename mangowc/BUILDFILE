@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
+description="Lightweight, high-performance Wayland compositor built on dwl"
+maintainer="Vylen Linux Team"
+homepage=""
+
+name=mangowc
+version=0.21.7
+release=1
+source="${name}-${version}.tar.gz::https://github.com/DreamMaoMao/mangowc/archive/refs/tags/${version}.tar.gz"
+
+build() {
+    vylen-meson "${name}-${version}" build
+    meson compile -C build
+    DESTDIR="${PKG}" meson install --no-rebuild -C build
+}

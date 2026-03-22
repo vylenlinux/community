@@ -1,0 +1,13 @@
+mangowc-0.12.7-1
+drwxr-xr-x root/root    etc/
+drwxr-xr-x root/root    etc/mango/
+-rw-r--r-- root/root    etc/mango/config.conf
+drwxr-xr-x root/root    usr/
+drwxr-xr-x root/root    usr/bin/
+-rwxr-xr-x root/root    usr/bin/mango
+-rwxr-xr-x root/root    usr/bin/mmsg
+drwxr-xr-x root/root    usr/share/
+drwxr-xr-x root/root    usr/share/wayland-sessions/
+-rw-r--r-- root/root    usr/share/wayland-sessions/mango.desktop
+drwxr-xr-x root/root    usr/share/xdg-desktop-portal/
+-rw-r--r-- root/root    usr/share/xdg-desktop-portal/mango-portals.conf
