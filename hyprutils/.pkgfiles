@@ -1,4 +1,4 @@
-hyprutils-0.11.0-1
+hyprutils-0.11.1-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/include/
 drwxr-xr-x root/root    usr/include/hyprutils/
@@ -37,6 +37,7 @@ drwxr-xr-x root/root    usr/include/hyprutils/signal/
 -rw-r--r-- root/root    usr/include/hyprutils/signal/Signal.hpp
 drwxr-xr-x root/root    usr/include/hyprutils/string/
 -rw-r--r-- root/root    usr/include/hyprutils/string/ConstVarList.hpp
+-rw-r--r-- root/root    usr/include/hyprutils/string/Numeric.hpp
 -rw-r--r-- root/root    usr/include/hyprutils/string/String.hpp
 -rw-r--r-- root/root    usr/include/hyprutils/string/VarList.hpp
 -rw-r--r-- root/root    usr/include/hyprutils/string/VarList2.hpp
@@ -44,7 +45,7 @@ drwxr-xr-x root/root    usr/include/hyprutils/utils/
 -rw-r--r-- root/root    usr/include/hyprutils/utils/ScopeGuard.hpp
 drwxr-xr-x root/root    usr/lib/
 lrwxrwxrwx root/root    usr/lib/libhyprutils.so -> libhyprutils.so.10
--rwxr-xr-x root/root    usr/lib/libhyprutils.so.0.11.0
-lrwxrwxrwx root/root    usr/lib/libhyprutils.so.10 -> libhyprutils.so.0.11.0
+-rwxr-xr-x root/root    usr/lib/libhyprutils.so.0.11.1
+lrwxrwxrwx root/root    usr/lib/libhyprutils.so.10 -> libhyprutils.so.0.11.1
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/hyprutils.pc
