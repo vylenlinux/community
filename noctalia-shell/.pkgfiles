@@ -1,4 +1,4 @@
-noctalia-shell-4.7.0-1
+noctalia-shell-4.7.1-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/xdg/
 drwxr-xr-x root/root    etc/xdg/quickshell/
@@ -107,6 +107,7 @@ drwxr-xr-x root/root    etc/xdg/quickshell/noctalia-shell/Assets/Translations/
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Translations/sv.json
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Translations/tr.json
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Translations/uk-UA.json
+-rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Translations/vi.json
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Translations/zh-CN.json
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Translations/zh-TW.json
 drwxr-xr-x root/root    etc/xdg/quickshell/noctalia-shell/Assets/Wallpaper/
