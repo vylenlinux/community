@@ -20,4 +20,7 @@ build() {
 
     meson compile -C build
     DESTDIR="${PKG}" meson install --no-rebuild -C build
+
+    # fix tlp conflict
+    rm -rf "${PKG}/usr/share/dbus-1"
 }
