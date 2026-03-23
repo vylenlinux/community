@@ -1,3 +1,6 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Protocol Buffers implementation in C"
 homepage="https://github.com/protobuf-c/protobuf-c"
 maintainer="Vylen Linux Team"
@@ -5,13 +8,19 @@ maintainer="Vylen Linux Team"
 name=protobuf-c
 version=1.5.2
 release=1
-source="https://github.com/protobuf-c/protobuf-c/releases/download/v$version/$name-$version.tar.gz"
 
+source="https://github.com/${name}/${name}/releases/download/v${version}/${name}-${version}.tar.gz
+    https://github.com/strophy/protobuf-c/commit/d39f001b4578966600de0aaf7fc665eec6e057e5.diff"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+    patch -Np1 -i "${SRC}/d39f001b4578966600de0aaf7fc665eec6e057e5.diff"
 
-	./configure --prefix=/usr --disable-static
-	make
-	make DESTDIR=$PKG install
+    ./configure \
+        --prefix=/usr \
+        --disable-static
+
+    make
+    make DESTDIR="${PKG}" install
 }
