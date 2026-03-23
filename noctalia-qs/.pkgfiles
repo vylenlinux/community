@@ -51,9 +51,6 @@ drwxr-xr-x root/root    usr/lib/qt6/qml/Quickshell/Niri/_Ipc/
 -rw-r--r-- root/root    usr/lib/qt6/qml/Quickshell/Niri/qmldir
 -rw-r--r-- root/root    usr/lib/qt6/qml/Quickshell/Niri/quickshell-niri.qmltypes
 drwxr-xr-x root/root    usr/lib/qt6/qml/Quickshell/Services/
-drwxr-xr-x root/root    usr/lib/qt6/qml/Quickshell/Services/Greetd/
--rw-r--r-- root/root    usr/lib/qt6/qml/Quickshell/Services/Greetd/qmldir
--rw-r--r-- root/root    usr/lib/qt6/qml/Quickshell/Services/Greetd/quickshell-service-greetd.qmltypes
 drwxr-xr-x root/root    usr/lib/qt6/qml/Quickshell/Services/Mpris/
 -rw-r--r-- root/root    usr/lib/qt6/qml/Quickshell/Services/Mpris/qmldir
 -rw-r--r-- root/root    usr/lib/qt6/qml/Quickshell/Services/Mpris/quickshell-service-mpris.qmltypes
