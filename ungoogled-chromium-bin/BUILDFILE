@@ -1,23 +1,24 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Google Chromium, sans integration with Google (portable ungoogled binary version)"
 homepage="https://github.com/ungoogled-software/ungoogled-chromium"
 maintainer="Vylen Linux Team"
 
 name=ungoogled-chromium-bin
-version=146.0.7680.80
-build=1
-arch="x86_64"
+version=146.0.7680.153
 release=1
-source="$name-$version-${build}.tar.zst::https://mirror1.artixlinux.org/repos/galaxy/os/${arch}/${name%-bin}-${version}-${build}-${arch}.pkg.tar.zst
-	chromium.desktop"
+
+source="${name}-${version}-${release}.tar.zst::https://mirror1.artixlinux.org/repos/galaxy/os/x86_64/${name%-bin}-${version}-${release}-x86_64.pkg.tar.zst
+    chromium.desktop"
 
 build() {
-	cp -R "${SRC}/usr/" "${PKG}/usr"
+    cp -R "${SRC}/usr/" "${PKG}/usr"
 
-	chown root "$PKG/usr/lib/chromium/chrome-sandbox"
-	chmod 4755 "$PKG/usr/lib/chromium/chrome-sandbox"
+    chown root "${PKG}/usr/lib/chromium/chrome-sandbox"
+    chmod 4755 "${PKG}/usr/lib/chromium/chrome-sandbox"
 
-	# desktop
-	install -d $PKG/usr/share/applications
-	install -m644 $SRC/chromium.desktop $PKG/usr/share/applications/chromium
+    # desktop
+    install -d "${PKG}/usr/share/applications"
+    install -m644 "${SRC}/chromium.desktop" "${PKG}/usr/share/applications/chromium"
 }
-
