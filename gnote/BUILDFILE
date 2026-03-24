@@ -1,14 +1,17 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="A note taking application"
 homepage="https://wiki.gnome.org/Apps/Gnote"
 maintainer="Vylen Linux Team"
 
 name=gnote
-version=49.3
+version=50.0
 release=1
-source="https://gitlab.gnome.org/GNOME/gnote/-/archive/$version/$name-$version.tar.gz"
+source="https://gitlab.gnome.org/GNOME/${name}/-/archive/${version}/${name}-${version}.tar.gz"
 
 build() {
-	vylen-meson $name-$version build
-	meson compile -C build
-	meson install --no-rebuild -C build --destdir $PKG
+    vylen-meson "${name}-${version}" build
+    meson compile -C build
+    meson install --no-rebuild -C build --destdir "${PKG}"
 }
