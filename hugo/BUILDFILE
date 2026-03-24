@@ -1,19 +1,25 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Fast and Flexible Static Site Generator in Go"
 homepage="https://gohugo.io/"
 maintainer="Vylen Linux Team"
 
 name=hugo
-version=0.158.0
+version=0.159.0
 release=1
-source="https://github.com/gohugoio/$name/archive/v$version/$name-$version.tar.gz"
+source="https://github.com/gohugoio/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
-	export CGO_CPPFLAGS="${CPPFLAGS}"
-	export CGO_CFLAGS="${CFLAGS}"
-	export CGO_CXXFLAGS="${CXXFLAGS}"
-	export CGO_LDFLAGS="${LDFLAGS}"
-	export GOFLAGS="-buildmode=pie -trimpath -mod=readonly -modcacherw"
-	go build -tags extended,withdeploy
-	install -Dm755 $name $PKG/usr/bin/$name
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    export CGO_CPPFLAGS="${CPPFLAGS}"
+    export CGO_CFLAGS="${CFLAGS}"
+    export CGO_CXXFLAGS="${CXXFLAGS}"
+    export CGO_LDFLAGS="${LDFLAGS}"
+    export GOFLAGS="-buildmode=pie -trimpath -mod=readonly -modcacherw"
+
+    go build -tags extended,withdeploy
+    install -Dm755 "${name}" "${PKG}/usr/bin/${name}"
 }
