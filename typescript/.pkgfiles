@@ -1,4 +1,4 @@
-typescript-5.9.3-1
+typescript-6.0.2-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 lrwxrwxrwx root/root    usr/bin/tsc -> ../lib/node_modules/typescript/bin/tsc
@@ -112,20 +112,28 @@ drwxr-xr-x root/root    usr/lib/node_modules/typescript/lib/ko/
 -rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.es2024.regexp.d.ts
 -rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.es2024.sharedmemory.d.ts
 -rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.es2024.string.d.ts
+-rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.es2025.collection.d.ts
+-rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.es2025.d.ts
+-rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.es2025.float16.d.ts
+-rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.es2025.full.d.ts
+-rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.es2025.intl.d.ts
+-rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.es2025.iterator.d.ts
+-rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.es2025.promise.d.ts
+-rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.es2025.regexp.d.ts
 -rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.es5.d.ts
 -rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.es6.d.ts
 -rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.esnext.array.d.ts
 -rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.esnext.collection.d.ts
 -rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.esnext.d.ts
+-rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.esnext.date.d.ts
 -rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.esnext.decorators.d.ts
 -rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.esnext.disposable.d.ts
 -rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.esnext.error.d.ts
--rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.esnext.float16.d.ts
 -rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.esnext.full.d.ts
 -rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.esnext.intl.d.ts
--rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.esnext.iterator.d.ts
--rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.esnext.promise.d.ts
 -rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.esnext.sharedmemory.d.ts
+-rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.esnext.temporal.d.ts
+-rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.esnext.typedarrays.d.ts
 -rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.scripthost.d.ts
 -rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.webworker.asynciterable.d.ts
 -rw-r--r-- root/root    usr/lib/node_modules/typescript/lib/lib.webworker.d.ts
