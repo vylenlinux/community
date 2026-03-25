@@ -1,37 +1,43 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Lightweight HTTP server and IMAP/POP3 proxy server"
 homepage="http://nginx.org/"
 maintainer="Vylen Linux Team"
 
 name=nginx
-version=1.29.6
+version=1.29.7
 release=1
 
-source="http://nginx.org/download/$name-$version.tar.gz
+source="http://nginx.org/download/${name}-${version}.tar.gz
     nginx.conf
     run.nginx"
 
 build() {
-	cd $name-$version
-	./configure --prefix=/etc/nginx \
-		--sbin-path=/usr/sbin/nginx \
-		--conf-path=/etc/nginx/nginx.conf \
-		--error-log-path=/var/log/nginx/error.log \
-		--http-log-path=/var/log/nginx/access.log \
-		--pid-path=/run/nginx.pid \
-		--lock-path=/var/lock/nginx.pid \
-		--with-http_ssl_module \
-		--with-pcre \
-		--user=nginx \
-		--group=nginx
-	make
-	make DESTDIR=$PKG install
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	install -d -m 0755 $PKG/var/log/nginx
-	install -D -m 0644 -o root -g root $SRC/nginx.conf $PKG/etc/nginx/nginx.conf
+    ./configure --prefix=/etc/nginx \
+        --sbin-path=/usr/sbin/nginx \
+        --conf-path=/etc/nginx/nginx.conf \
+        --error-log-path=/var/log/nginx/error.log \
+        --http-log-path=/var/log/nginx/access.log \
+        --pid-path=/run/nginx.pid \
+        --lock-path=/var/lock/nginx.pid \
+        --with-http_ssl_module \
+        --with-pcre \
+        --user=nginx \
+        --group=nginx
 
-	install -Dm755 -o root -g root $SRC/run.nginx $PKG/etc/sv/nginx/run
-	ln -s /run/runit/supervise.nginx $PKG/etc/sv/nginx/supervise
+    make
+    make DESTDIR="${PKG}" install
 
-	find $PKG/etc/nginx -name "*.default" -delete
-	rm -fr $PKG/run 
+    install -d -m 0755 "${PKG}/var/log/nginx"
+    install -D -m 0644 -o root -g root "${SRC}/nginx.conf" "${PKG}/etc/nginx/nginx.conf"
+
+    install -Dm755 -o root -g root "${SRC}/run.nginx" "${PKG}/etc/sv/nginx/run"
+    ln -s /run/runit/supervise.nginx "${PKG}/etc/sv/nginx/supervise"
+
+    find "${PKG}/etc/nginx" -name "*.default" -delete
+    rm -fr "${PKG}/run"
 }
