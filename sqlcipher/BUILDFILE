@@ -1,3 +1,6 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="SQLite extension that provides transparent 256-bit AES encryption of database files"
 homepage="https://www.zetetic.net/sqlcipher/"
 maintainer="Vylen Linux Team"
@@ -5,49 +8,52 @@ maintainer="Vylen Linux Team"
 name=sqlcipher
 version=4.14.0
 release=1
-source="https://www.zetetic.net/downloads/sqlcipher/verify/$version/$name-$version.zip"
+source="https://www.zetetic.net/downloads/${name}/verify/${version}/${name}-${version}.zip"
 
 build() {
-	cd sqlcipher-$version
+    # shellcheck disable=SC2164
+    cd "sqlcipher-${version}"
 
-	export CPPFLAGS="$CPPFLAGS \
-	    -DSQLITE_ENABLE_COLUMN_METADATA=1 \
-	    -DSQLITE_ENABLE_UNLOCK_NOTIFY \
-	    -DSQLITE_ENABLE_DBSTAT_VTAB=1 \
-	    -DSQLITE_ENABLE_FTS3_TOKENIZER=1 \
-	    -DSQLITE_SECURE_DELETE \
-	    -DSQLITE_ENABLE_STMTVTAB \
-	    -DSQLITE_MAX_VARIABLE_NUMBER=250000 \
-	    -DSQLITE_MAX_EXPR_DEPTH=10000 \
-	    -DSQLITE_ENABLE_MATH_FUNCTIONS"
+    export CPPFLAGS="${CPPFLAGS} \
+        -DSQLITE_ENABLE_COLUMN_METADATA=1 \
+        -DSQLITE_ENABLE_UNLOCK_NOTIFY \
+        -DSQLITE_ENABLE_DBSTAT_VTAB=1 \
+        -DSQLITE_ENABLE_FTS3_TOKENIZER=1 \
+        -DSQLITE_SECURE_DELETE \
+        -DSQLITE_ENABLE_STMTVTAB \
+        -DSQLITE_MAX_VARIABLE_NUMBER=250000 \
+        -DSQLITE_MAX_EXPR_DEPTH=10000 \
+        -DSQLITE_ENABLE_MATH_FUNCTIONS"
 
-	export CFLAGS="$CFLAGS \
-	    -DSQLITE_HAS_CODEC \
-	    -DSQLITE_TEMP_STORE=2 \
-	    -DSQLCIPHER_TEST \
-	    -DSQLITE_EXTRA_INIT=sqlcipher_extra_init \
-	    -DSQLITE_EXTRA_SHUTDOWN=sqlcipher_extra_shutdown"
-	export LDFLAGS="$LDFLAGS -lcrypto -Wl,-soname,libsqlcipher.so.0"
+    export CFLAGS="${CFLAGS} \
+        -DSQLITE_HAS_CODEC \
+        -DSQLITE_TEMP_STORE=2 \
+        -DSQLCIPHER_TEST \
+        -DSQLITE_EXTRA_INIT=sqlcipher_extra_init \
+        -DSQLITE_EXTRA_SHUTDOWN=sqlcipher_extra_shutdown"
 
+    export LDFLAGS="${LDFLAGS} -lcrypto -Wl,-soname,libsqlcipher.so.0"
 
-	./configure --prefix=/usr \
-		--disable-static \
-		--enable-fts3 \
-		--enable-fts4 \
-		--enable-fts5 \
-		--enable-rtree \
-		--enable-json
-	make
-	make DESTDIR=$PKG install
+    ./configure --prefix=/usr \
+        --disable-static \
+        --enable-fts3 \
+        --enable-fts4 \
+        --enable-fts5 \
+        --enable-rtree \
+        --enable-json
 
-	rm -fr $PKG/usr/lib/tcl*
+    make
+    make DESTDIR="${PKG}" install
 
-	# fix sqlite conflict
-	rm -f   $PKG/usr/include/sqlite3ext.h \
-		$PKG/usr/include/sqlite3.h \
-		$PKG/usr/share/man/man1/sqlite3.1.gz \
-		$PKG/usr/bin/sqlite3 \
-		$PKG/usr/lib/libsqlite3.so \
-		$PKG/usr/lib/pkgconfig/sqlite3.pc \
-		$PKG/usr/lib/libsqlite3.so.0
+    rm -fr "${PKG}/usr/lib"/tcl*
+
+    # fix sqlite conflict
+    # shellcheck disable=SC2115
+    rm -rf "${PKG}/usr/bin" \
+        "${PKG}/usr/include" \
+        "${PKG}/usr/share" \
+        "${PKG}/usr/lib/pkgconfig"
+
+    rm -f "${PKG}/usr/lib/libsqlite3.so" \
+        "${PKG}/usr/lib/libsqlite3.so.0"
 }
