@@ -1,18 +1,23 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Perl extension for using OpenSSL"
 homepage="https://metacpan.org/release/Net-SSLeay"
 maintainer="Vylen Linux Team"
 
 name=perl-net-ssleay
-version=1.94
+version=1.96
 release=1
-source="$name-$version.tar.gz::https://cpan.metacpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-$version.tar.gz"
+source="${name}-${version}.tar.gz::https://cpan.metacpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-${version}.tar.gz"
 
 build() {
-	cd Net-SSLeay-$version
-	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
-	make
-	make DESTDIR=$PKG install
+    # shellcheck disable=SC2164
+    cd "Net-SSLeay-${version}"
+    PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
-	# creates file collision among perl modules
-	find $PKG -name perllocal.pod -delete
+    make
+    make DESTDIR="${PKG}" install
+
+    # creates file collision among perl modules
+    find "${PKG}" -name perllocal.pod -delete
 }
