@@ -1,0 +1,21 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
+description="A material you color generation tool"
+maintainer="Vylen Linux Team"
+homepage="https://github.com/InioX/matugen"
+
+name=matugen
+version=4.1.0
+release=1
+source="https://github.com/InioX/${name}/archive/v${version}/${name}-${version}.tar.gz"
+
+build() {
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    cargo fetch --locked --target x86_64-unknown-linux-gnu
+    cargo build --frozen --release --all-features
+
+    install -Dm0755 "target/release/${name}" -t "${PKG}/usr/bin/"
+}
