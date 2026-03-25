@@ -1,21 +1,23 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Recursively copy Perl datatypes"
 homepage="https://github.com/garu/Clone"
 maintainer="Vylen Linux Team"
 
 name=perl-clone
-version=0.48
+version=0.49
 release=1
-source="$name-$version.tar.gz::https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/Clone-$version.tar.gz"
-bsdtar() {
-tar $@
-    }
+source="${name}-${version}.tar.gz::https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/Clone-${version}.tar.gz"
 
 build() {
-        cd Clone-$version
-	PERL_MM_USE_DEFAULT=1	perl -I. Makefile.PL INSTALLDIRS=vendor
-        make
-        make DESTDIR=$PKG install
-	find "$PKG" -name '.packlist' -or -name '*.pod' | xargs rm
+    # shellcheck disable=SC2164
+    cd "Clone-${version}"
+    PERL_MM_USE_DEFAULT=1 perl -I. Makefile.PL INSTALLDIRS=vendor
 
+    make
+    make DESTDIR="${PKG}" install
+
+    # shellcheck disable=SC2038
+    find "${PKG}" -name '.packlist' -or -name '*.pod' | xargs rm
 }
-
