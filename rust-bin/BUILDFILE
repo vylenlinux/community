@@ -1,3 +1,6 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Binary precompiled packages for Rust"
 homepage="https://www.rust-lang.org"
 maintainer="Vylen Linux Team"
@@ -5,25 +8,27 @@ maintainer="Vylen Linux Team"
 name=rust-bin
 version=1.94.0
 release=1
+source="https://static.rust-lang.org/dist/rust-${version}-x86_64-unknown-linux-gnu.tar.gz"
+
 NO_STRIP="yes"
-source="https://static.rust-lang.org/dist/rust-$version-x86_64-unknown-linux-gnu.tar.gz"
 
 build() {
-	cd rust-$version-x86_64-unknown-linux-gnu
-	./install.sh --prefix=/usr --destdir=$PKG --disable-ldconfig
+    # shellcheck disable=SC2164
+    cd "rust-${version}-x86_64-unknown-linux-gnu"
+    ./install.sh --prefix=/usr --destdir="${PKG}" --disable-ldconfig
 
-	# move libexec to lib, remove libexec dir
-	mv $PKG/usr/libexec/* $PKG/usr/lib
-	rmdir $PKG/usr/libexec
+    # move libexec to lib, remove libexec dir
+    mv "${PKG}/usr/libexec"/* "${PKG}/usr/lib"
+    rmdir "${PKG}/usr/libexec"
 
-	# Remove doc
-	rm -rf $PKG/usr/share/doc
+    # Remove doc
+    rm -rf "${PKG}/usr/share/doc"
 
-	# Completions
-	emerald isinstalled bash-completion || rm -rf $PKG/usr/etc/bash_completion.d
-	emerald isinstalled zsh || rm -rf $PKG/usr/share/zsh
+    # Completions
+    emerald isinstalled bash-completion || rm -rf "${PKG}/usr/etc/bash_completion.d"
+    emerald isinstalled zsh || rm -rf "${PKG}/usr/share/zsh"
 
-	# Clean files
-	rm -f $PKG/usr/lib/rustlib/install.log
-	rm -f $PKG/usr/lib/rustlib/uninstall.sh
+    # Clean files
+    rm -f "${PKG}/usr/lib/rustlib/install.log"
+    rm -f "${PKG}/usr/lib/rustlib/uninstall.sh"
 }
