@@ -1,4 +1,4 @@
-libreoffice-bin-26.2.1-1
+libreoffice-bin-26.2.2-1
 drwxr-xr-x root/root    opt/
 drwxr-xr-x root/root    opt/libreoffice26.2/
 drwxr-xr-x root/root    opt/libreoffice26.2/help/
@@ -7560,6 +7560,7 @@ drwxr-xr-x root/root    opt/libreoffice26.2/share/Scripts/python/LibreLogo/
 -rw-r--r-- root/root    opt/libreoffice26.2/share/Scripts/python/LibreLogo/LibreLogo_pl.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/Scripts/python/LibreLogo/LibreLogo_pt.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/Scripts/python/LibreLogo/LibreLogo_pt_BR.properties
+-rw-r--r-- root/root    opt/libreoffice26.2/share/Scripts/python/LibreLogo/LibreLogo_qtz.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/Scripts/python/LibreLogo/LibreLogo_ro.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/Scripts/python/LibreLogo/LibreLogo_ru.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/Scripts/python/LibreLogo/LibreLogo_rw.properties
@@ -10098,6 +10099,7 @@ drwxr-xr-x root/root    opt/libreoffice26.2/share/extensions/dict-en/dialog/
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/dict-en/dialog/en_pl.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/dict-en/dialog/en_pt.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/dict-en/dialog/en_pt_BR.properties
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/dict-en/dialog/en_qtz.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/dict-en/dialog/en_ro.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/dict-en/dialog/en_ru.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/dict-en/dialog/en_rw.properties
@@ -10324,6 +10326,7 @@ drwxr-xr-x root/root    opt/libreoffice26.2/share/extensions/nlpsolver/META-INF/
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/description-pl.txt
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/description-pt-BR.txt
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/description-pt.txt
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/description-qtz.txt
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/description-ro.txt
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/description-ru.txt
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/description-rw.txt
@@ -11385,6 +11388,18 @@ drwxr-xr-x root/root    opt/libreoffice26.2/share/extensions/nlpsolver/help/pt/h
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/help/pt/help.jar
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/help/pt/help.key_
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/help/pt/help.tree
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/help/qtz-xhp.done
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/help/qtz.done
+drwxr-xr-x root/root    opt/libreoffice26.2/share/extensions/nlpsolver/help/qtz/
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/help/qtz/help.db_
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/help/qtz/help.ht_
+drwxr-xr-x root/root    opt/libreoffice26.2/share/extensions/nlpsolver/help/qtz/help.idxl/
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/help/qtz/help.idxl/_0.cfs
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/help/qtz/help.idxl/segments.gen
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/help/qtz/help.idxl/segments_3
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/help/qtz/help.jar
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/help/qtz/help.key_
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/help/qtz/help.tree
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/help/ro-xhp.done
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/help/ro.done
 drwxr-xr-x root/root    opt/libreoffice26.2/share/extensions/nlpsolver/help/ro/
@@ -11928,6 +11943,7 @@ drwxr-xr-x root/root    opt/libreoffice26.2/share/extensions/nlpsolver/locale/
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/locale/NLPSolverCommon_pl.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/locale/NLPSolverCommon_pt.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/locale/NLPSolverCommon_pt_BR.properties
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/locale/NLPSolverCommon_qtz.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/locale/NLPSolverCommon_ro.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/locale/NLPSolverCommon_ru.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/locale/NLPSolverCommon_rw.properties
@@ -12052,6 +12068,7 @@ drwxr-xr-x root/root    opt/libreoffice26.2/share/extensions/nlpsolver/locale/
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/locale/NLPSolverStatusDialog_pl.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/locale/NLPSolverStatusDialog_pt.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/locale/NLPSolverStatusDialog_pt_BR.properties
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/locale/NLPSolverStatusDialog_qtz.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/locale/NLPSolverStatusDialog_ro.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/locale/NLPSolverStatusDialog_ru.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/nlpsolver/locale/NLPSolverStatusDialog_rw.properties
@@ -12197,6 +12214,7 @@ drwxr-xr-x root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/Wiki
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/description-pl.txt
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/description-pt-BR.txt
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/description-pt.txt
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/description-qtz.txt
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/description-ro.txt
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/description-ru.txt
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/description-rw.txt
@@ -13268,6 +13286,18 @@ drwxr-xr-x root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/help
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/help/pt/help.jar
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/help/pt/help.key_
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/help/pt/help.tree
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/help/qtz-xhp.done
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/help/qtz.done
+drwxr-xr-x root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/help/qtz/
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/help/qtz/help.db_
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/help/qtz/help.ht_
+drwxr-xr-x root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/help/qtz/help.idxl/
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/help/qtz/help.idxl/_0.cfs
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/help/qtz/help.idxl/segments.gen
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/help/qtz/help.idxl/segments_3
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/help/qtz/help.jar
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/help/qtz/help.key_
+-rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/help/qtz/help.tree
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/help/ro-xhp.done
 -rw-r--r-- root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/help/ro.done
 drwxr-xr-x root/root    opt/libreoffice26.2/share/extensions/wiki-publisher/help/ro/
@@ -14688,6 +14718,7 @@ drwxr-xr-x root/root    opt/libreoffice26.2/share/wizards/
 -rw-r--r-- root/root    opt/libreoffice26.2/share/wizards/resources_pl.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/wizards/resources_pt.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/wizards/resources_pt_BR.properties
+-rw-r--r-- root/root    opt/libreoffice26.2/share/wizards/resources_qtz.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/wizards/resources_ro.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/wizards/resources_ru.properties
 -rw-r--r-- root/root    opt/libreoffice26.2/share/wizards/resources_rw.properties
