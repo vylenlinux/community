@@ -1,25 +1,33 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Anonymizing overlay network"
 homepage="https://www.torproject.org"
 maintainer="Vylen Linux Team"
 
 name=tor
-version=0.4.9.5
+version=0.4.9.6
 release=1
 
-source="https://www.torproject.org/dist/$name-$version.tar.gz
-	run.tor
-	torrc"
+source="https://www.torproject.org/dist/${name}-${version}.tar.gz
+    run.tor
+    torrc"
 
 build() {
-	cd $name-$version
-	./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	make
-	make DESTDIR=$PKG install
+    ./configure \
+        --prefix=/usr \
+        --sysconfdir=/etc \
+        --localstatedir=/var
 
-	install -Dm0644 $SRC/torrc $PKG/etc/tor/torrc
-	mv $PKG/etc/tor/torrc.sample $PKG/etc/tor/torrc-dist
+    make
+    make DESTDIR="${PKG}" install
 
-	install -Dm755 $SRC/run.$name $PKG/etc/sv/$name/run
-	ln -s /run/runit/supervice.$name $PKG/etc/sv/$name/supervise
+    install -Dm0644 "${SRC}/torrc" "${PKG}/etc/tor/torrc"
+    mv "${PKG}/etc/tor/torrc.sample" "${PKG}/etc/tor/torrc-dist"
+
+    install -Dm755 "${SRC}/run.${name}" "${PKG}/etc/sv/${name}/run"
+    ln -s "/run/runit/supervice.${name}" "${PKG}/etc/sv/${name}/supervise"
 }
