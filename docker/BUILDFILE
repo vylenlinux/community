@@ -1,60 +1,64 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="An open platform for distributed applications for developers and sysadmins"
 homepage="https://www.docker.com/"
 maintainer="Vylen Linux Team"
 
 name=docker
-version=29.3.0
+version=29.3.1
 release=1
 
 source="https://github.com/moby/moby/archive/docker-v${version}/moby-${version}.tar.gz
-	https://github.com/docker/cli/archive/v${version}/cli-${version}.tar.gz
-	run.$name
-	$name.conf"
+    https://github.com/docker/cli/archive/v${version}/cli-${version}.tar.gz
+    run.${name}
+    ${name}.conf"
 
 build() {
-	export GO111MODULE=auto
-	export GOPATH=$SRC
-	export DOCKER_GITCOMMIT=fbf3ed2
-	export DOCKER_BUILDTAGS='seccomp'
-	export DISABLE_WARN_OUTSIDE_CONTAINER=1
-	export CGO_CFLAGS="${CFLAGS}"
-	export CGO_CPPFLAGS="${CPPFLAGS}"
-	export CGO_CXXFLAGS="${CXXFLAGS}"
-	export CGO_LDFLAGS="${LDFLAGS}"
-	export GOFLAGS="-buildmode=pie -trimpath -mod=readonly -modcacherw -ldflags=-linkmode=external"
-  
-	mkdir -p src/github.com/docker
+    export GO111MODULE=auto
+    export GOPATH="${SRC}"
+    export DOCKER_GITCOMMIT=fbf3ed2
+    export DOCKER_BUILDTAGS='seccomp'
+    export DISABLE_WARN_OUTSIDE_CONTAINER=1
+    export CGO_CFLAGS="${CFLAGS}"
+    export CGO_CPPFLAGS="${CPPFLAGS}"
+    export CGO_CXXFLAGS="${CXXFLAGS}"
+    export CGO_LDFLAGS="${LDFLAGS}"
+    export GOFLAGS="-buildmode=pie -trimpath -mod=readonly -modcacherw -ldflags=-linkmode=external"
 
-	cd src/github.com/docker
-	ln -s $SRC/cli-$version cli
-	cd cli
-	make VERSION=$version GITCOMMIT=${DOCKER_GITCOMMIT} dynbinary
+    mkdir -p src/github.com/docker
 
-	cd $SRC/src/github.com/docker
-	ln -s $SRC/moby-$name-v$version docker
-	cd docker
-	VERSION=$version hack/make.sh dynbinary
-    
-	install -D -m 0755 $SRC/cli-$version/build/$name $PKG/usr/bin/$name
-	install -D -m 0755 $SRC/moby-$name-v$version/bundles/dynbinary-daemon/dockerd \
-		$PKG/usr/bin/dockerd
-	install -D -m 0755 $SRC/moby-$name-v$version/bundles/dynbinary-daemon/dockerd \
-		$PKG/usr/bin/dockerd-proxy
-	install -D -m 0644 $SRC/$name.conf $PKG/etc/$name.conf
+    # shellcheck disable=SC2164
+    cd src/github.com/docker
+    ln -s "${SRC}/cli-${version}" cli
 
-	# symlink externally provided tini-static binary
-	ln -sf /sbin/tini "$PKG"/usr/bin/docker-init
+    # shellcheck disable=SC2164
+    cd cli
+    make VERSION="${version}" GITCOMMIT="${DOCKER_GITCOMMIT}" dynbinary
 
-	ln -s containerd $PKG/usr/bin/docker-containerd
-	ln -s containerd-shim $PKG/usr/bin/docker-containerd-shim
-	ln -s ctr $PKG/usr/bin/docker-containerd-ctr
-	ln -s runc $PKG/usr/bin/docker-runc
+    # shellcheck disable=SC2164
+    cd "${SRC}/src/github.com/docker"
+    ln -s "${SRC}/moby-${name}-v${version}" docker
 
-	install -D -m 0755 $SRC/moby-$name-v$version/contrib/check-config.sh \
-		$PKG/usr/share/$name/check-config.sh
-	install -D -m 0644 $SRC/cli-$version/contrib/completion/bash/docker \
-		$PKG/etc/bash_completion.d/docker
+    # shellcheck disable=SC2164
+    cd docker
+    VERSION="${version}" hack/make.sh dynbinary
 
-    install -Dm755 $SRC/run.$name $PKG/etc/sv/$name/run
-	ln -s /run/runit/supervise.$name $PKG/etc/sv/$name/supervise
+    install -D -m 0755 "${SRC}/cli-${version}/build/${name}" "${PKG}/usr/bin/${name}"
+    install -D -m 0755 "${SRC}/moby-${name}-v${version}/bundles/dynbinary-daemon/dockerd" "${PKG}/usr/bin/dockerd"
+    install -D -m 0755 "${SRC}/moby-${name}-v${version}/bundles/dynbinary-daemon/dockerd" "${PKG}/usr/bin/dockerd-proxy"
+    install -D -m 0644 "${SRC}/${name}.conf" "${PKG}/etc/${name}.conf"
+
+    # symlink externally provided tini-static binary
+    ln -sf /sbin/tini "${PKG}/usr/bin/docker-init"
+    ln -s containerd "${PKG}/usr/bin/docker-containerd"
+    ln -s containerd-shim "${PKG}/usr/bin/docker-containerd-shim"
+    ln -s ctr "${PKG}/usr/bin/docker-containerd-ctr"
+    ln -s runc "${PKG}/usr/bin/docker-runc"
+
+    install -D -m 0755 "${SRC}/moby-${name}-v${version}/contrib/check-config.sh" "${PKG}/usr/share/${name}/check-config.sh"
+    install -D -m 0644 "${SRC}/cli-${version}/contrib/completion/bash/docker" "${PKG}/etc/bash_completion.d/docker"
+
+    install -Dm755 "${SRC}/run.${name}" "${PKG}/etc/sv/${name}/run"
+    ln -s "/run/runit/supervise.${name}" "${PKG}/etc/sv/${name}/supervise"
 }
