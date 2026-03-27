@@ -1,5 +1,5 @@
 description="A very light linux rendering backend library"
-homepage="https://github.com/hyprwm/$name"
+homepage="https://github.com/hyprwm/aquamarine"
 maintainer="Vylen Linux Team"
 
 name=aquamarine

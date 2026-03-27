@@ -5,7 +5,7 @@ maintainer="Vylen Linux Team"
 name=eza
 version=0.23.4
 release=1
-source="$name-$version.tar.gz::https://github.com/eza-community/$name/archive/v$version/$name_x86_64-unknown-linux-gnu.tar.gz"
+source="$name-$version.tar.gz::https://github.com/eza-community/$name/archive/v$version/${name}_x86_64-unknown-linux-gnu.tar.gz"
 
 build() {
 	cd $name-$version
