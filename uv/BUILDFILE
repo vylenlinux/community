@@ -22,6 +22,6 @@ build() {
     maturin build --locked --release --target "${tripple}" --strip --compatibility linux -m crates/uv-build/Cargo.toml
 
     _target="target/$(rustc --print host-tuple)/release/uv"
-    install -Dm0755 -t "$PKG/usr/bin/" "${_target}"
-    install -Dm0755 -t "$PKG/usr/bin/" "${_target}x"
+    install -Dm0755 -t "${PKG}/usr/bin/" "${_target}"
+    install -Dm0755 -t "${PKG}/usr/bin/" "${_target}x"
 }
