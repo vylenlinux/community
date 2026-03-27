@@ -6,7 +6,7 @@ homepage="https://signal.org"
 maintainer="Vylen Linux Team"
 
 name=signal-desktop-bin
-version=8.4.0
+version=8.4.1
 release=1
 
 source="https://updates.signal.org/desktop/apt/pool/s/signal-desktop/${name%-*}_${version}_amd64.deb
