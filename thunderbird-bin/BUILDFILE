@@ -6,7 +6,7 @@ homepage="https://www.thunderbird.net/"
 maintainer="Vylen Linux Team"
 
 name=thunderbird-bin
-version=149.0
+version=149.0.1
 release=1
 
 source="${name}-${version}.tar.xz::https://ftp.mozilla.org/pub/thunderbird/releases/${version}/linux-x86_64/en-US/thunderbird-${version}.tar.xz
@@ -23,9 +23,9 @@ build() {
     cp --reflink=auto -ra "${SRC}/thunderbird" "${PKG}/usr/lib/thunderbird"
     ln -s /usr/lib/thunderbird/thunderbird "${PKG}/usr/bin/thunderbird"
 
-	# Disable autoupdate
-	install -d "${PKG}/usr/lib/thunderbird/distribution"
-	install -m644 "${SRC}/policies.json" "${PKG}/usr/lib/thunderbird/distribution/"
+    # Disable autoupdate
+    install -d "${PKG}/usr/lib/thunderbird/distribution"
+    install -m644 "${SRC}/policies.json" "${PKG}/usr/lib/thunderbird/distribution/"
 
     install -m 0755 -d "${PKG}/usr/share/pixmaps"
     ln -s /usr/lib/thunderbird/chrome/icons/default/default32.png "${PKG}/usr/share/pixmaps/thunderbird.png"
