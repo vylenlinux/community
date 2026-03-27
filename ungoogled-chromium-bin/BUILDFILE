@@ -6,7 +6,7 @@ homepage="https://github.com/ungoogled-software/ungoogled-chromium"
 maintainer="Vylen Linux Team"
 
 name=ungoogled-chromium-bin
-version=146.0.7680.153
+version=146.0.7680.164
 release=1
 
 source="${name}-${version}-${release}.tar.zst::https://mirror1.artixlinux.org/repos/galaxy/os/x86_64/${name%-bin}-${version}-${release}-x86_64.pkg.tar.zst
