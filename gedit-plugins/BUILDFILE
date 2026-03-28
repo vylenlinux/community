@@ -1,14 +1,17 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Collection of plugins for the gedit Text Editor"
 homepage="https://wiki.gnome.org/Apps/Gedit/ShippedPlugins"
 maintainer="Vylen Linux Team"
 
 name=gedit-plugins
-version=49.0
+version=50.0
 release=1
-source="https://gitlab.gnome.org/GNOME/gedit-plugins/-/archive/$version/${name}-$version.tar.bz2"
+source="https://gitlab.gnome.org/GNOME/${name}/-/archive/${version}/${name}-${version}.tar.bz2"
 
 build() {
-  vylen-meson $name-$version build
-  meson compile -C build
-  DESTDIR=$PKG meson install --no-rebuild -C build
+    vylen-meson "${name}-${version}" build
+    meson compile -C build
+    DESTDIR="${PKG}" meson install --no-rebuild -C build
 }
