@@ -1,24 +1,28 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="gedit is the GNOME text editor"
 maintainer="Vylen Linux Team"
-# homepagei	: https://wiki.gnome.org/Apps/Gedit
+homepage="https://wiki.gnome.org/Apps/Gedit"
 
 name=gedit
-version=49.0
+version=50.0
 release=1
-libgd_commit="3cccf99234288a6121b3945a25cd4ec3b7445c74"
-source="https://gitlab.gnome.org/World/gedit/gedit/-/archive/$version/$name-$version.tar.gz
-	https://gitlab.gnome.org/GNOME/libgd/-/archive/$libgd_commit/libgd-$libgd_commit.tar.gz"
 
+libgd_commit="3cccf99234288a6121b3945a25cd4ec3b7445c74"
+
+source="https://gitlab.gnome.org/World/${name}/${name}/-/archive/${version}/${name}-${version}.tar.gz
+    https://gitlab.gnome.org/GNOME/libgd/-/archive/${libgd_commit}/libgd-${libgd_commit}.tar.gz"
 
 build() {
-	rm -r $name-$version/subprojects/libgd
-	mv $SRC/libgd-$libgd_commit $name-$version/subprojects/libgd
+    rm -r "${name}-${version}/subprojects/libgd"
+    mv "${SRC}/libgd-${libgd_commit}" "${name}-${version}/subprojects/libgd"
 
-	vylen-meson $name-$version build -Dgtk_doc=false
-	meson compile -C build
-	DESTDIR=$PKG meson install --no-rebuild -C build
+    vylen-meson "${name}-${version}" build -Dgtk_doc=false
+    meson compile -C build
+    DESTDIR="${PKG}" meson install --no-rebuild -C build
 
-	# Exclude library for revdep.
-	install -d $PKG/etc/revdep.d
-	echo "/usr/lib/gedit/plugins/" > $PKG/etc/revdep.d/$name.conf
+    # Exclude library for revdep.
+    install -d "${PKG}/etc/revdep.d"
+    echo "/usr/lib/gedit/plugins/" > "${PKG}/etc/revdep.d/${name}.conf"
 }
