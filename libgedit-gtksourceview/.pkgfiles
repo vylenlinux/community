@@ -1,4 +1,4 @@
-libgedit-gtksourceview-299.6.0-1
+libgedit-gtksourceview-299.7.0-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/include/
 drwxr-xr-x root/root    usr/include/libgedit-gtksourceview-300/
@@ -6,9 +6,6 @@ drwxr-xr-x root/root    usr/include/libgedit-gtksourceview-300/gtksourceview/
 drwxr-xr-x root/root    usr/include/libgedit-gtksourceview-300/gtksourceview/completion-providers/
 drwxr-xr-x root/root    usr/include/libgedit-gtksourceview-300/gtksourceview/completion-providers/words/
 -rw-r--r-- root/root    usr/include/libgedit-gtksourceview-300/gtksourceview/completion-providers/words/gtksourcecompletionwords.h
-drwxr-xr-x root/root    usr/include/libgedit-gtksourceview-300/gtksourceview/file-loading-and-saving/
--rw-r--r-- root/root    usr/include/libgedit-gtksourceview-300/gtksourceview/file-loading-and-saving/gtksourceiconv.h
--rw-r--r-- root/root    usr/include/libgedit-gtksourceview-300/gtksourceview/file-loading-and-saving/gtksourceinputstream.h
 -rw-r--r-- root/root    usr/include/libgedit-gtksourceview-300/gtksourceview/gtksource-enumtypes.h
 -rw-r--r-- root/root    usr/include/libgedit-gtksourceview-300/gtksourceview/gtksource.h
 -rw-r--r-- root/root    usr/include/libgedit-gtksourceview-300/gtksourceview/gtksourceautocleanups.h
@@ -49,8 +46,8 @@ drwxr-xr-x root/root    usr/include/libgedit-gtksourceview-300/gtksourceview/fil
 drwxr-xr-x root/root    usr/lib/
 drwxr-xr-x root/root    usr/lib/girepository-1.0/
 -rw-r--r-- root/root    usr/lib/girepository-1.0/GtkSource-300.typelib
-lrwxrwxrwx root/root    usr/lib/libgedit-gtksourceview-300.so -> libgedit-gtksourceview-300.so.4
--rwxr-xr-x root/root    usr/lib/libgedit-gtksourceview-300.so.4
+lrwxrwxrwx root/root    usr/lib/libgedit-gtksourceview-300.so -> libgedit-gtksourceview-300.so.5
+-rwxr-xr-x root/root    usr/lib/libgedit-gtksourceview-300.so.5
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/libgedit-gtksourceview-300.pc
 drwxr-xr-x root/root    usr/share/
