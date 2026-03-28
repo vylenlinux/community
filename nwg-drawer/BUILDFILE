@@ -1,27 +1,32 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Application drawer for sway and other wlroots-based compositors"
 homepage="https://github.com/nwg-piotr/nwg-drawer"
 maintainer="Vylen Linux Team"
 
 name=nwg-drawer
-version=0.7.4
+version=0.7.5
 release=1
-source="$name-$version.tar.gz::https://github.com/nwg-piotr/nwg-drawer/archive/v$version.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/nwg-piotr/${name}/archive/v${version}.tar.gz"
 
 build() {
-	cd $name-$version
-	export CGO_LDFLAGS="${LDFLAGS}"
-	export CGO_CFLAGS="${CFLAGS}"
-	export CGO_CPPFLAGS="${CPPFLAGS}"
-	export CGO_CXXFLAGS="${CXXFLAGS}"
-	export GOFLAGS="-buildmode=pie -trimpath -mod=readonly -modcacherw -ldflags=-linkmode=external"
-	export GOPATH=$SRC/go
-	export PATH=$PATH:$GOPATH/bin
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	go build -o bin/$name *.go
+    export CGO_LDFLAGS="${LDFLAGS}"
+    export CGO_CFLAGS="${CFLAGS}"
+    export CGO_CPPFLAGS="${CPPFLAGS}"
+    export CGO_CXXFLAGS="${CXXFLAGS}"
+    export GOFLAGS="-buildmode=pie -trimpath -mod=readonly -modcacherw -ldflags=-linkmode=external"
+    export GOPATH="${SRC}/go"
+    export PATH="${PATH}:${GOPATH}/bin"
 
-	install -d $PKG/usr/share/$name/desktop-directories
-	install -Dm644 -t $PKG/usr/share/$name/desktop-directories/ desktop-directories/*
-	install -Dm644 -t $PKG/usr/share/$name drawer.css
-	install -Dm755 -t $PKG/usr/bin bin/$name
+    # shellcheck disable=SC2035
+    go build -o "bin/${name}" *.go
+
+    install -d "${PKG}/usr/share/${name}/desktop-directories"
+    install -Dm644 desktop-directories/* -t "${PKG}/usr/share/${name}/desktop-directories/"
+    install -Dm644 drawer.css -t "${PKG}/usr/share/${name}"
+    install -Dm755 "bin/${name}" -t "${PKG}/usr/bin"
 }
-
