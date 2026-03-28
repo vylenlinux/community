@@ -1,24 +1,29 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Command-line tool to customize Spotify client"
 homepage="https://github.com/spicetify/spicetify-cli"
 maintainer="Vylen Linux Team"
 
 name=spicetify-cli
-version=2.42.14
+version=2.43.1
 release=1
-source="https://github.com/spicetify/spicetify-cli/archive/v$version/$name-$version.tar.gz"
+source="https://github.com/spicetify/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
-	cd cli-$version
-	export GOPATH=$SRC
-	go build -o spicetify
-	install -Dm755 ./spicetify $PKG/usr/share/${name}/spicetify
-  	cp -r ./Themes ./Extensions ./CustomApps ./jsHelper ./globals.d.ts ./css-map.json $PKG/usr/share/${name}
+    # shellcheck disable=SC2164
+    cd "cli-${version}"
+    export GOPATH="${SRC}"
 
-	rm -f ./shortcut
-   	echo "#!/bin/sh
-	/usr/share/${name}/spicetify \"\$@\"" >> ./shortcut
+    go build -o spicetify
+    install -Dm755 ./spicetify -t "${PKG}/usr/share/${name}/"
 
-  	install -Dm755 ./shortcut $PKG/usr/bin/spicetify
+    cp -r ./Themes ./Extensions ./CustomApps ./jsHelper ./globals.d.ts ./css-map.json "${PKG}/usr/share/${name}"
+    rm -f ./shortcut
 
- 	go clean -modcache
+    echo "#!/bin/sh
+    /usr/share/${name}/spicetify \"\$@\"" >> ./shortcut
+
+    install -Dm755 ./shortcut "${PKG}/usr/bin/spicetify"
+    go clean -modcache
 }
