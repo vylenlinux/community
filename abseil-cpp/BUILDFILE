@@ -1,23 +1,27 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Abseil Common Libraries (C++)"
 homepage="https://abseil.io/"
 maintainer="Vylen Linux Team"
 
 name=abseil-cpp
-version=20250814.1
+version=20260107.1
 release=1
-source="https://github.com/abseil/abseil-cpp/archive/$version/$name-$version.tar.gz"
+source="https://github.com/abseil/${name}/archive/${version}/${name}-${version}.tar.gz"
 
 build() {
-	cmake -S $name-$version -B build -G Ninja \
- 		-DCMAKE_INSTALL_PREFIX=/usr \
- 		-DCMAKE_INSTALL_LIBDIR=lib \
-		-DCMAKE_BUILD_TYPE=Release \
-		-DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
-		-DCMAKE_CXX_STANDARD=17 \
- 		-DBUILD_SHARED_LIBS=ON \
- 		-DCMAKE_POSITION_INDEPENDENT_CODE=ON \
- 		-DABSL_PROPAGATE_CXX_STD=ON \
- 		-Wno-dev
-  cmake --build build
-  DESTDIR=$PKG cmake --install build
+    cmake -S "${name}-${version}" -B build -G Ninja \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_INSTALL_LIBDIR=lib \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
+        -DCMAKE_CXX_STANDARD=17 \
+        -DBUILD_SHARED_LIBS=ON \
+        -DCMAKE_POSITION_INDEPENDENT_CODE=ON \
+        -DABSL_PROPAGATE_CXX_STD=ON \
+        -Wno-dev
+
+    cmake --build build
+    DESTDIR="${PKG}" cmake --install build
 }
