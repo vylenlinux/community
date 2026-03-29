@@ -1,30 +1,34 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="A highly customizable dynamic tiling Wayland compositor"
 homepage="https://github.com/hyprwm/Hyprland"
 maintainer="Vylen Linux Team"
 
 name=hyprland
-version=0.54.2
+version=0.54.3
 release=1
-source="$name-$version.tar.gz::https://github.com/hyprwm/$name/releases/download/v$version/source-v$version.tar.gz
-        hyprland.desktop"
+
+source="${name}-${version}.tar.gz::https://github.com/hyprwm/${name}/releases/download/v${version}/source-v${version}.tar.gz
+    ${name}.desktop"
 
 build() {
-	rm -fv hyprland-source/scripts/generateVersion.sh
-        
-        cmake -S  hyprland-source -B build -G Ninja \
-		-DCMAKE_INSTALL_PREFIX=/usr \
-		-DCMAKE_INSTALL_LIBDIR=lib \
-		-DCMAKE_INSTALL_LIBEXECDIR=lib \
-		-DCMAKE_BUILD_TYPE=Release \
-		-DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
-		-DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
-		-Wno-dev 
-	cmake --build build
-	DESTDIR=$PKG cmake --install build
+    rm -fv hyprland-source/scripts/generateVersion.sh
 
-	install -Dm644 $SRC/hyprland.desktop $PKG/usr/share/wayland-sessions/hyprland.desktop
+    cmake -S hyprland-source -B build -G Ninja \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_INSTALL_LIBDIR=lib \
+        -DCMAKE_INSTALL_LIBEXECDIR=lib \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
+        -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
+        -Wno-dev
 
-        rm -fr $PKG/usr/include/glaze $PKG/usr/share/glaze $PKG/usr/lib/systemd
-        rm -f $PKG/usr/share/wayland-sessions/hyprland-systemd.desktop
+    cmake --build build
+    DESTDIR="${PKG}" cmake --install build
+
+    install -Dm644 "${SRC}/hyprland.desktop" "${PKG}/usr/share/wayland-sessions/hyprland.desktop"
+
+    rm -fr "${PKG}/usr/include/glaze" "${PKG}/usr/share/glaze" "${PKG}/usr/lib/systemd"
+    rm -f "${PKG}/usr/share/wayland-sessions/hyprland-systemd.desktop"
 }
-

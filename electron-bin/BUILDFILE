@@ -16,7 +16,7 @@ build() {
     install -dm755 "${PKG}/usr/lib/${name-bin}"
     find . -mindepth 1 -maxdepth 1 -type f ! -name "*.zip" ! -name "LICENSE*" -exec cp --reflink=auto -r --no-preserve=ownership --preserve=mode -t "${PKG}/usr/lib/${name-bin}/." {} +
 
-    for _folder in 'locales' 'resources'; do
+    for _folder in locales resources; do
         install -dm755 "${PKG}/usr/lib/${name-bin}/${_folder}"
         cp --reflink=auto -r --no-preserve=ownership --preserve=mode "${_folder}" "${PKG}/usr/lib/${name-bin}/${_folder}"
     done
