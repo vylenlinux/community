@@ -1,16 +1,25 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Tool to display AMDGPU usage"
 homepage="https://github.com/Umio-Yasuno/amdgpu_top"
 maintainer="Vylen Linux Team"
 
 name=amdgpu_top
-version=0.11.2
+version=0.11.3
 release=1
-source="https://github.com/Umio-Yasuno/amdgpu_top/archive/v$version/$name-$version.tar.gz"
+source="https://github.com/Umio-Yasuno/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
-	cargo build --release --features="tui" --manifest-path $name-$version/Cargo.toml
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	install -Dt $PKG/usr/bin $name-$version/target/release/$name
-	install -Dm644 $name-$version/assets/amdgpu_top.desktop $PKG/usr/share/applications/amdgpu_top.desktop
-	install -Dm644 $name-$version/assets/amdgpu_top-tui.desktop $PKG/usr/share/applications/amdgpu_top-tui.desktop
+    cargo build \
+        --release \
+        --features="tui" \
+        --manifest-path
+
+    install -Dm755 "target/release/${name}" -t "${PKG}/usr/bin"
+    install -Dm644 assets/amdgpu_top.desktop -t "${PKG}/usr/share/applications/"
+    install -Dm644 assets/amdgpu_top-tui.desktop -t "${PKG}/usr/share/applications/"
 }
