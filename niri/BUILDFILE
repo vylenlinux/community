@@ -1,0 +1,33 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
+description="A scrollable-tiling Wayland compositor"
+maintainer="Vylen Linux Team"
+homepage="https://github.com/niri-wm/niri"
+
+name=niri
+version=25.11
+release=1
+
+source="https://github.com/niri-wm/${name}/archive/v${version}/${name}-${version}.tar.gz
+    ${name}.desktop"
+
+build() {
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    mkdir "${SRC}/rust"
+    export CARGO_HOME="${SRC}/rust"
+    export NIRI_BUILD_COMMIT="b35bcae"
+
+    cargo build \
+        --release \
+        --no-default-features \
+        --features dbus,xdp-gnome-screencast
+
+    install -vDm 755 "target/release/${name}" -t "${PKG}/usr/bin/"
+    install -vDm 755 "resources/${name}-session" -t "${PKG}/usr/bin/"
+    install -vDm 644 "${SRC}/${name}.desktop" -t "${PKG}/usr/share/wayland-sessions/"
+    install -vDm 644 "resources/${name}-portals.conf" -t "${PKG}/usr/share/xdg-desktop-portal/"
+    install -vDm 644 resources/default-config.kdl -t "${PKG}/etc/skel/${name}/"
+}
