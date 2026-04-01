@@ -1,4 +1,4 @@
-noctalia-shell-4.7.1-1
+noctalia-shell-4.7.2-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/xdg/
 drwxr-xr-x root/root    etc/xdg/quickshell/
@@ -45,6 +45,13 @@ drwxr-xr-x root/root    etc/xdg/quickshell/noctalia-shell/Assets/Sounds/
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Sounds/alarm-beep.wav
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Sounds/notification-generic.wav
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Sounds/volume-change.wav
+drwxr-xr-x root/root    etc/xdg/quickshell/noctalia-shell/Assets/Talia/
+-rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Talia/TaliaBlank.png
+-rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Talia/TaliaDazed.png
+-rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Talia/TaliaFear.png
+-rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Talia/TaliaParty.png
+-rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Talia/TaliaSob.png
+-rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Talia/TaliaVampire.png
 drwxr-xr-x root/root    etc/xdg/quickshell/noctalia-shell/Assets/Templates/
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Templates/btop.theme
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Templates/cava.ini
@@ -65,6 +72,7 @@ drwxr-xr-x root/root    etc/xdg/quickshell/noctalia-shell/Assets/Templates/
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Templates/noctalia.json
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Templates/pywalfox.json
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Templates/qtct.conf
+-rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Templates/scroll
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Templates/spicetify.ini
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Templates/steam.css
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Templates/sway
@@ -89,7 +97,9 @@ drwxr-xr-x root/root    etc/xdg/quickshell/noctalia-shell/Assets/Templates/zen-b
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Templates/zen-browser/zen-userChrome.css
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Templates/zen-browser/zen-userContent.css
 drwxr-xr-x root/root    etc/xdg/quickshell/noctalia-shell/Assets/Translations/
+-rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Translations/cs.json
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Translations/de.json
+-rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Translations/en-GB.json
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Translations/en.json
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Translations/es.json
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Assets/Translations/fr.json
@@ -538,6 +548,7 @@ drwxr-xr-x root/root    etc/xdg/quickshell/noctalia-shell/Scripts/python/src/the
 drwxr-xr-x root/root    etc/xdg/quickshell/noctalia-shell/Services/
 drwxr-xr-x root/root    etc/xdg/quickshell/noctalia-shell/Services/Compositor/
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Services/Compositor/CompositorService.qml
+-rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Services/Compositor/ExtWorkspaceService.qml
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Services/Compositor/HyprlandService.qml
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Services/Compositor/LabwcService.qml
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Services/Compositor/MangoService.qml
@@ -693,6 +704,7 @@ drwxr-xr-x root/root    etc/xdg/quickshell/noctalia-shell/Widgets/AudioSpectrum/
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Widgets/NSearchableComboBox.qml
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Widgets/NSectionEditor.qml
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Widgets/NSettingsIndicator.qml
+-rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Widgets/NSlideSwapView.qml
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Widgets/NSlider.qml
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Widgets/NSpinBox.qml
 -rw-r--r-- root/root    etc/xdg/quickshell/noctalia-shell/Widgets/NTabBar.qml
