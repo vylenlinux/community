@@ -1,0 +1,28 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
+description="Configuration GUI for niri Wayland compositor"
+maintainer="Vylen Linux Team"
+homepage="https://github.com/stefonarch/niri-settings"
+
+name=niri-settings
+version=20260326
+release=1
+
+commit=d745e7845f69371089542b461a9a8e691655b131
+source="${name}-${version}.tar.gz::https://github.com/stefonarch/${name}/archive/${commit}.tar.gz"
+
+build() {
+    # shellcheck disable=SC2164
+    cd "${name}-${commit}"
+
+    install -Dm755 "${name}" -t "${PKG}/usr/bin/"
+    install -Dm644 "${name}.desktop" -t "${PKG}/usr/share/applications/"
+
+    install -d "${PKG}/usr/lib/${name}/ui"
+    install -Dm644 niri_settings.py "${PKG}/usr/lib/${name}/"
+    install -Dm644 ui/*.py "${PKG}/usr/lib/${name}/ui"
+
+    install -d "${PKG}/usr/share/icons/hicolor/scalable/apps/"
+    install -Dm644 "${name}.svg" "${PKG}/usr/share/icons/hicolor/scalable/apps/${name}.svg"
+}
