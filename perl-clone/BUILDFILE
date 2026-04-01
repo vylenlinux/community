@@ -6,7 +6,7 @@ homepage="https://github.com/garu/Clone"
 maintainer="Vylen Linux Team"
 
 name=perl-clone
-version=0.49
+version=0.50
 release=1
 source="${name}-${version}.tar.gz::https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/Clone-${version}.tar.gz"
 
