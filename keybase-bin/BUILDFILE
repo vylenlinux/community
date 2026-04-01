@@ -1,13 +1,17 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="End-to-end encryption for things that matter."
 homepage="https://keybase.io/"
 maintainer="Vylen Linux Team"
 
 name=keybase-bin
 version=6.6.0
-release=1
-source="$name-$version.rpm::https://prerelease.keybase.io/keybase_amd64.rpm"
+release=2
+source="${name}-${version}.rpm::https://prerelease.keybase.io/keybase_amd64.rpm"
 
 build() {
-	#cd "$SRC"
-	cp --reflink=auto -ra * "$PKG"
+    # shellcheck disable=SC2035
+    cp --reflink=auto -ra * "${PKG}"
+    rm -fr "${PKG}/usr/lib/systemd"
 }
