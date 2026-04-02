@@ -6,7 +6,7 @@ homepage="https://freetubeapp.io/"
 maintainer="Vylen Linux Team"
 
 name=freetube-bin
-version=0.23.15
+version=0.24.0
 release=1
 source="${name}-${version}.deb::https://github.com/FreeTubeApp/FreeTube/releases/download/v${version}-beta/${name}_${version}_beta_amd64.deb"
 
