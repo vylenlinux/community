@@ -7,7 +7,7 @@ maintainer="Vylen Linux Team"
 
 name=kcoreaddons
 version=6.24.0
-release=2
+release=3
 source="https://download.kde.org/stable/frameworks/${version%.*}/${name}-${version}.tar.xz"
 
 build() {
@@ -18,6 +18,7 @@ build() {
         -DCMAKE_BUILD_TYPE=Release \
         -DCMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
         -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
+        -DBUILD_PYTHON_BINDINGS="$(emerald isinstalled pyside6 && printf "ON" || printf "OFF" )" \
         -DBUILD_TESTING=OFF \
         -Wno-dev
 
