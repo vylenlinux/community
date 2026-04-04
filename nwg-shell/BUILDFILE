@@ -1,16 +1,20 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="nwg-shell meta-package"
 homepage="https://github.com/nwg-piotr/nwg-shell"
 maintainer="Vylen Linux Team"
 
 name=nwg-shell
-version=0.5.49
+version=0.5.50
 release=1
-#source="$name-$version.tar.gz::https://github.com/nwg-piotr/nwg-shell/releases/download/v$version/nwg-shell-v$version.tar.gz"
-source="$name-$version.tar.gz::https://github.com/nwg-piotr/nwg-shell/archive/refs/tags/v$version.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/nwg-piotr/${name}/archive/refs/tags/v${version}.tar.gz"
 
 build() {
-	cd $name-$version
-	python3 setup.py install --root=$PKG --optimize=1
-	install -D -t $PKG/usr/bin scripts/*
-	install -D -t $PKG/usr/share/backgrounds nwg-shell.jpg
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+    python3 setup.py install --root="${PKG}" --optimize=1
+
+    install -Dm755 scripts/*     -t "${PKG}/usr/bin/"
+    install -Dm644 nwg-shell.jpg -t "${PKG}/usr/share/backgrounds/"
 }
