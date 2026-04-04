@@ -6,7 +6,7 @@ maintainer="Vylen Linux Team"
 homepage="https://github.com/astral-sh/uv" 
 
 name=uv
-version=0.11.2
+version=0.11.3
 release=1
 source="${name}-${version}.tar.gz::https://github.com/astral-sh/uv/archive/refs/tags/${version}.tar.gz"
 
