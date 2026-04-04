@@ -6,7 +6,7 @@ maintainer="Vylen Linux Team"
 homepage="https://github.com/noctalia-dev/noctalia-shell"
 
 name=noctalia-shell
-version=4.7.2
+version=4.7.5
 release=1
 source="https://github.com/noctalia-dev/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
@@ -15,5 +15,6 @@ build() {
     cd "${name}-${version}"
 
     install -dm755 "${PKG}/etc/xdg/quickshell/${name}"
-    cp -r "${SRC}/${name}-${version}"/* "${PKG}/etc/xdg/quickshell/${name}/"
+    # shellcheck disable=SC2035
+    cp -r * "${PKG}/etc/xdg/quickshell/${name}/"
 }
