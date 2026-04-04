@@ -8,11 +8,11 @@ homepage="https://github.com/minecraft-linux/mcpelauncher-ui-manifest"
 name=mcpelauncher-ui
 version=1.7.1
 release=1
-source="${name%-ui}-manifest::git+https://github.com/minecraft-linux/mcpelauncher-ui-manifest.git#tag=v${version}-qt6"
+source="${name}-manifest::git+https://github.com/minecraft-linux/mcpelauncher-ui-manifest.git#tag=v${version}-qt6"
 
 build() {
     # shellcheck disable=SC2164
-    cd "${name%-ui}-manifest"
+    cd "${name}-manifest"
     git submodule update --init --recursive
 
     cmake -S . -B build \
