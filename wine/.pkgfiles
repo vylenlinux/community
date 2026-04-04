@@ -1,4 +1,4 @@
-wine-11.5-1
+wine-11.6-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/revdep.d/
 -rw-r--r-- root/root    etc/revdep.d/wine.conf
@@ -359,6 +359,7 @@ drwxr-xr-x root/root    usr/include/wine/windows/
 -rw-r--r-- root/root    usr/include/wine/windows/commoncontrols.h
 -rw-r--r-- root/root    usr/include/wine/windows/commoncontrols.idl
 -rw-r--r-- root/root    usr/include/wine/windows/compobj.h
+-rw-r--r-- root/root    usr/include/wine/windows/compressapi.h
 -rw-r--r-- root/root    usr/include/wine/windows/comsvcs.h
 -rw-r--r-- root/root    usr/include/wine/windows/comsvcs.idl
 -rw-r--r-- root/root    usr/include/wine/windows/concurrencysal.h
@@ -1347,6 +1348,8 @@ drwxr-xr-x root/root    usr/include/wine/windows/ddk/
 -rw-r--r-- root/root    usr/include/wine/windows/windows.graphics.capture.interop.idl
 -rw-r--r-- root/root    usr/include/wine/windows/windows.graphics.directx.direct3d11.h
 -rw-r--r-- root/root    usr/include/wine/windows/windows.graphics.directx.direct3d11.idl
+-rw-r--r-- root/root    usr/include/wine/windows/windows.graphics.directx.direct3d11.interop.h
+-rw-r--r-- root/root    usr/include/wine/windows/windows.graphics.directx.direct3d11.interop.idl
 -rw-r--r-- root/root    usr/include/wine/windows/windows.graphics.directx.h
 -rw-r--r-- root/root    usr/include/wine/windows/windows.graphics.directx.idl
 -rw-r--r-- root/root    usr/include/wine/windows/windows.graphics.display.h
@@ -1873,6 +1876,7 @@ drwxr-xr-x root/root    usr/lib/wine/i386-windows/
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/irprops.cpl
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/itircl.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/itss.dll
+-rw-r--r-- root/root    usr/lib/wine/i386-windows/iyuv_32.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/joy.cpl
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/jscript.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/jsproxy.dll
@@ -1991,6 +1995,7 @@ drwxr-xr-x root/root    usr/lib/wine/i386-windows/
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/libicmui.a
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/libicu.a
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/libieframe.a
+-rw-r--r-- root/root    usr/lib/wine/i386-windows/libiertutil.a
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/libimagehlp.a
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/libimm32.a
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/libinetcomm.a
@@ -2520,6 +2525,7 @@ drwxr-xr-x root/root    usr/lib/wine/i386-windows/
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/windows.applicationmodel.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/windows.devices.bluetooth.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/windows.devices.enumeration.dll
+-rw-r--r-- root/root    usr/lib/wine/i386-windows/windows.devices.radios.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/windows.devices.usb.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/windows.gaming.input.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/windows.gaming.ui.gamebar.dll
@@ -2781,6 +2787,7 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-unix/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libicmui.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libicu.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libieframe.a
+-rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libiertutil.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libimagehlp.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libimm32.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libinetcomm.a
@@ -3232,6 +3239,7 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-windows/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/irprops.cpl
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/itircl.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/itss.dll
+-rw-r--r-- root/root    usr/lib/wine/x86_64-windows/iyuv_32.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/joy.cpl
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/jscript.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/jsproxy.dll
@@ -3348,6 +3356,7 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-windows/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/libicmui.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/libicu.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/libieframe.a
+-rw-r--r-- root/root    usr/lib/wine/x86_64-windows/libiertutil.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/libimagehlp.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/libimm32.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/libinetcomm.a
@@ -3841,6 +3850,7 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-windows/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/windows.applicationmodel.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/windows.devices.bluetooth.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/windows.devices.enumeration.dll
+-rw-r--r-- root/root    usr/lib/wine/x86_64-windows/windows.devices.radios.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/windows.devices.usb.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/windows.gaming.input.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/windows.gaming.ui.gamebar.dll
