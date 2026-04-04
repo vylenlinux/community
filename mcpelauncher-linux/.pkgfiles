@@ -1,0 +1,10 @@
+mcpelauncher-linux-1.7.1-1
+drwxr-xr-x root/root    usr/
+drwxr-xr-x root/root    usr/bin/
+-rwxr-xr-x root/root    usr/bin/mcpelauncher-extract
+-rwxr-xr-x root/root    usr/bin/mcpelauncher-ui-qt
+drwxr-xr-x root/root    usr/share/
+drwxr-xr-x root/root    usr/share/applications/
+-rw-r--r-- root/root    usr/share/applications/mcpelauncher-ui-qt.desktop
+drwxr-xr-x root/root    usr/share/pixmaps/
+-rw-r--r-- root/root    usr/share/pixmaps/mcpelauncher-ui-qt.svg
