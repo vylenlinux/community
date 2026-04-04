@@ -197,7 +197,8 @@ build() {
 
     # shellcheck disable=SC2045
     for kver in $(ls /lib/modules/); do
+        install -d "${PKG}/lib/modules/${kver}/extra"
         # shellcheck disable=SC2035
-        install -Dm0644 *.ko "${PKG}/lib/modules/${kver}/extra/"
+        install -m0644 *.ko "${PKG}/lib/modules/${kver}/extra/"
     done
 }
