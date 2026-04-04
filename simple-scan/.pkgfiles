@@ -1,4 +1,4 @@
-simple-scan-49.1-1
+simple-scan-50.0-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/simple-scan
@@ -429,6 +429,27 @@ drwxr-xr-x root/root    usr/share/help/ja/simple-scan/figures/
 -rw-r--r-- root/root    usr/share/help/ja/simple-scan/save.page
 -rw-r--r-- root/root    usr/share/help/ja/simple-scan/scanner.page
 -rw-r--r-- root/root    usr/share/help/ja/simple-scan/scanning.page
+drwxr-xr-x root/root    usr/share/help/kk/
+drwxr-xr-x root/root    usr/share/help/kk/simple-scan/
+-rw-r--r-- root/root    usr/share/help/kk/simple-scan/adf.page
+-rw-r--r-- root/root    usr/share/help/kk/simple-scan/brightness-contrast.page
+-rw-r--r-- root/root    usr/share/help/kk/simple-scan/crop.page
+-rw-r--r-- root/root    usr/share/help/kk/simple-scan/dpi.page
+-rw-r--r-- root/root    usr/share/help/kk/simple-scan/email.page
+drwxr-xr-x root/root    usr/share/help/kk/simple-scan/figures/
+-rw-r--r-- root/root    usr/share/help/kk/simple-scan/figures/icon.svg
+-rw-r--r-- root/root    usr/share/help/kk/simple-scan/figures/preferences.png
+-rw-r--r-- root/root    usr/share/help/kk/simple-scan/figures/scan_toolbar.png
+-rw-r--r-- root/root    usr/share/help/kk/simple-scan/figures/scanner_selection.png
+-rw-r--r-- root/root    usr/share/help/kk/simple-scan/index.page
+-rw-r--r-- root/root    usr/share/help/kk/simple-scan/legal.xml
+-rw-r--r-- root/root    usr/share/help/kk/simple-scan/print.page
+-rw-r--r-- root/root    usr/share/help/kk/simple-scan/quality.page
+-rw-r--r-- root/root    usr/share/help/kk/simple-scan/reorder.page
+-rw-r--r-- root/root    usr/share/help/kk/simple-scan/rotate.page
+-rw-r--r-- root/root    usr/share/help/kk/simple-scan/save.page
+-rw-r--r-- root/root    usr/share/help/kk/simple-scan/scanner.page
+-rw-r--r-- root/root    usr/share/help/kk/simple-scan/scanning.page
 drwxr-xr-x root/root    usr/share/help/ku/
 drwxr-xr-x root/root    usr/share/help/ku/simple-scan/
 -rw-r--r-- root/root    usr/share/help/ku/simple-scan/adf.page
