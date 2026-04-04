@@ -1,0 +1,13 @@
+cmake
+ninja
+libxinerama
+qt6-base
+qt6-tools
+qt6-svg
+qt6-webengine
+qt6-declarative
+qt6-webchannel
+libzip
+protobuf
+hicolor-icon-theme
+mcpelauncher-linux
