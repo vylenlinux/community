@@ -1,4 +1,4 @@
-river-0.4.1-1
+river-0.4.2-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/river
@@ -16,6 +16,5 @@ drwxr-xr-x root/root    usr/share/river-protocols/stable/
 -rw-r--r-- root/root    usr/share/river-protocols/stable/river-window-management-v1.xml
 -rw-r--r-- root/root    usr/share/river-protocols/stable/river-xkb-bindings-v1.xml
 -rw-r--r-- root/root    usr/share/river-protocols/stable/river-xkb-config-v1.xml
-drwxr-xr-x root/root    usr/share/river/
 drwxr-xr-x root/root    usr/share/wayland-sessions/
 -rw-r--r-- root/root    usr/share/wayland-sessions/river.desktop

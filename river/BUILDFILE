@@ -1,25 +1,27 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="A dynamic tiling wayland compositor"
 homepage="https://codeberg.org/river/river"
 maintainer="Vylen Linux Team"
 
 name=river
-version=0.4.1
+version=0.4.2
 release=1
-source="https://codeberg.org/river/river/releases/download/v$version/river-$version.tar.gz"
+source="https://codeberg.org/${name}/${name}/releases/download/v${version}/${name}-${version}.tar.gz"
 
 build() {
-  cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-  DESTDIR="build" zig build \
-    --prefix /usr \
-    -Dcpu=baseline \
-    -Dstrip \
-    -Dpie \
-    -Dxwayland \
-    -Doptimize=ReleaseSafe 
+    DESTDIR="build" zig build \
+        --prefix /usr \
+        -Dcpu=baseline \
+        -Dstrip \
+        -Dpie \
+        -Dxwayland \
+        -Doptimize=ReleaseSafe
 
-  cp -a build/* $PKG
-
-  install -Dm644 contrib/river.desktop -t $PKG/usr/share/wayland-sessions
-  install -d $PKG/usr/share/$name
+    cp -a build/* "${PKG}"
+    install -Dm644 contrib/river.desktop -t "${PKG}/usr/share/wayland-sessions/"
 }
