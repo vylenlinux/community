@@ -6,7 +6,7 @@ homepage="https://limine-bootloader.org "
 maintainer="Vylen Linux Team"
 
 name=limine
-version=11.1.0
+version=11.2.0
 release=1
 source="https://codeberg.org/Limine/Limine/releases/download/v${version}/${name}-${version}.tar.gz"
 
