@@ -1,22 +1,28 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="A lightweight universal runtime container"
 homepage="https://github.com/opencontainers/runc"
 maintainer="Vylen Linux Team"
 
 name=runc
-version=1.4.1
+version=1.4.2
 release=1
-source="https://github.com/opencontainers/runc/archive/v${version}/$name-${version}.tar.gz"
+source="https://github.com/opencontainers/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
     mkdir -pv src/github.com/opencontainers
+    # shellcheck disable=SC2164
     cd src/github.com/opencontainers
-    ln -sf $SRC/$name-$version $name
-    cd $name
-    export GOPATH=$SRC
+
+    ln -sf "${SRC}/${name}-${version}" "${name}"
+    # shellcheck disable=SC2164
+    cd "${name}"
+
+    export GOPATH="${SRC}"
     export BUILDTAGS="seccomp"
     export GOFLAGS="-trimpath -mod=readonly -modcacherw"
+
     make runc
-
-    install -D -m 0755 $name $PKG/usr/bin/$name
+    install -Dm755 "${name}" -t "${PKG}/usr/bin/"
 }
-
