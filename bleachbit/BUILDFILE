@@ -1,14 +1,19 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Deletes unneeded files to free disk space and maintain privacy"
 homepage="https://www.bleachbit.org/"
 maintainer="Vylen Linux Team"
 
 name=bleachbit
-version=5.1.0
+version=5.1.1
 release=1
-source="https://github.com/bleachbit/bleachbit/archive/v$version/$name-$version.tar.gz"
+source="https://github.com/bleachbit/bleachbit/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
-	sed -i '/make -C po install/d' Makefile
-	make prefix=/usr DESTDIR="$PKG" install
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    sed -i '/make -C po install/d' Makefile
+    make prefix=/usr DESTDIR="${PKG}" install
 }

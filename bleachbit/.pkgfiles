@@ -1,4 +1,4 @@
-bleachbit-5.1.0-1
+bleachbit-5.1.1-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/bleachbit
@@ -12,10 +12,12 @@ drwxr-xr-x root/root    usr/share/bleachbit/
 -rw-r--r-- root/root    usr/share/bleachbit/Cleaner.py
 -rw-r--r-- root/root    usr/share/bleachbit/CleanerML.py
 -rw-r--r-- root/root    usr/share/bleachbit/Command.py
+-rw-r--r-- root/root    usr/share/bleachbit/Constant.py
 -rw-r--r-- root/root    usr/share/bleachbit/Cookie.py
 -rw-r--r-- root/root    usr/share/bleachbit/DeepScan.py
 -rw-r--r-- root/root    usr/share/bleachbit/DesktopMenuOptions.py
 -rw-r--r-- root/root    usr/share/bleachbit/FileUtilities.py
+-rw-r--r-- root/root    usr/share/bleachbit/FontCheckDialog.py
 -rw-r--r-- root/root    usr/share/bleachbit/GUI.py
 -rw-r--r-- root/root    usr/share/bleachbit/General.py
 -rw-r--r-- root/root    usr/share/bleachbit/GtkShim.py
@@ -24,6 +26,7 @@ drwxr-xr-x root/root    usr/share/bleachbit/
 -rw-r--r-- root/root    usr/share/bleachbit/GuiChaff.py
 -rw-r--r-- root/root    usr/share/bleachbit/GuiCookie.py
 -rw-r--r-- root/root    usr/share/bleachbit/GuiPreferences.py
+-rw-r--r-- root/root    usr/share/bleachbit/GuiStartup.py
 -rw-r--r-- root/root    usr/share/bleachbit/GuiTreeModels.py
 -rw-r--r-- root/root    usr/share/bleachbit/GuiUtil.py
 -rw-r--r-- root/root    usr/share/bleachbit/GuiWindow.py
@@ -57,6 +60,8 @@ drwxr-xr-x root/root    usr/share/bleachbit/__pycache__/
 -rw-r--r-- root/root    usr/share/bleachbit/__pycache__/CleanerML.cpython-314.pyc
 -rw-r--r-- root/root    usr/share/bleachbit/__pycache__/Command.cpython-314.opt-1.pyc
 -rw-r--r-- root/root    usr/share/bleachbit/__pycache__/Command.cpython-314.pyc
+-rw-r--r-- root/root    usr/share/bleachbit/__pycache__/Constant.cpython-314.opt-1.pyc
+-rw-r--r-- root/root    usr/share/bleachbit/__pycache__/Constant.cpython-314.pyc
 -rw-r--r-- root/root    usr/share/bleachbit/__pycache__/Cookie.cpython-314.opt-1.pyc
 -rw-r--r-- root/root    usr/share/bleachbit/__pycache__/Cookie.cpython-314.pyc
 -rw-r--r-- root/root    usr/share/bleachbit/__pycache__/DeepScan.cpython-314.opt-1.pyc
@@ -65,6 +70,8 @@ drwxr-xr-x root/root    usr/share/bleachbit/__pycache__/
 -rw-r--r-- root/root    usr/share/bleachbit/__pycache__/DesktopMenuOptions.cpython-314.pyc
 -rw-r--r-- root/root    usr/share/bleachbit/__pycache__/FileUtilities.cpython-314.opt-1.pyc
 -rw-r--r-- root/root    usr/share/bleachbit/__pycache__/FileUtilities.cpython-314.pyc
+-rw-r--r-- root/root    usr/share/bleachbit/__pycache__/FontCheckDialog.cpython-314.opt-1.pyc
+-rw-r--r-- root/root    usr/share/bleachbit/__pycache__/FontCheckDialog.cpython-314.pyc
 -rw-r--r-- root/root    usr/share/bleachbit/__pycache__/GUI.cpython-314.opt-1.pyc
 -rw-r--r-- root/root    usr/share/bleachbit/__pycache__/GUI.cpython-314.pyc
 -rw-r--r-- root/root    usr/share/bleachbit/__pycache__/General.cpython-314.opt-1.pyc
@@ -81,6 +88,8 @@ drwxr-xr-x root/root    usr/share/bleachbit/__pycache__/
 -rw-r--r-- root/root    usr/share/bleachbit/__pycache__/GuiCookie.cpython-314.pyc
 -rw-r--r-- root/root    usr/share/bleachbit/__pycache__/GuiPreferences.cpython-314.opt-1.pyc
 -rw-r--r-- root/root    usr/share/bleachbit/__pycache__/GuiPreferences.cpython-314.pyc
+-rw-r--r-- root/root    usr/share/bleachbit/__pycache__/GuiStartup.cpython-314.opt-1.pyc
+-rw-r--r-- root/root    usr/share/bleachbit/__pycache__/GuiStartup.cpython-314.pyc
 -rw-r--r-- root/root    usr/share/bleachbit/__pycache__/GuiTreeModels.cpython-314.opt-1.pyc
 -rw-r--r-- root/root    usr/share/bleachbit/__pycache__/GuiTreeModels.cpython-314.pyc
 -rw-r--r-- root/root    usr/share/bleachbit/__pycache__/GuiUtil.cpython-314.opt-1.pyc
