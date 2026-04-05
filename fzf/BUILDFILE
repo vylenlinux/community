@@ -1,19 +1,23 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="A general-purpose command-line fuzzy finder"
 homepage="https://github.com/junegunn/fzf/"
 maintainer="Vylen Linux Team"
 
 name=fzf
-version=0.70.0
+version=0.71.0
 release=1
-source="$name-$version.tar.gz::https://github.com/junegunn/fzf/archive/v$version.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/junegunn/${name}/archive/v${version}.tar.gz"
 
 build() {
-	cd $name-$version
-	go build -o fzf
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+    go build -o fzf
 
-	install -dm755 $PKG/usr/bin
-	install -m755 fzf bin/fzf-tmux $PKG/usr/bin/
+    install -dm755 "${PKG}/usr/bin"
+    install -m755 fzf bin/fzf-tmux "${PKG}/usr/bin/"
 
-	install -dm755 $PKG/usr/share/fzf
-	install -m644 shell/*.bash shell/*.zsh $PKG/usr/share/fzf
+    install -dm755 "${PKG}/usr/share/fzf"
+    install -m644 shell/*.bash shell/*.zsh "${PKG}/usr/share/fzf"
 }
