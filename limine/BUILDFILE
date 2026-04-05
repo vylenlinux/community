@@ -6,7 +6,7 @@ homepage="https://limine-bootloader.org "
 maintainer="Vylen Linux Team"
 
 name=limine
-version=11.2.0
+version=11.2.1
 release=1
 source="https://codeberg.org/Limine/Limine/releases/download/v${version}/${name}-${version}.tar.gz"
 
@@ -14,7 +14,8 @@ build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
 
-    ./configure --prefix=/usr \
+    ./configure \
+        --prefix=/usr \
         TOOLCHAIN_FOR_TARGET=gnu \
         CC_FOR_TARGET=gcc \
         LD_FOR_TARGET=ld \
