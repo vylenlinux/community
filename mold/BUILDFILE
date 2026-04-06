@@ -1,25 +1,25 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="A Modern Linker"
 homepage="https://github.com/rui314/mold"
 maintainer="Vylen Linux Team"
 
 name=mold
 version=2.40.4
-release=1
-source="$name-$version.tar.gz::https://github.com/rui314/mold/archive/v$version.tar.gz"
+release=2
+source="${name}-${version}.tar.gz::https://github.com/rui314/${name}/archive/v${version}.tar.gz"
 
 build() {
-	emerald isinstalled clang && export CC=clang export CXX=clang++
+    cmake -S "${name}-${version}" -B build -G Ninja \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_INSTALL_LIBDIR=/usr/lib \
+        -DCMAKE_INSTALL_LIBEXECDIR=/usr/lib \
+        -DMOLD_USE_SYSTEM_MIMALLOC=OFF \
+        -DMOLD_USE_SYSTEM_TBB=ON \
+        -DMOLD_LTO=ON \
+        -DMOLD_USE_MOLD="$(emerald isinstalled mold && printf "ON" || printf "OFF")"
 
-	# bundled: xxhash, mimalloc
-	cmake -S $name-$version -B build -G Ninja \
-		-DCMAKE_INSTALL_PREFIX=/usr \
-		-DCMAKE_INSTALL_LIBDIR=/usr/lib \
-	        -DCMAKE_INSTALL_LIBEXECDIR=/usr/lib \
-		-DMOLD_USE_SYSTEM_MIMALLOC=OFF \
-		-DMOLD_USE_SYSTEM_TBB=ON \
-		-DMOLD_LTO=ON \
-		-DMOLD_USE_MOLD=ON
-	cmake --build build
-	DESTDIR=$PKG cmake --install build
+    cmake --build build
+    DESTDIR="${PKG}" cmake --install build
 }
-
