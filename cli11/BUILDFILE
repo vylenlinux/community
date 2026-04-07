@@ -8,17 +8,17 @@ homepage="ttps://github.com/CLIUtils/CLI11"
 name=cli11
 version=2.6.2
 release=1
-source="${name}-${version}.tar.gz::https://github.com/CLIUtils/CLI11/archive/v${version}/CLI11-${version}.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/CLIUtils/${name}/archive/v${version}/CLI11-${version}.tar.gz"
 
 build() {
-    cmake -S "${name}-${version}" -B build -G Ninja \
-        -D CMAKE_INSTALL_PREFIX=/usr \
-        -D CMAKE_INSTALL_LIBDIR=lib \
-        -D CMAKE_BUILD_TYPE=Release \
-        -D CMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
-        -D CMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
-        -D CLI11_BUILD_EXAMPLES=OFF \
-        -D CLI11_BUILD_TESTS=OFF \
+    cmake -S "CLI11-${version}" -B build -G Ninja \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_INSTALL_LIBDIR=lib \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
+        -DCMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
+        -DCLI11_BUILD_EXAMPLES=OFF \
+        -DCLI11_BUILD_TESTS=OFF \
         -Wno-dev
 
     cmake --build build
