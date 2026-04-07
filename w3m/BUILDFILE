@@ -1,37 +1,32 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Pager that can also be used as a text-based web browser"
 homepage="http://w3m.sourceforge.net/"
 maintainer="Vylen Linux Team"
 
 name=w3m
-version=0.5.3.230713
-commit=edc602651c506aeeb60544b55534dd1722a340d3
+version=0.5.6
 release=1
-source="$name-$version.tar.gz::https://github.com/tats/w3m/archive/$commit.tar.gz"
+source="${name}-${version}.tar.gz::https://git.sr.ht/~rkta/${name}/archive/v${version}.tar.gz"
 
 build() {
-	cd $name-$commit
+    # shellcheck disable=SC2164
+    cd "${name}-v${version}"
 
-	export LDFLAGS="$LDFLAGS -lX11"
+    ./configure \
+        --prefix=/usr \
+        --libexecdir=/usr/lib \
+        --enable-image=x11,fb \
+        --with-imagelib=imlib2 \
+        --disable-w3mmailer
 
-	sed -i 's/file_handle/file_foo/' istream.c
-	sed -i 's/file_handle/file_foo/' istream.h
-	sed -i 's#gdk-pixbuf-xlib-2.0#& x11#' configure
-	sed -i '/USE_EGD/s/define/undef/' config.h.in
+    make
+    make DESTDIR="${PKG}" install
 
+    rm -r "${PKG}/usr/share/man/ja"
+    rm "${PKG}/usr/share/w3m/w3mhelp-funcdesc.ja.pl"
 
-	./configure \
- 	       --prefix=/usr \
-		--sysconfdir=/etc \
-        	--libexecdir=/usr/lib \
-		--enable-image=fb \
-		--with-imagelib=imlib2 \
-        	--disable-nls 
-	make
-	make DESTDIR=$PKG install 
-
-	rm -r $PKG/usr/share/man/ja
-	rm $PKG/usr/share/w3m/w3mhelp-funcdesc.ja.pl
-	
-	install -v -m644 -D doc/keymap.default $PKG/etc/w3m/keymap
-	install -v -m644    doc/menu.default $PKG/etc/w3m/menu
+    install -v -m644 -D doc/keymap.default "${PKG}/etc/w3m/keymap"
+    install -v -m644 doc/menu.default "${PKG}/etc/w3m/menu"
 }
