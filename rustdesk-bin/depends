@@ -1,9 +1,0 @@
-gtk3
-xdotool
-libxcb
-libxfixes
-alsa-lib
-libva
-linux-pam
-gst-plugins-base
-libayatana-appindicator
