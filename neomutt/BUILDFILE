@@ -1,29 +1,33 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="A version of mutt with added features"
 homepage="https://neomutt.org/"
 maintainer="Vylen Linux Team"
 
 name=neomutt
-version=20260105
+version=20260406
 release=1
-source="https://github.com/neomutt/neomutt/archive/$version/$name-$version.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/${name}/${name}/archive/refs/tags/${version}.tar.gz"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	./configure \
-	        --prefix=/usr \
-	        --sysconfdir=/etc \
-	        --libexecdir=/usr/lib \
-	        --gpgme \
-	        --enable-lua \
-	        --gss \
-	        --ssl \
-	        --with-ui=ncurses \
-	        --with-idn=/usr \
-        	--gdbm \
-		--disable-nls \
-		--disable-doc
-	make
-	make DESTDIR=$PKG install
+    ./configure \
+        --prefix=/usr \
+        --sysconfdir=/etc \
+        --libexecdir=/usr/lib \
+        --gpgme \
+        --enable-lua \
+        --gss \
+        --ssl \
+        --with-ui=ncurses \
+        --with-idn=/usr \
+        --gdbm \
+        --disable-nls \
+        --disable-doc
 
+    make
+    make DESTDIR="${PKG}" install
 }
