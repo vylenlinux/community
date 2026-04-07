@@ -1,0 +1,33 @@
+diff '--color=auto' -u a/pfetch b/pfetch
+--- a/pfetch	2026-04-07 22:48:54.439832108 +0200
++++ b/pfetch	2026-04-07 23:12:23.732821647 +0200
+@@ -852,6 +852,7 @@
+ 
+             has appimaged &&
+                 count_pkg appimage 0 printf '%s\n' "$HOME"/.local/bin/*.[Aa]pp[Ii]mage "$HOME"/Applications/*.[Aa]pp[Ii]mage
++            has emerald   && count_pkg emerald 0 printf '%s\n' /var/lib/emerald/db/*
+ 
+             # Has devbox & is initialized
+             has devbox &&
+@@ -2462,6 +2463,21 @@
+ 					 -_______\\
+ 				EOF
+             ;;
++            ([Vv]ylen*)
++                read_ascii 2 <<-EOF
++     ${c2}:^::^~ ~^::^:
++   :^:   .~ ~.   :^:
++.:^.     .~ ~.     .^:.
++~.       .~ ~.       .~
++~:.......:~ ~:.......:~
++::::::::::: :::::::::::
++~:.......:~ ~:.......:~
++~.       .~.~.       .~
++.:^.      :::      .^:.
++   :^:           :^:
++     :^:::::::::^:
++EOF
++            ;;
+
+             ([Xx]eonix*)
+                 read_ascii 2 <<-EOF

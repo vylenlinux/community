@@ -1,3 +1,6 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="System information tool written in POSIX sh"
 homepage="https://github.com/Un1q32/pfetch"
 maintainer="Vylen Linux Team"
@@ -5,11 +8,14 @@ maintainer="Vylen Linux Team"
 name=pfetch
 version=1.10.0
 release=1
-source="$name-$version.tar.gz::https://github.com/Un1q32/$name/archive/refs/tags/$version.tar.gz"
+
+source="${name}-${version}.tar.gz::https://github.com/Un1q32/${name}/archive/refs/tags/${version}.tar.gz
+    add-vylen-support.patch"
 
 build() {
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-    cd $name-$version
-    install -Dm755 pfetch -t $PKG/usr/bin
-
-    }
+    patch -p1 < "${SRC}/add-vylen-support.patch"
+    install -Dm755 "${name}" -t "${PKG}/usr/bin/"
+}
