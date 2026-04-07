@@ -1,26 +1,30 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Tools to create, alter and inspect Matroska files."
 homepage="https://mkvtoolnix.download/"
 maintainer="Vylen Linux Team"
 
 name=mkvtoolnix
-version=97.0
+version=98.0
 release=1
-source="https://mkvtoolnix.download/sources/$name-$version.tar.xz"
+source="https://mkvtoolnix.download/sources/${name}-${version}.tar.xz"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	./configure  \
-		--prefix=/usr \
-		--disable-precompiled-headers \
-		--disable-update-check \
-		--enable-gui \
-		--disable-qt5 \
-		--enable-qt6
+    ./configure  \
+        --prefix=/usr \
+        --disable-precompiled-headers \
+        --disable-update-check \
+        --enable-gui \
+        --disable-qt5 \
+        --enable-qt6
 
-	rake --multitask --jobs=${MAKEFLAGS}
-	rake DESTDIR=$PKG install
+    rake --multitask --jobs="${MAKEFLAGS}"
+    rake DESTDIR="${PKG}" install
 
-	rm -r $PKG/usr/share/locale
-	rm -rf $PKG/usr/share/doc
+    rm -r "${PKG}/usr/share/locale"
+    rm -rf "${PKG}/usr/share/doc"
 }
