@@ -6,7 +6,7 @@ homepage="https://www.wine-staging.com"
 maintainer="Vylen Linux Team"
 
 name=wine-staging
-version=11.5
+version=11.6
 release=1
 
 vgecko=2.47.4
@@ -21,12 +21,12 @@ source="https://dl.winehq.org/wine/source/${version%%.*}.x/wine-${version}.tar.x
     wine-binfmt.conf"
 
 build() {
-	# shellcheck disable=SC2164
-	cd "${name%-*}-${version}"
-	    # apply staging patches
-	    "../wine-staging-${version}/staging/patchinstall.py" DESTDIR="../wine-${version}" --all
-	# shellcheck disable=SC2103
-	cd ..
+    # shellcheck disable=SC2164
+    cd "${name%-*}-${version}"
+        # apply staging patches
+        "../wine-staging-${version}/staging/patchinstall.py" DESTDIR="../wine-${version}" --all
+    # shellcheck disable=SC2103
+    cd ..
 
     install -d wine64
     export CPPFLAGS="${CPPFLAGS} -D_FORTIFY_SOURCE=0"
@@ -63,5 +63,6 @@ build() {
 
     # exclude libs for revdep
     install -d "${PKG}/etc/revdep.d"
+    # shellcheck disable=SC2028
     echo "/usr/lib/wine/x86_64-unix/\n" > "${PKG}/etc/revdep.d/${name}.conf"
 }
