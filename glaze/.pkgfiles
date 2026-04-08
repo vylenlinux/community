@@ -1,4 +1,4 @@
-glaze-7.2.3-1
+glaze-7.3.0-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/include/
 drwxr-xr-x root/root    usr/include/glaze/
@@ -103,6 +103,7 @@ drwxr-xr-x root/root    usr/include/glaze/csv/
 drwxr-xr-x root/root    usr/include/glaze/eetf/
 -rw-r--r-- root/root    usr/include/glaze/eetf/cmp.hpp
 -rw-r--r-- root/root    usr/include/glaze/eetf/defs.hpp
+-rw-r--r-- root/root    usr/include/glaze/eetf/eetf_to_json.hpp
 -rw-r--r-- root/root    usr/include/glaze/eetf/ei.hpp
 -rw-r--r-- root/root    usr/include/glaze/eetf/opts.hpp
 -rw-r--r-- root/root    usr/include/glaze/eetf/read.hpp
