@@ -1,20 +1,24 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Cross-platform video editor"
 homepage="https://www.shotcut.org"
 maintainer="Vylen Linux Team"
 
 name=shotcut
-version=26.2.26
+version=26.4.6
 release=1
-source="$name-$version.tar.gz::https://github.com/mltframework/shotcut/archive/v${version}.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/mltframework/${name}/archive/v${version}.tar.gz"
 
 build() {
-	cmake -S $name-$version -B build -G Ninja \
-        	-D CMAKE_BUILD_TYPE=Release \
-	        -D CMAKE_INSTALL_PREFIX:PATH=/usr \
-	        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG" \
-	        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG -DHOSTCUT_NOUPGRADE" \
-		-D SHOTCUT_VERSION=$version \
-		-DCMAKE_POLICY_VERSION_MINIMUM=3.5
-	cmake --build build
-	DESTDIR=$PKG cmake --install build
+    cmake -S "${name}-${version}" -B build -G Ninja \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_INSTALL_PREFIX:PATH=/usr \
+        -DCMAKE_C_FLAGS_RELEASE="${CFLAGS} -DNDEBUG" \
+        -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS} -DNDEBUG -DHOSTCUT_NOUPGRADE" \
+        -DSHOTCUT_VERSION=$version \
+        -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+
+    cmake --build build
+    DESTDIR="${PKG}" cmake --install build
 }

@@ -1,4 +1,4 @@
-shotcut-26.2.26-1
+shotcut-26.4.6-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/shotcut
@@ -486,6 +486,9 @@ drwxr-xr-x root/root    usr/share/shotcut/qml/filters/opacity/
 -rw-r--r-- root/root    usr/share/shotcut/qml/filters/opacity/meta.qml
 -rw-r--r-- root/root    usr/share/shotcut/qml/filters/opacity/meta_movit.qml
 -rw-r--r-- root/root    usr/share/shotcut/qml/filters/opacity/ui.qml
+drwxr-xr-x root/root    usr/share/shotcut/qml/filters/openfx.wtf.vala^NtscRs/
+-rw-r--r-- root/root    usr/share/shotcut/qml/filters/openfx.wtf.vala^NtscRs/meta.qml
+-rw-r--r-- root/root    usr/share/shotcut/qml/filters/openfx.wtf.vala^NtscRs/ui.qml
 drwxr-xr-x root/root    usr/share/shotcut/qml/filters/outline/
 -rw-r--r-- root/root    usr/share/shotcut/qml/filters/outline/icon.webp
 -rw-r--r-- root/root    usr/share/shotcut/qml/filters/outline/meta.qml
