@@ -6,8 +6,9 @@ homepage="https://rclone.org/"
 maintainer="Vylen Linux Team"
 
 name=rclone
-version=1.73.3
+version=1.73.4
 release=1
+
 source="${name}-${version}.tar.gz::https://github.com/rclone/${name}/archive/refs/tags/v${version}.tar.gz"
 noextract="${name}-${version}.tar.gz"
 
