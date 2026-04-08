@@ -1,21 +1,27 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="The Swiss Army knife of sound processing tools"
 homepage="https://sox.sourceforge.net/"
 maintainer="Vylen Linux Team"
 
 name=sox
-version=14.7.1.1
+version=14.7.1.2
 release=1
-source="$name-$version.tar.gz::https://codeberg.org/sox_ng/sox_ng/releases/download/sox_ng-$version/sox_ng-$version.tar.gz"
+source="${name}-${version}.tar.gz::https://codeberg.org/${name}_ng/${name}_ng/releases/download/${name}_ng-${version}/${name}_ng-${version}.tar.gz"
 
 build() {
-	cd ${name}_ng-$version
-	./configure \
-		--prefix=/usr \
-		--sysconfdir=/etc \
-		--localstatedir=/var \
-		--enable-replace \
-		--with-distro="Vylen Linux" \
-		--with-ffmpeg 
-	make 
-	make DESTDIR=$PKG install
+    # shellcheck disable=SC2164
+    cd "${name}_ng-${version}"
+
+    ./configure \
+        --prefix=/usr \
+        --sysconfdir=/etc \
+        --localstatedir=/var \
+        --enable-replace \
+        --with-distro="Vylen Linux" \
+        --with-ffmpeg
+
+    make
+    make DESTDIR="${PKG}" install
 }
