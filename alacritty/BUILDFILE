@@ -1,40 +1,41 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="A cross-platform, GPU-accelerated terminal emulator"
 homepage="https://github.com/alacritty/alacritty"
 maintainer="Vylen Linux Team"
 
 name=alacritty
-version=0.16.1
+version=0.17.0
 release=1
-source="$name-$version.tar.gz::https://github.com/alacritty/alacritty/archive/refs/tags/v$version.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/${name}/${name}/archive/refs/tags/v${version}.tar.gz"
+
 build() {
-	cd $name-$version
-	
-	export CARGO_HOME="$PWD/cargo"
-        mkdir -p $CARGO_HOME
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	env CARGO_INCREMENTAL=0 cargo build --release --locked
+    export CARGO_HOME="${PWD}/cargo"
+    mkdir -p "${CARGO_HOME}"
 
-	# binary
-	install -Dm755 target/release/alacritty $PKG/usr/bin/alacritty
+    env CARGO_INCREMENTAL=0 cargo build --release --locked
 
-	# icon
-	install -Dm644 extra/logo/alacritty-term.svg $PKG/usr/share/pixmaps/Alacritty.svg
+    # binary
+    install -Dm755 "target/release/${name}" -t "$PKG/usr/bin/"
 
-	# completion
-	install -Dm644 extra/completions/alacritty.bash $PKG/usr/share/bash-completion/completions/alacritty
-	install -Dm644 extra/completions/alacritty.fish $PKG/usr/share/fish/vendor_completions.d/alacritty.fish
-	install -Dm644 extra/completions/_alacritty $PKG/usr/share/zsh/site-functions/_alacritty
+    # icon
+    install -Dm644 extra/logo/alacritty-term.svg "${PKG}/usr/share/pixmaps/Alacritty.svg"
 
-	# man page
-	scdoc < "extra/man/alacritty.1.scd" | install -D -m644 /dev/stdin \
-		$PKG/usr/share/man/man1/alacritty.1
-	scdoc < "extra/man/alacritty.5.scd" | install -D -m644 /dev/stdin \
-		$PKG/usr/share/man/man5/alacritty.5
-	scdoc < "extra/man/alacritty-msg.1.scd" | install -D -m644 /dev/stdin \
-		$PKG/usr/share/man/man1/alacritty-msg.1
-	scdoc < "extra/man/alacritty-bindings.5.scd" | install -D -m644 /dev/stdin \
-		$PKG/usr/share/man/man5/alacritty-bindings.5
+    # completion
+    install -Dm644 extra/completions/alacritty.bash "${PKG}/usr/share/bash-completion/completions/${name}"
+    install -Dm644 extra/completions/alacritty.fish "${PKG}/usr/share/fish/vendor_completions.d/alacritty.fish"
+    install -Dm644 extra/completions/_alacritty -t "${PKG}/usr/share/zsh/site-functions/"
 
-	# appdata
-	install -Dm644 extra/linux/org.alacritty.Alacritty.appdata.xml $PKG/usr/share/appdata/io.alacritty.Alacritty.appdata.xml
+    # man page
+    scdoc < "extra/man/alacritty.1.scd"          | install -Dm644 /dev/stdin "${PKG}/usr/share/man/man1/alacritty.1"
+    scdoc < "extra/man/alacritty.5.scd"          | install -Dm644 /dev/stdin "${PKG}/usr/share/man/man5/alacritty.5"
+    scdoc < "extra/man/alacritty-msg.1.scd"      | install -Dm644 /dev/stdin "${PKG}/usr/share/man/man1/alacritty-msg.1"
+    scdoc < "extra/man/alacritty-bindings.5.scd" | install -Dm644 /dev/stdin "${PKG}/usr/share/man/man5/alacritty-bindings.5"
+
+    # appdata
+    install -Dm644 extra/linux/org.alacritty.Alacritty.appdata.xml "${PKG}/usr/share/appdata/io.alacritty.Alacritty.appdata.xml"
 }
