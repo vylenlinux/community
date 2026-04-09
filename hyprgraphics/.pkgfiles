@@ -1,4 +1,4 @@
-hyprgraphics-0.5.0-1
+hyprgraphics-0.5.1-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/include/
 drwxr-xr-x root/root    usr/include/hyprgraphics/
@@ -6,6 +6,8 @@ drwxr-xr-x root/root    usr/include/hyprgraphics/cairo/
 -rw-r--r-- root/root    usr/include/hyprgraphics/cairo/CairoSurface.hpp
 drwxr-xr-x root/root    usr/include/hyprgraphics/color/
 -rw-r--r-- root/root    usr/include/hyprgraphics/color/Color.hpp
+drwxr-xr-x root/root    usr/include/hyprgraphics/egl/
+-rw-r--r-- root/root    usr/include/hyprgraphics/egl/Egl.hpp
 drwxr-xr-x root/root    usr/include/hyprgraphics/image/
 -rw-r--r-- root/root    usr/include/hyprgraphics/image/Image.hpp
 drwxr-xr-x root/root    usr/include/hyprgraphics/resource/
@@ -17,7 +19,7 @@ drwxr-xr-x root/root    usr/include/hyprgraphics/resource/resources/
 -rw-r--r-- root/root    usr/include/hyprgraphics/resource/resources/TextResource.hpp
 drwxr-xr-x root/root    usr/lib/
 lrwxrwxrwx root/root    usr/lib/libhyprgraphics.so -> libhyprgraphics.so.4
--rwxr-xr-x root/root    usr/lib/libhyprgraphics.so.0.5.0
-lrwxrwxrwx root/root    usr/lib/libhyprgraphics.so.4 -> libhyprgraphics.so.0.5.0
+-rwxr-xr-x root/root    usr/lib/libhyprgraphics.so.0.5.1
+lrwxrwxrwx root/root    usr/lib/libhyprgraphics.so.4 -> libhyprgraphics.so.0.5.1
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/hyprgraphics.pc
