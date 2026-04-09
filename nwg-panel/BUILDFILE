@@ -1,3 +1,6 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="GTK3-based panel for sway and Hyprland Wayland compositors"
 homepage="https://github.com/nwg-piotr/nwg-panel"
 maintainer="Vylen Linux Team"
@@ -5,16 +8,24 @@ maintainer="Vylen Linux Team"
 name=nwg-panel
 version=0.10.13
 release=1
-source="$name-$version.tar.gz::https://github.com/nwg-piotr/$name/archive/refs/tags/v$version.tar.gz
-	config"
+
+source="${name}-${version}.tar.gz::https://github.com/nwg-piotr/${name}/archive/refs/tags/v${version}.tar.gz
+    config"
 
 build() {
-	cd $name-$version
-	python3 setup.py install --root=$PKG --optimize=1
-	install -D -t $PKG/usr/share/pixmaps nwg-panel.svg
-	install -D -t $PKG/usr/share/pixmaps nwg-shell.svg
-	install -D -t $PKG/usr/share/pixmaps nwg-processes.svg
-	install -D -t $PKG/usr/share/applications nwg-panel-config.desktop
-	install -D -t $PKG/usr/share/applications nwg-processes.desktop
-	install -Dm644 $SRC/config $PKG/usr/lib/python*/site-packages/nwg_panel/config/
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    python3 setup.py install \
+        --root="${PKG}" \
+        --optimize=1
+
+    install -Dm644 nwg-panel.svg -t "${PKG}/usr/share/pixmaps/"
+    install -Dm644 nwg-shell.svg -t "${PKG}/usr/share/pixmaps/"
+    install -Dm644 nwg-processes.svg -t "${PKG}/usr/share/pixmaps/"
+    install -Dm644 nwg-panel-config.desktop -t "${PKG}/usr/share/applications/"
+    install -Dm644 nwg-processes.desktop -t "${PKG}/usr/share/applications/"
+
+    python_version=$(python3 -c 'import sys; print(".".join(map(str, sys.version_info[:2])))')
+    install -Dm644 "${SRC}/config" -t "${PKG}/usr/lib/python${python_version}/site-packages/nwg_panel/config/"
 }
