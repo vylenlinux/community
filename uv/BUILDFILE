@@ -6,9 +6,9 @@ maintainer="Vylen Linux Team"
 homepage="https://github.com/astral-sh/uv" 
 
 name=uv
-version=0.11.3
+version=0.11.5
 release=1
-source="${name}-${version}.tar.gz::https://github.com/astral-sh/uv/archive/refs/tags/${version}.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/astral-sh/${name}/archive/refs/tags/${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
@@ -21,7 +21,7 @@ build() {
     maturin build --locked --release --target "${tripple}" --strip --compatibility linux
     maturin build --locked --release --target "${tripple}" --strip --compatibility linux -m crates/uv-build/Cargo.toml
 
-    _target="target/$(rustc --print host-tuple)/release/uv"
-    install -Dm0755 -t "${PKG}/usr/bin/" "${_target}"
-    install -Dm0755 -t "${PKG}/usr/bin/" "${_target}x"
+    _target="target/$(rustc --print host-tuple)/release/${name}"
+    install -Dm0755 "${_target}"  -t "${PKG}/usr/bin/"
+    install -Dm0755 "${_target}x" -t "${PKG}/usr/bin/"
 }
