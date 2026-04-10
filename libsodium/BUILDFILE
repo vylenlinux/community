@@ -1,15 +1,20 @@
-description="P(ortable|ackageable) NaCl-based crypto library "
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
+description="P(ortable|ackageable) NaCl-based crypto library"
 homepage="https://github.com/jedisct1/libsodium"
 maintainer="Vylen Linux Team"
 
 name=libsodium
-version=1.0.21
+version=1.0.22
 release=1
-source="https://download.libsodium.org/libsodium/releases/libsodium-$version.tar.gz"
+source="https://download.libsodium.org/${name}/releases/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
-	./configure --prefix=/usr
-	make
-	make DESTDIR=$PKG install
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+    ./configure --prefix=/usr
+
+    make
+    make DESTDIR="${PKG}" install
 }
