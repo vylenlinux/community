@@ -6,7 +6,7 @@ homepage="https://gohugo.io/"
 maintainer="Vylen Linux Team"
 
 name=hugo
-version=0.160.0
+version=0.160.1
 release=1
 source="https://github.com/gohugoio/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
@@ -18,7 +18,11 @@ build() {
     export CGO_CFLAGS="${CFLAGS}"
     export CGO_CXXFLAGS="${CXXFLAGS}"
     export CGO_LDFLAGS="${LDFLAGS}"
-    export GOFLAGS="-buildmode=pie -trimpath -mod=readonly -modcacherw"
+
+    export GOFLAGS="-buildmode=pie \
+        -trimpath \
+        -mod=readonly \
+        -modcacherw"
 
     go build -tags extended,withdeploy
     install -Dm755 "${name}" -t "${PKG}/usr/bin/"
