@@ -6,7 +6,7 @@ maintainer="Vylen Linux Team"
 homepage="https://github.com/astral-sh/uv" 
 
 name=uv
-version=0.11.5
+version=0.11.6
 release=1
 source="${name}-${version}.tar.gz::https://github.com/astral-sh/${name}/archive/refs/tags/${version}.tar.gz"
 
@@ -14,14 +14,30 @@ build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
 
-    cargo fetch --locked --target "$(rustc --print host-tuple)"
+    cargo fetch \
+        --locked \
+        --target "$(rustc --print host-tuple)"
+
     tripple="$(rustc --print host-tuple)"
 
     # Note: do not use --all-features as in enables a self-updater
-    maturin build --locked --release --target "${tripple}" --strip --compatibility linux
-    maturin build --locked --release --target "${tripple}" --strip --compatibility linux -m crates/uv-build/Cargo.toml
+    maturin build \
+        --locked \
+        --release \
+        --target "${tripple}" \
+        --strip \
+        --compatibility linux
+
+    maturin build \
+        --locked \
+        --release \
+        --target "${tripple}" \
+        --strip \
+        --compatibility linux \
+        -m crates/uv-build/Cargo.toml
 
     _target="target/$(rustc --print host-tuple)/release/${name}"
+
     install -Dm0755 "${_target}"  -t "${PKG}/usr/bin/"
     install -Dm0755 "${_target}x" -t "${PKG}/usr/bin/"
 }
