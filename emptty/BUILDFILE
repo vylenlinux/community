@@ -1,0 +1,38 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
+description="Dead simple CLI Display Manager on TTY"
+homepage="https://github.com/tvrzna/emptty"
+maintainer="Vylen Linux Team"
+
+name=emptty
+version=0.16.1
+release=1
+
+source="${name}-${version}.tar.gz::https://github.com/tvrzna/${name}/archive/v${version}.tar.gz
+    run.${name}"
+
+backup="etc/emptty/conf"
+
+build() {
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    make build
+    make DESTDIR="${PKG}" install-all
+    make DESTDIR="${PKG}" install-config
+
+    # Configure PAM
+    cat <<'EOF' > "${PKG}/etc/pam.d/${name}"
+auth        include     system-auth
+-auth       optional    pam_kwallet5.so
+account     include     system-account
+password    include     system-password
+session     optional    pam_keyinit.so force revoke
+session     include     system-session
+-session    optional    pam_kwallet5.so auto_start
+EOF
+
+    install -Dm755 "${SRC}/run.$name" "${PKG}/etc/sv/${name}/run"
+    ln -s "/run/runit/supervise.${name}" "${PKG}/etc/sv/${name}/supervise"
+}
