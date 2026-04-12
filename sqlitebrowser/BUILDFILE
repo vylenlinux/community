@@ -6,8 +6,8 @@ maintainer="Vylen Linux Team"
 homepage="https://sqlitebrowser.org"
 
 name=sqlitebrowser
-version=nightly.2b39cef
-release=2
+version=nightly.6ee0117
+release=1
 source="${name}-${version}.tar.gz::https://github.com/${name}/${name}/archive/refs/tags/nightly.tar.gz"
 
 build() {
