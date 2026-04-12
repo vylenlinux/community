@@ -7,7 +7,7 @@ maintainer="Vylen Linux Team"
 
 name=docker
 version=29.4.0
-release=1
+release=2
 
 source="https://github.com/moby/moby/archive/docker-v${version}/moby-${version}.tar.gz
     https://github.com/docker/cli/archive/v${version}/cli-${version}.tar.gz
@@ -24,7 +24,12 @@ build() {
     export CGO_CPPFLAGS="${CPPFLAGS}"
     export CGO_CXXFLAGS="${CXXFLAGS}"
     export CGO_LDFLAGS="${LDFLAGS}"
-    export GOFLAGS="-buildmode=pie -trimpath -mod=readonly -modcacherw -ldflags=-linkmode=external"
+
+    export GOFLAGS="-buildmode=pie \
+        -trimpath \
+        -mod=readonly \
+        -modcacherw \
+        -ldflags=-linkmode=external"
 
     mkdir -p src/github.com/docker
 
@@ -44,10 +49,10 @@ build() {
     cd docker
     VERSION="${version}" hack/make.sh dynbinary
 
-    install -D -m 0755 "${SRC}/cli-${version}/build/${name}" "${PKG}/usr/bin/${name}"
-    install -D -m 0755 "${SRC}/moby-${name}-v${version}/bundles/dynbinary-daemon/dockerd" "${PKG}/usr/bin/dockerd"
-    install -D -m 0755 "${SRC}/moby-${name}-v${version}/bundles/dynbinary-daemon/dockerd" "${PKG}/usr/bin/dockerd-proxy"
-    install -D -m 0644 "${SRC}/${name}.conf" "${PKG}/etc/${name}.conf"
+    install -Dm0755 "${SRC}/cli-${version}/build/${name}" -t "${PKG}/usr/bin/"
+    install -Dm0755 "${SRC}/moby-${name}-v${version}/bundles/dynbinary-daemon/dockerd" -t "${PKG}/usr/bin/"
+    install -Dm0755 "${SRC}/moby-${name}-v${version}/bundles/dynbinary-daemon/docker-proxy" -t "${PKG}/usr/bin/"
+    install -Dm0644 "${SRC}/${name}.conf" "${PKG}/etc/${name}.conf"
 
     # symlink externally provided tini-static binary
     ln -sf /sbin/tini "${PKG}/usr/bin/docker-init"
@@ -56,8 +61,8 @@ build() {
     ln -s ctr "${PKG}/usr/bin/docker-containerd-ctr"
     ln -s runc "${PKG}/usr/bin/docker-runc"
 
-    install -D -m 0755 "${SRC}/moby-${name}-v${version}/contrib/check-config.sh" "${PKG}/usr/share/${name}/check-config.sh"
-    install -D -m 0644 "${SRC}/cli-${version}/contrib/completion/bash/docker" "${PKG}/etc/bash_completion.d/docker"
+    install -Dm0755 "${SRC}/moby-${name}-v${version}/contrib/check-config.sh" -t "${PKG}/usr/share/${name}/"
+    install -Dm0644 "${SRC}/cli-${version}/contrib/completion/bash/docker" -t "${PKG}/etc/bash_completion.d/"
 
     install -Dm755 "${SRC}/run.${name}" "${PKG}/etc/sv/${name}/run"
     ln -s "/run/runit/supervise.${name}" "${PKG}/etc/sv/${name}/supervise"
