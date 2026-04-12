@@ -6,7 +6,7 @@ homepage="https://www.jetbrains.com/toolbox/"
 maintainer="CELESTIFYX Team <celestifyx@gmail.com>"
 
 name=jetbrains-toolbox
-version=3.3.1.75249
+version=3.4.1.78303
 release=1
 
 source="https://download.jetbrains.com/toolbox/${name}-${version}.tar.gz
@@ -22,7 +22,7 @@ build() {
     done
 
     install -Dm644 "${SRC}/${name}.desktop" -t "${PKG}/usr/share/applications/"
-    install -Dm644 "${SRC}/icon.svg" "${PKG}/usr/share/pixmaps/${name}.svg"
+    install -Dm644 "${SRC}/icon.svg" "${PKG}/usr/share/icons/hicolor/scalable/apps/${name}.svg"
 
     mv bin/* "${PKG}/opt/${name}"
     rm -rf "${PKG}/opt/${name}/jetbrainsd"
