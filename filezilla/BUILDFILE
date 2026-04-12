@@ -1,22 +1,26 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Fast and reliable FTP, FTPS and SFTP client"
 homepage="https://filezilla-project.org/"
 maintainer="Vylen Linux Team"
 
 name=filezilla
-version=3.69.6
+version=3.70.0
 release=1
-source="https://sources.archlinux.org/other/filezilla/$name-$version.tar.xz"
+source="https://sources.archlinux.org/other/${name}/${name}-${version}.tar.xz"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	./configure \
-	    --prefix=/usr \
-	    --disable-manualupdatecheck \
-	    --disable-autoupdatecheck \
-	    --without-dbus \
-	    --with-pugixml=builtin
-	make
-	make DESTDIR=$PKG install
+    ./configure \
+        --prefix=/usr \
+        --disable-manualupdatecheck \
+        --disable-autoupdatecheck \
+        --without-dbus \
+        --with-pugixml=builtin
 
+    make
+    make DESTDIR="${PKG}" install
 }
