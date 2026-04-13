@@ -7,7 +7,7 @@ maintainer="Vylen Linux Team"
 
 name=inkscape
 version=1.4.3
-release=1
+release=2
 
 source="https://media.inkscape.org/dl/resources/file/${name}-${version}.tar.xz
     inkscape-1.4.3-poppler-26_fixes-2.patch"
@@ -25,7 +25,6 @@ build() {
         -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
         -DPOPPLER_INCLUDE_DIR=/usr/include/poppler \
         -DWITH_INTERNAL_2GEOM=ON \
-        -DWITH_NLS=OFF \
         -Wno-dev
 
     cmake --build build
