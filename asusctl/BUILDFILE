@@ -6,7 +6,7 @@ homepage="https://asus-linux.org"
 maintainer="Vylen Linux Team"
 
 name=asusctl
-version=6.3.4
+version=6.3.6
 release=1
 
 source="https://gitlab.com/asus-linux/${name}/-/archive/${version}/${name}-${version}.tar.gz
@@ -22,16 +22,12 @@ build() {
     install -Dm755 "target/release/${name}"    -t "${PKG}/usr/bin/"
     install -Dm755 "target/release/asusd"      -t "${PKG}/usr/bin/"
     install -Dm755 "target/release/asusd-user" -t "${PKG}/usr/bin/"
+    # install -Dm755 "target/release/asus-shutdown" -t "${PKG}/usr/bin/" # The logind-zbus library is used; temporarily remove the installation of this file.
 
     install -Dm644 "rog-aura/data/aura_support.ron" -t "${PKG}/usr/share/asusd/"
     install -Dm644 "data/asusd.conf"                -t "${PKG}/usr/share/dbus-1/system.d/"
 
-    # shellcheck disable=SC2164
-    cd rog-anime/data
-        find "./anime" -type f -exec install -Dm644 "{}" "${PKG}/usr/share/asusd/{}" \;
-    # shellcheck disable=SC2164
-    # shellcheck disable=SC2103
-    cd -
+    find "rog-anime/data/anime" -type f -exec install -Dm644 "{}" "${PKG}/usr/share/asusd/{}" \;
 
     install -Dm755 "${SRC}/run.asusd" "${PKG}/etc/sv/asusd/run"
     ln -s "/run/runit/supervise.asusd" "${PKG}/etc/sv/asusd/supervise"
