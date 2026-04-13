@@ -1,14 +1,17 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="A simple Wine and Proton-based compatiblity tools manager for GNOME"
 homepage="https://github.com/Vysp3r/ProtonPlus"
 maintainer="Vylen Linux Team"
 
 name=protonplus
-version=0.5.17
+version=0.5.18
 release=1
-source="$name-$version.tar.gz::https://github.com/Vysp3r/ProtonPlus/archive/refs/tags/v$version.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/Vysp3r/${name}/archive/refs/tags/v${version}.tar.gz"
 
 build() {
-  vylen-meson "ProtonPlus-$version" build
-  meson compile -C build
-  DESTDIR=$PKG meson install --no-rebuild -C build
+    vylen-meson "ProtonPlus-${version}" build
+    meson compile -C build
+    DESTDIR="${PKG}" meson install --no-rebuild -C build
 }
