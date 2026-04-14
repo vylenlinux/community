@@ -8,5 +8,6 @@ libvirt-glib
 libvirt-python
 python3-gobject3
 python3-requests
+python3-certifi
 spice-gtk
 vte3
