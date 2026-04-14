@@ -6,7 +6,7 @@ maintainer="Vylen Linux Team"
 homepage="https://filezilla-project.org"
 
 name=fzssh
-version=1.1.7
+version=1.1.8
 release=1
 source="https://sources.archlinux.org/other/packages/${name}/${name}-${version}.tar.xz"
 
