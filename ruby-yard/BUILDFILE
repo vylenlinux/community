@@ -6,7 +6,7 @@ homepage="https://yardoc.org/"
 maintainer="Vylen Linux Team"
 
 name=ruby-yard
-version=0.9.39
+version=0.9.40
 release=1
 source="https://rubygems.org/downloads/${name#*-}-${version}.gem"
 
@@ -16,10 +16,10 @@ build() {
     gem install \
         --ignore-dependencies \
         --no-user-install \
-		--no-document \
+        --no-document \
         -i "${PKG}/${_gemdir}" \
         -n "${PKG}/usr/bin" \
         "${name#*-}-${version}.gem"
 
-	rm "${PKG}/${_gemdir}/cache/${name#*-}-${version}.gem"
+    rm "${PKG}/${_gemdir}/cache/${name#*-}-${version}.gem"
 }
