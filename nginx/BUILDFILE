@@ -6,7 +6,7 @@ homepage="http://nginx.org/"
 maintainer="Vylen Linux Team"
 
 name=nginx
-version=1.29.8
+version=1.30.0
 release=1
 
 source="http://nginx.org/download/${name}-${version}.tar.gz
@@ -17,7 +17,8 @@ build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
 
-    ./configure --prefix=/etc/nginx \
+    ./configure \
+        --prefix=/etc/nginx \
         --sbin-path=/usr/sbin/nginx \
         --conf-path=/etc/nginx/nginx.conf \
         --error-log-path=/var/log/nginx/error.log \
