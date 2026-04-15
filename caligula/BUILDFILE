@@ -1,15 +1,19 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="A user-friendly, lightweight TUI for disk imaging"
 homepage="https://github.com/ifd3f/caligula"
 maintainer="Vylen Linux Team"
 
 name=caligula
-version=0.4.10
+version=0.4.11
 release=1
-source="https://github.com/ifd3f/$name/archive/v$version/$name-$version.tar.gz"
+source="https://github.com/ifd3f/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-    cargo build --release --manifest-path Cargo.toml
-    install -Dt $PKG/usr/bin target/release/$name
+    cargo build --release
+    install -Dm755 "target/release/${name}" -t "${PKG}/usr/bin/"
 }
