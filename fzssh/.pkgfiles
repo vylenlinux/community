@@ -1,4 +1,4 @@
-fzssh-1.1.8-1
+fzssh-1.1.10-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/include/
 drwxr-xr-x root/root    usr/include/fzssh/
@@ -14,11 +14,11 @@ drwxr-xr-x root/root    usr/include/fzssh/sftp/
 -rw-r--r-- root/root    usr/include/fzssh/visibility.hpp
 -rw-r--r-- root/root    usr/include/fzssh/visibility_client.hpp
 drwxr-xr-x root/root    usr/lib/
-lrwxrwxrwx root/root    usr/lib/libfzssh-client.so -> libfzssh-client.so.10.0.0
--rwxr-xr-x root/root    usr/lib/libfzssh-client.so.10.0.0
-lrwxrwxrwx root/root    usr/lib/libfzssh-crypt.so -> libfzssh-crypt.so.10.0.0
--rwxr-xr-x root/root    usr/lib/libfzssh-crypt.so.10.0.0
-lrwxrwxrwx root/root    usr/lib/libfzssh.so -> libfzssh.so.10.0.0
--rwxr-xr-x root/root    usr/lib/libfzssh.so.10.0.0
+lrwxrwxrwx root/root    usr/lib/libfzssh-client.so -> libfzssh-client.so.10.2.0
+-rwxr-xr-x root/root    usr/lib/libfzssh-client.so.10.2.0
+lrwxrwxrwx root/root    usr/lib/libfzssh-crypt.so -> libfzssh-crypt.so.10.2.0
+-rwxr-xr-x root/root    usr/lib/libfzssh-crypt.so.10.2.0
+lrwxrwxrwx root/root    usr/lib/libfzssh.so -> libfzssh.so.10.2.0
+-rwxr-xr-x root/root    usr/lib/libfzssh.so.10.2.0
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/libfzssh-client.pc
