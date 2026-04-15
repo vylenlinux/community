@@ -1,23 +1,26 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="A daemon to control runC"
 homepage="https://containerd.io/"
 maintainer="Vylen Linux Team"
 
 name=containerd
-version=2.2.2
+version=2.2.3
 release=1
-commit=091922f03c2762540fd057fba91260237ff86acb
-source="$name-$version.tar.gz::https://github.com/containerd/containerd/archive/refs/tags/v$version.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/${name}/${name}/archive/refs/tags/v${version}.tar.gz"
 
 build() {
-	export GOFLAGS="$GOFLAGS -modcacherw -mod=readonly"
-	export GOCACHE="${GOCACHE:-"$SRC/go-cache"}"
-	export GOTMPDIR="${GOTMPDIR:-"$SRC"}"
-	export GOMODCACHE="${GOMODCACHE:-"$SRC/go"}"
-	export GO111MODULE=on
+    export GOFLAGS="${GOFLAGS} -modcacherw -mod=readonly"
+    export GOCACHE="${GOCACHE:-"${SRC}/go-cache"}"
+    export GOTMPDIR="${GOTMPDIR:-"${SRC}"}"
+    export GOMODCACHE="${GOMODCACHE:-"${SRC}/go"}"
+    export GO111MODULE=on
 
-	cd $name-$version
-	make VERSION="v$version" REVISION="$commit" BUILDMODE=pie
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+    make VERSION="v${version}" REVISION="091922f03c2762540fd057fba91260237ff86acb" BUILDMODE=pie
 
-	mkdir -pv $PKG/usr/bin
-	install -Dsm755 ./bin/* $PKG/usr/bin/
+    mkdir -pv "${PKG}/usr/bin"
+    install -Dsm755 ./bin/* "${PKG}/usr/bin/"
 }
