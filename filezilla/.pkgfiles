@@ -1,12 +1,12 @@
-filezilla-3.70.3-1
+filezilla-3.70.4-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/filezilla
 drwxr-xr-x root/root    usr/lib/
--rwxr-xr-x root/root    usr/lib/libfzclient-commonui-private-3.70.3.so
-lrwxrwxrwx root/root    usr/lib/libfzclient-commonui-private.so -> libfzclient-commonui-private-3.70.3.so
--rwxr-xr-x root/root    usr/lib/libfzclient-private-3.70.3.so
-lrwxrwxrwx root/root    usr/lib/libfzclient-private.so -> libfzclient-private-3.70.3.so
+-rwxr-xr-x root/root    usr/lib/libfzclient-commonui-private-3.70.4.so
+lrwxrwxrwx root/root    usr/lib/libfzclient-commonui-private.so -> libfzclient-commonui-private-3.70.4.so
+-rwxr-xr-x root/root    usr/lib/libfzclient-private-3.70.4.so
+lrwxrwxrwx root/root    usr/lib/libfzclient-private.so -> libfzclient-private-3.70.4.so
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/appdata/
 -rw-r--r-- root/root    usr/share/appdata/filezilla.appdata.xml
