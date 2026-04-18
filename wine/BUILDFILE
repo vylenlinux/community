@@ -6,12 +6,12 @@ homepage="https://dl.winehq.org/wine"
 maintainer="Vylen Linux Team"
 
 name=wine
-version=11.6
+version=11.7
 release=1
 source="https://dl.winehq.org/wine/source/${version%%.*}.x/${name}-${version}.tar.xz"
 
 build() {
-	# shellcheck disable=SC2164
+    # shellcheck disable=SC2164
     cd "${name}-${version}"
 
     mkdir build64
