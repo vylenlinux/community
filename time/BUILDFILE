@@ -1,19 +1,29 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Utility for monitoring a program's use of system resources"
 homepage="https://www.gnu.org/software/time/"
 maintainer="Vylen Linux Team"
 
+# shellcheck disable=SC2209
 name=time
-version=1.9
+version=1.10
 release=1
-source="https://ftp.gnu.org/gnu/time/$name-$version.tar.gz"
+source="https://ftp.gnu.org/gnu/${name}/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	export CFLAGS="$CFLAGS -Wno-error=implicit-function-declaration -Wno-error=incompatible-pointer-types"
+    export CFLAGS="${CFLAGS} \
+        -Wno-error=implicit-function-declaration \
+        -Wno-error=incompatible-pointer-types"
 
-	./configure --prefix=/usr
-	make
-	make DESTDIR=$PKG install
-	rm -r $PKG/usr/share
+    ./configure --prefix=/usr
+
+    make
+    make DESTDIR="${PKG}" install
+
+    # shellcheck disable=SC2115
+    rm -r "${PKG}/usr/share"
 }
