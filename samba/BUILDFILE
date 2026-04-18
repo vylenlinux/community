@@ -6,7 +6,7 @@ homepage="https://www.samba.org"
 maintainer="Vylen Linux Team"
 
 name=samba
-version=4.24.0
+version=4.24.1
 release=1
 
 source="https://www.samba.org/ftp/${name}/stable/${name}-${version}.tar.gz
@@ -53,7 +53,7 @@ build() {
     echo "/usr/lib/samba/" > "${PKG}/etc/revdep.d/samba.conf"
     echo "/usr/lib/python3.*/site-packages/samba/" >> "${PKG}/etc/revdep.d/samba.conf"
 
-    # insall pam file
+    # install pam file
     install -Dm644 "${SRC}/samba.pam" "${PKG}/etc/pam.d/samba"
     install -Dm755 "${SRC}/run.nmbd" "${PKG}/etc/sv/nmbd/run"
 
