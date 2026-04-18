@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/dash
 
 # shellcheck disable=SC2034
 description="An extremely fast Python package installer and resolver written in Rust"
@@ -6,7 +6,7 @@ maintainer="Vylen Linux Team"
 homepage="https://github.com/astral-sh/uv" 
 
 name=uv
-version=0.11.6
+version=0.11.7
 release=1
 source="${name}-${version}.tar.gz::https://github.com/astral-sh/${name}/archive/refs/tags/${version}.tar.gz"
 
