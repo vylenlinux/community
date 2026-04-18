@@ -34,7 +34,7 @@ build() {
     # shellcheck disable=SC2164
     cd wine64
 
-    ../wine-${version}/configure \
+    "../wine-${version}/configure" \
         --prefix=/usr \
         --libdir=/usr/lib \
         --with-x \
