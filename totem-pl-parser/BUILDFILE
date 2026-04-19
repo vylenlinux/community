@@ -1,16 +1,17 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Simple GObject-based library to parse and save a host of playlist formats"
 homepage="https://gitlab.gnome.org/GNOME/totem-pl-parser"
 maintainer="Vylen Linux Team"
 
 name=totem-pl-parser
-version=3.26.6
-vrsn=$(printf "$version" | sed 's/\./_/g')
+version=3.26.7
 release=1
-source="$name-$version.tar.bz2::https://gitlab.gnome.org/GNOME/totem-pl-parser/-/archive/V_$vrsn/totem-pl-parser-V_$vrsn.tar.bz2"
-
+source="${name}-${version}.tar.bz2::https://gitlab.gnome.org/GNOME/${name}/-/archive/${version}/${name}-${version}.tar.gz"
 
 build() {
-	vylen-meson $name-V_$vrsn build -D enable-gtk-doc=false
-	meson compile -C build
-	DESTDIR=$PKG meson install --no-rebuild -C build
+    vylen-meson "${name}-${version}" build -D enable-gtk-doc=false
+    meson compile -C build
+    DESTDIR="${PKG}" meson install --no-rebuild -C build
 }
