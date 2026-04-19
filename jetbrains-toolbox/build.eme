@@ -6,7 +6,7 @@ homepage="https://www.jetbrains.com/toolbox/"
 maintainer="CELESTIFYX Team <celestifyx@gmail.com>"
 
 name=jetbrains-toolbox
-version=3.4.1.78303
+version=3.4.3.81140
 release=1
 
 source="https://download.jetbrains.com/toolbox/${name}-${version}.tar.gz
@@ -17,7 +17,7 @@ build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
 
-    for dir in "usr/bin" "opt/${name}"; do
+    for dir in usr/bin "opt/${name}"; do
         mkdir -p "${PKG}/${dir}"
     done
 

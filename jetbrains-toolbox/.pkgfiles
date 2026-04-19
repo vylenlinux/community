@@ -1,4 +1,4 @@
-jetbrains-toolbox-3.4.1.78303-1
+jetbrains-toolbox-3.4.3.81140-1
 drwxr-xr-x root/root    opt/
 drwxr-xr-x root/root    opt/jetbrains-toolbox/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/Install-linux-tar.txt
@@ -176,7 +176,7 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/jre/lib/server/
 drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
 drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/all/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/all/aalto-xml-1.3.3.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/all/agent-network-api-3.4.1.78303.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/all/agent-network-api-3.4.3.81140.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/all/annotation-jvm-1.9.1.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/all/annotations-26.0.1.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/all/api-gateway-api-jvm-0.8.87.jar
@@ -199,7 +199,7 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/all/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/all/delight-rhino-sandbox-0.2.2.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/all/error_prone_annotations-2.26.1.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/all/fastutil-core-8.5.11.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/all/gateway-remote-api-3.4.1.78303.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/all/gateway-remote-api-3.4.3.81140.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/all/id-generation-85.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/all/intellij-deps-fastutil-8.5.4-9.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/all/jackson-annotations-2.19.1.jar
@@ -295,21 +295,21 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/all/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/all/utils-ktor-jvm-0.8.87.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/all/xz-1.9.jar
 drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/bootstrap/
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/bootstrap/app-starter-3.4.1.78303.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/bootstrap/app-starter-3.4.3.81140.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/bootstrap/kotlin-reflect-2.3.10-RC.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/bootstrap/kotlin-stdlib-2.3.10-RC.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/bootstrap/kotlinx-coroutines-core-jvm-1.10.2.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/bootstrap/kotlinx-serialization-core-jvm-1.9.0.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/bootstrap/kotlinx-serialization-json-jvm-1.9.0.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/bootstrap/logging-bootstrap-3.4.1.78303.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/bootstrap/logging-bootstrap-3.4.3.81140.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/bootstrap/slf4j-api-2.0.17.jar
 drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/pluginApi/
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/pluginApi/platform-image-1.10.78303.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/pluginApi/platform-resource-1.10.78303.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/pluginApi/plugin-api-core-1.10.78303.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/pluginApi/plugin-api-localization-1.10.78303.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/pluginApi/plugin-api-remote-dev-1.10.78303.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/pluginApi/plugin-api-ui-1.10.78303.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/pluginApi/platform-image-1.10.81140.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/pluginApi/platform-resource-1.10.81140.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/pluginApi/plugin-api-core-1.10.81140.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/pluginApi/plugin-api-localization-1.10.81140.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/pluginApi/plugin-api-remote-dev-1.10.81140.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/pluginApi/plugin-api-ui-1.10.81140.jar
 -rwxr-xr-x root/root    opt/jetbrains-toolbox/libXss.so.1
 -rwxr-xr-x root/root    opt/jetbrains-toolbox/libjetbrains-toolbox-interop.so
 -rw-r--r-- root/root    opt/jetbrains-toolbox/libjnidispatch.so
