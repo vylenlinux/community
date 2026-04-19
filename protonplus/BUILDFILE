@@ -6,7 +6,7 @@ homepage="https://github.com/Vysp3r/ProtonPlus"
 maintainer="Vylen Linux Team"
 
 name=protonplus
-version=0.5.18
+version=0.5.20
 release=1
 source="${name}-${version}.tar.gz::https://github.com/Vysp3r/${name}/archive/refs/tags/v${version}.tar.gz"
 
