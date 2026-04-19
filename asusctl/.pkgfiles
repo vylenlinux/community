@@ -1,9 +1,7 @@
-asusctl-6.3.6-1
+asusctl-6.3.7-1
 drwxr-xr-x root/root    etc/
-drwxr-xr-x root/root    etc/sv/
-drwxr-xr-x root/root    etc/sv/asusd/
--rwxr-xr-x root/root    etc/sv/asusd/run
-lrwxrwxrwx root/root    etc/sv/asusd/supervise -> /run/runit/supervise.asusd
+drwxr-xr-x root/root    etc/init.d/
+-rwxr-xr-x root/root    etc/init.d/asusd
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/asusctl

@@ -6,11 +6,9 @@ homepage="https://asus-linux.org"
 maintainer="Vylen Linux Team"
 
 name=asusctl
-version=6.3.6
+version=6.3.7
 release=1
-
-source="https://gitlab.com/asus-linux/${name}/-/archive/${version}/${name}-${version}.tar.gz
-    run.asusd"
+source="https://gitlab.com/asus-linux/${name}/-/archive/${version}/${name}-${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
@@ -28,7 +26,5 @@ build() {
     install -Dm644 "data/asusd.conf"                -t "${PKG}/usr/share/dbus-1/system.d/"
 
     find "rog-anime/data/anime" -type f -exec install -Dm644 "{}" "${PKG}/usr/share/asusd/{}" \;
-
-    install -Dm755 "${SRC}/run.asusd" "${PKG}/etc/sv/asusd/run"
-    ln -s "/run/runit/supervise.asusd" "${PKG}/etc/sv/asusd/supervise"
+    openrc_add asusd
 }
