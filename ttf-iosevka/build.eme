@@ -6,7 +6,7 @@ homepage="https://typeof.net/Iosevka/"
 maintainer="Vylen Linux Team"
 
 name=ttf-iosevka
-version=34.3.0
+version=34.4.0
 release=1
 source="${name}-${version}.zip::https://github.com/be5invis/Iosevka/releases/download/v${version}/PkgTTF-Iosevka-${version}.zip"
 
