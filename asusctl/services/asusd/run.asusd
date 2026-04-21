@@ -1,0 +1,4 @@
+#!/bin/sh
+
+export IS_SERVICE=1
+exec asusd
