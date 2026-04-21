@@ -6,7 +6,7 @@ homepage="https://github.com/spicetify/spicetify-cli"
 maintainer="Vylen Linux Team"
 
 name=spicetify-cli
-version=2.43.1
+version=2.43.2
 release=1
 source="https://github.com/spicetify/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
