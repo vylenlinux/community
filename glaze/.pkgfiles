@@ -1,4 +1,4 @@
-glaze-7.3.3-1
+glaze-7.4.0-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/include/
 drwxr-xr-x root/root    usr/include/glaze/
@@ -117,6 +117,7 @@ drwxr-xr-x root/root    usr/include/glaze/exceptions/
 -rw-r--r-- root/root    usr/include/glaze/exceptions/csv_exceptions.hpp
 -rw-r--r-- root/root    usr/include/glaze/exceptions/json_exceptions.hpp
 -rw-r--r-- root/root    usr/include/glaze/exceptions/json_schema_exceptions.hpp
+-rw-r--r-- root/root    usr/include/glaze/exceptions/jsonb_exceptions.hpp
 -rw-r--r-- root/root    usr/include/glaze/exceptions/msgpack_exceptions.hpp
 drwxr-xr-x root/root    usr/include/glaze/ext/
 -rw-r--r-- root/root    usr/include/glaze/ext/README.md
@@ -164,6 +165,14 @@ drwxr-xr-x root/root    usr/include/glaze/json/
 -rw-r--r-- root/root    usr/include/glaze/json/study.hpp
 -rw-r--r-- root/root    usr/include/glaze/json/wrappers.hpp
 -rw-r--r-- root/root    usr/include/glaze/json/write.hpp
+-rw-r--r-- root/root    usr/include/glaze/jsonb.hpp
+drwxr-xr-x root/root    usr/include/glaze/jsonb/
+-rw-r--r-- root/root    usr/include/glaze/jsonb/header.hpp
+-rw-r--r-- root/root    usr/include/glaze/jsonb/jsonb_to_json.hpp
+-rw-r--r-- root/root    usr/include/glaze/jsonb/read.hpp
+-rw-r--r-- root/root    usr/include/glaze/jsonb/skip.hpp
+-rw-r--r-- root/root    usr/include/glaze/jsonb/text_decode.hpp
+-rw-r--r-- root/root    usr/include/glaze/jsonb/write.hpp
 -rw-r--r-- root/root    usr/include/glaze/msgpack.hpp
 drwxr-xr-x root/root    usr/include/glaze/msgpack/
 -rw-r--r-- root/root    usr/include/glaze/msgpack/common.hpp
