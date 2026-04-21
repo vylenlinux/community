@@ -1,4 +1,4 @@
-tlp-1.9.1-2
+tlp-1.10.0-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/sv/
 drwxr-xr-x root/root    etc/sv/tlpd/
@@ -78,18 +78,18 @@ drwxr-xr-x root/root    usr/share/tlp/bat.d/
 -rwxr-xr-x root/root    usr/share/tlp/bat.d/05-thinkpad
 -rwxr-xr-x root/root    usr/share/tlp/bat.d/10-thinkpad-legacy
 -rwxr-xr-x root/root    usr/share/tlp/bat.d/15-lenovo
+-rwxr-xr-x root/root    usr/share/tlp/bat.d/16-lenovo-legacy
 -rwxr-xr-x root/root    usr/share/tlp/bat.d/20-huawei
 -rwxr-xr-x root/root    usr/share/tlp/bat.d/25-msi
 -rwxr-xr-x root/root    usr/share/tlp/bat.d/30-samsung
 -rwxr-xr-x root/root    usr/share/tlp/bat.d/35-lg
--rwxr-xr-x root/root    usr/share/tlp/bat.d/36-lg-legacy
 -rwxr-xr-x root/root    usr/share/tlp/bat.d/40-sony
 -rwxr-xr-x root/root    usr/share/tlp/bat.d/45-system76
 -rwxr-xr-x root/root    usr/share/tlp/bat.d/50-toshiba
 -rwxr-xr-x root/root    usr/share/tlp/bat.d/55-cros-ec
--rwxr-xr-x root/root    usr/share/tlp/bat.d/56-framework
 -rwxr-xr-x root/root    usr/share/tlp/bat.d/60-macbook
 -rwxr-xr-x root/root    usr/share/tlp/bat.d/65-dell
+-rwxr-xr-x root/root    usr/share/tlp/bat.d/66-wilco-ec
 -rwxr-xr-x root/root    usr/share/tlp/bat.d/70-tuxedo
 -rwxr-xr-x root/root    usr/share/tlp/bat.d/89-asus
 -rwxr-xr-x root/root    usr/share/tlp/bat.d/90-generic
