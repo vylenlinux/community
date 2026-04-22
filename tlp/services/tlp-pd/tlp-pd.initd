@@ -1,0 +1,11 @@
+#!/sbin/openrc-run
+
+# shellcheck disable=SC2034
+command=/usr/sbin/tlp-pd
+name="TLP Profile Daemon"
+command_background=true
+pidfile="/run/tlp-pd.pid"
+
+depend() {
+    need udev
+}

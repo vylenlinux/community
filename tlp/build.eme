@@ -15,8 +15,6 @@ build() {
     cd "TLP-${version}"
     make DESTDIR="${PKG}" install
 
-    runit_add tlpd
-
-    rm -rf "${PKG}/usr/lib/systemd" \
-        "${PKG}/etc/init.d"
+    openrc_add "${name}" "${name}-pd"
+    rm -rf "${PKG}/usr/lib/systemd"
 }
