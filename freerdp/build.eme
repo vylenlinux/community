@@ -6,7 +6,7 @@ homepage="https://www.freerdp.com/"
 maintainer="Vylen Linux Team"
 
 name=freerdp
-version=3.24.2
+version=3.25.0
 release=1
 source="https://github.com/${name}/${name}/archive/${version}/${name}-${version}.tar.gz"
 
@@ -46,6 +46,7 @@ build() {
         -DWINPR_UTILS_IMAGE_JPEG=ON \
         -DWINPR_UTILS_IMAGE_WEBP=ON \
         -DWITH_CLIENT_SDL3=OFF \
+        -DWITH_CLIENT_SDL2=ON \
         -Wno-dev
 
     cmake --build build
