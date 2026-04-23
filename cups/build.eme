@@ -6,7 +6,7 @@ homepage="https://openprinting.github.io/cups/"
 maintainer="Vylen Linux Team"
 
 name=cups
-version=2.4.17
+version=2.4.18
 release=1
 
 source="${name}-${version}.tar.gz::https://github.com/OpenPrinting/${name}/archive/v${version}/${name}-${version}-source.tar.gz
