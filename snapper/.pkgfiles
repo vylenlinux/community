@@ -1,4 +1,4 @@
-snapper-0.13.0-1
+snapper-0.13.1-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/cron.hourly/
 -rwxr-xr-x root/root    etc/cron.hourly/snapper
@@ -8,10 +8,6 @@ drwxr-xr-x root/root    etc/snapper/
 drwxr-xr-x root/root    etc/snapper/backup-configs/
 drwxr-xr-x root/root    etc/snapper/certs/
 drwxr-xr-x root/root    etc/snapper/configs/
-drwxr-xr-x root/root    etc/sv/
-drwxr-xr-x root/root    etc/sv/snapperd/
--rwxr-xr-x root/root    etc/sv/snapperd/run
-lrwxrwxrwx root/root    etc/sv/snapperd/supervise -> /run/runit/supervise.snapperd
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/mksubvolume

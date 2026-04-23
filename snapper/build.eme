@@ -1,44 +1,54 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="A tool for managing BTRFS and LVM snapshots. It can create, diff and restore snapshots and provides timelined auto-snapping."
 homepage="http://snapper.io"
 maintainer="Vylen Linux Team"
 
 name=snapper
-version=0.13.0
+version=0.13.1
 release=1
-
-source="https://github.com/openSUSE/snapper/archive/v$version/$name-$version.tar.gz
-	run.snapperd"
+source="https://github.com/openSUSE/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
-	    cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+    export XML_CATALOG_FILES=/etc/xml/catalog
 
-	    export XML_CATALOG_FILES=/etc/xml/catalog
+    # rename cron scripts
+    sed -i -e 's@suse.de-@@g' scripts/Makefile.am
 
-	    # rename cron scripts
-	    sed -i -e 's@suse.de-@@g' scripts/Makefile.am
+    # fix config location in cron scripts
+    sed -i -e 's@/etc/sysconfig/@/etc/conf.d/@g' scripts/snapper-hourly
 
-	    # fix config location in cron scripts
-	    sed -i -e 's@/etc/sysconfig/@/etc/conf.d/@g' scripts/snapper-hourly
+    # fix pam plugin install location
+    sed -i -e 's@shell echo /@shell echo /usr/@g' pam/Makefile.am
+    aclocal
 
-	    # fix pam plugin install location
-	    sed -i -e 's@shell echo /@shell echo /usr/@g' pam/Makefile.am
+    libtoolize \
+        --force \
+        --automake \
+        --copy
 
-	aclocal
-	libtoolize --force --automake --copy
-	autoheader
-	automake --add-missing --copy
-	autoconf
-	./configure --prefix=/usr \
-		--sbindir=/usr/bin \
-		--with-conf=/etc/conf.d \
-		--with-pam-security=/usr/lib/security \
-		--disable-zypp \
-		--disable-systemd \
-		--disable-silent-rules
-	make
-	make DESTDIR=$PKG install
-	rm -rf $PKG/usr/lib/snapper/testsuite/
+    autoheader
 
-	install -Dm755 $SRC/run.snapperd $PKG/etc/sv/snapperd/run
-	ln -s /run/runit/supervise.snapperd $PKG/etc/sv/snapperd/supervise
+    automake \
+        --add-missing \
+        --copy
+
+    autoconf
+
+    ./configure \
+        --prefix=/usr \
+        --sbindir=/usr/bin \
+        --with-conf=/etc/conf.d \
+        --with-pam-security=/usr/lib/security \
+        --disable-zypp \
+        --disable-systemd \
+        --disable-silent-rules
+
+    make
+    make DESTDIR="${PKG}" install
+
+    rm -rf "${PKG}/usr/lib/snapper/testsuite/"
 }
