@@ -1,22 +1,27 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="KDAB's helper class for single-instance policy applications"
 homepage="https://github.com/KDAB/KDSingleApplication"
 maintainer="Vylen Linux Team"
 
 name=kdsingleapplication
-version=1.2.0
+version=1.2.1
 release=1
-source="https://github.com/KDAB/KDSingleApplication/releases/download/v${version}/kdsingleapplication-$version.tar.gz"
+source="https://github.com/KDAB/${name}/releases/download/v${version}/${name}-${version}.tar.gz"
 
 build() {
-	cmake -S KDSingleApplication-$version -B build            \
-	        -DCMAKE_BUILD_TYPE=Release \
-	        -DCMAKE_INSTALL_PREFIX=/usr \
-	        -DCMAKE_INSTALL_LIBDIR=lib \
-	        -DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
-		-DKDSingleApplication_QT6=ON \
-	        -Wno-dev
-	cmake --build build
-	DESTDIR="$PKG" cmake --install build
+    cmake -S "KDSingleApplication-${version}" -B build \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_INSTALL_LIBDIR=lib \
+        -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
+        -DKDSingleApplication_QT6=ON \
+        -Wno-dev
 
-	rm -rf $PKG/usr/share
-  }
+    cmake --build build
+    DESTDIR="${PKG}" cmake --install build
+
+    # shellcheck disable=SC2115
+    rm -rf "${PKG}/usr/share"
+}
