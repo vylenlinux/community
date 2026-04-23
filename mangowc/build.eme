@@ -6,9 +6,9 @@ maintainer="Vylen Linux Team"
 homepage="https://mangowm.github.io/"
 
 name=mangowc
-version=0.21.8
+version=0.12.8
 release=1
-source="${name}-${version}.tar.gz::https://github.com/DreamMaoMao/mangowc/archive/refs/tags/${version}.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/DreamMaoMao/${name}/archive/refs/tags/${version}.tar.gz"
 
 build() {
     vylen-meson "${name}-${version}" build
