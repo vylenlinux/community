@@ -6,7 +6,7 @@ homepage="https://github.com/nwg-piotr/nwg-shell-config"
 maintainer="Vylen Linux Team"
 
 name=nwg-shell-config
-version=0.5.63
+version=0.5.64
 release=1
 
 source="${name}-${version}.tar.gz::https://github.com/nwg-piotr/${name}/archive/v${version}.tar.gz
@@ -16,9 +16,11 @@ source="${name}-${version}.tar.gz::https://github.com/nwg-piotr/${name}/archive/
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-
     patch -p1 < "${SRC}/add_support_for_emerald.patch"
-    python3 setup.py install --root="${PKG}" --optimize=1
+
+    python3 setup.py install \
+        --root="${PKG}" \
+        --optimize=1
 
     install -Dm644 nwg-shell-config.svg     -t "${PKG}/usr/share/pixmaps/"
     install -Dm644 nwg-shell-update.svg     -t "${PKG}/usr/share/pixmaps/"
