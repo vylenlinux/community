@@ -1,4 +1,4 @@
-neovim-0.12.1-1
+neovim-0.12.2-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/nvim
@@ -1195,22 +1195,23 @@ drwxr-xr-x root/root    usr/share/nvim/runtime/lua/vim/_ftplugin/
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_inspector.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta.lua
 drwxr-xr-x root/root    usr/share/nvim/runtime/lua/vim/_meta/
--rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/api.lua
--rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/api_keysets.lua
+-rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/api.gen.lua
+-rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/api_keysets.gen.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/api_keysets_extra.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/base64.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/builtin.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/builtin_types.lua
+-rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/events.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/json.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/lpeg.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/misc.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/mpack.lua
--rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/options.lua
+-rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/options.gen.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/re.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/regex.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/spell.lua
--rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/vimfn.lua
--rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/vvars.lua
+-rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/vimfn.gen.lua
+-rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/vvars.gen.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/vvars_extra.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_watch.lua
 drwxr-xr-x root/root    usr/share/nvim/runtime/lua/vim/deprecated/
