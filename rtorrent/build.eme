@@ -1,18 +1,24 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Ncurses BitTorrent client based on libTorrent"
 homepage="https://rakshasa.github.io/rtorrent/"
 maintainer="Vylen Linux Team"
 
 name=rtorrent
-version=0.16.8
+version=0.16.10
 release=1
-source="https://github.com/rakshasa/$name/releases/download/v$version/$name-$version.tar.gz"
+source="https://github.com/rakshasa/${name}/releases/download/v${version}/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+    autoreconf -fvi
 
-	autoreconf -fvi
+    ./configure \
+        --prefix=/usr \
+        --disable-debug
 
-	./configure --prefix=/usr --disable-debug
-	make
-	make DESTDIR=$PKG install
+    make
+    make DESTDIR="${PKG}" install
 }
