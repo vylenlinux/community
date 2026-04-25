@@ -1,12 +1,15 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Wine's built-in replacement for Microsoft's .NET Framework"
 homepage="https://github.com/madewokherd/wine-mono"
 maintainer="Vylen Linux Team"
 
 name=wine-mono
-version=11.0.0
+version=11.1.0
 release=1
-source="https://github.com/madewokherd/wine-mono/releases/download/${name}-${version}/${name}-${version}-x86.msi"
+source="${name}-${version}.msi::https://github.com/madewokherd/${name}/releases/download/${name}-${version}/${name}-${version}-x86.msi"
 
 build() {
-	install -Dm644 wine-mono-$version-x86.msi $PKG/usr/share/wine/mono/wine-mono-$version.msi
+    install -Dm644 "${name}-${version}.msi" "${PKG}/usr/share/wine/mono/"
 }
