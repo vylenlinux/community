@@ -6,7 +6,7 @@ homepage="https://limine-bootloader.org "
 maintainer="Vylen Linux Team"
 
 name=limine
-version=11.4.1
+version=12.0.2
 release=1
 source="https://github.com/Limine-Bootloader/${name}/releases/download/v${version}/${name}-${version}.tar.xz"
 
