@@ -6,7 +6,7 @@ maintainer="Vylen Linux Team"
 homepage="https://github.com/niri-wm/niri"
 
 name=niri
-version=25.11
+version=26.04
 release=1
 
 source="https://github.com/niri-wm/${name}/archive/v${version}/${name}-${version}.tar.gz
@@ -15,8 +15,8 @@ source="https://github.com/niri-wm/${name}/archive/v${version}/${name}-${version
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-
     mkdir "${SRC}/rust"
+
     export CARGO_HOME="${SRC}/rust"
     export NIRI_BUILD_COMMIT="b35bcae"
 
