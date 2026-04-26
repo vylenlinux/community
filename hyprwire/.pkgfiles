@@ -1,4 +1,4 @@
-hyprwire-0.3.0-1
+hyprwire-0.3.1-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/hyprwire-scanner
@@ -22,8 +22,8 @@ drwxr-xr-x root/root    usr/lib/cmake/hyprwire-scanner/
 -rw-r--r-- root/root    usr/lib/cmake/hyprwire-scanner/hyprwire-scanner-config-version.cmake
 -rw-r--r-- root/root    usr/lib/cmake/hyprwire-scanner/hyprwire-scanner-config.cmake
 lrwxrwxrwx root/root    usr/lib/libhyprwire.so -> libhyprwire.so.3
--rwxr-xr-x root/root    usr/lib/libhyprwire.so.0.3.0
-lrwxrwxrwx root/root    usr/lib/libhyprwire.so.3 -> libhyprwire.so.0.3.0
+-rwxr-xr-x root/root    usr/lib/libhyprwire.so.0.3.1
+lrwxrwxrwx root/root    usr/lib/libhyprwire.so.3 -> libhyprwire.so.0.3.1
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/hyprwire-scanner.pc
 -rw-r--r-- root/root    usr/lib/pkgconfig/hyprwire.pc
