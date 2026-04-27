@@ -6,7 +6,7 @@ maintainer="Vylen Linux Team"
 homepage="https://mangowm.github.io/"
 
 name=mangowc
-version=0.12.8
+version=0.12.9
 release=1
 source="${name}-${version}.tar.gz::https://github.com/DreamMaoMao/${name}/archive/refs/tags/${version}.tar.gz"
 
