@@ -1,0 +1,21 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
+description="Multiple device (RAID) admin tool"
+maintainer="Vylen Linux Team"
+homepage="http://neil.brown.name/blog/mdadm"
+
+name=mdadm
+version=4.6
+release=1
+source="https://git.kernel.org/pub/scm/utils/${name}/${name}.git/snapshot/${name}-${version}.tar.gz"
+
+build() {
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    make CXFLAGS="${CFLAGS}" BINDIR=/usr/bin UDEVDIR=/usr/lib/udev everything
+    make INSTALL=/usr/bin/install BINDIR=/usr/bin DESTDIR="${PKG}" UDEVDIR=/usr/lib/udev install
+
+    openrc_add "${name}" mdraid
+}
