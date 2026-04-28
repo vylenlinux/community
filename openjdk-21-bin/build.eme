@@ -1,19 +1,20 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Temurin 21 (OpenJDK 21 Java binaries by Adoptium, formerly AdoptOpenJDK)"
 homepage="https://github.com/adoptium/"
 maintainer="Vylen Linux Team"
 
 name=openjdk-21-bin
-version=21.0.9+10
-vrsn=$(printf "$version" | sed 's/+/_/g')
+version=21.0.11+10
 release=1
-source="$name-$version.tar.gz::https://github.com/adoptium/temurin${version%%.*}-binaries/releases/download/jdk-$version/OpenJDK${version%%.*}U-jdk_x64_linux_hotspot_$vrsn.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/adoptium/temurin${version%%.*}-binaries/releases/download/jdk-${version}/OpenJDK${version%%.*}U-jdk_x64_linux_hotspot_$(printf "%s" "${version}" | sed 's/+/_/g').tar.gz"
 
 build() {
-	install -dm 755 "${PKG}/usr/lib/jvm/java-${version%%.*}-openjdk"
-	cp --reflink=auto -a "${SRC}/jdk-$version"/* "${PKG}/usr/lib/jvm/java-${version%%.*}-openjdk"
+    install -dm 755 "${PKG}/usr/lib/jvm/java-${version%%.*}-openjdk"
+    cp --reflink=auto -a "${SRC}/jdk-${version}"/* "${PKG}/usr/lib/jvm/java-${version%%.*}-openjdk"
 
-	# Exclude for revdep
-	install -d $PKG/etc/revdep.d
-	echo "/usr/lib/jvm/java-${version%%.*}-openjdk/" > $PKG/etc/revdep.d/$name.conf
+    # Exclude for revdep
+    install -d "${PKG}/etc/revdep.d"
+    echo "/usr/lib/jvm/java-${version%%.*}-openjdk/" > "${PKG}/etc/revdep.d/${name}.conf"
 }
-
