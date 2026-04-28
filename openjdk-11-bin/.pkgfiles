@@ -1,4 +1,4 @@
-openjdk-11-bin-11.0.29+7-1
+openjdk-11-bin-11.0.31+11-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/revdep.d/
 -rw-r--r-- root/root    etc/revdep.d/openjdk-11-bin.conf
@@ -170,6 +170,7 @@ lrwxrwxrwx root/root    usr/lib/jvm/java-11-openjdk/legal/java.desktop/ADDITIONA
 lrwxrwxrwx root/root    usr/lib/jvm/java-11-openjdk/legal/java.desktop/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
 lrwxrwxrwx root/root    usr/lib/jvm/java-11-openjdk/legal/java.desktop/LICENSE -> ../java.base/LICENSE
 -r--r--r-- root/root    usr/lib/jvm/java-11-openjdk/legal/java.desktop/colorimaging.md
+-r--r--r-- root/root    usr/lib/jvm/java-11-openjdk/legal/java.desktop/freetype.md
 -r--r--r-- root/root    usr/lib/jvm/java-11-openjdk/legal/java.desktop/giflib.md
 -r--r--r-- root/root    usr/lib/jvm/java-11-openjdk/legal/java.desktop/harfbuzz.md
 -r--r--r-- root/root    usr/lib/jvm/java-11-openjdk/legal/java.desktop/jpeg.md
@@ -485,6 +486,7 @@ drwxr-xr-x root/root    usr/lib/jvm/java-11-openjdk/lib/jli/
 -rw-r--r-- root/root    usr/lib/jvm/java-11-openjdk/lib/libdt_socket.so
 -rw-r--r-- root/root    usr/lib/jvm/java-11-openjdk/lib/libextnet.so
 -rw-r--r-- root/root    usr/lib/jvm/java-11-openjdk/lib/libfontmanager.so
+-rw-r--r-- root/root    usr/lib/jvm/java-11-openjdk/lib/libfreetype.so
 -rw-r--r-- root/root    usr/lib/jvm/java-11-openjdk/lib/libinstrument.so
 -rw-r--r-- root/root    usr/lib/jvm/java-11-openjdk/lib/libj2gss.so
 -rw-r--r-- root/root    usr/lib/jvm/java-11-openjdk/lib/libj2pcsc.so
