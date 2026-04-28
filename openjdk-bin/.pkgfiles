@@ -1,4 +1,4 @@
-openjdk-bin-25.0.1+8-1
+openjdk-bin-25.0.3+9-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/revdep.d/
 -rw-r--r-- root/root    etc/revdep.d/openjdk-bin.conf
@@ -79,6 +79,7 @@ drwxr-xr-x root/root    usr/lib/jvm/java-25-openjdk/legal/java.base/
 -r--r--r-- root/root    usr/lib/jvm/java-25-openjdk/legal/java.base/aes.md
 -r--r--r-- root/root    usr/lib/jvm/java-25-openjdk/legal/java.base/c-libutl.md
 -r--r--r-- root/root    usr/lib/jvm/java-25-openjdk/legal/java.base/cldr.md
+-r--r--r-- root/root    usr/lib/jvm/java-25-openjdk/legal/java.base/gcc.md
 -r--r--r-- root/root    usr/lib/jvm/java-25-openjdk/legal/java.base/icu.md
 -r--r--r-- root/root    usr/lib/jvm/java-25-openjdk/legal/java.base/public_suffix.md
 -r--r--r-- root/root    usr/lib/jvm/java-25-openjdk/legal/java.base/siphash.md
@@ -458,4 +459,35 @@ drwxr-xr-x root/root    usr/lib/jvm/java-25-openjdk/lib/server/
 -rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/lib/server/libjvm.so
 -rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/lib/src.zip
 -rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/lib/tzdb.dat
+drwxr-xr-x root/root    usr/lib/jvm/java-25-openjdk/man/
+drwxr-xr-x root/root    usr/lib/jvm/java-25-openjdk/man/man1/
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/jar.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/jarsigner.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/java.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/javac.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/javadoc.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/javap.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/jcmd.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/jconsole.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/jdb.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/jdeprscan.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/jdeps.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/jfr.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/jhsdb.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/jinfo.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/jlink.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/jmap.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/jmod.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/jnativescan.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/jpackage.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/jps.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/jrunscript.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/jshell.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/jstack.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/jstat.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/jstatd.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/jwebserver.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/keytool.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/rmiregistry.1
+-rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/serialver.1
 -rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/release
