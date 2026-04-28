@@ -5,36 +5,38 @@
 echo "Running X session wrapper"
 
 # Load profile
-for file in "/etc/profile" "$HOME/.profile" "/etc/xprofile" "$HOME/.xprofile"; do
-    if [ -f "$file" ]; then
-        echo "Loading profile from $file";
-        . "$file"
+for file in /etc/profile "${HOME}/.profile" /etc/xprofile "${HOME}/.xprofile"; do
+    if [ -f "${file}" ]; then
+        echo "Loading profile from ${file}";
+        # shellcheck source=$file
+        . "${file}"
     fi
 done
 
 # Load resources
-for file in "/etc/X11/Xresources" "$HOME/.Xresources"; do
-    if [ -f "$file" ]; then
-        echo "Loading resource: $file"
-        xrdb -merge "$file"
+for file in /etc/X11/Xresources "${HOME}/.Xresources"; do
+    if [ -f "${file}" ]; then
+        echo "Loading resource: ${file}"
+        xrdb -merge "${file}"
     fi
 done
 
 # Load keymaps
-for file in "/etc/X11/Xkbmap" "$HOME/.Xkbmap"; do
-    if [ -f "$file" ]; then
-        echo "Loading keymap: $file"
-        setxkbmap `cat "$file"`
+for file in /etc/X11/Xkbmap "${HOME}/.Xkbmap"; do
+    if [ -f "${file}" ]; then
+        echo "Loading keymap: ${file}"
+        setxkbmap "$(cat "${file}")"
+
         XKB_IN_USE=yes
     fi
 done
 
 # Load xmodmap if not using XKB
-if [ -z "$XKB_IN_USE" ]; then
-    for file in "/etc/X11/Xmodmap" "$HOME/.Xmodmap"; do
-        if [ -f "$file" ]; then
-           echo "Loading modmap: $file"
-           xmodmap "$file"
+if [ -z "${XKB_IN_USE}" ]; then
+    for file in /etc/X11/Xmodmap "${HOME}/.Xmodmap"; do
+        if [ -f "${file}" ]; then
+           echo "Loading modmap: ${file}"
+           xmodmap "${file}"
         fi
     done
 fi
@@ -43,27 +45,31 @@ unset XKB_IN_USE
 
 # Run all system xinitrc shell scripts
 xinitdir="/etc/X11/app-defaults/xinitrc.d"
-if [ -d "$xinitdir" ]; then
-    for script in $xinitdir/*; do
-        echo "Loading xinit script $script"
-        if [ -x "$script" -a ! -d "$script" ]; then
-            . "$script"
+
+if [ -d "${xinitdir}" ]; then
+    for script in "${xinitdir}"/*; do
+        echo "Loading xinit script ${script}"
+
+        if [ -x "${script}" ] && [ ! -d "${script}" ]; then
+            # shellcheck source=$script
+            . "${script}"
         fi
     done
 fi
 
 # Run user xsession shell script
-script="$HOME/.xsession"
-if [ -x "$script" -a ! -d "$script" ]; then
-    echo "Loading xsession script $script"
-    . "$script"
+script="${HOME}/.xsession"
+
+if [ -x "${script}" ] && [ ! -d "${script}" ]; then
+    echo "Loading xsession script ${script}"
+    # shellcheck source=$script
+    . "${script}"
 fi
 
-if which dbus-launch >/dev/null && test -z "$DBUS_SESSION_BUS_ADDRESS";
-then
-	eval "$(dbus-launch --sh-syntax --exit-with-session)"
+if which dbus-launch >/dev/null && test -z "${DBUS_SESSION_BUS_ADDRESS}"; then
+    eval "$(dbus-launch --sh-syntax --exit-with-session)"
 fi
 
-echo "X session wrapper complete, running session $@"
-
-exec $@
+# shellcheck disable=SC2145
+echo "X session wrapper complete, running session ${@}"
+exec "${@}"

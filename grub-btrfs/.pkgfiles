@@ -1,15 +1,14 @@
 grub-btrfs-4.14-1
 drwxr-xr-x root/root    etc/
+drwxr-xr-x root/root    etc/conf.d/
+-rw-r--r-- root/root    etc/conf.d/grub-btrfsd
 drwxr-xr-x root/root    etc/default/
 drwxr-xr-x root/root    etc/default/grub-btrfs/
 -rw-r--r-- root/root    etc/default/grub-btrfs/config.epkgnew
 drwxr-xr-x root/root    etc/grub.d/
 -rwxr-xr-x root/root    etc/grub.d/41_snapshots-btrfs
-drwxr-xr-x root/root    etc/sv/
-drwxr-xr-x root/root    etc/sv/grub-btrfs/
--rwxr-xr-x root/root    etc/sv/grub-btrfs/conf
--rwxr-xr-x root/root    etc/sv/grub-btrfs/run
-lrwxrwxrwx root/root    etc/sv/grub-btrfs/supervise -> /run/runit/supervise.grub-btrfs
+drwxr-xr-x root/root    etc/init.d/
+-rwxr--r-- root/root    etc/init.d/grub-btrfsd
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr--r-- root/root    usr/bin/grub-btrfsd

@@ -1,3 +1,6 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Network Time Protocol reference implementation"
 homepage="https://www.ntp.org/"
 maintainer="Vylen Linux Team"
@@ -5,68 +8,40 @@ maintainer="Vylen Linux Team"
 name=ntp
 version=4.2.8p18
 release=1
-source="https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-${version%.*}/$name-$version.tar.gz
-	fix.build.patch
-	run.ntpd"
+
+source="https://www.eecis.udel.edu/~${name}/${name}_spool/ntp4/${name}-${version%.*}/${name}-${version}.tar.gz
+    fix.build.patch
+    ${name}.conf"
 
 build() {
-	cd $name-$version
-	export CFLAGS="${CFLAGS} -Wno-incompatible-pointer-types -Wno-int-conversion"
-	
-	patch -Np1 -i $SRC/fix.build.patch
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	sed -e 's/"(\\S+)"/"?([^\\s"]+)"?/' \
-	    -i scripts/update-leap/update-leap.in
+    export CFLAGS="${CFLAGS} \
+        -Wno-incompatible-pointer-types \
+        -Wno-int-conversion"
 
-	# fix an issue introduced with glibc-2.34
-	sed -e 's/#ifndef __sun/#if !defined(__sun) \&\& !defined(__GLIBC__)/' \
-	    -i libntp/work_thread.c
+    patch -Np1 -i "${SRC}/fix.build.patch"
 
+    sed -e 's/"(\\S+)"/"?([^\\s"]+)"?/' -i scripts/update-leap/update-leap.in
+    # fix an issue introduced with glibc-2.34
+    sed -e 's/#ifndef __sun/#if !defined(__sun) \&\& !defined(__GLIBC__)/' -i libntp/work_thread.c
     # fix glibc _Generic memchr conflict
-	sed -i '/memchr(const void \*s, int c, size_t n)/d' include/l_stdlib.h
+    sed -i '/memchr(const void \*s, int c, size_t n)/d' include/l_stdlib.h
 
-	autoreconf -fiv
-	./configure CFLAGS="$CFLAGS -g -fPIC" \
-	            --prefix=/usr \
-	            --bindir=/usr/sbin \
-	            --sysconfdir=/etc \
-	            --libexecdir=/usr/lib/$name \
-	            --enable-linuxcaps \
-	            --with-lineeditlibs=readline
-	make
-	make DESTDIR=$PKG install
-	install -d -o 87 "${PKG}"/var/lib/ntp
+    autoreconf -fiv
 
-mkdir -p $PKG/etc
-cat > $PKG/etc/ntp.conf << "EOF"
-# Asia
-server 0.asia.pool.ntp.org
+    ./configure CFLAGS="${CFLAGS} -g -fPIC" \
+        --prefix=/usr \
+        --bindir=/usr/sbin \
+        --sysconfdir=/etc \
+        --libexecdir="/usr/lib/${name}" \
+        --enable-linuxcaps \
+        --with-lineeditlibs=readline
 
-# Australia
-server 0.oceania.pool.ntp.org
+    make
+    make DESTDIR="${PKG}" install
 
-# Europe
-server 0.europe.pool.ntp.org
-
-# North America
-server 0.north-america.pool.ntp.org
-
-# South America
-server 2.south-america.pool.ntp.org
-
-driftfile /var/lib/ntp/ntp.drift
-pidfile   /var/run/ntpd.pid
-
-leapfile  /etc/ntp.leapseconds
-
-# Security session
-restrict    default limited kod nomodify notrap nopeer noquery
-restrict -6 default limited kod nomodify notrap nopeer noquery
-
-restrict 127.0.0.1
-restrict ::1
-EOF
-
-	install -Dm755 $SRC/run.ntpd $PKG/etc/sv/ntpd/run
-	ln -s /run/runit/supervise.ntpd $PKG/etc/sv/ntpd/supervise
+    install -Dm644 "${SRC}/${name}.conf" -t "${PKG}/etc/"
+    openrc_add ntp-client ntpd sntp
 }

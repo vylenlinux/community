@@ -8,3 +8,4 @@ perl
 python3-setuptools
 sed
 swig
+autoconf-archive

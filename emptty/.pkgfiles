@@ -2,12 +2,10 @@ emptty-0.16.1-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/emptty/
 -rw-r--r-- root/root    etc/emptty/conf.epkgnew
+drwxr-xr-x root/root    etc/init.d/
+-rwxr-xr-x root/root    etc/init.d/emptty
 drwxr-xr-x root/root    etc/pam.d/
 -rw-r--r-- root/root    etc/pam.d/emptty
-drwxr-xr-x root/root    etc/sv/
-drwxr-xr-x root/root    etc/sv/emptty/
--rwxr-xr-x root/root    etc/sv/emptty/run
-lrwxrwxrwx root/root    etc/sv/emptty/supervise -> /run/runit/supervise.emptty
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/emptty

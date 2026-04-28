@@ -1,3 +1,6 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="SQL database server, drop-in replacement for MySQL"
 homepage="https://mariadb.org/"
 maintainer="Vylen Linux Team"
@@ -5,54 +8,56 @@ maintainer="Vylen Linux Team"
 name=mariadb
 version=12.2.2
 release=1
-source="https://downloads.mariadb.org/interstitial/$name-$version/source/$name-$version.tar.gz
-	run.$name
-	$name.pam"
+
+source="https://downloads.mariadb.org/interstitial/${name}-${version}/source/${name}-${version}.tar.gz
+    ${name}.pam"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+    sed -i "s@data/test@\${INSTALL_MYSQLTESTDIR}@g" sql/CMakeLists.txt
 
-	sed -i "s@data/test@\${INSTALL_MYSQLTESTDIR}@g" sql/CMakeLists.txt
+    mkdir build
+    # shellcheck disable=SC2164
+    cd build
 
-	mkdir build
-	cd build
+    cmake .. \
+        -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_INSTALL_LIBDIR=lib \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DINSTALL_DOCDIR="share/doc/${name}-${version}" \
+        -DINSTALL_DOCREADMEDIR="share/doc/${name}-${version}" \
+        -DINSTALL_MANDIR=share/man \
+        -DINSTALL_MYSQLSHAREDIR=share/mysql \
+        -DINSTALL_MYSQLTESTDIR=share/mysql/test \
+        -DINSTALL_PLUGINDIR=lib/mysql/plugin \
+        -DINSTALL_SBINDIR=sbin \
+        -DINSTALL_SCRIPTDIR=bin \
+        -DINSTALL_SQLBENCHDIR=share/mysql/bench \
+        -DINSTALL_SUPPORTFILESDIR=share/mysql \
+        -DMYSQL_DATADIR=/srv/mysql \
+        -DMYSQL_UNIX_ADDR=/run/mysqld/mysqld.sock \
+        -DSKIP_TESTS=ON \
+        -DWITH_EMBEDDED_SERVER=ON \
+        -DWITH_EXTRA_CHARSETS=complex \
+        -DWITH_SSL=system \
+        -DWITH_SYSTEMD=no \
+        -DWITH_UNIT_TESTS=OFF \
+        -DTOKUDB_OK=0
 
-	cmake   -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
-		-DCMAKE_INSTALL_PREFIX=/usr \
-		-DCMAKE_INSTALL_LIBDIR=lib \
-		-DCMAKE_BUILD_TYPE=Release \
-		-DINSTALL_DOCDIR=share/doc/mariadb-$version \
-		-DINSTALL_DOCREADMEDIR=share/doc/mariadb-$version \
-		-DINSTALL_MANDIR=share/man \
-		-DINSTALL_MYSQLSHAREDIR=share/mysql \
-		-DINSTALL_MYSQLTESTDIR=share/mysql/test \
-		-DINSTALL_PLUGINDIR=lib/mysql/plugin \
-		-DINSTALL_SBINDIR=sbin \
-		-DINSTALL_SCRIPTDIR=bin \
-		-DINSTALL_SQLBENCHDIR=share/mysql/bench \
-		-DINSTALL_SUPPORTFILESDIR=share/mysql \
-		-DMYSQL_DATADIR=/srv/mysql \
-		-DMYSQL_UNIX_ADDR=/run/mysqld/mysqld.sock \
-		-DSKIP_TESTS=ON \
-		-DWITH_EMBEDDED_SERVER=ON \
-		-DWITH_EXTRA_CHARSETS=complex \
-		-DWITH_SSL=system \
-		-DWITH_SYSTEMD=no \
-		-DWITH_UNIT_TESTS=OFF \
-		-DTOKUDB_OK=0  ..
-	make
-	make DESTDIR=$PKG install
+    make
+    make DESTDIR="${PKG}" install
 
-    rm -fr $PKG/etc/init.d \
-        $PKG/etc/logrotate.d \
-        $PKG/usr/share/mariadb-test \
-        $PKG/usr/share/doc \
-        $PKG/usr/share/groonga*
+    rm -fr "${PKG}/etc/logrotate.d" \
+        "${PKG}/usr/share/mariadb-test" \
+        "${PKG}/usr/share/doc" \
+        "${PKG}/usr/share"/groonga*
 
-	rm -f $PKG/usr/sbin/rcmysql $PKG/usr/share/man/man1/mysql-test-run.pl.1
-	find $PKG/usr/share/mariadb/* -type d ! -name english ! -name charsets | xargs rm -rf {} \;
-    install -D -m 755 $SRC/mariadb.pam $PKG/etc/pam.d/mysql
+    rm -f "${PKG}/usr/sbin/rcmysql" "${PKG}/usr/share/man/man1/mysql-test-run.pl.1"
+    # shellcheck disable=SC2038
+    find "${PKG}/usr/share/mariadb"/* -type d ! -name english ! -name charsets | xargs rm -rf {} \;
+    install -Dm755 "${SRC}/mariadb.pam" "${PKG}/etc/pam.d/mysql"
 
-    install -Dm755 $SRC/run.$name $PKG/etc/sv/$name/run
-	ln -s /run/runit/supervise.$name $PKG/etc/sv/$name/supervise
+    openrc_add "${name}"
 }

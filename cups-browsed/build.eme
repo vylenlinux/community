@@ -1,3 +1,6 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Helper daemon to browse the network for remote CUPS queues and IPP network printers"
 homepage="https://github.com/OpenPrinting/cups-browsed"
 maintainer="Vylen Linux Team"
@@ -5,27 +8,26 @@ maintainer="Vylen Linux Team"
 name=cups-browsed
 version=2.1.1
 release=1
-
-source="https://github.com/OpenPrinting/$name/releases/download/$version/$name-$version.tar.xz
-	run.cups-browsed"
+source="https://github.com/OpenPrinting/${name}/releases/download/${version}/${name}-${version}.tar.xz"
 
 build() {
-	cd $name-$version
-	
-	# disable avahi
-	emerald isinstalled avahi || OPTS=' --disable-avahi'
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	./configure $OPTS \
-		--prefix=/usr \
-		--sysconfdir=/etc \
-		--runstatedir=/run \
-		--with-cups-rundir=/run/cups \
-		--without-rcdir
-	make
-	make DESTDIR=$PKG install
+    # disable avahi
+    emerald isinstalled avahi || OPTS='--disable-avahi'
 
-	rm -r $PKG/usr/share/doc
+    ./configure \
+        --prefix=/usr \
+        --sysconfdir=/etc \
+        --runstatedir=/run \
+        --with-cups-rundir=/run/cups \
+        --without-rcdir \
+        "${OPTS}"
 
-	install -Dm755 $SRC/run.$name $PKG/etc/sv/$name/run
-	ln -s /run/runit/supervise.$name $PKG/etc/sv/$name/supervise
+    make
+    make DESTDIR="${PKG}" install
+
+    rm -r "${PKG}/usr/share/doc"
+    openrc_add "${name}"
 }

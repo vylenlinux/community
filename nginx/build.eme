@@ -10,8 +10,7 @@ version=1.30.0
 release=1
 
 source="http://nginx.org/download/${name}-${version}.tar.gz
-    nginx.conf
-    run.nginx"
+    nginx.conf"
 
 build() {
     # shellcheck disable=SC2164
@@ -33,12 +32,10 @@ build() {
     make
     make DESTDIR="${PKG}" install
 
-    install -d -m 0755 "${PKG}/var/log/nginx"
-    install -D -m 0644 -o root -g root "${SRC}/nginx.conf" "${PKG}/etc/nginx/nginx.conf"
-
-    install -Dm755 -o root -g root "${SRC}/run.nginx" "${PKG}/etc/sv/nginx/run"
-    ln -s /run/runit/supervise.nginx "${PKG}/etc/sv/nginx/supervise"
+    install -Dm644 -o root -g root "${SRC}/nginx.conf" "${PKG}/etc/nginx/nginx.conf"
 
     find "${PKG}/etc/nginx" -name "*.default" -delete
     rm -fr "${PKG}/run"
+
+    openrc_add "${name}"
 }

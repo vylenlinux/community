@@ -1,3 +1,6 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Include btrfs snapshots in GRUB boot options"
 homepage="https://github.com/Antynea/grub-btrfs"
 maintainer="Vylen Linux Team"
@@ -5,23 +8,15 @@ maintainer="Vylen Linux Team"
 name=grub-btrfs
 version=4.14
 release=1
-backup="etc/default/grub-btrfs/config"
-
-source="$name-$version.tar.gz::https://github.com/Antynea/grub-btrfs/archive/refs/tags/v$version.tar.gz
-	run.$name
-	conf"
+source="${name}-${version}.tar.gz::https://github.com/Antynea/${name}/archive/refs/tags/v${version}.tar.gz"
+backup="etc/default/${name}/config"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+    OPENRC=true make DESTDIR="${PKG}" install
 
-	make DESTDIR=$PKG install
-
-	# remove systemd things
-	rm -rf $PKG/usr/lib/systemd
-	rm -rf $PKG/usr/share/licenses
-
-	install -Dm755 $SRC/run.$name $PKG/etc/sv/$name/run
-	install $SRC/conf $PKG/etc/sv/$name/conf
-
-	ln -s /run/runit/supervise.$name $PKG/etc/sv/$name/supervise
+    # remove systemd things
+    rm -rf "${PKG}/usr/lib/systemd" \
+        "${PKG}/usr/share/licenses"
 }

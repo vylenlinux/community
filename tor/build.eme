@@ -10,7 +10,6 @@ version=0.4.9.6
 release=1
 
 source="https://www.torproject.org/dist/${name}-${version}.tar.gz
-    run.tor
     torrc"
 
 build() {
@@ -28,6 +27,5 @@ build() {
     install -Dm0644 "${SRC}/torrc" "${PKG}/etc/tor/torrc"
     mv "${PKG}/etc/tor/torrc.sample" "${PKG}/etc/tor/torrc-dist"
 
-    install -Dm755 "${SRC}/run.${name}" "${PKG}/etc/sv/${name}/run"
-    ln -s "/run/runit/supervice.${name}" "${PKG}/etc/sv/${name}/supervise"
+    openrc_add "${name}"
 }

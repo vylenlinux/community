@@ -2,38 +2,38 @@
 
 # shellcheck disable=SC2034
 description="Linux application security framework - mandatory access control for programs"
-homepage="https://gitlab.com/apparmor/apparmor/wikis/home"
+homepage="https://gitlab.com/apparmor/apparmor/"
 maintaner="Vylen Linux Team"
 
 name=apparmor
 version=5.0.0
 release=1
-
-source="${name}-${version}.tar.gz::https://gitlab.com/${name}/${name}/-/archive/v${version}/${name}-v${version}.tar.gz
-    run.${name}"
+source="${name}-${version}.tar.gz::https://gitlab.com/${name}/${name}/-/archive/v${version}/${name}-v${version}.tar.gz"
 
 build() {
+    # shellcheck disable=SC2164
+    cd "${name}-v${version}"
+
     export PYTHON_VERSION=3
     export PYTHON_VERSIONS=python3
     export PYTHON=/usr/bin/python3
 
     # shellcheck disable=SC2164
     cd libraries/libapparmor
+        msg "Building: libapparmor"
+        ./autogen.sh
 
-    msg "Building: libapparmor"
-    ./autogen.sh
+        ./configure \
+            --prefix=/usr \
+            --libdir=/usr/lib \
+            --libexecdir=/usr/lib \
+            --with-python \
+            --with-perl
 
-    ./configure \
-        --prefix=/usr \
-        --libdir=/usr/lib \
-        --libexecdir=/usr/lib \
-        --with-python \
-        --with-perl
-
-    make
-
+        make
+    # shellcheck disable=SC2103
     # shellcheck disable=SC2164
-    cd "${name}-v${version}"
+    cd -
 
     msg "Building: apparmor parser"
     make -C parser
@@ -53,12 +53,12 @@ build() {
     msg "Building: apparmor-vim"
     make -C utils/vim
 
-    DESTDIR="${PKG}" make -C libraries/libapparmor install
-    DESTDIR="${PKG}" make -C changehat/pam_apparmor install
-    DESTDIR="${PKG}" BINDIR="${PKG}/usr/bin" make -C binutils install
-    DESTDIR="${PKG}" BINDIR="${PKG}/usr/bin" make -C parser install
-    DESTDIR="${PKG}" make -C profiles install
-    DESTDIR="${PKG}" BINDIR="${PKG}/usr/bin" VIM_INSTALL_PATH="${PKG}/usr/share/vim/vimfiles/syntax" make -C utils install
+    make -C libraries/libapparmor install DESTDIR="${PKG}"
+    make -C changehat/pam_apparmor install DESTDIR="${PKG}"
+    make -C binutils install DESTDIR="${PKG}" BINDIR="${PKG}/usr/bin"
+    make -C parser install DESTDIR="${PKG}" BINDIR="${PKG}/usr/bin"
+    make -C profiles install DESTDIR="${PKG}"
+    VIM_INSTALL_PATH="${PKG}/usr/share/vim/vimfiles/syntax" make -C utils install DESTDIR="${PKG}" BINDIR="${PKG}/usr/bin"
 
     mv "${PKG}/lib" "${PKG}/usr/lib"
     mkdir -p "${PKG}/usr/lib/apparmor" "${PKG}/lib"
@@ -66,7 +66,7 @@ build() {
 
     rm -r "${PKG}/usr/lib/lib/"
     install -Dm644 changehat/pam_apparmor/README "${PKG}/usr/share/doc/apparmor/README.pam_apparmor"
+    install -Dm755 init/rc.apparmor.functions -t "${PKG}/usr/lib/apparmor/"
 
-    install -Dm755 "${SRC}/run.${name}" "${PKG}/etc/sv/${name}/run"
-    ln -s "/run/runit/supervise.${name}" "${PKG}/etc/sv/$name/supervise"
+    openrc_add "${name}"
 }

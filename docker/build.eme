@@ -11,7 +11,6 @@ release=1
 
 source="https://github.com/moby/moby/archive/docker-v${version}/moby-${version}.tar.gz
     https://github.com/docker/cli/archive/v${version}/cli-${version}.tar.gz
-    run.${name}
     ${name}.conf"
 
 build() {
@@ -52,7 +51,7 @@ build() {
     install -Dm0755 "${SRC}/cli-${version}/build/${name}" -t "${PKG}/usr/bin/"
     install -Dm0755 "${SRC}/moby-${name}-v${version}/bundles/dynbinary-daemon/dockerd" -t "${PKG}/usr/bin/"
     install -Dm0755 "${SRC}/moby-${name}-v${version}/bundles/dynbinary-daemon/docker-proxy" -t "${PKG}/usr/bin/"
-    install -Dm0644 "${SRC}/${name}.conf" "${PKG}/etc/${name}.conf"
+    install -Dm0644 "${SRC}/${name}.conf" -t "${PKG}/etc/"
 
     # symlink externally provided tini-static binary
     ln -sf /sbin/tini "${PKG}/usr/bin/docker-init"
@@ -64,6 +63,6 @@ build() {
     install -Dm0755 "${SRC}/moby-${name}-v${version}/contrib/check-config.sh" -t "${PKG}/usr/share/${name}/"
     install -Dm0644 "${SRC}/cli-${version}/contrib/completion/bash/docker" -t "${PKG}/etc/bash_completion.d/"
 
-    install -Dm755 "${SRC}/run.${name}" "${PKG}/etc/sv/${name}/run"
-    ln -s "/run/runit/supervise.${name}" "${PKG}/etc/sv/${name}/supervise"
+    install -Dm644 "contrib/init/openrc/${name}.confd" "${PKG}/etc/conf.d/${name}"
+    install -Dm755 "contrib/init/openrc/${name}.initd" "${PKG}/etc/init.d/${name}"
 }

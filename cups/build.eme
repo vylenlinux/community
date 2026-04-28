@@ -10,8 +10,7 @@ version=2.4.18
 release=1
 
 source="${name}-${version}.tar.gz::https://github.com/OpenPrinting/${name}/archive/v${version}/${name}-${version}-source.tar.gz
-    cups.pam
-    run.cupsd"
+    ${name}.pam"
 
 build() {
     # shellcheck disable=SC2164
@@ -50,7 +49,7 @@ build() {
     make BUILDROOT="${PKG}" install
 
     # Linux PAM Configuration
-    install -Dm644 "${SRC}/cups.pam" "${PKG}/etc/pam.d/cups"
+    install -Dm644 "${SRC}/${name}.pam" "${PKG}/etc/pam.d/${name}"
 
     # cleanup
     rm -fr "${PKG}/tmp" \
@@ -61,10 +60,8 @@ build() {
     rm -rf "${PKG}/usr/share/cups/banners"/* \
         "${PKG}/usr/share/cups/data/testprint"
 
-    chmod 0755 "${PKG}/var/cache"
-    chmod 0755 "${PKG}/var/spool"
+    chmod 0755 "${PKG}/var/cache" "${PKG}/var/spool"
     chmod -R +w "${PKG}"
 
-    install -Dm755 "${SRC}/run.cupsd" "${PKG}/etc/sv/cupsd/run"
-    ln -s /run/runit/supervise.cupsd "${PKG}/etc/sv/cupsd/supervise"
+    openrc_add cupsd
 }

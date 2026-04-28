@@ -1,11 +1,9 @@
 mariadb-12.2.2-1
 drwxr-xr-x root/root    etc/
+drwxr-xr-x root/root    etc/init.d/
+-rwxr-xr-x root/root    etc/init.d/mariadb
 drwxr-xr-x root/root    etc/pam.d/
 -rwxr-xr-x root/root    etc/pam.d/mysql
-drwxr-xr-x root/root    etc/sv/
-drwxr-xr-x root/root    etc/sv/mariadb/
--rwxr-xr-x root/root    etc/sv/mariadb/run
-lrwxrwxrwx root/root    etc/sv/mariadb/supervise -> /run/runit/supervise.mariadb
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/aria_chk

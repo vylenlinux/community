@@ -1,5 +1,9 @@
 spamassassin-4.0.2-1
 drwxr-xr-x root/root    etc/
+drwxr-xr-x root/root    etc/conf.d/
+-rw-r--r-- root/root    etc/conf.d/spamd
+drwxr-xr-x root/root    etc/init.d/
+-rwxr-xr-x root/root    etc/init.d/spamd
 drwxr-xr-x root/root    etc/spamassassin/
 -rw-r--r-- root/root    etc/spamassassin/init.pre
 -rw-r--r-- root/root    etc/spamassassin/local.cf
@@ -14,10 +18,6 @@ drwxr-xr-x root/root    etc/spamassassin/
 -rw-r--r-- root/root    etc/spamassassin/v400.pre
 -rw-r--r-- root/root    etc/spamassassin/v401.pre
 -rw-r--r-- root/root    etc/spamassassin/v402.pre
-drwxr-xr-x root/root    etc/sv/
-drwxr-xr-x root/root    etc/sv/spamd/
--rwxr-xr-x root/root    etc/sv/spamd/run
-lrwxrwxrwx root/root    etc/sv/spamd/supervise -> /run/runit/supervise.spamd
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -r-xr-xr-x root/root    usr/bin/sa-awl
@@ -283,6 +283,3 @@ drwxr-xr-x root/root    usr/share/spamassassin/
 -rw-r--r-- root/root    usr/share/spamassassin/languages
 -rw-r--r-- root/root    usr/share/spamassassin/sa-update-pubkey.txt
 -rw-r--r-- root/root    usr/share/spamassassin/user_prefs.template
-drwxr-xr-x root/root    var/
-drwxr-xr-x root/root    var/lib/
-drwxr-xr-x root/root    var/lib/spamassassin/

@@ -1,5 +1,7 @@
 apache-2.4.66-1
 drwxr-xr-x root/root    etc/
+drwxr-xr-x root/root    etc/conf.d/
+-rw-r--r-- root/root    etc/conf.d/apache2
 drwxr-xr-x root/root    etc/httpd/
 -rw-r--r-- root/root    etc/httpd/envvars
 drwxr-xr-x root/root    etc/httpd/extra/
@@ -33,10 +35,8 @@ drwxr-xr-x root/root    etc/httpd/original/extra/
 -rw-r--r-- root/root    etc/httpd/original/extra/httpd-vhosts.conf
 -rw-r--r-- root/root    etc/httpd/original/extra/proxy-html.conf
 -rw-r--r-- root/root    etc/httpd/original/httpd.conf
-drwxr-xr-x root/root    etc/sv/
-drwxr-xr-x root/root    etc/sv/httpd/
--rwxr-xr-x root/root    etc/sv/httpd/run
-lrwxrwxrwx root/root    etc/sv/httpd/supervise -> /run/runit/supervise.httpd
+drwxr-xr-x root/root    etc/init.d/
+-rwxr-xr-x root/root    etc/init.d/apache2
 drwxr-xr-x root/root    srv/
 drwxr-xr-x root/root    srv/www/
 -rw-r--r-- root/root    srv/www/index.html
