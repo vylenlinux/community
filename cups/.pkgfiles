@@ -1,4 +1,4 @@
-cups-2.4.18-1
+cups-2.4.19-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/lp    etc/cups/
 -rw-r----- root/lp    etc/cups/cups-files.conf
