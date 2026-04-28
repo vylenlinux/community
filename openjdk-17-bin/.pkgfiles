@@ -1,4 +1,4 @@
-openjdk-17-bin-17.0.17+10-1
+openjdk-17-bin-17.0.19+10-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/revdep.d/
 -rw-r--r-- root/root    etc/revdep.d/openjdk-17-bin.conf
@@ -148,6 +148,7 @@ drwxr-xr-x root/root    usr/lib/jvm/java-17-openjdk/legal/java.base/
 -r--r--r-- root/root    usr/lib/jvm/java-17-openjdk/legal/java.base/asm.md
 -r--r--r-- root/root    usr/lib/jvm/java-17-openjdk/legal/java.base/c-libutl.md
 -r--r--r-- root/root    usr/lib/jvm/java-17-openjdk/legal/java.base/cldr.md
+-r--r--r-- root/root    usr/lib/jvm/java-17-openjdk/legal/java.base/gcc.md
 -r--r--r-- root/root    usr/lib/jvm/java-17-openjdk/legal/java.base/icu.md
 -r--r--r-- root/root    usr/lib/jvm/java-17-openjdk/legal/java.base/public_suffix.md
 -r--r--r-- root/root    usr/lib/jvm/java-17-openjdk/legal/java.base/siphash.md
@@ -166,6 +167,7 @@ lrwxrwxrwx root/root    usr/lib/jvm/java-17-openjdk/legal/java.desktop/ADDITIONA
 lrwxrwxrwx root/root    usr/lib/jvm/java-17-openjdk/legal/java.desktop/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
 lrwxrwxrwx root/root    usr/lib/jvm/java-17-openjdk/legal/java.desktop/LICENSE -> ../java.base/LICENSE
 -r--r--r-- root/root    usr/lib/jvm/java-17-openjdk/legal/java.desktop/colorimaging.md
+-r--r--r-- root/root    usr/lib/jvm/java-17-openjdk/legal/java.desktop/freetype.md
 -r--r--r-- root/root    usr/lib/jvm/java-17-openjdk/legal/java.desktop/giflib.md
 -r--r--r-- root/root    usr/lib/jvm/java-17-openjdk/legal/java.desktop/harfbuzz.md
 -r--r--r-- root/root    usr/lib/jvm/java-17-openjdk/legal/java.desktop/jpeg.md
@@ -471,6 +473,7 @@ drwxr-xr-x root/root    usr/lib/jvm/java-17-openjdk/lib/jfr/
 -rw-r--r-- root/root    usr/lib/jvm/java-17-openjdk/lib/libdt_socket.so
 -rw-r--r-- root/root    usr/lib/jvm/java-17-openjdk/lib/libextnet.so
 -rw-r--r-- root/root    usr/lib/jvm/java-17-openjdk/lib/libfontmanager.so
+-rw-r--r-- root/root    usr/lib/jvm/java-17-openjdk/lib/libfreetype.so
 -rw-r--r-- root/root    usr/lib/jvm/java-17-openjdk/lib/libinstrument.so
 -rw-r--r-- root/root    usr/lib/jvm/java-17-openjdk/lib/libj2gss.so
 -rw-r--r-- root/root    usr/lib/jvm/java-17-openjdk/lib/libj2pcsc.so
