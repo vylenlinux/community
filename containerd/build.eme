@@ -7,11 +7,14 @@ maintainer="Vylen Linux Team"
 
 name=containerd
 version=2.2.3
-release=1
+release=2
 source="${name}-${version}.tar.gz::https://github.com/${name}/${name}/archive/refs/tags/v${version}.tar.gz"
 
 build() {
-    export GOFLAGS="${GOFLAGS} -modcacherw -mod=readonly"
+    export GOFLAGS="${GOFLAGS} \
+        -modcacherw \
+        -mod=readonly"
+
     export GOCACHE="${GOCACHE:-"${SRC}/go-cache"}"
     export GOTMPDIR="${GOTMPDIR:-"${SRC}"}"
     export GOMODCACHE="${GOMODCACHE:-"${SRC}/go"}"
@@ -23,4 +26,6 @@ build() {
 
     mkdir -pv "${PKG}/usr/bin"
     install -Dsm755 ./bin/* "${PKG}/usr/bin/"
+
+    openrc_add "${name}"
 }
