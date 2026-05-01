@@ -1,4 +1,4 @@
-nwg-displays-0.3.28-1
+nwg-displays-0.4.0-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/nwg-displays
@@ -7,12 +7,12 @@ drwxr-xr-x root/root    usr/bin/
 drwxr-xr-x root/root    usr/lib/
 drwxr-xr-x root/root    usr/lib/python3.14/
 drwxr-xr-x root/root    usr/lib/python3.14/site-packages/
-drwxr-xr-x root/root    usr/lib/python3.14/site-packages/nwg_displays-0.3.28-py3.14.egg-info/
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_displays-0.3.28-py3.14.egg-info/PKG-INFO
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_displays-0.3.28-py3.14.egg-info/SOURCES.txt
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_displays-0.3.28-py3.14.egg-info/dependency_links.txt
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_displays-0.3.28-py3.14.egg-info/entry_points.txt
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_displays-0.3.28-py3.14.egg-info/top_level.txt
+drwxr-xr-x root/root    usr/lib/python3.14/site-packages/nwg_displays-0.4.0-py3.14.egg-info/
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_displays-0.4.0-py3.14.egg-info/PKG-INFO
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_displays-0.4.0-py3.14.egg-info/SOURCES.txt
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_displays-0.4.0-py3.14.egg-info/dependency_links.txt
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_displays-0.4.0-py3.14.egg-info/entry_points.txt
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_displays-0.4.0-py3.14.egg-info/top_level.txt
 drwxr-xr-x root/root    usr/lib/python3.14/site-packages/nwg_displays/
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_displays/__about__.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_displays/__init__.py
@@ -34,11 +34,20 @@ drwxr-xr-x root/root    usr/lib/python3.14/site-packages/nwg_displays/langs/
 -rw-rw-r-- root/root    usr/lib/python3.14/site-packages/nwg_displays/langs/pt_BR.json
 -rw-rw-r-- root/root    usr/lib/python3.14/site-packages/nwg_displays/langs/ru_RU.json
 -rw-rw-r-- root/root    usr/lib/python3.14/site-packages/nwg_displays/langs/tr_TR.json
+-rw-rw-r-- root/root    usr/lib/python3.14/site-packages/nwg_displays/langs/zh_CN.json
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_displays/main.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_displays/profiles.py
 drwxr-xr-x root/root    usr/lib/python3.14/site-packages/nwg_displays/resources/
 -rw-rw-r-- root/root    usr/lib/python3.14/site-packages/nwg_displays/resources/main.glade
 -rw-rw-r-- root/root    usr/lib/python3.14/site-packages/nwg_displays/resources/style.css
+drwxr-xr-x root/root    usr/lib/python3.14/site-packages/nwg_displays/scripts/
+drwxr-xr-x root/root    usr/lib/python3.14/site-packages/nwg_displays/scripts/__pycache__/
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_displays/scripts/__pycache__/apply_profile_json.cpython-314.opt-1.pyc
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_displays/scripts/__pycache__/apply_profile_json.cpython-314.pyc
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_displays/scripts/__pycache__/toggle_profile_wallpapers.cpython-314.opt-1.pyc
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_displays/scripts/__pycache__/toggle_profile_wallpapers.cpython-314.pyc
+-rw-rw-r-- root/root    usr/lib/python3.14/site-packages/nwg_displays/scripts/apply_profile_json.py
+-rw-rw-r-- root/root    usr/lib/python3.14/site-packages/nwg_displays/scripts/toggle_profile_wallpapers.py
 drwxr-xr-x root/root    usr/lib/python3.14/site-packages/nwg_displays/settings_applier/
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_displays/settings_applier/__init__.py
 drwxr-xr-x root/root    usr/lib/python3.14/site-packages/nwg_displays/settings_applier/__pycache__/

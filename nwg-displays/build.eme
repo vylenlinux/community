@@ -1,15 +1,23 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Output management utility for sway and Hyprland Wayland compositors"
 homepage="https://github.com/nwg-piotr/nwg-displays"
 maintainer="Vylen Linux Team"
 
 name=nwg-displays
-version=0.3.28
+version=0.4.0
 release=1
-source="$name-$version.tar.gz::https://github.com/nwg-piotr/nwg-displays/archive/v$version.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/nwg-piotr/${name}/archive/v${version}.tar.gz"
 
 build() {
-	cd $name-$version 
-	python3 setup.py install --root=$PKG --optimize=1
-	install -D -t $PKG/usr/share/pixmaps nwg-displays.svg
-	install -D -t $PKG/usr/share/applications nwg-displays.desktop
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    python3 setup.py install \
+        --root="${PKG}" \
+        --optimize=1
+
+    install -Dm644 "${name}.svg" -t "${PKG}/usr/share/pixmaps/"
+    install -Dm644 "${name}.desktop" -t "${PKG}/usr/share/applications/"
 }
