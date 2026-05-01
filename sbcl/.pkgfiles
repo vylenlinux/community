@@ -1,4 +1,4 @@
-sbcl-2.6.3-1
+sbcl-2.6.4-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/sbcl
@@ -1171,6 +1171,7 @@ lrwxrwxrwx root/root    usr/share/sbcl-source/src/runtime/Config -> Config.x86-6
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/breakpoint.h
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/bsd-os.c
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/bsd-os.h
+-rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/bsd-os.inc
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/callframe.inc
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/cheneygc-internal.h
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/cheneygc.c
@@ -1180,6 +1181,7 @@ lrwxrwxrwx root/root    usr/share/sbcl-source/src/runtime/Config -> Config.x86-6
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/core.h
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/coreparse.c
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/coreparse.d
+-rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/darwin-mman.c
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/darwin-os.c
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/darwin-os.h
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/dynbind.c
