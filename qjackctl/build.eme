@@ -6,7 +6,7 @@ homepage="https://qjackctl.sourceforge.io/"
 maintainer="Vylen Linux Team"
 
 name=qjackctl
-version=1.0.5
+version=1.0.6
 release=1
 source="https://downloads.sourceforge.net/${name}/${name}-${version}.tar.gz"
 
