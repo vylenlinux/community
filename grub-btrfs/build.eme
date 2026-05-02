@@ -15,8 +15,4 @@ build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
     OPENRC=true make DESTDIR="${PKG}" install
-
-    # remove systemd things
-    rm -rf "${PKG}/usr/lib/systemd" \
-        "${PKG}/usr/share/licenses"
 }

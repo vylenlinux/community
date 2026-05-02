@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Bitstream Vera fonts"
 homepage="https://www-old.gnome.org/fonts/"
 maintainer="Vylen Linux Team"
@@ -5,11 +8,12 @@ maintainer="Vylen Linux Team"
 name=ttf-bitstream-vera
 version=1.10
 release=1
-source="https://ftp.gnome.org/pub/GNOME/sources/$name/1.10/$name-$version.tar.gz"
+source="https://ftp.gnome.org/pub/GNOME/sources/${name}/${version}/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
-	install -d $PKG/usr/share/fonts/TTF
-	install -m644 *.ttf $PKG/usr/share/fonts/TTF/
-	rm -rf $PKG/usr/share/licenses
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    # shellcheck disable=SC2035
+    install -m644 *.ttf -t "${PKG}/usr/share/fonts/TTF/"
 }

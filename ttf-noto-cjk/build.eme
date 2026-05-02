@@ -1,3 +1,6 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
 description="Google Noto CJK fonts"
 homepage="https://www.google.com/get/noto/"
 maintainer="Vylen Linux Team"
@@ -8,6 +11,5 @@ release=1
 source="${name}-${version}.tar.zst::https://london.mirror.pkgbuild.com/extra/os/x86_64/noto-fonts-cjk-${version}-${release}-any.pkg.tar.zst"
 
 build() {
-    rm -rf "usr/share/licenses"
-    cp -r "usr" "${PKG}"
+    cp -r usr "${PKG}"
 }
