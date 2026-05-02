@@ -1,0 +1,29 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
+description="Visual Studio Code, editor for building and debugging modern web and cloud applications (official binary version)"
+homepage="https://code.visualstudio.com/"
+maintainer="Vylen Linux Team"
+
+name=visual-studio-code
+version=1.118.0
+release=1
+
+source="${name}-${version}.tar.gz::https://update.code.visualstudio.com/${version}/linux-x64/stable
+    ${name}.desktop
+    ${name}-url-handler.desktop"
+
+build() {
+    # shellcheck disable=SC2164
+    cd VSCode-linux-x64
+
+    mkdir -p "${PKG}/opt/${name}"
+    # shellcheck disable=SC2035
+    cp -Rv * "${PKG}/opt/${name}"
+
+    mkdir -p "${PKG}/usr/bin"
+    ln -s "/opt/${name}/bin/code" "${PKG}/usr/bin/code"
+
+    install -Dm644 "${SRC}/${name}.desktop"             -t "${PKG}/usr/share/applications/"
+    install -Dm644 "${SRC}/${name}-url-handler.desktop" -t "${PKG}/usr/share/applications/"
+}

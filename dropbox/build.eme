@@ -1,0 +1,32 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
+description="A free service that lets you bring your photos, docs, and videos anywhere and share them easily"
+homepage="https://www.dropbox.com/"
+maintainer="Vylen Linux Team"
+
+name=dropbox
+version=250.4.3245
+release=1
+
+source="${name}-${version}.tar.gz::https://clientupdates.dropboxstatic.com/dbx-releng/client/${name}-lnx.x86_64-${version}.tar.gz
+    ${name}.desktop
+    ${name}.png"
+
+build() {
+    install -d "${PKG}/opt"
+    cp -R "${SRC}/.${name}-dist/${name}-lnx.x86_64-${version}" "${PKG}/opt/${name}"
+
+    find "${PKG}/opt/${name}/" -type f -exec chmod 644 {} \;
+    chmod 755 "${PKG}/opt/${name}/${name}d"
+    chmod 755 "${PKG}/opt/${name}/${name}"
+
+    install -d "${PKG}/usr/bin"
+    ln -s "../../opt/${name}/${name}" "${PKG}/usr/bin/${name}"
+
+    install -Dm644 "${SRC}/${name}.desktop" -t "${PKG}/usr/share/applications/"
+    install -Dm644 "${SRC}/${name}.png"     -t "${PKG}/usr/share/pixmaps/"
+
+    rm -f "${PKG}/opt/${name}/library.zip"
+    ln -s "${name}" "${PKG}/opt/${name}/library.zip"
+}

@@ -1,0 +1,31 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
+description="The official Android IDE (Stable branch)"
+homepage="https://developer.android.com/"
+maintainer="Vylen Linux Team"
+
+name=android-studio
+version=2025.3.4.6
+release=1
+
+source="${name}-${version}.tar.gz::https://dl.google.com/dl/android/studio/ide-zips/${version}/${name}-panda4-linux.tar.gz
+    ${name}.desktop"
+
+build() {
+    # shellcheck disable=SC2164
+    cd "${name}"
+
+    # Install the application
+    install -d "${PKG}/opt/${name}"
+    install -d "${PKG}/usr/bin"
+
+    cp -a bin lib jbr plugins license LICENSE.txt build.txt product-info.json "${PKG}/opt/${name}"
+    ln -s /opt/android-studio/bin/studio.sh "${PKG}/usr/bin/${name}"
+
+    # Add the icon and desktop file
+    install -Dm644 bin/studio.png "${PKG}/usr/share/pixmaps/${name}.png"
+    install -Dm644 "${SRC}/${name}.desktop" "${PKG}/usr/share/applications/${name}.desktop"
+
+    chmod -R ugo+rX "${PKG}/opt"
+}

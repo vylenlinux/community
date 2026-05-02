@@ -1,0 +1,4 @@
+#!/bin/sh
+
+export LD_PRELOAD=libcurl.so.4
+/usr/share/spotify/spotify "$@"

@@ -1,0 +1,8 @@
+libxkbcommon
+alsa-lib
+gconf
+gtk3
+libxtst
+nss
+cups
+libarchive

@@ -1,0 +1,8 @@
+curl
+desktop-file-utils
+gtk3
+hicolor-icon-theme
+nss
+shared-mime-info
+alsa-lib
+cups
