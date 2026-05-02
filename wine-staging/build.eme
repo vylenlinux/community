@@ -6,8 +6,8 @@ homepage="https://www.wine-staging.com"
 maintainer="Vylen Linux Team"
 
 name=wine-staging
-version=11.7
-release=2
+version=11.8
+release=1
 
 vgecko=2.47.4
 vmono=11.1.0
@@ -64,5 +64,5 @@ build() {
     # exclude libs for revdep
     install -d "${PKG}/etc/revdep.d"
     # shellcheck disable=SC2028
-    echo "/usr/lib/wine/x86_64-unix/\n" > "${PKG}/etc/revdep.d/${name}.conf"
+    echo "/usr/lib/wine/x86_64-unix/" > "${PKG}/etc/revdep.d/${name}.conf"
 }
