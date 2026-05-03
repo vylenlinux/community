@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="A fork of the rEFIt boot manager"
 homepage="https://www.rodsbooks.com/refind/"
 maintainer="Vylen Linux Team"
@@ -5,35 +8,44 @@ maintainer="Vylen Linux Team"
 name=refind
 version=0.14.2
 release=1
-source="https://downloads.sourceforge.net/$name/$version/$name-src-$version.tar.gz"
+
+source="${name}-${version}.tar.gz::https://downloads.sourceforge.net/${name}/${version}/${name}-src-${version}.tar.gz
+    gnu-efi-4-compat.patch
+    fix-target-option.patch"
 
 build() {
-        cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
+    patch -Np1 < "${SRC}/gnu-efi-4-compat.patch"
+    patch -Np1 < "${SRC}/fix-target-option.patch"
 
-	make -j1
-        make -j1 gnuefi
-        make -j1 fs_gnuefi
-        for xx in $PKG/usr/bin $PKG/usr/share/$name/drivers_x64 $PKG/usr/share/$name/fonts $PKG/usr/share/$name/icons/svg $PKG/usr/share/$name/images $PKG/usr/share/$name/keys $PKG/usr/share/$name/tools_x64; do
-			install -d $xx
-		done
-        install -m 0644 $name/${name}_x64.efi $PKG/usr/share/$name/${name}_x64.efi
-        install -m 0644 drivers_x64/*.efi $PKG/usr/share/$name/drivers_x64/
-        install -m 0644 gptsync/gptsync_x64.efi $PKG/usr/share/$name/tools_x64/gptsync_x64.efi
-        for F in $name-install $name-mkdefault mkrlconf mvrefind fonts/mkfont.sh; do
-                install -m 0755 ${F} $PKG/usr/bin/$(basename ${F})
-        done
-        sed -i -e 's,RefindDir="$ThisDir/refind",RefindDir="/usr/share/refind",g' \
-                $PKG/usr/bin/$name-install
-        install -m 0644 fonts/*.png $PKG/usr/share/$name/fonts/
-        install -m 0644 icons/*.png $PKG/usr/share/$name/icons/
-        install -m 0644 icons/svg/*.svg $PKG/usr/share/$name/icons/svg/
-        for xx in bmp png svg; do
-			install -m 0644 images/*.$xx $PKG/usr/share/$name/images/
-		done
-		for xx in cer crt; do
-			install -m 0644 keys/*.$xx $PKG/usr/share/$name/keys/
-		done
-        install -m 0644 $name.conf-sample $PKG/usr/share/$name/$name.conf-sample
+    make -j1
+    make -j1 gnuefi
+    make -j1 fs_gnuefi
+
+    install -Dm644 "${name}/${name}_x64.efi" -t "${PKG}/usr/share/${name}/"
+    install -Dm644 drivers_x64/*.efi -t "${PKG}/usr/share/${name}/drivers_x64/"
+    install -Dm644 gptsync/gptsync_x64.efi -t "${PKG}/usr/share/${name}/tools_x64/"
+
+    for F in "${name}-install" "${name}-mkdefault" mkrlconf mvrefind fonts/mkfont.sh; do
+        install -Dm755 "${F}" "${PKG}/usr/bin/$(basename "${F}")"
+    done
+
+    # shellcheck disable=SC2016
+    sed -i -e 's,RefindDir="$ThisDir/refind",RefindDir="/usr/share/refind",g' "${PKG}/usr/bin/${name}-install"
+
+    install -Dm644 fonts/*.png -t "${PKG}/usr/share/${name}/fonts/"
+    install -Dm644 icons/*.png -t "${PKG}/usr/share/${name}/icons/"
+    install -Dm644 icons/svg/*.svg -t "${PKG}/usr/share/${name}/icons/svg/"
+
+    for xx in bmp png svg; do
+        install -Dm644 images/*".${xx}" -t "${PKG}/usr/share/${name}/images/"
+    done
+
+    for xx in cer crt; do
+        install -Dm644 keys/*".${xx}" -t "${PKG}/usr/share/${name}/keys/"
+    done
+
+    install -m644 "${name}.conf-sample" -t "${PKG}/usr/share/${name}/"
 }
-

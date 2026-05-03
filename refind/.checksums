@@ -1,1 +1,3 @@
-2957bd96cef74e8c942d80b1abb83495b6b91b2b3ce30b63da382994640ceefe  refind-src-0.14.2.tar.gz
+9bd3f64b6441a4a11d8bf6044d82ffec31e4dbafe434874905ad10d1a829d594  fix-target-option.patch
+ea8d4c4c9bc01429e0a54e3cc5d3b27f61eee0257299525982a1b2ea42d486cb  gnu-efi-4-compat.patch
+2957bd96cef74e8c942d80b1abb83495b6b91b2b3ce30b63da382994640ceefe  refind-0.14.2.tar.gz
