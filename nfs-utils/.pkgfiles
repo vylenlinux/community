@@ -1,4 +1,4 @@
-nfs-utils-2.9.1-1
+nfs-utils-2.9.1-2
 drwxr-xr-x root/root    sbin/
 -rws--x--x root/root    sbin/mount.nfs
 lrwxrwxrwx root/root    sbin/mount.nfs4 -> mount.nfs
@@ -62,7 +62,6 @@ drwxr-xr-x root/root    usr/share/man/man5/
 -rw-r--r-- root/root    usr/share/man/man5/nfsmount.conf.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/nfsrahead.5.gz
 drwxr-xr-x root/root    usr/share/man/man7/
--rw-r--r-- root/root    usr/share/man/man7/nfs.systemd.7.gz
 -rw-r--r-- root/root    usr/share/man/man7/nfsd.7.gz
 drwxr-xr-x root/root    usr/share/man/man8/
 -rw-r--r-- root/root    usr/share/man/man8/exportfs.8.gz
