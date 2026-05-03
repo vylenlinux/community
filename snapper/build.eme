@@ -7,7 +7,7 @@ maintainer="Vylen Linux Team"
 
 name=snapper
 version=0.13.1
-release=1
+release=2
 source="https://github.com/openSUSE/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
@@ -51,4 +51,5 @@ build() {
     make DESTDIR="${PKG}" install
 
     rm -rf "${PKG}/usr/lib/snapper/testsuite/"
+    rm -f "${PKG}/usr/lib/snapper/systemd-helper"
 }

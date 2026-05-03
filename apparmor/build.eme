@@ -7,7 +7,7 @@ maintaner="Vylen Linux Team"
 
 name=apparmor
 version=5.0.0
-release=1
+release=2
 source="${name}-${version}.tar.gz::https://gitlab.com/${name}/${name}/-/archive/v${version}/${name}-v${version}.tar.gz"
 
 build() {
@@ -65,6 +65,8 @@ build() {
     mv "${PKG}/usr/lib/lib/security" "${PKG}/lib"
 
     rm -r "${PKG}/usr/lib/lib/"
+    rm -f "${PKG}/etc/apparmor.d/abstractions"/*systemd* "${PKG}/etc/apparmor.d"/systemd*
+
     install -Dm644 changehat/pam_apparmor/README "${PKG}/usr/share/doc/apparmor/README.pam_apparmor"
     install -Dm755 init/rc.apparmor.functions -t "${PKG}/usr/lib/apparmor/"
 

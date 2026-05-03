@@ -1,22 +1,28 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="A framework for managing DNS information"
 homepage="https://roy.marples.name/projects/openresolv"
 maintainer="Vylen Linux Team"
 
 name=openresolv
 version=3.17.4
-release=1
-source="$name-$version.tar.gz::https://github.com/NetworkConfiguration/$name/archive/refs/tags/v$version.tar.gz
-	"
+release=2
+source="${name}-${version}.tar.gz::https://github.com/NetworkConfiguration/${name}/archive/refs/tags/v${version}.tar.gz"
 
 build() {
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	cd $name-$version
-	# NOTE: Don't set --prefix, it should be /.
-	./configure \
-		--libexecdir=/lib/resolvconf \
-		--mandir=/usr/share/man \
-		--rundir=/run \
-		--sysconfdir=/etc
-	make
-	make DESTDIR=$PKG install
+    # NOTE: Don't set --prefix, it should be /.
+    ./configure \
+        --libexecdir=/lib/resolvconf \
+        --mandir=/usr/share/man \
+        --rundir=/run \
+        --sysconfdir=/etc
+
+    make
+    make DESTDIR="${PKG}" install
+
+    rm -f "${PKG}/lib/resolvconf/systemd-resolved"
 }

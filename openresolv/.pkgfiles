@@ -1,4 +1,4 @@
-openresolv-3.17.4-1
+openresolv-3.17.4-2
 drwxr-xr-x root/root    etc/
 -rw-r--r-- root/root    etc/resolvconf.conf
 drwxr-xr-x root/root    lib/
@@ -12,7 +12,6 @@ drwxr-xr-x root/root    lib/resolvconf/libc.d/
 -rw-r--r-- root/root    lib/resolvconf/pdns_recursor
 -rw-r--r-- root/root    lib/resolvconf/pdnsd
 -rw-r--r-- root/root    lib/resolvconf/resolvectl
--rw-r--r-- root/root    lib/resolvconf/systemd-resolved
 -rw-r--r-- root/root    lib/resolvconf/unbound
 drwxr-xr-x root/root    sbin/
 -rwxr-xr-x root/root    sbin/resolvconf

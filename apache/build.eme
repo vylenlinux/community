@@ -7,7 +7,7 @@ maintainer="Vylen Linux Team"
 
 name=apache
 version=2.4.66
-release=1
+release=2
 
 source="${name}-${version}.tar.bz2::https://archive.apache.org/dist/httpd/httpd-${version}.tar.bz2
     httpd-blfs_layout-1.patch"
@@ -49,4 +49,5 @@ build() {
     rm -fr "${PKG}/run"
 
     openrc_add apache2
+    rm -f "${PKG}/usr/share/httpd/manual/mod"/*systemd*
 }

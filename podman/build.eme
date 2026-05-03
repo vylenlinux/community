@@ -7,7 +7,7 @@ maintainer="Vylen Linux Team"
 
 name=podman
 version=5.8.2
-release=1
+release=2
 source="https://github.com/containers/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
@@ -20,4 +20,6 @@ build() {
 
     make BUILDTAGS="seccomp exclude_graphdriver_devicemapper exclude_graphdriver_btrfs"
     make install PREFIX=/usr DESTDIR="${PKG}" LIBEXECDIR=/usr/lib
+
+    rm -f "${PKG}/usr/share/man"/man*/*systemd*
 }

@@ -1,4 +1,4 @@
-apparmor-5.0.0-1
+apparmor-5.0.0-2
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/apparmor.d/
 -rw-r--r-- root/root    etc/apparmor.d/1password
@@ -70,7 +70,6 @@ drwxr-xr-x root/root    etc/apparmor.d/abstractions/apparmor_api/
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/kerberosclient
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/ldapclient
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/libnuma
--rw-r--r-- root/root    etc/apparmor.d/abstractions/libpam-systemd
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/likewise
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/mdns
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/mesa
@@ -80,7 +79,6 @@ drwxr-xr-x root/root    etc/apparmor.d/abstractions/apparmor_api/
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/nameservice
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/nameservice-strict
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/nis
--rw-r--r-- root/root    etc/apparmor.d/abstractions/nss-systemd
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/nvidia
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/opencl
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/opencl-common
@@ -292,8 +290,6 @@ drwxr-xr-x root/root    etc/apparmor.d/local/
 -rw-r--r-- root/root    etc/apparmor.d/steam
 -rw-r--r-- root/root    etc/apparmor.d/stress-ng
 -rw-r--r-- root/root    etc/apparmor.d/surfshark
--rw-r--r-- root/root    etc/apparmor.d/systemd-coredump
--rw-r--r-- root/root    etc/apparmor.d/systemd-detect-virt
 -rw-r--r-- root/root    etc/apparmor.d/tar
 -rw-r--r-- root/root    etc/apparmor.d/thunderbird
 -rw-r--r-- root/root    etc/apparmor.d/tinyproxy
