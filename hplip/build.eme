@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="HP Linux Imaging and Printing"
 homepage="https://sourceforge.net/projects/hplip"
 maintainer="Vylen Linux Team"
@@ -5,98 +8,104 @@ maintainer="Vylen Linux Team"
 name=hplip
 version=3.25.8
 release=1
-source="https://sourceforge.net/projects/hplip/files/$name/$version/$name-$version.tar.gz
-	0003-models.dat-Re-add-drivers-missing-from-3.19.1.patch
-	0018-Allow-non-JPEG-scanning-on-the-HP-DeskJet-3520-All-i.patch
-	0022-Add-include-cups-ppd.h-in-various-places-as-CUPS-2.2.patch
-	0023-Fix-handling-of-unicode-filenames-in-sixext.py.patch
-	configure.patch
-	cups.patch
-	disable_upgrade.patch
-	gzip_text.patch
-	hplip-1_3_23_12-4-python3_12-fix.patch
-	hplip-configure-python.patch
-	hplip-gcc15-stdc23.patch
-	hplip-hpaio-gcc14.patch
-	hplip-locale-format.patch
-	hplip-pserror-gcc14.patch
-	locale-format.patch
-	remove-imageprocessing-install.patch
-	reproducible-gzip.patch
-	python3.diff"
+
+source="https://sourceforge.net/projects/${name}/files/${name}/${version}/${name}-${version}.tar.gz
+    0003-models.dat-Re-add-drivers-missing-from-3.19.1.patch
+    0018-Allow-non-JPEG-scanning-on-the-HP-DeskJet-3520-All-i.patch
+    0022-Add-include-cups-ppd.h-in-various-places-as-CUPS-2.2.patch
+    0023-Fix-handling-of-unicode-filenames-in-sixext.py.patch
+    configure.patch
+    cups.patch
+    disable_upgrade.patch
+    gzip_text.patch
+    hplip-1_3_23_12-4-python3_12-fix.patch
+    hplip-configure-python.patch
+    hplip-gcc15-stdc23.patch
+    hplip-hpaio-gcc14.patch
+    hplip-locale-format.patch
+    hplip-pserror-gcc14.patch
+    locale-format.patch
+    remove-imageprocessing-install.patch
+    reproducible-gzip.patch
+    python3.diff"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	export CFLAGS="${CFLAGS} -Wno-deprecated-declarations -Wno-implicit-function-declaration -Wno-return-mismatch -Wno-int-conversion -std=gnu17"
+	export CFLAGS="${CFLAGS} \
+        -Wno-deprecated-declarations \
+        -Wno-implicit-function-declaration \
+        -Wno-return-mismatch \
+        -Wno-int-conversion \
+        -std=gnu17"
 
 	# disable insecure update - https://bugs.archlinux.org/task/38083
-	patch -Np0 -i "${SRC}"/disable_upgrade.patch
-	
+	patch -Np0 -i "${SRC}/disable_upgrade.patch"
+
 	# add missing 'include <cups/ppd.h>' at various places
-	patch -Np1 -i "${SRC}"/0022-Add-include-cups-ppd.h-in-various-places-as-CUPS-2.2.patch
-	
+	patch -Np1 -i "${SRC}/0022-Add-include-cups-ppd.h-in-various-places-as-CUPS-2.2.patch"
+
 	# fix some handling unicode file names FS#58412
-	patch -Np1 -i "${SRC}"/0023-Fix-handling-of-unicode-filenames-in-sixext.py.patch
-	
+	patch -Np1 -i "${SRC}/0023-Fix-handling-of-unicode-filenames-in-sixext.py.patch"
+
 	# Workaround patch for missing Python3 transition of the old
 	# (pre-USB-storage) photo memory card support (pcardext) - Debian patch
-	patch -Np1 -i "${SRC}"/python3.diff
-	
+	patch -Np1 -i "${SRC}/python3.diff"
+
 	# fix model support / Debian patch / FS#74942
-	patch -Np1 -i "${SRC}"/0003-models.dat-Re-add-drivers-missing-from-3.19.1.patch
-	
+	patch -Np1 -i "${SRC}/0003-models.dat-Re-add-drivers-missing-from-3.19.1.patch"
+
 	# https://bugs.launchpad.net/hplip/+bug/1879445
 	# broken scanning - https://bugs.archlinux.org/task/66704
-	patch -Np1 -i ../hplip-configure-python.patch
-	
+	patch -Np1 -i "${SRC}/hplip-configure-python.patch"
+
 	#  allow non-jpeg scanning on all-in-one devices - FS#78135
- 	patch -Np1 -i ../0018-Allow-non-JPEG-scanning-on-the-HP-DeskJet-3520-All-i.patch
-	
+ 	patch -Np1 -i "${SRC}/0018-Allow-non-JPEG-scanning-on-the-HP-DeskJet-3520-All-i.patch"
+
 	# hp-firmware: module 'locale' not longer provides method 'format', causing traceback #4
-	patch -Np1 -i ../hplip-locale-format.patch
-		
+	patch -Np1 -i "${SRC}/hplip-locale-format.patch"
+
 	# make gzip creation reproducible by removing the timestamp
-	patch -Np1 -i ../reproducible-gzip.patch
-	
-	# fix build with gcc14
-	patch -Np1 -i ../hplip-hpaio-gcc14.patch 
-	patch -Np1 -i ../hplip-pserror-gcc14.patch
+    patch -Np1 -i "${SRC}/reproducible-gzip.patch"
 
-	# fix build with gcc15
-	patch -Np1 -i ../hplip-gcc15-stdc23.patch
+    # fix build with gcc14
+    patch -Np1 -i "${SRC}/hplip-hpaio-gcc14.patch"
+    patch -Np1 -i "${SRC}/hplip-pserror-gcc14.patch"
 
-	export AUTOMAKE='automake --foreign'
-	autoreconf --force --install
-	./configure \
-		--prefix=/usr \
-		--disable-network-build \
-		--disable-qt4 \
-		--enable-qt5 \
-		--enable-hpcups-install \
-		--enable-cups-drv-install \
-		--disable-imageProcessor-build \
-		--enable-pp-build #--help
-	sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
-	make
-	make -j1 rulesdir=/usr/lib/udev/rules.d DESTDIR=$PKG/ install
+    # fix build with gcc15
+    patch -Np1 -i "${SRC}/hplip-gcc15-stdc23.patch"
+
+    export AUTOMAKE='automake --foreign'
+    autoreconf --force --install
+
+    ./configure \
+        --prefix=/usr \
+        --disable-network-build \
+        --disable-qt4 \
+        --enable-qt5 \
+        --enable-hpcups-install \
+        --enable-cups-drv-install \
+        --disable-imageProcessor-build \
+        --enable-pp-build
+
+    sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
+    make
+    make -j1 rulesdir=/usr/lib/udev/rules.d DESTDIR="${PKG}" install
  
-	# remove config provided by sane and autostart of hp-daemon
-	rm -rf $PKG/etc/sane.d
-	rm -rf $PKG/etc/xdg
-	install -dm755 $PKG/etc/sane.d/dll.d
-	echo hpaio > $PKG/etc/sane.d/dll.d/hpaio
+    # remove config provided by sane and autostart of hp-daemon
+    rm -rf "${PKG}/etc/sane.d" \
+        "${PKG}/etc/xdg"
+
+    install -dm755 "${PKG}/etc/sane.d/dll.d"
+    echo hpaio > "${PKG}/etc/sane.d/dll.d/hpaio"
  
-	# remove HAL .fdi file because HAL is no longer used
-	rm -vrf $PKG/usr/share/hal
+    # remove HAL .fdi file because HAL is no longer used and rc script
+    rm -vrf "${PKG}/usr/share/hal" \
+        "${PKG}/etc/init.d"
 
-	# remove rc script
-	rm -vrf $PKG/etc/init.d
-
-	# remove systemd service file
-	rm -rf $PKG/usr/lib/systemd
-
-	# Compile Python bytecode:
-	python3 -m compileall -d /usr/share $PKG/usr/share
-	python3 -O -m compileall -d /usr/share $PKG/usr/share 
+    # Compile Python bytecode:
+    python3 -m compileall -d /usr/share "${PKG}/usr/share"
+    python3 -O -m compileall -d /usr/share "${PKG}/usr/share"
 }

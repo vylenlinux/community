@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="gcc for mingw-w64 toolchain"
 homepage="https://gcc.gnu.org/"
 maintainer="Vylen Linux Team"
@@ -5,41 +8,47 @@ maintainer="Vylen Linux Team"
 name=mingw-w64-gcc
 version=15.2.0
 release=1
-source="http://gcc.gnu.org/pub/gcc/releases/gcc-$version/gcc-$version.tar.xz"
-
-bsdtar() {
-	tar $@
-}
+source="http://gcc.gnu.org/pub/gcc/releases/gcc-${version}/gcc-${version}.tar.xz"
 
 build() {
+    export CFLAGS="${CFLAGS} -O2 -Wno-error=format-security"
+    export CXXFLAGS="${CXXFLAGS} -O2 -Wno-error=format-security"
 
-	export CFLAGS="$CFLAGS -O2 -Wno-error=format-security"
-	export CXXFLAGS="$CXXFLAGS -O2 -Wno-error=format-security"
+    for T in i686-w64-mingw32 x86_64-w64-mingw32; do
+        mkdir "base-gcc-${T}"
 
-  for T in i686-w64-mingw32 x86_64-w64-mingw32; do
-	mkdir base-gcc-$T
-	cd base-gcc-$T
+        # shellcheck disable=SC2164
+        cd "base-gcc-${T}"
+            "../gcc-${version}/configure" \
+                --prefix=/usr \
+                --libexecdir=/usr/lib \
+                --target="${T}" \
+                --enable-languages=c,lto,c++ \
+                --enable-shared \
+                --enable-static \
+                --enable-threads=posix \
+                --enable-fully-dynamic-string \
+                --enable-libstdcxx-time=yes \
+                --enable-libstdcxx-filesystem-ts=yes \
+                --with-system-zlib \
+                --enable-cloog-backend=isl \
+                --enable-lto \
+                --enable-libgomp \
+                --disable-multilib \
+                --enable-checking=release \
+                --disable-sjlj-exceptions \
+                --with-dwarf2
 
-	../gcc-$version/configure \
-		--prefix=/usr \
-		--libexecdir=/usr/lib \
-		--target=${T} \
-		--enable-languages=c,lto,c++ \
-	        --enable-shared --enable-static \
-	        --enable-threads=posix --enable-fully-dynamic-string \
-	        --enable-libstdcxx-time=yes --enable-libstdcxx-filesystem-ts=yes \
-	        --with-system-zlib --enable-cloog-backend=isl \
-	        --enable-lto --enable-libgomp \
-	        --disable-multilib --enable-checking=release \
-	        --disable-sjlj-exceptions --with-dwarf2
-	make all
-	make DESTDIR=$PKG install
-	cd ..
-  done
-	# remove unnecessary files
-	rm -f $PKG/usr/lib/libcc1.so.0.0.0
-        rm -f $PKG/usr/lib/libcc1.so.0
-        rm -f $PKG/usr/lib/libcc1.so
-	rm -r $PKG/usr/share/man
-	rm -r $PKG/usr/share/info
+            make all
+            make DESTDIR="${PKG}" install
+        # shellcheck disable=SC2103
+        cd ..
+    done
+
+    # remove unnecessary files
+    rm -f "${PKG}/usr/lib/libcc1.so.0.0.0" \
+        "${PKG}/usr/lib/libcc1.so.0" \
+        "${PKG}/usr/lib/libcc1.so"
+
+    rm -r "${PKG}/usr/share/info"
 }

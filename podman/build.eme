@@ -20,7 +20,4 @@ build() {
 
     make BUILDTAGS="seccomp exclude_graphdriver_devicemapper exclude_graphdriver_btrfs"
     make install PREFIX=/usr DESTDIR="${PKG}" LIBEXECDIR=/usr/lib
-
-    # not use in vylen: usr/lib/systemd
-    rm -rf "${PKG}/usr/lib/systemd"
 }

@@ -17,10 +17,8 @@ source="${name}-${version}.tar.gz::https://github.com/hyprwm/${name}/archive/v${
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}/subprojects"
-
-    rm -rf hyprland-protocols sdbus-cpp
-    ln -sfT "${SRC}/hyprland-protocols-${_protocol_version}" hyprland-protocols
-
+        rm -rf hyprland-protocols sdbus-cpp
+        ln -sfT "${SRC}/hyprland-protocols-${_protocol_version}" hyprland-protocols
     # shellcheck disable=SC2103
     cd ..
 
@@ -31,6 +29,4 @@ build() {
 
     cmake --build build
     DESTDIR="${PKG}" cmake --install build
-
-    rm -rf "${PKG}/usr/lib/systemd"
 }

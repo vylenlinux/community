@@ -16,5 +16,4 @@ build() {
     make DESTDIR="${PKG}" install
 
     openrc_add "${name}" "${name}-pd"
-    rm -rf "${PKG}/usr/lib/systemd"
 }

@@ -29,6 +29,6 @@ build() {
 
     install -Dm644 "${SRC}/hyprland.desktop" "${PKG}/usr/share/wayland-sessions/hyprland.desktop"
 
-    rm -fr "${PKG}/usr/include/glaze" "${PKG}/usr/share/glaze" "${PKG}/usr/lib/systemd"
+    rm -fr "${PKG}/usr/include/glaze" "${PKG}/usr/share/glaze"
     rm -f "${PKG}/usr/share/wayland-sessions/hyprland-systemd.desktop"
 }

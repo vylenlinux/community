@@ -51,7 +51,6 @@ build() {
 
     rm -fr "${PKG}/etc/logrotate.d" \
         "${PKG}/usr/share/mariadb-test" \
-        "${PKG}/usr/share/doc" \
         "${PKG}/usr/share"/groonga*
 
     rm -f "${PKG}/usr/sbin/rcmysql" "${PKG}/usr/share/man/man1/mysql-test-run.pl.1"

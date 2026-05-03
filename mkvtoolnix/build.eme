@@ -24,7 +24,4 @@ build() {
 
     rake --multitask --jobs="${MAKEFLAGS}"
     rake DESTDIR="${PKG}" install
-
-    rm -r "${PKG}/usr/share/locale"
-    rm -rf "${PKG}/usr/share/doc"
 }
