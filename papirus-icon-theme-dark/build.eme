@@ -7,11 +7,14 @@ maintainer="Vylen Linux Team"
 
 name=papirus-icon-theme-dark
 version=20250501
-release=1
+release=2
 source="https://github.com/PapirusDevelopmentTeam/${name%-dark}/archive/${version}/${name%-dark}-${version}.tar.gz"
 
 build() {
-	# shellcheck disable=SC2164
+    # shellcheck disable=SC2164
     cd "${name%-dark}-${version}"
     make DESTDIR="${PKG}" ICON_THEMES="Papirus-Dark" install
+
+    rm -f "${PKG}/usr/share/icons/Papirus-Dark"/*/mimetypes/text-x-systemd-unit.svg \
+        "${PKG}/usr/share/icons/Papirus-Dark"/*/places/folder*systemd.svg
 }
