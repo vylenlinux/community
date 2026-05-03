@@ -6,7 +6,7 @@ homepage="https://pandoc.org/"
 maintainer="Vylen Linux Team"
 
 name=pandoc
-version=3.9
+version=3.9.0.2
 release=1
 
 source="${name}-${version}-amd64.tar.gz::https://github.com/jgm/${name}/releases/download/${version}/${name}-${version}-linux-amd64.tar.gz
@@ -16,12 +16,12 @@ build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
 
-    mkdir -p "${PKG}/usr/share/pandoc"
+    mkdir -p "${PKG}/usr/share/${name}"
     cp -R bin share "${PKG}/usr"
 
     [ -f "${PKG}/usr/bin/pandoc-citeproc" ] && rm "${PKG}/usr/bin/pandoc-citeproc"
     [ -f "${PKG}/usr/share/man/man1/pandoc-citeproc.1.gz" ] && rm "${PKG}/usr/share/man/man1/pandoc-citeproc.1.gz"
 
-    cp -R data "${PKG}/usr/share/pandoc"
+    cp -R data "${PKG}/usr/share/${name}/"
     find "${PKG}" -iname '*README*' -delete
 }
