@@ -20,7 +20,6 @@ build() {
     sed -i '/extern void \*memchr/d' include/l_stdlib.h
 
     export CFLAGS="${CFLAGS} \
-        -std=gnu99 \
         -Wno-discarded-qualifiers \
         -Wno-incompatible-pointer-types"
 
