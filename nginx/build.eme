@@ -37,5 +37,5 @@ build() {
     find "${PKG}/etc/nginx" -name "*.default" -delete
     rm -fr "${PKG}/run"
 
-    openrc_add "${name}"
+    do_service "${name}"
 }

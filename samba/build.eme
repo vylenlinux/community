@@ -53,7 +53,7 @@ build() {
 
     # install pam file
     install -Dm644 "${SRC}/samba.pam" "${PKG}/etc/pam.d/samba"
-    openrc_add "${name}"
+    do_service "${name}"
 }
 
 # rpcsvc-proto perl-parse-yapp talloc perl-json

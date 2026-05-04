@@ -29,5 +29,5 @@ build() {
     make DESTDIR="${PKG}" install
 
     rm -r "${PKG}/usr/share/doc"
-    openrc_add "${name}"
+    do_service "${name}"
 }

@@ -58,5 +58,5 @@ build() {
     find "${PKG}/usr/share/mariadb"/* -type d ! -name english ! -name charsets | xargs rm -rf {} \;
     install -Dm755 "${SRC}/mariadb.pam" "${PKG}/etc/pam.d/mysql"
 
-    openrc_add "${name}"
+    do_service "${name}"
 }

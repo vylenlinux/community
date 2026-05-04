@@ -17,5 +17,5 @@ build() {
     make CXFLAGS="${CFLAGS}" BINDIR=/usr/bin UDEVDIR=/usr/lib/udev everything
     make INSTALL=/usr/bin/install BINDIR=/usr/bin DESTDIR="${PKG}" UDEVDIR=/usr/lib/udev install
 
-    openrc_add "${name}" mdraid
+    do_service "${name}" mdraid
 }

@@ -28,5 +28,5 @@ build() {
     install -Dm644 "scripts/${name}/fsfreeze-hook" -t "${PKG}/etc/qemu/"
     install -Dm755 "${SRC}/qemu-ga.conf" -t "${PKG}/etc/qemu/"
 
-    openrc_add "${name}"
+    do_service "${name}"
 }

@@ -48,6 +48,6 @@ build() {
     mv -v "${PKG}/usr/sbin/suexec" "${PKG}/usr/lib/httpd/suexec"
     rm -fr "${PKG}/run"
 
-    openrc_add apache2
+    do_service apache2
     rm -f "${PKG}/usr/share/httpd/manual/mod"/*systemd*
 }

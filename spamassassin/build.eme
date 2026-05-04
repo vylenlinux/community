@@ -25,5 +25,5 @@ build() {
         -type f -name autosplit.ix \( -exec grep -q '^[[:space:]]*package' {} \; -o -delete \) , \
         -type d -empty -exec rmdir {} +
 
-    openrc_add spamd
+    do_service spamd
 }

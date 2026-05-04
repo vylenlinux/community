@@ -49,5 +49,5 @@ build() {
     sed -i 's:#session-wrapper=lightdm-session:session-wrapper=/etc/lightdm/Xsession:' "${PKG}/etc/lightdm/lightdm.conf"
     sed -i 's:minimum-uid=500:minimum-uid=1000:' "${PKG}/etc/lightdm/users.conf"
 
-    openrc_add "${name}"
+    do_service "${name}"
 }

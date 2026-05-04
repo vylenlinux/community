@@ -25,5 +25,5 @@ build() {
     install -Dm644 data/asusd.conf                -t "${PKG}/usr/share/dbus-1/system.d/"
 
     find rog-anime/data/anime -type f -exec install -Dm644 "{}" "${PKG}/usr/share/asusd/{}" \;
-    openrc_add asusd
+    do_service asusd
 }

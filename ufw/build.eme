@@ -27,5 +27,5 @@ build() {
     python3 ./setup.py build
     python3 ./setup.py install --root="${PKG}"
 
-    openrc_add "${name}"
+    do_service "${name}"
 }

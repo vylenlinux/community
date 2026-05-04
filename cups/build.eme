@@ -64,5 +64,5 @@ build() {
         "${PKG}/var/spool"
 
     chmod -R +w "${PKG}"
-    openrc_add cupsd
+    do_service cupsd
 }

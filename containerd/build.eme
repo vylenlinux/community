@@ -27,5 +27,5 @@ build() {
     mkdir -pv "${PKG}/usr/bin"
     install -Dsm755 ./bin/* "${PKG}/usr/bin/"
 
-    openrc_add "${name}"
+    do_service "${name}"
 }

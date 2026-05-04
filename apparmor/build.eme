@@ -70,5 +70,5 @@ build() {
     install -Dm644 changehat/pam_apparmor/README "${PKG}/usr/share/doc/apparmor/README.pam_apparmor"
     install -Dm755 init/rc.apparmor.functions -t "${PKG}/usr/lib/apparmor/"
 
-    openrc_add "${name}"
+    do_service "${name}"
 }

@@ -43,5 +43,5 @@ build() {
     make DESTDIR="${PKG}" install
 
     install -Dm644 "${SRC}/${name}.conf" -t "${PKG}/etc/"
-    openrc_add ntp-client ntpd sntp
+    do_service ntp-client ntpd sntp
 }

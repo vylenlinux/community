@@ -27,5 +27,5 @@ build() {
     install -Dm0644 "${SRC}/torrc" "${PKG}/etc/tor/torrc"
     mv "${PKG}/etc/tor/torrc.sample" "${PKG}/etc/tor/torrc-dist"
 
-    openrc_add "${name}"
+    do_service "${name}"
 }
