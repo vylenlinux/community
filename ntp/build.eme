@@ -7,7 +7,7 @@ maintainer="Vylen Linux Team"
 
 name=ntp
 version=4.2.8p18
-release=1
+release=2
 
 source="https://www.eecis.udel.edu/~${name}/${name}_spool/ntp4/${name}-${version%.*}/${name}-${version}.tar.gz
     fix.build.patch
@@ -16,22 +16,18 @@ source="https://www.eecis.udel.edu/~${name}/${name}_spool/ntp4/${name}-${version
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
+    # l_stdlib.h re-declares memchr, which conflicts with glibc's _Generic macro
+    sed -i '/extern void \*memchr/d' include/l_stdlib.h
 
     export CFLAGS="${CFLAGS} \
-        -Wno-incompatible-pointer-types \
-        -Wno-int-conversion"
+        -std=gnu99 \
+        -Wno-discarded-qualifiers \
+        -Wno-incompatible-pointer-types"
 
     patch -Np1 -i "${SRC}/fix.build.patch"
-
-    sed -e 's/"(\\S+)"/"?([^\\s"]+)"?/' -i scripts/update-leap/update-leap.in
-    # fix an issue introduced with glibc-2.34
-    sed -e 's/#ifndef __sun/#if !defined(__sun) \&\& !defined(__GLIBC__)/' -i libntp/work_thread.c
-    # fix glibc _Generic memchr conflict
-    sed -i '/memchr(const void \*s, int c, size_t n)/d' include/l_stdlib.h
-
     autoreconf -fiv
 
-    ./configure CFLAGS="${CFLAGS} -g -fPIC" \
+    ./configure \
         --prefix=/usr \
         --bindir=/usr/sbin \
         --sysconfdir=/etc \
