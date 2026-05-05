@@ -1,4 +1,4 @@
-qbittorrent-nox-5.1.4-1
+qbittorrent-nox-5.2.0-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/qbittorrent-nox
@@ -9,3 +9,5 @@ drwxr-xr-x root/root    usr/share/man/man1/
 drwxr-xr-x root/root    usr/share/man/ru/
 drwxr-xr-x root/root    usr/share/man/ru/man1/
 -rw-r--r-- root/root    usr/share/man/ru/man1/qbittorrent-nox.1.gz
+drwxr-xr-x root/root    usr/share/metainfo/
+-rw-r--r-- root/root    usr/share/metainfo/org.qbittorrent.qBittorrent-nox.metainfo.xml
