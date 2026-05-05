@@ -6,7 +6,7 @@ homepage="https://linrunner.de/en/tlp/tlp.html"
 maintainer="Vylen Linux Team"
 
 name=tlp
-version=1.10.0
+version=1.10.1
 release=1
 source="https://github.com/linrunner/${name}/archive/${version}/${name}-${version}.tar.gz"
 
