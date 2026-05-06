@@ -6,10 +6,10 @@ homepage="https://developer.android.com/"
 maintainer="Vylen Linux Team"
 
 name=android-studio
-version=2025.3.4.6
+version=2025.3.4.7
 release=1
 
-source="${name}-${version}.tar.gz::https://dl.google.com/dl/android/studio/ide-zips/${version}/${name}-panda4-linux.tar.gz
+source="${name}-${version}.tar.gz::https://dl.google.com/dl/android/studio/ide-zips/${version}/${name}-panda4-patch1-linux.tar.gz
     ${name}.desktop"
 
 build() {
