@@ -6,18 +6,12 @@ homepage="https://inkscape.org/"
 maintainer="Vylen Linux Team"
 
 name=inkscape
-version=1.4.3
-release=3
-
-source="https://media.inkscape.org/dl/resources/file/${name}-${version}.tar.xz
-    ${name}-1.4.3-poppler-26_fixes-2.patch
-    ${name}-1.4.3-gcc16.patch"
+version=1.4.4
+release=1
+source="https://media.inkscape.org/dl/resources/file/${name}-${version}.tar.xz"
 
 build() {
-    patch -d "${name}-${version}"_* -Np1 -i "${SRC}/${name}-1.4.3-poppler-26_fixes-2.patch"
-    patch -d "${name}-${version}"_* -Np1 -i "${SRC}/${name}-1.4.3-gcc16.patch"
-
-    cmake -S "${name}-${version}"_* -B build -G Ninja \
+    cmake -S "${name}-${version}"* -B build -G Ninja \
         -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
         -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_INSTALL_LIBDIR=lib \
@@ -26,7 +20,19 @@ build() {
         -DCMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
         -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
         -DPOPPLER_INCLUDE_DIR=/usr/include/poppler \
+        -DWITH_GSPELL=OFF \
+        -DWITH_GSOURCEVIEW=OFF \
+        -DWITH_IMAGE_MAGICK=OFF \
+        -DWITH_GRAPHICS_MAGICK=OFF \
+        -DWITH_LIBCDR=OFF \
+        -DWITH_LIBVISIO=OFF \
+        -DWITH_LIBWPG=OFF \
+        -DWITH_JEMALLOC=OFF \
+        -DWITH_ASAN=OFF \
+        -DWITH_PROFILING=OFF \
         -DWITH_INTERNAL_2GEOM=ON \
+        -DBUILD_TESTING=OFF \
+        -DENABLE_POPPLER=OFF \
         -Wno-dev
 
     cmake --build build
