@@ -1,13 +1,16 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Header files for AMD Advanced Media Framework"
 homepage="https://github.com/GPUOpen-LibrariesAndSDKs/AMF/"
 maintainer="Vylen Linux Team"
 
 name=amf-headers
-version=1.5.0
+version=1.5.2
 release=1
-source="https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/v$version/$name-$version.tar.gz"
+source="https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
-	install -dm 755 $PKG/usr/include
-	cp -dr --no-preserve=ownership AMF-$version/amf/public/include $PKG/usr/include/AMF
+    install -dm755 "${PKG}/usr/include"
+    cp -dr --no-preserve=ownership "AMF-${version}/amf/public/include" "${PKG}/usr/include/AMF"
 }
