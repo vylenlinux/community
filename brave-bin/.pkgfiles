@@ -1,4 +1,4 @@
-brave-bin-1.89.145-1
+brave-bin-1.90.121-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/cron.daily/
 lrwxrwxrwx root/root    etc/cron.daily/brave-browser -> /opt/brave.com/brave/cron/brave-browser
@@ -240,8 +240,6 @@ drwxr-xr-x root/root    opt/brave.com/brave/resources/brave_extension/_locales/z
 -rw-r--r-- root/root    opt/brave.com/brave/resources/brave_extension/_locales/zh_TW/messages.json
 -rw-r--r-- root/root    opt/brave.com/brave/v8_context_snapshot.bin
 -rw-r--r-- root/root    opt/brave.com/brave/vk_swiftshader_icd.json
--rwxr-xr-x root/root    opt/brave.com/brave/xdg-mime
--rwxr-xr-x root/root    opt/brave.com/brave/xdg-settings
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 lrwxrwxrwx root/root    usr/bin/brave-browser-stable -> /opt/brave.com/brave/brave-browser
