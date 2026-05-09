@@ -1,4 +1,4 @@
-nwg-look-1.1.0-1
+nwg-look-1.1.1-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/nwg-look
@@ -9,7 +9,7 @@ drwxr-xr-x root/root    usr/share/nwg-look/
 drwxr-xr-x root/root    usr/share/nwg-look/langs/
 -rw-r--r-- root/root    usr/share/nwg-look/langs/cs_CZ.json
 -rw-r--r-- root/root    usr/share/nwg-look/langs/en_US.json
--rw-r--r-- root/root    usr/share/nwg-look/langs/es_ES.yml
+-rw-r--r-- root/root    usr/share/nwg-look/langs/es_ES.json
 -rw-r--r-- root/root    usr/share/nwg-look/langs/ja_JP.json
 -rw-r--r-- root/root    usr/share/nwg-look/langs/pl_PL.json
 -rw-r--r-- root/root    usr/share/nwg-look/langs/pt_BR.json
