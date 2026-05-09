@@ -7,9 +7,25 @@ maintainer="Vylen Linux Team"
 
 name=ttf-noto
 version=2026.05.01
-release=1
-source="${name}-${version}.tar.zst::https://london.mirror.pkgbuild.com/extra/os/x86_64/noto-fonts-1:${version}-${release}-any.pkg.tar.zst"
+release=2
+
+source="${name}-${version}.tar.gz::https://github.com/notofonts/notofonts.github.io/archive/refs/tags/noto-monthly-release-${version}.tar.gz
+    66-noto-sans.conf
+    66-noto-serif.conf
+    66-noto-mono.conf"
 
 build() {
-    cp -r usr "${PKG}"
+    # shellcheck disable=SC2164
+    cd "notofonts.github.io-noto-monthly-release-${version}"
+    install -Dm644 fonts/*/hinted/ttf/*.ttf -t "${PKG}/usr/share/fonts/noto/"
+
+    # Move to ttf-noto-extra
+    rm -f "${PKG}/usr/share/fonts/noto"/Noto*-Condensed*.ttf \
+        "${PKG}/usr/share/fonts/noto"/Noto*-Semi*.ttf \
+        "${PKG}/usr/share/fonts/noto"/Noto*-Extra*.ttf
+
+    install -Dm644 "${SRC}"/*.conf -t "${PKG}/usr/share/fontconfig/conf.avail/"
+    install -d "${PKG}/usr/share/fontconfig/conf.default"
+
+    ln -rs "${PKG}/usr/share/fontconfig/conf.avail"/* "${PKG}/usr/share/fontconfig/conf.default/"
 }
