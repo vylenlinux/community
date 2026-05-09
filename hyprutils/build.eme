@@ -6,7 +6,7 @@ homepage="https://github.com/hyprwm/hyprutils"
 maintainer="Vylen Linux Team"
 
 name=hyprutils
-version=0.13.0
+version=0.13.1
 release=1
 source="${name}-${version}.tar.gz::https://github.com/hyprwm/${name}/archive/v${version}.tar.gz"
 
