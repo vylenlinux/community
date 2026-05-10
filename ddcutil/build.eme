@@ -6,9 +6,9 @@ maintainer="Vylen Linux Team"
 homepage="https://www.ddcutil.com"
 
 name=ddcutil
-version=2.2.6
+version=2.2.7
 release=1
-source="https://github.com/rockowitz/ddcutil/archive/v${version}/${name}-${version}.tar.gz"
+source="https://github.com/rockowitz/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164

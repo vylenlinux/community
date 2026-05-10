@@ -1,4 +1,4 @@
-ddcutil-2.2.6-1
+ddcutil-2.2.7-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/ddcutil
@@ -11,9 +11,9 @@ drwxr-xr-x root/root    usr/lib/
 drwxr-xr-x root/root    usr/lib/cmake/
 drwxr-xr-x root/root    usr/lib/cmake/ddcutil/
 -rw-r--r-- root/root    usr/lib/cmake/ddcutil/FindDDCUtil.cmake
-lrwxrwxrwx root/root    usr/lib/libddcutil.so -> libddcutil.so.5.5.0
-lrwxrwxrwx root/root    usr/lib/libddcutil.so.5 -> libddcutil.so.5.5.0
--rwxr-xr-x root/root    usr/lib/libddcutil.so.5.5.0
+-rwxr-xr-x root/root    usr/lib/libddcutil.so.5.5.1
+lrwxrwxrwx root/root    usr/lib/libddcutil.so.5 -> libddcutil.so.5.5.1
+lrwxrwxrwx root/root    usr/lib/libddcutil.so -> libddcutil.so.5.5.1
 drwxr-xr-x root/root    usr/lib/modules-load.d/
 -rw-r--r-- root/root    usr/lib/modules-load.d/ddcutil.conf
 drwxr-xr-x root/root    usr/lib/pkgconfig/
@@ -28,6 +28,3 @@ drwxr-xr-x root/root    usr/share/ddcutil/data/
 -rw-r--r-- root/root    usr/share/ddcutil/data/60-ddcutil-usb.rules
 -rw-r--r-- root/root    usr/share/ddcutil/data/90-nvidia-i2c.conf
 -rw-r--r-- root/root    usr/share/ddcutil/data/nvidia-i2c.conf
-drwxr-xr-x root/root    usr/share/man/
-drwxr-xr-x root/root    usr/share/man/man1/
--rw-r--r-- root/root    usr/share/man/man1/ddcutil.1.gz
