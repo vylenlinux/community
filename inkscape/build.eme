@@ -7,10 +7,14 @@ maintainer="Vylen Linux Team"
 
 name=inkscape
 version=1.4.4
-release=1
-source="https://media.inkscape.org/dl/resources/file/${name}-${version}.tar.xz"
+release=2
+
+source="https://media.inkscape.org/dl/resources/file/${name}-${version}.tar.xz
+    fix_build_with_poppler_26.05.patch"
 
 build() {
+    patch -d "${name}-${version}"* -Np1 -i "${SRC}/fix_build_with_poppler_26.05.patch"
+
     cmake -S "${name}-${version}"* -B build -G Ninja \
         -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
         -DCMAKE_INSTALL_PREFIX=/usr \
@@ -32,7 +36,7 @@ build() {
         -DWITH_PROFILING=OFF \
         -DWITH_INTERNAL_2GEOM=ON \
         -DBUILD_TESTING=OFF \
-        -DENABLE_POPPLER=OFF \
+        -DENABLE_POPPLER=ON \
         -Wno-dev
 
     cmake --build build
