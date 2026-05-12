@@ -1,15 +1,19 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="C-style arbitrary precision calculator"
 homepage="http://www.isthe.com/chongo/tech/comp/calc/index.html"
 maintainer="Vylen Linux Team"
 
 name=calc
-version=2.16.1.2
+version=2.16.1.3
 release=1
-source="$name-$version.tar.gz::https://github.com/lcn2/calc/archive/refs/tags/v${version}.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/lcn2/${name}/archive/refs/tags/v${version}.tar.gz"
 
 build() {
-	cd $name-$version
-	make clobber calc-dynamic-only BLD_TYPE=calc-dynamic-only PREFIX=$PKG
-	make install T=$PKG
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
+    make clobber calc-dynamic-only BLD_TYPE=calc-dynamic-only PREFIX="${PKG}"
+    make install T="${PKG}"
 }
