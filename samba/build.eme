@@ -6,7 +6,7 @@ homepage="https://www.samba.org"
 maintainer="Vylen Linux Team"
 
 name=samba
-version=4.24.1
+version=4.24.2
 release=1
 
 source="https://www.samba.org/ftp/${name}/stable/${name}-${version}.tar.gz
@@ -55,5 +55,3 @@ build() {
     install -Dm644 "${SRC}/samba.pam" "${PKG}/etc/pam.d/samba"
     do_service "${name}"
 }
-
-# rpcsvc-proto perl-parse-yapp talloc perl-json
