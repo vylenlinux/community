@@ -5,10 +5,10 @@ description="The best privacy online. Browse privately. Search privately. And di
 homepage="https://brave.com/"
 maintainer="Vylen Linux Team"
 
-name=brave-bin
+name=brave
 version=1.90.121
 release=1
-source="${name}-${version}.deb::https://github.com/brave/brave-browser/releases/download/v${version}/brave-browser_${version}_amd64.deb"
+source="${name}-${version}.deb::https://github.com/${name}/brave-browser/releases/download/v${version}/brave-browser_${version}_amd64.deb"
 
 build() {
     bsdtar -xf "${name}-${version}.deb"
