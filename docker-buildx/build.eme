@@ -6,7 +6,7 @@ homepage="https://github.com/docker/buildx/"
 maintainer="Vylen Linux Team"
 
 name=docker-buildx
-version=0.33.0
+version=0.34.0
 release=1
 source="https://github.com/docker/buildx/archive/v${version}/${name}-${version}.tar.gz"
 
@@ -15,8 +15,12 @@ build() {
     export CGO_CPPFLAGS="${CPPFLAGS}"
     export CGO_CXXFLAGS="${CXXFLAGS}"
     export CGO_LDFLAGS="${LDFLAGS}"
-    export GOFLAGS="-buildmode=pie -trimpath -mod=readonly -modcacherw"
     export GO111MODULE=on
+
+    export GOFLAGS="-buildmode=pie \
+        -trimpath \
+        -mod=readonly \
+        -modcacherw"
 
     # shellcheck disable=SC2164
     cd "buildx-${version}"
