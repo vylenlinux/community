@@ -6,7 +6,7 @@ homepage="https://www.dropbox.com/"
 maintainer="Vylen Linux Team"
 
 name=dropbox
-version=250.4.3245
+version=252.4.3485
 release=1
 
 source="${name}-${version}.tar.gz::https://clientupdates.dropboxstatic.com/dbx-releng/client/${name}-lnx.x86_64-${version}.tar.gz
