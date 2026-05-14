@@ -6,9 +6,9 @@ homepage="https://brave.com/"
 maintainer="Vylen Linux Team"
 
 name=brave
-version=1.90.121
+version=1.90.122
 release=1
-source="${name}-${version}.deb::https://github.com/${name}/brave-browser/releases/download/v${version}/brave-browser_${version}_amd64.deb"
+source="${name}-${version}.deb::https://github.com/${name}/brave-browser/releases/download/v${version}/${name}-browser_${version}_amd64.deb"
 
 build() {
     bsdtar -xf "${name}-${version}.deb"
@@ -16,7 +16,7 @@ build() {
 
     # copy icons
     for size in 16 24 32 48 64 128 256; do
-        mkdir -pv "${PKG}/usr/share/icons/hicolor/${size}x${size}/apps/"
-        mv "${PKG}/opt/${name%-*}.com/${name%-*}/product_logo_${size}.png" "${PKG}/usr/share/icons/hicolor/${size}x${size}/apps/brave-browser.png"
+        mkdir -p "${PKG}/usr/share/icons/hicolor/${size}x${size}/apps/"
+        mv "${PKG}/opt/${name}.com/${name}/product_logo_${size}.png" "${PKG}/usr/share/icons/hicolor/${size}x${size}/apps/brave-browser.png"
     done
 }
