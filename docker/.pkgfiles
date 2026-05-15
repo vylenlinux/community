@@ -1,4 +1,4 @@
-docker-29.4.3-1
+docker-29.5.0-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/bash_completion.d/
 -rw-r--r-- root/root    etc/bash_completion.d/docker
@@ -13,10 +13,10 @@ drwxr-xr-x root/root    usr/bin/
 lrwxrwxrwx root/root    usr/bin/docker-containerd -> containerd
 lrwxrwxrwx root/root    usr/bin/docker-containerd-ctr -> ctr
 lrwxrwxrwx root/root    usr/bin/docker-containerd-shim -> containerd-shim
--rwxr-xr-x root/root    usr/bin/dockerd
 lrwxrwxrwx root/root    usr/bin/docker-init -> /sbin/tini
 -rwxr-xr-x root/root    usr/bin/docker-proxy
 lrwxrwxrwx root/root    usr/bin/docker-runc -> runc
+-rwxr-xr-x root/root    usr/bin/dockerd
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/docker/
 -rwxr-xr-x root/root    usr/share/docker/check-config.sh
