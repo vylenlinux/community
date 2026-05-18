@@ -1,18 +1,18 @@
-teams-for-linux-2.9.0-1
+teams-for-linux-2.9.0-2
 drwxr-xr-x root/root    opt/
 drwxr-xr-x root/root    opt/teams-for-linux/
+-rw-r--r-- root/root    opt/teams-for-linux/LICENSE.electron.txt
+-rw-r--r-- root/root    opt/teams-for-linux/LICENSES.chromium.html
+-rwxr-xr-x root/root    opt/teams-for-linux/chrome-sandbox
 -rw-r--r-- root/root    opt/teams-for-linux/chrome_100_percent.pak
 -rw-r--r-- root/root    opt/teams-for-linux/chrome_200_percent.pak
 -rwxr-xr-x root/root    opt/teams-for-linux/chrome_crashpad_handler
--rwxr-xr-x root/root    opt/teams-for-linux/chrome-sandbox
 -rw-r--r-- root/root    opt/teams-for-linux/icudtl.dat
 -rwxr-xr-x root/root    opt/teams-for-linux/libEGL.so
--rwxr-xr-x root/root    opt/teams-for-linux/libffmpeg.so
 -rwxr-xr-x root/root    opt/teams-for-linux/libGLESv2.so
+-rwxr-xr-x root/root    opt/teams-for-linux/libffmpeg.so
 -rwxr-xr-x root/root    opt/teams-for-linux/libvk_swiftshader.so
 -rwxr-xr-x root/root    opt/teams-for-linux/libvulkan.so.1
--rw-r--r-- root/root    opt/teams-for-linux/LICENSE.electron.txt
--rw-r--r-- root/root    opt/teams-for-linux/LICENSES.chromium.html
 drwxr-xr-x root/root    opt/teams-for-linux/locales/
 -rw-r--r-- root/root    opt/teams-for-linux/locales/af.pak
 -rw-r--r-- root/root    opt/teams-for-linux/locales/am.pak
@@ -30,8 +30,8 @@ drwxr-xr-x root/root    opt/teams-for-linux/locales/
 -rw-r--r-- root/root    opt/teams-for-linux/locales/es.pak
 -rw-r--r-- root/root    opt/teams-for-linux/locales/et.pak
 -rw-r--r-- root/root    opt/teams-for-linux/locales/fa.pak
--rw-r--r-- root/root    opt/teams-for-linux/locales/fil.pak
 -rw-r--r-- root/root    opt/teams-for-linux/locales/fi.pak
+-rw-r--r-- root/root    opt/teams-for-linux/locales/fil.pak
 -rw-r--r-- root/root    opt/teams-for-linux/locales/fr.pak
 -rw-r--r-- root/root    opt/teams-for-linux/locales/gu.pak
 -rw-r--r-- root/root    opt/teams-for-linux/locales/he.pak
@@ -69,14 +69,14 @@ drwxr-xr-x root/root    opt/teams-for-linux/locales/
 -rw-r--r-- root/root    opt/teams-for-linux/locales/vi.pak
 -rw-r--r-- root/root    opt/teams-for-linux/locales/zh-CN.pak
 -rw-r--r-- root/root    opt/teams-for-linux/locales/zh-TW.pak
+-rw-r--r-- root/root    opt/teams-for-linux/resources.pak
 drwxr-xr-x root/root    opt/teams-for-linux/resources/
--rw-r--r-- root/root    opt/teams-for-linux/resources/app.asar
 -rw-r--r-- root/root    opt/teams-for-linux/resources/app-update.yml
+-rw-r--r-- root/root    opt/teams-for-linux/resources/app.asar
 drwxr-xr-x root/root    opt/teams-for-linux/resources/assets/
 drwxr-xr-x root/root    opt/teams-for-linux/resources/assets/sounds/
 -rw-rw-r-- root/root    opt/teams-for-linux/resources/assets/sounds/meeting_started.wav
 -rw-rw-r-- root/root    opt/teams-for-linux/resources/assets/sounds/new_message.wav
--rw-r--r-- root/root    opt/teams-for-linux/resources.pak
 -rw-r--r-- root/root    opt/teams-for-linux/snapshot_blob.bin
 -rwxr-xr-x root/root    opt/teams-for-linux/teams-for-linux
 -rw-r--r-- root/root    opt/teams-for-linux/v8_context_snapshot.bin
