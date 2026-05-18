@@ -1,27 +1,29 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Light-weight system monitor for X, Wayland, and other things, too"
 homepage="https://github.com/brndnmtthws/conky"
 maintainer="Vylen Linux Team"
 
 name=conky
-version=1.22.3
+version=1.23.0
 release=1
-source="https://github.com/brndnmtthws/conky/archive/v$version/$name-$version.tar.gz"
+source="https://github.com/brndnmtthws/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
-	cmake -S $name-$version -B build -G Ninja \
-		-D CMAKE_BUILD_TYPE=Release \
-		-D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
-		-D CMAKE_INSTALL_PREFIX=/usr \
-		-D SYSTEM_CONFIG_FILE=/usr/etc/conky.conf \
-		-D BUILD_DOCS=OFF \
-		-D BUILD_WAYLAND=$(emerald isinstalled wayland && printf "ON" || printf "OFF") \
-		-D BUILD_I18N=OFF \
-		-D BUILD_CURL=ON \
-		-D BUILD_RSS=ON \
-		-D RELEASE=TRUE \
-		-Wno-dev
-	cmake --build build
-	DESTDIR=$PKG cmake --install build
+    cmake -S "${name}-${version}" -B build -G Ninja \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DSYSTEM_CONFIG_FILE=/usr/etc/conky.conf \
+        -DBUILD_DOCS=OFF \
+        -DBUILD_WAYLAND="$(emerald isinstalled wayland && printf "ON" || printf "OFF")" \
+        -DBUILD_I18N=OFF \
+        -DBUILD_CURL=ON \
+        -DBUILD_RSS=ON \
+        -DRELEASE=TRUE \
+        -Wno-dev
 
-	rm -r $PKG/usr/share/doc
+    cmake --build build
+    DESTDIR="${PKG}" cmake --install build
 }
