@@ -1,17 +1,23 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Portable command line archive file manager"
 homepage="https://wummel.github.io/patool/"
 maintainer="Vylen Linux Team"
 
 name=patool
-version=4.0.4
+version=4.0.5
 release=1
-source="https://github.com/wummel/$name/releases/download/$version/$name-$version.tar.gz"
-build() {
-	cd patool-$version
-	/usr/bin/python3 setup.py build
-	/usr/bin/python3 setup.py install \
-		--prefix=/usr \
-		--root=$PKG
+source="https://github.com/wummel/${name}/releases/download/${version}/${name}-${version}.tar.gz"
 
-	chmod -R go-w,a+r,u+w $PKG
+build() {
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+    python3 setup.py build
+
+    python3 setup.py install \
+        --prefix=/usr \
+        --root="${PKG}"
+
+    chmod -R go-w,a+r,u+w "${PKG}"
 }
