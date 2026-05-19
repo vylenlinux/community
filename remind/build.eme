@@ -16,5 +16,5 @@ build() {
     ./configure
 
     sed -i 's|prefix=/usr/local|prefix=/usr|' src/Makefile
-    make  DESTDIR="${PKG}" install
+    make DESTDIR="${PKG}" install
 }
