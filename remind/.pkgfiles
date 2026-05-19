@@ -1,4 +1,4 @@
-remind-06.02.05-1
+remind-06.02.06-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 lrwxrwxrwx root/root    usr/bin/rem -> remind
@@ -8,12 +8,6 @@ lrwxrwxrwx root/root    usr/bin/rem -> remind
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/applications/
 -rwxr-xr-x root/root    usr/share/applications/tkremind.desktop
-drwxr-xr-x root/root    usr/share/man/
-drwxr-xr-x root/root    usr/share/man/man1/
--rw-r--r-- root/root    usr/share/man/man1/rem.1.gz
--rw-r--r-- root/root    usr/share/man/man1/rem2ps.1.gz
--rw-r--r-- root/root    usr/share/man/man1/remind.1.gz
--rw-r--r-- root/root    usr/share/man/man1/tkremind.1.gz
 drwxr-xr-x root/root    usr/share/pixmaps/
 -rw-r--r-- root/root    usr/share/pixmaps/tkremind.png
 drwxr-xr-x root/root    usr/share/remind/
