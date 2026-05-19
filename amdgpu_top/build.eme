@@ -6,7 +6,7 @@ homepage="https://github.com/Umio-Yasuno/amdgpu_top"
 maintainer="Vylen Linux Team"
 
 name=amdgpu_top
-version=0.11.4
+version=0.11.5
 release=1
 source="https://github.com/Umio-Yasuno/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
