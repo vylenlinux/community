@@ -1,4 +1,4 @@
-nwg-panel-0.10.13-1
+nwg-panel-0.10.14-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/nwg-dwl-interface
@@ -8,13 +8,13 @@ drwxr-xr-x root/root    usr/bin/
 drwxr-xr-x root/root    usr/lib/
 drwxr-xr-x root/root    usr/lib/python3.14/
 drwxr-xr-x root/root    usr/lib/python3.14/site-packages/
-drwxr-xr-x root/root    usr/lib/python3.14/site-packages/nwg_panel-0.10.13-py3.14.egg-info/
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel-0.10.13-py3.14.egg-info/PKG-INFO
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel-0.10.13-py3.14.egg-info/SOURCES.txt
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel-0.10.13-py3.14.egg-info/dependency_links.txt
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel-0.10.13-py3.14.egg-info/entry_points.txt
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel-0.10.13-py3.14.egg-info/requires.txt
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel-0.10.13-py3.14.egg-info/top_level.txt
+drwxr-xr-x root/root    usr/lib/python3.14/site-packages/nwg_panel-0.10.14-py3.14.egg-info/
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel-0.10.14-py3.14.egg-info/PKG-INFO
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel-0.10.14-py3.14.egg-info/SOURCES.txt
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel-0.10.14-py3.14.egg-info/dependency_links.txt
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel-0.10.14-py3.14.egg-info/entry_points.txt
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel-0.10.14-py3.14.egg-info/requires.txt
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel-0.10.14-py3.14.egg-info/top_level.txt
 drwxr-xr-x root/root    usr/lib/python3.14/site-packages/nwg_panel/
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/__about__.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/__init__.py
@@ -324,6 +324,8 @@ drwxr-xr-x root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/__pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/__pycache__/menu_start.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/__pycache__/niri_taskbar.cpython-314.opt-1.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/__pycache__/niri_taskbar.cpython-314.pyc
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/__pycache__/notifications.cpython-314.opt-1.pyc
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/__pycache__/notifications.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/__pycache__/openweather.cpython-314.opt-1.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/__pycache__/openweather.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/__pycache__/pinned.cpython-314.opt-1.pyc
@@ -340,8 +342,6 @@ drwxr-xr-x root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/__pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/__pycache__/sway_taskbar.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/__pycache__/sway_workspaces.cpython-314.opt-1.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/__pycache__/sway_workspaces.cpython-314.pyc
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/__pycache__/swaync.cpython-314.opt-1.pyc
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/__pycache__/swaync.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/brightness_slider.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/clock.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/controls.py
@@ -355,6 +355,7 @@ drwxr-xr-x root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/__pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/keyboard_layout.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/menu_start.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/niri_taskbar.py
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/notifications.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/openweather.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/pinned.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/playerctl.py
@@ -384,14 +385,13 @@ drwxr-xr-x root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/sni_s
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/sway_mode.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/sway_taskbar.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/sway_workspaces.py
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/modules/swaync.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/processes.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/nwg_panel/tools.py
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/applications/
--rw-r--r-- root/root    usr/share/applications/nwg-panel-config.desktop
--rw-r--r-- root/root    usr/share/applications/nwg-processes.desktop
+-rwxr-xr-x root/root    usr/share/applications/nwg-panel-config.desktop
+-rwxr-xr-x root/root    usr/share/applications/nwg-processes.desktop
 drwxr-xr-x root/root    usr/share/pixmaps/
--rw-r--r-- root/root    usr/share/pixmaps/nwg-panel.svg
--rw-r--r-- root/root    usr/share/pixmaps/nwg-processes.svg
--rw-r--r-- root/root    usr/share/pixmaps/nwg-shell.svg
+-rwxr-xr-x root/root    usr/share/pixmaps/nwg-panel.svg
+-rwxr-xr-x root/root    usr/share/pixmaps/nwg-processes.svg
+-rwxr-xr-x root/root    usr/share/pixmaps/nwg-shell.svg

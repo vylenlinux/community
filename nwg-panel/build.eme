@@ -6,7 +6,7 @@ homepage="https://github.com/nwg-piotr/nwg-panel"
 maintainer="Vylen Linux Team"
 
 name=nwg-panel
-version=0.10.13
+version=0.10.14
 release=1
 
 source="${name}-${version}.tar.gz::https://github.com/nwg-piotr/${name}/archive/refs/tags/v${version}.tar.gz
