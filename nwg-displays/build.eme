@@ -6,7 +6,7 @@ homepage="https://github.com/nwg-piotr/nwg-displays"
 maintainer="Vylen Linux Team"
 
 name=nwg-displays
-version=0.4.2
+version=0.4.3
 release=1
 source="${name}-${version}.tar.gz::https://github.com/nwg-piotr/${name}/archive/v${version}.tar.gz"
 
