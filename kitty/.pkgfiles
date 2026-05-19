@@ -1,4 +1,4 @@
-kitty-0.46.2-1
+kitty-0.47.0-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/kitten
@@ -105,6 +105,16 @@ drwxr-xr-x root/root    usr/lib/kitty/kittens/diff/__pycache__/
 -rw-r--r-- root/root    usr/lib/kitty/kittens/diff/__pycache__/main.cpython-314.opt-2.pyc
 -rw-r--r-- root/root    usr/lib/kitty/kittens/diff/__pycache__/main.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/kitty/kittens/diff/main.py
+drwxr-xr-x root/root    usr/lib/kitty/kittens/dnd/
+-rw-r--r-- root/root    usr/lib/kitty/kittens/dnd/__init__.py
+drwxr-xr-x root/root    usr/lib/kitty/kittens/dnd/__pycache__/
+-rw-r--r-- root/root    usr/lib/kitty/kittens/dnd/__pycache__/__init__.cpython-314.opt-1.pyc
+-rw-r--r-- root/root    usr/lib/kitty/kittens/dnd/__pycache__/__init__.cpython-314.opt-2.pyc
+-rw-r--r-- root/root    usr/lib/kitty/kittens/dnd/__pycache__/__init__.cpython-314.pyc
+-rw-r--r-- root/root    usr/lib/kitty/kittens/dnd/__pycache__/main.cpython-314.opt-1.pyc
+-rw-r--r-- root/root    usr/lib/kitty/kittens/dnd/__pycache__/main.cpython-314.opt-2.pyc
+-rw-r--r-- root/root    usr/lib/kitty/kittens/dnd/__pycache__/main.cpython-314.pyc
+-rw-r--r-- root/root    usr/lib/kitty/kittens/dnd/main.py
 drwxr-xr-x root/root    usr/lib/kitty/kittens/hints/
 -rw-r--r-- root/root    usr/lib/kitty/kittens/hints/__init__.py
 drwxr-xr-x root/root    usr/lib/kitty/kittens/hints/__pycache__/
@@ -384,6 +394,9 @@ drwxr-xr-x root/root    usr/lib/kitty/kitty/__pycache__/
 -rw-r--r-- root/root    usr/lib/kitty/kitty/__pycache__/launch.cpython-314.opt-1.pyc
 -rw-r--r-- root/root    usr/lib/kitty/kitty/__pycache__/launch.cpython-314.opt-2.pyc
 -rw-r--r-- root/root    usr/lib/kitty/kitty/__pycache__/launch.cpython-314.pyc
+-rw-r--r-- root/root    usr/lib/kitty/kitty/__pycache__/machine_id.cpython-314.opt-1.pyc
+-rw-r--r-- root/root    usr/lib/kitty/kitty/__pycache__/machine_id.cpython-314.opt-2.pyc
+-rw-r--r-- root/root    usr/lib/kitty/kitty/__pycache__/machine_id.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/kitty/kitty/__pycache__/main.cpython-314.opt-1.pyc
 -rw-r--r-- root/root    usr/lib/kitty/kitty/__pycache__/main.cpython-314.opt-2.pyc
 -rw-r--r-- root/root    usr/lib/kitty/kitty/__pycache__/main.cpython-314.pyc
@@ -591,6 +604,7 @@ drwxr-xr-x root/root    usr/lib/kitty/kitty/layout/__pycache__/
 -rw-r--r-- root/root    usr/lib/kitty/kitty/layout/tall.py
 -rw-r--r-- root/root    usr/lib/kitty/kitty/layout/vertical.py
 -rw-r--r-- root/root    usr/lib/kitty/kitty/linear2srgb.glsl
+-rw-r--r-- root/root    usr/lib/kitty/kitty/machine_id.py
 -rw-r--r-- root/root    usr/lib/kitty/kitty/main.py
 -rw-r--r-- root/root    usr/lib/kitty/kitty/marks.py
 -rw-r--r-- root/root    usr/lib/kitty/kitty/multiprocessing.py
@@ -910,6 +924,7 @@ drwxr-xr-x root/root    usr/share/man/man1/
 -rw-r--r-- root/root    usr/share/man/man1/kitten-command-palette.1.gz
 -rw-r--r-- root/root    usr/share/man/man1/kitten-desktop-ui.1.gz
 -rw-r--r-- root/root    usr/share/man/man1/kitten-diff.1.gz
+-rw-r--r-- root/root    usr/share/man/man1/kitten-dnd.1.gz
 -rw-r--r-- root/root    usr/share/man/man1/kitten-edit-in-kitty.1.gz
 -rw-r--r-- root/root    usr/share/man/man1/kitten-hints.1.gz
 -rw-r--r-- root/root    usr/share/man/man1/kitten-hyperlinked-grep.1.gz
