@@ -11,9 +11,9 @@ release=1
 source="https://github.com/rust-lang-nursery/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
-	# shellcheck disable=SC2164
-	cd "mdBook-${version}"
+    # shellcheck disable=SC2164
+    cd "mdBook-${version}"
 
-	cargo build --release
-	install -Dm755 "target/release/${name}" -t "${PKG}/usr/bin/"
+    cargo build --release
+    install -Dm755 "target/release/${name}" -t "${PKG}/usr/bin/"
 }
