@@ -1,4 +1,4 @@
-libtorrent-0.16.11-1
+libtorrent-0.16.12-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/include/
 drwxr-xr-x root/root    usr/include/torrent/
@@ -27,7 +27,6 @@ drwxr-xr-x root/root    usr/include/torrent/download/
 -rw-r--r-- root/root    usr/include/torrent/download/group_entry.h
 -rw-r--r-- root/root    usr/include/torrent/download/resource_manager.h
 -rw-r--r-- root/root    usr/include/torrent/download_info.h
--rw-r--r-- root/root    usr/include/torrent/error.h
 -rw-r--r-- root/root    usr/include/torrent/event.h
 -rw-r--r-- root/root    usr/include/torrent/exceptions.h
 -rw-r--r-- root/root    usr/include/torrent/hash_string.h
@@ -37,7 +36,6 @@ drwxr-xr-x root/root    usr/include/torrent/net/
 -rw-r--r-- root/root    usr/include/torrent/net/fd.h
 -rw-r--r-- root/root    usr/include/torrent/net/http_get.h
 -rw-r--r-- root/root    usr/include/torrent/net/http_stack.h
--rw-r--r-- root/root    usr/include/torrent/net/network_config.h
 -rw-r--r-- root/root    usr/include/torrent/net/poll.h
 -rw-r--r-- root/root    usr/include/torrent/net/resolver.h
 -rw-r--r-- root/root    usr/include/torrent/net/socket_address.h
@@ -58,9 +56,12 @@ drwxr-xr-x root/root    usr/include/torrent/peer/
 -rw-r--r-- root/root    usr/include/torrent/peer/peer_list.h
 -rw-r--r-- root/root    usr/include/torrent/rate.h
 drwxr-xr-x root/root    usr/include/torrent/runtime/
+-rw-r--r-- root/root    usr/include/torrent/runtime/network_config.h
 -rw-r--r-- root/root    usr/include/torrent/runtime/network_manager.h
+-rw-r--r-- root/root    usr/include/torrent/runtime/runtime.h
 -rw-r--r-- root/root    usr/include/torrent/runtime/socket_manager.h
 drwxr-xr-x root/root    usr/include/torrent/system/
+-rw-r--r-- root/root    usr/include/torrent/system/system.h
 -rw-r--r-- root/root    usr/include/torrent/system/thread.h
 -rw-r--r-- root/root    usr/include/torrent/throttle.h
 -rw-r--r-- root/root    usr/include/torrent/torrent.h
@@ -87,8 +88,8 @@ drwxr-xr-x root/root    usr/include/torrent/utils/
 -rw-r--r-- root/root    usr/include/torrent/utils/unordered_vector.h
 -rw-r--r-- root/root    usr/include/torrent/utils/uri_parser.h
 drwxr-xr-x root/root    usr/lib/
-lrwxrwxrwx root/root    usr/lib/libtorrent.so -> libtorrent.so.41.0.0
-lrwxrwxrwx root/root    usr/lib/libtorrent.so.41 -> libtorrent.so.41.0.0
--rwxr-xr-x root/root    usr/lib/libtorrent.so.41.0.0
+lrwxrwxrwx root/root    usr/lib/libtorrent.so -> libtorrent.so.42.0.0
+lrwxrwxrwx root/root    usr/lib/libtorrent.so.42 -> libtorrent.so.42.0.0
+-rwxr-xr-x root/root    usr/lib/libtorrent.so.42.0.0
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/libtorrent.pc
