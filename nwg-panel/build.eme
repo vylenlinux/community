@@ -6,7 +6,7 @@ homepage="https://github.com/nwg-piotr/nwg-panel"
 maintainer="Vylen Linux Team"
 
 name=nwg-panel
-version=0.10.14
+version=0.10.15
 release=1
 
 source="${name}-${version}.tar.gz::https://github.com/nwg-piotr/${name}/archive/refs/tags/v${version}.tar.gz
@@ -26,6 +26,6 @@ build() {
     install -Dm644 nwg-panel-config.desktop -t "${PKG}/usr/share/applications/"
     install -Dm644 nwg-processes.desktop -t "${PKG}/usr/share/applications/"
 
-    python_version=$(python3 -c 'import sys; print(".".join(map(str, sys.version_info[:2])))')
+    python_version="$(python3 -c 'import sys; print(".".join(map(str, sys.version_info[:2])))')"
     install -Dm644 "${SRC}/config" -t "${PKG}/usr/lib/python${python_version}/site-packages/nwg_panel/config/"
 }
