@@ -1,14 +1,19 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Create book from markdown files, like Gitbook but implemented in Rust"
 homepage="https://github.com/rust-lang/mdBook"
 maintainer="Vylen Linux Team"
 
 name=mdbook
-version=0.5.2
+version=0.5.3
 release=1
-source="https://github.com/rust-lang-nursery/mdBook/archive/v$version/$name-$version.tar.gz"
+source="https://github.com/rust-lang-nursery/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
-	cd "mdBook-$version"
+	# shellcheck disable=SC2164
+	cd "mdBook-${version}"
+
 	cargo build --release
-	install -Dm 755 "target/release/${name}" "${PKG}/usr/bin/${name}"
+	install -Dm755 "target/release/${name}" -t "${PKG}/usr/bin/"
 }
