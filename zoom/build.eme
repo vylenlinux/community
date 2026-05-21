@@ -6,7 +6,7 @@ homepage="https://zoom.us/"
 maintainer="Vylen Linux Team"
 
 name=zoom
-version=7.0.0.1666
+version=7.0.5.3034
 release=1
 source="${name}-${version}.tar.xz::https://cdn.zoom.us/prod/${version}/${name}_x86_64.pkg.tar.xz"
 

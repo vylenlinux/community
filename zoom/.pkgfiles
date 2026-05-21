@@ -1,4 +1,4 @@
-zoom-7.0.0.1666-1
+zoom-7.0.5.3034-1
 drwxr-xr-x root/root    opt/
 drwxr-xr-x root/root    opt/zoom/
 -rw-r--r-- root/root    opt/zoom/Droplet.pcm
@@ -1963,6 +1963,7 @@ drwxr-xr-x root/root    opt/zoom/json/
 -rw-r--r-- root/root    opt/zoom/json/countries_vi.json
 -rw-r--r-- root/root    opt/zoom/json/emoji.json
 -rw-r--r-- root/root    opt/zoom/leave.pcm
+-rwxr-xr-x root/root    opt/zoom/libKF6GlobalAccel.so.6
 -rw-r--r-- root/root    opt/zoom/libOpenCL.so.1
 -rwxr-xr-x root/root    opt/zoom/libaomagent.so
 -rwxr-xr-x root/root    opt/zoom/libavcodec.so.59
@@ -1978,6 +1979,8 @@ drwxr-xr-x root/root    opt/zoom/json/
 -rw-r--r-- root/root    opt/zoom/meeting_chat_chime.pcm
 -rw-r--r-- root/root    opt/zoom/meeting_raisehand_chime.pcm
 -rw-r--r-- root/root    opt/zoom/mute.pcm
+drwxr-xr-x root/root    opt/zoom/new_home_page/
+-rw-r--r-- root/root    opt/zoom/new_home_page/new_home_page.zip
 -rw-r--r-- root/root    opt/zoom/qt.conf
 -rw-r--r-- root/root    opt/zoom/record_start.pcm
 -rw-r--r-- root/root    opt/zoom/record_stop.pcm
