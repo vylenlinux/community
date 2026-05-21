@@ -6,7 +6,7 @@ homepage="https://www.docker.com/"
 maintainer="Vylen Linux Team"
 
 name=docker
-version=29.5.1
+version=29.5.2
 release=1
 
 source="https://github.com/moby/moby/archive/${name}-v${version}/moby-${version}.tar.gz
@@ -48,10 +48,10 @@ build() {
     cd docker
     VERSION="${version}" hack/make.sh dynbinary
 
-    install -Dm0755 "${SRC}/cli-${version}/build/${name}" -t "${PKG}/usr/bin/"
-    install -Dm0755 "${SRC}/moby-${name}-v${version}/bundles/dynbinary-daemon/dockerd" -t "${PKG}/usr/bin/"
-    install -Dm0755 "${SRC}/moby-${name}-v${version}/bundles/dynbinary-daemon/docker-proxy" -t "${PKG}/usr/bin/"
-    install -Dm0644 "${SRC}/${name}.conf" -t "${PKG}/etc/"
+    install -Dm755 "${SRC}/cli-${version}/build/${name}" -t "${PKG}/usr/bin/"
+    install -Dm755 "${SRC}/moby-${name}-v${version}/bundles/dynbinary-daemon/dockerd" -t "${PKG}/usr/bin/"
+    install -Dm755 "${SRC}/moby-${name}-v${version}/bundles/dynbinary-daemon/docker-proxy" -t "${PKG}/usr/bin/"
+    install -Dm644 "${SRC}/${name}.conf" -t "${PKG}/etc/"
 
     # symlink externally provided tini-static binary
     ln -sf /sbin/tini "${PKG}/usr/bin/docker-init"
@@ -60,8 +60,8 @@ build() {
     ln -s ctr "${PKG}/usr/bin/docker-containerd-ctr"
     ln -s runc "${PKG}/usr/bin/docker-runc"
 
-    install -Dm0755 "${SRC}/moby-${name}-v${version}/contrib/check-config.sh" -t "${PKG}/usr/share/${name}/"
-    install -Dm0644 "${SRC}/cli-${version}/contrib/completion/bash/docker" -t "${PKG}/etc/bash_completion.d/"
+    install -Dm755 "${SRC}/moby-${name}-v${version}/contrib/check-config.sh" -t "${PKG}/usr/share/${name}/"
+    install -Dm644 "${SRC}/cli-${version}/contrib/completion/bash/docker" -t "${PKG}/etc/bash_completion.d/"
 
     install -Dm644 "contrib/init/openrc/${name}.confd" "${PKG}/etc/conf.d/${name}"
     install -Dm755 "contrib/init/openrc/${name}.initd" "${PKG}/etc/init.d/${name}"
