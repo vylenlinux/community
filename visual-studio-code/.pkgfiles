@@ -1,4 +1,4 @@
-visual-studio-code-1.120.0-1
+visual-studio-code-1.121.0-1
 drwxr-xr-x root/root    opt/
 drwxr-xr-x root/root    opt/visual-studio-code/
 -rw-r--r-- root/root    opt/visual-studio-code/LICENSES.chromium.html
@@ -119,7 +119,6 @@ drwxr-xr-x root/root    opt/visual-studio-code/resources/app/extensions/configur
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/configuration-editing/schemas/attachContainer.schema.json
 drwxr-xr-x root/root    opt/visual-studio-code/resources/app/extensions/copilot/
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/copilot/LICENSE.txt
--rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/copilot/ThirdPartyNotices.txt
 drwxr-xr-x root/root    opt/visual-studio-code/resources/app/extensions/copilot/assets/
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/copilot/assets/copilot.png
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/copilot/assets/copilot.woff
@@ -745,22 +744,20 @@ drwxr-xr-x root/root    opt/visual-studio-code/resources/app/extensions/merge-co
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/merge-conflict/media/icon.png
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/merge-conflict/package.json
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/merge-conflict/package.nls.json
-drwxr-xr-x root/root    opt/visual-studio-code/resources/app/extensions/mermaid-chat-features/
--rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/mermaid-chat-features/README.md
-drwxr-xr-x root/root    opt/visual-studio-code/resources/app/extensions/mermaid-chat-features/chat-webview-out/
--rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/mermaid-chat-features/chat-webview-out/codicon.css
--rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/mermaid-chat-features/chat-webview-out/index-editor.js
--rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/mermaid-chat-features/chat-webview-out/index.js
-drwxr-xr-x root/root    opt/visual-studio-code/resources/app/extensions/mermaid-chat-features/chat-webview-src/
--rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/mermaid-chat-features/chat-webview-src/index-editor.ts
--rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/mermaid-chat-features/chat-webview-src/index.ts
--rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/mermaid-chat-features/chat-webview-src/mermaidWebview.ts
--rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/mermaid-chat-features/chat-webview-src/tsconfig.json
--rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/mermaid-chat-features/chat-webview-src/vscodeApi.ts
-drwxr-xr-x root/root    opt/visual-studio-code/resources/app/extensions/mermaid-chat-features/dist/
--rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/mermaid-chat-features/dist/extension.js
--rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/mermaid-chat-features/package.json
--rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/mermaid-chat-features/package.nls.json
+drwxr-xr-x root/root    opt/visual-studio-code/resources/app/extensions/mermaid-markdown-features/
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/mermaid-markdown-features/README.md
+drwxr-xr-x root/root    opt/visual-studio-code/resources/app/extensions/mermaid-markdown-features/chat-webview-out/
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/mermaid-markdown-features/chat-webview-out/codicon.css
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/mermaid-markdown-features/chat-webview-out/index-editor.js
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/mermaid-markdown-features/chat-webview-out/index.js
+drwxr-xr-x root/root    opt/visual-studio-code/resources/app/extensions/mermaid-markdown-features/dist/
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/mermaid-markdown-features/dist/extension.js
+drwxr-xr-x root/root    opt/visual-studio-code/resources/app/extensions/mermaid-markdown-features/markdown-preview-out/
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/mermaid-markdown-features/markdown-preview-out/index.js
+drwxr-xr-x root/root    opt/visual-studio-code/resources/app/extensions/mermaid-markdown-features/notebook-out/
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/mermaid-markdown-features/notebook-out/index.js
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/mermaid-markdown-features/package.json
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/mermaid-markdown-features/package.nls.json
 drwxr-xr-x root/root    opt/visual-studio-code/resources/app/extensions/microsoft-authentication/
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/extensions/microsoft-authentication/README.md
 drwxr-xr-x root/root    opt/visual-studio-code/resources/app/extensions/microsoft-authentication/dist/
@@ -3410,6 +3407,7 @@ drwxr-xr-x root/root    opt/visual-studio-code/resources/app/node_modules/@vscod
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/circle-filled.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/circle-large-filled.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/circle-large.svg
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/circle-slash-compact.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/circle-slash.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/circle-small-filled.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/circle-small.svg
@@ -3444,6 +3442,7 @@ drwxr-xr-x root/root    opt/visual-studio-code/resources/app/node_modules/@vscod
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/compass-dot.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/compass.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/copilot-blocked.svg
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/copilot-compact.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/copilot-error.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/copilot-in-progress.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/copilot-large.svg
@@ -3516,6 +3515,7 @@ drwxr-xr-x root/root    opt/visual-studio-code/resources/app/node_modules/@vscod
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/ellipsis.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/empty-window.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/eraser.svg
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/error-compact.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/error-small.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/error.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/exclude.svg
@@ -3545,16 +3545,20 @@ drwxr-xr-x root/root    opt/visual-studio-code/resources/app/node_modules/@vscod
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/fold-up.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/fold.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/folder-active.svg
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/folder-compact.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/folder-library.svg
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/folder-opened-compact.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/folder-opened.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/folder.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/forward.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/game.svg
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/gear-compact.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/gear.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/gift.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/gist-secret.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/gist.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/git-branch-changes.svg
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/git-branch-compact.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/git-branch-conflicts.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/git-branch-staged-changes.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/git-branch.svg
@@ -3594,6 +3598,8 @@ drwxr-xr-x root/root    opt/visual-studio-code/resources/app/node_modules/@vscod
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/home.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/horizontal-rule.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/hubot.svg
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/important-compact.svg
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/important.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/inbox.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/indent.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/index-zero.svg
@@ -3634,6 +3640,7 @@ drwxr-xr-x root/root    opt/visual-studio-code/resources/app/node_modules/@vscod
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/layout-sidebar-right.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/layout-statusbar.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/layout.svg
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/library-compact.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/library.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/lightbulb-autofix.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/lightbulb-empty.svg
@@ -3693,6 +3700,7 @@ drwxr-xr-x root/root    opt/visual-studio-code/resources/app/node_modules/@vscod
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/output.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/package.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/paintcan.svg
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/pass-compact.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/pass-filled.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/pass.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/percentage.svg
@@ -3717,6 +3725,7 @@ drwxr-xr-x root/root    opt/visual-studio-code/resources/app/node_modules/@vscod
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/quotes.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/radio-tower.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/reactions.svg
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/record-keys-compact.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/record-keys.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/record-small.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/record.svg
@@ -3724,6 +3733,7 @@ drwxr-xr-x root/root    opt/visual-studio-code/resources/app/node_modules/@vscod
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/references.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/refresh.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/regex.svg
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/remote-compact.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/remote-explorer.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/remote.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/remove-small.svg
@@ -3733,8 +3743,10 @@ drwxr-xr-x root/root    opt/visual-studio-code/resources/app/node_modules/@vscod
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/replace.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/reply.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/repo-clone.svg
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/repo-compact.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/repo-fetch.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/repo-force-push.svg
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/repo-forked-compact.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/repo-forked.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/repo-pinned.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/repo-pull.svg
@@ -3744,6 +3756,7 @@ drwxr-xr-x root/root    opt/visual-studio-code/resources/app/node_modules/@vscod
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/report.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/request-changes.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/robot.svg
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/rocket-compact.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/rocket.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/root-folder-opened.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/root-folder.svg
@@ -3777,6 +3790,7 @@ drwxr-xr-x root/root    opt/visual-studio-code/resources/app/node_modules/@vscod
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/settings.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/share-window.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/share.svg
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/shield-compact.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/shield.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/sign-in.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/sign-out.svg
@@ -3785,6 +3799,7 @@ drwxr-xr-x root/root    opt/visual-studio-code/resources/app/node_modules/@vscod
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/snake.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/sort-precedence.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/source-control.svg
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/sparkle-compact.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/sparkle-filled.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/sparkle.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/split-horizontal.svg
@@ -3799,6 +3814,7 @@ drwxr-xr-x root/root    opt/visual-studio-code/resources/app/node_modules/@vscod
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/symbol-array.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/symbol-boolean.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/symbol-class.svg
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/symbol-color-compact.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/symbol-color.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/symbol-constant.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/symbol-enum-member.svg
@@ -3861,6 +3877,7 @@ drwxr-xr-x root/root    opt/visual-studio-code/resources/app/node_modules/@vscod
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/ungroup-by-ref-type.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/unlock.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/unmute.svg
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/unpin.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/unverified.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/variable-group.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/verified-filled.svg
@@ -3877,11 +3894,13 @@ drwxr-xr-x root/root    opt/visual-studio-code/resources/app/node_modules/@vscod
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/vscode-insiders.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/vscode.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/wand.svg
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/warning-compact.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/warning.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/watch.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/whitespace.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/whole-word.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/window-active.svg
+-rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/window-compact.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/window.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/word-wrap.svg
 -rw-r--r-- root/root    opt/visual-studio-code/resources/app/node_modules/@vscode/codicons/src/icons/workspace-trusted.svg
