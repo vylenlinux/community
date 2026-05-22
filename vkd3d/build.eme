@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Direct3D 12 to Vulkan translation library By WineHQ."
 homepage="https://github.com/d3d12/vkd3d"
 maintainer="Vylen Linux Team"
@@ -5,12 +8,16 @@ maintainer="Vylen Linux Team"
 name=vkd3d
 version=1.19
 release=1
-source="https://dl.winehq.org/vkd3d/source/$name-$version.tar.xz"
+source="https://dl.winehq.org/${name}/source/${name}-${version}.tar.xz"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	./configure --prefix=/usr --with-spirv-tools
-	make
-	make DESTDIR=$PKG install
+    ./configure \
+        --prefix=/usr \
+        --with-spirv-tools
+
+    make
+    make DESTDIR="${PKG}" install
 }
