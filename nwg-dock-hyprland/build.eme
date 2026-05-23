@@ -6,7 +6,7 @@ homepage="https://github.com/nwg-piotr/nwg-dock-hyprland"
 maintainer="Vylen Linux Team"
 
 name=nwg-dock-hyprland
-version=0.4.9
+version=0.4.10
 release=1
 source="${name}-${version}.tar.gz::https://github.com/nwg-piotr/${name}/archive/v${version}.tar.gz"
 
