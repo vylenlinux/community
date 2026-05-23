@@ -1,13 +1,13 @@
 #!/usr/bin/env sh
 
 # shellcheck disable=SC2034
-description="Protocol Buffers - Google's data interchange format "
+description="Protocol Buffers - Google's data interchange format"
 homepage="https://developers.google.com/protocol-buffers/"
 maintainer="Vylen Linux Team"
 
 name=protobuf
-version=34.1
-release=2
+version=35.0
+release=1
 source="https://github.com/protocolbuffers/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {

@@ -1,14 +1,14 @@
-protobuf-34.1-2
+protobuf-35.0-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
-lrwxrwxrwx root/root    usr/bin/protoc -> protoc-34.1.0
--rwxr-xr-x root/root    usr/bin/protoc-34.1.0
-lrwxrwxrwx root/root    usr/bin/protoc-gen-upb -> protoc-gen-upb-34.1.0
--rwxr-xr-x root/root    usr/bin/protoc-gen-upb-34.1.0
-lrwxrwxrwx root/root    usr/bin/protoc-gen-upb_minitable -> protoc-gen-upb_minitable-34.1.0
--rwxr-xr-x root/root    usr/bin/protoc-gen-upb_minitable-34.1.0
-lrwxrwxrwx root/root    usr/bin/protoc-gen-upbdefs -> protoc-gen-upbdefs-34.1.0
--rwxr-xr-x root/root    usr/bin/protoc-gen-upbdefs-34.1.0
+lrwxrwxrwx root/root    usr/bin/protoc -> protoc-35.0.0
+-rwxr-xr-x root/root    usr/bin/protoc-35.0.0
+lrwxrwxrwx root/root    usr/bin/protoc-gen-upb -> protoc-gen-upb-35.0.0
+-rwxr-xr-x root/root    usr/bin/protoc-gen-upb-35.0.0
+lrwxrwxrwx root/root    usr/bin/protoc-gen-upb_minitable -> protoc-gen-upb_minitable-35.0.0
+-rwxr-xr-x root/root    usr/bin/protoc-gen-upb_minitable-35.0.0
+lrwxrwxrwx root/root    usr/bin/protoc-gen-upbdefs -> protoc-gen-upbdefs-35.0.0
+-rwxr-xr-x root/root    usr/bin/protoc-gen-upbdefs-35.0.0
 drwxr-xr-x root/root    usr/include/
 drwxr-xr-x root/root    usr/include/google/
 drwxr-xr-x root/root    usr/include/google/protobuf/
@@ -23,6 +23,7 @@ drwxr-xr-x root/root    usr/include/google/protobuf/
 -rw-r--r-- root/root    usr/include/google/protobuf/arena_cleanup.h
 -rw-r--r-- root/root    usr/include/google/protobuf/arenastring.h
 -rw-r--r-- root/root    usr/include/google/protobuf/arenaz_sampler.h
+-rw-r--r-- root/root    usr/include/google/protobuf/c_sharp_features.proto
 drwxr-xr-x root/root    usr/include/google/protobuf/compiler/
 -rw-r--r-- root/root    usr/include/google/protobuf/compiler/code_generator.h
 -rw-r--r-- root/root    usr/include/google/protobuf/compiler/code_generator_lite.h
@@ -149,6 +150,9 @@ drwxr-xr-x root/root    usr/include/google/protobuf/json/internal/
 -rw-r--r-- root/root    usr/include/google/protobuf/reflection_visit_field_info.h
 -rw-r--r-- root/root    usr/include/google/protobuf/reflection_visit_fields.h
 -rw-r--r-- root/root    usr/include/google/protobuf/repeated_field.h
+-rw-r--r-- root/root    usr/include/google/protobuf/repeated_field_proxy.h
+-rw-r--r-- root/root    usr/include/google/protobuf/repeated_field_proxy_iterator.h
+-rw-r--r-- root/root    usr/include/google/protobuf/repeated_field_proxy_traits.h
 -rw-r--r-- root/root    usr/include/google/protobuf/repeated_ptr_field.h
 -rw-r--r-- root/root    usr/include/google/protobuf/runtime_version.h
 -rw-r--r-- root/root    usr/include/google/protobuf/serial_arena.h
@@ -201,6 +205,7 @@ drwxr-xr-x root/root    usr/include/upb/base/internal/
 -rw-r--r-- root/root    usr/include/upb/generated_code_support.h
 drwxr-xr-x root/root    usr/include/upb/hash/
 -rw-r--r-- root/root    usr/include/upb/hash/common.h
+-rw-r--r-- root/root    usr/include/upb/hash/ext_table.h
 -rw-r--r-- root/root    usr/include/upb/hash/int_table.h
 -rw-r--r-- root/root    usr/include/upb/hash/str_table.h
 drwxr-xr-x root/root    usr/include/upb/json/
@@ -352,17 +357,17 @@ drwxr-xr-x root/root    usr/lib/cmake/utf8_range/
 -rw-r--r-- root/root    usr/lib/cmake/utf8_range/utf8_range-config.cmake
 -rw-r--r-- root/root    usr/lib/cmake/utf8_range/utf8_range-targets-release.cmake
 -rw-r--r-- root/root    usr/lib/cmake/utf8_range/utf8_range-targets.cmake
-lrwxrwxrwx root/root    usr/lib/libprotobuf-lite.so -> libprotobuf-lite.so.34.1.0
--rwxr-xr-x root/root    usr/lib/libprotobuf-lite.so.34.1.0
-lrwxrwxrwx root/root    usr/lib/libprotobuf.so -> libprotobuf.so.34.1.0
--rwxr-xr-x root/root    usr/lib/libprotobuf.so.34.1.0
-lrwxrwxrwx root/root    usr/lib/libprotoc.so -> libprotoc.so.34.1.0
--rwxr-xr-x root/root    usr/lib/libprotoc.so.34.1.0
+lrwxrwxrwx root/root    usr/lib/libprotobuf-lite.so -> libprotobuf-lite.so.35.0.0
+-rwxr-xr-x root/root    usr/lib/libprotobuf-lite.so.35.0.0
+lrwxrwxrwx root/root    usr/lib/libprotobuf.so -> libprotobuf.so.35.0.0
+-rwxr-xr-x root/root    usr/lib/libprotobuf.so.35.0.0
+lrwxrwxrwx root/root    usr/lib/libprotoc.so -> libprotoc.so.35.0.0
+-rwxr-xr-x root/root    usr/lib/libprotoc.so.35.0.0
 -rw-r--r-- root/root    usr/lib/libupb.a
-lrwxrwxrwx root/root    usr/lib/libutf8_range.so -> libutf8_range.so.34.1.0
--rwxr-xr-x root/root    usr/lib/libutf8_range.so.34.1.0
-lrwxrwxrwx root/root    usr/lib/libutf8_validity.so -> libutf8_validity.so.34.1.0
--rwxr-xr-x root/root    usr/lib/libutf8_validity.so.34.1.0
+lrwxrwxrwx root/root    usr/lib/libutf8_range.so -> libutf8_range.so.35.0.0
+-rwxr-xr-x root/root    usr/lib/libutf8_range.so.35.0.0
+lrwxrwxrwx root/root    usr/lib/libutf8_validity.so -> libutf8_validity.so.35.0.0
+-rwxr-xr-x root/root    usr/lib/libutf8_validity.so.35.0.0
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/protobuf-lite.pc
 -rw-r--r-- root/root    usr/lib/pkgconfig/protobuf.pc
