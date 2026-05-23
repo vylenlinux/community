@@ -1,4 +1,4 @@
-sdbus-cpp-2.3.0-1
+sdbus-cpp-2.3.1-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/include/
 drwxr-xr-x root/root    usr/include/sdbus-c++/
@@ -28,8 +28,8 @@ drwxr-xr-x root/root    usr/lib/cmake/sdbus-c++/
 -rw-r--r-- root/root    usr/lib/cmake/sdbus-c++/sdbus-c++-targets-release.cmake
 -rw-r--r-- root/root    usr/lib/cmake/sdbus-c++/sdbus-c++-targets.cmake
 lrwxrwxrwx root/root    usr/lib/libsdbus-c++.so -> libsdbus-c++.so.2
-lrwxrwxrwx root/root    usr/lib/libsdbus-c++.so.2 -> libsdbus-c++.so.2.3.0
--rwxr-xr-x root/root    usr/lib/libsdbus-c++.so.2.3.0
+lrwxrwxrwx root/root    usr/lib/libsdbus-c++.so.2 -> libsdbus-c++.so.2.3.1
+-rwxr-xr-x root/root    usr/lib/libsdbus-c++.so.2.3.1
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/sdbus-c++.pc
 drwxr-xr-x root/root    usr/share/
