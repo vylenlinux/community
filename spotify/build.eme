@@ -6,10 +6,10 @@ homepage="https://www.spotify.com/"
 maintainer="Vylen Linux Team"
 
 name=spotify
-version=1.2.89.539
+version=1.2.90.451
 release=1
 
-commit=gfb3c63a3
+commit=gb094aab0
 
 source="${name}-${version}.deb::http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_${version}.${commit}_amd64.deb
     ${name}"
