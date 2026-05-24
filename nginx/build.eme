@@ -6,11 +6,11 @@ homepage="http://nginx.org/"
 maintainer="Vylen Linux Team"
 
 name=nginx
-version=1.31.0
+version=1.31.1
 release=1
 
 source="http://nginx.org/download/${name}-${version}.tar.gz
-    nginx.conf"
+    ${name}.conf"
 
 build() {
     # shellcheck disable=SC2164
@@ -32,7 +32,7 @@ build() {
     make
     make DESTDIR="${PKG}" install
 
-    install -Dm644 -o root -g root "${SRC}/nginx.conf" "${PKG}/etc/nginx/nginx.conf"
+    install -Dm644 "${SRC}/${name}.conf" -t "${PKG}/etc/nginx/"
 
     find "${PKG}/etc/nginx" -name "*.default" -delete
     rm -fr "${PKG}/run"
