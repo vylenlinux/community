@@ -1,16 +1,23 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Cross-platform ncurses Spotify client written in Rust, inspired by ncmpc and the likes"
 homepage="https://github.com/hrkfdn/ncspot"
 maintainer="Vylen Linux Team"
 
 name=ncspot
-version=1.3.3
+version=1.3.4
 release=1
-source="https://github.com/hrkfdn/ncspot/archive/v$version/$name-$version.zip"
+source="https://github.com/hrkfdn/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+    cargo fetch --locked
 
-	cargo fetch --locked
-	cargo build --release --locked
-	install -Dm 755 "target/release/$name" "$PKG/usr/bin/$name"
+    cargo build \
+        --release \
+        --locked
+
+    install -Dm755 "target/release/${name}" -t "${PKG}/usr/bin/"
 }
