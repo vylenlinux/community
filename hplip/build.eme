@@ -6,104 +6,109 @@ homepage="https://sourceforge.net/projects/hplip"
 maintainer="Vylen Linux Team"
 
 name=hplip
-version=3.25.8
+version=3.26.4
 release=1
 
-source="https://sourceforge.net/projects/${name}/files/${name}/${version}/${name}-${version}.tar.gz
+source="http://downloads.sourceforge.net/project/${name}/${name}/${version}/${name}-${version}.tar.gz
     0003-models.dat-Re-add-drivers-missing-from-3.19.1.patch
     0018-Allow-non-JPEG-scanning-on-the-HP-DeskJet-3520-All-i.patch
-    0022-Add-include-cups-ppd.h-in-various-places-as-CUPS-2.2.patch
+    0021-Add-include-cups-ppd.h-in-various-places-as-CUPS-2.2.patch
     0023-Fix-handling-of-unicode-filenames-in-sixext.py.patch
-    configure.patch
-    cups.patch
-    disable_upgrade.patch
-    gzip_text.patch
-    hplip-1_3_23_12-4-python3_12-fix.patch
-    hplip-configure-python.patch
+    0025-Remove-all-ImageProcessor-functionality-which-is-clo.patch
+    0026-remove-unicode-space-from-models.dat
+    fix-desktop-file.patch
+    hplip.colord.segfault.fix.patch
+    hplip-covscan.patch
     hplip-gcc15-stdc23.patch
     hplip-hpaio-gcc14.patch
-    hplip-locale-format.patch
-    hplip-pserror-gcc14.patch
-    locale-format.patch
-    remove-imageprocessing-install.patch
-    reproducible-gzip.patch
-    python3.diff"
+    hplip.no.upgrade.diff
+    hplip-pcardext-disable.patch
+    hplip-pserror-c99.patch
+    hplip.python3.shebang.diff
+    hplip-scan-hpaio-include.patch
+    hplip-scan-orblite-c99.patch
+    setup.py.lc_all.c.diff
+    hplip-no-urlopener.patch"
 
 build() {
+    # hplip will build without sane, as well
+    emerald isinstalled sane || SCAN_OPTIONS="--disable-scan-build"
+
+    # the whole port is based on Slackware's hplip.SlackBuild and patches
     # shellcheck disable=SC2164
     cd "${name}-${version}"
 
-	export CFLAGS="${CFLAGS} \
-        -Wno-deprecated-declarations \
-        -Wno-implicit-function-declaration \
-        -Wno-return-mismatch \
-        -Wno-int-conversion \
-        -std=gnu17"
+    patch -p1 -i "${SRC}/hplip.no.upgrade.diff"
+    patch -p1 -i "${SRC}/setup.py.lc_all.c.diff"
+    patch -p1 -i "${SRC}/hplip.python3.shebang.diff"
+    patch -p1 -i "${SRC}/fix-desktop-file.patch"
+    patch -p1 -i "${SRC}/hplip-pserror-c99.patch"
+    patch -p1 -i "${SRC}/hplip-hpaio-gcc14.patch"
+    patch -p1 -i "${SRC}/hplip-covscan.patch"
+    patch -p1 -i "${SRC}/hplip-scan-orblite-c99.patch"
+    patch -p1 -i "${SRC}/hplip-scan-hpaio-include.patch"
+    patch -p1 -i "${SRC}/hplip-pcardext-disable.patch"
+    patch -p1 -i "${SRC}/hplip.colord.segfault.fix.patch"
+    patch -p1 -i "${SRC}/hplip-gcc15-stdc23.patch"
+    patch -p1 -i "${SRC}/hplip-no-urlopener.patch"
 
-	# disable insecure update - https://bugs.archlinux.org/task/38083
-	patch -Np0 -i "${SRC}/disable_upgrade.patch"
+    # shellcheck disable=SC2185
+    find -name '*.py' -print0 | xargs -0 sed -i.env-python -e 's,^#!/usr/bin/env python,#!/usr/bin/python3,'
+    sed -i.env-python -e 's,^#!/usr/bin/env python,#!/usr/bin/python3,' prnt/filters/hpps fax/filters/pstotiff
 
-	# add missing 'include <cups/ppd.h>' at various places
-	patch -Np1 -i "${SRC}/0022-Add-include-cups-ppd.h-in-various-places-as-CUPS-2.2.patch"
+    patch -p1 -i "${SRC}/0025-Remove-all-ImageProcessor-functionality-which-is-clo.patch"
+    patch -p1 -i "${SRC}/0021-Add-include-cups-ppd.h-in-various-places-as-CUPS-2.2.patch"
+    patch -p1 -i "${SRC}/0023-Fix-handling-of-unicode-filenames-in-sixext.py.patch"
+    patch -p1 -i "${SRC}/0003-models.dat-Re-add-drivers-missing-from-3.19.1.patch"
+    patch -p1 -i "${SRC}/0018-Allow-non-JPEG-scanning-on-the-HP-DeskJet-3520-All-i.patch"
+    patch -p1 -i "${SRC}/0026-remove-unicode-space-from-models.dat"
 
-	# fix some handling unicode file names FS#58412
-	patch -Np1 -i "${SRC}/0023-Fix-handling-of-unicode-filenames-in-sixext.py.patch"
+    # for autoreconf
+    for file in NEWS README AUTHORS ChangeLog; do
+        if [ ! -r "${file}" ]; then
+            touch "${file}"
+        fi
+    done
 
-	# Workaround patch for missing Python3 transition of the old
-	# (pre-USB-storage) photo memory card support (pcardext) - Debian patch
-	patch -Np1 -i "${SRC}/python3.diff"
+    autoreconf -vif
 
-	# fix model support / Debian patch / FS#74942
-	patch -Np1 -i "${SRC}/0003-models.dat-Re-add-drivers-missing-from-3.19.1.patch"
-
-	# https://bugs.launchpad.net/hplip/+bug/1879445
-	# broken scanning - https://bugs.archlinux.org/task/66704
-	patch -Np1 -i "${SRC}/hplip-configure-python.patch"
-
-	#  allow non-jpeg scanning on all-in-one devices - FS#78135
- 	patch -Np1 -i "${SRC}/0018-Allow-non-JPEG-scanning-on-the-HP-DeskJet-3520-All-i.patch"
-
-	# hp-firmware: module 'locale' not longer provides method 'format', causing traceback #4
-	patch -Np1 -i "${SRC}/hplip-locale-format.patch"
-
-	# make gzip creation reproducible by removing the timestamp
-    patch -Np1 -i "${SRC}/reproducible-gzip.patch"
-
-    # fix build with gcc14
-    patch -Np1 -i "${SRC}/hplip-hpaio-gcc14.patch"
-    patch -Np1 -i "${SRC}/hplip-pserror-gcc14.patch"
-
-    # fix build with gcc15
-    patch -Np1 -i "${SRC}/hplip-gcc15-stdc23.patch"
-
-    export AUTOMAKE='automake --foreign'
-    autoreconf --force --install
-
-    ./configure \
+    PYTHON=/usr/bin/python3 ./configure \
         --prefix=/usr \
-        --disable-network-build \
-        --disable-qt4 \
-        --enable-qt5 \
-        --enable-hpcups-install \
-        --enable-cups-drv-install \
+        --libdir=/usr/lib \
+        --with-cupsbackenddir=/usr/lib/cups/backend \
+        --with-cupsfilterdir=/usr/lib/cups/filter \
+        --sysconfdir=/etc \
+        --localstatedir=/var \
+        --with-hpppddir=/usr/share/ppd/HP \
+        --with-drvdir=/usr/share/cups/drv/HP \
+        --enable-hpijs-install \
+        --enable-shadow-build \
+        "${SCAN_OPTIONS}" \
+        --enable-gui-build \
+        --enable-fax-build \
+        --enable-doc-build \
+        --enable-foomatic-rip-hplip-install \
+        --enable-pp-build \
+        --disable-foomatic-ppd-install \
         --disable-imageProcessor-build \
-        --enable-pp-build
-
-    sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+        --enable-foomatic-drv-install \
+        --enable-network-build=no \
+        --enable-qt5 \
+        --enable-policykit \
+        --enable-cups-ppd-install
 
     make
     make -j1 rulesdir=/usr/lib/udev/rules.d DESTDIR="${PKG}" install
- 
+
     # remove config provided by sane and autostart of hp-daemon
     rm -rf "${PKG}/etc/sane.d" \
         "${PKG}/etc/xdg"
 
     install -dm755 "${PKG}/etc/sane.d/dll.d"
     echo hpaio > "${PKG}/etc/sane.d/dll.d/hpaio"
- 
-    # remove HAL .fdi file because HAL is no longer used and rc script
-    rm -vrf "${PKG}/usr/share/hal" \
-        "${PKG}/etc/init.d"
+
+    # remove HAL .fdi file because HAL is no longer used
+    rm -rf "${PKG}/usr/share/hal"
 
     # Compile Python bytecode:
     python3 -m compileall -d /usr/share "${PKG}/usr/share"
