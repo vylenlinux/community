@@ -6,7 +6,7 @@ homepage="https://qalculate.github.io/"
 maintainer="Vylen Linux Team"
 
 name=qalculate-gtk
-version=5.10.0
+version=5.11.0
 release=1
 source="${name}-${version}.tar.gz::https://github.com/Qalculate/${name}/archive/refs/tags/v${version}.tar.gz"
 
