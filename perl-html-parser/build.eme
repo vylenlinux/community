@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Perl HTML parser class"
 homepage="https://metacpan.org/dist/HTML-Parser"
 maintainer="Vylen Linux Team"
@@ -5,13 +8,19 @@ maintainer="Vylen Linux Team"
 name=perl-html-parser
 version=3.83
 release=1
-source="$name-$version.tar.gz::https://www.cpan.org/modules/by-module/HTML/HTML-Parser-$version.tar.gz"
+source="${name}-${version}.tar.gz::https://www.cpan.org/modules/by-module/HTML/HTML-Parser-${version}.tar.gz"
 
 build() {
-	cd HTML-Parser-$version
-	perl Makefile.PL INSTALLDIRS=vendor
-	make OPTIMIZE="$CFLAGS"
-	make DESTDIR=$PKG install
-	find $PKG -name *.pod -delete
-	rm -rf $PKG/usr/share
+    # shellcheck disable=SC2164
+    cd "HTML-Parser-${version}"
+    perl Makefile.PL INSTALLDIRS=vendor
+
+    make OPTIMIZE="${CFLAGS}"
+    make DESTDIR="${PKG}" install
+
+    # shellcheck disable=SC2061
+    # shellcheck disable=SC2035
+    find "${PKG}" -name *.pod -delete
+    # shellcheck disable=SC2115
+    rm -rf "${PKG}/usr/share"
 }
