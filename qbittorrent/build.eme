@@ -6,7 +6,7 @@ homepage="https://www.qbittorrent.org/"
 maintainer="Vylen Linux Team"
 
 name=qbittorrent
-version=5.2.0
+version=5.2.1
 release=1
 source="https://downloads.sourceforge.net/${name}/${name}-${version}.tar.xz"
 
