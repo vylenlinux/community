@@ -1,4 +1,4 @@
-teams-for-linux-2.9.0-2
+teams-for-linux-2.10.0-1
 drwxr-xr-x root/root    opt/
 drwxr-xr-x root/root    opt/teams-for-linux/
 -rw-r--r-- root/root    opt/teams-for-linux/LICENSE.electron.txt
@@ -73,6 +73,27 @@ drwxr-xr-x root/root    opt/teams-for-linux/locales/
 drwxr-xr-x root/root    opt/teams-for-linux/resources/
 -rw-r--r-- root/root    opt/teams-for-linux/resources/app-update.yml
 -rw-r--r-- root/root    opt/teams-for-linux/resources/app.asar
+drwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/
+drwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/
+drwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/@cbor-extract/
+drwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/@cbor-extract/cbor-extract-linux-x64/
+-rw-r--r-- root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/@cbor-extract/cbor-extract-linux-x64/index.js
+-rwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/@cbor-extract/cbor-extract-linux-x64/node.abi137.glibc.node
+-rwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/@cbor-extract/cbor-extract-linux-x64/node.abi137.musl.node
+-rwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/@cbor-extract/cbor-extract-linux-x64/node.napi.glibc.node
+-rwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/@cbor-extract/cbor-extract-linux-x64/node.napi.musl.node
+-rw-r--r-- root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/@cbor-extract/cbor-extract-linux-x64/package.json
+drwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/
+-rw-r--r-- root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/LICENSE
+drwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/bin/
+-rwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/bin/download-prebuilds.js
+drwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/build/
+drwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/build/Release/
+-rwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/build/Release/extract.node
+-rw-r--r-- root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/index.js
+-rw-r--r-- root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/package.json
+drwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/src/
+-rw-r--r-- root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/src/extract.cpp
 drwxr-xr-x root/root    opt/teams-for-linux/resources/assets/
 drwxr-xr-x root/root    opt/teams-for-linux/resources/assets/sounds/
 -rw-rw-r-- root/root    opt/teams-for-linux/resources/assets/sounds/meeting_started.wav

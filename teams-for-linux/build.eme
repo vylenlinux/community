@@ -6,8 +6,8 @@ maintainer="Vylen Linux Team"
 homepage="https://github.com/IsmaelMartinez/teams-for-linux"
 
 name=teams-for-linux
-version=2.9.0
-release=2
+version=2.10.0
+release=1
 
 source="${name}-${version}.tar.gz::https://github.com/IsmaelMartinez/${name}/archive/v${version}.tar.gz
     ${name}.desktop"
