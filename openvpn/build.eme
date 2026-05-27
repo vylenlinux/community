@@ -19,6 +19,7 @@ build() {
 
     ./configure \
         --prefix=/usr \
+        --libexecdir=/usr/lib \
         --enable-iproute2 \
         --enable-plugins \
         --enable-pkcs11 \
