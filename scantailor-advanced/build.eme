@@ -6,7 +6,7 @@ homepage="https://github.com/ScanTailor-Advanced/scantailor-advanced"
 maintainer="Vylen Linux Team"
 
 name=scantailor-advanced
-version=1.1.1
+version=1.2.1
 release=1
 source="https://github.com/${name}/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
@@ -15,12 +15,10 @@ build() {
     cd "${name}-${version}"
     sed -e '/native/d' -i CMakeLists.txt
 
-    cmake -B build \
-        -DCMAKE_INSTALL_PREFIX=/usr
-
+    cmake -B build -DCMAKE_INSTALL_PREFIX=/usr
     cmake --build build
     DESTDIR="${PKG}" cmake --install build
 
-	install -Dm0644 src/resources/appicon.svg "${PKG}/usr/share/icons/hicolor/scalable/apps/scantailor-advanced.svg"
-	install -Dm0644 src/resources/unix/scantailor.desktop.in "${PKG}/usr/share/applications/scantailor.desktop"
+    #install -Dm0644 "src/resources/appicon.svg" "$PKG/usr/share/icons/hicolor/scalable/apps/scantailor-advanced.svg"
+    #install -Dm0644 "src/resources/unix/scantailor.desktop.in" "$PKG/usr/share/applications/scantailor.desktop"
 }
