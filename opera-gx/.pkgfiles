@@ -1,10 +1,10 @@
-opera-gx-131.0.5877.57-1
+opera-gx-131.0.5877.104-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/opera-gx/
 -rw-r--r-- root/root    etc/opera-gx/default
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
-lrwxrwxrwx root/root    usr/bin/opera-gx -> opera-gx
+-rwxr-xr-x root/root    usr/bin/opera-gx
 drwxr-xr-x root/root    usr/lib/
 drwxr-xr-x root/root    usr/lib/opera-gx-stable/
 -rwxr-xr-x root/root    usr/lib/opera-gx-stable/chrome_crashpad_handler

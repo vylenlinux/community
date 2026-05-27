@@ -6,7 +6,7 @@ maintainer="Vylen Linux Team"
 homepage="https://www.opera.com/gx"
 
 name=opera-gx
-version=131.0.5877.57
+version=131.0.5877.104
 release=1
 
 _name="${name}-stable"
