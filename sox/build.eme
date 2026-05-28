@@ -6,7 +6,7 @@ homepage="https://sox.sourceforge.net/"
 maintainer="Vylen Linux Team"
 
 name=sox
-version=14.8.0
+version=14.8.0.1
 release=1
 source="${name}-${version}.tar.gz::https://codeberg.org/${name}_ng/${name}_ng/releases/download/${name}_ng-${version}/${name}_ng-${version}.tar.gz"
 
