@@ -6,7 +6,7 @@ homepage="https://yardoc.org/"
 maintainer="Vylen Linux Team"
 
 name=ruby-yard
-version=0.9.43
+version=0.9.44
 release=1
 source="https://rubygems.org/downloads/${name#*-}-${version}.gem"
 
