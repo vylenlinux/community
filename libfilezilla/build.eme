@@ -6,7 +6,7 @@ homepage="https://lib.filezilla-project.org/"
 maintainer="Vylen Linux Team"
 
 name=libfilezilla
-version=0.55.5
+version=0.56.0
 release=1
 source="https://sources.archlinux.org/other/${name}/${name}-${version}.tar.xz"
 
