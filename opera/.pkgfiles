@@ -1,10 +1,10 @@
-opera-131.0.5877.97-1
+opera-132.0.5905.11-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/opera/
 -rw-r--r-- root/root    etc/opera/default
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
--rwsr-xr-x root/root    usr/bin/opera
+-rwxr-xr-x root/root    usr/bin/opera
 drwxr-xr-x root/root    usr/lib/
 drwxr-xr-x root/root    usr/lib/opera-stable/
 -rwxr-xr-x root/root    usr/lib/opera-stable/chrome_crashpad_handler
@@ -108,7 +108,6 @@ drwxr-xr-x root/root    usr/lib/opera-stable/resources/
 -rw-r--r-- root/root    usr/lib/opera-stable/resources/FFF3F819-B6CE-4DE6-B4E4-8E2618ABC0D9.ico
 -rw-r--r-- root/root    usr/lib/opera-stable/resources/ab_tests.json
 -rw-r--r-- root/root    usr/lib/opera-stable/resources/browser.js
--rw-r--r-- root/root    usr/lib/opera-stable/resources/continue_shopping.json
 -rw-r--r-- root/root    usr/lib/opera-stable/resources/default_partner_content.json
 -rw-r--r-- root/root    usr/lib/opera-stable/resources/doh_providers.json
 -rw-r--r-- root/root    usr/lib/opera-stable/resources/domain_suggestions.json

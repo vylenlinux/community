@@ -6,7 +6,7 @@ homepage="https://www.opera.com/"
 maintainer="Vylen Linux Team"
 
 name=opera
-version=131.0.5877.97
+version=132.0.5905.11
 release=1
 
 _name="${name}-stable"
