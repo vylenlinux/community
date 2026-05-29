@@ -6,7 +6,7 @@ homepage="https://code.visualstudio.com/"
 maintainer="Vylen Linux Team"
 
 name=visual-studio-code
-version=1.122.0
+version=1.122.1
 release=1
 
 source="${name}-${version}.tar.gz::https://update.code.visualstudio.com/${version}/linux-x64/stable
@@ -19,7 +19,7 @@ build() {
 
     mkdir -p "${PKG}/opt/${name}"
     # shellcheck disable=SC2035
-    cp -Rv * "${PKG}/opt/${name}"
+    cp -R * "${PKG}/opt/${name}"
 
     mkdir -p "${PKG}/usr/bin"
     ln -s "/opt/${name}/bin/code" "${PKG}/usr/bin/code"
