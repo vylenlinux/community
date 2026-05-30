@@ -1,7 +1,4 @@
 #!/bin/sh
 
-getent group mysql 2>/dev/null || groupadd -r mysql
-
-getent passwd mysql 2>/dev/null || \
-useradd -r -M -g mysql -G mysql -c "mysql user" -d /var/lib/mysql -s /sbin/nologin mysql
-
+groupadd -r mysql 2>/dev/null
+useradd -r -M -g mysql -G mysql -c "mysql user" -d /var/lib/mysql -s /sbin/nologin mysql 2>/dev/null
