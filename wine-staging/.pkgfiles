@@ -1,4 +1,4 @@
-wine-staging-11.9-1
+wine-staging-11.10-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/revdep.d/
 -rw-r--r-- root/root    etc/revdep.d/wine-staging.conf
@@ -379,6 +379,8 @@ drwxr-xr-x root/root    usr/include/wine/windows/
 -rw-r--r-- root/root    usr/include/wine/windows/cryptdlg.h
 -rw-r--r-- root/root    usr/include/wine/windows/cryptuiapi.h
 -rw-r--r-- root/root    usr/include/wine/windows/cryptxml.h
+-rw-r--r-- root/root    usr/include/wine/windows/ctffunc.h
+-rw-r--r-- root/root    usr/include/wine/windows/ctffunc.idl
 -rw-r--r-- root/root    usr/include/wine/windows/ctfutb.h
 -rw-r--r-- root/root    usr/include/wine/windows/ctfutb.idl
 -rw-r--r-- root/root    usr/include/wine/windows/ctxtcall.h
@@ -933,6 +935,9 @@ drwxr-xr-x root/root    usr/include/wine/windows/ddk/
 -rw-r--r-- root/root    usr/include/wine/windows/natupnp.idl
 -rw-r--r-- root/root    usr/include/wine/windows/nb30.h
 -rw-r--r-- root/root    usr/include/wine/windows/ncrypt.h
+-rw-r--r-- root/root    usr/include/wine/windows/ndattrib.h
+-rw-r--r-- root/root    usr/include/wine/windows/ndattrib.idl
+-rw-r--r-- root/root    usr/include/wine/windows/ndfapi.h
 -rw-r--r-- root/root    usr/include/wine/windows/ndrtypes.h
 -rw-r--r-- root/root    usr/include/wine/windows/netcfgx.h
 -rw-r--r-- root/root    usr/include/wine/windows/netcfgx.idl
@@ -1095,6 +1100,8 @@ drwxr-xr-x root/root    usr/include/wine/windows/ddk/
 -rw-r--r-- root/root    usr/include/wine/windows/rstvw.idl
 -rw-r--r-- root/root    usr/include/wine/windows/rstxsc.idl
 -rw-r--r-- root/root    usr/include/wine/windows/rtlsupportapi.h
+-rw-r--r-- root/root    usr/include/wine/windows/rtscom.h
+-rw-r--r-- root/root    usr/include/wine/windows/rtscom.idl
 -rw-r--r-- root/root    usr/include/wine/windows/rtutils.h
 -rw-r--r-- root/root    usr/include/wine/windows/rtworkq.h
 -rw-r--r-- root/root    usr/include/wine/windows/rtworkq.idl
@@ -1196,6 +1203,7 @@ drwxr-xr-x root/root    usr/include/wine/windows/ddk/
 -rw-r--r-- root/root    usr/include/wine/windows/tom.h
 -rw-r--r-- root/root    usr/include/wine/windows/tom.idl
 -rw-r--r-- root/root    usr/include/wine/windows/tpcshrd.h
+-rw-r--r-- root/root    usr/include/wine/windows/tpcshrd.idl
 -rw-r--r-- root/root    usr/include/wine/windows/traffic.h
 -rw-r--r-- root/root    usr/include/wine/windows/transact.h
 -rw-r--r-- root/root    usr/include/wine/windows/transact.idl
@@ -2142,6 +2150,7 @@ drwxr-xr-x root/root    usr/lib/wine/i386-windows/
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/libwintab32.a
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/libwintrust.a
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/libwintypes.a
+-rw-r--r-- root/root    usr/lib/wine/i386-windows/libwkscli.a
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/libwlanapi.a
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/libwldap32.a
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/libwmcodecdspuuid.a
@@ -2288,6 +2297,7 @@ drwxr-xr-x root/root    usr/lib/wine/i386-windows/
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/mtxdm.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/ncrypt.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/nddeapi.dll
+-rw-r--r-- root/root    usr/lib/wine/i386-windows/ndfapi.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/ndis.sys
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/net.exe
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/netapi32.dll
@@ -2383,6 +2393,7 @@ drwxr-xr-x root/root    usr/lib/wine/i386-windows/
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/rsabase.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/rsaenh.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/rstrtmgr.dll
+-rw-r--r-- root/root    usr/lib/wine/i386-windows/rtscom.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/rtutils.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/rtworkq.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/runas.exe
@@ -2458,7 +2469,9 @@ drwxr-xr-x root/root    usr/lib/wine/i386-windows/
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/tdh.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/tdi.sys
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/threadpoolwinrt.dll
+-rw-r--r-- root/root    usr/lib/wine/i386-windows/thumbcache.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/timeout.exe
+-rw-r--r-- root/root    usr/lib/wine/i386-windows/tiptsf.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/toolhelp.dll16
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/traffic.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/twain.dll16
@@ -2608,6 +2621,7 @@ drwxr-xr-x root/root    usr/lib/wine/i386-windows/
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/wintypes.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/winusb.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/winver.exe
+-rw-r--r-- root/root    usr/lib/wine/i386-windows/wkscli.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/wlanapi.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/wlanui.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/wldap32.dll
@@ -2936,6 +2950,7 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-unix/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libwintab32.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libwintrust.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libwintypes.a
+-rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libwkscli.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libwlanapi.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libwldap32.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libwmcodecdspuuid.a
@@ -3508,6 +3523,7 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-windows/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/libwintab32.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/libwintrust.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/libwintypes.a
+-rw-r--r-- root/root    usr/lib/wine/x86_64-windows/libwkscli.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/libwlanapi.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/libwldap32.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/libwmcodecdspuuid.a
@@ -3647,6 +3663,7 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-windows/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/mtxdm.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/ncrypt.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/nddeapi.dll
+-rw-r--r-- root/root    usr/lib/wine/x86_64-windows/ndfapi.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/ndis.sys
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/net.exe
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/netapi32.dll
@@ -3735,6 +3752,7 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-windows/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/rsabase.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/rsaenh.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/rstrtmgr.dll
+-rw-r--r-- root/root    usr/lib/wine/x86_64-windows/rtscom.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/rtutils.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/rtworkq.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/runas.exe
@@ -3806,7 +3824,9 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-windows/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/tdi.sys
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/termsv.exe
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/threadpoolwinrt.dll
+-rw-r--r-- root/root    usr/lib/wine/x86_64-windows/thumbcache.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/timeout.exe
+-rw-r--r-- root/root    usr/lib/wine/x86_64-windows/tiptsf.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/traffic.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/twaindsm.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/twinapi.appcore.dll
@@ -3933,6 +3953,7 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-windows/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/wintypes.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/winusb.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/winver.exe
+-rw-r--r-- root/root    usr/lib/wine/x86_64-windows/wkscli.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/wlanapi.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/wlanui.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/wldap32.dll
