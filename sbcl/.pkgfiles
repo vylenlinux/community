@@ -1,4 +1,4 @@
-sbcl-2.6.4-1
+sbcl-2.6.5-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/sbcl
@@ -56,9 +56,6 @@ drwxr-xr-x root/root    usr/share/info/
 -rw-r--r-- root/root    usr/share/info/sbcl.info-2.gz
 -rw-r--r-- root/root    usr/share/info/sbcl.info-3.gz
 -rw-r--r-- root/root    usr/share/info/sbcl.info.gz
-drwxr-xr-x root/root    usr/share/man/
-drwxr-xr-x root/root    usr/share/man/man1/
--rw-r--r-- root/root    usr/share/man/man1/sbcl.1.gz
 drwxr-xr-x root/root    usr/share/sbcl-source/
 drwxr-xr-x root/root    usr/share/sbcl-source/contrib/
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/README
@@ -1163,7 +1160,6 @@ lrwxrwxrwx root/root    usr/share/sbcl-source/src/runtime/Config -> Config.x86-6
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/arm64-lispregs.h
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/arm64-win32-os.c
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/arm64-win32-os.h
--rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/atomiclog.inc
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/backtrace.c
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/backtrace.d
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/breakpoint.c
@@ -1213,6 +1209,7 @@ drwxr-xr-x root/root    usr/share/sbcl-source/src/runtime/genesis/
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/genesis/cons.h
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/genesis/defstruct-description.h
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/genesis/errnames.h
+-rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/genesis/events.h
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/genesis/gc-tables.h
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/genesis/hash-table.h
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/genesis/instance.h

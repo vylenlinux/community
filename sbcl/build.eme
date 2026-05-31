@@ -6,7 +6,7 @@ homepage="http://www.sbcl.org/"
 maintainer="Vylen Linux Team"
 
 name=sbcl
-version=2.6.4
+version=2.6.5
 release=1
 
 source="${name}-${version}.tar.bz2::https://sourceforge.net/projects/${name}/files/${name}/${version}/${name}-${version}-source.tar.bz2
@@ -16,15 +16,18 @@ source="${name}-${version}.tar.bz2::https://sourceforge.net/projects/${name}/fil
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-
-    export CFLAGS="${CFLAGS} -D_GNU_SOURCE -fno-omit-frame-pointer -DSBCL_HOME=/usr/lib/sbcl"
     export GNUMAKE="make"
+
+    export CFLAGS="${CFLAGS} \
+        -D_GNU_SOURCE \
+        -fno-omit-frame-pointer \
+        -DSBCL_HOME=/usr/lib/sbcl"
 
     # build system uses LINKFLAGS and OS_LIBS to build LDFLAGS
     export LINKFLAGS="${LDFLAGS}"
 
-    unset LDFLAGS
-    unset MAKEFLAGS
+    unset LDFLAGS \
+        MAKEFLAGS
 
     sh make.sh "sh ../sbcl-*-linux/run-sbcl.sh --no-sysinit --no-userinit --disable-debugger" \
         --without-sb-test \
@@ -37,7 +40,10 @@ build() {
     SBCL_HOME=""
     INSTALL_ROOT="${PKG}/usr" sh install.sh
 
-    src/runtime/sbcl --core output/sbcl.core --script "${SRC}/fixes.lisp"
+    src/runtime/sbcl \
+        --core output/sbcl.core \
+        --script "${SRC}/fixes.lisp"
+
     mv sbcl-new.core "${PKG}/usr/lib/sbcl/sbcl.core"
 
     # sources
@@ -47,8 +53,18 @@ build() {
     cp -R "${SRC}/${name}-${version}/contrib" -t "${PKG}/usr/share/sbcl-source"
 
     # drop unwanted files
-    find "${PKG}" \( -name Makefile -o -name .cvsignore \) -delete
+    find "${PKG}" \( \
+        -name Makefile -o \
+        -name .cvsignore \
+    \) -delete
 
-    find "${PKG}/usr/share/sbcl-source" -type f \( -name \*.fasl -o -name \*.o -o -name \*.log -o -name \*.so -o -name a.out \) -delete
+    find "${PKG}/usr/share/sbcl-source" -type f \( \
+        -name \*.fasl -o \
+        -name \*.o -o \
+        -name \*.log -o \
+        -name \*.so -o \
+        -name a.out \
+    \) -delete
+
     rm -f "${PKG}/usr/share/sbcl-source/src/runtime/${name}"
 }
