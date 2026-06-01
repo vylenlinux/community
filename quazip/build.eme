@@ -6,7 +6,7 @@ homepage="https://stachenov.github.io/quazip/"
 maintainer="Vylen Linux Team"
 
 name=quazip
-version=1.7.0
+version=1.7.1
 release=1
 source="https://github.com/stachenov/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
