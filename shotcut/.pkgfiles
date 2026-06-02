@@ -1,4 +1,4 @@
-shotcut-26.4.30-1
+shotcut-26.6.1-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/shotcut
@@ -35,6 +35,7 @@ drwxr-xr-x root/root    usr/share/shotcut/qml/export-chapters/
 -rw-r--r-- root/root    usr/share/shotcut/qml/export-chapters/export-chapters.js
 -rw-r--r-- root/root    usr/share/shotcut/qml/export-chapters/main.js
 -rw-r--r-- root/root    usr/share/shotcut/qml/export-chapters/mlt2chapters.js
+-rw-r--r-- root/root    usr/share/shotcut/qml/export-chapters/package-lock.json
 -rw-r--r-- root/root    usr/share/shotcut/qml/export-chapters/package.json
 -rw-r--r-- root/root    usr/share/shotcut/qml/export-chapters/rebuild.sh
 -rw-r--r-- root/root    usr/share/shotcut/qml/export-chapters/test-node.js
@@ -42,6 +43,7 @@ drwxr-xr-x root/root    usr/share/shotcut/qml/export-edl/
 -rw-r--r-- root/root    usr/share/shotcut/qml/export-edl/export-edl.js
 -rw-r--r-- root/root    usr/share/shotcut/qml/export-edl/main.js
 -rw-r--r-- root/root    usr/share/shotcut/qml/export-edl/mlt2edl.js
+-rw-r--r-- root/root    usr/share/shotcut/qml/export-edl/package-lock.json
 -rw-r--r-- root/root    usr/share/shotcut/qml/export-edl/package.json
 -rw-r--r-- root/root    usr/share/shotcut/qml/export-edl/rebuild.sh
 -rw-r--r-- root/root    usr/share/shotcut/qml/export-edl/test-node.js
@@ -150,6 +152,12 @@ drwxr-xr-x root/root    usr/share/shotcut/qml/filters/audio_pitch/
 drwxr-xr-x root/root    usr/share/shotcut/qml/filters/audio_reverb/
 -rw-r--r-- root/root    usr/share/shotcut/qml/filters/audio_reverb/meta.qml
 -rw-r--r-- root/root    usr/share/shotcut/qml/filters/audio_reverb/ui.qml
+drwxr-xr-x root/root    usr/share/shotcut/qml/filters/audio_rnnoise/
+-rw-r--r-- root/root    usr/share/shotcut/qml/filters/audio_rnnoise/meta.qml
+-rw-r--r-- root/root    usr/share/shotcut/qml/filters/audio_rnnoise/ui.qml
+drwxr-xr-x root/root    usr/share/shotcut/qml/filters/audio_rnnoise_link/
+-rw-r--r-- root/root    usr/share/shotcut/qml/filters/audio_rnnoise_link/meta.qml
+-rw-r--r-- root/root    usr/share/shotcut/qml/filters/audio_rnnoise_link/ui.qml
 drwxr-xr-x root/root    usr/share/shotcut/qml/filters/audio_seam/
 -rw-r--r-- root/root    usr/share/shotcut/qml/filters/audio_seam/meta.qml
 -rw-r--r-- root/root    usr/share/shotcut/qml/filters/audio_seam/ui.qml
@@ -652,6 +660,9 @@ drwxr-xr-x root/root    usr/share/shotcut/qml/filters/vignette/
 -rw-r--r-- root/root    usr/share/shotcut/qml/filters/vignette/meta_oldfilm.qml
 -rw-r--r-- root/root    usr/share/shotcut/qml/filters/vignette/ui_movit.qml
 -rw-r--r-- root/root    usr/share/shotcut/qml/filters/vignette/ui_oldfilm.qml
+drwxr-xr-x root/root    usr/share/shotcut/qml/filters/vst2.1934451059/
+-rw-r--r-- root/root    usr/share/shotcut/qml/filters/vst2.1934451059/meta.qml
+-rw-r--r-- root/root    usr/share/shotcut/qml/filters/vst2.1934451059/ui.qml
 drwxr-xr-x root/root    usr/share/shotcut/qml/filters/wave/
 -rw-r--r-- root/root    usr/share/shotcut/qml/filters/wave/icon.webp
 -rw-r--r-- root/root    usr/share/shotcut/qml/filters/wave/meta.qml
@@ -704,6 +715,7 @@ drwxr-xr-x root/root    usr/share/shotcut/qml/scopes/
 drwxr-xr-x root/root    usr/share/shotcut/qml/scopes/audioloudness/
 -rw-r--r-- root/root    usr/share/shotcut/qml/scopes/audioloudness/audioloudnessscope.qml
 drwxr-xr-x root/root    usr/share/shotcut/qml/views/
+-rw-r--r-- root/root    usr/share/shotcut/qml/views/HdrPreview.qml
 drwxr-xr-x root/root    usr/share/shotcut/qml/views/filter/
 -rw-r--r-- root/root    usr/share/shotcut/qml/views/filter/AttachedFilters.qml
 -rw-r--r-- root/root    usr/share/shotcut/qml/views/filter/CopyFiltersDialog.qml
@@ -711,6 +723,8 @@ drwxr-xr-x root/root    usr/share/shotcut/qml/views/filter/
 -rw-r--r-- root/root    usr/share/shotcut/qml/views/filter/FilterMenu.qml
 -rw-r--r-- root/root    usr/share/shotcut/qml/views/filter/FilterMenuDelegate.qml
 -rw-r--r-- root/root    usr/share/shotcut/qml/views/filter/filterview.qml
+-rw-r--r-- root/root    usr/share/shotcut/qml/views/hdr_gain.frag
+-rw-r--r-- root/root    usr/share/shotcut/qml/views/hdr_gain.frag.qsb
 drwxr-xr-x root/root    usr/share/shotcut/qml/views/keyframes/
 -rw-r--r-- root/root    usr/share/shotcut/qml/views/keyframes/Keyframe.qml
 -rw-r--r-- root/root    usr/share/shotcut/qml/views/keyframes/KeyframeClip.qml

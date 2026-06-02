@@ -6,7 +6,7 @@ homepage="https://www.shotcut.org"
 maintainer="Vylen Linux Team"
 
 name=shotcut
-version=26.4.30
+version=26.6.1
 release=1
 source="${name}-${version}.tar.gz::https://github.com/mltframework/${name}/archive/v${version}.tar.gz"
 
@@ -16,7 +16,7 @@ build() {
         -DCMAKE_INSTALL_PREFIX:PATH=/usr \
         -DCMAKE_C_FLAGS_RELEASE="${CFLAGS} -DNDEBUG" \
         -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS} -DNDEBUG -DHOSTCUT_NOUPGRADE" \
-        -DSHOTCUT_VERSION=$version \
+        -DSHOTCUT_VERSION="${version}" \
         -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 
     cmake --build build
