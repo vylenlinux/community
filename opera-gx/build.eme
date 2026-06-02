@@ -6,7 +6,7 @@ maintainer="Vylen Linux Team"
 homepage="https://www.opera.com/gx"
 
 name=opera-gx
-version=131.0.5877.104
+version=131.0.5877.111
 release=1
 
 _name="${name}-stable"
@@ -17,8 +17,10 @@ source="${name}-${version}.deb::https://get.opera.com/pub/opera_gx/${version}/li
 
 build() {
     sed -e "s/%name%/${name}/g" \
-        -e "s/%operabin%/${name}\/opera/g" \
+        -e "s/%binary%/${name}\/opera/g" \
         -i "${SRC}/opera"
+
+    sed -e "s/%name%/${name}/g" -i "${SRC}/default"
 
     bsdtar -xf "${name}-${version}.deb" -C "${SRC}"
     tar -xf data.tar.xz --exclude=usr/share/lintian --exclude=usr/share/menu -C "${PKG}"

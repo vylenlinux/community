@@ -1,4 +1,4 @@
-# Default settings for %pkgname%. This file is sourced by /usr/bin/%pkgname%
+# Default settings for %name%. This file is sourced by /usr/bin/%name%
 
-# Options to pass to %pkgname%
+# Options to pass to %name%
 OPERA_FLAGS=""
