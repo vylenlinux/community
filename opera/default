@@ -1,4 +1,4 @@
-# Default settings for chromium. This file is sourced by /usr/bin/chromium
+# Default settings for %name%. This file is sourced by /usr/bin/%name%
 
-# Options to pass to chromium
+# Options to pass to %name%
 OPERA_FLAGS=""

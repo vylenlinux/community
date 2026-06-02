@@ -6,7 +6,7 @@ homepage="https://www.opera.com/"
 maintainer="Vylen Linux Team"
 
 name=opera
-version=132.0.5905.11
+version=132.0.5905.19
 release=1
 
 _name="${name}-stable"
@@ -18,8 +18,11 @@ source="${name}-${version}.deb::https://download3.operacdn.com/pub/${name}/deskt
     default"
 
 build() {
-    sed -e "s/%name%/${name}/g" -i "${SRC}/${name}"
-    sed -e "s/%operabin%/${name}\/${name}/g" -i "${SRC}/${name}"
+    sed -e "s/%name%/${name}/g" \
+        -e "s/%binary%/${name}\/opera/g" \
+        -i "${SRC}/${name}"
+
+    sed -e "s/%name%/${name}/g" -i "${SRC}/default"
 
     bsdtar -xf "${name}-${version}.deb"
     tar xf data.tar.xz -C "${PKG}"
