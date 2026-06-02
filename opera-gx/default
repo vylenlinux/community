@@ -1,4 +1,0 @@
-# Default settings for %name%. This file is sourced by /usr/bin/%name%
-
-# Options to pass to %name%
-OPERA_FLAGS=""
