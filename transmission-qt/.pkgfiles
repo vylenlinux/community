@@ -1,4 +1,4 @@
-transmission-qt-4.1.1-1
+transmission-qt-4.1.2-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/transmission-qt
@@ -14,9 +14,15 @@ drwxr-xr-x root/root    usr/share/icons/hicolor/scalable/apps/
 drwxr-xr-x root/root    usr/share/icons/hicolor/symbolic/
 drwxr-xr-x root/root    usr/share/icons/hicolor/symbolic/apps/
 -rw-r--r-- root/root    usr/share/icons/hicolor/symbolic/apps/transmission-qt-symbolic.svg
-drwxr-xr-x root/root    usr/share/man/
-drwxr-xr-x root/root    usr/share/man/man1/
--rw-r--r-- root/root    usr/share/man/man1/transmission-qt.1.gz
-drwxr-xr-x root/root    var/
-drwxr-xr-x root/root    var/lib/
-drwxr-xr-x transmission/transmission    var/lib/transmission/
+drwxr-xr-x root/root    usr/share/transmission/
+drwxr-xr-x root/root    usr/share/transmission/public_html/
+drwxr-xr-x root/root    usr/share/transmission/public_html/images/
+-rw-r--r-- root/root    usr/share/transmission/public_html/images/apple-touch-icon.png
+-rw-r--r-- root/root    usr/share/transmission/public_html/images/favicon.ico
+-rw-r--r-- root/root    usr/share/transmission/public_html/images/favicon.svg
+-rw-r--r-- root/root    usr/share/transmission/public_html/index.html
+-rw-r--r-- root/root    usr/share/transmission/public_html/transmission-app.css
+-rw-r--r-- root/root    usr/share/transmission/public_html/transmission-app.css.LEGAL.txt
+-rw-r--r-- root/root    usr/share/transmission/public_html/transmission-app.css.map
+-rw-r--r-- root/root    usr/share/transmission/public_html/transmission-app.js
+-rw-r--r-- root/root    usr/share/transmission/public_html/transmission-app.js.LEGAL.txt
