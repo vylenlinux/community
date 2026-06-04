@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
+description="Patched font Mononoki from the nerd-fonts library"
+maintainer="Vylen Linux Team"
+homepage="https://github.com/ryanoasis/nerd-fonts"
+
+name=ttf-nerd-mononoki
+version=3.4.0
+release=1
+source="${name}-${version}.zip::https://github.com/ryanoasis/nerd-fonts/releases/download/v${version}/Mononoki.zip"
+
+build() {
+    find . -iname "*.otf" -not -iname "*Windows Compatible.otf" -execdir install -Dm644 {} "${PKG}/usr/share/fonts/OTF/{}" \;
+    find . -iname "*.ttf" -not -iname "*Windows Compatible.ttf" -execdir install -Dm644 {} "${PKG}/usr/share/fonts/TTF/{}" \;
+}
