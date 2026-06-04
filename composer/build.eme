@@ -1,12 +1,12 @@
 #!/usr/bin/env sh
 
 # shellcheck disable=SC2034
-description="Dependency Manager for PHP "
+description="Dependency Manager for PHP"
 homepage="https://getcomposer.org/"
 maintainer="Vylen Linux Team"
 
 name=composer
-version=2.10.0
+version=2.10.1
 release=1
 source="${name}-${version}.phar::https://github.com/${name}/${name}/releases/download/${version}/${name}.phar"
 
