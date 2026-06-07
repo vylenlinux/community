@@ -1,0 +1,24 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
+description="A Qt configuration tool for labwc"
+maintainer="Vylen Linux Team"
+homepage="https://github.com/labwc/labwc-tweaks"
+
+name=labwc-tweaks
+version=0.1.0
+release=1
+source="https://github.com/labwc/${name}/archive/${version}/${name}-${version}.tar.gz"
+
+build() {
+    cmake -S "${name}-${version}" -B build \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_INSTALL_LIBDIR=lib \
+        -DCMAKE_BUILD_TYPE=None \
+        -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
+        -DCMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
+        -Wno-dev
+
+    cmake --build build
+    DESTDIR="${PKG}" cmake --install build
+}
