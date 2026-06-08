@@ -17,7 +17,7 @@ build() {
         -DCMAKE_INSTALL_PREFIX=/usr \
         -DSYSTEM_CONFIG_FILE=/usr/etc/conky.conf \
         -DBUILD_DOCS=OFF \
-        -DBUILD_WAYLAND="$(emerald isinstalled wayland && printf "ON" || printf "OFF")" \
+        -DBUILD_WAYLAND="$(emerald is-installed wayland && printf "ON" || printf "OFF")" \
         -DBUILD_I18N=OFF \
         -DBUILD_CURL=ON \
         -DBUILD_RSS=ON \

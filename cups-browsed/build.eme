@@ -15,7 +15,7 @@ build() {
     cd "${name}-${version}"
 
     # disable avahi
-    emerald isinstalled avahi || OPTS='--disable-avahi'
+    emerald is-installed avahi || OPTS='--disable-avahi'
 
     ./configure \
         --prefix=/usr \

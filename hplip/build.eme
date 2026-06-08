@@ -32,7 +32,7 @@ source="http://downloads.sourceforge.net/project/${name}/${name}/${version}/${na
 
 build() {
     # hplip will build without sane, as well
-    emerald isinstalled sane || SCAN_OPTIONS="--disable-scan-build"
+    emerald is-installed sane || SCAN_OPTIONS="--disable-scan-build"
 
     # the whole port is based on Slackware's hplip.SlackBuild and patches
     # shellcheck disable=SC2164
@@ -83,7 +83,6 @@ build() {
         --with-drvdir=/usr/share/cups/drv/HP \
         --enable-hpijs-install \
         --enable-shadow-build \
-        "${SCAN_OPTIONS}" \
         --enable-gui-build \
         --enable-fax-build \
         --enable-doc-build \
@@ -95,7 +94,8 @@ build() {
         --enable-network-build=no \
         --enable-qt5 \
         --enable-policykit \
-        --enable-cups-ppd-install
+        --enable-cups-ppd-install \
+        "${SCAN_OPTIONS}"
 
     make
     make -j1 rulesdir=/usr/lib/udev/rules.d DESTDIR="${PKG}" install

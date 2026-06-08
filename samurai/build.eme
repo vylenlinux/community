@@ -17,6 +17,6 @@ build() {
     make samu
     make PREFIX=/usr DESTDIR="${PKG}" install
 
-    emerald isinstalled ninja || \
+    emerald is-installed ninja || \
         ln -s /usr/bin/samu "${PKG}/usr/bin/ninja"
 }

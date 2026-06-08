@@ -18,7 +18,7 @@ build() {
     export CFLAGS="${CFLAGS} -Wno-error=deprecated-declarations"
     export QT_QPA_PLATFORMTHEME="qt6ct"
 
-    emerald isinstalled ccache && PATH="$(echo "${PATH}" | awk -v RS=: -v ORS=: '/ccache/ {next} {print}' | sed 's/:*$//')"
+    emerald is-installed ccache && PATH="$(echo "${PATH}" | awk -v RS=: -v ORS=: '/ccache/ {next} {print}' | sed 's/:*$//')"
 
     # It's not eought to use -D ENABLE_BROSER...
     touch "${name}-${version}/plugins/obs-browser/CMakeLists.txt"
@@ -38,10 +38,10 @@ build() {
         -DENABLE_PIPEWIRE=ON \
         -DENABLE_PULSEAUDIO=ON \
         -DENABLE_QSV11=OFF \
-        -DENABLE_SCRIPTING_LUA="$(emerald isinstalled luajit && printf "ON" || printf "OFF")" \
+        -DENABLE_SCRIPTING_LUA="$(emerald is-installed luajit && printf "ON" || printf "OFF")" \
         -DENABLE_VLC=OFF \
         -DENABLE_VST=OFF \
-        -DENABLE_WAYLAND="$(emerald isinstalled wayland && printf "ON" || printf "OFF")" \
+        -DENABLE_WAYLAND="$(emerald is-installed wayland && printf "ON" || printf "OFF")" \
         -DENABLE_WEBRTC=OFF \
         -DFFnvcodec_INCLUDE_DIR="nv-codec-headers-${nvcdhd}/include/" \
         -DOBS_VERSION_OVERRIDE="${version}" \

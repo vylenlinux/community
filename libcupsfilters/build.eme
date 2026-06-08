@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Code of the filters of the former cups-filters package as library functions"
 homepage="https://github.com/OpenPrinting/libcupsfilters"
 maintainer="Vylen Linux Team"
@@ -5,19 +8,22 @@ maintainer="Vylen Linux Team"
 name=libcupsfilters
 version=2.1.1
 release=1
-source="https://github.com/OpenPrinting/libcupsfilters/releases/download/$version/$name-$version.tar.xz"
+source="https://github.com/OpenPrinting/${name}/releases/download/${version}/${name}-${version}.tar.xz"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	emerald isinstalled dbus || OPTDBUS=' --disable-dbus'
-	emerald isinstalled libexif || OPTEXIF=' --disable-exif'
-	emerald isinstalled mupdf || OPTMUP=' --disable-mutool'
+    emerald is-installed dbus || OPTDBUS='--disable-dbus'
+    emerald is-installed libexif || OPTEXIF='--disable-exif'
+    emerald is-installed mupdf || OPTMUP='--disable-mutool'
 
-	./configure --prefix=/usr $OPTDBUS $OPTEXIF $OPTMUP
+    ./configure \
+        --prefix=/usr \
+        "${OPTDBUS}" \
+        "${OPTEXIF}" \
+        "${OPTMUP}"
 
-	make
-	make DESTDIR=$PKG install
-
-	rm -r $PKG/usr/share/doc
+    make
+    make DESTDIR="${PKG}" install
 }

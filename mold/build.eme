@@ -18,7 +18,7 @@ build() {
         -DMOLD_USE_SYSTEM_MIMALLOC=OFF \
         -DMOLD_USE_SYSTEM_TBB=ON \
         -DMOLD_LTO=ON \
-        -DMOLD_USE_MOLD="$(emerald isinstalled mold && printf "ON" || printf "OFF")"
+        -DMOLD_USE_MOLD="$(emerald is-installed mold && printf "ON" || printf "OFF")"
 
     cmake --build build
     DESTDIR="${PKG}" cmake --install build

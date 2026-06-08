@@ -2,6 +2,6 @@
 
 # The port 'mingw-w64-gcc-base' is a temporary requirement to compile 'mingw-w64-winpthreads', 
 # before 'mingw-w64-gcc' installation it will be removed
-emerald isinstalled mingw-w64-gcc || \
-    emerald isinstalled mingw-w64-gcc-base || \
-    emerald install -y mingw-w64-gcc-base
+emerald is-installed mingw-w64-gcc || \
+    emerald is-installed mingw-w64-gcc-base || \
+        emerald install -y mingw-w64-gcc-base

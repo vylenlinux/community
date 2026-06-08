@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Mesa demos and tools incl. glxinfo + glxgears"
 homepage="https://www.mesa3d.org/"
 maintainer="Vylen Linux Team"
@@ -5,16 +8,16 @@ maintainer="Vylen Linux Team"
 name=mesa-demos
 version=9.0.0
 release=1
-source="https://archive.mesa3d.org/demos/$name-$version.tar.xz"
+source="https://archive.mesa3d.org/demos/${name}-${version}.tar.xz"
 
 build() {
-	vylen-meson $name-$version build \
-		-D osmesa=disabled \
-		-D wayland=$(emerald isinstalled wayland && printf "enabled" || printf "disabled")
-	meson compile -C build
-	DESTDIR=$PKG meson install --no-rebuild -C build
+    vylen-meson "${name}-${version}" build \
+        -Dosmesa=disabled \
+        -Dwayland="$(emerald is-installed wayland && printf "enabled" || printf "disabled")"
 
-	install -d $PKG/usr/bin
-	install -m 0755 -t $PKG/usr/bin build/src/xdemos/glxgears
-	install -m 0755 -t $PKG/usr/bin build/src/xdemos/glxinfo
+    meson compile -C build
+    DESTDIR="${PKG}" meson install --no-rebuild -C build
+
+    install -Dm755 build/src/xdemos/glxgears -t "${PKG}/usr/bin/"
+    install -Dm755 build/src/xdemos/glxinfo -t "${PKG}/usr/bin/"
 }

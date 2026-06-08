@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Tools for configuring WireGuard"
 homepage="https://www.wireguard.com/"
 maintainer="Vylen Linux Team"
@@ -5,18 +8,18 @@ maintainer="Vylen Linux Team"
 name=wireguard-tools
 version=1.0.20260223
 release=1
-source="https://git.zx2c4.com/wireguard-tools/snapshot/$name-$version.tar.xz"
+source="https://git.zx2c4.com/${name}/snapshot/${name}-${version}.tar.xz"
 
 build() {
-	cd $name-$version
-	cd src
+	# shellcheck disable=SC2164
+    cd "${name}-${version}/src"
+    make
 
-	make
-	make install \
-		 DESTDIR=$PKG \
-		 PREFIX=/usr \
-		 RUNSTATEDIR=/run \
-		 WITH_BASHCOMPLETION=$(emerald isinstalled bash-completion && echo yes || echo no) \
-		 WITH_SYSTEMDUNITS=no \
-		 WITH_WGQUICK=yes
+    make install \
+        DESTDIR="${PKG}" \
+        PREFIX=/usr \
+        RUNSTATEDIR=/run \
+        WITH_BASHCOMPLETION="$(emerald is-installed bash-completion && echo "yes" || echo "no")" \
+        WITH_SYSTEMDUNITS=no \
+        WITH_WGQUICK=yes
 }

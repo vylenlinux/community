@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="OpenPrinting - the legacy support library for PPD files"
 homepage="https://github.com/OpenPrinting/libppd"
 maintainer="Vylen Linux Team"
@@ -5,17 +8,20 @@ maintainer="Vylen Linux Team"
 name=libppd
 version=2.1.1
 release=1
-source="https://github.com/OpenPrinting/libppd/releases/download/$version/$name-$version.tar.xz"
+source="https://github.com/OpenPrinting/${name}/releases/download/${version}/${name}-${version}.tar.xz"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	emerald isinstalled mupdf || DMU=' --disable-mutool'
-	emerald isinstalled poppler || DPO=' --disable-pdftops'
+    emerald is-installed mupdf || DMU='--disable-mutool'
+    emerald is-installed poppler || DPO='--disable-pdftops'
 
-	./configure --prefix=/usr $DMU $DPO
-	make
-	make DESTDIR=$PKG install
+    ./configure \
+        --prefix=/usr \
+        "${DMU}" \
+        "${DPO}"
 
-	rm -r $PKG/usr/share/doc
+    make
+    make DESTDIR="${PKG}" install
 }

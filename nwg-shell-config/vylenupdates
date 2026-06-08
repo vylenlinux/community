@@ -3,22 +3,21 @@
 # Script for nwg-shell-config to work with it's update_indicator module
 
 # checking if sudo or doas exist
-[ $(command -v sudo 2>&1 /dev/null) ] && root=sudo || root=doas
+if command -v sudo >/dev/null 2>&1; then
+    root=sudo
+else
+    root=doas
+fi
 
 # sync repos
 sync() {
-    $root emerald sync 2>&1 /dev/null
+    "${root}" emerald sync >/dev/null 2>&1
 }
 
 # checking available updates
-checkupdates() {
-    check=$(emerald outdate | wc -l)
-
-    case $check in
-        1) printf 0 ;;
-        *) printf "$(( $check - 1 ))" ;;
-    esac
+check_updates() {
+    emerald outdated | wc -l
 }
 
 sync
-checkupdates
+check_updates

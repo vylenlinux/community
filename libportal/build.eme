@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="libportal provides GIO-style async APIs for most Flatpak portals."
 homepage="https://github.com/flatpak/libportal"
 maintainer="Vylen Linux Team"
@@ -5,17 +8,18 @@ maintainer="Vylen Linux Team"
 name=libportal
 version=0.9.1
 release=1
-source="https://github.com/flatpak/libportal/releases/download/$version/$name-$version.tar.xz
+source="https://github.com/flatpak/${name}/releases/download/${version}/${name}-${version}.tar.xz
 	qt6.patch"
 
 build() {
-	patch -Np1 -d $name-$version -i $SRC/qt6.patch
+    patch -Np1 -d "${name}-${version}" -i "${SRC}/qt6.patch"
 
-	vylen-meson $name-$version build\
-		-Ddocs=false\
-		-Dbackend-gtk4=`emerald isinstalled gtk4 && printf "enabled" || printf "disabled"` \
-		-Dbackend-qt5=`emerald isinstalled qt5 && printf "enabled" || printf "disabled"` \
-		-Dbackend-qt6=enabled
-	meson compile -C build
-	DESTDIR=$PKG meson install -C build
+    vylen-meson "${name}-${version}" build \
+        -Ddocs=false \
+        -Dbackend-gtk4="$(emerald is-installed gtk4 && printf "enabled" || printf "disabled")" \
+        -Dbackend-qt5="$(emerald is-installed qt5 && printf "enabled" || printf "disabled")" \
+        -Dbackend-qt6=enabled
+
+    meson compile -C build
+    DESTDIR="${PKG}" meson install -C build
 }
