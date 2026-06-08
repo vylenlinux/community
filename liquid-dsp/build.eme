@@ -1,18 +1,22 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Opensource signal processing library for software-defined radios"
 homepage="http://liquidsdr.org/"
 maintainer="Vylen Linux Team"
 
 name=liquid-dsp
-version=1.7.0
+version=1.8.0
 release=1
-source="https://github.com/jgaeddert/$name/archive/v$version/$name-$version.tar.gz"
+source="https://github.com/jgaeddert/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	./bootstrap.sh
-	./configure --prefix=/usr
+    ./bootstrap.sh
+    ./configure --prefix=/usr
 
-	make
-	make DESTDIR=$PKG install
+    make
+    make DESTDIR="${PKG}" install
 }
