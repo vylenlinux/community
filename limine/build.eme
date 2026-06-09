@@ -2,13 +2,13 @@
 
 # shellcheck disable=SC2034
 description="Modern, advanced, portable, multiprotocol bootloader."
-homepage="https://limine-bootloader.org "
+homepage="https://limine-bootloader.org"
 maintainer="Vylen Linux Team"
 
 name=limine
-version=12.3.2
+version=12.3.3
 release=1
-source="https://github.com/Limine-Bootloader/${name}/releases/download/v${version}/${name}-${version}.tar.xz"
+source="https://github.com/${name}-Bootloader/${name}/releases/download/v${version}/${name}-${version}.tar.xz"
 
 build() {
     # shellcheck disable=SC2164
@@ -16,17 +16,17 @@ build() {
 
     ./configure \
         --prefix=/usr \
+        --enable-bios-cd \
+        --enable-bios-pxe \
+        --enable-bios \
+        --enable-uefi-x86-64 \
+        --enable-uefi-cd \
         TOOLCHAIN_FOR_TARGET=gnu \
         CC_FOR_TARGET=gcc \
         LD_FOR_TARGET=ld \
         OBJCOPY_FOR_TARGET=objcopy \
         OBJDUMP_FOR_TARGET=objdump \
-        READELF_FOR_TARGET=readelf \
-        --enable-bios-cd \
-        --enable-bios-pxe \
-        --enable-bios \
-        --enable-uefi-x86-64 \
-        --enable-uefi-cd
+        READELF_FOR_TARGET=readelf
 
     make
     make DESTDIR="${PKG}" install
