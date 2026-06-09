@@ -6,7 +6,7 @@ homepage="https://github.com/nwg-piotr/nwg-dock-hyprland"
 maintainer="Vylen Linux Team"
 
 name=nwg-dock-hyprland
-version=0.4.10
+version=0.4.11
 release=1
 source="${name}-${version}.tar.gz::https://github.com/nwg-piotr/${name}/archive/v${version}.tar.gz"
 
@@ -27,7 +27,7 @@ build() {
         -modcacherw"
 
     # shellcheck disable=SC2035
-    go build -v -o "bin/${name}" *.go
+    go build *.go -o "bin/${name}"
 
     install -Dm644 images/* -t "${PKG}/usr/share/${name}/images/"
     install -Dm644 config/* -t "${PKG}/usr/share/${name}/"
