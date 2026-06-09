@@ -6,16 +6,12 @@ homepage="https://github.com/Un1q32/pfetch"
 maintainer="Vylen Linux Team"
 
 name=pfetch
-version=1.10.0
+version=1.11.0
 release=1
-
-source="${name}-${version}.tar.gz::https://github.com/Un1q32/${name}/archive/refs/tags/${version}.tar.gz
-    add-vylen-support.patch"
+source="${name}-${version}.tar.gz::https://github.com/Un1q32/${name}/archive/refs/tags/${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-
-    patch -p1 < "${SRC}/add-vylen-support.patch"
     install -Dm755 "${name}" -t "${PKG}/usr/bin/"
 }
