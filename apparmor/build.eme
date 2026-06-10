@@ -6,8 +6,8 @@ homepage="https://gitlab.com/apparmor/apparmor/"
 maintaner="Vylen Linux Team"
 
 name=apparmor
-version=5.0.0
-release=2
+version=5.0.1
+release=1
 source="${name}-${version}.tar.gz::https://gitlab.com/${name}/${name}/-/archive/v${version}/${name}-v${version}.tar.gz"
 
 build() {
@@ -20,7 +20,7 @@ build() {
 
     # shellcheck disable=SC2164
     cd libraries/libapparmor
-        msg "Building: libapparmor"
+        msg_info "Building: libapparmor"
         ./autogen.sh
 
         ./configure \
@@ -35,22 +35,22 @@ build() {
     # shellcheck disable=SC2164
     cd -
 
-    msg "Building: apparmor parser"
+    msg_info "Building: apparmor parser"
     make -C parser
 
-    msg "Building: apparmor-binutils"
+    msg_info "Building: apparmor-binutils"
     make -C binutils
 
-    msg "Building: apparmor-utils"
+    msg_info "Building: apparmor-utils"
     make -C utils
 
-    msg "Building: apparmor-profiles"
+    msg_info "Building: apparmor-profiles"
     make -C profiles
 
-    msg "Building: apparmor-pam"
+    msg_info "Building: apparmor-pam"
     make -C changehat/pam_apparmor
 
-    msg "Building: apparmor-vim"
+    msg_info "Building: apparmor-vim"
     make -C utils/vim
 
     make -C libraries/libapparmor install DESTDIR="${PKG}"
