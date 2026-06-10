@@ -1,4 +1,4 @@
-glaze-7.7.1-1
+glaze-7.8.0-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/include/
 drwxr-xr-x root/root    usr/include/glaze/
@@ -101,6 +101,7 @@ drwxr-xr-x root/root    usr/include/glaze/core/
 -rw-r--r-- root/root    usr/include/glaze/core/wrappers.hpp
 -rw-r--r-- root/root    usr/include/glaze/core/write.hpp
 -rw-r--r-- root/root    usr/include/glaze/core/write_chars.hpp
+-rw-r--r-- root/root    usr/include/glaze/core/write_wrappers.hpp
 -rw-r--r-- root/root    usr/include/glaze/csv.hpp
 drwxr-xr-x root/root    usr/include/glaze/csv/
 -rw-r--r-- root/root    usr/include/glaze/csv/read.hpp
@@ -288,6 +289,8 @@ drwxr-xr-x root/root    usr/include/glaze/yaml/
 -rw-r--r-- root/root    usr/include/glaze/yaml/write.hpp
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/glaze/
+-rw-r--r-- root/root    usr/share/glaze/FindAsio.cmake
+-rw-r--r-- root/root    usr/share/glaze/glaze-asio.cmake
 -rw-r--r-- root/root    usr/share/glaze/glazeConfig.cmake
 -rw-r--r-- root/root    usr/share/glaze/glazeConfigVersion.cmake
 -rw-r--r-- root/root    usr/share/glaze/glazeTargets.cmake
