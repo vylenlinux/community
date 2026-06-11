@@ -1,4 +1,4 @@
-neovim-0.12.2-2
+neovim-0.12.3-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/nvim
@@ -20,9 +20,6 @@ drwxr-xr-x root/root    usr/share/icons/hicolor/
 drwxr-xr-x root/root    usr/share/icons/hicolor/128x128/
 drwxr-xr-x root/root    usr/share/icons/hicolor/128x128/apps/
 -rw-r--r-- root/root    usr/share/icons/hicolor/128x128/apps/nvim.png
-drwxr-xr-x root/root    usr/share/man/
-drwxr-xr-x root/root    usr/share/man/man1/
--rw-r--r-- root/root    usr/share/man/man1/nvim.1.gz
 drwxr-xr-x root/root    usr/share/nvim/
 drwxr-xr-x root/root    usr/share/nvim/runtime/
 drwxr-xr-x root/root    usr/share/nvim/runtime/autoload/
@@ -1199,7 +1196,6 @@ drwxr-xr-x root/root    usr/share/nvim/runtime/lua/vim/_meta/
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/api_keysets_extra.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/base64.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/builtin.lua
--rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/builtin_types.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/events.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/json.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/lpeg.lua
@@ -1210,6 +1206,7 @@ drwxr-xr-x root/root    usr/share/nvim/runtime/lua/vim/_meta/
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/regex.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/spell.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/vimfn.gen.lua
+-rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/vimfn_types.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/vvars.gen.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_meta/vvars_extra.lua
 -rw-r--r-- root/root    usr/share/nvim/runtime/lua/vim/_watch.lua
