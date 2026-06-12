@@ -1,4 +1,4 @@
-aquamarine-0.12.0-1
+aquamarine-0.12.1-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/include/
 drwxr-xr-x root/root    usr/include/aquamarine/
@@ -28,7 +28,7 @@ drwxr-xr-x root/root    usr/include/aquamarine/output/
 -rw-r--r-- root/root    usr/include/aquamarine/output/Output.hpp
 drwxr-xr-x root/root    usr/lib/
 lrwxrwxrwx root/root    usr/lib/libaquamarine.so -> libaquamarine.so.11
--rwxr-xr-x root/root    usr/lib/libaquamarine.so.0.12.0
-lrwxrwxrwx root/root    usr/lib/libaquamarine.so.11 -> libaquamarine.so.0.12.0
+-rwxr-xr-x root/root    usr/lib/libaquamarine.so.0.12.1
+lrwxrwxrwx root/root    usr/lib/libaquamarine.so.11 -> libaquamarine.so.0.12.1
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/aquamarine.pc
