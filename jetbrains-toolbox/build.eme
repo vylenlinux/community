@@ -6,11 +6,11 @@ homepage="https://www.jetbrains.com/toolbox/"
 maintainer="CELESTIFYX Team <celestifyx@gmail.com>"
 
 name=jetbrains-toolbox
-version=3.4.3.81140
+version=3.5.0.84344
 release=1
 
 source="https://download.jetbrains.com/toolbox/${name}-${version}.tar.gz
-    jetbrains-toolbox.desktop
+    ${name}.desktop
     icon.svg"
 
 build() {
