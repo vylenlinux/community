@@ -1,20 +1,25 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Perl Interface to the Domain Name System"
 homepage="http://search.cpan.org/~nlnetlabs/Net-DNS/"
 maintainer="Vylen Linux Team"
 
 name=perl-net-dns
-version=1.54
+version=1.55
 release=1
-source="http://search.cpan.org/CPAN/authors/id/N/NL/NLNETLABS/Net-DNS-${version}.tar.gz"
+source="${name}-${version}.tar.gz::http://search.cpan.org/CPAN/authors/id/N/NL/NLNETLABS/Net-DNS-${version}.tar.gz"
 
 build() {
-	cd Net-DNS-$version
+    # shellcheck disable=SC2164
+    cd "Net-DNS-${version}"
 
-	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
-	make OPTIMIZE="$CFLAGS" DESTDIR="$PKG" install
+    PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+    make OPTIMIZE="${CFLAGS}" DESTDIR="${PKG}" install
 
-	find "$PKG" -depth \
-		-type f \( -name .packlist -o -name \*.bs -o -name perllocal.pod \) -delete , \
-		-type f -name autosplit.ix \( -exec grep -q '^[[:space:]]*package' {} \; -o -delete \) , \
-		-type d -empty -exec rmdir {} +
+    find "${PKG}" -depth -type f \( \
+        -name .packlist -o \
+        -name \*.bs -o \
+        -name perllocal.pod \
+    \) -delete , -type f -name autosplit.ix \( -exec grep -q '^[[:space:]]*package' {} \; -o -delete \) , -type d -empty -exec rmdir {} +
 }
