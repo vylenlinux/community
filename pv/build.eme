@@ -6,7 +6,7 @@ homepage="https://www.ivarch.com/programs/pv.shtml"
 maintainer="Vylen Linux Team"
 
 name=pv
-version=1.10.5
+version=1.11.0
 release=1
 source="https://www.ivarch.com/programs/sources/${name}-${version}.tar.gz"
 
