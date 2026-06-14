@@ -13,7 +13,5 @@ source="${name}-${version}.zip::https://github.com/M0Rf30/${name}-rules/archive/
 build() {
     # shellcheck disable=SC2164
     cd "${name}-rules-${version}"
-
-    install -Dm644 51-android.rules  -t "${PKG}/etc/udev/rules.d/"
-    install -Dm644 android-udev.conf -t "${PKG}/usr/lib/sysusers.d/"
+    install -Dm644 51-android.rules -t "${PKG}/etc/udev/rules.d/"
 }
