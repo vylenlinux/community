@@ -6,12 +6,12 @@ homepage="https://github.com/opencontainers/runc"
 maintainer="Vylen Linux Team"
 
 name=runc
-version=1.4.2
+version=1.4.3
 release=1
 source="https://github.com/opencontainers/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
-    mkdir -pv src/github.com/opencontainers
+    mkdir -p src/github.com/opencontainers
     # shellcheck disable=SC2164
     cd src/github.com/opencontainers
 
