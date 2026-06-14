@@ -1,16 +1,26 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Text-mode interface for git"
-homepage="https://jonas.github.io/tig/ "
+homepage="https://jonas.github.io/tig/"
 maintainer="Vylen Linux Team"
 
 name=tig
-version=2.6.0
+version=2.6.1
 release=1
-source="https://github.com/jonas/$name/releases/download/$name-$version/$name-$version.tar.gz"
+source="https://github.com/jonas/${name}/releases/download/${name}-${version}/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-    ./configure --prefix=/usr --sysconfdir=/etc --sbindir=/usr/sbin --disable-nfsv4 --disable-gss
+    ./configure \
+        --prefix=/usr \
+        --sysconfdir=/etc \
+        --sbindir=/usr/sbin \
+        --disable-nfsv4 \
+        --disable-gss
+
     make
-	make PREFIX=$PKG/usr DESTDIR=$PKG install
+    make PREFIX="${PKG}/usr" DESTDIR="${PKG}" install
 }
