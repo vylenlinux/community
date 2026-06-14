@@ -6,8 +6,8 @@ homepage="https://github.com/containers/libpod"
 maintainer="Vylen Linux Team"
 
 name=podman
-version=5.8.2
-release=2
+version=5.8.3
+release=1
 source="https://github.com/containers/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
