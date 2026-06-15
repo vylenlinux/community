@@ -6,13 +6,13 @@ homepage="https://www.zetetic.net/sqlcipher/"
 maintainer="Vylen Linux Team"
 
 name=sqlcipher
-version=4.14.0
+version=4.16.0
 release=1
 source="https://www.zetetic.net/downloads/${name}/verify/${version}/${name}-${version}.zip"
 
 build() {
     # shellcheck disable=SC2164
-    cd "sqlcipher-${version}"
+    cd "${name}-${version}"
 
     export CPPFLAGS="${CPPFLAGS} \
         -DSQLITE_ENABLE_COLUMN_METADATA=1 \
@@ -36,7 +36,8 @@ build() {
         -lcrypto \
         -Wl,-soname,libsqlcipher.so.0"
 
-    ./configure --prefix=/usr \
+    ./configure \
+        --prefix=/usr \
         --disable-static \
         --enable-fts3 \
         --enable-fts4 \
@@ -47,7 +48,7 @@ build() {
     make
     make DESTDIR="${PKG}" install
 
-    rm -fr "${PKG}/usr/lib"/tcl*
+    rm -rf "${PKG}/usr/lib"/tcl*
 
     # fix sqlite conflict
     # shellcheck disable=SC2115
