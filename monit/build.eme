@@ -1,18 +1,25 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Utility for monitoring daemons running on a Unix system"
 homepage="https://mmonit.com/monit/"
 maintainer="Vylen Linux Team"
 
 name=monit
-version=5.35.2
+version=6.0.0
 release=1
-source="http://mmonit.com/$name/dist/$name-$version.tar.gz"
+source="http://mmonit.com/${name}/dist/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	./configure --prefix=/usr --sysconfdir=/etc
-	make
-	make DESTDIR=$PKG install
+    ./configure \
+        --prefix=/usr \
+        --sysconfdir=/etc
 
-	install -D -m 0700 monitrc $PKG/etc/monitrc
+    make
+    make DESTDIR="${PKG}" install
+
+    install -Dm700 monitrc -t "${PKG}/etc/"
 }
