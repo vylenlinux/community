@@ -1,19 +1,22 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Uniform Resource Identifiers (absolute and relative)"
 homepage="https://search.cpan.org/dist/URI/"
 maintainer="Vylen Linux Team"
 
 name=perl-uri
-version=5.34
+version=5.35
 release=1
-source="$name-$version.tar.gz::https://cpan.metacpan.org/authors/id/O/OA/OALDERS/URI-$version.tar.gz"
+source="${name}-${version}.tar.gz::https://cpan.metacpan.org/authors/id/O/OA/OALDERS/URI-${version}.tar.gz"
 
 build() {
-	cd URI-$version
+    # shellcheck disable=SC2164
+    cd "URI-${version}"
+    perl Makefile.PL
 
-	perl Makefile.PL
-	make
-	make DESTDIR=$PKG install
+    make
+    make DESTDIR="${PKG}" install
 
-	find $PKG -name perllocal.pod -delete
+    find "${PKG}" -name perllocal.pod -delete
 }
-
