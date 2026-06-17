@@ -1,0 +1,22 @@
+#!/usr/bin/env sh
+
+# shellcheck disable=SC2034
+description="Image processing and analysis applications"
+maintainer="Vylen Linux Team"
+homepage="http://www.leptonica.com/"
+
+name=leptonica
+version=1.87.0
+release=1
+source="https://github.com/DanBloomberg/${name}/releases/download/${version}/${name}-${version}.tar.gz"
+
+build() {
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    ./autogen.sh
+    ./configure --prefix=/usr
+
+    make
+    make DESTDIR="${PKG}" install
+}
