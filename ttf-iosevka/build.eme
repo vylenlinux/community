@@ -6,12 +6,11 @@ homepage="https://typeof.net/Iosevka/"
 maintainer="Vylen Linux Team"
 
 name=ttf-iosevka
-version=34.6.1
+version=34.6.3
 release=1
 source="${name}-${version}.zip::https://github.com/be5invis/Iosevka/releases/download/v${version}/PkgTTF-Iosevka-${version}.zip"
 
 build() {
-    install -d "${PKG}/usr/share/fonts/iosevka"
     # shellcheck disable=SC2035
-    install -m644 *.ttf "${PKG}/usr/share/fonts/iosevka"
+    install -Dm644 *.ttf -t "${PKG}/usr/share/fonts/iosevka/"
 }
