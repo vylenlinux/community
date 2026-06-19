@@ -6,7 +6,7 @@ homepage="https://github.com/docker/buildx/"
 maintainer="Vylen Linux Team"
 
 name=docker-buildx
-version=0.34.1
+version=0.35.0
 release=1
 source="https://github.com/docker/buildx/archive/v${version}/${name}-${version}.tar.gz"
 
