@@ -1,4 +1,4 @@
-epson-inkjet-printer-escpr-1.8.6-1
+epson-inkjet-printer-escpr-1.8.8-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/lib/
 drwxr-xr-x root/root    usr/lib/cups/
@@ -167,6 +167,7 @@ drwxr-xr-x root/root    usr/share/ppd/epson-inkjet-printer-escpr/
 -rw-r--r-- root/root    usr/share/ppd/epson-inkjet-printer-escpr/Epson-L4150_Series-epson-escpr-en.ppd
 -rw-r--r-- root/root    usr/share/ppd/epson-inkjet-printer-escpr/Epson-L4160_Series-epson-escpr-en.ppd
 -rw-r--r-- root/root    usr/share/ppd/epson-inkjet-printer-escpr/Epson-L4260_Series-epson-escpr-en.ppd
+-rw-r--r-- root/root    usr/share/ppd/epson-inkjet-printer-escpr/Epson-L4350_Series-epson-escpr-en.ppd
 -rw-r--r-- root/root    usr/share/ppd/epson-inkjet-printer-escpr/Epson-L455_Series-epson-escpr-en.ppd
 -rw-r--r-- root/root    usr/share/ppd/epson-inkjet-printer-escpr/Epson-L475_Series-epson-escpr-en.ppd
 -rw-r--r-- root/root    usr/share/ppd/epson-inkjet-printer-escpr/Epson-L485_Series-epson-escpr-en.ppd

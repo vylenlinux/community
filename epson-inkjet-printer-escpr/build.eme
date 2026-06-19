@@ -1,22 +1,30 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Epson Inkjet Printer Driver (ESC/P-R) for Linux"
 homepage="http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX"
 maintainer="Vylen Linux Team"
 
 name=epson-inkjet-printer-escpr
-version=1.8.6
+version=1.8.8
 release=1
-source="https://download3.ebz.epson.net/dsc/f/03/00/16/21/81/74d098a47c3a616713079c9cd5904b468bb33dea/epson-inkjet-printer-escpr-${version}-1.tar.gz"
+source="${name}-${version}.tar.gz::https://dev.alpinelinux.org/archive/${name}/${name}-${version}-1.src.rpm"
 
 build() {
+    export CFLAGS="${CFLAGS} \
+        -Wno-implicit-function-declaration"
 
-	export CFLAGS="$CFLAGS -Wno-implicit-function-declaration"
+    tar xzf "${name}-${version}-1.tar.gz"
 
-	cd $name-$version
-	autoreconf -vif
-	./configure \
-		--prefix=/usr \
-		--with-cupsfilterdir=/usr/lib/cups/filter \
-	  	--with-cupsppddir=/usr/share/ppd
-	make
-	make DESTDIR=$PKG install
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+    autoreconf -vif
+
+    ./configure \
+        --prefix=/usr \
+        --with-cupsfilterdir=/usr/lib/cups/filter \
+        --with-cupsppddir=/usr/share/ppd
+
+    make
+    make DESTDIR="${PKG}" install
 }
