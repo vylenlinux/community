@@ -6,7 +6,7 @@ homepage="https://github.com/madewokherd/wine-mono"
 maintainer="Vylen Linux Team"
 
 name=wine-mono
-version=11.1.0
+version=11.2.0
 release=1
 source="${name}-${version}.msi::https://github.com/madewokherd/${name}/releases/download/${name}-${version}/${name}-${version}-x86.msi"
 
