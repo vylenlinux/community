@@ -8,7 +8,7 @@ maintainer="Vylen Linux Team"
 name=epson-inkjet-printer-escpr
 version=1.8.8
 release=1
-source="${name}-${version}.tar.gz::https://dev.alpinelinux.org/archive/${name}/${name}-${version}-1.src.rpm"
+source="${name}-${version}.rpm::https://dev.alpinelinux.org/archive/${name}/${name}-${version}-1.src.rpm"
 
 build() {
     export CFLAGS="${CFLAGS} \
