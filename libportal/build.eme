@@ -6,14 +6,11 @@ homepage="https://github.com/flatpak/libportal"
 maintainer="Vylen Linux Team"
 
 name=libportal
-version=0.9.1
+version=0.10.0
 release=1
-source="https://github.com/flatpak/${name}/releases/download/${version}/${name}-${version}.tar.xz
-	qt6.patch"
+source="https://github.com/flatpak/${name}/releases/download/${version}/${name}-${version}.tar.xz"
 
 build() {
-    patch -Np1 -d "${name}-${version}" -i "${SRC}/qt6.patch"
-
     vylen-meson "${name}-${version}" build \
         -Ddocs=false \
         -Dbackend-gtk4="$(emerald is-installed gtk4 && printf "enabled" || printf "disabled")" \

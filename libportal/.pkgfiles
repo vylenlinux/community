@@ -1,22 +1,20 @@
-libportal-0.9.1-1
+libportal-0.10.0-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/include/
 drwxr-xr-x root/root    usr/include/libportal-gtk3/
 -rw-r--r-- root/root    usr/include/libportal-gtk3/portal-gtk3.h
 drwxr-xr-x root/root    usr/include/libportal-gtk4/
 -rw-r--r-- root/root    usr/include/libportal-gtk4/portal-gtk4.h
-drwxr-xr-x root/root    usr/include/libportal-qt5/
--rw-r--r-- root/root    usr/include/libportal-qt5/portal-qt5.h
 drwxr-xr-x root/root    usr/include/libportal-qt6/
 -rw-r--r-- root/root    usr/include/libportal-qt6/portal-qt6.h
 drwxr-xr-x root/root    usr/include/libportal/
 -rw-r--r-- root/root    usr/include/libportal/account.h
 -rw-r--r-- root/root    usr/include/libportal/background.h
 -rw-r--r-- root/root    usr/include/libportal/camera.h
+-rw-r--r-- root/root    usr/include/libportal/clipboard.h
 -rw-r--r-- root/root    usr/include/libportal/dynamic-launcher.h
 -rw-r--r-- root/root    usr/include/libportal/email.h
 -rw-r--r-- root/root    usr/include/libportal/filechooser.h
--rw-r--r-- root/root    usr/include/libportal/glib-backports.h
 -rw-r--r-- root/root    usr/include/libportal/inhibit.h
 -rw-r--r-- root/root    usr/include/libportal/inputcapture-pointerbarrier.h
 -rw-r--r-- root/root    usr/include/libportal/inputcapture-zone.h
@@ -49,9 +47,6 @@ lrwxrwxrwx root/root    usr/lib/libportal-gtk3.so.1 -> libportal-gtk3.so.1.0.0
 lrwxrwxrwx root/root    usr/lib/libportal-gtk4.so -> libportal-gtk4.so.1
 lrwxrwxrwx root/root    usr/lib/libportal-gtk4.so.1 -> libportal-gtk4.so.1.0.0
 -rwxr-xr-x root/root    usr/lib/libportal-gtk4.so.1.0.0
-lrwxrwxrwx root/root    usr/lib/libportal-qt5.so -> libportal-qt5.so.1
-lrwxrwxrwx root/root    usr/lib/libportal-qt5.so.1 -> libportal-qt5.so.1.0.0
--rwxr-xr-x root/root    usr/lib/libportal-qt5.so.1.0.0
 lrwxrwxrwx root/root    usr/lib/libportal-qt6.so -> libportal-qt6.so.1
 lrwxrwxrwx root/root    usr/lib/libportal-qt6.so.1 -> libportal-qt6.so.1.0.0
 -rwxr-xr-x root/root    usr/lib/libportal-qt6.so.1.0.0
@@ -61,7 +56,6 @@ lrwxrwxrwx root/root    usr/lib/libportal.so.1 -> libportal.so.1.0.0
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/libportal-gtk3.pc
 -rw-r--r-- root/root    usr/lib/pkgconfig/libportal-gtk4.pc
--rw-r--r-- root/root    usr/lib/pkgconfig/libportal-qt5.pc
 -rw-r--r-- root/root    usr/lib/pkgconfig/libportal-qt6.pc
 -rw-r--r-- root/root    usr/lib/pkgconfig/libportal.pc
 drwxr-xr-x root/root    usr/share/
