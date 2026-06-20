@@ -1,15 +1,19 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Monospaced font family for user interface and coding environments"
 homepage="https://github.com/adobe-fonts/source-code-pro"
 maintainer="Vylen Linux Team"
 
 name=adobe-source-code-pro-fonts
-_relver=2.042R-u/1.062R-i/1.026R-vf
-version=$(printf '%s' "$_relver" | sed 's/R-//g;s|/|+|g')
-_name=$(printf '%s' "$_relver" | sed 's|\/|-|g')
+version=2.042u+1.062i+1.026vf
 release=1
-source="$name-$version.tar.gz::https://github.com/adobe-fonts/source-code-pro/archive/$_relver.tar.gz"
+
+_version=2.042R-u/1.062R-i/1.026R-vf
+source="${name}-${version}.tar.gz::https://github.com/adobe-fonts/source-code-pro/archive/${_version}.tar.gz"
 
 build() {
-	cd source-code-pro-$_name
-	install -Dt "$PKG/usr/share/fonts/${name%-fonts}" -m644 OTF/*.otf VF/*.otf
+    # shellcheck disable=SC2164
+    cd "source-code-pro-$(printf '%s' "${_version}" | sed 's|\/|-|g')"
+    install -Dm644 OTF/*.otf VF/*.otf -t "${PKG}/usr/share/fonts/${name%-fonts}/"
 }
