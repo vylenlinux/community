@@ -1,15 +1,17 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Visual diff and merge tool"
 homepage="https://meldmerge.org"
 maintainer="Vylen Linux Team"
-        
 
 name=meld
-version=3.22.3
+version=3.24.0
 release=1
-source="https://gitlab.gnome.org/GNOME/meld/-/archive/$version/$name-$version.tar.gz"
-  
+source="https://gitlab.gnome.org/GNOME/${name}/-/archive/${version}/${name}-${version}.tar.gz"
+
 build() {
-	vylen-meson $name-$version build
-	meson compile -C build
-	DESTDIR=$PKG meson install --no-rebuild -C build
+    vylen-meson "${name}-${version}" build
+    meson compile -C build
+    DESTDIR="${PKG}" meson install --no-rebuild -C build
 }
