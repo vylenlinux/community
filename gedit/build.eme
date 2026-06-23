@@ -22,7 +22,5 @@ build() {
     meson compile -C build
     DESTDIR="${PKG}" meson install --no-rebuild -C build
 
-    # Exclude library for revdep.
-    install -d "${PKG}/etc/revdep.d"
-    echo "/usr/lib/gedit/plugins/" > "${PKG}/etc/revdep.d/${name}.conf"
+    do_revdep
 }

@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="PulseAudio emulation for ALSA"
 homepage="https://github.com/i-rinat/apulse"
 maintainer="Vylen Linux Team"
@@ -5,19 +8,18 @@ maintainer="Vylen Linux Team"
 name=apulse
 version=0.1.14
 release=1
-source="$name-$version.tar.gz::https://github.com/i-rinat/apulse/archive/v$version.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/i-rinat/${name}/archive/v${version}.tar.gz"
 
 build() {
-	cmake -B build -S ${name}-${version} -G Ninja \
-	        -DCMAKE_INSTALL_PREFIX=/usr \
-	        -DCMAKE_INSTALL_LIBDIR=/usr/lib \
-	        -DCMAKE_INSTALL_LIBEXECDIR=/usr/lib \
-	        -DCMAKE_BUILD_TYPE=Release \
-		-DCMAKE_C_FLAGS_RELEASE="$CFLAGS"
-	cmake --build build
-	DESTDIR=$PKG cmake --install build
-	
-	# exclude library for revdep
-	install -d $PKG/etc/revdep.d
-	echo "/usr/lib/apulse/" > $PKG/etc/revdep.d/$name.conf
+    cmake -S "${name}-${version}" -B build -G Ninja \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_INSTALL_LIBDIR=/usr/lib \
+        -DCMAKE_INSTALL_LIBEXECDIR=/usr/lib \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_C_FLAGS_RELEASE="${CFLAGS}"
+
+    cmake --build build
+    DESTDIR="${PKG}" cmake --install build
+
+    do_revdep
 }

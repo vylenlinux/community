@@ -14,7 +14,5 @@ build() {
     install -dm755 "${PKG}/usr/lib/jvm/java-${version%%.*}-openjdk"
     cp --reflink=auto -a "${SRC}/jdk-${version}"/* "${PKG}/usr/lib/jvm/java-${version%%.*}-openjdk"
 
-    # Exclude for revdep
-    install -d "${PKG}/etc/revdep.d"
-    echo "/usr/lib/jvm/java-${version%%.*}-openjdk/" > "${PKG}/etc/revdep.d/${name}.conf"
+    VERSION="${version%%.*}" do_revdep
 }

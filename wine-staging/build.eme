@@ -53,16 +53,11 @@ build() {
         install -d "${PKG}/usr/share/wine/${dir}"
     done
 
-    install -t "${PKG}/usr/share/wine/gecko/" \
-        "${SRC}/wine-gecko-${vgecko}-x86.msi" \
-        "${SRC}/wine-gecko-${vgecko}-x86_64.msi"
-
-    install "${SRC}/wine-mono-${vmono}-x86.msi" "${PKG}/usr/share/wine/mono/"
+    install "${SRC}/wine-gecko-${vgecko}-x86.msi" "${SRC}/wine-gecko-${vgecko}-x86_64.msi" -t "${PKG}/usr/share/wine/gecko/"
+    install "${SRC}/wine-mono-${vmono}-x86.msi" -t "${PKG}/usr/share/wine/mono/"
 
     rm -r "${PKG}/usr/share/man"/??.UTF-8
 
     # exclude libs for revdep
-    install -d "${PKG}/etc/revdep.d"
-    # shellcheck disable=SC2028
-    echo "/usr/lib/wine/x86_64-unix/" > "${PKG}/etc/revdep.d/${name}.conf"
+    do_revdep
 }
