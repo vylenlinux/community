@@ -43,12 +43,9 @@ build() {
     ln -sf ../../lib/libnss_winbind.so.2 "${PKG}/usr/lib/libnss_winbind.so"
     ln -sf ../../lib/libnss_wins.so.2 "${PKG}/usr/lib/libnss_wins.so"
 
-    install -Dm644 examples/smb.conf.default -t "${PKG}/etc/samba"
+    install -Dm644 examples/smb.conf.default -t "${PKG}/etc/${name}/"
 
-    # revdep exclude
     do_revdep
-
-    # install pam file
-    install -Dm644 "${SRC}/samba.pam" "${PKG}/etc/pam.d/samba"
     do_service "${name}"
+    do_pam "${name}"
 }

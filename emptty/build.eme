@@ -9,9 +9,7 @@ name=emptty
 version=0.16.1
 release=1
 
-source="${name}-${version}.tar.gz::https://github.com/tvrzna/${name}/archive/v${version}.tar.gz
-    ${name}.pam"
-
+source="${name}-${version}.tar.gz::https://github.com/tvrzna/${name}/archive/v${version}.tar.gz"
 backup="etc/${name}/conf"
 
 build() {
@@ -24,5 +22,5 @@ build() {
     make DESTDIR="${PKG}" install-openrc
 
     # Configure PAM
-    install -Dm644 "${SRC}/${name}.pam" "${PKG}/etc/pam.d/${name}"
+    do_pam "${name}"
 }

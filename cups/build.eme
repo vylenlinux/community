@@ -8,9 +8,7 @@ maintainer="Vylen Linux Team"
 name=cups
 version=2.4.19
 release=1
-
-source="${name}-${version}.tar.gz::https://github.com/OpenPrinting/${name}/archive/v${version}/${name}-${version}-source.tar.gz
-    ${name}.pam"
+source="${name}-${version}.tar.gz::https://github.com/OpenPrinting/${name}/archive/v${version}/${name}-${version}-source.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
@@ -49,10 +47,10 @@ build() {
     make BUILDROOT="${PKG}" install
 
     # Linux PAM Configuration
-    install -Dm644 "${SRC}/${name}.pam" "${PKG}/etc/pam.d/${name}"
+    do_pam "${name}"
 
     # cleanup
-    rm -fr "${PKG}/tmp" \
+    rm -rf "${PKG}/tmp" \
         "${PKG}/run" \
         "${PKG}/var/run"
 
@@ -60,7 +58,7 @@ build() {
     rm -rf "${PKG}/usr/share/cups/banners"/* \
         "${PKG}/usr/share/cups/data/testprint"
 
-    chmod 0755 "${PKG}/var/cache" \
+    chmod 755 "${PKG}/var/cache" \
         "${PKG}/var/spool"
 
     chmod -R +w "${PKG}"

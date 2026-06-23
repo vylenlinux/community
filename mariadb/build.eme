@@ -8,9 +8,7 @@ maintainer="Vylen Linux Team"
 name=mariadb
 version=12.3.2
 release=1
-
-source="https://downloads.mariadb.org/interstitial/${name}-${version}/source/${name}-${version}.tar.gz
-    ${name}.pam"
+source="https://downloads.mariadb.org/interstitial/${name}-${version}/source/${name}-${version}.tar.gz"
 
 build() {
     cmake -S "${name}-${version}" -B build -G Ninja \
@@ -37,7 +35,7 @@ build() {
     cmake --build build
     DESTDIR="${PKG}" cmake --install build
 
-    rm -fr "${PKG}/etc/logrotate.d" \
+    rm -rf "${PKG}/etc/logrotate.d" \
         "${PKG}/usr/share/mariadb-test" \
         "${PKG}/usr/share"/groonga*
 
@@ -50,6 +48,6 @@ build() {
         ! -name charsets \
     | xargs rm -rf {} \;
 
-    install -Dm644 "${SRC}/mariadb.pam" "${PKG}/etc/pam.d/mysql"
     do_service "${name}"
+    do_pam mysql
 }
