@@ -1,4 +1,4 @@
-featherpad-1.6.3-1
+featherpad-1.6.4-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/featherpad
@@ -17,6 +17,7 @@ drwxr-xr-x root/root    usr/share/featherpad/translations/
 -rw-r--r-- root/root    usr/share/featherpad/translations/featherpad_da.qm
 -rw-r--r-- root/root    usr/share/featherpad/translations/featherpad_de.qm
 -rw-r--r-- root/root    usr/share/featherpad/translations/featherpad_el.qm
+-rw-r--r-- root/root    usr/share/featherpad/translations/featherpad_en_GB.qm
 -rw-r--r-- root/root    usr/share/featherpad/translations/featherpad_eo.qm
 -rw-r--r-- root/root    usr/share/featherpad/translations/featherpad_es.qm
 -rw-r--r-- root/root    usr/share/featherpad/translations/featherpad_et.qm
