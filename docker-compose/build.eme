@@ -6,7 +6,7 @@ homepage="https://docs.docker.com/compose/"
 maintainer="Vylen Linux Team"
 
 name=docker-compose
-version=5.1.4
+version=5.2.0
 release=1
 source="https://github.com/docker/compose/archive/v${version}/${name}-${version}.tar.gz"
 
@@ -19,8 +19,8 @@ build() {
     cd "compose-${version}"
     make VERSION="v${version}"
 
-    install -Dm0755 "bin/build/${name}" -t "${PKG}/usr/bin/"
-    install -dm0755 "${PKG}/usr/lib/docker/cli-plugins"
+    install -Dm755 "bin/build/${name}" -t "${PKG}/usr/bin/"
+    install -dm755 "${PKG}/usr/lib/docker/cli-plugins"
 
     ln -s /usr/bin/docker-compose "${PKG}/usr/lib/docker/cli-plugins/"
 }
