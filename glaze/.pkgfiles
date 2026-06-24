@@ -1,4 +1,4 @@
-glaze-7.8.2-1
+glaze-7.8.3-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/include/
 drwxr-xr-x root/root    usr/include/glaze/
@@ -83,6 +83,7 @@ drwxr-xr-x root/root    usr/include/glaze/core/
 -rw-r--r-- root/root    usr/include/glaze/core/custom_meta.hpp
 -rw-r--r-- root/root    usr/include/glaze/core/error_category.hpp
 -rw-r--r-- root/root    usr/include/glaze/core/feature_test.hpp
+-rw-r--r-- root/root    usr/include/glaze/core/format_str.hpp
 -rw-r--r-- root/root    usr/include/glaze/core/istream_buffer.hpp
 -rw-r--r-- root/root    usr/include/glaze/core/manage.hpp
 -rw-r--r-- root/root    usr/include/glaze/core/meta.hpp
@@ -151,6 +152,7 @@ drwxr-xr-x root/root    usr/include/glaze/hash/
 -rw-r--r-- root/root    usr/include/glaze/hash/sweethash.hpp
 -rw-r--r-- root/root    usr/include/glaze/json.hpp
 drwxr-xr-x root/root    usr/include/glaze/json/
+-rw-r--r-- root/root    usr/include/glaze/json/chrono_format.hpp
 -rw-r--r-- root/root    usr/include/glaze/json/escape_unicode.hpp
 -rw-r--r-- root/root    usr/include/glaze/json/flatten_map.hpp
 -rw-r--r-- root/root    usr/include/glaze/json/float_format.hpp
