@@ -21,7 +21,10 @@ build() {
 
     export GOPATH="${SRC}"
     export BUILDTAGS="seccomp"
-    export GOFLAGS="-trimpath -mod=readonly -modcacherw"
+
+    export GOFLAGS="-trimpath \
+        -mod=readonly \
+        -modcacherw"
 
     make runc
     install -Dm755 "${name}" -t "${PKG}/usr/bin/"
