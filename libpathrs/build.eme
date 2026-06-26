@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
+description="C-friendly API to make path resolution safer on Linux"
+maintainer="Vylen Linux Team"
+homepage="https://github.com/cyphar/libpathrs"
+
+name=libpathrs
+version=0.2.5
+release=1
+
+source="https://github.com/cyphar/${name}/releases/download/v${version}/${name}-${version}.tar.xz
+    crate-type.patch"
+
+build() {
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    patch -Np1 -i "${SRC}/crate-type.patch"
+    export RUSTUP_TOOLCHAIN=stable
+
+    cargo fetch --locked --target host-tuple
+    RUSTFLAGS="-C panic=abort" cargo build --frozen --release --features=capi
+
+    ./install.sh DESTDIR="${PKG}" --prefix=/usr --lib=/usr/lib
+}
