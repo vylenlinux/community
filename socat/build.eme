@@ -1,17 +1,20 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="SOcket CAT - netcat-like utility with many enhancements"
 homepage="http://www.dest-unreach.org/socat"
 maintainer="Vylen Linux Team"
 
 name=socat
-version=1.8.1.1
+version=1.8.1.2
 release=1
-source="http://www.dest-unreach.org/socat/download/$name-$version.tar.gz"
+source="http://www.dest-unreach.org/${name}/download/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
-	./configure --prefix=/usr
-	make
-	make DESTDIR=$PKG install
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+    ./configure --prefix=/usr
+
+    make
+    make DESTDIR="${PKG}" install
 }
-
-
