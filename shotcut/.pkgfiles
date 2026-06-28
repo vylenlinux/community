@@ -1,4 +1,4 @@
-shotcut-26.6.1-1
+shotcut-26.6.25-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/shotcut
@@ -696,6 +696,7 @@ drwxr-xr-x root/root    usr/share/shotcut/qml/modules/Shotcut/Controls/
 -rw-r--r-- root/root    usr/share/shotcut/qml/modules/Shotcut/Controls/Marker.qml
 -rw-r--r-- root/root    usr/share/shotcut/qml/modules/Shotcut/Controls/MarkerBar.qml
 -rw-r--r-- root/root    usr/share/shotcut/qml/modules/Shotcut/Controls/MotionTrackerDialog.qml
+-rw-r--r-- root/root    usr/share/shotcut/qml/modules/Shotcut/Controls/Number2D.qml
 -rw-r--r-- root/root    usr/share/shotcut/qml/modules/Shotcut/Controls/Preset.qml
 -rw-r--r-- root/root    usr/share/shotcut/qml/modules/Shotcut/Controls/RectangleControl.qml
 -rw-r--r-- root/root    usr/share/shotcut/qml/modules/Shotcut/Controls/SaveDefaultButton.qml
