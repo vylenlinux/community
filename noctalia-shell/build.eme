@@ -12,7 +12,7 @@ source="https://github.com/noctalia-dev/${name}/archive/v${version}/${name}-${ve
 
 build() {
     # shellcheck disable=SC2164
-    cd "${name}-${version}"
+    cd "${name%-*}-${version}"
 
     install -dm755 "${PKG}/etc/xdg/quickshell/${name}"
     # shellcheck disable=SC2035
