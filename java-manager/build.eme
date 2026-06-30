@@ -1,12 +1,15 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Vylen Java Version Manager (OpenJDK)"
 homepage="https://vylen.gitlab.io/"
 maintainer="Vylen Linux Team"
 
-name=vylen-java-manager
+name=java-manager
 version=1.0.0
 release=1
-source="vylen-java-manager"
+source="${name}"
 
 build() {
-	install -Dm755 vylen-java-manager -t $PKG/usr/bin/
+    install -Dm755 "${name}" -t "${PKG}/usr/bin/"
 }
