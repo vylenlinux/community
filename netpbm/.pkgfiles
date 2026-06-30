@@ -1,4 +1,4 @@
-netpbm-11.14.1-1
+netpbm-11.15.0-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/411toppm
@@ -151,6 +151,7 @@ lrwxrwxrwx root/root    usr/bin/pamrgbatopng -> pamtopng
 -rwxr-xr-x root/root    usr/bin/pbmtoascii
 -rwxr-xr-x root/root    usr/bin/pbmtoatk
 -rwxr-xr-x root/root    usr/bin/pbmtobbnbg
+-rwxr-xr-x root/root    usr/bin/pbmtobrush
 -rwxr-xr-x root/root    usr/bin/pbmtocis
 -rwxr-xr-x root/root    usr/bin/pbmtocmuwm
 -rwxr-xr-x root/root    usr/bin/pbmtodjvurle
@@ -408,8 +409,8 @@ drwxr-xr-x root/root    usr/include/netpbm/
 -rw-r--r-- root/root    usr/include/netpbm/runlength.h
 -rw-r--r-- root/root    usr/include/netpbm/shhopt.h
 drwxr-xr-x root/root    usr/lib/
-lrwxrwxrwx root/root    usr/lib/libnetpbm.so.11 -> libnetpbm.so.11.114
--rwxr-xr-x root/root    usr/lib/libnetpbm.so.11.114
+lrwxrwxrwx root/root    usr/lib/libnetpbm.so.11 -> libnetpbm.so.11.115
+-rwxr-xr-x root/root    usr/lib/libnetpbm.so.11.115
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/netpbm/
 -rw-r--r-- root/root    usr/share/netpbm/palmcolor8.map
