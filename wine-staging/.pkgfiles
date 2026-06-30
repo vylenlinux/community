@@ -1,4 +1,4 @@
-wine-staging-11.11-2
+wine-staging-11.12-2
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/revdep.d/
 -rw-r--r-- root/root    etc/revdep.d/wine-staging.conf
@@ -1802,6 +1802,7 @@ drwxr-xr-x root/root    usr/lib/wine/i386-windows/
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/dsdmo.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/dsound.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/dsquery.dll
+-rw-r--r-- root/root    usr/lib/wine/i386-windows/dsrole.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/dssenh.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/dsuiext.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/dswave.dll
@@ -1843,7 +1844,6 @@ drwxr-xr-x root/root    usr/lib/wine/i386-windows/
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/gdiplus.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/geolocation.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/glu32.dll
--rw-r--r-- root/root    usr/lib/wine/i386-windows/gphoto2.ds
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/gpkcsp.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/graphicscapture.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/hal.dll
@@ -2400,7 +2400,6 @@ drwxr-xr-x root/root    usr/lib/wine/i386-windows/
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/rundll.exe16
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/rundll32.exe
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/samlib.dll
--rw-r--r-- root/root    usr/lib/wine/i386-windows/sane.ds
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/sapi.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/sas.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/sc.exe
@@ -2707,7 +2706,6 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-unix/
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/ctapi32.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/dnsapi.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/dwrite.so
--rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/gphoto2.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/kerberos.so
 -rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libaclui.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libactiveds.a
@@ -2974,7 +2972,6 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-unix/
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/opencl.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/opengl32.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/qcap.so
--rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/sane.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/secur32.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/win32u.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/wine
@@ -3180,6 +3177,7 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-windows/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/dsdmo.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/dsound.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/dsquery.dll
+-rw-r--r-- root/root    usr/lib/wine/x86_64-windows/dsrole.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/dssenh.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/dsuiext.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/dswave.dll
@@ -3220,7 +3218,6 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-windows/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/gdiplus.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/geolocation.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/glu32.dll
--rw-r--r-- root/root    usr/lib/wine/x86_64-windows/gphoto2.ds
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/gpkcsp.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/graphicscapture.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/hal.dll
@@ -3757,7 +3754,6 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-windows/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/runas.exe
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/rundll32.exe
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/samlib.dll
--rw-r--r-- root/root    usr/lib/wine/x86_64-windows/sane.ds
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/sapi.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/sas.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/sc.exe
