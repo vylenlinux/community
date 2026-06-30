@@ -1,22 +1,25 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="GTK+ frontend to various command line archivers"
 homepage="https://github.com/ib/xarchiver"
 maintainer="Vylen Linux Team"
 
 name=xarchiver
-version=0.5.4.26
+version=0.5.4.27
 release=1
-source="https://github.com/ib/$name/archive/$version/$name-$version.tar.gz"
+source="https://github.com/ib/${name}/archive/${version}/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+    export CFLAGS="${CFLAGS} -fcommon"
 
-	export CFLAGS="$CFLAGS -fcommon"
+    ./configure \
+        --prefix=/usr \
+        --libexecdir=/usr/lib/xfce4 \
+        --disable-doc
 
-	./configure \
-		--prefix=/usr \
-		--libexecdir=/usr/lib/xfce4 \
-		--disable-doc
-	make
-	make DESTDIR=$PKG install
-
+    make
+    make DESTDIR="${PKG}" install
 }
