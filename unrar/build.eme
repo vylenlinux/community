@@ -6,7 +6,7 @@ homepage="https://www.rarlab.com/rar_add.htm"
 maintainer="Vylen Linux Team"
 
 name=unrar
-version=7.2.6
+version=7.2.7
 release=1
 source="${name}-${version}.tar.gz::https://www.rarlab.com/rar/unrarsrc-${version}.tar.gz"
 
@@ -19,7 +19,7 @@ build() {
     make -C libunrar lib
     make -C unrar -j1
 
-    install -v -Dm755 unrar/unrar "${PKG}/usr/bin/unrar"
-    install -Dm755 libunrar/libunrar.so "${PKG}/usr/lib/libunrar.so"
-    install -Dm644 libunrar/dll.hpp "${PKG}/usr/include/unrar/dll.hpp"
+    install -Dm755 unrar/unrar -t "${PKG}/usr/bin/"
+    install -Dm755 libunrar/libunrar.so -t "${PKG}/usr/lib/"
+    install -Dm644 libunrar/dll.hpp -t "${PKG}/usr/include/unrar/"
 }
