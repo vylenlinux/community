@@ -6,7 +6,7 @@ homepage="http://www.sbcl.org/"
 maintainer="Vylen Linux Team"
 
 name=sbcl
-version=2.6.5
+version=2.6.6
 release=1
 
 source="${name}-${version}.tar.bz2::https://sourceforge.net/projects/${name}/files/${name}/${version}/${name}-${version}-source.tar.bz2
@@ -49,8 +49,8 @@ build() {
     # sources
     mkdir -p "${PKG}/usr/share/sbcl-source"
 
-    cp -R "${SRC}/${name}-${version}/src"     -t "${PKG}/usr/share/sbcl-source"
-    cp -R "${SRC}/${name}-${version}/contrib" -t "${PKG}/usr/share/sbcl-source"
+    cp -R "${SRC}/${name}-${version}/src"     -t "${PKG}/usr/share/sbcl-source/"
+    cp -R "${SRC}/${name}-${version}/contrib" -t "${PKG}/usr/share/sbcl-source/"
 
     # drop unwanted files
     find "${PKG}" \( \

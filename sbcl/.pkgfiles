@@ -1,4 +1,4 @@
-sbcl-2.6.5-1
+sbcl-2.6.6-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/sbcl
@@ -181,6 +181,7 @@ drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-introspect/
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-introspect/introspect.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-introspect/load-test.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-introspect/sb-introspect.asd
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-introspect/sb-introspect.texinfo
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-introspect/test-driver.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-introspect/test.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-introspect/xref-test-data.lisp
