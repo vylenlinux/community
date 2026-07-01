@@ -6,7 +6,7 @@ maintainer="Vylen Linux Team"
 homepage="https://github.com/astral-sh/uv" 
 
 name=uv
-version=0.11.25
+version=0.11.26
 release=1
 source="${name}-${version}.tar.gz::https://github.com/astral-sh/${name}/archive/refs/tags/${version}.tar.gz"
 
@@ -37,6 +37,6 @@ build() {
 
     _target="target/${tripple}/release/${name}"
 
-    install -Dm0755 "${_target}"  -t "${PKG}/usr/bin/"
-    install -Dm0755 "${_target}x" -t "${PKG}/usr/bin/"
+    install -Dm755 "${_target}"  -t "${PKG}/usr/bin/"
+    install -Dm755 "${_target}x" -t "${PKG}/usr/bin/"
 }
