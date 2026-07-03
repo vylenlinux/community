@@ -16,7 +16,6 @@ build() {
         -DCMAKE_INSTALL_LIBDIR=lib \
         -DCMAKE_BUILD_TYPE=Release \
         -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
-        -DCMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
         -DBUILD_TESTING=OFF \
         -Wno-devcd
 
