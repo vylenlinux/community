@@ -6,7 +6,7 @@ homepage="https://www.fluidsynth.org/"
 maintainer="Vylen Linux Team"
 
 name=fluidsynth
-version=2.5.5
+version=2.5.6
 release=1
 source="https://github.com/${name}/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
