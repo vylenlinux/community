@@ -1,16 +1,19 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Script to get system information"
 homepage="https://smxi.org/docs/inxi.htm"
 maintainer="Vylen Linux Team"
 
 name=inxi
-version=3.3.40.1
-_ver=${version%.*}
-_sion=${version##*.}
+version=3.3.41.1
 release=1
-source="$name-$version.tar.gz::https://codeberg.org/smxi/inxi/archive/${_ver}-${_sion}.tar.gz"
+source="${name}-${version}.tar.gz::https://codeberg.org/smxi/${name}/archive/${version%.*}-${version##*.}.tar.gz"
 
 build() {
-	cd $name
-	install -D -m755 inxi $PKG/usr/bin/inxi
-	install -D -m755 inxi.1 $PKG/usr/share/man/man1/inxi.1
+    # shellcheck disable=SC2164
+    cd "${name}"
+
+    install -Dm755 "${name}" -t "${PKG}/usr/bin/"
+    install -Dm755 "${name}.1" -t "${PKG}/usr/share/man/man1/"
 }
