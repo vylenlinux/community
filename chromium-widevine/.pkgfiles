@@ -1,0 +1,11 @@
+chromium-widevine-149.0.7827.200-1
+drwxr-xr-x root/root    usr/
+drwxr-xr-x root/root    usr/lib/
+drwxr-xr-x root/root    usr/lib/chromium/
+drwxr-xr-x root/root    usr/lib/chromium/WidevineCdm/
+-rw-r--r-- root/root    usr/lib/chromium/WidevineCdm/LICENSE
+drwxr-xr-x root/root    usr/lib/chromium/WidevineCdm/_platform_specific/
+drwxr-xr-x root/root    usr/lib/chromium/WidevineCdm/_platform_specific/linux_x64/
+-rwxr-xr-x root/root    usr/lib/chromium/WidevineCdm/_platform_specific/linux_x64/libwidevinecdm.so
+-rw-r--r-- root/root    usr/lib/chromium/WidevineCdm/manifest.json
+lrwxrwxrwx root/root    usr/lib/chromium/libwidevinecdm.so -> WidevineCdm/_platform_specific/linux_x64/libwidevinecdm.so
