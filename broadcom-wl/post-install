@@ -1,7 +1,3 @@
 #!/bin/sh
 
-# shellcheck disable=SC2045
-for k in $(ls /lib/modules/); do
-    kernver="${k}"
-    depmod -a "${kernver}"
-done
+sh /var/lib/dkms/buildmodules-broadcom-wl.sh

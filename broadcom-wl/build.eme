@@ -7,12 +7,12 @@ maintainer="Vylen Linux Team"
 
 name=broadcom-wl
 version=6.30.223.271
-release=1
+release=2
 
-_version="$(printf '%s' "${version}" | tr '.' '_')"
-
-source="${name}-${version}.tar.gz::https://docs.broadcom.com/docs-and-downloads/docs/linux_sta/hybrid-v35_64-nodebug-pcoem-${_version}.tar.gz
+source="${name}-${version}.tar.gz::https://docs.broadcom.com/docs-and-downloads/docs/linux_sta/hybrid-v35_64-nodebug-pcoem-$(printf '%s' "${version}" | tr '.' '_').tar.gz
     broadcom-wl-kernel.conf
+    dkms.conf.in
+    buildmodules-broadcom-wl.sh
     001-null-pointer-fix.patch
     003-linux407.patch
     005-debian-fix-kernel-warnings.patch
@@ -37,31 +37,31 @@ source="${name}-${version}.tar.gz::https://docs.broadcom.com/docs-and-downloads/
     022-linux701.patch"
 
 build() {
-    for src in $source; do
-        src=${src%%::*}
-        src=${src##*/}
-
-        case "$src" in
-            *.patch) ;;
-            *) continue ;;
+    for s in $source; do
+        case "${s}" in
+            *.patch)
+                printf "==> Applying patch %s...\n" "${s}"
+                patch -Np1 --no-backup-if-mismatch < "${SRC}/${s}"
+            ;;
         esac
-
-        printf "==> Applying patch %s...\n" "$src"
-        patch -Np1 --no-backup-if-mismatch < "./$src"
     done
 
-    export KCFLAGS="-Wno-error=date-time -Wno-error"
+    sed -e "s/@PACKAGE_VERSION@/${version}/" dkms.conf.in > dkms.conf
+    sed -i -e '/BRCM_WLAN_IFNAME/s/eth/wlan/' src/wl/sys/wl_linux.c
+    sed -i -e "/ldflags-y/s|\$(src)/lib|/usr/lib/${name}|;/GE_49 :=/s|:= .*|:= 1|" Makefile
 
-    # shellcheck disable=SC2045
-    for k in $(ls /lib/modules/); do
-        KVER="${k}"
-        [ "${KVER}" ] || KVER="$(uname -r)"
+    dest_dir="${PKG}/usr/src/${name}-${version}"
 
-        make -C "/lib/modules/${KVER}/build" M="$(pwd)"
-        install -Dm755 wl.ko "${PKG}/lib/modules/${KVER}/kernel/drivers/net/wireless/wl.ko"
+    install -d "${dest_dir}"
+    cp -a src "${dest_dir}"
 
-        find "${PKG}" -name "*.ko" -exec xz {} +
-    done
+    install -Dm644 Makefile "${dest_dir}/Makefile"
+    install -Dm644 dkms.conf "${dest_dir}/dkms.conf"
 
+    install -Dm644 lib/wlc_hybrid.o_shipped "${PKG}/usr/lib/${name}/wlc_hybrid.o_shipped"
     install -Dm644 "${SRC}/broadcom-wl-kernel.conf" -t "${PKG}/etc/modprobe.d/"
+
+     # dkms build modules script
+     mkdir -p "${PKG}/var/lib/dkms"
+     sed -e "s/@name@/${name}/g" -e "s/@version@/${version}/g" "${SRC}/buildmodules-${name}.sh" > "${PKG}/var/lib/dkms/buildmodules-${name}.sh"
 }
