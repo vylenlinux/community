@@ -1,9 +1,0 @@
-chromium-extension-web-store-1.5.5.3-1
-drwxr-xr-x root/root    usr/
-drwxr-xr-x root/root    usr/lib/
-drwxr-xr-x root/root    usr/lib/chromium-extension-web-store/
--rw-r--r-- root/root    usr/lib/chromium-extension-web-store/chromium-extension-web-store-1.5.5.3.crx
-drwxr-xr-x root/root    usr/share/
-drwxr-xr-x root/root    usr/share/chromium/
-drwxr-xr-x root/root    usr/share/chromium/extensions/
--rw-r--r-- root/root    usr/share/chromium/extensions/ocaahdebbfolfmndjeplogmgcagdmblk.json
