@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
+description="chromium web store extension (for ungoogled-chromium)"
+homepage="https://github.com/NeverDecaf/chromium-web-store"
+maintainer="Vylen Linux Team"
+
+name=chromium-extension-web-store
+version=1.5.5.3
+release=1
+
+source="${name}-${version}.crx::https://github.com/NeverDecaf/chromium-web-store/releases/download/v${version}/Chromium.Web.Store.crx"
+noextract="${name}-${version}.crx"
+
+build() {
+    _id=ocaahdebbfolfmndjeplogmgcagdmblk
+
+    # Create extension json
+    cat <<EOF > "${_id}".json
+{
+    "external_crx": "/usr/lib/${name}/${name}-${version}.crx",
+    "external_version": "${version}"
+}
+EOF
+
+    install -Dm644 "${_id}.json" -t "${PKG}/usr/share/chromium/extensions/"
+    install -Dm644 "${name}-${version}.crx" -t "${PKG}/usr/lib/${name}/"
+}
