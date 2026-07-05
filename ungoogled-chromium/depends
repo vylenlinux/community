@@ -1,0 +1,10 @@
+alsa-lib
+cups
+desktop-file-utils
+gtk3
+hicolor-icon-theme
+libxkbcommon
+nss
+pciutils
+minizip
+openh264
