@@ -1,9 +1,10 @@
 #!/bin/sh
 
+# dkms scripts for @name@
 dkms_remove() {
     dkms status -m @name@ | while read -r line; do
-        module="$(echo "${line}" | sed 's/,//g' | awk '{print $1}')"
-        kernel_version="$(echo "${line}" | sed 's/,//g' | awk '{print $2}')"
+        module="$(printf "%s\n" "${line}" | sed 's/,//g' | awk '{print $1;}')"
+        kernel_version="$(printf "%s\n" "${line}" | sed 's/,//g' | awk '{print $2;}')"
 
         printf "dkms: remove @name@ modules for kernel %s...\n" "${kernel_version}"
         dkms remove -m "${module}" -k "${kernel_version}" >/dev/null 2>&1
