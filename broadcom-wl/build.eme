@@ -1,0 +1,67 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
+description="Broadcom Wireless driver for kernel stable"
+homepage="https://docs.broadcom.com/docs/12358410"
+maintainer="Vylen Linux Team"
+
+name=broadcom-wl
+version=6.30.223.271
+release=1
+
+_version="$(printf '%s' "${version}" | tr '.' '_')"
+
+source="${name}-${version}.tar.gz::https://docs.broadcom.com/docs-and-downloads/docs/linux_sta/hybrid-v35_64-nodebug-pcoem-${_version}.tar.gz
+    broadcom-wl-kernel.conf
+    001-null-pointer-fix.patch
+    003-linux407.patch
+    005-debian-fix-kernel-warnings.patch
+    007-linux412.patch
+    009-fix_mac_profile_discrepancy.patch
+    011-linux509.patch
+    013-linux518.patch
+    015-linux600.patch
+    017-linux612.patch
+    019-linux614.patch
+    021-linux617.patch
+    002-rdtscl.patch
+    004-linux408.patch
+    006-linux411.patch
+    008-linux415.patch
+    010-linux506.patch
+    012-linux517.patch
+    014-linux414.patch
+    016-linux601.patch
+    018-linux613.patch
+    020-linux615.patch
+    022-linux701.patch"
+
+build() {
+    for src in $source; do
+        src=${src%%::*}
+        src=${src##*/}
+
+        case "$src" in
+            *.patch) ;;
+            *) continue ;;
+        esac
+
+        printf "==> Applying patch %s...\n" "$src"
+        patch -Np1 --no-backup-if-mismatch < "./$src"
+    done
+
+    export KCFLAGS="-Wno-error=date-time -Wno-error"
+
+    # shellcheck disable=SC2045
+    for k in $(ls /lib/modules/); do
+        KVER="${k}"
+        [ "${KVER}" ] || KVER="$(uname -r)"
+
+        make -C "/lib/modules/${KVER}/build" M="$(pwd)"
+        install -Dm755 wl.ko "${PKG}/lib/modules/${KVER}/kernel/drivers/net/wireless/wl.ko"
+
+        find "${PKG}" -name "*.ko" -exec xz {} +
+    done
+
+    install -Dm644 "${SRC}/broadcom-wl-kernel.conf" -t "${PKG}/etc/modprobe.d/"
+}
