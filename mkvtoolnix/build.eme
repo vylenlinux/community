@@ -6,7 +6,7 @@ homepage="https://mkvtoolnix.download/"
 maintainer="Vylen Linux Team"
 
 name=mkvtoolnix
-version=99.0
+version=100.0
 release=1
 source="https://mkvtoolnix.download/sources/${name}-${version}.tar.xz"
 
@@ -14,7 +14,7 @@ build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
 
-    ./configure  \
+    ./configure \
         --prefix=/usr \
         --disable-precompiled-headers \
         --disable-update-check \
