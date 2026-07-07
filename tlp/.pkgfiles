@@ -1,4 +1,4 @@
-tlp-1.10.1-1
+tlp-1.10.2-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/init.d/
 -rwxr-xr-x root/root    etc/init.d/tlp
