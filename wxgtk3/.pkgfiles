@@ -1,8 +1,8 @@
-wxgtk3-3.2.10-1
+wxgtk3-3.2.11-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
-lrwxrwxrwx root/root    usr/bin/wx-config -> /usr/lib/wx/config/gtk3-unicode-3.2
-lrwxrwxrwx root/root    usr/bin/wxrc -> /usr/bin/wxrc-3.2
+lrwxrwxrwx root/root    usr/bin/wx-config -> ../lib/wx/config/gtk3-unicode-3.2
+lrwxrwxrwx root/root    usr/bin/wxrc -> wxrc-3.2
 -rwxr-xr-x root/root    usr/bin/wxrc-3.2
 drwxr-xr-x root/root    usr/include/
 drwxr-xr-x root/root    usr/include/wx-3.2/
