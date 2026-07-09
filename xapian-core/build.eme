@@ -1,16 +1,23 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Open source search engine library"
 homepage="https://oligarchy.co.uk/xapian.html"
 maintainer="Vylen Linux Team"
 
 name=xapian-core
-version=1.5.0
+version=2.0.0
 release=1
-source="https://oligarchy.co.uk/xapian/$version/$name-$version.tar.xz"
+source="https://oligarchy.co.uk/xapian/${version}/${name}-${version}.tar.xz"
 
 build() {
-	cd $name-$version
-	./configure --prefix=/usr --disable-static
-	make
-	make DESTDIR=$PKG install
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
+    ./configure \
+        --prefix=/usr \
+        --disable-static
+
+    make
+    make DESTDIR="${PKG}" install
 }
