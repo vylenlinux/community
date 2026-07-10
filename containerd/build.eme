@@ -6,7 +6,7 @@ homepage="https://containerd.io/"
 maintainer="Vylen Linux Team"
 
 name=containerd
-version=2.3.2
+version=2.3.3
 release=1
 source="${name}-${version}.tar.gz::https://github.com/${name}/${name}/archive/refs/tags/v${version}.tar.gz"
 
@@ -26,6 +26,6 @@ build() {
     make VERSION="v${version}" REVISION="091922f03c2762540fd057fba91260237ff86acb" BUILDMODE=pie
     mkdir -p "${PKG}/usr/bin"
 
-    install -Dsm755 ./bin/* "${PKG}/usr/bin/"
+    install -Dm755 ./bin/* -t "${PKG}/usr/bin/"
     do_service "${name}"
 }
