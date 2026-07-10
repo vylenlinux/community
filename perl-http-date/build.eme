@@ -6,7 +6,7 @@ homepage="https://metacpan.org/pod/HTTP::Date"
 maintainer="Vylen Linux Team"
 
 name=perl-http-date
-version=6.07
+version=6.08
 release=1
 source="${name}-${version}.tar.gz::https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Date-${version}.tar.gz"
 
