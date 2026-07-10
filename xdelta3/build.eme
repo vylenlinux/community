@@ -1,22 +1,26 @@
-description="Diff utility for binary files "
+#!/bin/sh
+
+# shellcheck disable=SC2034
+description="Diff utility for binary files"
 homepage="http://xdelta.org/"
 maintainer="Vylen Linux Team"
 
 name=xdelta3
-version=3.1.0
+version=3.2.0
 release=1
-source="https://github.com/jmacd/xdelta/archive/v$version/$name-$version.tar.gz"
+source="https://github.com/jmacd/xdelta/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
-	cd xdelta-$version/xdelta3
-	aclocal
-	autoreconf --install
-	libtoolize
-	autoconf
-	autoheader
-	automake --add-missing
-	automake
-	./configure -disable-dependency-tracking --prefix=/usr --with-liblzma
-	make
-	make DESTDIR=$PKG install
+    cmake -S "xdelta-${version}/${name}" -B build -G Ninja \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_INSTALL_LIBDIR=lib \
+        -DCMAKE_INSTALL_LIBEXECDIR=lib \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
+        -DBUILD_SHARED_LIBS=ON \
+        -DXD3_ARMOR=OFF \
+        -Wno-dev
+
+    cmake --build build
+    DESTDIR="${PKG}" cmake --install build
 }
