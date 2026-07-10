@@ -6,8 +6,9 @@ homepage="http://typescriptlang.org/"
 maintainer="Vylen Linux Team"
 
 name=typescript
-version=6.0.3
+version=7.0.2
 release=1
+
 source="https://registry.npmjs.org/${name}/-/${name}-${version}.tgz"
 noextract="${name}-${version}.tgz"
 
