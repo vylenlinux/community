@@ -1,27 +1,32 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="A modern, maintained replacement for ls (maintained fork of exa)"
 homepage="https://github.com/eza-community/eza"
 maintainer="Vylen Linux Team"
 
 name=eza
-version=0.23.4
+version=0.23.5
 release=1
-source="$name-$version.tar.gz::https://github.com/eza-community/$name/archive/v$version/${name}_x86_64-unknown-linux-gnu.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/eza-community/${name}/archive/v${version}/${name}_x86_64-unknown-linux-gnu.tar.gz"
 
 build() {
-	cd $name-$version
-  	mkdir rust || true
-	export CARGO_HOME=rust
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	cargo update
-	cargo fetch
-	cargo build --release --locked
-	install -Dt $PKG/usr/bin target/release/eza
+    mkdir .cargo
+    export CARGO_HOME="${PWD}/.cargo"
 
-	install -Dm644 completions/zsh/_$name \
-		$PKG/usr/share/zsh/site-functions/_$name
-	install -Dm644 completions/bash/$name \
-		$PKG/usr/share/bash-completion/completions/$name
-	install -Dm644 completions/fish/$name.fish \
-		$PKG/usr/share/fish/vendor_completions.d/$name.fish
+    cargo update
+    cargo fetch
+
+    cargo build \
+        --release \
+        --locked
+
+    install -Dm755 "target/release/${name}" -t "${PKG}/usr/bin/"
+
+    install -Dm644 "completions/bash/${name}" -t "${PKG}/usr/share/bash-completion/completions/"
+    emerald is-installed zsh && install -Dm644 "completions/zsh/_${name}" -t "${PKG}/usr/share/zsh/site-functions/"
+    emerald is-installed fish && install -Dm644 "completions/fish/${name}.fish" -t "${PKG}/usr/share/fish/vendor_completions.d/"
 }
-
