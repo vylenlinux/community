@@ -6,7 +6,7 @@ homepage="https://dl.winehq.org/wine"
 maintainer="Vylen Linux Team"
 
 name=wine
-version=11.12
+version=11.13
 release=1
 source="https://dl.winehq.org/${name}/source/${version%%.*}.x/${name}-${version}.tar.xz"
 

@@ -1,4 +1,4 @@
-wine-11.12-1
+wine-11.13-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/revdep.d/
 -rw-r--r-- root/root    etc/revdep.d/wine.conf
@@ -1023,6 +1023,7 @@ drwxr-xr-x root/root    usr/include/wine/windows/ddk/
 -rw-r--r-- root/root    usr/include/wine/windows/powersetting.h
 -rw-r--r-- root/root    usr/include/wine/windows/powrprof.h
 -rw-r--r-- root/root    usr/include/wine/windows/prntvpt.h
+-rw-r--r-- root/root    usr/include/wine/windows/processsnapshot.h
 -rw-r--r-- root/root    usr/include/wine/windows/processthreadsapi.h
 -rw-r--r-- root/root    usr/include/wine/windows/profinfo.h
 -rw-r--r-- root/root    usr/include/wine/windows/proofofpossessioncookieinfo.h
@@ -1839,6 +1840,7 @@ drwxr-xr-x root/root    usr/lib/wine/i386-windows/
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/gdiplus.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/geolocation.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/glu32.dll
+-rw-r--r-- root/root    usr/lib/wine/i386-windows/gphoto2.ds
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/gpkcsp.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/graphicscapture.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/hal.dll
@@ -2340,7 +2342,6 @@ drwxr-xr-x root/root    usr/lib/wine/i386-windows/
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/olethk32.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/oleview.exe
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/opcservices.dll
--rw-r--r-- root/root    usr/lib/wine/i386-windows/opencl.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/opengl32.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/packager.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/pdh.dll
@@ -2395,6 +2396,7 @@ drwxr-xr-x root/root    usr/lib/wine/i386-windows/
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/rundll.exe16
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/rundll32.exe
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/samlib.dll
+-rw-r--r-- root/root    usr/lib/wine/i386-windows/sane.ds
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/sapi.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/sas.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/sc.exe
@@ -2636,7 +2638,6 @@ drwxr-xr-x root/root    usr/lib/wine/i386-windows/
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/wordpad.exe
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/wow32.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/wpc.dll
--rw-r--r-- root/root    usr/lib/wine/i386-windows/wpcap.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/write.exe
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/ws2_32.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/wscript.exe
@@ -2700,6 +2701,7 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-unix/
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/ctapi32.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/dnsapi.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/dwrite.so
+-rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/gphoto2.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/kerberos.so
 -rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libaclui.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libactiveds.a
@@ -2963,9 +2965,9 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-unix/
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/nsiproxy.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/ntdll.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/odbc32.so
--rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/opencl.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/opengl32.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/qcap.so
+-rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/sane.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/secur32.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/win32u.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/wine
@@ -2982,7 +2984,6 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-unix/
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/winewayland.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/winex11.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/winspool.so
--rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/wpcap.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/ws2_32.so
 drwxr-xr-x root/root    usr/lib/wine/x86_64-windows/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/acledit.dll
@@ -3210,6 +3211,7 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-windows/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/gdiplus.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/geolocation.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/glu32.dll
+-rw-r--r-- root/root    usr/lib/wine/x86_64-windows/gphoto2.ds
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/gpkcsp.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/graphicscapture.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/hal.dll
@@ -3691,7 +3693,6 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-windows/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/olethk32.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/oleview.exe
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/opcservices.dll
--rw-r--r-- root/root    usr/lib/wine/x86_64-windows/opencl.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/opengl32.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/packager.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/pdh.dll
@@ -3746,6 +3747,7 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-windows/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/runas.exe
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/rundll32.exe
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/samlib.dll
+-rw-r--r-- root/root    usr/lib/wine/x86_64-windows/sane.ds
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/sapi.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/sas.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/sc.exe
@@ -3963,7 +3965,6 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-windows/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/wow64cpu.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/wow64win.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/wpc.dll
--rw-r--r-- root/root    usr/lib/wine/x86_64-windows/wpcap.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/write.exe
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/ws2_32.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/wscript.exe
