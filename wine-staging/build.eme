@@ -16,9 +16,7 @@ source="https://dl.winehq.org/wine/source/${version%%.*}.x/wine-${version}.tar.x
     ${name}-${version}.tar.gz::https://gitlab.winehq.org/wine/${name}/-/archive/v${version}/${name}-v${version}.tar.gz
     https://dl.winehq.org/wine/wine-gecko/${vgecko}/wine-gecko-${vgecko}-x86.msi
     https://dl.winehq.org/wine/wine-gecko/${vgecko}/wine-gecko-${vgecko}-x86_64.msi
-    https://dl.winehq.org/wine/wine-mono/${vmono}/wine-mono-${vmono}-x86.msi
-    30-win32-aliases.conf
-    wine-binfmt.conf"
+    https://dl.winehq.org/wine/wine-mono/${vmono}/wine-mono-${vmono}-x86.msi"
 
 build() {
     # shellcheck disable=SC2164
@@ -28,9 +26,10 @@ build() {
     # shellcheck disable=SC2103
     cd ..
 
-    install -d wine64
-    export CPPFLAGS="${CPPFLAGS} -D_FORTIFY_SOURCE=0"
+    export CPPFLAGS="${CPPFLAGS} \
+        -D_FORTIFY_SOURCE=0"
 
+    mkdir build64
     # shellcheck disable=SC2164
     cd wine64
 
