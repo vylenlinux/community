@@ -1,16 +1,23 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="A mini smtp client"
 homepage="https://marlam.de/msmtp/"
 maintainer="Vylen Linux Team"
 
 name=msmtp
-version=1.8.32
+version=1.8.33
 release=1
-source="https://marlam.de/$name/releases/$name-$version.tar.xz"
+source="https://marlam.de/${name}/releases/${name}-${version}.tar.xz"
 
 build() {
-    cd $name-$version
-    ./configure --prefix=/usr \
-                --with-tls=openssl
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    ./configure \
+        --prefix=/usr \
+        --with-tls=openssl
+
     make
-    make DESTDIR=$PKG install
+    make DESTDIR="${PKG}" install
 }
