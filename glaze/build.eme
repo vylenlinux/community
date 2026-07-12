@@ -6,7 +6,7 @@ homepage="https://github.com/stephenberry/glaze"
 maintainer="Vylen Linux Team"
 
 name=glaze
-version=7.8.4
+version=7.9.0
 release=1
 source="https://github.com/stephenberry/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
@@ -17,7 +17,7 @@ build() {
         -DCMAKE_BUILD_TYPE=Release \
         -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
         -DBUILD_TESTING=OFF \
-        -Wno-devcd
+        -Wno-dev
 
     cmake --build build
     DESTDIR="${PKG}" cmake --install build
