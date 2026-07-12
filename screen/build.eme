@@ -1,28 +1,33 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Full-screen window manager that multiplexes a physical terminal"
 homepage="https://www.gnu.org/software/screen/"
 maintainer="Vylen Linux Team"
 
 name=screen
-version=5.0.1
+version=5.0.2
 release=1
-source="https://ftp.gnu.org/gnu/$name/$name-$version.tar.gz"
+source="https://ftp.gnu.org/gnu/${name}/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+    NOCONFIGURE=1 ./autogen.sh
 
-	NOCONFIGURE=1 ./autogen.sh	
-	./configure --prefix=/usr                     \
-	            --infodir=/usr/share/info         \
-	            --mandir=/usr/share/man           \
-	            --with-socket-dir=/run/screen     \
-	            --with-pty-group=5                \
-	            --with-sys-screenrc=/etc/screenrc
-	sed -i -e "s%/usr/local/etc/screenrc%/etc/screenrc%" etc/*
-	sed -i -e "s%/usr/local/etc/screenrc%/etc/screenrc%" doc/*
-	make
-	make DESTDIR=$PKG install
+    ./configure \
+        --prefix=/usr \
+        --infodir=/usr/share/info \
+        --mandir=/usr/share/man \
+        --with-socket-dir=/run/screen \
+        --with-pty-group=5 \
+        --with-sys-screenrc=/etc/screenrc
 
-	#mkdir -p $PKG/etc
-	install -Dm 644 etc/etcscreenrc $PKG/etc/screenrc
+    sed -i -e "s%/usr/local/etc/screenrc%/etc/screenrc%" etc/*
+    sed -i -e "s%/usr/local/etc/screenrc%/etc/screenrc%" doc/*
 
+    make
+    make DESTDIR="${PKG}" install
+
+    install -Dm644 etc/etcscreenrc "${PKG}/etc/screenrc"
 }
