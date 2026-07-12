@@ -7,13 +7,14 @@ homepage="https://github.com/wlrfx/scenefx"
 
 name=scenefx
 version=0.5
-release=1
+release=2
 source="${name}-${version}.tar.gz::https://github.com/wlrfx/scenefx/archive/refs/tags/${version}.tar.gz"
 
 build() {
     vylen-meson "${name}-${version}" build \
         -Dwerror=false \
-        -Db_ndebug=false
+        -Db_ndebug=false \
+        -Dexamples=false
 
     meson compile -C build
     DESTDIR="${PKG}" meson install --no-rebuild -C build
