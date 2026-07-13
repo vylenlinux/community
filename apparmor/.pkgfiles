@@ -1,4 +1,4 @@
-apparmor-5.0.1-1
+apparmor-5.0.2-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/apparmor.d/
 -rw-r--r-- root/root    etc/apparmor.d/1password
@@ -392,10 +392,6 @@ drwxr-xr-x root/root    etc/apparmor/
 drwxr-xr-x root/root    etc/init.d/
 -rwxr-xr-x root/root    etc/init.d/apparmor
 drwxr-xr-x root/root    lib/
-drwxr-xr-x root/root    lib/security/
--rwxr-xr-x root/root    lib/security/pam_apparmor.so
-drwxr-xr-x root/root    sbin/
--rwxr-xr-x root/root    sbin/apparmor_parser
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/aa-audit
@@ -405,10 +401,7 @@ drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/aa-decode
 -rwxr-xr-x root/root    usr/bin/aa-disable
 -rwxrwxr-x root/root    usr/bin/aa-easyprof
--rwxr-xr-x root/root    usr/bin/aa-enabled
 -rwxr-xr-x root/root    usr/bin/aa-enforce
--rwxr-xr-x root/root    usr/bin/aa-exec
--rwxr-xr-x root/root    usr/bin/aa-features-abi
 -rwxr-xr-x root/root    usr/bin/aa-genprof
 -rwxr-xr-x root/root    usr/bin/aa-logprof
 -rwxr-xr-x root/root    usr/bin/aa-mergeprof
@@ -416,47 +409,16 @@ drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/aa-remove-unknown
 -rwxr-xr-x root/root    usr/bin/aa-show-usage
 -rwxr-xr-x root/root    usr/bin/aa-unconfined
-drwxr-xr-x root/root    usr/include/
-drwxr-xr-x root/root    usr/include/aalogparse/
--rw-r--r-- root/root    usr/include/aalogparse/aalogparse.h
-drwxr-xr-x root/root    usr/include/sys/
--rw-r--r-- root/root    usr/include/sys/apparmor.h
--rw-r--r-- root/root    usr/include/sys/apparmor_private.h
 drwxr-xr-x root/root    usr/lib/
 drwxr-xr-x root/root    usr/lib/apparmor/
 -rwxr-xr-x root/root    usr/lib/apparmor/rc.apparmor.functions
--rw-r--r-- root/root    usr/lib/libapparmor.a
-lrwxrwxrwx root/root    usr/lib/libapparmor.so -> libapparmor.so.1.30.7
-lrwxrwxrwx root/root    usr/lib/libapparmor.so.1 -> libapparmor.so.1.30.7
--rwxr-xr-x root/root    usr/lib/libapparmor.so.1.30.7
-drwxr-xr-x root/root    usr/lib/perl5/
-drwxr-xr-x root/root    usr/lib/perl5/5.42/
-drwxr-xr-x root/root    usr/lib/perl5/5.42/x86_64-linux-thread-multi/
-drwxr-xr-x root/root    usr/lib/perl5/site_perl/
-drwxr-xr-x root/root    usr/lib/perl5/site_perl/5.42/
-drwxr-xr-x root/root    usr/lib/perl5/site_perl/5.42/x86_64-linux-thread-multi/
--r--r--r-- root/root    usr/lib/perl5/site_perl/5.42/x86_64-linux-thread-multi/LibAppArmor.pm
-drwxr-xr-x root/root    usr/lib/perl5/site_perl/5.42/x86_64-linux-thread-multi/auto/
-drwxr-xr-x root/root    usr/lib/perl5/site_perl/5.42/x86_64-linux-thread-multi/auto/LibAppArmor/
--r-xr-xr-x root/root    usr/lib/perl5/site_perl/5.42/x86_64-linux-thread-multi/auto/LibAppArmor/LibAppArmor.so
-drwxr-xr-x root/root    usr/lib/pkgconfig/
--rw-r--r-- root/root    usr/lib/pkgconfig/libapparmor.pc
 drwxr-xr-x root/root    usr/lib/python3.14/
 drwxr-xr-x root/root    usr/lib/python3.14/site-packages/
-drwxr-xr-x root/root    usr/lib/python3.14/site-packages/LibAppArmor-5.0.1-py3.14.egg-info/
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/LibAppArmor-5.0.1-py3.14.egg-info/PKG-INFO
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/LibAppArmor-5.0.1-py3.14.egg-info/SOURCES.txt
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/LibAppArmor-5.0.1-py3.14.egg-info/dependency_links.txt
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/LibAppArmor-5.0.1-py3.14.egg-info/top_level.txt
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/LibAppArmor.py
--rwxr-xr-x root/root    usr/lib/python3.14/site-packages/_LibAppArmor.cpython-314-x86_64-linux-gnu.so
-drwxr-xr-x root/root    usr/lib/python3.14/site-packages/__pycache__/
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/__pycache__/LibAppArmor.cpython-314.pyc
-drwxr-xr-x root/root    usr/lib/python3.14/site-packages/apparmor-5.0.1-py3.14.egg-info/
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/apparmor-5.0.1-py3.14.egg-info/PKG-INFO
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/apparmor-5.0.1-py3.14.egg-info/SOURCES.txt
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/apparmor-5.0.1-py3.14.egg-info/dependency_links.txt
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/apparmor-5.0.1-py3.14.egg-info/top_level.txt
+drwxr-xr-x root/root    usr/lib/python3.14/site-packages/apparmor-5.0.2-py3.14.egg-info/
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/apparmor-5.0.2-py3.14.egg-info/PKG-INFO
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/apparmor-5.0.2-py3.14.egg-info/SOURCES.txt
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/apparmor-5.0.2-py3.14.egg-info/dependency_links.txt
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/apparmor-5.0.2-py3.14.egg-info/top_level.txt
 drwxr-xr-x root/root    usr/lib/python3.14/site-packages/apparmor/
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/apparmor/__init__.py
 drwxr-xr-x root/root    usr/lib/python3.14/site-packages/apparmor/__pycache__/
@@ -545,10 +507,6 @@ drwxr-xr-x root/root    usr/lib/python3.14/site-packages/apparmor/rule/__pycache
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/apparmor/translations.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/apparmor/ui.py
 -rwxr-xr-x root/root    usr/lib/python3.14/site-packages/apparmor/update_profile.py
-drwxr-xr-x root/root    usr/sbin/
--rwxr-xr-x root/root    usr/sbin/aa-load
--rwxr-xr-x root/root    usr/sbin/aa-status
-lrwxrwxrwx root/root    usr/sbin/apparmor_status -> aa-status
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/apparmor/
 -rw-r--r-- root/root    usr/share/apparmor/apparmor.vim

@@ -6,7 +6,7 @@ homepage="https://gitlab.com/apparmor/apparmor/"
 maintaner="Vylen Linux Team"
 
 name=apparmor
-version=5.0.1
+version=5.0.2
 release=1
 source="${name}-${version}.tar.gz::https://gitlab.com/${name}/${name}/-/archive/v${version}/${name}-v${version}.tar.gz"
 
