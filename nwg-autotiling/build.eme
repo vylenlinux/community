@@ -1,13 +1,20 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Script for sway and i3 to automatically switch the horizontal / vertical window split orientation"
 homepage="https://github.com/nwg-piotr/autotiling"
 maintainer="Vylen Linux Team"
 
 name=nwg-autotiling
-version=1.9.3
+version=1.9.4
 release=1
-source="$name-$version.tar.gz::https://github.com/nwg-piotr/autotiling/archive/v$version.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/nwg-piotr/autotiling/archive/v${version}.tar.gz"
 
 build() {
-	cd autotiling-$version
-	python3 setup.py install --root=$PKG --optimize=1
+    # shellcheck disable=SC2164
+    cd "autotiling-${version}"
+
+    python3 setup.py install \
+        --root="${PKG}" \
+        --optimize=1
 }
