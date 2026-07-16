@@ -6,7 +6,7 @@ homepage="https://github.com/so-fancy/diff-so-fancy"
 maintainer="Vylen Linux Team"
 
 name=diff-so-fancy
-version=1.4.10
+version=1.4.12
 release=1
 source="https://github.com/so-fancy/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
