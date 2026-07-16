@@ -13,5 +13,5 @@ source="https://github.com/FFmpeg/${name}/releases/download/n${version}/${name}-
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-    make PREFIX="/usr" DESTDIR="${PKG}" install
+    make PREFIX=/usr DESTDIR="${PKG}" install
 }
