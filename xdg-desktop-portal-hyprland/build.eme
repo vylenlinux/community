@@ -6,7 +6,7 @@ homepage="https://github.com/fufexan/xdg-desktop-portal-hyprland"
 maintainer="Vylen Linux Team"
 
 name=xdg-desktop-portal-hyprland
-version=1.3.12
+version=1.4.0
 release=1
 
 _protocol_version=4d29e48433270a2af06b8bc711ca1fe5109746cd
