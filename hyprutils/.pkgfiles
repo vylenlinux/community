@@ -1,4 +1,4 @@
-hyprutils-0.13.1-1
+hyprutils-0.14.0-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/include/
 drwxr-xr-x root/root    usr/include/hyprutils/
@@ -7,6 +7,7 @@ drwxr-xr-x root/root    usr/include/hyprutils/animation/
 -rw-r--r-- root/root    usr/include/hyprutils/animation/AnimationConfig.hpp
 -rw-r--r-- root/root    usr/include/hyprutils/animation/AnimationManager.hpp
 -rw-r--r-- root/root    usr/include/hyprutils/animation/BezierCurve.hpp
+-rw-r--r-- root/root    usr/include/hyprutils/animation/Spring.hpp
 drwxr-xr-x root/root    usr/include/hyprutils/cli/
 -rw-r--r-- root/root    usr/include/hyprutils/cli/ArgumentParser.hpp
 -rw-r--r-- root/root    usr/include/hyprutils/cli/Logger.hpp
@@ -26,6 +27,8 @@ drwxr-xr-x root/root    usr/include/hyprutils/memory/
 -rw-r--r-- root/root    usr/include/hyprutils/memory/SharedPtr.hpp
 -rw-r--r-- root/root    usr/include/hyprutils/memory/UniquePtr.hpp
 -rw-r--r-- root/root    usr/include/hyprutils/memory/WeakPtr.hpp
+drwxr-xr-x root/root    usr/include/hyprutils/misc/
+-rw-r--r-- root/root    usr/include/hyprutils/misc/HyprAssert.hpp
 drwxr-xr-x root/root    usr/include/hyprutils/os/
 -rw-r--r-- root/root    usr/include/hyprutils/os/File.hpp
 -rw-r--r-- root/root    usr/include/hyprutils/os/FileDescriptor.hpp
@@ -44,8 +47,8 @@ drwxr-xr-x root/root    usr/include/hyprutils/string/
 drwxr-xr-x root/root    usr/include/hyprutils/utils/
 -rw-r--r-- root/root    usr/include/hyprutils/utils/ScopeGuard.hpp
 drwxr-xr-x root/root    usr/lib/
-lrwxrwxrwx root/root    usr/lib/libhyprutils.so -> libhyprutils.so.12
--rwxr-xr-x root/root    usr/lib/libhyprutils.so.0.13.1
-lrwxrwxrwx root/root    usr/lib/libhyprutils.so.12 -> libhyprutils.so.0.13.1
+lrwxrwxrwx root/root    usr/lib/libhyprutils.so -> libhyprutils.so.13
+-rwxr-xr-x root/root    usr/lib/libhyprutils.so.0.14.0
+lrwxrwxrwx root/root    usr/lib/libhyprutils.so.13 -> libhyprutils.so.0.14.0
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/hyprutils.pc
