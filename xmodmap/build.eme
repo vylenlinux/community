@@ -1,20 +1,25 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Utility for modifying keymaps and button mappings"
 homepage="https://xorg.freedesktop.org/"
 maintainer="Vylen Linux Team"
 
 name=xmodmap
-version=1.0.11
+version=1.0.12
 release=1
-source="http://ftp.x.org/pub/individual/app/xmodmap-$version.tar.gz"
+source="http://ftp.x.org/pub/individual/app/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-  	./configure \
-		--prefix=/usr \
-		--sysconfdir=/etc \
-		--localstatedir=/var \
-		--disable-static
-	make
-	make DESTDIR=$PKG install
+    ./configure \
+        --prefix=/usr \
+        --sysconfdir=/etc \
+        --localstatedir=/var \
+        --disable-static
+
+    make
+    make DESTDIR="${PKG}" install
 }
