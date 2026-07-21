@@ -1,21 +1,25 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Hyprland GUI utilities"
-homepage="https://github.com/hyprwm/hyprland-qtutils"
+homepage="https://github.com/hyprwm/hyprland-guiutils"
 maintainer="Vylen Linux Team"
 
 name=hyprland-guiutils
-version=0.2.1
+version=0.2.2
 release=1
-source="https://github.com/hyprwm/$name/archive/v$version/$name-$version.tar.gz"
+source="https://github.com/hyprwm/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
-	cmake -S $name-$version -B build \
-		-DCMAKE_INSTALL_PREFIX=/usr \
-		-DCMAKE_INSTALL_LIBDIR=lib \
-		-DCMAKE_INSTALL_LIBEXECDIR=lib \
-		-DCMAKE_BUILD_TYPE=None \
-		-DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
-		-DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
-		-Wno-dev 
-	cmake --build build
-	DESTDIR=$PKG cmake --install build
+    cmake -S "${name}-${version}" -B build \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_INSTALL_LIBDIR=lib \
+        -DCMAKE_INSTALL_LIBEXECDIR=lib \
+        -DCMAKE_BUILD_TYPE=None \
+        -DCMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
+        -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
+        -Wno-dev
+
+    cmake --build build
+    DESTDIR="${PKG}" cmake --install build
 }
