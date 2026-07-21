@@ -40,7 +40,7 @@ build() {
     for s in $source; do
         case "${s}" in
             *.patch)
-                printf "==> Applying patch %s...\n" "${s}"
+                msg_info "Applying patch ${s}..."
                 patch -Np1 --no-backup-if-mismatch < "${SRC}/${s}"
             ;;
         esac
