@@ -61,7 +61,7 @@ build() {
     install -Dm644 lib/wlc_hybrid.o_shipped "${PKG}/usr/lib/${name}/wlc_hybrid.o_shipped"
     install -Dm644 "${SRC}/broadcom-wl-kernel.conf" -t "${PKG}/etc/modprobe.d/"
 
-     # dkms build modules script
-     mkdir -p "${PKG}/var/lib/dkms"
-     sed -e "s/@name@/${name}/g" -e "s/@version@/${version}/g" "${SRC}/buildmodules-${name}.sh" > "${PKG}/var/lib/dkms/buildmodules-${name}.sh"
+    # dkms build modules script
+    mkdir -p "${PKG}/var/lib/dkms"
+    sed -e "s/@name@/${name}/g" -e "s/@version@/${version}/g" "${SRC}/buildmodules-${name}.sh" > "${PKG}/var/lib/dkms/buildmodules-${name}.sh"
 }
