@@ -6,7 +6,7 @@ homepage="https://metacpan.org/release/HTTP-Message/"
 maintainer="Vylen Linux Team"
 
 name=perl-http-message
-version=7.02
+version=7.03
 release=1
 source="${name}-${version}.tar.gz::https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Message-${version}.tar.gz"
 
