@@ -6,13 +6,13 @@ homepage="https://obsproject.com/"
 maintainer="Vylen Linux Team"
 
 name=obs-studio
-version=32.1.2
+version=32.2.0
 release=1
 
 nvcdhd=13.0.19.0
 
 source="https://github.com/obsproject/${name}/archive/${version}/${name}-${version}.tar.gz
-    nv-codec-headers-${nvcdhd}.tar.gz::https://github.com/FFmpeg/nv-codec-headers/releases/download/n${nvcdhd}/nv-codec-headers-${nvcdhd}.tar.gz"
+    https://github.com/FFmpeg/nv-codec-headers/releases/download/n${nvcdhd}/nv-codec-headers-${nvcdhd}.tar.gz"
 
 build() {
     export CFLAGS="${CFLAGS} -Wno-error=deprecated-declarations"
@@ -51,5 +51,5 @@ build() {
     DESTDIR="${PKG}" cmake --install build
 
     find "${PKG}" -type d -exec chmod g-w '{}' \;
-    rm "${PKG}/usr/share/obs/obs-studio/authors/AUTHORS"
+    rm -r "${PKG}/usr/share/obs/obs-studio/authors"
 }
