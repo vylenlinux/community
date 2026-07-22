@@ -1,12 +1,9 @@
-asusctl-6.3.8-1
+asusctl-6.3.9-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/init.d/
 -rwxr-xr-x root/root    etc/init.d/asusd
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
--rwxr-xr-x root/root    usr/bin/asusctl
--rwxr-xr-x root/root    usr/bin/asusd
--rwxr-xr-x root/root    usr/bin/asusd-user
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/asusd/
 -rw-r--r-- root/root    usr/share/asusd/aura_support.ron
