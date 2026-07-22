@@ -1,0 +1,5 @@
+vulkan-icd-loader
+wayland-protocols
+glm
+xcb-util-wm
+assimp
