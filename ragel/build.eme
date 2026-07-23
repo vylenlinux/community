@@ -1,15 +1,20 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Compiles finite state machines from regular languages into executable C, C++, Objective-C, or D code"
 homepage="http://www.complang.org/ragel/"
 maintainer="Vylen Linux Team"
 
 name=ragel
-version=6.10
+version=6.11
 release=1
-source="https://fossies.org/linux/misc/"$name"-"$version".tar.gz"
+source="https://www.colm.net/files/${name}/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
-	./configure --prefix=/usr
-	make
-	make DESTDIR=$PKG install
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+    ./configure --prefix=/usr
+
+    make
+    make DESTDIR="${PKG}" install
 }
