@@ -1,11 +1,11 @@
-geekbench-6.7.1-1
+geekbench-7.0.0-1
 drwxr-xr-x root/root    opt/
 drwxr-xr-x root/root    opt/geekbench/
--rw-r--r-- root/root    opt/geekbench/geekbench-workload.plar
--rw-r--r-- root/root    opt/geekbench/geekbench.plar
--rwxr-xr-x root/root    opt/geekbench/geekbench6
+-rw-r--r-- root/root    opt/geekbench/geekbench-workload.plxr
+-rw-r--r-- root/root    opt/geekbench/geekbench.plxr
+-rwxr-xr-x root/root    opt/geekbench/geekbench7
 -rwxr-xr-x root/root    opt/geekbench/geekbench_avx2
 -rwxr-xr-x root/root    opt/geekbench/geekbench_x86_64
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
-lrwxrwxrwx root/root    usr/bin/geekbench -> /opt/geekbench/geekbench6
+lrwxrwxrwx root/root    usr/bin/geekbench -> /opt/geekbench/geekbench7

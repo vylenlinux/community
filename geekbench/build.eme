@@ -6,7 +6,7 @@ homepage="https://www.geekbench.com/"
 maintainer="Vylen Linux Team"
 
 name=geekbench
-version=6.7.1
+version=7.0.0
 release=1
 source="${name}-${version}.tar.gz::http://cdn.geekbench.com/Geekbench-${version}-Linux.tar.gz"
 
@@ -14,13 +14,12 @@ build() {
     # shellcheck disable=SC2164
     cd "Geekbench-${version}-Linux"
 
-    install -Dm755 "${name}_x86_64" "${PKG}/opt/${name}/${name}_x86_64"
-    install -Dm755 "${name}_avx2" "${PKG}/opt/${name}/${name}_avx2"
-    install -Dm755 "${name}6" "${PKG}/opt/${name}/"
-
-    install -Dm644 geekbench.plar "${PKG}/opt/${name}/geekbench.plar"
-    install -Dm644 geekbench-workload.plar "${PKG}/opt/${name}/geekbench-workload.plar"
+    install -Dm755 "${name}${version%%.*}" -t "$PKG/opt/${name}/"
+    install -Dm755 "${name}_avx2" -t "$PKG/opt/${name}/"
+    install -Dm755 "${name}_x86_64" -t "$PKG/opt/${name}/"
+    install -Dm644 geekbench.plxr -t "$PKG/opt/${name}/"
+    install -Dm644 geekbench-workload.plxr -t "$PKG/opt/${name}/"
 
     install -d "${PKG}/usr/bin"
-    ln -s /opt/${name}/${name}6 $PKG/usr/bin/${name}
+    ln -s "/opt/${name}/${name}${version%%.*}" "${PKG}/usr/bin/${name}"
 }
