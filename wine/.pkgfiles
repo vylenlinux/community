@@ -1,4 +1,4 @@
-wine-11.13-1
+wine-11.14-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/revdep.d/
 -rw-r--r-- root/root    etc/revdep.d/wine.conf
@@ -331,6 +331,7 @@ drwxr-xr-x root/root    usr/include/wine/windows/
 -rw-r--r-- root/root    usr/include/wine/windows/cderr.h
 -rw-r--r-- root/root    usr/include/wine/windows/cdosys.h
 -rw-r--r-- root/root    usr/include/wine/windows/cdosys.idl
+-rw-r--r-- root/root    usr/include/wine/windows/cfapi.h
 -rw-r--r-- root/root    usr/include/wine/windows/cfg.h
 -rw-r--r-- root/root    usr/include/wine/windows/cfgmgr32.h
 -rw-r--r-- root/root    usr/include/wine/windows/cguid.h
@@ -2342,6 +2343,7 @@ drwxr-xr-x root/root    usr/lib/wine/i386-windows/
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/olethk32.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/oleview.exe
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/opcservices.dll
+-rw-r--r-- root/root    usr/lib/wine/i386-windows/opencl.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/opengl32.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/packager.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/pdh.dll
@@ -2638,6 +2640,7 @@ drwxr-xr-x root/root    usr/lib/wine/i386-windows/
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/wordpad.exe
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/wow32.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/wpc.dll
+-rw-r--r-- root/root    usr/lib/wine/i386-windows/wpcap.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/write.exe
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/ws2_32.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/wscript.exe
@@ -2965,6 +2968,7 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-unix/
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/nsiproxy.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/ntdll.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/odbc32.so
+-rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/opencl.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/opengl32.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/qcap.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/sane.so
@@ -2984,6 +2988,7 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-unix/
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/winewayland.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/winex11.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/winspool.so
+-rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/wpcap.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/ws2_32.so
 drwxr-xr-x root/root    usr/lib/wine/x86_64-windows/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/acledit.dll
@@ -3693,6 +3698,7 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-windows/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/olethk32.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/oleview.exe
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/opcservices.dll
+-rw-r--r-- root/root    usr/lib/wine/x86_64-windows/opencl.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/opengl32.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/packager.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/pdh.dll
@@ -3965,6 +3971,7 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-windows/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/wow64cpu.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/wow64win.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/wpc.dll
+-rw-r--r-- root/root    usr/lib/wine/x86_64-windows/wpcap.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/write.exe
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/ws2_32.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/wscript.exe
