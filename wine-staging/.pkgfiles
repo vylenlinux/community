@@ -1,4 +1,4 @@
-wine-staging-11.13-1
+wine-staging-11.14-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/revdep.d/
 -rw-r--r-- root/root    etc/revdep.d/wine-staging.conf
@@ -331,6 +331,7 @@ drwxr-xr-x root/root    usr/include/wine/windows/
 -rw-r--r-- root/root    usr/include/wine/windows/cderr.h
 -rw-r--r-- root/root    usr/include/wine/windows/cdosys.h
 -rw-r--r-- root/root    usr/include/wine/windows/cdosys.idl
+-rw-r--r-- root/root    usr/include/wine/windows/cfapi.h
 -rw-r--r-- root/root    usr/include/wine/windows/cfg.h
 -rw-r--r-- root/root    usr/include/wine/windows/cfgmgr32.h
 -rw-r--r-- root/root    usr/include/wine/windows/cguid.h
