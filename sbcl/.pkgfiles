@@ -1,4 +1,4 @@
-sbcl-2.6.6-1
+sbcl-2.6.7-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/sbcl
@@ -26,6 +26,8 @@ drwxr-xr-x root/root    usr/lib/sbcl/contrib/
 -rw-r--r-- root/root    usr/lib/sbcl/contrib/sb-grovel.fasl
 -rw-r--r-- root/root    usr/lib/sbcl/contrib/sb-introspect.asd
 -rw-r--r-- root/root    usr/lib/sbcl/contrib/sb-introspect.fasl
+-rw-r--r-- root/root    usr/lib/sbcl/contrib/sb-manual.asd
+-rw-r--r-- root/root    usr/lib/sbcl/contrib/sb-manual.fasl
 -rw-r--r-- root/root    usr/lib/sbcl/contrib/sb-md5.asd
 -rw-r--r-- root/root    usr/lib/sbcl/contrib/sb-md5.fasl
 -rw-r--r-- root/root    usr/lib/sbcl/contrib/sb-mpfr.asd
@@ -76,6 +78,7 @@ drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-aclrepl/
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-aclrepl/README
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-aclrepl/debug.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-aclrepl/inspect.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-aclrepl/manual.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-aclrepl/repl.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-aclrepl/sb-aclrepl.asd
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-aclrepl/sb-aclrepl.texinfo
@@ -95,6 +98,7 @@ drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-bsd-sockets/
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-bsd-sockets/inet4.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-bsd-sockets/inet6.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-bsd-sockets/local.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-bsd-sockets/manual.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-bsd-sockets/misc.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-bsd-sockets/name-service.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-bsd-sockets/protocol.lisp
@@ -121,6 +125,7 @@ drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-concurrency/
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-concurrency/frlock.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-concurrency/gate.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-concurrency/mailbox.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-concurrency/manual.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-concurrency/package.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-concurrency/queue.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-concurrency/sb-concurrency.asd
@@ -136,6 +141,7 @@ drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-cover/
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-cover/cover.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-cover/file-info-tests.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-cover/genhtml.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-cover/manual.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-cover/save-restore-tests.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-cover/sb-cover.asd
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-cover/sb-cover.texinfo
@@ -175,21 +181,71 @@ drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-grovel/
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-grovel/defpackage.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-grovel/example-constants.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-grovel/foreign-glue.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-grovel/manual.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-grovel/sb-grovel.asd
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-grovel/sb-grovel.texinfo
 drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-introspect/
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-introspect/introspect.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-introspect/load-test.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-introspect/manual.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-introspect/sb-introspect.asd
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-introspect/sb-introspect.texinfo
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-introspect/test-driver.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-introspect/test.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-introspect/xref-test-data.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-introspect/xref-test.lisp
+drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-manual/
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/.gitignore
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/README.md
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/TODO.md
+drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-manual/doc/
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/beyond-ansi.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/compiler.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/concepts.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/contrib-modules.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/debugger.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/deprecation.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/efficiency.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/external-formats.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/ffi.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/intro.lisp
+lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/networking.lisp -> ../../sb-bsd-sockets/manual.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/package-locks.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/pathnames.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/profiling.lisp
+lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sb-aclrepl.lisp -> ../../sb-aclrepl/manual.lisp
+lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sb-concurrency.lisp -> ../../sb-concurrency/manual.lisp
+lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sb-cover.lisp -> ../../sb-cover/manual.lisp
+lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sb-grovel.lisp -> ../../sb-grovel/manual.lisp
+lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sb-introspect.lisp -> ../../sb-introspect/manual.lisp
+lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sb-md5.lisp -> ../../sb-md5/manual.lisp
+lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sb-posix.lisp -> ../../sb-posix/manual.lisp
+lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sb-queue.lisp -> ../../sb-queue/manual.lisp
+lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sb-rotate-byte.lisp -> ../../sb-rotate-byte/manual.lisp
+lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sb-simd.lisp -> ../../sb-simd/manual.lisp
+lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sb-simple-streams.lisp -> ../../sb-simple-streams/manual.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sbcl.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/start-stop.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/streams.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/support-and-bugs.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/threading.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/timers.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/docstring.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/late.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/make-pax-docs.lisp
+-rwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-manual/make-pax-docs.sh
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/manual.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/markdown.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/package.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/pax.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/sb-manual.asd
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/sb-manual.texinfo
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/texinfo.lisp
 drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-md5/
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-md5/COPYING
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-md5/NEWS
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-md5/README
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-md5/manual.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-md5/md5-tests.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-md5/md5.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-md5/sb-md5.asd
@@ -213,11 +269,13 @@ drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-posix/
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-posix/interface.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-posix/libc-tests.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-posix/macros.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-posix/manual.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-posix/posix-tests.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-posix/sb-posix.asd
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-posix/sb-posix.texinfo
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-posix/strtod.lisp
 drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-queue/
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-queue/manual.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-queue/package.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-queue/sb-queue.asd
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-queue/sb-queue.texinfo
@@ -227,6 +285,7 @@ drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-rotate-byte/
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-rotate-byte/arm64-vm.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-rotate-byte/compiler.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-rotate-byte/loongarch64-vm.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-rotate-byte/manual.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-rotate-byte/package.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-rotate-byte/ppc-vm.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-rotate-byte/ppc64-vm.lisp
@@ -267,9 +326,11 @@ drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-simd/code/
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-set-case.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-set.lisp
 drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-sets/
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-sets/arm64.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-sets/avx.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-sets/avx2.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-sets/fma.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-sets/neon.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-sets/sb-simd.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-sets/sse.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-sets/sse2.lisp
@@ -287,6 +348,7 @@ drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-simd/examples/
 -rwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-simd/examples/benchmarks.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/examples/simd-dot.lisp
 -rwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-simd/examples/simd-sum.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/manual.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/sb-simd.asd
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/sb-simd.texinfo
 drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/
@@ -310,6 +372,7 @@ drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-simple-streams/
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simple-streams/internal.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simple-streams/iodefs.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simple-streams/lp491087.txt
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simple-streams/manual.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simple-streams/null.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simple-streams/package.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simple-streams/sb-simple-streams.asd
@@ -708,6 +771,7 @@ drwxr-xr-x root/root    usr/share/sbcl-source/src/compiler/arm64/
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/arm64/pred.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/arm64/sap.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/arm64/show.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/arm64/simd-pack.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/arm64/subprim.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/arm64/system.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/arm64/target-insts.lisp
@@ -775,6 +839,7 @@ drwxr-xr-x root/root    usr/share/sbcl-source/src/compiler/generic/
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/globaldb.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/gtn.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/info-vector.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/int-sset.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/integer-tran.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/ir1-translators.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/ir1final.lisp
@@ -972,6 +1037,7 @@ drwxr-xr-x root/root    usr/share/sbcl-source/src/compiler/x86-64/
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/x86-64/arith.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/x86-64/array.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/x86-64/avx2-insts.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/x86-64/avx512-insts.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/x86-64/c-call.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/x86-64/call.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/x86-64/cell.lisp
@@ -988,6 +1054,7 @@ drwxr-xr-x root/root    usr/share/sbcl-source/src/compiler/x86-64/
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/x86-64/sap.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/x86-64/show.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/x86-64/simd-pack-256.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/x86-64/simd-pack-512.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/x86-64/simd-pack.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/x86-64/subprim.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/x86-64/system.lisp
