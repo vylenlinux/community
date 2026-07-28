@@ -6,7 +6,7 @@ homepage="https://github.com/hyprwm/Hyprland"
 maintainer="Vylen Linux Team"
 
 name=hyprland
-version=0.56.0
+version=0.56.1
 release=1
 
 source="${name}-${version}.tar.gz::https://github.com/hyprwm/${name}/releases/download/v${version}/source-v${version}.tar.gz
@@ -30,6 +30,6 @@ build() {
     install -Dm644 "${SRC}/hyprland.desktop" -t "${PKG}/usr/share/wayland-sessions/"
     rm -f "${PKG}/usr/share/wayland-sessions/hyprland-systemd.desktop"
 
-    rm -fr "${PKG}/usr/include/glaze" \
+    rm -rf "${PKG}/usr/include/glaze" \
         "${PKG}/usr/share/glaze"
 }
