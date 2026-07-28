@@ -6,7 +6,7 @@ homepage="https://gitlab.com/octara/octara"
 maintainer="CELESTIFYX Team <celestifyx@gmail.com>"
 
 name=octara
-version=1.0.3
+version=1.0.4
 release=1
 source="https://gitlab.com/${name}/${name}/-/archive/${version}/${name}-${version}.tar.gz"
 
