@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # shellcheck disable=SC2034
 description="A control daemon, CLI tools, and a collection of crates for interacting with ASUS ROG laptops"
@@ -13,11 +13,9 @@ source="${name}-${version}.tar.gz::https://github.com/OpenGamingCollective/${nam
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-    export CARGO_HOME="${SRC}/cargo"
 
-    cargo build \
-        --release \
-        --locked
+    export CARGO_HOME="${SRC}/cargo"
+    cargo build --release
 
     for bin in "${name}" asusd asusd-user; do
         install -Dm755 "target/release/${bin}" -t "${PKG}/usr/bin/"
