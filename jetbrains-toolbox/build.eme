@@ -6,7 +6,7 @@ homepage="https://www.jetbrains.com/toolbox/"
 maintainer="CELESTIFYX Team <celestifyx@gmail.com>"
 
 name=jetbrains-toolbox
-version=3.6.2.85969
+version=3.6.3.86383
 release=1
 
 source="https://download.jetbrains.com/toolbox/${name}-${version}.tar.gz
