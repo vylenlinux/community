@@ -1,4 +1,4 @@
-kitty-0.48.1-1
+kitty-0.48.2-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/kitten
@@ -899,6 +899,7 @@ drwxr-xr-x root/root    usr/share/man/man1/
 -rw-r--r-- root/root    usr/share/man/man1/kitten-@-resize-os-window.1.gz
 -rw-r--r-- root/root    usr/share/man/man1/kitten-@-resize-window.1.gz
 -rw-r--r-- root/root    usr/share/man/man1/kitten-@-run.1.gz
+-rw-r--r-- root/root    usr/share/man/man1/kitten-@-screenshot.1.gz
 -rw-r--r-- root/root    usr/share/man/man1/kitten-@-scroll-window.1.gz
 -rw-r--r-- root/root    usr/share/man/man1/kitten-@-select-window.1.gz
 -rw-r--r-- root/root    usr/share/man/man1/kitten-@-send-key.1.gz
