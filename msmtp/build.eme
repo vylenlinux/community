@@ -6,7 +6,7 @@ homepage="https://marlam.de/msmtp/"
 maintainer="Vylen Linux Team"
 
 name=msmtp
-version=1.8.33
+version=1.8.34
 release=1
 source="https://marlam.de/${name}/releases/${name}-${version}.tar.xz"
 
