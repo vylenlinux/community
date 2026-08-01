@@ -6,15 +6,15 @@ homepage="https://github.com/junegunn/fzf/"
 maintainer="Vylen Linux Team"
 
 name=fzf
-version=0.74.1
+version=0.74.2
 release=1
 source="${name}-${version}.tar.gz::https://github.com/junegunn/${name}/archive/v${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-    go build -o fzf
+    go build -o "${name}"
 
-    install -Dm755 fzf bin/fzf-tmux -t "${PKG}/usr/bin/"
-    install -Dm644 shell/*.bash shell/*.zsh -t "${PKG}/usr/share/fzf/"
+    install -Dm755 "${name}" bin/fzf-tmux -t "${PKG}/usr/bin/"
+    install -Dm644 shell/*.bash shell/*.zsh -t "${PKG}/usr/share/${name}/"
 }
