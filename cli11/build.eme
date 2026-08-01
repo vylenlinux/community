@@ -6,7 +6,7 @@ maintainer="Vylen Linux Team"
 homepage="ttps://github.com/CLIUtils/CLI11"
 
 name=cli11
-version=2.7.0
+version=2.7.1
 release=1
 source="${name}-${version}.tar.gz::https://github.com/CLIUtils/${name}/archive/v${version}/CLI11-${version}.tar.gz"
 
