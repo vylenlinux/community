@@ -1,7 +1,6 @@
-docker-29.6.2-2
+docker-29.7.1-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/bash_completion.d/
--rw-r--r-- root/root    etc/bash_completion.d/docker
 drwxr-xr-x root/root    etc/conf.d/
 -rw-r--r-- root/root    etc/conf.d/docker
 -rw-r--r-- root/root    etc/docker.conf
@@ -9,7 +8,6 @@ drwxr-xr-x root/root    etc/init.d/
 -rwxr-xr-x root/root    etc/init.d/docker
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
--rwxr-xr-x root/root    usr/bin/docker
 lrwxrwxrwx root/root    usr/bin/docker-containerd -> containerd
 lrwxrwxrwx root/root    usr/bin/docker-containerd-ctr -> ctr
 lrwxrwxrwx root/root    usr/bin/docker-containerd-shim -> containerd-shim
