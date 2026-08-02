@@ -1,4 +1,4 @@
-papirus-icon-theme-light-20250501-1
+papirus-icon-theme-light-20260801-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/icons/
@@ -299,13 +299,13 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/battery_plugge
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/bauh-update-tray.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/bitcoin-indicator.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/bitwarden-tray.svg
-lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/blueberry-tray-active.svg -> bluetooth-active.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/blueberry-tray-active.svg -> bluetooth-paired.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/blueberry-tray-disabled.svg -> bluetooth-disabled.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/blueberry-tray.svg -> bluetooth-active.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/bluemail-tray.svg
-lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/blueman-active.svg -> bluetooth-active.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/blueman-active.svg -> bluetooth-paired.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/blueman-disabled.svg -> bluetooth-disabled.svg
-lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/blueman-tray-active.svg -> bluetooth-active.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/blueman-tray-active.svg -> bluetooth-paired.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/blueman-tray-disabled.svg -> bluetooth-disabled.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/blueman-tray.svg -> bluetooth-active.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/blueman.svg -> bluetooth-active.svg
@@ -363,6 +363,10 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/com.github.zte
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/com.github.ztefn.haguichi-connecting-2.svg -> haguichi-connecting-2.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/com.github.ztefn.haguichi-connecting-3.svg -> haguichi-connecting-3.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/com.github.ztefn.haguichi-disconnected.svg -> haguichi-disconnected.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/com.protonvpn.www.proton-vpn-sign.svg -> protonvpn-tray.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/com.protonvpn.www.state-connected.svg -> protonvpngui-connected.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/com.protonvpn.www.state-disconnected.svg -> protonvpngui-disconnected.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/com.protonvpn.www.state-error.svg -> protonvpngui-no-network.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/connect_creating.svg -> network-transmit-receive.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/connect_established.svg -> network-transmit-receive.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/connect_no.svg -> network-disconnected.svg
@@ -485,6 +489,18 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/fluxgui-panel.
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/franz-panel.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/freezer-panel.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/fusion-icon-panel.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/gajim-status-away.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/gajim-status-chat.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/gajim-status-connecting.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/gajim-status-dnd.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/gajim-status-error.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/gajim-status-message-new.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/gajim-status-message.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/gajim-status-muc-active.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/gajim-status-muc-inactive.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/gajim-status-offline.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/gajim-status-online.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/gajim-status-xa.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/gammastep-status-off.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/gammastep-status-on.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/gdlauncher-tray.svg
@@ -645,6 +661,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/idle-high-sign
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/idle-high-signal.svg -> network-wireless-signal-excellent.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/idle-low-signal-lock.svg -> network-wireless-secure-signal-ok.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/idle-low-signal.svg -> network-wireless-signal-ok.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-chatgpt.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-cpufreq-100.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-cpufreq-25.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-cpufreq-50.svg
@@ -1227,8 +1244,11 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-keyb
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-keyboard-Zh-6.svg -> indicator-keyboard-Zh.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-keyboard-Zh.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-keyboard.svg -> xkbmod-indicator.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-linux.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-load.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-lunar-satelite.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-lunar.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-m2.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-messages-new.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-messages-red.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-messages.svg -> applications-email-panel.svg
@@ -1236,9 +1256,11 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-mess
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-notification-read.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-notification-unread-dnd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-notification-unread.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-nvme.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-privacy-panel.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-rss-aware-attention.svg -> indicator-feedindicator-attention.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-rss-aware.svg -> indicator-feedindicator.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-ryzen.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-sensors-battery.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-sensors-case.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-sensors-chip.svg
@@ -1252,6 +1274,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-rss-
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-stickynotes-mono.svg -> notes-panel.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-trashindicator-attention.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-trashindicator.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-videocard.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-virtual-box.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-workspaces-1.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/indicator-workspaces-2.svg
@@ -1610,6 +1633,9 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/numlock-on.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/nutstore-paused-panel.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/nutstore-synchronized-panel.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/nutstore-synchronizing-panel.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/nwg-update-available.svg -> mintupdate-updates-available.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/nwg-update-checking.svg -> mintupdate-checking.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/nwg-update-noupdate.svg -> mintupdate-up-to-date.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/obs-tray-active.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/obs-tray.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/octopi-error.svg
@@ -1642,6 +1668,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/org.keepassxc.
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/org.sparkleshare.SparkleShare-syncing-error.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/org.sparkleshare.SparkleShare-syncing-up.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/org.sparkleshare.SparkleShare-syncing.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/org.xfce.notes.tray.svg -> mynotes-tray.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/overgrive-app-ind-con-1.svg -> grive-app-ind-con-1.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/overgrive-app-ind-con-2.svg -> grive-app-ind-con-2.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/overgrive-app-ind-con-3.svg -> grive-app-ind-con-2.svg
@@ -1755,6 +1782,9 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/preferences-sy
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/prime-hybrid.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/prime-intel.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/prime-nvidia.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/printer-error.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/printer-printing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/printer-warning.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/printer.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/process-syncing-down.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/16x16/panel/process-syncing-error.svg
@@ -2360,6 +2390,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/panel/zeal-panel.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/places -> ../../Papirus/16x16/places
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/status -> ../../Papirus/16x16/status
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/symbolic -> ../../Papirus/16x16/symbolic
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16/symbolic-up-to-20 -> symbolic
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/16x16@2x -> 16x16
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/18x18 -> ../Papirus/18x18
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/18x18@2x -> 18x18
@@ -2706,13 +2737,13 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/battery_plugge
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/bauh-update-tray.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/bitcoin-indicator.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/bitwarden-tray.svg
-lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/blueberry-tray-active.svg -> bluetooth-active.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/blueberry-tray-active.svg -> bluetooth-paired.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/blueberry-tray-disabled.svg -> bluetooth-disabled.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/blueberry-tray.svg -> bluetooth-active.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/bluemail-tray.svg
-lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/blueman-active.svg -> bluetooth-active.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/blueman-active.svg -> bluetooth-paired.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/blueman-disabled.svg -> bluetooth-disabled.svg
-lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/blueman-tray-active.svg -> bluetooth-active.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/blueman-tray-active.svg -> bluetooth-paired.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/blueman-tray-disabled.svg -> bluetooth-disabled.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/blueman-tray.svg -> bluetooth-active.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/blueman.svg -> bluetooth-active.svg
@@ -2770,6 +2801,10 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/com.github.zte
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/com.github.ztefn.haguichi-connecting-2.svg -> haguichi-connecting-2.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/com.github.ztefn.haguichi-connecting-3.svg -> haguichi-connecting-3.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/com.github.ztefn.haguichi-disconnected.svg -> haguichi-disconnected.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/com.protonvpn.www.proton-vpn-sign.svg -> protonvpn-tray.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/com.protonvpn.www.state-connected.svg -> protonvpngui-connected.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/com.protonvpn.www.state-disconnected.svg -> protonvpngui-disconnected.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/com.protonvpn.www.state-error.svg -> protonvpngui-no-network.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/connect_creating.svg -> network-transmit-receive.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/connect_established.svg -> network-transmit-receive.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/connect_no.svg -> network-disconnected.svg
@@ -2892,6 +2927,18 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/fluxgui-panel.
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/franz-panel.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/freezer-panel.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/fusion-icon-panel.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/gajim-status-away.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/gajim-status-chat.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/gajim-status-connecting.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/gajim-status-dnd.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/gajim-status-error.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/gajim-status-message-new.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/gajim-status-message.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/gajim-status-muc-active.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/gajim-status-muc-inactive.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/gajim-status-offline.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/gajim-status-online.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/gajim-status-xa.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/gammastep-status-off.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/gammastep-status-on.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/gdlauncher-tray.svg
@@ -3052,6 +3099,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/idle-high-sign
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/idle-high-signal.svg -> network-wireless-signal-excellent.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/idle-low-signal-lock.svg -> network-wireless-secure-signal-ok.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/idle-low-signal.svg -> network-wireless-signal-ok.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-chatgpt.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-cpufreq-100.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-cpufreq-25.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-cpufreq-50.svg
@@ -3634,8 +3682,11 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-keyb
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-keyboard-Zh-6.svg -> indicator-keyboard-Zh.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-keyboard-Zh.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-keyboard.svg -> xkbmod-indicator.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-linux.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-load.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-lunar-satelite.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-lunar.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-m2.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-messages-new.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-messages-red.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-messages.svg -> applications-email-panel.svg
@@ -3643,9 +3694,11 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-mess
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-notification-read.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-notification-unread-dnd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-notification-unread.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-nvme.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-privacy-panel.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-rss-aware-attention.svg -> indicator-feedindicator-attention.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-rss-aware.svg -> indicator-feedindicator.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-ryzen.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-sensors-battery.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-sensors-case.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-sensors-chip.svg
@@ -3659,6 +3712,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-rss-
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-stickynotes-mono.svg -> notes-panel.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-trashindicator-attention.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-trashindicator.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-videocard.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-virtual-box.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-workspaces-1.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/indicator-workspaces-2.svg
@@ -4115,6 +4169,9 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/numlock-on.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/nutstore-paused-panel.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/nutstore-synchronized-panel.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/nutstore-synchronizing-panel.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/nwg-update-available.svg -> mintupdate-updates-available.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/nwg-update-checking.svg -> mintupdate-checking.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/nwg-update-noupdate.svg -> mintupdate-up-to-date.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/obs-tray-active.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/obs-tray.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/octopi-error.svg
@@ -4147,6 +4204,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/org.keepassxc.
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/org.sparkleshare.SparkleShare-syncing-error.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/org.sparkleshare.SparkleShare-syncing-up.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/org.sparkleshare.SparkleShare-syncing.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/org.xfce.notes.tray.svg -> mynotes-tray.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/overgrive-app-ind-con-1.svg -> grive-app-ind-con-1.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/overgrive-app-ind-con-2.svg -> grive-app-ind-con-2.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/overgrive-app-ind-con-3.svg -> grive-app-ind-con-2.svg
@@ -4260,6 +4318,9 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/22x22/panel/preferences-sy
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/prime-hybrid.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/prime-intel.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/prime-nvidia.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/printer-error.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/printer-printing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/printer-warning.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/printer.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/process-syncing-down.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/22x22/panel/process-syncing-error.svg
@@ -5209,13 +5270,13 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/battery_plugge
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/bauh-update-tray.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/bitcoin-indicator.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/bitwarden-tray.svg
-lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/blueberry-tray-active.svg -> bluetooth-active.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/blueberry-tray-active.svg -> bluetooth-paired.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/blueberry-tray-disabled.svg -> bluetooth-disabled.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/blueberry-tray.svg -> bluetooth-active.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/bluemail-tray.svg
-lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/blueman-active.svg -> bluetooth-active.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/blueman-active.svg -> bluetooth-paired.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/blueman-disabled.svg -> bluetooth-disabled.svg
-lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/blueman-tray-active.svg -> bluetooth-active.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/blueman-tray-active.svg -> bluetooth-paired.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/blueman-tray-disabled.svg -> bluetooth-disabled.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/blueman-tray.svg -> bluetooth-active.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/blueman.svg -> bluetooth-active.svg
@@ -5273,6 +5334,10 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/com.github.zte
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/com.github.ztefn.haguichi-connecting-2.svg -> haguichi-connecting-2.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/com.github.ztefn.haguichi-connecting-3.svg -> haguichi-connecting-3.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/com.github.ztefn.haguichi-disconnected.svg -> haguichi-disconnected.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/com.protonvpn.www.proton-vpn-sign.svg -> protonvpn-tray.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/com.protonvpn.www.state-connected.svg -> protonvpngui-connected.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/com.protonvpn.www.state-disconnected.svg -> protonvpngui-disconnected.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/com.protonvpn.www.state-error.svg -> protonvpngui-no-network.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/connect_creating.svg -> network-transmit-receive.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/connect_established.svg -> network-transmit-receive.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/connect_no.svg -> network-disconnected.svg
@@ -5395,6 +5460,18 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/fluxgui-panel.
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/franz-panel.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/freezer-panel.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/fusion-icon-panel.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/gajim-status-away.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/gajim-status-chat.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/gajim-status-connecting.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/gajim-status-dnd.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/gajim-status-error.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/gajim-status-message-new.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/gajim-status-message.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/gajim-status-muc-active.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/gajim-status-muc-inactive.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/gajim-status-offline.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/gajim-status-online.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/gajim-status-xa.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/gammastep-status-off.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/gammastep-status-on.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/gdlauncher-tray.svg
@@ -5555,6 +5632,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/idle-high-sign
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/idle-high-signal.svg -> network-wireless-signal-excellent.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/idle-low-signal-lock.svg -> network-wireless-secure-signal-ok.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/idle-low-signal.svg -> network-wireless-signal-ok.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-chatgpt.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-cpufreq-100.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-cpufreq-25.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-cpufreq-50.svg
@@ -6137,8 +6215,11 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-keyb
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-keyboard-Zh-6.svg -> indicator-keyboard-Zh.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-keyboard-Zh.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-keyboard.svg -> xkbmod-indicator.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-linux.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-load.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-lunar-satelite.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-lunar.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-m2.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-messages-new.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-messages-red.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-messages.svg -> applications-email-panel.svg
@@ -6146,9 +6227,11 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-mess
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-notification-read.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-notification-unread-dnd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-notification-unread.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-nvme.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-privacy-panel.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-rss-aware-attention.svg -> indicator-feedindicator-attention.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-rss-aware.svg -> indicator-feedindicator.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-ryzen.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-sensors-battery.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-sensors-case.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-sensors-chip.svg
@@ -6162,6 +6245,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-rss-
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-stickynotes-mono.svg -> notes-panel.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-trashindicator-attention.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-trashindicator.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-videocard.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-virtual-box.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-workspaces-1.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/indicator-workspaces-2.svg
@@ -6520,6 +6604,9 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/numlock-on.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/nutstore-paused-panel.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/nutstore-synchronized-panel.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/nutstore-synchronizing-panel.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/nwg-update-available.svg -> mintupdate-updates-available.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/nwg-update-checking.svg -> mintupdate-checking.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/nwg-update-noupdate.svg -> mintupdate-up-to-date.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/obs-tray-active.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/obs-tray.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/octopi-error.svg
@@ -6552,6 +6639,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/org.keepassxc.
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/org.sparkleshare.SparkleShare-syncing-error.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/org.sparkleshare.SparkleShare-syncing-up.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/org.sparkleshare.SparkleShare-syncing.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/org.xfce.notes.tray.svg -> mynotes-tray.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/overgrive-app-ind-con-1.svg -> grive-app-ind-con-1.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/overgrive-app-ind-con-2.svg -> grive-app-ind-con-2.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/overgrive-app-ind-con-3.svg -> grive-app-ind-con-2.svg
@@ -6665,6 +6753,9 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Light/24x24/panel/preferences-sy
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/prime-hybrid.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/prime-intel.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/prime-nvidia.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/printer-error.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/printer-printing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/printer-warning.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/printer.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/process-syncing-down.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Light/24x24/panel/process-syncing-error.svg

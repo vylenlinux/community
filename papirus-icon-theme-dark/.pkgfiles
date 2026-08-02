@@ -1,4 +1,4 @@
-papirus-icon-theme-dark-20250501-2
+papirus-icon-theme-dark-20260801-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/icons/
@@ -91,15 +91,22 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/arrow-up.svg 
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/audio-volume-low.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/audio-volume-medium.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/audio-volume-muted.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/auto-scale-all.svg -> zoom-fit-selection.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/auto-scale-x.svg -> zoom-fit-width.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/auto-scale-y.svg -> zoom-fit-height.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/auto-type.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/autocorrection.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/automated-tasks.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/back.svg -> go-previous.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/bitmap-trace.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/blueman-down-active.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/blueman-down-inactive.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/blueman-plugin.svg -> plugins.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/blueman-send-file.svg -> mail-send.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/blueman-trust.svg -> object-select.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/blueman-untrust.svg -> process-stop.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/blueman-up-active.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/blueman-up-inactive.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/blur.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/blurfx.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/blurimage.svg -> blur.svg
@@ -212,6 +219,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/colormanageme
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/compass.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/composite-track-on.svg -> kdenlive-composite.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/composite-track-preview.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/composition.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/configuration.svg -> configure.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/configure-shortcuts.svg -> fcitx-kbd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/configure-toolbars.svg
@@ -266,7 +274,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/dialog-close.
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/dialog-filters.svg -> view-filter.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/dialog-geometry.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/dialog-icon-preview.svg -> document-preview.svg
-lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/dialog-information.svg -> help-about.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/dialog-information.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/dialog-input-devices.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/dialog-layers.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/dialog-memory.svg -> view-statistics.svg
@@ -278,6 +286,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/dialog-ok-app
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/dialog-ok.svg -> object-select.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/dialog-password.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/dialog-path-effects.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/dialog-question.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/dialog-rows-and-columns.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/dialog-scripts.svg -> cm_runterm.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/dialog-selectors.svg -> code-context.svg
@@ -782,6 +791,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/gpgsm.svg -> 
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/gps.svg -> edit-paste-in-place.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/grid-axonometric.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/grid-rectangular.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/grid.svg -> view-grid.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/group-delete.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/group-edit.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/group-new.svg
@@ -1332,6 +1342,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/menu_new_sep.
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/message-close.svg -> window-close.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/messagebox_warning.svg -> dialog-error.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/milestone.svg -> rating.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/modified.svg -> document-save.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/music-amarok.svg -> media-show-active-track-amarok.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/nemo-eject.svg -> media-eject.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/network-connect.svg
@@ -1505,6 +1516,8 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/password-show
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/path-tweak-roughen.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/path-tweak-shrink.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/path-union.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/pause-session.svg -> media-playback-pause.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/paused.svg -> media-playback-paused.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/pdf-annotations.svg -> dialog-messages.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/peers.svg -> view-user-offline-kopete.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/perspective-parallel.svg
@@ -1569,6 +1582,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/project-devel
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/project-development.svg -> window-new.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/project-open.svg -> document-open-folder.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/query-free-busy.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/queued.svg -> document-open-recent.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/quickopen-class.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/quickopen-file.svg -> fork.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/quickopen-function.svg
@@ -1622,6 +1636,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/radio.svg -> 
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/rating-unrated.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/rating.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/ratiocrop.svg -> transform-crop.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/reannounce.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/recently_used.svg -> document-open-recent.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/record.svg -> kdenlive-show-video.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/rectangle-make-corners-sharp.svg
@@ -1872,6 +1887,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/stock_xfburn-
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/stock_yes.svg -> object-select.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/stock_zoom-page.svg -> zoom-in.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/stop.svg -> process-stop.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/stopped.svg -> media-playback-stopped.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/story-editor.svg -> view-media-playlist.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/straight-connector.svg -> draw-connector.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/stroke-cap-butt.svg
@@ -1931,6 +1947,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/tag-propertie
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/tag-recents.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/tag-reset.svg -> edit-select-invert.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/tag.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/tags.svg -> tag.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/tap-create.svg -> archive.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/tap-extract-to.svg -> cm_extractfiles.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/tap-extract.svg -> cm_extractfiles.svg
@@ -2005,6 +2022,11 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/tools-rip-vid
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/tools-wizard.svg -> autocorrection.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/tools.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/top.svg -> go-top.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/torrent-creator.svg -> document-new.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/torrent-magnet.svg -> kt-magnet.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/torrent-start-forced.svg -> media-seek-forward.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/torrent-start.svg -> media-playback-start.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/actions/torrent-stop.svg -> media-playback-stop.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/torrents.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/tracker-error.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/actions/tracker-warning.svg
@@ -2742,6 +2764,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/places/user-home-open
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/places/user-trash.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/status -> ../../Papirus/16x16/status
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/symbolic -> ../../Papirus/16x16/symbolic
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/symbolic-up-to-20 -> symbolic
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16@2x -> 16x16
 drwxr-xr-x root/root    usr/share/icons/Papirus-Dark/18x18/
 drwxr-xr-x root/root    usr/share/icons/Papirus-Dark/18x18/actions/
@@ -3053,6 +3076,9 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/arrow-up.svg 
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/audio-volume-low.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/audio-volume-medium.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/audio-volume-muted.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/auto-scale-all.svg -> zoom-fit-selection.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/auto-scale-x.svg -> zoom-fit-width.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/auto-scale-y.svg -> zoom-fit-height.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/auto-type.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/autocorrection.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/automated-tasks.svg
@@ -3171,6 +3197,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/colormanageme
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/compass.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/composite-track-on.svg -> kdenlive-composite.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/composite-track-preview.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/composition.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/configuration.svg -> configure.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/configure-shortcuts.svg -> fcitx-kbd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/configure-toolbars.svg
@@ -3215,7 +3242,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/dialog-close.
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/dialog-fill-and-stroke.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/dialog-filters.svg -> view-filter.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/dialog-icon-preview.svg -> document-preview.svg
-lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/dialog-information.svg -> help-about.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/dialog-information.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/dialog-input-devices.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/dialog-layers.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/dialog-memory.svg -> view-statistics.svg
@@ -3226,6 +3253,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/dialog-ok-app
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/dialog-ok.svg -> object-select.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/dialog-password.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/dialog-path-effects.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/dialog-question.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/dialog-rows-and-columns.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/dialog-scripts.svg -> cm_runterm.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/dialog-selectors.svg -> code-context.svg
@@ -3702,6 +3730,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/gpg.svg -> ob
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/gpgsm.svg -> object-unlocked.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/gps.svg -> edit-paste-in-place.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/grid-rectangular.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/grid.svg -> view-grid.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/group-delete.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/group-edit.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/group-new.svg
@@ -4254,6 +4283,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/menu_new_sep.
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/message-close.svg -> window-close.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/messagebox_warning.svg -> dialog-error.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/milestone.svg -> rating.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/modified.svg -> document-save.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/music-amarok.svg -> media-show-active-track-amarok.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/nemo-eject.svg -> media-eject.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/network-connect.svg
@@ -4391,6 +4421,8 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/password-show
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/path-reverse.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/path-simplify.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/path-union.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/pause-session.svg -> media-playback-pause.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/paused.svg -> media-playback-paused.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/payee-rename.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/pdf-annotations.svg -> dialog-messages.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/pgp-keys.svg
@@ -4457,6 +4489,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/project-devel
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/project-development.svg -> window-new.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/project-open.svg -> document-open-folder.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/query-free-busy.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/queued.svg -> document-open-recent.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/quickopen-class.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/quickopen-file.svg -> fork.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/quickopen-function.svg
@@ -4510,6 +4543,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/radio.svg -> 
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/rating-unrated.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/rating.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/ratiocrop.svg -> transform-crop.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/reannounce.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/recently_used.svg -> document-open-recent.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/reconcile-finish.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/reconcile.svg
@@ -4739,6 +4773,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/stock_xfburn-
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/stock_yes.svg -> object-select.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/stock_zoom-page.svg -> zoom-in.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/stop.svg -> process-stop.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/stopped.svg -> media-playback-stopped.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/story-editor.svg -> view-media-playlist.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/straight-connector.svg -> draw-connector.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/stroke-to-path.svg
@@ -4786,6 +4821,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/tag-propertie
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/tag-recents.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/tag-reset.svg -> edit-select-invert.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/tag.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/tags.svg -> tag.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/tap-create.svg -> archive.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/tap-extract-to.svg -> cm_extractfiles.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/tap-extract.svg -> cm_extractfiles.svg
@@ -4863,6 +4899,11 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/tools-rip-vid
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/tools-wizard.svg -> autocorrection.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/tools.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/top.svg -> go-top.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/torrent-creator.svg -> document-new.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/torrent-magnet.svg -> kt-magnet.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/torrent-start-forced.svg -> media-seek-forward.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/torrent-start.svg -> media-playback-start.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/22x22/actions/torrent-stop.svg -> media-playback-stop.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/torrents.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/transaction-add.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/22x22/actions/transaction-delete.svg
@@ -5329,6 +5370,9 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/arrow-up.svg 
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/audio-volume-low.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/audio-volume-medium.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/audio-volume-muted.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/auto-scale-all.svg -> zoom-fit-selection.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/auto-scale-x.svg -> zoom-fit-width.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/auto-scale-y.svg -> zoom-fit-height.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/auto-type.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/autocorrection.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/automated-tasks.svg
@@ -5438,6 +5482,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/colormanageme
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/compass.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/composite-track-on.svg -> kdenlive-composite.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/composite-track-preview.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/composition.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/configuration.svg -> configure.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/configure-shortcuts.svg -> fcitx-kbd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/configure-toolbars.svg
@@ -5486,7 +5531,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/dialog-close.
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/dialog-filters.svg -> view-filter.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/dialog-geometry.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/dialog-icon-preview.svg -> document-preview.svg
-lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/dialog-information.svg -> help-about.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/dialog-information.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/dialog-input-devices.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/dialog-layers.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/dialog-memory.svg -> view-statistics.svg
@@ -5497,6 +5542,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/dialog-ok-app
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/dialog-ok.svg -> object-select.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/dialog-password.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/dialog-path-effects.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/dialog-question.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/dialog-rows-and-columns.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/dialog-scripts.svg -> cm_runterm.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/dialog-selectors.svg -> code-context.svg
@@ -5991,6 +6037,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/gpgsm.svg -> 
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/gps.svg -> edit-paste-in-place.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/grid-axonometric.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/grid-rectangular.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/grid.svg -> view-grid.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/group-delete.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/group-edit.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/group-new.svg
@@ -6533,6 +6580,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/menu_new_sep.
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/message-close.svg -> window-close.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/messagebox_warning.svg -> dialog-error.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/milestone.svg -> rating.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/modified.svg -> document-save.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/music-amarok.svg -> media-show-active-track-amarok.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/nemo-eject.svg -> media-eject.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/network-connect.svg
@@ -6702,6 +6750,8 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/password-show
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/path-tweak-roughen.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/path-tweak-shrink.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/path-union.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/pause-session.svg -> media-playback-pause.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/paused.svg -> media-playback-paused.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/pdf-annotations.svg -> dialog-messages.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/perspective-parallel.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/pgp-keys.svg
@@ -6763,6 +6813,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/project-devel
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/project-development.svg -> window-new.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/project-open.svg -> document-open-folder.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/query-free-busy.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/queued.svg -> document-open-recent.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/quickopen-class.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/quickopen-file.svg -> fork.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/quickopen-function.svg
@@ -6816,6 +6867,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/radio.svg -> 
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/rating-unrated.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/rating.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/ratiocrop.svg -> transform-crop.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/reannounce.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/recently_used.svg -> document-open-recent.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/record.svg -> kdenlive-show-video.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/rectangle-make-corners-sharp.svg
@@ -7061,6 +7113,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/stock_xfburn-
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/stock_yes.svg -> object-select.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/stock_zoom-page.svg -> zoom-in.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/stop.svg -> process-stop.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/stopped.svg -> media-playback-stopped.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/story-editor.svg -> view-media-playlist.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/straight-connector.svg -> draw-connector.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/stroke-cap-butt.svg
@@ -7115,6 +7168,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/tag-propertie
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/tag-recents.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/tag-reset.svg -> edit-select-invert.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/tag.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/tags.svg -> tag.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/tap-create.svg -> archive.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/tap-extract-to.svg -> cm_extractfiles.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/tap-extract.svg -> cm_extractfiles.svg
@@ -7189,6 +7243,11 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/tools-rip-vid
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/tools-wizard.svg -> autocorrection.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/tools.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/top.svg -> go-top.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/torrent-creator.svg -> document-new.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/torrent-magnet.svg -> kt-magnet.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/torrent-start-forced.svg -> media-seek-forward.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/torrent-start.svg -> media-playback-start.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/torrent-stop.svg -> media-playback-stop.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/torrents.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/24x24/actions/transfers.svg -> document-save-as.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/24x24/actions/transform-browse.svg

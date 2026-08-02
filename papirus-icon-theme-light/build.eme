@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # shellcheck disable=SC2034
 description="Papirus icon theme (Light)"
@@ -6,7 +6,7 @@ homepage="https://github.com/PapirusDevelopmentTeam"
 maintainer="Vylen Linux Team"
 
 name=papirus-icon-theme-light
-version=20250501
+version=20260801
 release=1
 source="https://github.com/PapirusDevelopmentTeam/${name%-light}/archive/${version}/${name%-light}-${version}.tar.gz"
 
