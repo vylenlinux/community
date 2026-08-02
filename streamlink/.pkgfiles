@@ -1,18 +1,18 @@
-streamlink-8.4.0-1
+streamlink-8.5.0-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/streamlink
 drwxr-xr-x root/root    usr/lib/
 drwxr-xr-x root/root    usr/lib/python3.14/
 drwxr-xr-x root/root    usr/lib/python3.14/site-packages/
-drwxr-xr-x root/root    usr/lib/python3.14/site-packages/streamlink-8.4.0.dist-info/
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink-8.4.0.dist-info/METADATA
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink-8.4.0.dist-info/RECORD
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink-8.4.0.dist-info/WHEEL
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink-8.4.0.dist-info/entry_points.txt
-drwxr-xr-x root/root    usr/lib/python3.14/site-packages/streamlink-8.4.0.dist-info/licenses/
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink-8.4.0.dist-info/licenses/LICENSE
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink-8.4.0.dist-info/top_level.txt
+drwxr-xr-x root/root    usr/lib/python3.14/site-packages/streamlink-8.5.0.dist-info/
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink-8.5.0.dist-info/METADATA
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink-8.5.0.dist-info/RECORD
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink-8.5.0.dist-info/WHEEL
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink-8.5.0.dist-info/entry_points.txt
+drwxr-xr-x root/root    usr/lib/python3.14/site-packages/streamlink-8.5.0.dist-info/licenses/
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink-8.5.0.dist-info/licenses/LICENSE
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink-8.5.0.dist-info/top_level.txt
 drwxr-xr-x root/root    usr/lib/python3.14/site-packages/streamlink/
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/__init__.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/__main__.py
@@ -104,6 +104,7 @@ drwxr-xr-x root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__pycache__/dogan.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__pycache__/dogus.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__pycache__/douyin.cpython-314.pyc
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__pycache__/douyu.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__pycache__/drdk.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__pycache__/earthcam.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__pycache__/euronews.cpython-314.pyc
@@ -175,13 +176,13 @@ drwxr-xr-x root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__pycache__/telemadrid.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__pycache__/tf1.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__pycache__/tiktok.cpython-314.pyc
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__pycache__/trovo.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__pycache__/turkuvaz.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__pycache__/tv360.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__pycache__/tv3cat.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__pycache__/tv5monde.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__pycache__/tv8.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__pycache__/tv999.cpython-314.pyc
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__pycache__/tvazteca.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__pycache__/tvibo.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__pycache__/tviplayer.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__pycache__/tvp.cpython-314.pyc
@@ -239,6 +240,7 @@ drwxr-xr-x root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/dogan.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/dogus.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/douyin.py
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/douyu.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/drdk.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/earthcam.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/euronews.py
@@ -310,13 +312,13 @@ drwxr-xr-x root/root    usr/lib/python3.14/site-packages/streamlink/plugins/__py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/telemadrid.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/tf1.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/tiktok.py
--rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/trovo.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/turkuvaz.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/tv360.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/tv3cat.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/tv5monde.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/tv8.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/tv999.py
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/tvazteca.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/tvibo.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/tviplayer.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/plugins/tvp.py
@@ -411,6 +413,7 @@ drwxr-xr-x root/root    usr/lib/python3.14/site-packages/streamlink/utils/__pyca
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/utils/__pycache__/l10n.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/utils/__pycache__/module.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/utils/__pycache__/named_pipe.cpython-314.pyc
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/utils/__pycache__/num.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/utils/__pycache__/parse.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/utils/__pycache__/path.cpython-314.pyc
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/utils/__pycache__/processoutput.cpython-314.pyc
@@ -428,6 +431,7 @@ drwxr-xr-x root/root    usr/lib/python3.14/site-packages/streamlink/utils/__pyca
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/utils/l10n.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/utils/module.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/utils/named_pipe.py
+-rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/utils/num.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/utils/parse.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/utils/path.py
 -rw-r--r-- root/root    usr/lib/python3.14/site-packages/streamlink/utils/processoutput.py
@@ -570,6 +574,9 @@ drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/bash-completion/
 drwxr-xr-x root/root    usr/share/bash-completion/completions/
 -rw-r--r-- root/root    usr/share/bash-completion/completions/streamlink
+drwxr-xr-x root/root    usr/share/fish/
+drwxr-xr-x root/root    usr/share/fish/vendor_completions.d/
+-rw-r--r-- root/root    usr/share/fish/vendor_completions.d/streamlink.fish
 drwxr-xr-x root/root    usr/share/man/
 drwxr-xr-x root/root    usr/share/man/man1/
 -rw-r--r-- root/root    usr/share/man/man1/streamlink.1.gz
