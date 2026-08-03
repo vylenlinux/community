@@ -6,7 +6,7 @@ maintainer="Vylen Linux Team"
 homepage="https://github.com/ryanoasis/nerd-fonts"
 
 name=ttf-nerd-mononoki
-version=3.4.0
+version=3.5.0
 release=1
 source="${name}-${version}.zip::https://github.com/ryanoasis/nerd-fonts/releases/download/v${version}/Mononoki.zip"
 
