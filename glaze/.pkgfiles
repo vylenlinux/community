@@ -1,4 +1,4 @@
-glaze-7.9.1-1
+glaze-8.0.0-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/include/
 drwxr-xr-x root/root    usr/include/glaze/
@@ -196,6 +196,7 @@ drwxr-xr-x root/root    usr/include/glaze/net/
 -rw-r--r-- root/root    usr/include/glaze/net/cors.hpp
 -rw-r--r-- root/root    usr/include/glaze/net/http.hpp
 -rw-r--r-- root/root    usr/include/glaze/net/http_client.hpp
+-rw-r--r-- root/root    usr/include/glaze/net/http_headers.hpp
 -rw-r--r-- root/root    usr/include/glaze/net/http_router.hpp
 -rw-r--r-- root/root    usr/include/glaze/net/http_server.hpp
 -rw-r--r-- root/root    usr/include/glaze/net/openapi.hpp
@@ -222,9 +223,11 @@ drwxr-xr-x root/root    usr/include/glaze/rpc/repe/
 -rw-r--r-- root/root    usr/include/glaze/rpc/repe/repe_to_jsonrpc.hpp
 drwxr-xr-x root/root    usr/include/glaze/simd/
 -rw-r--r-- root/root    usr/include/glaze/simd/avx.hpp
+-rw-r--r-- root/root    usr/include/glaze/simd/backends.hpp
 -rw-r--r-- root/root    usr/include/glaze/simd/neon.hpp
 -rw-r--r-- root/root    usr/include/glaze/simd/simd.hpp
 -rw-r--r-- root/root    usr/include/glaze/simd/sse.hpp
+-rw-r--r-- root/root    usr/include/glaze/simd/utf8_validation.hpp
 drwxr-xr-x root/root    usr/include/glaze/stencil/
 -rw-r--r-- root/root    usr/include/glaze/stencil/stencil.hpp
 -rw-r--r-- root/root    usr/include/glaze/stencil/stencilcount.hpp
@@ -251,6 +254,7 @@ drwxr-xr-x root/root    usr/include/glaze/tuplet/
 -rw-r--r-- root/root    usr/include/glaze/tuplet/tuple.hpp
 drwxr-xr-x root/root    usr/include/glaze/util/
 -rw-r--r-- root/root    usr/include/glaze/util/atoi.hpp
+-rw-r--r-- root/root    usr/include/glaze/util/attributes.hpp
 -rw-r--r-- root/root    usr/include/glaze/util/bit.hpp
 -rw-r--r-- root/root    usr/include/glaze/util/bit_array.hpp
 -rw-r--r-- root/root    usr/include/glaze/util/buffer_pool.hpp
