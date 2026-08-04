@@ -1,4 +1,4 @@
-cli11-2.7.1-1
+cli11-2.7.2-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/include/
 drwxr-xr-x root/root    usr/include/CLI/
@@ -30,11 +30,13 @@ drwxr-xr-x root/root    usr/include/CLI/impl/
 -rw-r--r-- root/root    usr/include/CLI/impl/Option_inl.hpp
 -rw-r--r-- root/root    usr/include/CLI/impl/Split_inl.hpp
 -rw-r--r-- root/root    usr/include/CLI/impl/StringTools_inl.hpp
+-rw-r--r-- root/root    usr/include/CLI/impl/TypeTools_inl.hpp
 -rw-r--r-- root/root    usr/include/CLI/impl/Validators_inl.hpp
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/cmake/
 drwxr-xr-x root/root    usr/share/cmake/CLI11/
 -rw-r--r-- root/root    usr/share/cmake/CLI11/CLI11Config.cmake
 -rw-r--r-- root/root    usr/share/cmake/CLI11/CLI11ConfigVersion.cmake
+-rw-r--r-- root/root    usr/share/cmake/CLI11/CLI11Targets.cmake
 drwxr-xr-x root/root    usr/share/pkgconfig/
 -rw-r--r-- root/root    usr/share/pkgconfig/CLI11.pc
