@@ -1,14 +1,19 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="A command line tool that generates XDG menus for several window managers"
 homepage="https://github.com/gapan/xdgmenumaker"
 maintainer="Vylen Linux Team"
 
 name=xdgmenumaker
-version=2.4
+version=2.5
 release=1
-source="https://github.com/gapan/xdgmenumaker/archive/$version/$name-$version.tar.gz"
+source="https://github.com/gapan/${name}/archive/${version}/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
-	make
-	make DESTDIR=$PKG PREFIX=/usr install
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    make
+    make DESTDIR="${PKG}" PREFIX=/usr install
 }
