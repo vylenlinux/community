@@ -6,17 +6,20 @@ homepage="http://www.gnu.org/software/binutils"
 maintainer="Vylen Linux Team"
 
 name=mingw-w64-binutils
-version=2.46.1
+version=2.47
 release=1
 source="http://ftpmirror.gnu.org/gnu/binutils/binutils-${version}.tar.xz"
 
 build() {
+    # shellcheck disable=SC2164
+    cd "binutils-${version}"
+
     for T in i686-w64-mingw32 x86_64-w64-mingw32; do
         mkdir "build-${T}"
 
         # shellcheck disable=SC2164
         cd "build-${T}"
-            "../binutils-${version}/configure" \
+            ../configure \
                 --prefix=/usr \
                 --target="${T}" \
                 --infodir="/usr/share/info/${T}" \
