@@ -6,7 +6,7 @@ homepage="https://codeberg.org/river/river"
 maintainer="Vylen Linux Team"
 
 name=river
-version=0.4.6
+version=0.4.7
 release=1
 source="https://codeberg.org/${name}/${name}/releases/download/v${version}/${name}-${version}.tar.gz"
 
@@ -14,7 +14,7 @@ build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
 
-    DESTDIR="build" zig build \
+    DESTDIR="${PWD}" zig build \
         --prefix /usr \
         -Dcpu=baseline \
         -Dstrip \
@@ -22,6 +22,5 @@ build() {
         -Dxwayland \
         -Doptimize=ReleaseSafe
 
-    cp -a build/* "${PKG}"
     install -Dm644 contrib/river.desktop -t "${PKG}/usr/share/wayland-sessions/"
 }
