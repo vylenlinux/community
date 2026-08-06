@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
+description="Simple C library for reading and writing PDF files"
+maintainer="Vylen Linux Team"
+homepage="https://github.com/michaelrsweet/pdfio"
+
+name=pdfio
+version=1.6.4
+release=1
+source="https://github.com/michaelrsweet/${name}/releases/download/v${version}/${name}-${version}.tar.gz"
+
+build() {
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    ./configure \
+        --prefix=/usr \
+        --enable-shared
+
+    make
+    make DESTDIR="${PKG}" install
+}
