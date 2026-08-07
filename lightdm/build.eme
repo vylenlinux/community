@@ -2,24 +2,25 @@
 
 # shellcheck disable=SC2034
 description="Lightweight display manager"
-homepage="https://github.com/canonical/lightdm"
+homepage="https://github.com/ubuntu/lightdm"
 maintainer="Vylen Linux Team"
 
 name=lightdm
-version=1.32.0
+version=1.33.0
 release=1
 
 backup="etc/${name}/keys.conf
     etc/${name}/${name}.conf
     etc/${name}/users.conf"
 
-source="https://github.com/CanonicalLtd/${name}/releases/download/${version}/${name}-${version}.tar.xz
+source="${name}-${version}.tar.gz::https://github.com/ubuntu/${name}/archive/refs/tags/${version}.tar.gz
     Xsession
     ${name}.rules"
 
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
+    ./autogen.sh
 
     ./configure \
         --prefix=/usr \
