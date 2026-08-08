@@ -6,15 +6,12 @@ homepage="https://gegl.org/babl/"
 maintainer="Vylen Linux Team"
 
 name=babl
-version=0.1.126
+version=0.1.128
 release=1
 source="https://download.gimp.org/pub/${name}/${version%.*}/${name}-${version}.tar.xz"
 
 build() {
-    # shellcheck disable=SC2164
-    cd "${name}-${version}"
-
-    vylen-meson build
+    vylen-meson "${name}-${version}" build
     meson compile -C build
     DESTDIR="${PKG}" meson install --no-rebuild -C build
 }
