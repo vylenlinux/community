@@ -7,7 +7,7 @@ maintainer="Vylen Linux Team"
 
 name=netpbm
 version=11.15.5
-release=1
+release=2
 
 source="https://github.com/ceamac/${name}-make-dist/releases/download/v${version}/${name}-${version}.tar.xz
     pgmtopbm
@@ -28,4 +28,7 @@ build() {
     make pkgdir="${PKG}/usr" PKGMANDIR=share/man install-run install-dev
 
     install -Dm755 "${SRC}/pgmtopbm" -t "${PKG}/usr/bin/"
+
+    # Add libnetpbm.so symlink
+    ln -s /usr/lib/libnetpbm.so.11 "${PKG}/usr/lib/libnetpbm.so"
 }
