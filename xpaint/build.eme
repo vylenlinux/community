@@ -1,20 +1,27 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="A color image editing tool which features most standard paint program options"
 homepage="http://sourceforge.net/projects/sf-xpaint/"
 maintainer="Vylen Linux Team"
 
 name=xpaint
 version=3.1.4
-release=1
-source="https://downloads.sourceforge.net/sf-$name/$name-$version.tar.bz2
-	$name.desktop"
+release=2
+
+source="https://downloads.sourceforge.net/sf-${name}/${name}-${version}.tar.bz2
+    ${name}.desktop"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+    autoreconf -fvi
 
-	./configure --prefix=/usr
-	make -j1
-	make DESTDIR=$PKG install
+    sed -i 's/^void ps_init()$/void ps_init(FILE *fo)/' vxp2ps/vxp2ps.c vxp2ps/vxp2tex.c
+    CC=gcc ./configure --prefix=/usr
 
-	install -Dm644 $SRC/$name.desktop \
-	    $PKG/usr/share/applications/$name.desktop
+    make -j1
+    make DESTDIR="${PKG}" install
+
+    install -Dm644 "${SRC}/${name}.desktop" -t "${PKG}/usr/share/applications/"
 }
