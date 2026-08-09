@@ -1,4 +1,4 @@
-wine-11.14-1
+wine-11.15-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/revdep.d/
 -rw-r--r-- root/root    etc/revdep.d/wine.conf
@@ -689,6 +689,8 @@ drwxr-xr-x root/root    usr/include/wine/windows/ddk/
 -rw-r--r-- root/root    usr/include/wine/windows/filter.h
 -rw-r--r-- root/root    usr/include/wine/windows/filter.idl
 -rw-r--r-- root/root    usr/include/wine/windows/fltdefs.h
+-rw-r--r-- root/root    usr/include/wine/windows/fltuser.h
+-rw-r--r-- root/root    usr/include/wine/windows/fltuserstructures.h
 -rw-r--r-- root/root    usr/include/wine/windows/fontsub.h
 -rw-r--r-- root/root    usr/include/wine/windows/fusion.h
 -rw-r--r-- root/root    usr/include/wine/windows/fusion.idl
