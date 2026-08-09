@@ -6,7 +6,7 @@ homepage="https://www.wine-staging.com"
 maintainer="Vylen Linux Team"
 
 name=wine-staging
-version=11.14
+version=11.15
 release=1
 
 vgecko=2.47.4
