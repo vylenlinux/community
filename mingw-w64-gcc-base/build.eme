@@ -6,13 +6,18 @@ homepage="https://gcc.gnu.org/"
 maintainer="Vylen Linux Team"
 
 name=mingw-w64-gcc-base
-version=16.1.0
+version=16.2.0
 release=1
 source="http://gcc.gnu.org/pub/gcc/releases/gcc-${version}/gcc-${version}.tar.xz"
 
 build() {
-    export CFLAGS="${CFLAGS} -O2 -Wno-error=format-security"
-    export CXXFLAGS="${CXXFLAGS} -O2 -Wno-error=format-security"
+    export CFLAGS="${CFLAGS} \
+        -O2 \
+        -Wno-error=format-security"
+
+    export CXXFLAGS="${CXXFLAGS} \
+        -O2 \
+        -Wno-error=format-security"
 
     for T in i686-w64-mingw32 x86_64-w64-mingw32; do
         mkdir "base-gcc-${T}"
