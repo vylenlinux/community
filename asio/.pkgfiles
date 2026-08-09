@@ -1,4 +1,4 @@
-asio-1.36.0-1
+asio-1.38.2-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/include/
 -rw-r--r-- root/root    usr/include/asio.hpp
@@ -73,6 +73,7 @@ drwxr-xr-x root/root    usr/include/asio/detail/
 -rw-r--r-- root/root    usr/include/asio/detail/array_fwd.hpp
 -rw-r--r-- root/root    usr/include/asio/detail/assert.hpp
 -rw-r--r-- root/root    usr/include/asio/detail/atomic_count.hpp
+-rw-r--r-- root/root    usr/include/asio/detail/atomic_slim_mutex.hpp
 -rw-r--r-- root/root    usr/include/asio/detail/base_from_cancellation_state.hpp
 -rw-r--r-- root/root    usr/include/asio/detail/base_from_completion_cond.hpp
 -rw-r--r-- root/root    usr/include/asio/detail/bind_handler.hpp
@@ -111,6 +112,7 @@ drwxr-xr-x root/root    usr/include/asio/detail/
 -rw-r--r-- root/root    usr/include/asio/detail/fd_set_adapter.hpp
 -rw-r--r-- root/root    usr/include/asio/detail/fenced_block.hpp
 -rw-r--r-- root/root    usr/include/asio/detail/functional.hpp
+-rw-r--r-- root/root    usr/include/asio/detail/futex_slim_mutex.hpp
 -rw-r--r-- root/root    usr/include/asio/detail/future.hpp
 -rw-r--r-- root/root    usr/include/asio/detail/global.hpp
 -rw-r--r-- root/root    usr/include/asio/detail/handler_alloc_helpers.hpp
@@ -161,6 +163,7 @@ drwxr-xr-x root/root    usr/include/asio/detail/impl/
 -rw-r--r-- root/root    usr/include/asio/detail/impl/thread_context.ipp
 -rw-r--r-- root/root    usr/include/asio/detail/impl/throw_error.ipp
 -rw-r--r-- root/root    usr/include/asio/detail/impl/timer_queue_set.ipp
+-rw-r--r-- root/root    usr/include/asio/detail/impl/win_critsec_mutex.ipp
 -rw-r--r-- root/root    usr/include/asio/detail/impl/win_event.ipp
 -rw-r--r-- root/root    usr/include/asio/detail/impl/win_iocp_file_service.ipp
 -rw-r--r-- root/root    usr/include/asio/detail/impl/win_iocp_handle_service.ipp
@@ -168,7 +171,6 @@ drwxr-xr-x root/root    usr/include/asio/detail/impl/
 -rw-r--r-- root/root    usr/include/asio/detail/impl/win_iocp_io_context.ipp
 -rw-r--r-- root/root    usr/include/asio/detail/impl/win_iocp_serial_port_service.ipp
 -rw-r--r-- root/root    usr/include/asio/detail/impl/win_iocp_socket_service_base.ipp
--rw-r--r-- root/root    usr/include/asio/detail/impl/win_mutex.ipp
 -rw-r--r-- root/root    usr/include/asio/detail/impl/win_object_handle_service.ipp
 -rw-r--r-- root/root    usr/include/asio/detail/impl/win_static_mutex.ipp
 -rw-r--r-- root/root    usr/include/asio/detail/impl/win_thread.ipp
@@ -275,6 +277,7 @@ drwxr-xr-x root/root    usr/include/asio/detail/impl/
 -rw-r--r-- root/root    usr/include/asio/detail/signal_init.hpp
 -rw-r--r-- root/root    usr/include/asio/detail/signal_op.hpp
 -rw-r--r-- root/root    usr/include/asio/detail/signal_set_service.hpp
+-rw-r--r-- root/root    usr/include/asio/detail/slim_mutex.hpp
 -rw-r--r-- root/root    usr/include/asio/detail/socket_holder.hpp
 -rw-r--r-- root/root    usr/include/asio/detail/socket_ops.hpp
 -rw-r--r-- root/root    usr/include/asio/detail/socket_option.hpp
@@ -308,6 +311,7 @@ drwxr-xr-x root/root    usr/include/asio/detail/impl/
 -rw-r--r-- root/root    usr/include/asio/detail/utility.hpp
 -rw-r--r-- root/root    usr/include/asio/detail/wait_handler.hpp
 -rw-r--r-- root/root    usr/include/asio/detail/wait_op.hpp
+-rw-r--r-- root/root    usr/include/asio/detail/win_critsec_mutex.hpp
 -rw-r--r-- root/root    usr/include/asio/detail/win_event.hpp
 -rw-r--r-- root/root    usr/include/asio/detail/win_fd_set_adapter.hpp
 -rw-r--r-- root/root    usr/include/asio/detail/win_global.hpp
@@ -366,8 +370,7 @@ drwxr-xr-x root/root    usr/include/asio/execution/
 -rw-r--r-- root/root    usr/include/asio/execution/context.hpp
 -rw-r--r-- root/root    usr/include/asio/execution/context_as.hpp
 -rw-r--r-- root/root    usr/include/asio/execution/executor.hpp
-drwxr-xr-x root/root    usr/include/asio/execution/impl/
--rw-r--r-- root/root    usr/include/asio/execution/impl/bad_executor.ipp
+-rw-r--r-- root/root    usr/include/asio/execution/inline_exception_handling.hpp
 -rw-r--r-- root/root    usr/include/asio/execution/invocable_archetype.hpp
 -rw-r--r-- root/root    usr/include/asio/execution/mapping.hpp
 -rw-r--r-- root/root    usr/include/asio/execution/occupancy.hpp
@@ -416,6 +419,7 @@ drwxr-xr-x root/root    usr/include/asio/experimental/impl/
 -rw-r--r-- root/root    usr/include/asio/experimental/use_coro.hpp
 -rw-r--r-- root/root    usr/include/asio/experimental/use_promise.hpp
 -rw-r--r-- root/root    usr/include/asio/file_base.hpp
+-rw-r--r-- root/root    usr/include/asio/fwd.hpp
 drwxr-xr-x root/root    usr/include/asio/generic/
 -rw-r--r-- root/root    usr/include/asio/generic/basic_endpoint.hpp
 -rw-r--r-- root/root    usr/include/asio/generic/datagram_protocol.hpp
@@ -455,14 +459,13 @@ drwxr-xr-x root/root    usr/include/asio/impl/
 -rw-r--r-- root/root    usr/include/asio/impl/execution_context.hpp
 -rw-r--r-- root/root    usr/include/asio/impl/execution_context.ipp
 -rw-r--r-- root/root    usr/include/asio/impl/executor.hpp
--rw-r--r-- root/root    usr/include/asio/impl/executor.ipp
 -rw-r--r-- root/root    usr/include/asio/impl/io_context.hpp
 -rw-r--r-- root/root    usr/include/asio/impl/io_context.ipp
--rw-r--r-- root/root    usr/include/asio/impl/multiple_exceptions.ipp
 -rw-r--r-- root/root    usr/include/asio/impl/prepend.hpp
 -rw-r--r-- root/root    usr/include/asio/impl/read.hpp
 -rw-r--r-- root/root    usr/include/asio/impl/read_at.hpp
 -rw-r--r-- root/root    usr/include/asio/impl/read_until.hpp
+-rw-r--r-- root/root    usr/include/asio/impl/redirect_disposition.hpp
 -rw-r--r-- root/root    usr/include/asio/impl/redirect_error.hpp
 -rw-r--r-- root/root    usr/include/asio/impl/serial_port_base.hpp
 -rw-r--r-- root/root    usr/include/asio/impl/serial_port_base.ipp
@@ -477,6 +480,8 @@ drwxr-xr-x root/root    usr/include/asio/impl/
 -rw-r--r-- root/root    usr/include/asio/impl/use_future.hpp
 -rw-r--r-- root/root    usr/include/asio/impl/write.hpp
 -rw-r--r-- root/root    usr/include/asio/impl/write_at.hpp
+-rw-r--r-- root/root    usr/include/asio/inline_executor.hpp
+-rw-r--r-- root/root    usr/include/asio/inline_or_executor.hpp
 -rw-r--r-- root/root    usr/include/asio/io_context.hpp
 -rw-r--r-- root/root    usr/include/asio/io_context_strand.hpp
 drwxr-xr-x root/root    usr/include/asio/ip/
@@ -557,6 +562,7 @@ drwxr-xr-x root/root    usr/include/asio/posix/
 -rw-r--r-- root/root    usr/include/asio/read_until.hpp
 -rw-r--r-- root/root    usr/include/asio/readable_pipe.hpp
 -rw-r--r-- root/root    usr/include/asio/recycling_allocator.hpp
+-rw-r--r-- root/root    usr/include/asio/redirect_disposition.hpp
 -rw-r--r-- root/root    usr/include/asio/redirect_error.hpp
 -rw-r--r-- root/root    usr/include/asio/registered_buffer.hpp
 -rw-r--r-- root/root    usr/include/asio/require.hpp
