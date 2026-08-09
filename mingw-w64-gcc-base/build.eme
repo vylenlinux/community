@@ -11,6 +11,9 @@ release=1
 source="http://gcc.gnu.org/pub/gcc/releases/gcc-${version}/gcc-${version}.tar.xz"
 
 build() {
+    # shellcheck disable=SC2164
+    cd "gcc-${version}"
+
     export CFLAGS="${CFLAGS} \
         -O2 \
         -Wno-error=format-security"
@@ -24,7 +27,7 @@ build() {
 
         # shellcheck disable=SC2164
         cd "base-gcc-${T}"
-            "../gcc-${version}/configure" \
+            ../configure \
                 --prefix=/usr \
                 --libexecdir=/usr/lib \
                 --target="${T}" \
