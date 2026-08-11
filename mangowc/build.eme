@@ -7,11 +7,11 @@ homepage="https://mangowm.github.io/"
 
 name=mangowc
 version=0.15.5
-release=1
+release=2
 source="${name}-${version}.tar.gz::https://github.com/DreamMaoMao/${name}/archive/refs/tags/${version}.tar.gz"
 
 build() {
-    vylen-meson "${name}-${version}" build
+    vylen-meson "${name}-${version}" build -Dxwayland="$(emerald is-installed xwayland && printf "enabled" || printf "disabled")"
     meson compile -C build
     DESTDIR="${PKG}" meson install --no-rebuild -C build
 }
