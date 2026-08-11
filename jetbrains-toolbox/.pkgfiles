@@ -1,4 +1,4 @@
-jetbrains-toolbox-3.6.3.86383-1
+jetbrains-toolbox-3.6.4.86641-1
 drwxr-xr-x root/root    opt/
 drwxr-xr-x root/root    opt/jetbrains-toolbox/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/Install-linux-tar.txt
@@ -640,6 +640,7 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-build-number.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-compatibility.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-daemon-fus.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-daemon-health.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-daemon.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-fileType-images-assets.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-fileType-images.jar
