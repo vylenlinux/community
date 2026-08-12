@@ -6,7 +6,7 @@ homepage="https://github.com/rui314/mold"
 maintainer="Vylen Linux Team"
 
 name=mold
-version=2.41.0
+version=2.42.0
 release=1
 source="${name}-${version}.tar.gz::https://github.com/rui314/${name}/archive/v${version}.tar.gz"
 
