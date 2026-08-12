@@ -24,9 +24,6 @@ build() {
     make
     make DESTDIR="${PKG}" install
 
-    rm -r "${PKG}/usr/share/man/ja"
-    rm "${PKG}/usr/share/w3m/w3mhelp-funcdesc.ja.pl"
-
-    install -v -m644 -D doc/keymap.default "${PKG}/etc/w3m/keymap"
-    install -v -m644 doc/menu.default "${PKG}/etc/w3m/menu"
+    install -Dm644 doc/keymap.default -t "${PKG}/etc/w3m/keymap/"
+    install -Dm644 doc/menu.default -t "${PKG}/etc/w3m/menu/"
 }
