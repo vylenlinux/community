@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="library for playback of opus streams in the ogg container"
 homepage="https://www.opus-codec.org/"
 maintainer="Vylen Linux Team"
@@ -5,17 +8,17 @@ maintainer="Vylen Linux Team"
 name=opusfile
 version=0.12
 release=1
-source="https://downloads.xiph.org/releases/opus/$name-$version.tar.gz"
+source="https://downloads.xiph.org/releases/opus/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
-	./configure --prefix=/usr \
-		--disable-static \
-		--disable-doc
-	make
-	make DESTDIR=$PKG install
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	# clean up footprint
-	rm -f $PKG/usr/lib/*.la
-	rm -rf $PKG/usr/share
+    ./configure \
+        --prefix=/usr \
+        --disable-static \
+        --disable-doc
+
+    make
+    make DESTDIR="${PKG}" install
 }
