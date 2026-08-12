@@ -1,22 +1,25 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Tools allowing to manipulate the Wireless Extensions"
 homepage="https://hewlettpackard.github.io/wireless-tools/Tools.html"
 maintainer="Vylen Linux Team"
 
 name=wireless_tools
 version=30.pre9
-_version=${version%.pre*}
 release=1
-source="https://hewlettpackard.github.io/wireless-tools/$name.$version.tar.gz"
+source="${name}-${version}.tar.gz::https://hewlettpackard.github.io/wireless-tools/${name}.${version}.tar.gz"
 
 build() {
-ls
-	cd ${name}.${_version}
-	sed '/BUILD_STATIC =/d' -i Makefile
-	make CFLAGS="${CFLAGS} -I." LDFLAGS="${LDFLAGS}"
-	make
-	make PREFIX=$PKG/usr \
-	     INSTALL_DIR=$PKG/usr/bin \
-	     INSTALL_MAN=$PKG/usr/share/man install
-	rm -rf $PKG/usr/share/man/cs
-	rm -rf $PKG/usr/share/man/fr*
+    # shellcheck disable=SC2164
+    cd "${name}.${version%.pre*}"
+    sed '/BUILD_STATIC =/d' -i Makefile
+
+    make CFLAGS="${CFLAGS} -I." LDFLAGS="${LDFLAGS}"
+    make
+
+    make \
+        PREFIX="${PKG}/usr" \
+        INSTALL_DIR="${PKG}/usr/bin" \
+        INSTALL_MAN="${PKG}/usr/share/man" install
 }
