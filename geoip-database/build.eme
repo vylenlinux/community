@@ -6,7 +6,7 @@ homepage="https://mailfud.org/geoip-legacy/"
 maintainer="Vylen Linux Team"
 
 name=geoip-database
-version=20260729
+version=20260808
 release=1
 
 source="https://mailfud.org/geoip-legacy/GeoIP.dat.gz
