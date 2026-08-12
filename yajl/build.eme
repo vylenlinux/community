@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Yet Another JSON Library"
 homepage="https://dev.alpinelinux.org/archive/yajl"
 maintainer="Vylen Linux Team"
@@ -5,20 +8,22 @@ maintainer="Vylen Linux Team"
 name=yajl
 version=2.1.0
 release=1
-source="https://dev.alpinelinux.org/archive/yajl/$name-$version.tar.gz cmake4.patch"
+
+source="https://dev.alpinelinux.org/archive/${name}/${name}-${version}.tar.gz
+    cmake4.patch"
 
 build() {
+    patch -Np1 -d "${name}-${version}" -i "${SRC}/cmake4.patch"
 
-	patch -d $name-$version -i $SRC/cmake4.patch -Np1
-	cmake -S $name-$version -B build -G Ninja \
-		-DCMAKE_POLICY_VERSION_MINIMUM=3.5  \
-		-D CMAKE_BUILD_TYPE=Release \
-		-D CMAKE_C_FLAGS_RELEASE="$CFLAGS" \
-		-D CMAKE_INSTALL_PREFIX=/usr \
-		-Wno-dev
-	cmake --build build
-	DESTDIR=$PKG cmake --install build
+    cmake -S "${name}-${version}" -B build -G Ninja \
+        -DCMAKE_POLICY_VERSION_MINIMUM=3.5  \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -Wno-dev
 
-	mv $PKG/usr/share/pkgconfig $PKG/usr/lib
-	rm -r $PKG/usr/share
+    cmake --build build
+    DESTDIR="${PKG}" cmake --install build
+
+    mv "${PKG}/usr/share/pkgconfig" -t "${PKG}/usr/lib/"
 }
