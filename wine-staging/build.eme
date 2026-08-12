@@ -55,8 +55,6 @@ build() {
     install "${SRC}/wine-gecko-${vgecko}-x86.msi" "${SRC}/wine-gecko-${vgecko}-x86_64.msi" -t "${PKG}/usr/share/wine/gecko/"
     install "${SRC}/wine-mono-${vmono}-x86.msi" -t "${PKG}/usr/share/wine/mono/"
 
-    rm -r "${PKG}/usr/share/man"/??.UTF-8
-
     # exclude libs for revdep
     do_revdep
 }
