@@ -21,7 +21,4 @@ build() {
 
     cmake --build build
     DESTDIR="${PKG}" cmake --install build
-
-    # shellcheck disable=SC2115
-    rm -rf "${PKG}/usr/share"
 }
