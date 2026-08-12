@@ -21,6 +21,4 @@ build() {
     # shellcheck disable=SC2061
     # shellcheck disable=SC2035
     find "${PKG}" -name *.pod -delete
-    # shellcheck disable=SC2115
-    rm -rf "${PKG}/usr/share"
 }
