@@ -1,38 +1,38 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Desktop publishing software"
-homepage="https://www.scribus.net/ "
+homepage="https://www.scribus.net/"
 maintainer="Vylen Linux Team"
 
 name=scribus
 version=1.7.0
 release=1
-source="https://downloads.sourceforge.net/$name/$name-$version.tar.xz
-	scribus-1.6.1-findhyphen.patch"
+source="https://downloads.sourceforge.net/${name}/${name}-${version}.tar.xz"
 
 build() {
-	cd $name-$version
+    sed \
+        -e 's|WANT_CPP17|WANT_CPP20|g' \
+        -e 's|CMAKE_CXX_STANDARD 17|CMAKE_CXX_STANDARD 20|g' \
+    -i "${name}-${version}/CMakeLists.txt"
 
-	#for p in $SRC/*.patch; do
-	#	patch -Np1 -i $p
-	#done
+    cmake -S "${name}-${version}" -B build \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_BUILD_TYPE=None \
+        -DCMAKE_SKIP_RPATH=On \
+        -DWANT_CPP20=ON \
+        -DWANT_HUNSPELL=On \
+        -DWITH_PODOFO=Off \
+        -DWANT_GRAPHICSMAGICK=On
 
-	sed -e 's|WANT_CPP17|WANT_CPP20|g' -e 's|CMAKE_CXX_STANDARD 17|CMAKE_CXX_STANDARD 20|g' -i CMakeLists.txt
-
-	cmake -B build \
-		-D CMAKE_INSTALL_PREFIX=/usr \
-		-D CMAKE_BUILD_TYPE=None \
-		-D CMAKE_SKIP_RPATH=On \
-		-D WANT_CPP20=ON \
-		-D WANT_HUNSPELL=On \
-		-D WITH_PODOFO=Off \
-		-D WANT_GRAPHICSMAGICK=On
 	make -C build
-	make -C build DESTDIR=$PKG install
+	make -C build DESTDIR="${PKG}" install
 
-	rm -r $PKG/usr/share/man/??
-	find $PKG \( \
-	    -iname '*changelog*' -o \
-	    -iname '*news*' -o \
-	    -iname '*todo*' -o \
-	    -iname '*readme*' -o \
-	    -iname '*copying*' \) -exec rm -fr '{}' \+
+    find "${PKG}" \( \
+        -iname '*changelog*' -o \
+        -iname '*news*' -o \
+        -iname '*todo*' -o \
+        -iname '*readme*' -o \
+        -iname '*copying*' \
+    \) -exec rm -rf '{}' \+
 }
