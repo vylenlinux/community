@@ -1,26 +1,34 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Color Picker"
 homepage="http://www.gpick.org/"
 maintainer="Vylen Linux Team"
 
 name=gpick
-version=0.3
+version=0.4
 release=1
-source="https://github.com/thezbyg/gpick/releases/download/v$version/$name-$version.tar.gz
-	boost-version.patch
-	revert-cpp-lua.patch"
+
+source="https://github.com/thezbyg/${name}/releases/download/v${version}/${name}-${version}.tar.gz
+    cmake-gettext.patch
+    fix-crash-on-startup.patch
+    fix-windows-not-grabbing-focus.patch"
 
 build() {
-	patch -d $name-$version -Np1 -i $SRC/boost-version.patch
-	patch -d $name-$version -Np1 -i $SRC/revert-cpp-lua.patch
+    patch -d "${name}-${version}" -Np1 -i "${SRC}/cmake-gettext.patch"
+    patch -d "${name}-${version}" -Np1 -i "${SRC}/fix-crash-on-startup.patch"
+    patch -d "${name}-${version}" -Np1 -i "${SRC}/fix-windows-not-grabbing-focus.patch"
 
-	cmake -S $name-$version -B build -G Ninja \
-	        -DCMAKE_INSTALL_PREFIX=/usr \
-	        -DCMAKE_INSTALL_LIBDIR=lib \
-		-DCMAKE_INSTALL_LIBEXECDIR=lib \
-		-DCMAKE_BUILD_TYPE=Release \
-		-DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
-		-DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
-		-Wno-dev 
-	cmake --build build
-	DESTDIR=$PKG cmake --install build
+    cmake -S "${name}-${version}" -B build -G Ninja \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_INSTALL_LIBDIR=lib \
+        -DCMAKE_INSTALL_LIBEXECDIR=lib \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
+        -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
+        -DLUA_TYPE=C \
+        -Wno-dev
+
+    cmake --build build
+    DESTDIR="${PKG}" cmake --install build
 }
