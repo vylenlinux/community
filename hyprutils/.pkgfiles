@@ -1,4 +1,4 @@
-hyprutils-0.14.0-1
+hyprutils-0.14.1-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/include/
 drwxr-xr-x root/root    usr/include/hyprutils/
@@ -32,7 +32,9 @@ drwxr-xr-x root/root    usr/include/hyprutils/misc/
 drwxr-xr-x root/root    usr/include/hyprutils/os/
 -rw-r--r-- root/root    usr/include/hyprutils/os/File.hpp
 -rw-r--r-- root/root    usr/include/hyprutils/os/FileDescriptor.hpp
+-rw-r--r-- root/root    usr/include/hyprutils/os/ProcLock.hpp
 -rw-r--r-- root/root    usr/include/hyprutils/os/Process.hpp
+-rw-r--r-- root/root    usr/include/hyprutils/os/Semaphore.hpp
 drwxr-xr-x root/root    usr/include/hyprutils/path/
 -rw-r--r-- root/root    usr/include/hyprutils/path/Path.hpp
 drwxr-xr-x root/root    usr/include/hyprutils/signal/
@@ -48,7 +50,7 @@ drwxr-xr-x root/root    usr/include/hyprutils/utils/
 -rw-r--r-- root/root    usr/include/hyprutils/utils/ScopeGuard.hpp
 drwxr-xr-x root/root    usr/lib/
 lrwxrwxrwx root/root    usr/lib/libhyprutils.so -> libhyprutils.so.13
--rwxr-xr-x root/root    usr/lib/libhyprutils.so.0.14.0
-lrwxrwxrwx root/root    usr/lib/libhyprutils.so.13 -> libhyprutils.so.0.14.0
+-rwxr-xr-x root/root    usr/lib/libhyprutils.so.0.14.1
+lrwxrwxrwx root/root    usr/lib/libhyprutils.so.13 -> libhyprutils.so.0.14.1
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/hyprutils.pc
