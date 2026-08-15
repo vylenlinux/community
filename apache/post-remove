@@ -1,0 +1,4 @@
+#!/bin/sh
+
+getent passwd apache >/dev/null && userdel apache
+getent group apache >/dev/null && groupdel apache
