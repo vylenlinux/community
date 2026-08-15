@@ -3,5 +3,4 @@
 getent group lpadmin >/dev/null || groupadd -g 19 lpadmin
 getent group lp >/dev/null || groupadd -r lp
 
-getent passwd lp >/dev/null || \
-    useradd -r -M -g lp -G lp -c "Print Service User" -d /var/spool/cups -s /sbin/nologin -u 9 lp
+getent passwd lp >/dev/null || useradd -r -M -g lp -G lp -c "Print Service User" -d /var/spool/cups -s /sbin/nologin -u 9 lp
