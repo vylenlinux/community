@@ -1,0 +1,4 @@
+#!/bin/sh
+
+getent passwd spamd >/dev/null && userdel spamd
+getent group spamd >/dev/null && groupdel spamd
