@@ -1,0 +1,4 @@
+#!/bin/sh
+
+getent passwd nm-openvpn >/dev/null && userdel nm-openvpn
+getent group nm-openvpn >/dev/null && groupdel nm-openvpn
