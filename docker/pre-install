@@ -1,5 +1,3 @@
 #!/bin/sh
 
-if [ -z "$(getent group docker)" ]; then
-    groupadd --system docker
-fi
+getent group docker >/dev/null || groupadd --system docker
