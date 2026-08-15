@@ -1,0 +1,4 @@
+#!/bin/sh
+
+getent passwd nginx >/dev/null && userdel nginx
+getent group nginx >/dev/null && groupdel nginx
