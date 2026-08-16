@@ -1,22 +1,28 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Mozilla's CA cert bundle in PEM format"
 homepage="https://metacpan.org/release/Mozilla-CA/"
 maintainer="Vylen Linux Team"
 
 name=perl-mozilla-ca
-version=20250602
+version=20260813
 release=1
-source="$name-$version.tar.gz::https://search.cpan.org/CPAN/authors/id/L/LW/LWP/Mozilla-CA-$version.tar.gz"
+source="${name}-${version}.tar.gz::https://search.cpan.org/CPAN/authors/id/L/LW/LWP/Mozilla-CA-${version}.tar.gz"
 
 build() {
+    # shellcheck disable=SC2164
+    cd "Mozilla-CA-${version}"
 
-  # Use system CA store. Replacing the copy in the source tree so the test suite is actually run against it.
-	ln -sf /etc/ssl/certs/ca-certificates.crt Mozilla-CA-$version/lib/Mozilla/CA/cacert.pem
+    # Use system CA store. Replacing the copy in the source tree so the test suite is actually run against it.
+    ln -sf /etc/ssl/certs/ca-certificates.crt lib/Mozilla/CA/cacert.pem
+    PERL_MM_USE_DEFAULT=1 perl -I. Makefile.PL INSTALLDIRS=vendor
 
+    make
+    make DESTDIR="${PKG}" install
 
-	cd Mozilla-CA-$version
-	PERL_MM_USE_DEFAULT=1 perl -I. Makefile.PL INSTALLDIRS=vendor
-	make
-	make DESTDIR=$PKG install
-	find $PKG \( -name perllocal.pod -o -name .packlist \) -delete
+    find "${PKG}" \( \
+        -name perllocal.pod -o \
+        -name .packlist \
+    \) -delete
 }
-
