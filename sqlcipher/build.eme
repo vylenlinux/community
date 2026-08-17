@@ -6,7 +6,7 @@ homepage="https://www.zetetic.net/sqlcipher/"
 maintainer="Vylen Linux Team"
 
 name=sqlcipher
-version=4.16.0
+version=4.17.0
 release=1
 source="https://www.zetetic.net/downloads/${name}/verify/${version}/${name}-${version}.zip"
 
@@ -30,7 +30,8 @@ build() {
         -DSQLITE_TEMP_STORE=2 \
         -DSQLCIPHER_TEST \
         -DSQLITE_EXTRA_INIT=sqlcipher_extra_init \
-        -DSQLITE_EXTRA_SHUTDOWN=sqlcipher_extra_shutdown"
+        -DSQLITE_EXTRA_SHUTDOWN=sqlcipher_extra_shutdown \
+        -ftls-model=initial-exec"
 
     export LDFLAGS="${LDFLAGS} \
         -lcrypto \
@@ -39,6 +40,7 @@ build() {
     ./configure \
         --prefix=/usr \
         --disable-static \
+        --dll-basename=libsqlcipher \
         --enable-fts3 \
         --enable-fts4 \
         --enable-fts5 \
@@ -48,15 +50,28 @@ build() {
     make
     make DESTDIR="${PKG}" install
 
-    rm -rf "${PKG}/usr/lib"/tcl*
+    mv "${PKG}/usr/bin/sqlite3" "${PKG}/usr/bin/sqlcipher"
 
-    # fix sqlite conflict
-    # shellcheck disable=SC2115
-    rm -rf "${PKG}/usr/bin" \
-        "${PKG}/usr/include" \
-        "${PKG}/usr/share" \
-        "${PKG}/usr/lib/pkgconfig"
+    install -d "${PKG}/usr/include/sqlcipher"
+    mv "${PKG}/usr/include/sqlite3.h" -t "${PKG}/usr/include/sqlcipher/"
+    mv "${PKG}/usr/include/sqlite3ext.h" -t "${PKG}/usr/include/sqlcipher/"
 
-    rm -f "${PKG}/usr/lib/libsqlite3.so" \
-        "${PKG}/usr/lib/libsqlite3.so.0"
+    # Fix TCL module: rename to match old package layout and fix soname
+    sqlite_version="$(sed -n 's/#define SQLITE_VERSION *"\(.*\)"/\1/p' sqlite3.h)"
+    mv "${PKG}/usr/lib/tcl8.6/sqlite${sqlite_version}" "${PKG}/usr/lib/tcl8.6/sqlite3"
+    mv "${PKG}/usr/lib/tcl8.6/sqlite3/libsqlite${sqlite_version}.so" "${PKG}/usr/lib/tcl8.6/sqlite3/libtclsqlite3.so"
+    patchelf --set-soname libtclsqlite3.so "${PKG}/usr/lib/tcl8.6/sqlite3/libtclsqlite3.so"
+
+    # Install sqlcipher man page instead of sqlite3
+    rm "${PKG}/usr/share/man/man1/sqlite3.1"
+    install -Dm644 sqlcipher.1 -t "${PKG}/usr/share/man/man1/"
+
+    # Fix pkg-config file: rename and update references
+    mv "${PKG}/usr/lib/pkgconfig/sqlite3.pc" "${PKG}/usr/lib/pkgconfig/sqlcipher.pc"
+
+    # shellcheck disable=SC2016
+    sed -i \
+        -e 's/-lsqlite3/-lsqlcipher/g' \
+        -e 's|includedir=.*|includedir=${prefix}/include/sqlcipher|' \
+    "${PKG}/usr/lib/pkgconfig/sqlcipher.pc"
 }
