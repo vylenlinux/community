@@ -1,5 +1,3 @@
 dotnet-host
 icu
 libunwind
-zlib
-openssl

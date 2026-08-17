@@ -1,8 +1,5 @@
 cmake
-ninja
 qt6-base
 qt6-svg
 polkit
-util-linux
 btrfs-progs
-diffutils

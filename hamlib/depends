@@ -1,8 +1,6 @@
-perl
 lua
 tcl
 libxml2
 libusb-compat
-libtool
 boost
 swig

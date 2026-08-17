@@ -1,6 +1,4 @@
 ethtool
 iw
 net-tools
-openssl
-sqlite
 wireless_tools

@@ -1,11 +1,2 @@
-autoconf
-bison
-flex
-gettext
-libtool
-linux-pam
-perl
-python3-setuptools
-sed
 swig
 autoconf-archive
