@@ -6,7 +6,7 @@ homepage="https://www.chiark.greenend.org.uk/~sgtatham/putty/"
 maintainer="Vylen Linux Team"
 
 name=putty
-version=0.84
+version=0.85
 release=1
 
 source="https://the.earth.li/~sgtatham/${name}/${version}/${name}-${version}.tar.gz
@@ -21,7 +21,6 @@ build() {
         -DCMAKE_INSTALL_LIBEXECDIR=lib \
         -DCMAKE_BUILD_TYPE=Release \
         -DCMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
-        -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
         -Wno-dev
 
     cmake --build build
