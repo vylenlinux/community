@@ -6,7 +6,7 @@ maintainer="Vylen Linux Team"
 homepage="https://github.com/IsmaelMartinez/teams-for-linux"
 
 name=teams-for-linux
-version=2.14.1
+version=2.16.0
 release=1
 
 source="${name}-${version}.tar.gz::https://github.com/IsmaelMartinez/${name}/archive/v${version}.tar.gz
@@ -24,9 +24,9 @@ build() {
     install -Dm644 "${SRC}/${name}.desktop" -t "${PKG}/usr/share/applications/"
 
     for _icon in build/icons/*.png; do
-        _filename="$(basename "${_icon}")"
+        _filename="${_icon##*/}"
         install -Dm644 "${_icon}" "${PKG}/usr/share/icons/hicolor/${_filename%.png}/apps/${name}.png"
     done
 
-    ln -sf "/opt/${name}/${name}" "${PKG}/usr/bin/${name}"
+    ln -sf "/opt/${name}/${name}" -t "${PKG}/usr/bin/"
 }
