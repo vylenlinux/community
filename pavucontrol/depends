@@ -1,5 +1,5 @@
 gtkmm
-libsigc++
+libsigc++2
 libcanberra
 pulseaudio
 json-glib
