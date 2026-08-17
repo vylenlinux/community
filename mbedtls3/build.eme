@@ -5,20 +5,20 @@ description="Cryptographic library for embedded systems"
 homepage="https://tls.mbed.org/"
 maintainer="Vylen Linux Team"
 
-name=mbedtls
+name=mbedtls3
 version=3.6.7
 release=1
 
 _framework_commit="893ad9e8450a8e7459679d952abd5d6df26c41c4"
 
-source="https://github.com/ARMmbed/${name}/archive/v${version}/${name}-${version}.tar.gz
-    https://github.com/Mbed-TLS/mbedtls-framework/archive/${_framework_commit}/${name}-framework-${_framework_commit}.tar.gz"
+source="https://github.com/ARMmbed/mbedtls/archive/v${version}/mbedtls-${version}.tar.gz
+    https://github.com/Mbed-TLS/mbedtls-framework/archive/${_framework_commit}/mbedtls-framework-${_framework_commit}.tar.gz"
 
 build() {
-    rm -rf "${name}-${version}/framework"
-    mv "mbedtls-framework-${_framework_commit}" "${name}-${version}/framework"
+    rm -rf "mbedtls-${version}/framework"
+    mv "mbedtls-framework-${_framework_commit}" "mbedtls-${version}/framework"
 
-    cmake -S "${name}-${version}" -B build -G Ninja \
+    cmake -S "mbedtls-${version}" -B build -G Ninja \
         -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_BUILD_TYPE=Release \
         -DCMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
