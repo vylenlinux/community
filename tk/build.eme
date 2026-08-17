@@ -6,7 +6,7 @@ homepage="http://tcl.sourceforge.net/"
 maintainer="Vylen Linux Team"
 
 name=tk
-version=8.6.18
+version=9.0.4
 release=1
 source="${name}-${version}.tar.gz::https://downloads.sourceforge.net/tcl/${name}${version}-src.tar.gz"
 
@@ -16,23 +16,22 @@ build() {
 
     ./configure \
         --prefix=/usr \
-        --mandir=/usr/share/man \
-        --without-tzdata
+        --mandir=/usr/share/man
 
     make
     make INSTALL_ROOT="${PKG}" install install-private-headers
 
-    ln -sv "wish${version%.*}" "${PKG}/usr/bin/wish"
+    ln -s "wish${version%.*}" "${PKG}/usr/bin/wish"
 
     # move demos to -doc directory
     mkdir -p "${PKG}/usr/share/doc/${name}/examples/"
 
-    mv "${PKG}/usr/lib/tk${version%.*}/demos/" \
+    mv "${PKG}/usr/lib/${name}${version%.*}/demos/" \
         "${PKG}/usr/share/doc/${name}/examples/"
 
     # remove buildroot traces
-    sed -e "s#${SRC}/tk${version}/unix#/usr/lib#" \
-        -e "s#${SRC}/tk${version}#/usr/include#" \
+    sed -e "s#${SRC}/${name}${version}/unix#/usr/lib#" \
+        -e "s#${SRC}/${name}${version}#/usr/include#" \
         -i "${PKG}/usr/lib/tkConfig.sh"
 
     # remove unrequired execute permissions (FS#75042)
