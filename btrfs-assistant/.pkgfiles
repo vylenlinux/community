@@ -1,4 +1,4 @@
-btrfs-assistant-2.2-1
+btrfs-assistant-2.3-1
 drwxr-xr-x root/root    etc/
 -rw-r--r-- root/root    etc/btrfs-assistant.conf.epkgnew
 drwxr-xr-x root/root    usr/
@@ -9,6 +9,9 @@ drwxr-xr-x root/root    usr/bin/
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/applications/
 -rw-r--r-- root/root    usr/share/applications/btrfs-assistant.desktop
+drwxr-xr-x root/root    usr/share/btrfs-assistant/
+drwxr-xr-x root/root    usr/share/btrfs-assistant/translations/
+-rw-r--r-- root/root    usr/share/btrfs-assistant/translations/btrfsassistant_zh_CN.qm
 drwxr-xr-x root/root    usr/share/icons/
 drwxr-xr-x root/root    usr/share/icons/hicolor/
 drwxr-xr-x root/root    usr/share/icons/hicolor/scalable/
