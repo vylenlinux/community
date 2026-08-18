@@ -6,7 +6,7 @@ homepage="https://github.com/ubuntu/lightdm"
 maintainer="Vylen Linux Team"
 
 name=lightdm
-version=1.33.0
+version=1.33.1
 release=1
 
 backup="etc/${name}/keys.conf
