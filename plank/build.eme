@@ -1,19 +1,22 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Elegant, simple, clean dock"
-homepage="https://launchpad.net/plank"
+homepage="https://plankreloaded.org/"
 maintainer="Vylen Linux Team"
 
 name=plank
-version=0.11.89
+version=0.11.172
 release=1
-source="https://launchpad.net/plank/1.0/$version/+download/plank-$version.tar.xz"
+source="${name}-${version}.tar.gz::https://github.com/zquestz/plank-reloaded/archive/${version}/plank-reloaded-${version}.tar.gz"
 
 build() {
-	cd $name-$version
-	./configure \
-	    --prefix=/usr \
-	    --sysconfdir=/etc \
-	    --disable-apport \
-	    --disable-nls
-	make
-	make DESTDIR=$PKG install
+    vylen-meson "plank-reloaded-${version}" build \
+        -Denable-apport=false \
+        -Denable-dbusmenu=yes \
+        -Dproduction-release=true \
+        -Denable-docs=false
+
+    meson compile -C build
+    DESTDIR="${PKG}" meson install --no-rebuild -C build
 }
