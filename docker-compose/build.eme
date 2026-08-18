@@ -6,7 +6,7 @@ homepage="https://docs.docker.com/compose/"
 maintainer="Vylen Linux Team"
 
 name=docker-compose
-version=5.4.0
+version=5.5.0
 release=1
 source="https://github.com/docker/compose/archive/v${version}/${name}-${version}.tar.gz"
 
