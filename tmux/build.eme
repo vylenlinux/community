@@ -6,7 +6,7 @@ homepage="https://github.com/tmux/tmux/wiki"
 maintainer="Vylen Linux Team"
 
 name=tmux
-version=3.7b
+version=3.7c
 release=1
 source="https://github.com/${name}/${name}/releases/download/${version}/${name}-${version}.tar.gz"
 
