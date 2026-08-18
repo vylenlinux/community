@@ -1,4 +1,4 @@
-glaze-8.0.0-1
+glaze-8.1.0-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/include/
 drwxr-xr-x root/root    usr/include/glaze/
@@ -201,6 +201,7 @@ drwxr-xr-x root/root    usr/include/glaze/net/
 -rw-r--r-- root/root    usr/include/glaze/net/http_server.hpp
 -rw-r--r-- root/root    usr/include/glaze/net/openapi.hpp
 -rw-r--r-- root/root    usr/include/glaze/net/rest_registry_impl.hpp
+-rw-r--r-- root/root    usr/include/glaze/net/ssl.hpp
 -rw-r--r-- root/root    usr/include/glaze/net/url.hpp
 -rw-r--r-- root/root    usr/include/glaze/net/websocket_client.hpp
 -rw-r--r-- root/root    usr/include/glaze/net/websocket_connection.hpp
