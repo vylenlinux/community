@@ -1,15 +1,19 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Browse the fediverse"
 homepage="https://tuba.geopjr.dev/"
 maintainer="Vylen Linux Team"
 
 name=tuba
-version=0.10.3
+version=0.11.0
 release=1
-source="$name-$version.tar.gz::https://github.com/GeopJr/Tuba/archive/refs/tags/v$version.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/GeopJr/${name}/archive/refs/tags/v${version}.tar.gz"
 
 build() {
-	vylen-meson Tuba-$version build
-	meson compile -C build
-	DESTDIR=$PKG meson install --no-rebuild -C build
-	ln -s /usr/bin/dev.geopjr.Tuba $PKG/usr/bin/tuba
+    vylen-meson "Tuba-${version}" build
+    meson compile -C build
+    DESTDIR="${PKG}" meson install --no-rebuild -C build
+
+    ln -s /usr/bin/dev.geopjr.Tuba "${PKG}/usr/bin/${name}"
 }
