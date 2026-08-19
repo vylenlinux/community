@@ -7,12 +7,16 @@ maintainer="Vylen Linux Team"
 
 name=socat
 version=1.8.1.3
-release=1
-source="http://www.dest-unreach.org/${name}/download/${name}-${version}.tar.gz"
+release=2
+
+source="http://www.dest-unreach.org/${name}/download/${name}-${version}.tar.gz
+    ${name}-${version}-openssl4_fixes-1.patch"
 
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
+
+    patch -Np1 -i "${SRC}/${name}-${version}-openssl4_fixes-1.patch"
     ./configure --prefix=/usr
 
     make
