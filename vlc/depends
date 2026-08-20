@@ -1,5 +1,5 @@
 ffmpeg
-liba52
+a52dec
 libgcrypt
 libmad
 lua
