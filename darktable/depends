@@ -5,7 +5,7 @@ imagemagick
 lensfun
 libgphoto2
 libsecret
-libsoup
+libsoup2
 libwebp
 lua
 openexr
