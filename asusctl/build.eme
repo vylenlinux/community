@@ -6,7 +6,7 @@ homepage="https://asus-linux.org"
 maintainer="Vylen Linux Team"
 
 name=asusctl
-version=6.3.11
+version=6.4.0
 release=1
 source="${name}-${version}.tar.gz::https://github.com/OpenGamingCollective/${name}/archive/refs/tags/${version}.tar.gz"
 
@@ -15,7 +15,7 @@ build() {
     cd "${name}-${version}"
 
     export CARGO_HOME="${SRC}/cargo"
-    cargo build --release
+    cargo build --release --locked
 
     for bin in "${name}" asusd asusd-user; do
         install -Dm755 "target/release/${bin}" -t "${PKG}/usr/bin/"
