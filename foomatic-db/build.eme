@@ -6,10 +6,10 @@ homepage="http://www.linuxprinting.org/foomatic.html"
 maintainer="Vylen Linux Team"
 
 name=foomatic-db
-version=20260209
+version=20260813
 release=1
 
-commit=d4774d0c39bcdf970ccb335452f48d9241ec1f71
+commit=a8bdf5fbe1f736afabd188cbcacb95f459492e3f
 source="${name}-${version}-${commit}.tar.gz::https://github.com/OpenPrinting/${name}/archive/${commit}.tar.gz"
 
 build() {
