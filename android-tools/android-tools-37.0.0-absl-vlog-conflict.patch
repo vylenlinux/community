@@ -1,0 +1,56 @@
+From: Vylen Linux Team
+Date: 2026-08-22
+Subject: [PATCH] adb: avoid Protobuf 36 / Abseil LOG macro conflict
+
+Protobuf 36.0 includes Abseil logging headers that define a global LOG macro.
+That macro can override Android base logging in ADB translation units and makes
+LOG(DEBUG) expand to an unsupported Abseil severity. The resulting build errors
+include "STATELESS was not declared" and
+"ABSL_LOG_INTERNAL_CONDITION_DEBUG was not declared".
+
+Avoid the colliding generic LOG macro in the affected ADB debug paths by using
+ADB_LOG, which expands directly through Android logging's LOGGING_PREAMBLE and
+LOG_STREAM helpers. This preserves the intended Android DEBUG logging even after
+Protobuf-generated headers have included Abseil.
+
+Fixes: android-tools 37.0.0 build with Protobuf 36.0
+---
+--- a/vendor/adb/adb_trace.h
++++ b/vendor/adb/adb_trace.h
+@@ -49,11 +49,15 @@ enum AdbTrace {
+ #define VLOG_IS_ON(TAG) \
+     ((adb_trace_mask & (1 << (TAG))) != 0)
+
++// Do not use the generic LOG macro here: Protobuf 36 brings in Abseil,
++// which exports another macro with the same name.
++#define ADB_LOG(severity) LOGGING_PREAMBLE(severity) && LOG_STREAM(severity)
++
+ #define VLOG(TAG)                 \
+     if (LIKELY(!VLOG_IS_ON(TAG))) \
+         ;                         \
+     else                          \
+-        LOG(DEBUG)
++        ADB_LOG(DEBUG)
+
+ // You must define TRACE_TAG before using this macro.
+ #define D(...) \
+--- a/vendor/adb/transport.cpp
++++ b/vendor/adb/transport.cpp
+@@ -1675,7 +1675,7 @@ void atransport::UpdateReverseConfig(std::string_view config) {
+
+         if (norebind && reverse_forwards_.contains(remote)) {
+             // This will fail, don't update the map.
+-            LOG(DEBUG) << "ignoring reverse forward that will fail due to norebind";
++            ADB_LOG(DEBUG) << "ignoring reverse forward that will fail due to norebind";
+             return;
+         }
+
+@@ -1691,7 +1691,7 @@ void atransport::UpdateReverseConfig(std::string_view config) {
+     } else if (service_addr == "killforward-all") {
+         reverse_forwards_.clear();
+     } else if (service_addr == "list-forward") {
+-        LOG(DEBUG) << __func__ << " ignoring --list";
++        ADB_LOG(DEBUG) << __func__ << " ignoring --list";
+     } else {  // Anything else we need to know about?
+         LOG(FATAL) << "unhandled reverse service: " << service_addr;
+     }

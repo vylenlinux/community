@@ -6,14 +6,14 @@ homepage="http://tools.android.com/"
 maintainer="Vylen Linux Team"
 
 name=android-tools
-version=35.0.2
-release=2
+version=37.0.0
+release=1
 
 source="https://github.com/nmeum/${name}/releases/download/${version}/${name}-${version}.tar.xz
-    ${name}-gcc16.patch"
+    ${name}-${version}-absl-vlog-conflict.patch"
 
 build() {
-    patch -d "${name}-${version}" -Np1 -i "${SRC}/${name}-gcc16.patch"
+    patch -Np1 -i "${SRC}/${name}-${version}-absl-vlog-conflict.patch" -d "${name}-${version}"
 
     cmake -S "${name}-${version}" -B build -G Ninja \
         -DCMAKE_INSTALL_PREFIX=/usr \

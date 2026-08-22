@@ -1,2 +1,2 @@
-ff2a74250a7f7dc652536f1e5084545b2ee86799af67119ff029485ab848f034  android-tools-35.0.2.tar.xz
-bafa9759b4b502639c4c4fd43cf58a9455dc1a6dd7e9c8e9880d87c6ed85bb05  android-tools-gcc16.patch
+995ea65a30ca038f06f06865ad6e663a9ae928b4b3062d299900dd9161776566  android-tools-37.0.0-absl-vlog-conflict.patch
+c2102666e07ffc6aad3c3376e0127b65c4c77b61bc7fda502814e8fb623d35ac  android-tools-37.0.0.tar.xz

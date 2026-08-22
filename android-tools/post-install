@@ -1,11 +1,10 @@
 #!/bin/sh
 
-printf "
-==> Create groups:
-groupadd plugdev
-groupadd android
-groupadd adbusers\n
-==> Add user to groups:
-gpasswd -a \$USER plugdev
-gpasswd -a \$USER android
-gpasswd -a \$USER adbusers\n\n"
+printf "\n==> Create groups:\n"
+printf "groupadd plugdev\n"
+printf "groupadd android\n"
+printf "groupadd adbusers\n"
+printf "\n==> Add user to groups:\n"
+printf "gpasswd -a \$USER plugdev\n"
+printf "gpasswd -a \$USER android\n"
+printf "gpasswd -a \$USER adbusers\n"
