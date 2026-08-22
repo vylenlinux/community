@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # shellcheck disable=SC2034
 description="SQL database server, drop-in replacement for MySQL"
@@ -6,7 +6,7 @@ homepage="https://mariadb.org/"
 maintainer="Vylen Linux Team"
 
 name=mariadb
-version=12.3.2
+version=12.3.3
 release=1
 source="https://downloads.mariadb.org/interstitial/${name}-${version}/source/${name}-${version}.tar.gz"
 
@@ -29,8 +29,7 @@ build() {
         -DWITH_SYSTEMD=no \
         -DWITH_EXTRA_CHARSETS=complex \
         -DWITH_EMBEDDED_SERVER=ON \
-        -DWITH_UNIT_TESTS=OFF \
-        -DSKIP_TESTS=ON
+        -DWITH_UNIT_TESTS=OFF
 
     cmake --build build
     DESTDIR="${PKG}" cmake --install build
