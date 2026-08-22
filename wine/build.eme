@@ -6,7 +6,7 @@ homepage="https://dl.winehq.org/wine"
 maintainer="Vylen Linux Team"
 
 name=wine
-version=11.15
+version=11.16
 release=1
 source="https://dl.winehq.org/${name}/source/${version%%.*}.x/${name}-${version}.tar.xz"
 
@@ -26,7 +26,9 @@ build() {
         --with-gstreamer \
         --with-freetype \
         --enable-win64 \
-        --enable-archs=i386,x86_64
+        --enable-archs=i386,x86_64 \
+        --disable-tests \
+        --enable-build-id
 
     make
     make DESTDIR="${PKG}" install
