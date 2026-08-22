@@ -6,7 +6,7 @@ homepage="https://github.com/ryanoasis/nerd-fonts"
 maintainer="Vylen Linux Team"
 
 name=ttf-nerd-fonts-symbols
-version=3.5.0
+version=3.5.1
 release=1
 
 source="SymbolsNerdFont-Regular-${version}.ttf::https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v${version}/patched-fonts/NerdFontsSymbolsOnly/SymbolsNerdFont-Regular.ttf
