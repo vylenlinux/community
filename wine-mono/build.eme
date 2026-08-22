@@ -8,8 +8,9 @@ maintainer="Vylen Linux Team"
 name=wine-mono
 version=11.3.0
 release=1
-source="${name}-${version}.msi::https://github.com/madewokherd/${name}/releases/download/${name}-${version}/${name}-${version}-x86.msi"
+source="${name}-${version}.tar.xz::https://dl.winehq.org/wine/${name}/${version}/${name}-${version}-x86.tar.xz"
 
 build() {
-    install -Dm644 "${name}-${version}.msi" -t "${PKG}/usr/share/wine/mono/"
+    install -dm755 "${PKG}/usr/share/wine/mono"
+    cp -r -a --no-preserve=ownership "${name}-${version}" -t "${PKG}/usr/share/wine/mono/"
 }
