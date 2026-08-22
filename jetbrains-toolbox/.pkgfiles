@@ -1,4 +1,4 @@
-jetbrains-toolbox-3.6.4.86641-1
+jetbrains-toolbox-3.7.2.87231-1
 drwxr-xr-x root/root    opt/
 drwxr-xr-x root/root    opt/jetbrains-toolbox/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/Install-linux-tar.txt
@@ -33,106 +33,125 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/jre/conf/security/policy/unlimited
 -rw-r--r-- root/root    opt/jetbrains-toolbox/jre/conf/sound.properties
 drwxr-xr-x root/root    opt/jetbrains-toolbox/jre/legal/
 drwxr-xr-x root/root    opt/jetbrains-toolbox/jre/legal/java.base/
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.base/ADDITIONAL_LICENSE_INFO
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.base/ASSEMBLY_EXCEPTION
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.base/LICENSE
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.base/aes.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.base/c-libutl.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.base/cldr.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.base/icu.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.base/public_suffix.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.base/siphash.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.base/unicode.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.base/ADDITIONAL_LICENSE_INFO
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.base/ASSEMBLY_EXCEPTION
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.base/LICENSE
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.base/README.JAVASE
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.base/aes.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.base/c-libutl.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.base/cldr.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.base/gcc.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.base/icu.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.base/public_suffix.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.base/siphash.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.base/unicode.md
 drwxr-xr-x root/root    opt/jetbrains-toolbox/jre/legal/java.datatransfer/
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.datatransfer/ADDITIONAL_LICENSE_INFO
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.datatransfer/ASSEMBLY_EXCEPTION
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.datatransfer/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.datatransfer/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.datatransfer/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.datatransfer/LICENSE -> ../java.base/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.datatransfer/README.JAVASE -> ../java.base/README.JAVASE
 drwxr-xr-x root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/ADDITIONAL_LICENSE_INFO
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/ASSEMBLY_EXCEPTION
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/LICENSE
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/colorimaging.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/giflib.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/harfbuzz.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/jpeg.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/lcms.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/libpng.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/mesa3d.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/pipewire.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/xwd.md
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/LICENSE -> ../java.base/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/README.JAVASE -> ../java.base/README.JAVASE
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/colorimaging.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/giflib.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/harfbuzz.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/jpeg.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/lcms.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/libpng.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/mesa3d.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/pipewire.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.desktop/xwd.md
 drwxr-xr-x root/root    opt/jetbrains-toolbox/jre/legal/java.logging/
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.logging/ADDITIONAL_LICENSE_INFO
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.logging/ASSEMBLY_EXCEPTION
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.logging/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.logging/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.logging/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.logging/LICENSE -> ../java.base/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.logging/README.JAVASE -> ../java.base/README.JAVASE
 drwxr-xr-x root/root    opt/jetbrains-toolbox/jre/legal/java.management/
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.management/ADDITIONAL_LICENSE_INFO
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.management/ASSEMBLY_EXCEPTION
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.management/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.management/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.management/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.management/LICENSE -> ../java.base/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.management/README.JAVASE -> ../java.base/README.JAVASE
 drwxr-xr-x root/root    opt/jetbrains-toolbox/jre/legal/java.naming/
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.naming/ADDITIONAL_LICENSE_INFO
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.naming/ASSEMBLY_EXCEPTION
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.naming/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.naming/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.naming/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.naming/LICENSE -> ../java.base/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.naming/README.JAVASE -> ../java.base/README.JAVASE
 drwxr-xr-x root/root    opt/jetbrains-toolbox/jre/legal/java.prefs/
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.prefs/ADDITIONAL_LICENSE_INFO
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.prefs/ASSEMBLY_EXCEPTION
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.prefs/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.prefs/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.prefs/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.prefs/LICENSE -> ../java.base/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.prefs/README.JAVASE -> ../java.base/README.JAVASE
 drwxr-xr-x root/root    opt/jetbrains-toolbox/jre/legal/java.rmi/
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.rmi/ADDITIONAL_LICENSE_INFO
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.rmi/ASSEMBLY_EXCEPTION
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.rmi/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.rmi/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.rmi/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.rmi/LICENSE -> ../java.base/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.rmi/README.JAVASE -> ../java.base/README.JAVASE
 drwxr-xr-x root/root    opt/jetbrains-toolbox/jre/legal/java.security.jgss/
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.security.jgss/ADDITIONAL_LICENSE_INFO
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.security.jgss/ASSEMBLY_EXCEPTION
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.security.jgss/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.security.jgss/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.security.jgss/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.security.jgss/LICENSE -> ../java.base/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.security.jgss/README.JAVASE -> ../java.base/README.JAVASE
 drwxr-xr-x root/root    opt/jetbrains-toolbox/jre/legal/java.security.sasl/
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.security.sasl/ADDITIONAL_LICENSE_INFO
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.security.sasl/ASSEMBLY_EXCEPTION
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.security.sasl/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.security.sasl/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.security.sasl/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.security.sasl/LICENSE -> ../java.base/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.security.sasl/README.JAVASE -> ../java.base/README.JAVASE
 drwxr-xr-x root/root    opt/jetbrains-toolbox/jre/legal/java.xml/
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/ADDITIONAL_LICENSE_INFO
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/ASSEMBLY_EXCEPTION
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/LICENSE
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/bcel.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/dom.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/jcup.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/schema10part1.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/schema10part2.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/xalan.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/xerces.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/xhtml10.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/xhtml10schema.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/xhtml11.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/xhtml11schema.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/xmlspec.md
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/xmlxsd.md
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.xml/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.xml/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.xml/LICENSE -> ../java.base/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/java.xml/README.JAVASE -> ../java.base/README.JAVASE
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/bcel.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/dom.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/jcup.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/schema10part1.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/schema10part2.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/xalan.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/xerces.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/xhtml10.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/xhtml10schema.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/xhtml11.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/xhtml11schema.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/xmlspec.md
+-rw-r--r-- root/root    opt/jetbrains-toolbox/jre/legal/java.xml/xmlxsd.md
 drwxr-xr-x root/root    opt/jetbrains-toolbox/jre/legal/jdk.accessibility/
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/jdk.accessibility/ADDITIONAL_LICENSE_INFO
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/jdk.accessibility/ASSEMBLY_EXCEPTION
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/jdk.accessibility/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.accessibility/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.accessibility/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.accessibility/LICENSE -> ../java.base/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.accessibility/README.JAVASE -> ../java.base/README.JAVASE
 drwxr-xr-x root/root    opt/jetbrains-toolbox/jre/legal/jdk.attach/
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/jdk.attach/ADDITIONAL_LICENSE_INFO
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/jdk.attach/ASSEMBLY_EXCEPTION
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/jdk.attach/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.attach/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.attach/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.attach/LICENSE -> ../java.base/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.attach/README.JAVASE -> ../java.base/README.JAVASE
 drwxr-xr-x root/root    opt/jetbrains-toolbox/jre/legal/jdk.crypto.ec/
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/jdk.crypto.ec/ADDITIONAL_LICENSE_INFO
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/jdk.crypto.ec/ASSEMBLY_EXCEPTION
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/jdk.crypto.ec/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.crypto.ec/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.crypto.ec/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.crypto.ec/LICENSE -> ../java.base/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.crypto.ec/README.JAVASE -> ../java.base/README.JAVASE
 drwxr-xr-x root/root    opt/jetbrains-toolbox/jre/legal/jdk.internal.jvmstat/
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/jdk.internal.jvmstat/ADDITIONAL_LICENSE_INFO
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/jdk.internal.jvmstat/ASSEMBLY_EXCEPTION
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/jdk.internal.jvmstat/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.internal.jvmstat/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.internal.jvmstat/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.internal.jvmstat/LICENSE -> ../java.base/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.internal.jvmstat/README.JAVASE -> ../java.base/README.JAVASE
 drwxr-xr-x root/root    opt/jetbrains-toolbox/jre/legal/jdk.jcmd/
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/jdk.jcmd/ADDITIONAL_LICENSE_INFO
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/jdk.jcmd/ASSEMBLY_EXCEPTION
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/jdk.jcmd/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.jcmd/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.jcmd/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.jcmd/LICENSE -> ../java.base/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.jcmd/README.JAVASE -> ../java.base/README.JAVASE
 drwxr-xr-x root/root    opt/jetbrains-toolbox/jre/legal/jdk.management/
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/jdk.management/ADDITIONAL_LICENSE_INFO
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/jdk.management/ASSEMBLY_EXCEPTION
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/jdk.management/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.management/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.management/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.management/LICENSE -> ../java.base/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.management/README.JAVASE -> ../java.base/README.JAVASE
 drwxr-xr-x root/root    opt/jetbrains-toolbox/jre/legal/jdk.security.auth/
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/jdk.security.auth/ADDITIONAL_LICENSE_INFO
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/jdk.security.auth/ASSEMBLY_EXCEPTION
--r--r--r-- root/root    opt/jetbrains-toolbox/jre/legal/jdk.security.auth/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.security.auth/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.security.auth/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.security.auth/LICENSE -> ../java.base/LICENSE
+lrwxrwxrwx root/root    opt/jetbrains-toolbox/jre/legal/jdk.security.auth/README.JAVASE -> ../java.base/README.JAVASE
 drwxr-xr-x root/root    opt/jetbrains-toolbox/jre/lib/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/jre/lib/classlist
 -rwxr-xr-x root/root    opt/jetbrains-toolbox/jre/lib/jexec
@@ -182,62 +201,44 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/jre/lib/server/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/jre/lib/tzdb.dat
 -rw-r--r-- root/root    opt/jetbrains-toolbox/jre/release
 drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/JavaEWAH-1.2.3.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/aalto-xml-1.3.4.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/aalto-xml.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/accounts-api.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/accounts-enterprise.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/accounts-google.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/accounts-jba.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/accounts-jbai.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/accounts.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/agent-api.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/agent-client-0.8.6806.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/agent-endpoints-system-shared-0.8.6806.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/agent-handshake-0.8.6806.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/agent-network-api-utils.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/agent-network-api.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/agent-network-mappers.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/agents-core-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/agents-ext-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/agents-tools-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/agents-utils-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/ai-chat-common.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/ai-chat-ui.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/ai-chat.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/animation-core-desktop-1.10.0-SNAPSHOT+data-source-prototype-1-10-0-beta02.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/animation-desktop-1.10.0-SNAPSHOT+data-source-prototype-1-10-0-beta02.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/annotation-1.9.1.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/annotation-jvm-1.9.1.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/annotations-26.0.2.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/ap-validation-85.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/api-gateway-api-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/api-gateway-client-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/api-gateway-indexing-client-jvm-0.8.177.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-archive.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-bazel-util.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-common.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-frontend.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-keychain.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-logger-0.8.6886.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-logger-ktor-0.8.6886.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-logger-slf4j-0.8.6886.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-logger-0.8.7525.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-logger-ktor-0.8.7525.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-logger-slf4j-0.8.7525.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-logger-tinylog.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-network-0.8.6886.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-network-0.8.7525.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-oauth.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-observability-diogen.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-os-0.8.6886.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-os-0.8.7525.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-os-win.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-ssh-0.8.6886.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-ssh-util-0.8.6886.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-ssh-0.8.7525.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-ssh-util-0.8.7525.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-starter.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-tool-version.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app-updates.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/app.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/assets.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/atomicfu-jvm-0.23.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/auth-model-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/auth-product-model-jvm-0.8.177.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/base.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/bazel-runfiles.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/bcpkix-jdk18on-1.80.jar
@@ -249,30 +250,7 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/caffeine-3.1.8.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/caffeine.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/checker-qual-3.42.0.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/client-attribute-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/client-cbor-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/client-common-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/client-ktor-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/code-activity-model-jvm-1.0.0-beta.166.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/code-exec-jvm-1.0.0-beta.167.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/code-exec-model-jvm-1.0.0-beta.167.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/code-features-common-jvm-1.0.0-beta.166.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/code-features-common-psi-jvm-1.0.0-beta.166.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/code-features-csharp-jvm-1.0.0-beta.166.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/code-features-java-jvm-1.0.0-beta.166.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/code-features-javascript-jvm-1.0.0-beta.166.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/code-features-kotlin-jvm-1.0.0-beta.166.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/code-features-python-jvm-1.0.0-beta.166.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/code-features-resolve-jvm-1.0.0-beta.146.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/code-features-typescript-jvm-1.0.0-beta.166.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/code-files-jvm-1.0.0-beta.167.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/code-files-model-jvm-1.0.0-beta.167.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/code-insight-model-jvm-1.0.0-beta.167.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/code-insight-psi-jvm-1.0.0-beta.167.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/code-ml-common-jvm-1.0.0-beta.146.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/code-ml-fuzzy-resolve-jvm-1.0.0-beta.146.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/code-vcs-jvm-1.0.0-beta.167.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/code-vcs-model-jvm-1.0.0-beta.167.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/client.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/codec.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/collection-jvm-1.5.0.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/common.jar
@@ -288,21 +266,18 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/core-common-2.2.0.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/coroutines.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/crystal.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/csharp-parser-0.3.369.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/daemon-agent-deploy.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/daemon-client-0.8.6886.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/daemon-client-0.8.7525.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/daemon-client-fus.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/daemon-client-ssh-0.8.6886.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/daemon-libraries-workspaces-open.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/daemon-libraries-workspaces.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/daemon-openssh-0.8.6886.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/daemon-client-ssh-0.8.7525.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/daemon-openssh-0.8.7525.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/daemon-openssh-askpass-impl.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/daemon-openssh-askpass-koin.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/daemon-openssh-askpass.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/daemon-openssh-impl.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/daemon-openssh-koin.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/daemon-os-process.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/daemon-shared-0.8.6886.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/daemon-shared-0.8.7525.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/daemon-ssh-deploy.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/dbus-java-core-4.0.0.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/dbus-java-transport-native-unixsocket-4.0.0.jar
@@ -317,36 +292,36 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/educational.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/eel-nioFs.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/eel.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/embark.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/embeddings-base-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-authn-client-0.8.6886.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-authn-shared-0.8.6886.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-intellij-client-0.8.6886.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-intellij-shared-0.8.6886.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-runtime-client-0.8.6886.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-runtime-shared-0.8.6886.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-ssh-client-0.8.6886.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-ssh-shared-0.8.6886.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-system-client-0.8.6886.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-system-shared-0.8.6886.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-authn-client-0.8.7525.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-authn-shared-0.8.7525.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-environments-client-0.8.7525.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-environments-shared-0.8.7525.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-intellij-client-0.8.7525.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-intellij-shared-0.8.7525.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-runtime-client-0.8.7525.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-runtime-shared-0.8.7525.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-ssh-client-0.8.7525.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-ssh-shared-0.8.7525.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-system-client-0.8.7525.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-system-shared-0.8.7525.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-test-client.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-test-shared.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-workspaces-client-0.8.6886.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-workspaces-shared-0.8.6886.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-workspaces-client-0.8.7525.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/endpoints-workspaces-shared-0.8.7525.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/enterprise-api.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/enterprise.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/environment-descriptor-api.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/environment-descriptor.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/error_prone_annotations-2.26.1.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/ex-coroutines-0.8.6886.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/ex-coroutines-0.8.7525.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/ex-io.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/ex-kotlin.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/ex-rhizome.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/ex-serialization-json.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/ex-serialization.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/ex-stdlib.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/exceptionreporter.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/extension-integration.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/failureaccess-1.0.2.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/feature-academy-impl.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/feature-academy-koin.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/feature-academy-ui.jar
@@ -372,6 +347,7 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/fleet-core.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/fleet-fastutil.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/fleet-reporting-api.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/fleet-reporting-shared.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/fleet-rpc.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/fleet-util-core.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/fleet-util-logging-api.jar
@@ -380,7 +356,6 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/foundation-layout-desktop-1.10.0-SNAPSHOT+data-source-prototype-1-10-0-beta02.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/frontend-api.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/fus.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/fuzzy-resolve-model-18.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/gateway-api.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/gateway-autoupdate.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/gateway-error-api.jar
@@ -389,40 +364,11 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/gateway-plugin-ssh.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/gateway-remote-api.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/gateway.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/gec-agg-model-public-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/guava-33.1.0-jre.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/h2-mvstore-2.4.240.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/http-client-core-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/http-client-ktor-jvm-0.7.2.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/handshake.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/i18n.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/icons-api.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/id-generation-85.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/ij-parsing-core-0.3.369.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-code-ce-impl-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-code-ce-model-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-code-chunk-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-code-client-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-code-client-config-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-code-core-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-code-index-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-code-lang-csharp-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-code-lang-csharp-impl-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-code-lang-java-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-code-lang-java-impl-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-code-lang-javascript-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-code-lang-javascript-impl-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-code-lang-kotlin-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-code-lang-kotlin-impl-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-code-lang-php-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-code-lang-php-impl-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-code-lang-python-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-code-lang-python-impl-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-code-model-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-code-parser-impl-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-code-provider-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-code-vcs-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-provider-api-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/indexing-server-api-jvm-0.8.177.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/inno-setup.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/install-commands.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/intellij-api.jar
@@ -432,16 +378,10 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/interop.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/io.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/ipc.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/itu-1.14.0.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/j2objc-annotations-3.0.0.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/jackson-annotations-2.19.1.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/jackson-core-2.19.1.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/jackson-databind-2.19.1.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/jackson-dataformat-yaml-2.19.1.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/jackson-module-kotlin-2.19.1.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/java-parser-0.3.369.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/java-syntax-jvm-0.3.369.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/javascript-parser-0.3.369.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/jaxen-1.2.0.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/jbclient-api.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/jbclient.jar
@@ -449,37 +389,28 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/jbr.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/jcip-annotations-1.0.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/jcip.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/jcodings-1.0.61.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/jdom-2.0.6.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/jna-platform-5.17.0.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/joni-2.2.3.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/joni.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/json-schema-validator-1.5.9.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/json.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/jsoup-1.17.1.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/jspecify-1.0.0.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/jsr305-3.0.2.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/jsvg-2.1.0.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/jvm-native-trusted-roots-1.1.7.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kernel.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/keychain.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/koin-core-jvm-4.1.1.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlin-logging-jvm-8.0.01.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlin-parser-0.3.369.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlin-reflect-2.4.0.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlin-logging-jvm-7.0.13.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlin-reflect-2.4.10-RC2.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlin-sdk-client-jvm-0.8.0.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlin-sdk-core-jvm-0.8.0.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlin-sdk-server-jvm-0.8.0.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlin-stdlib-2.4.0.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlin-stdlib-jdk7-2.4.0.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlin-stdlib-jdk8-2.4.0.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlin-syntax-jvm-0.3.369.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlin-stdlib-2.4.10-RC2.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlin-stdlib-jdk7-2.4.10-RC2.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlin-stdlib-jdk8-2.4.10-RC2.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlinx-collections-immutable-jvm-0.5.0.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlinx-coroutines-core-1.10.2.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlinx-coroutines-core-jvm-1.10.2.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlinx-coroutines-debug-1.10.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlinx-coroutines-jdk9-1.10.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlinx-coroutines-reactive-1.10.2.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlinx-coroutines-slf4j-1.10.2.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlinx-coroutines-swing-1.10.2.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlinx-datetime-jvm-0.7.1.jar
@@ -493,11 +424,6 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlinx-rpc-krpc-serialization-json-jvm-0.10.2.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlinx-rpc-krpc-server-jvm-0.10.2.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlinx-rpc-utils-jvm-0.10.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlinx-schema-annotations-jvm-0.4.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlinx-schema-generator-core-jvm-0.4.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlinx-schema-generator-json-jvm-0.4.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlinx-schema-json-jvm-0.4.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlinx-serialization-cbor-jvm-1.9.0.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlinx-serialization-core-jvm-1.9.0.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlinx-serialization-json-io-jvm-1.9.0.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/kotlinx-serialization-json-jvm-1.9.0.jar
@@ -526,7 +452,6 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/ktor-utils-jvm-3.4.1.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/ktor-websocket-serialization-jvm-3.4.1.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/ktor-websockets-jvm-3.4.1.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/lang-syntax-jvm-0.3.369.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/lang3.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/libraries-fastutil.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/libraries-jna.jar
@@ -544,8 +469,6 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/lifecycle-runtime-desktop-2.10.0-rc01.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/lifecycle-viewmodel-desktop-2.10.0-rc01.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/lifecycle-viewmodel-savedstate-desktop-2.10.0-rc01.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/llm-agg-api-model-jvm-0.8.177.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/lobby-server-api-2069.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/log4j-over-slf4j-1.7.36.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/logging-bootstrap.jar
@@ -553,37 +476,10 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/macos.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/manifest-app.txt
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/manifest-bootstrap.txt
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/markdown-jvm-0.7.3.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/markdown.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/marketplace-zip-signer-0.1.43.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/material-desktop-1.10.0-SNAPSHOT+data-source-prototype-1-10-0-beta02.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/material-ripple-desktop-1.10.0-SNAPSHOT+data-source-prototype-1-10-0-beta02.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/ml-api-0.1.94.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/ml-tools-0.1.94.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-85.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-auth-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-bdg-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-chat-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-cloud-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-common-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-emb-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-feedback-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-gateway-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-gec-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-indexing-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-jet-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-license-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-llm-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-ner-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-nlc-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-nlp-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-nmt-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-qa-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-quota-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-task-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-text-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-tone-formality-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/model-tree-jvm-0.8.177.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/multiplatform.shims.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/mvstore.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/nanohttpd-2.3.1.jar
@@ -601,12 +497,6 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/netty-transport-native-unix-common-4.2.9.Final.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/network-api.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/network.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/nlp-common-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/nlp-encoder-engine-0.8.106.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/nlp-encoder-starcoder-0.8.106.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/nlp-langs-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/nlp-patterns-jvm-0.8.106.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/nlp-tokenizer-jvm-0.8.106.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/observability.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/okhttp-jvm-5.3.2.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/okhttp-tls-5.3.2.jar
@@ -626,31 +516,35 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/opentelemetry-sdk-logs-1.61.0.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/opentelemetry-sdk-metrics-1.61.0.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/opentelemetry-sdk-trace-1.61.0.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/org.eclipse.jgit-7.1.0.202411261347-r.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/oro-2.0.8.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/oro-matcher.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/oshi-core-6.9.2.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/package-extractor-api.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/package-extractors.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/php-parser-0.3.361.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-actions.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-background-task-scheduler-impl.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-background-task-scheduler-koin.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-background-task-scheduler.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-build-number.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-compatibility.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-daemon-diagnostics.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-daemon-fus.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-daemon-health.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-daemon.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-environments-koin.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-environments.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-fileType-images-assets.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-fileType-images.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-http-client.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-image-impl.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-image-koin.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-image.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-images-assets.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-images.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-koin.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-llm-endpoints.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-logging.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-mime-types.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-mime.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-notifications.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-oauth-internal.jar
@@ -663,56 +557,36 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-os-unix.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-os-win.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-paths.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-plugins-marketplace.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-plugins-ui.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-plugins.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-resource.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-security.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-tools-ui.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-tools.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-ui-theme.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-ui.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-util-base-multiplatform.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-util-multiplatform.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-workspace-air.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-workspace-koin.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-workspace-ui.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-workspace-visual-studio.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-workspace.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/platform-xgate.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/plugin-api-core.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/plugin-api-localization.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/plugin-api-remote-dev.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/plugin-api-ui.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/plugins-textmate-core.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/plugins.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/project-api.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/project-fleet.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/project-intellij.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/project-visualstudio.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/project.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/prompt-executor-anthropic-client-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/prompt-executor-clients-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/prompt-executor-dashscope-client-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/prompt-executor-deepseek-client-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/prompt-executor-google-client-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/prompt-executor-mistralai-client-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/prompt-executor-model-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/prompt-executor-ollama-client-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/prompt-executor-openai-client-base-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/prompt-executor-openai-client-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/prompt-executor-openrouter-client-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/prompt-llm-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/prompt-markdown-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/prompt-model-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/prompt-processor-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/prompt-structure-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/prompt-tokenizer-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/prompt-xml-jvm-0.7.2.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/protobuf-java-3.25.6.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/protocolhandler-api.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/protocolhandler.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/proxy-vole-1.1.8.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/python-syntax-jvm-0.3.361.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/radixTrie.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/rag-base-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/reactive-streams-1.0.3.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/reflect.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/registration-windows.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/rendering.jar
@@ -735,15 +609,12 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/savedstate-compose-desktop-1.4.0-SNAPSHOT+data-source-prototype-1-10-0-beta02.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/savedstate-desktop-1.4.0.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/scheme-85.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/serialization-core-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/serialization-jackson-0.7.2.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/serialization-kotlin-85.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/serialization.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/settings-api.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/settings.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/shared-state-model.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/shared-state.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/shared.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/shell-api.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/shell.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/shortcuts-windows-api.jar
@@ -751,8 +622,6 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/skiko-awt-0.9.37.3.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/slf4j-api-2.0.17.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/slf4j-tinylog-2.6.1.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/snakeyaml-2.4.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/snakeyaml.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/snap.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/stately-concurrency-jvm-2.1.0.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/stately-concurrent-collections-jvm-2.1.0.jar
@@ -762,14 +631,6 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/station-comms-services.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/station-comms.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/stax2-api-4.2.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/swagger-annotations-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/syntax-api-jvm-0.3.369.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/tasks-library-api-jvm-0.4.18.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/tasks-library-model-jvm-0.4.18.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/tasks-provider-jet-completion-model-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/tasks-provider-llm-completion-model-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/tasks-provider-proxy-model-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/tasks-provider-task-schema-0.8.177.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/tbe-config-machine-2026.1.0.719.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/tbe-test-access-api.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/tbe-test-access.jar
@@ -778,6 +639,7 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/tinylog-api-2.6.1.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/tinylog-api-kotlin-2.6.1.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/tinylog-impl-2.6.1.jar
+-rw-r--r-- root/root    opt/jetbrains-toolbox/lib/toolbox-agent-rest-endpoints-system-shared.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/toolbox-api.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/toolbox-core.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/toolbox-feature-rpc.jar
@@ -796,18 +658,10 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/ui-unit-desktop-1.10.0-SNAPSHOT+data-source-prototype-1-10-0-beta02.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/ui-util-desktop-1.10.0-SNAPSHOT+data-source-prototype-1-10-0-beta02.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/ui.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/user-cfg-model-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/user-strg-model-jvm-0.8.177.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/util-classLoader.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/util-ex.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/util-rt.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/util.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/utils-cbor-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/utils-common-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/utils-jvm-0.7.2.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/utils-jwt-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/utils-ktor-jvm-0.8.177.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/utils-multiplatform-jvm-0.8.177.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/viewmodel.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/vscode-enterprise.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/vscode.jar
@@ -816,8 +670,6 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/lib/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/windows.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/wintools.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/workspace-workers.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/xml-parser-0.3.369.jar
--rw-r--r-- root/root    opt/jetbrains-toolbox/lib/xml-syntax-jvm-0.3.369.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/xmlDom.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/lib/xz-1.9.jar
 -rw-r--r-- root/root    opt/jetbrains-toolbox/libXss.so.1
@@ -857,8 +709,6 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/co.touchlab-s
 -rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/co.touchlab-stately-concurrent-collections-jvm-2.1.0/LICENSE-Apache-2.0.txt
 drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/co.touchlab-stately-strict-jvm-2.1.0/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/co.touchlab-stately-strict-jvm-2.1.0/LICENSE-Apache-2.0.txt
-drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/com.ethlo.time-itu-1.14.0/
--rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/com.ethlo.time-itu-1.14.0/LICENSE-Apache-2.0.txt
 drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/com.fasterxml.jackson.core-jackson-annotations-2.19.1/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/com.fasterxml.jackson.core-jackson-annotations-2.19.1/LICENSE
 -rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/com.fasterxml.jackson.core-jackson-annotations-2.19.1/NOTICE
@@ -868,9 +718,6 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/com.fasterxml
 drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/com.fasterxml.jackson.core-jackson-databind-2.19.1/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/com.fasterxml.jackson.core-jackson-databind-2.19.1/LICENSE
 -rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/com.fasterxml.jackson.core-jackson-databind-2.19.1/NOTICE
-drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/com.fasterxml.jackson.dataformat-jackson-dataformat-yaml-2.19.1/
--rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/com.fasterxml.jackson.dataformat-jackson-dataformat-yaml-2.19.1/LICENSE
--rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/com.fasterxml.jackson.dataformat-jackson-dataformat-yaml-2.19.1/NOTICE
 drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/com.fasterxml.jackson.module-jackson-module-kotlin-2.19.1/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/com.fasterxml.jackson.module-jackson-module-kotlin-2.19.1/LICENSE
 -rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/com.fasterxml.jackson.module-jackson-module-kotlin-2.19.1/NOTICE
@@ -882,24 +729,10 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/com.github.os
 -rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/com.github.oshi-oshi-core-6.9.2/LICENSE-MIT.txt
 drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/com.github.weisj-jsvg-2.1.0/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/com.github.weisj-jsvg-2.1.0/LICENSE-MIT.txt
-drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/com.google.code.findbugs-jsr305-3.0.2/
--rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/com.google.code.findbugs-jsr305-3.0.2/LICENSE-Apache-2.0.txt
 drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/com.google.errorprone-error_prone_annotations-2.26.1/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/com.google.errorprone-error_prone_annotations-2.26.1/LICENSE-Apache-2.0.txt
-drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/com.google.guava-failureaccess-1.0.2/
--rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/com.google.guava-failureaccess-1.0.2/LICENSE-Apache-2.0.txt
-drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/com.google.guava-guava-33.1.0-jre/
--rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/com.google.guava-guava-33.1.0-jre/LICENSE
-drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/com.google.guava-listenablefuture-9999.0-empty-to-avoid-conflict-with-guava/
--rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/com.google.guava-listenablefuture-9999.0-empty-to-avoid-conflict-with-guava/LICENSE-Apache-2.0.txt
-drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/com.google.j2objc-j2objc-annotations-3.0.0/
--rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/com.google.j2objc-j2objc-annotations-3.0.0/LICENSE-Apache-2.0.txt
 drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/com.google.protobuf-protobuf-java-3.25.6/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/com.google.protobuf-protobuf-java-3.25.6/LICENSE-BSD-3-Clause.txt
-drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/com.googlecode.javaewah-JavaEWAH-1.2.3/
--rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/com.googlecode.javaewah-JavaEWAH-1.2.3/LICENSE-Apache-2.0.txt
-drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/com.networknt-json-schema-validator-1.5.9/
--rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/com.networknt-json-schema-validator-1.5.9/LICENSE-Apache-2.0.txt
 drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/com.squareup.okhttp3-okhttp-jvm-5.3.2/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/com.squareup.okhttp3-okhttp-jvm-5.3.2/LICENSE-Apache-2.0.txt
 drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/com.squareup.okhttp3-okhttp-tls-5.3.2/
@@ -917,8 +750,8 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/commons-io-co
 drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/commons-logging-commons-logging-1.3.5/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/commons-logging-commons-logging-1.3.5/LICENSE.txt
 -rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/commons-logging-commons-logging-1.3.5/NOTICE.txt
-drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/io.github.oshai-kotlin-logging-jvm-8.0.01/
--rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/io.github.oshai-kotlin-logging-jvm-8.0.01/LICENSE-Apache-2.0.txt
+drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/io.github.oshai-kotlin-logging-jvm-7.0.13/
+-rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/io.github.oshai-kotlin-logging-jvm-7.0.13/LICENSE-Apache-2.0.txt
 drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/io.insert-koin-koin-core-jvm-4.1.1/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/io.insert-koin-koin-core-jvm-4.1.1/LICENSE-Apache-2.0.txt
 drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/io.ktor-ktor-client-cio-jvm-3.4.1/
@@ -1043,8 +876,6 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/org.bouncycas
 -rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/org.bouncycastle-bcutil-jdk18on-1.80.2/LICENSE-BouncyCastle.txt
 drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/org.checkerframework-checker-qual-3.42.0/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/org.checkerframework-checker-qual-3.42.0/LICENSE-MIT.txt
-drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/org.eclipse.jgit-org.eclipse.jgit-7.1.0.202411261347-r/
--rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/org.eclipse.jgit-org.eclipse.jgit-7.1.0.202411261347-r/LICENSE-BSD-3-Clause.txt
 drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/org.javadelight-delight-rhino-sandbox-0.2.2/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/org.javadelight-delight-rhino-sandbox-0.2.2/LICENSE-Apache-2.0.txt
 drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/org.jsoup-jsoup-1.17.1/
@@ -1067,8 +898,6 @@ drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/org.tinylog-t
 -rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/org.tinylog-tinylog-api-kotlin-2.6.1/LICENSE-Apache-2.0.txt
 drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/org.tinylog-tinylog-impl-2.6.1/
 -rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/org.tinylog-tinylog-impl-2.6.1/LICENSE-Apache-2.0.txt
-drwxr-xr-x root/root    opt/jetbrains-toolbox/licenses/third-party/org.yaml-snakeyaml-2.4/
--rw-r--r-- root/root    opt/jetbrains-toolbox/licenses/third-party/org.yaml-snakeyaml-2.4/LICENSE-Apache-2.0.txt
 -rw-r--r-- root/root    opt/jetbrains-toolbox/toolbox-tray-color.png
 -rw-r--r-- root/root    opt/jetbrains-toolbox/toolbox.svg
 drwxr-xr-x root/root    usr/
