@@ -1,0 +1,5 @@
+name = "wf-recorder"
+provider = "repology"
+
+[source]
+package = "wf-recorder"

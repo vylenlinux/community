@@ -1,0 +1,5 @@
+name = "i3status-rust"
+provider = "repology"
+
+[source]
+package = "i3status-rust"

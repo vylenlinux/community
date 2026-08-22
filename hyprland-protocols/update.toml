@@ -1,0 +1,5 @@
+name = "hyprland-protocols"
+provider = "repology"
+
+[source]
+package = "hyprland-protocols"

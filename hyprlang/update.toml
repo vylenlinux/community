@@ -1,0 +1,5 @@
+name = "hyprlang"
+provider = "repology"
+
+[source]
+package = "hyprlang"

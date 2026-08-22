@@ -1,0 +1,5 @@
+name = "neomutt"
+provider = "repology"
+
+[source]
+package = "neomutt"

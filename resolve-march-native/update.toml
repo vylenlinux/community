@@ -1,0 +1,5 @@
+name = "resolve-march-native"
+provider = "repology"
+
+[source]
+package = "resolve-march-native"

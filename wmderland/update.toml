@@ -1,0 +1,5 @@
+name = "wmderland"
+provider = "repology"
+
+[source]
+package = "wmderland"

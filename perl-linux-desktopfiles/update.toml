@@ -1,0 +1,5 @@
+name = "perl-linux-desktopfiles"
+provider = "repology"
+
+[source]
+package = "perl:linux-desktopfiles"

@@ -1,0 +1,5 @@
+name = "wireguard-tools"
+provider = "repology"
+
+[source]
+package = "wireguard-tools"

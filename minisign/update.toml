@@ -1,0 +1,5 @@
+name = "minisign"
+provider = "repology"
+
+[source]
+package = "minisign"

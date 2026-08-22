@@ -1,0 +1,5 @@
+name = "hyprwire"
+provider = "repology"
+
+[source]
+package = "hyprwire"

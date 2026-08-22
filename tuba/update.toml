@@ -1,0 +1,5 @@
+name = "tuba"
+provider = "repology"
+
+[source]
+package = "tuba"

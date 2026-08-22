@@ -1,0 +1,5 @@
+name = "nfs-utils"
+provider = "repology"
+
+[source]
+package = "nfs-utils"

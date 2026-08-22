@@ -1,0 +1,5 @@
+name = "ttf-awesome"
+provider = "repology"
+
+[source]
+package = "ttf-awesome"

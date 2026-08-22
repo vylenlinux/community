@@ -1,0 +1,5 @@
+name = "aircrack-ng"
+provider = "repology"
+
+[source]
+package = "aircrack-ng"

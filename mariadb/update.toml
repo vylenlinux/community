@@ -1,0 +1,5 @@
+name = "mariadb"
+provider = "repology"
+
+[source]
+package = "mariadb"

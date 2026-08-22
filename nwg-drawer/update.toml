@@ -1,0 +1,5 @@
+name = "nwg-drawer"
+provider = "repology"
+
+[source]
+package = "nwg-drawer"

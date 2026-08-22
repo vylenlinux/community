@@ -1,0 +1,5 @@
+name = "yt-dlp"
+provider = "repology"
+
+[source]
+package = "yt-dlp"

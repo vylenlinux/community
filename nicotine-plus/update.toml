@@ -1,0 +1,5 @@
+name = "nicotine-plus"
+provider = "repology"
+
+[source]
+package = "nicotine+"

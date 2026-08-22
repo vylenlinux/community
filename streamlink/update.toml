@@ -1,0 +1,5 @@
+name = "streamlink"
+provider = "repology"
+
+[source]
+package = "streamlink"

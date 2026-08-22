@@ -1,0 +1,5 @@
+name = "mediawriter"
+provider = "repology"
+
+[source]
+package = "mediawriter"

@@ -1,0 +1,5 @@
+name = "xtitle"
+provider = "repology"
+
+[source]
+package = "xtitle"

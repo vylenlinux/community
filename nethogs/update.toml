@@ -1,0 +1,5 @@
+name = "nethogs"
+provider = "repology"
+
+[source]
+package = "nethogs"

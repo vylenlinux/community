@@ -1,0 +1,5 @@
+name = "zita-convolver"
+provider = "repology"
+
+[source]
+package = "zita-convolver"

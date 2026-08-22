@@ -1,0 +1,5 @@
+name = "ruby-rb-inotify"
+provider = "repology"
+
+[source]
+package = "ruby:rb-inotify"

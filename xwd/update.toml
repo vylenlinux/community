@@ -1,0 +1,5 @@
+name = "xwd"
+provider = "repology"
+
+[source]
+package = "xwd"

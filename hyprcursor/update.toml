@@ -1,0 +1,5 @@
+name = "hyprcursor"
+provider = "repology"
+
+[source]
+package = "hyprcursor"

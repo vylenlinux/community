@@ -1,0 +1,5 @@
+name = "newsboat"
+provider = "repology"
+
+[source]
+package = "newsboat"

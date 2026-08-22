@@ -1,0 +1,5 @@
+name = "perl-unicode-string"
+provider = "repology"
+
+[source]
+package = "perl:unicode-string"

@@ -1,0 +1,5 @@
+name = "you-get"
+provider = "repology"
+
+[source]
+package = "you-get"

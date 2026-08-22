@@ -1,0 +1,5 @@
+name = "nvtop"
+provider = "repology"
+
+[source]
+package = "nvtop"

@@ -1,0 +1,5 @@
+name = "nwg-look"
+provider = "repology"
+
+[source]
+package = "nwg-look"

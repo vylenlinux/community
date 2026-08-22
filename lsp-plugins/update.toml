@@ -1,0 +1,5 @@
+name = "lsp-plugins"
+provider = "repology"
+
+[source]
+package = "lsp-plugins"

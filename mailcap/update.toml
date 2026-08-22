@@ -1,0 +1,5 @@
+name = "mailcap"
+provider = "repology"
+
+[source]
+package = "mailcap"

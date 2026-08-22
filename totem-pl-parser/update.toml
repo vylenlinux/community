@@ -1,0 +1,5 @@
+name = "totem-pl-parser"
+provider = "repology"
+
+[source]
+package = "totem-pl-parser"

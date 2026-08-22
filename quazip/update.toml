@@ -1,0 +1,5 @@
+name = "quazip"
+provider = "repology"
+
+[source]
+package = "quazip"

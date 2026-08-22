@@ -1,0 +1,5 @@
+name = "password-store"
+provider = "repology"
+
+[source]
+package = "password-store"

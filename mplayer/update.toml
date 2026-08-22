@@ -1,0 +1,5 @@
+name = "mplayer"
+provider = "repology"
+
+[source]
+package = "mplayer"

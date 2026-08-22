@@ -1,0 +1,5 @@
+name = "reaver"
+provider = "repology"
+
+[source]
+package = "reaver"

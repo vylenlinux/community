@@ -1,0 +1,5 @@
+name = "distrobox"
+provider = "repology"
+
+[source]
+package = "distrobox"

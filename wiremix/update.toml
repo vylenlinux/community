@@ -1,0 +1,5 @@
+name = "wiremix"
+provider = "repology"
+
+[source]
+package = "wiremix"

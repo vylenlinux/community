@@ -1,0 +1,5 @@
+name = "simple-mtpfs"
+provider = "repology"
+
+[source]
+package = "simple-mtpfs"

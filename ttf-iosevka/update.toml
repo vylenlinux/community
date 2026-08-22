@@ -1,0 +1,5 @@
+name = "ttf-iosevka"
+provider = "repology"
+
+[source]
+package = "ttf-iosevka"

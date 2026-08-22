@@ -1,0 +1,5 @@
+name = "imake"
+provider = "repology"
+
+[source]
+package = "imake"

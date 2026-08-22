@@ -1,0 +1,5 @@
+name = "android-udev"
+provider = "repology"
+
+[source]
+package = "android-udev-rules"

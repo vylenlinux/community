@@ -1,0 +1,5 @@
+name = "cli-visualizer"
+provider = "repology"
+
+[source]
+package = "cli-visualizer"

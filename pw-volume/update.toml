@@ -1,0 +1,5 @@
+name = "pw-volume"
+provider = "repology"
+
+[source]
+package = "pw-volume"

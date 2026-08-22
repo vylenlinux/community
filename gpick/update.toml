@@ -1,0 +1,5 @@
+name = "gpick"
+provider = "repology"
+
+[source]
+package = "gpick"

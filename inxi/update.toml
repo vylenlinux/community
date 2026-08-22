@@ -1,0 +1,5 @@
+name = "inxi"
+provider = "repology"
+
+[source]
+package = "inxi"

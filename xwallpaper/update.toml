@@ -1,0 +1,5 @@
+name = "xwallpaper"
+provider = "repology"
+
+[source]
+package = "xwallpaper"

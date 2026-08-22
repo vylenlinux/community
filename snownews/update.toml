@@ -1,0 +1,5 @@
+name = "snownews"
+provider = "repology"
+
+[source]
+package = "snownews"

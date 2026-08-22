@@ -1,0 +1,5 @@
+name = "retroarch"
+provider = "repology"
+
+[source]
+package = "retroarch"

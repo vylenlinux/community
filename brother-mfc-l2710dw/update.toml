@@ -1,0 +1,5 @@
+name = "brother-mfc-l2710dw"
+provider = "repology"
+
+[source]
+package = "brother-mfc-l2710dw"

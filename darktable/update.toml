@@ -1,0 +1,5 @@
+name = "darktable"
+provider = "repology"
+
+[source]
+package = "darktable"

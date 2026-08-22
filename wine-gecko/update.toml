@@ -1,0 +1,5 @@
+name = "wine-gecko"
+provider = "repology"
+
+[source]
+package = "wine-gecko"

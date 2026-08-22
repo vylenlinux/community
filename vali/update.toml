@@ -1,0 +1,5 @@
+name = "vali"
+provider = "repology"
+
+[source]
+package = "vali"

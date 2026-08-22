@@ -1,0 +1,5 @@
+name = "pugixml"
+provider = "repology"
+
+[source]
+package = "pugixml"

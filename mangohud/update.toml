@@ -1,0 +1,5 @@
+name = "mangohud"
+provider = "repology"
+
+[source]
+package = "mangohud"

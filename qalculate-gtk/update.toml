@@ -1,0 +1,5 @@
+name = "qalculate-gtk"
+provider = "repology"
+
+[source]
+package = "qalculate-gtk"

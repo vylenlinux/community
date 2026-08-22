@@ -1,0 +1,5 @@
+name = "xmessage"
+provider = "repology"
+
+[source]
+package = "xmessage"

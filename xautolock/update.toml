@@ -1,0 +1,5 @@
+name = "xautolock"
+provider = "repology"
+
+[source]
+package = "xautolock"

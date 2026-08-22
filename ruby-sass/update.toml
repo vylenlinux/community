@@ -1,0 +1,8 @@
+name = "ruby-sass"
+provider = "repology"
+
+[source]
+package = "ruby:sass"
+
+[repology]
+match_name = "sass"

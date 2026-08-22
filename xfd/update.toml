@@ -1,0 +1,5 @@
+name = "xfd"
+provider = "repology"
+
+[source]
+package = "xfd"

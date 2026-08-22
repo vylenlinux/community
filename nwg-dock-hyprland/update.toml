@@ -1,0 +1,5 @@
+name = "nwg-dock-hyprland"
+provider = "repology"
+
+[source]
+package = "nwg-dock-hyprland"

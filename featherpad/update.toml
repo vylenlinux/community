@@ -1,0 +1,5 @@
+name = "featherpad"
+provider = "repology"
+
+[source]
+package = "featherpad"

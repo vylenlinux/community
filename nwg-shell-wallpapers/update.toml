@@ -1,0 +1,5 @@
+name = "nwg-shell-wallpapers"
+provider = "repology"
+
+[source]
+package = "nwg-shell-wallpapers"

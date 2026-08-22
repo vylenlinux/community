@@ -1,0 +1,5 @@
+name = "qjackctl"
+provider = "repology"
+
+[source]
+package = "qjackctl"

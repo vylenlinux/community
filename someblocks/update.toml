@@ -1,0 +1,5 @@
+name = "someblocks"
+provider = "repology"
+
+[source]
+package = "someblocks"

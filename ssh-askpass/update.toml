@@ -1,0 +1,5 @@
+name = "ssh-askpass"
+provider = "repology"
+
+[source]
+package = "ssh-askpass"

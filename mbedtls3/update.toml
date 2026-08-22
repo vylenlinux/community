@@ -1,0 +1,8 @@
+name = "mbedtls3"
+provider = "repology"
+
+[source]
+package = "mbedtls"
+
+[repology]
+match_name = "mbedtls3"

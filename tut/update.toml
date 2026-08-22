@@ -1,0 +1,5 @@
+name = "tut"
+provider = "repology"
+
+[source]
+package = "tut"

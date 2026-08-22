@@ -1,0 +1,5 @@
+name = "minidlna"
+provider = "repology"
+
+[source]
+package = "readymedia"

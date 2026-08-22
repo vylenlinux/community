@@ -1,0 +1,5 @@
+name = "hyprland-guiutils"
+provider = "repology"
+
+[source]
+package = "hyprland-guiutils"

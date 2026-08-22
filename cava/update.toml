@@ -1,0 +1,5 @@
+name = "cava"
+provider = "repology"
+
+[source]
+package = "cava"

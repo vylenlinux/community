@@ -1,0 +1,5 @@
+name = "calf"
+provider = "repology"
+
+[source]
+package = "calf"

@@ -1,0 +1,5 @@
+name = "dotnet-sdk"
+provider = "repology"
+
+[source]
+package = "dotnet-sdk"

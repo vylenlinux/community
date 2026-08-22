@@ -1,0 +1,5 @@
+name = "scons"
+provider = "repology"
+
+[source]
+package = "scons"

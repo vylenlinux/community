@@ -1,0 +1,5 @@
+name = "gnome-themes-extra"
+provider = "repology"
+
+[source]
+package = "gnome-themes-extra"

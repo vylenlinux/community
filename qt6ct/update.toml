@@ -1,0 +1,5 @@
+name = "qt6ct"
+provider = "repology"
+
+[source]
+package = "qt6ct"

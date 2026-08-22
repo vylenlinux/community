@@ -1,0 +1,8 @@
+name = "openjdk-21-bin"
+provider = "repology"
+
+[source]
+package = "openjdk"
+
+[repology]
+match_name = "openjdk-21"

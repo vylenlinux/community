@@ -1,0 +1,5 @@
+name = "virt-manager"
+provider = "repology"
+
+[source]
+package = "virt-manager"

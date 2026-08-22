@@ -1,0 +1,5 @@
+name = "podman"
+provider = "repology"
+
+[source]
+package = "podman"

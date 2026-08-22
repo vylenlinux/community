@@ -1,0 +1,5 @@
+name = "xmlstarlet"
+provider = "repology"
+
+[source]
+package = "xmlstarlet"

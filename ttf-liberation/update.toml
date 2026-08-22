@@ -1,0 +1,5 @@
+name = "ttf-liberation"
+provider = "repology"
+
+[source]
+package = "ttf-liberation"

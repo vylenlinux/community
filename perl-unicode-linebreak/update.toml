@@ -1,0 +1,5 @@
+name = "perl-unicode-linebreak"
+provider = "repology"
+
+[source]
+package = "perl:unicode-linebreak"

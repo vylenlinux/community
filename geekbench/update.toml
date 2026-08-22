@@ -1,0 +1,5 @@
+name = "geekbench"
+provider = "repology"
+
+[source]
+package = "geekbench"

@@ -1,0 +1,5 @@
+name = "ttf-noto-emoji"
+provider = "repology"
+
+[source]
+package = "ttf-noto-emoji"

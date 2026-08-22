@@ -1,0 +1,5 @@
+name = "simde"
+provider = "repology"
+
+[source]
+package = "simde"

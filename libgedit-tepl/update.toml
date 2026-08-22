@@ -1,0 +1,5 @@
+name = "libgedit-tepl"
+provider = "repology"
+
+[source]
+package = "libgedit-tepl"

@@ -1,0 +1,5 @@
+name = "hyprland"
+provider = "repology"
+
+[source]
+package = "hyprland"

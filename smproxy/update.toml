@@ -1,0 +1,5 @@
+name = "smproxy"
+provider = "repology"
+
+[source]
+package = "smproxy"

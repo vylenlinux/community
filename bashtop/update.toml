@@ -1,0 +1,5 @@
+name = "bashtop"
+provider = "repology"
+
+[source]
+package = "bashtop"

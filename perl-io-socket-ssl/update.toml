@@ -1,0 +1,5 @@
+name = "perl-io-socket-ssl"
+provider = "repology"
+
+[source]
+package = "perl:io-socket-ssl"

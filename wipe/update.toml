@@ -1,0 +1,5 @@
+name = "wipe"
+provider = "repology"
+
+[source]
+package = "wipe"

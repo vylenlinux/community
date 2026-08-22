@@ -1,0 +1,5 @@
+name = "p7zip"
+provider = "repology"
+
+[source]
+package = "p7zip"

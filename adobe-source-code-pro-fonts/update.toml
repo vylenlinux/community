@@ -1,0 +1,5 @@
+name = "adobe-source-code-pro-fonts"
+provider = "repology"
+
+[source]
+package = "adobe-source-code-pro-fonts"

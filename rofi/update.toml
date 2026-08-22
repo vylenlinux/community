@@ -1,0 +1,5 @@
+name = "rofi"
+provider = "repology"
+
+[source]
+package = "rofi"

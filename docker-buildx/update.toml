@@ -1,0 +1,5 @@
+name = "docker-buildx"
+provider = "repology"
+
+[source]
+package = "docker-buildx"

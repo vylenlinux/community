@@ -1,0 +1,5 @@
+name = "ps_mem"
+provider = "repology"
+
+[source]
+package = "ps-mem"

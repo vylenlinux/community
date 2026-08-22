@@ -1,0 +1,5 @@
+name = "ttf-nerd-jetbrains-mono"
+provider = "repology"
+
+[source]
+package = "ttf-nerd-jetbrains-mono"

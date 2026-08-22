@@ -1,0 +1,5 @@
+name = "openfortivpn"
+provider = "repology"
+
+[source]
+package = "openfortivpn"

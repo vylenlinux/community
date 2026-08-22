@@ -1,0 +1,5 @@
+name = "yelp-tools"
+provider = "repology"
+
+[source]
+package = "yelp-tools"

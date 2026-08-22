@@ -1,0 +1,5 @@
+name = "hyprtoolkit"
+provider = "repology"
+
+[source]
+package = "hyprtoolkit"

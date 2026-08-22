@@ -1,0 +1,5 @@
+name = "optipng"
+provider = "repology"
+
+[source]
+package = "optipng"

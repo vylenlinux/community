@@ -1,0 +1,5 @@
+name = "composer"
+provider = "repology"
+
+[source]
+package = "php:composer"

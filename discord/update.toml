@@ -1,0 +1,5 @@
+name = "discord"
+provider = "repology"
+
+[source]
+package = "discord-linux"

@@ -1,0 +1,5 @@
+name = "nanosvg"
+provider = "repology"
+
+[source]
+package = "nanosvg"

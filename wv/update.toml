@@ -1,0 +1,5 @@
+name = "wv"
+provider = "repology"
+
+[source]
+package = "wv"

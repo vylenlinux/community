@@ -1,0 +1,5 @@
+name = "brother-brscan4"
+provider = "repology"
+
+[source]
+package = "brscan4"

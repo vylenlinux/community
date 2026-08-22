@@ -1,0 +1,5 @@
+name = "libfilezilla"
+provider = "repology"
+
+[source]
+package = "libfilezilla"

@@ -1,0 +1,5 @@
+name = "wlopm"
+provider = "repology"
+
+[source]
+package = "wlopm"

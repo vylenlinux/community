@@ -1,0 +1,5 @@
+name = "wlr-randr"
+provider = "repology"
+
+[source]
+package = "wlr-randr"

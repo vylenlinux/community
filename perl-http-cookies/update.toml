@@ -1,0 +1,5 @@
+name = "perl-http-cookies"
+provider = "repology"
+
+[source]
+package = "perl:http-cookies"

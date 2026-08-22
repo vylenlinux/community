@@ -1,0 +1,5 @@
+name = "ttf-mononoki"
+provider = "repology"
+
+[source]
+package = "ttf-mononoki"

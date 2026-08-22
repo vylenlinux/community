@@ -1,0 +1,5 @@
+name = "ruby-ffi"
+provider = "repology"
+
+[source]
+package = "ruby:ffi"

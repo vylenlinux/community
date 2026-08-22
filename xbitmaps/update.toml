@@ -1,0 +1,5 @@
+name = "xbitmaps"
+provider = "repology"
+
+[source]
+package = "xbitmaps"

@@ -1,0 +1,5 @@
+name = "apache"
+provider = "repology"
+
+[source]
+package = "apache"

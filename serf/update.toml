@@ -1,0 +1,5 @@
+name = "serf"
+provider = "repology"
+
+[source]
+package = "serf"

@@ -1,0 +1,5 @@
+name = "gegl"
+provider = "repology"
+
+[source]
+package = "gegl"

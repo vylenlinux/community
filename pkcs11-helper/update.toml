@@ -1,0 +1,5 @@
+name = "pkcs11-helper"
+provider = "repology"
+
+[source]
+package = "pkcs11-helper"

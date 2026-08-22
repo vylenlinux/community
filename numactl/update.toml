@@ -1,0 +1,5 @@
+name = "numactl"
+provider = "repology"
+
+[source]
+package = "numactl"

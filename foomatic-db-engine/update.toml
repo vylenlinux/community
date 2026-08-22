@@ -1,0 +1,5 @@
+name = "foomatic-db-engine"
+provider = "repology"
+
+[source]
+package = "foomatic-db-engine"

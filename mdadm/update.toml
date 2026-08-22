@@ -1,0 +1,5 @@
+name = "mdadm"
+provider = "repology"
+
+[source]
+package = "mdadm"

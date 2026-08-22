@@ -1,0 +1,6 @@
+name = "dotnet-targeting-pack"
+provider = "repology"
+
+[source]
+package = "dotnet-sdk"
+dedup_key = "dotnet-sdk"

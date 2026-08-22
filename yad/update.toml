@@ -1,0 +1,5 @@
+name = "yad"
+provider = "repology"
+
+[source]
+package = "yad"

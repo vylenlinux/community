@@ -1,0 +1,5 @@
+name = "xcur2png"
+provider = "repology"
+
+[source]
+package = "xcur2png"

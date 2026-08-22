@@ -1,0 +1,5 @@
+name = "xcompmgr"
+provider = "repology"
+
+[source]
+package = "xcompmgr"

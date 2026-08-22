@@ -1,0 +1,5 @@
+name = "ttf-firacode"
+provider = "repology"
+
+[source]
+package = "ttf-firacode"

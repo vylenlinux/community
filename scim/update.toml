@@ -1,0 +1,5 @@
+name = "scim"
+provider = "repology"
+
+[source]
+package = "scim"

@@ -1,0 +1,10 @@
+name = "go-mtpfs"
+provider = "github"
+
+[source]
+owner = "hanwen"
+repo = "go-mtpfs"
+
+[github]
+use_releases = false
+use_tags = true

@@ -1,0 +1,5 @@
+name = "galculator"
+provider = "repology"
+
+[source]
+package = "galculator"

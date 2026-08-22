@@ -1,0 +1,5 @@
+name = "gtk-engine-murrine"
+provider = "repology"
+
+[source]
+package = "gtk-engine-murrine"

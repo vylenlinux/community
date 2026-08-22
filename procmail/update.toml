@@ -1,0 +1,5 @@
+name = "procmail"
+provider = "repology"
+
+[source]
+package = "procmail"

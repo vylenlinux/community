@@ -1,0 +1,5 @@
+name = "simplescreenrecorder"
+provider = "repology"
+
+[source]
+package = "simplescreenrecorder"

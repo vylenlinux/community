@@ -1,0 +1,5 @@
+name = "keepassxc"
+provider = "repology"
+
+[source]
+package = "keepassxc"

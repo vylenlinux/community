@@ -1,0 +1,5 @@
+name = "twolame"
+provider = "repology"
+
+[source]
+package = "twolame"

@@ -1,0 +1,5 @@
+name = "wbg"
+provider = "repology"
+
+[source]
+package = "wbg"

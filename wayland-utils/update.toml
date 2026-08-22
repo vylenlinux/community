@@ -1,0 +1,5 @@
+name = "wayland-utils"
+provider = "repology"
+
+[source]
+package = "wayland-utils"

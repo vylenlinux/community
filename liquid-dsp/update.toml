@@ -1,0 +1,5 @@
+name = "liquid-dsp"
+provider = "repology"
+
+[source]
+package = "liquid-dsp"

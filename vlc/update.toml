@@ -1,0 +1,5 @@
+name = "vlc"
+provider = "repology"
+
+[source]
+package = "vlc"

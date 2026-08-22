@@ -1,0 +1,5 @@
+name = "lightdm"
+provider = "repology"
+
+[source]
+package = "lightdm"

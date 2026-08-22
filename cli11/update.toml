@@ -1,0 +1,5 @@
+name = "cli11"
+provider = "repology"
+
+[source]
+package = "cli11"

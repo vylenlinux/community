@@ -1,0 +1,5 @@
+name = "ttf-hack"
+provider = "repology"
+
+[source]
+package = "ttf-hack"

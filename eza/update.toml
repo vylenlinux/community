@@ -1,0 +1,5 @@
+name = "eza"
+provider = "repology"
+
+[source]
+package = "eza"

@@ -1,0 +1,6 @@
+name = "foomatic-db-ppds"
+provider = "repology"
+
+[source]
+package = "foomatic-db"
+dedup_key = "foomatic-db"

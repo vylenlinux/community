@@ -1,0 +1,5 @@
+name = "scenefx"
+provider = "repology"
+
+[source]
+package = "scenefx"

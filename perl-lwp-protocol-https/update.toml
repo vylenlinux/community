@@ -1,0 +1,5 @@
+name = "perl-lwp-protocol-https"
+provider = "repology"
+
+[source]
+package = "perl:lwp-protocol-https"

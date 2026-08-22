@@ -1,0 +1,5 @@
+name = "perl-net-ssleay"
+provider = "repology"
+
+[source]
+package = "perl:net-ssleay"

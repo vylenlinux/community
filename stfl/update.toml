@@ -1,0 +1,5 @@
+name = "stfl"
+provider = "repology"
+
+[source]
+package = "stfl"

@@ -1,0 +1,5 @@
+name = "ruby-maruku"
+provider = "repology"
+
+[source]
+package = "ruby:maruku"

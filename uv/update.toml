@@ -1,0 +1,5 @@
+name = "uv"
+provider = "repology"
+
+[source]
+package = "uv"

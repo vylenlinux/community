@@ -1,0 +1,5 @@
+name = "cliphist"
+provider = "repology"
+
+[source]
+package = "cliphist"

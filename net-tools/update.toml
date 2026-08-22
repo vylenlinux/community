@@ -1,0 +1,5 @@
+name = "net-tools"
+provider = "repology"
+
+[source]
+package = "net-tools"

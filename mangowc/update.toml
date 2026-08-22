@@ -1,0 +1,5 @@
+name = "mangowc"
+provider = "repology"
+
+[source]
+package = "mangowm"

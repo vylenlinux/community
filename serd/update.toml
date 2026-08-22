@@ -1,0 +1,5 @@
+name = "serd"
+provider = "repology"
+
+[source]
+package = "serd"

@@ -1,0 +1,5 @@
+name = "hyprutils"
+provider = "repology"
+
+[source]
+package = "hyprutils"

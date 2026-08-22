@@ -1,0 +1,5 @@
+name = "perl-try-tiny"
+provider = "repology"
+
+[source]
+package = "perl:try-tiny"

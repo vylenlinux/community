@@ -1,0 +1,5 @@
+name = "qpdf"
+provider = "repology"
+
+[source]
+package = "qpdf"

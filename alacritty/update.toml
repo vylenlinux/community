@@ -1,0 +1,5 @@
+name = "alacritty"
+provider = "repology"
+
+[source]
+package = "alacritty"

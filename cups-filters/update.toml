@@ -1,0 +1,5 @@
+name = "cups-filters"
+provider = "repology"
+
+[source]
+package = "cups-filters"

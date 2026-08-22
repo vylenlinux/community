@@ -1,0 +1,5 @@
+name = "ttf-librebarcode"
+provider = "repology"
+
+[source]
+package = "ttf-librebarcode"

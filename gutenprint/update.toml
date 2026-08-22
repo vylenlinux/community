@@ -1,0 +1,5 @@
+name = "gutenprint"
+provider = "repology"
+
+[source]
+package = "gutenprint"

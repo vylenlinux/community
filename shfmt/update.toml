@@ -1,0 +1,5 @@
+name = "shfmt"
+provider = "repology"
+
+[source]
+package = "shfmt"

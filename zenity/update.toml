@@ -1,0 +1,5 @@
+name = "zenity"
+provider = "repology"
+
+[source]
+package = "zenity"

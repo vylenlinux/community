@@ -1,0 +1,5 @@
+name = "mdbook"
+provider = "repology"
+
+[source]
+package = "mdbook"

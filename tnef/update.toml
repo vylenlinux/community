@@ -1,0 +1,5 @@
+name = "tnef"
+provider = "repology"
+
+[source]
+package = "tnef"

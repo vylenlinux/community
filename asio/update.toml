@@ -1,0 +1,5 @@
+name = "asio"
+provider = "repology"
+
+[source]
+package = "asio"

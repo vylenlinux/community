@@ -1,0 +1,5 @@
+name = "scribus"
+provider = "repology"
+
+[source]
+package = "scribus"

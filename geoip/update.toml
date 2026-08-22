@@ -1,0 +1,5 @@
+name = "geoip"
+provider = "repology"
+
+[source]
+package = "geoip"

@@ -1,0 +1,5 @@
+name = "perl-net-dns"
+provider = "repology"
+
+[source]
+package = "perl:net-dns"

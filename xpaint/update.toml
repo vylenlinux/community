@@ -1,0 +1,5 @@
+name = "xpaint"
+provider = "repology"
+
+[source]
+package = "xpaint"

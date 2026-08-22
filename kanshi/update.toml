@@ -1,0 +1,5 @@
+name = "kanshi"
+provider = "repology"
+
+[source]
+package = "kanshi"

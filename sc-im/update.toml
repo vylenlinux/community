@@ -1,0 +1,5 @@
+name = "sc-im"
+provider = "repology"
+
+[source]
+package = "sc-im"

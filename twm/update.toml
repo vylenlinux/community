@@ -1,0 +1,5 @@
+name = "twm"
+provider = "repology"
+
+[source]
+package = "twm"

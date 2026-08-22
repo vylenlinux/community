@@ -1,0 +1,5 @@
+name = "lightdm-gtk-greeter"
+provider = "repology"
+
+[source]
+package = "lightdm-gtk-greeter"

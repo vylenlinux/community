@@ -1,0 +1,5 @@
+name = "urxvt-perls"
+provider = "repology"
+
+[source]
+package = "urxvt-perls"

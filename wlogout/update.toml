@@ -1,0 +1,5 @@
+name = "wlogout"
+provider = "repology"
+
+[source]
+package = "wlogout"

@@ -1,0 +1,5 @@
+name = "asusctl"
+provider = "repology"
+
+[source]
+package = "asusctl"

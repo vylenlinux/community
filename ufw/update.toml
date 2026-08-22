@@ -1,0 +1,5 @@
+name = "ufw"
+provider = "repology"
+
+[source]
+package = "ufw"

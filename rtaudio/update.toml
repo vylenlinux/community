@@ -1,0 +1,5 @@
+name = "rtaudio"
+provider = "repology"
+
+[source]
+package = "rtaudio"

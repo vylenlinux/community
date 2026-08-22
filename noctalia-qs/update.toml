@@ -1,0 +1,6 @@
+name = "noctalia-qs"
+provider = "github"
+
+[source]
+owner = "noctalia-dev"
+repo = "noctalia-qs"

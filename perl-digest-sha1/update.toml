@@ -1,0 +1,5 @@
+name = "perl-digest-sha1"
+provider = "repology"
+
+[source]
+package = "perl:digest-sha1"

@@ -1,0 +1,5 @@
+name = "plank"
+provider = "repology"
+
+[source]
+package = "plank"

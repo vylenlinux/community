@@ -1,0 +1,5 @@
+name = "perl-libwww"
+provider = "repology"
+
+[source]
+package = "perl:libwww-perl"

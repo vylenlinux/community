@@ -1,0 +1,5 @@
+name = "xclip"
+provider = "repology"
+
+[source]
+package = "xclip"

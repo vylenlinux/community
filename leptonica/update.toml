@@ -1,0 +1,5 @@
+name = "leptonica"
+provider = "repology"
+
+[source]
+package = "leptonica"

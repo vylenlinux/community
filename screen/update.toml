@@ -1,0 +1,5 @@
+name = "screen"
+provider = "repology"
+
+[source]
+package = "screen"

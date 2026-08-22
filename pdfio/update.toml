@@ -1,0 +1,5 @@
+name = "pdfio"
+provider = "repology"
+
+[source]
+package = "pdfio"

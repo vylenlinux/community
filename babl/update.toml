@@ -1,0 +1,5 @@
+name = "babl"
+provider = "repology"
+
+[source]
+package = "babl"

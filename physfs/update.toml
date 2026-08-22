@@ -1,0 +1,5 @@
+name = "physfs"
+provider = "repology"
+
+[source]
+package = "physfs"

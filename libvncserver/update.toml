@@ -1,0 +1,5 @@
+name = "libvncserver"
+provider = "repology"
+
+[source]
+package = "libvncserver"

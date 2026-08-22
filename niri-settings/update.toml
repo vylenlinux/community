@@ -1,0 +1,5 @@
+name = "niri-settings"
+provider = "repology"
+
+[source]
+package = "niri-settings"

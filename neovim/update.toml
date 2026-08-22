@@ -1,0 +1,5 @@
+name = "neovim"
+provider = "repology"
+
+[source]
+package = "neovim"

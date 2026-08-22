@@ -1,0 +1,5 @@
+name = "winetricks"
+provider = "repology"
+
+[source]
+package = "winetricks"

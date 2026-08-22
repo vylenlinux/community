@@ -1,0 +1,5 @@
+name = "nwg-menu"
+provider = "repology"
+
+[source]
+package = "nwg-menu"

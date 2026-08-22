@@ -1,0 +1,5 @@
+name = "mkvtoolnix"
+provider = "repology"
+
+[source]
+package = "mkvtoolnix"

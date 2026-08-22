@@ -1,0 +1,5 @@
+name = "kitty"
+provider = "repology"
+
+[source]
+package = "kitty-terminal"

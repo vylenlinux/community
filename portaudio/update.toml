@@ -1,0 +1,5 @@
+name = "portaudio"
+provider = "repology"
+
+[source]
+package = "portaudio"

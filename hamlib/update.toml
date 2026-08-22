@@ -1,0 +1,5 @@
+name = "hamlib"
+provider = "repology"
+
+[source]
+package = "hamlib"

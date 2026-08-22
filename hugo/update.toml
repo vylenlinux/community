@@ -1,0 +1,5 @@
+name = "hugo"
+provider = "repology"
+
+[source]
+package = "hugo-sitegen"

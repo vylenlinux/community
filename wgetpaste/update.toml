@@ -1,0 +1,5 @@
+name = "wgetpaste"
+provider = "repology"
+
+[source]
+package = "wgetpaste"

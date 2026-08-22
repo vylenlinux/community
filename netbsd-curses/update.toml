@@ -1,0 +1,5 @@
+name = "netbsd-curses"
+provider = "repology"
+
+[source]
+package = "netbsd-curses"

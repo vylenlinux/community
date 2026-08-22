@@ -1,0 +1,5 @@
+name = "wlrobs"
+provider = "repology"
+
+[source]
+package = "wlrobs"

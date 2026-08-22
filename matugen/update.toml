@@ -1,0 +1,5 @@
+name = "matugen"
+provider = "repology"
+
+[source]
+package = "matugen"

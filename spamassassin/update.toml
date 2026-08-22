@@ -1,0 +1,5 @@
+name = "spamassassin"
+provider = "repology"
+
+[source]
+package = "spamassassin"

@@ -1,0 +1,5 @@
+name = "fzf"
+provider = "repology"
+
+[source]
+package = "fzf"

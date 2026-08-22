@@ -1,0 +1,5 @@
+name = "playerctl"
+provider = "repology"
+
+[source]
+package = "playerctl"

@@ -1,0 +1,5 @@
+name = "xcursor-themes"
+provider = "repology"
+
+[source]
+package = "xcursor-themes"

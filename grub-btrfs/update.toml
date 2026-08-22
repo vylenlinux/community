@@ -1,0 +1,5 @@
+name = "grub-btrfs"
+provider = "repology"
+
+[source]
+package = "grub-btrfs"

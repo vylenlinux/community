@@ -1,0 +1,5 @@
+name = "terminator"
+provider = "repology"
+
+[source]
+package = "terminator"

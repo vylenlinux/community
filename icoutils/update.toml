@@ -1,0 +1,5 @@
+name = "icoutils"
+provider = "repology"
+
+[source]
+package = "icoutils"

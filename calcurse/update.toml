@@ -1,0 +1,5 @@
+name = "calcurse"
+provider = "repology"
+
+[source]
+package = "calcurse"

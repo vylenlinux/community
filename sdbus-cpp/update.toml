@@ -1,0 +1,5 @@
+name = "sdbus-cpp"
+provider = "repology"
+
+[source]
+package = "sdbus-cpp"

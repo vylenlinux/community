@@ -1,0 +1,5 @@
+name = "icon-naming-utils"
+provider = "repology"
+
+[source]
+package = "icon-naming-utils"

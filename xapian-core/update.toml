@@ -1,0 +1,5 @@
+name = "xapian-core"
+provider = "repology"
+
+[source]
+package = "xapian-core"

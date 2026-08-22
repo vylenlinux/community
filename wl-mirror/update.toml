@@ -1,0 +1,5 @@
+name = "wl-mirror"
+provider = "repology"
+
+[source]
+package = "wl-mirror"

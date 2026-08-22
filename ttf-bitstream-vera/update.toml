@@ -1,0 +1,5 @@
+name = "ttf-bitstream-vera"
+provider = "repology"
+
+[source]
+package = "ttf-bitstream-vera"

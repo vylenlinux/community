@@ -1,0 +1,5 @@
+name = "msmtp"
+provider = "repology"
+
+[source]
+package = "msmtp"

@@ -1,0 +1,5 @@
+name = "epson-inkjet-printer-escpr"
+provider = "repology"
+
+[source]
+package = "epson-inkjet-printer-escpr"

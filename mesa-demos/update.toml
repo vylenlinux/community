@@ -1,0 +1,5 @@
+name = "mesa-demos"
+provider = "repology"
+
+[source]
+package = "mesa-demos"

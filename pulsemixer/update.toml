@@ -1,0 +1,5 @@
+name = "pulsemixer"
+provider = "repology"
+
+[source]
+package = "pulsemixer"

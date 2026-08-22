@@ -1,0 +1,5 @@
+name = "perl-digest-hmac"
+provider = "repology"
+
+[source]
+package = "perl:digest-hmac"

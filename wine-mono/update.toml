@@ -1,0 +1,5 @@
+name = "wine-mono"
+provider = "repology"
+
+[source]
+package = "wine-mono"

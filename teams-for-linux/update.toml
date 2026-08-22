@@ -1,0 +1,5 @@
+name = "teams-for-linux"
+provider = "repology"
+
+[source]
+package = "teams-for-linux"

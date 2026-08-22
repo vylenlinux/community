@@ -1,0 +1,5 @@
+name = "sane"
+provider = "repology"
+
+[source]
+package = "sane-backends"

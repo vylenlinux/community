@@ -1,0 +1,5 @@
+name = "wine-staging"
+provider = "repology"
+
+[source]
+package = "wine-staging"

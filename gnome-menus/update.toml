@@ -1,0 +1,5 @@
+name = "gnome-menus"
+provider = "repology"
+
+[source]
+package = "gnome-menus"

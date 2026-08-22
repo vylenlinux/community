@@ -1,0 +1,5 @@
+name = "eigen"
+provider = "repology"
+
+[source]
+package = "eigen"

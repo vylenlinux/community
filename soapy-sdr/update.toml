@@ -1,0 +1,5 @@
+name = "soapy-sdr"
+provider = "repology"
+
+[source]
+package = "soapy-sdr"

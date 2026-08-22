@@ -1,0 +1,5 @@
+name = "subversion"
+provider = "repology"
+
+[source]
+package = "subversion"

@@ -1,0 +1,5 @@
+name = "perl-mozilla-ca"
+provider = "repology"
+
+[source]
+package = "perl:mozilla-ca"

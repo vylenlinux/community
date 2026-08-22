@@ -1,0 +1,5 @@
+name = "sessreg"
+provider = "repology"
+
+[source]
+package = "sessreg"

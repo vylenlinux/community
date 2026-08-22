@@ -1,0 +1,5 @@
+name = "xsensors"
+provider = "repology"
+
+[source]
+package = "xsensors"

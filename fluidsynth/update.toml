@@ -1,0 +1,5 @@
+name = "fluidsynth"
+provider = "repology"
+
+[source]
+package = "fluidsynth"

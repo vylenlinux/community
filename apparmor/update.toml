@@ -1,0 +1,5 @@
+name = "apparmor"
+provider = "repology"
+
+[source]
+package = "apparmor"

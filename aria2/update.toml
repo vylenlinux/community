@@ -1,0 +1,5 @@
+name = "aria2"
+provider = "repology"
+
+[source]
+package = "aria2"

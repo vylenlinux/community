@@ -1,0 +1,5 @@
+name = "openvpn"
+provider = "repology"
+
+[source]
+package = "openvpn"

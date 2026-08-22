@@ -1,0 +1,5 @@
+name = "polkit-gnome"
+provider = "repology"
+
+[source]
+package = "polkit-gnome"

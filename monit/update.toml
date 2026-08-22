@@ -1,0 +1,5 @@
+name = "monit"
+provider = "repology"
+
+[source]
+package = "monit"

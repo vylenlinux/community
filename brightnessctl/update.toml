@@ -1,0 +1,5 @@
+name = "brightnessctl"
+provider = "repology"
+
+[source]
+package = "brightnessctl"

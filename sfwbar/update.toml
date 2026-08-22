@@ -1,0 +1,5 @@
+name = "sfwbar"
+provider = "repology"
+
+[source]
+package = "sfwbar"

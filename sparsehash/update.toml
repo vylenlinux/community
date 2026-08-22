@@ -1,0 +1,5 @@
+name = "sparsehash"
+provider = "repology"
+
+[source]
+package = "sparsehash"

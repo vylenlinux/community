@@ -1,0 +1,5 @@
+name = "xinput"
+provider = "repology"
+
+[source]
+package = "xinput"

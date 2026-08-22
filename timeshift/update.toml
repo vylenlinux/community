@@ -1,0 +1,5 @@
+name = "timeshift"
+provider = "repology"
+
+[source]
+package = "timeshift"

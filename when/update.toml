@@ -1,0 +1,5 @@
+name = "when"
+provider = "repology"
+
+[source]
+package = "when"

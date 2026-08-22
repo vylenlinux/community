@@ -1,0 +1,5 @@
+name = "emptty"
+provider = "repology"
+
+[source]
+package = "emptty"

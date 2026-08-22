@@ -1,0 +1,5 @@
+name = "broadcom-wl"
+provider = "repology"
+
+[source]
+package = "broadcom-wl"

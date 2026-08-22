@@ -1,0 +1,5 @@
+name = "hyprshot"
+provider = "repology"
+
+[source]
+package = "hyprshot"

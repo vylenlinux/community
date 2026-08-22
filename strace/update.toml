@@ -1,0 +1,5 @@
+name = "strace"
+provider = "repology"
+
+[source]
+package = "strace"

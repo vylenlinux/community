@@ -1,0 +1,5 @@
+name = "hplip"
+provider = "repology"
+
+[source]
+package = "hplip"

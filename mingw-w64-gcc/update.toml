@@ -1,0 +1,5 @@
+name = "mingw-w64-gcc"
+provider = "repology"
+
+[source]
+package = "mingw-w64-gcc"

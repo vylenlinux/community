@@ -1,0 +1,5 @@
+name = "openresolv"
+provider = "repology"
+
+[source]
+package = "openresolv"

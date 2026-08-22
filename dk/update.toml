@@ -1,0 +1,5 @@
+name = "dk"
+provider = "repology"
+
+[source]
+package = "dk"

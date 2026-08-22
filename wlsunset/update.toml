@@ -1,0 +1,5 @@
+name = "wlsunset"
+provider = "repology"
+
+[source]
+package = "wlsunset"

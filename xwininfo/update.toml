@@ -1,0 +1,5 @@
+name = "xwininfo"
+provider = "repology"
+
+[source]
+package = "xwininfo"

@@ -1,0 +1,5 @@
+name = "tig"
+provider = "repology"
+
+[source]
+package = "tig"

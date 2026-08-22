@@ -1,0 +1,5 @@
+name = "vkmark"
+provider = "repology"
+
+[source]
+package = "vkmark"

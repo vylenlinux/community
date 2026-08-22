@@ -1,0 +1,5 @@
+name = "w3m"
+provider = "repology"
+
+[source]
+package = "w3m"

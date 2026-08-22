@@ -1,0 +1,5 @@
+name = "suil"
+provider = "repology"
+
+[source]
+package = "suil"

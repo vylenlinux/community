@@ -1,0 +1,5 @@
+name = "tini"
+provider = "repology"
+
+[source]
+package = "tini"

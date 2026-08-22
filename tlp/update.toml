@@ -1,0 +1,5 @@
+name = "tlp"
+provider = "repology"
+
+[source]
+package = "tlp"

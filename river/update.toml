@@ -1,0 +1,5 @@
+name = "river"
+provider = "repology"
+
+[source]
+package = "river-compositor"

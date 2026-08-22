@@ -1,0 +1,5 @@
+name = "diff-so-fancy"
+provider = "repology"
+
+[source]
+package = "diff-so-fancy"

@@ -1,0 +1,5 @@
+name = "putty"
+provider = "repology"
+
+[source]
+package = "putty"

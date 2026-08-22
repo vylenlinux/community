@@ -1,0 +1,5 @@
+name = "devour"
+provider = "repology"
+
+[source]
+package = "devour"

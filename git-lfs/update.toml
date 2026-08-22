@@ -1,0 +1,5 @@
+name = "git-lfs"
+provider = "repology"
+
+[source]
+package = "git-lfs"

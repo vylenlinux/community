@@ -1,0 +1,5 @@
+name = "wavpack"
+provider = "repology"
+
+[source]
+package = "wavpack"

@@ -1,0 +1,5 @@
+name = "outils"
+provider = "repology"
+
+[source]
+package = "outils"

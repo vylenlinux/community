@@ -1,0 +1,5 @@
+name = "openbsd-netcat"
+provider = "repology"
+
+[source]
+package = "netcat-openbsd"

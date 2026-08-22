@@ -1,0 +1,5 @@
+name = "networkmanager-openvpn"
+provider = "repology"
+
+[source]
+package = "networkmanager-openvpn"

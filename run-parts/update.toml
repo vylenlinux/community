@@ -1,0 +1,5 @@
+name = "run-parts"
+provider = "repology"
+
+[source]
+package = "run-parts"

@@ -1,0 +1,5 @@
+name = "vamp"
+provider = "repology"
+
+[source]
+package = "vamp"

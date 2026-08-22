@@ -1,0 +1,5 @@
+name = "libgedit-gtksourceview"
+provider = "repology"
+
+[source]
+package = "libgedit-gtksourceview"

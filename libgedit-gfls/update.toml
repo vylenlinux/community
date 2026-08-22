@@ -1,0 +1,5 @@
+name = "libgedit-gfls"
+provider = "repology"
+
+[source]
+package = "libgedit-gfls"

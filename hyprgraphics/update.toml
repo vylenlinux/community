@@ -1,0 +1,5 @@
+name = "hyprgraphics"
+provider = "repology"
+
+[source]
+package = "hyprgraphics"

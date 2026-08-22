@@ -1,0 +1,5 @@
+name = "gedit-plugins"
+provider = "repology"
+
+[source]
+package = "gedit-plugins"

@@ -1,0 +1,5 @@
+name = "glaze"
+provider = "repology"
+
+[source]
+package = "glaze"

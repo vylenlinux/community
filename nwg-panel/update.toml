@@ -1,0 +1,5 @@
+name = "nwg-panel"
+provider = "repology"
+
+[source]
+package = "nwg-panel"

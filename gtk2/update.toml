@@ -1,0 +1,8 @@
+name = "gtk2"
+provider = "repology"
+
+[source]
+package = "gtk"
+
+[repology]
+match_name = "gtk2"

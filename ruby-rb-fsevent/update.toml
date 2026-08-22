@@ -1,0 +1,5 @@
+name = "ruby-rb-fsevent"
+provider = "repology"
+
+[source]
+package = "ruby:rb-fsevent"

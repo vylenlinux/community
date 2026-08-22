@@ -1,0 +1,5 @@
+name = "macchina"
+provider = "repology"
+
+[source]
+package = "macchina"

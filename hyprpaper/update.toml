@@ -1,0 +1,5 @@
+name = "hyprpaper"
+provider = "repology"
+
+[source]
+package = "hyprpaper"

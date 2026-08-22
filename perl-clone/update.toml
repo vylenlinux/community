@@ -1,0 +1,5 @@
+name = "perl-clone"
+provider = "repology"
+
+[source]
+package = "perl:clone"

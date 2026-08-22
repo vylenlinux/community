@@ -1,0 +1,5 @@
+name = "xlsfonts"
+provider = "repology"
+
+[source]
+package = "xlsfonts"

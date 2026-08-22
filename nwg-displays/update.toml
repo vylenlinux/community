@@ -1,0 +1,5 @@
+name = "nwg-displays"
+provider = "repology"
+
+[source]
+package = "nwg-displays"

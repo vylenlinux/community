@@ -1,0 +1,5 @@
+name = "cmatrix"
+provider = "repology"
+
+[source]
+package = "cmatrix"

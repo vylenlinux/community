@@ -1,0 +1,5 @@
+name = "shotcut"
+provider = "repology"
+
+[source]
+package = "shotcut"

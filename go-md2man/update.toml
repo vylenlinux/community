@@ -1,0 +1,5 @@
+name = "go-md2man"
+provider = "repology"
+
+[source]
+package = "go-md2man"

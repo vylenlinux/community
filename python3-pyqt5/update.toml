@@ -1,0 +1,5 @@
+name = "python3-pyqt5"
+provider = "repology"
+
+[source]
+package = "python:pyqt5"

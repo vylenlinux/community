@@ -1,0 +1,5 @@
+name = "firejail"
+provider = "repology"
+
+[source]
+package = "firejail"

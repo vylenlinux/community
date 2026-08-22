@@ -1,0 +1,5 @@
+name = "shntool"
+provider = "repology"
+
+[source]
+package = "shntool"

@@ -1,0 +1,5 @@
+name = "pwgen"
+provider = "repology"
+
+[source]
+package = "pwgen"

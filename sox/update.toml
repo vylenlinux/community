@@ -1,0 +1,5 @@
+name = "sox"
+provider = "repology"
+
+[source]
+package = "sox"

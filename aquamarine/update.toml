@@ -1,0 +1,5 @@
+name = "aquamarine"
+provider = "repology"
+
+[source]
+package = "aquamarine-rendering-backend"

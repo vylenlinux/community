@@ -1,0 +1,5 @@
+name = "vkd3d"
+provider = "repology"
+
+[source]
+package = "vkd3d"

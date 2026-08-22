@@ -1,0 +1,5 @@
+name = "pfetch"
+provider = "repology"
+
+[source]
+package = "pfetch"

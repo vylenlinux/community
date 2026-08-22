@@ -1,0 +1,5 @@
+name = "amdgpu_top"
+provider = "repology"
+
+[source]
+package = "amdgpu_top"

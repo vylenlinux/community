@@ -1,0 +1,5 @@
+name = "cmus"
+provider = "repology"
+
+[source]
+package = "cmus"

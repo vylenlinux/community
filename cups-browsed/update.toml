@@ -1,0 +1,5 @@
+name = "cups-browsed"
+provider = "repology"
+
+[source]
+package = "cups-browsed"

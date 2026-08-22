@@ -1,0 +1,5 @@
+name = "gtk-engines"
+provider = "repology"
+
+[source]
+package = "gtk-engines"

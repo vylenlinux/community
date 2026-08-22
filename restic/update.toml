@@ -1,0 +1,5 @@
+name = "restic"
+provider = "repology"
+
+[source]
+package = "restic"

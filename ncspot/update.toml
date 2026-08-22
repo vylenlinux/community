@@ -1,0 +1,5 @@
+name = "ncspot"
+provider = "repology"
+
+[source]
+package = "ncspot"

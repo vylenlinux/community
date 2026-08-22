@@ -1,0 +1,5 @@
+name = "testdisk"
+provider = "repology"
+
+[source]
+package = "testdisk"

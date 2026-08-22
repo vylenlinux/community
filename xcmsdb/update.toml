@@ -1,0 +1,5 @@
+name = "xcmsdb"
+provider = "repology"
+
+[source]
+package = "xcmsdb"

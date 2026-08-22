@@ -1,0 +1,5 @@
+name = "libsodium"
+provider = "repology"
+
+[source]
+package = "libsodium"

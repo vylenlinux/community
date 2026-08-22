@@ -1,0 +1,5 @@
+name = "ttf-nerd-fonts-symbols"
+provider = "repology"
+
+[source]
+package = "ttf-nerd-fonts-symbols"

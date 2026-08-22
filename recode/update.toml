@@ -1,0 +1,5 @@
+name = "recode"
+provider = "repology"
+
+[source]
+package = "recode"

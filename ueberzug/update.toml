@@ -1,0 +1,5 @@
+name = "ueberzug"
+provider = "repology"
+
+[source]
+package = "ueberzug"

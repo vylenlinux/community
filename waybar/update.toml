@@ -1,0 +1,5 @@
+name = "waybar"
+provider = "repology"
+
+[source]
+package = "waybar"

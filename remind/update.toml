@@ -1,0 +1,5 @@
+name = "remind"
+provider = "repology"
+
+[source]
+package = "remind"

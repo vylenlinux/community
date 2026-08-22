@@ -1,0 +1,5 @@
+name = "wofi"
+provider = "repology"
+
+[source]
+package = "wofi"

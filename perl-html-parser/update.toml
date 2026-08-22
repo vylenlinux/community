@@ -1,0 +1,5 @@
+name = "perl-html-parser"
+provider = "repology"
+
+[source]
+package = "perl:html-parser"

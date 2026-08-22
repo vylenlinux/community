@@ -1,0 +1,5 @@
+name = "obs-studio"
+provider = "repology"
+
+[source]
+package = "obs-studio"

@@ -1,0 +1,5 @@
+name = "memtester"
+provider = "repology"
+
+[source]
+package = "memtester"

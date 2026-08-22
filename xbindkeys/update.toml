@@ -1,0 +1,5 @@
+name = "xbindkeys"
+provider = "repology"
+
+[source]
+package = "xbindkeys"

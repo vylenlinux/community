@@ -1,0 +1,5 @@
+name = "ttf-ubuntu-font-family"
+provider = "repology"
+
+[source]
+package = "ttf-ubuntu-font-family"

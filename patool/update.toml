@@ -1,0 +1,5 @@
+name = "patool"
+provider = "repology"
+
+[source]
+package = "patool"

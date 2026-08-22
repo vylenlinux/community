@@ -1,0 +1,5 @@
+name = "nyxt"
+provider = "repology"
+
+[source]
+package = "nyxt"

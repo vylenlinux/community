@@ -1,0 +1,5 @@
+name = "xerces-c"
+provider = "repology"
+
+[source]
+package = "xerces-c"

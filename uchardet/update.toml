@@ -1,0 +1,5 @@
+name = "uchardet"
+provider = "repology"
+
+[source]
+package = "uchardet"

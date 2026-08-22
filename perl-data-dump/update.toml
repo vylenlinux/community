@@ -1,0 +1,5 @@
+name = "perl-data-dump"
+provider = "repology"
+
+[source]
+package = "perl:data-dump"

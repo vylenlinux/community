@@ -1,0 +1,5 @@
+name = "sqlcipher"
+provider = "repology"
+
+[source]
+package = "sqlcipher"

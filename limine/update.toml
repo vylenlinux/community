@@ -1,0 +1,5 @@
+name = "limine"
+provider = "repology"
+
+[source]
+package = "limine"

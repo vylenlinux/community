@@ -1,0 +1,5 @@
+name = "sxhkd"
+provider = "repology"
+
+[source]
+package = "sxhkd"

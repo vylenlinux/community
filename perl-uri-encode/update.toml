@@ -1,0 +1,5 @@
+name = "perl-uri-encode"
+provider = "repology"
+
+[source]
+package = "perl:uri-encode"

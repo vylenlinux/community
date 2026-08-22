@@ -1,0 +1,5 @@
+name = "docker-compose"
+provider = "repology"
+
+[source]
+package = "docker-compose"

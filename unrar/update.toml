@@ -1,0 +1,5 @@
+name = "unrar"
+provider = "repology"
+
+[source]
+package = "unrar"

@@ -1,0 +1,5 @@
+name = "calc"
+provider = "repology"
+
+[source]
+package = "calc-arbitrary-precision-calculator"

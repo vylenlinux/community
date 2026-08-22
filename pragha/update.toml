@@ -1,0 +1,5 @@
+name = "pragha"
+provider = "repology"
+
+[source]
+package = "pragha"

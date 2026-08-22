@@ -1,0 +1,5 @@
+name = "ohsnap"
+provider = "repology"
+
+[source]
+package = "fonts:ohsnap"

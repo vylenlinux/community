@@ -1,0 +1,5 @@
+name = "bmon"
+provider = "repology"
+
+[source]
+package = "bmon"

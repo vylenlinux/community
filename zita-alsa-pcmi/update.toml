@@ -1,0 +1,5 @@
+name = "zita-alsa-pcmi"
+provider = "repology"
+
+[source]
+package = "zita-alsa-pcmi"

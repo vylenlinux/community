@@ -1,0 +1,5 @@
+name = "btrfs-assistant"
+provider = "repology"
+
+[source]
+package = "btrfs-assistant"

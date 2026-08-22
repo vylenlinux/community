@@ -1,0 +1,5 @@
+name = "gnome-icon-theme"
+provider = "repology"
+
+[source]
+package = "gnome-icon-theme"

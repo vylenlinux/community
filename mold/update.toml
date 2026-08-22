@@ -1,0 +1,5 @@
+name = "mold"
+provider = "repology"
+
+[source]
+package = "mold"

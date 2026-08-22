@@ -1,0 +1,5 @@
+name = "qrencode"
+provider = "repology"
+
+[source]
+package = "qrencode"

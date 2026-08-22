@@ -1,0 +1,5 @@
+name = "gimp"
+provider = "repology"
+
+[source]
+package = "gimp"

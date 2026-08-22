@@ -1,0 +1,5 @@
+name = "notification-daemon"
+provider = "repology"
+
+[source]
+package = "notification-daemon"

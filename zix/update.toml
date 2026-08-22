@@ -1,0 +1,5 @@
+name = "zix"
+provider = "repology"
+
+[source]
+package = "zix"

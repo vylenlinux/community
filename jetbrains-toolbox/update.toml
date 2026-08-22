@@ -1,0 +1,5 @@
+name = "jetbrains-toolbox"
+provider = "repology"
+
+[source]
+package = "jetbrains-toolbox"

@@ -1,0 +1,5 @@
+name = "papirus-icon-theme"
+provider = "repology"
+
+[source]
+package = "papirus-icon-theme"

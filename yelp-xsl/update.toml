@@ -1,0 +1,5 @@
+name = "yelp-xsl"
+provider = "repology"
+
+[source]
+package = "yelp-xsl"

@@ -1,0 +1,5 @@
+name = "snapper"
+provider = "repology"
+
+[source]
+package = "snapper"

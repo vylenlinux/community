@@ -1,0 +1,5 @@
+name = "tty-clock"
+provider = "repology"
+
+[source]
+package = "tty-clock"

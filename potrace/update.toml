@@ -1,0 +1,5 @@
+name = "potrace"
+provider = "repology"
+
+[source]
+package = "potrace"

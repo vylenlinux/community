@@ -1,0 +1,5 @@
+name = "libpathrs"
+provider = "repology"
+
+[source]
+package = "libpathrs"

@@ -1,0 +1,5 @@
+name = "perl-encode-locale"
+provider = "repology"
+
+[source]
+package = "perl:encode-locale"

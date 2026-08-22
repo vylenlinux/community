@@ -1,0 +1,5 @@
+name = "conky"
+provider = "repology"
+
+[source]
+package = "conky"

@@ -1,0 +1,5 @@
+name = "libportal"
+provider = "repology"
+
+[source]
+package = "libportal"

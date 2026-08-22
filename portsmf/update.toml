@@ -1,0 +1,5 @@
+name = "portsmf"
+provider = "repology"
+
+[source]
+package = "portsmf"

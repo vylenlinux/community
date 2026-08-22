@@ -1,0 +1,5 @@
+name = "hyprwayland-scanner"
+provider = "repology"
+
+[source]
+package = "hyprwayland-scanner"

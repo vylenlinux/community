@@ -1,0 +1,5 @@
+name = "abiword"
+provider = "repology"
+
+[source]
+package = "abiword"

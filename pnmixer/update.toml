@@ -1,0 +1,5 @@
+name = "pnmixer"
+provider = "repology"
+
+[source]
+package = "pnmixer"

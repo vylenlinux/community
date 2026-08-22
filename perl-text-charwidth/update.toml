@@ -1,0 +1,5 @@
+name = "perl-text-charwidth"
+provider = "repology"
+
+[source]
+package = "perl:text-charwidth"

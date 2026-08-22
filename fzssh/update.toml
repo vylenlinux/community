@@ -1,0 +1,5 @@
+name = "fzssh"
+provider = "repology"
+
+[source]
+package = "fzssh"

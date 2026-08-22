@@ -1,0 +1,5 @@
+name = "xclock"
+provider = "repology"
+
+[source]
+package = "xclock"

@@ -1,0 +1,5 @@
+name = "xmodmap"
+provider = "repology"
+
+[source]
+package = "xmodmap"

@@ -1,0 +1,5 @@
+name = "neon"
+provider = "repology"
+
+[source]
+package = "neon"

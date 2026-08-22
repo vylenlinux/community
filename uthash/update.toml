@@ -1,0 +1,5 @@
+name = "uthash"
+provider = "repology"
+
+[source]
+package = "uthash"

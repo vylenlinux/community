@@ -1,0 +1,5 @@
+name = "numlockx"
+provider = "repology"
+
+[source]
+package = "numlockx"

@@ -1,0 +1,5 @@
+name = "libgedit-amtk"
+provider = "repology"
+
+[source]
+package = "libgedit-amtk"

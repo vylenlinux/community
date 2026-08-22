@@ -1,0 +1,5 @@
+name = "opentimelineio"
+provider = "repology"
+
+[source]
+package = "opentimelineio"

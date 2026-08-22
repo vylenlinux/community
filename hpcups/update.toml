@@ -1,0 +1,6 @@
+name = "hpcups"
+provider = "repology"
+
+[source]
+package = "hplip"
+dedup_key = "hplip"

@@ -1,0 +1,5 @@
+name = "perl-http-message"
+provider = "repology"
+
+[source]
+package = "perl:http-message"

@@ -1,0 +1,5 @@
+name = "simple-scan"
+provider = "repology"
+
+[source]
+package = "simple-scan"

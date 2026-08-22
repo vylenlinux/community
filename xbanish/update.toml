@@ -1,0 +1,5 @@
+name = "xbanish"
+provider = "repology"
+
+[source]
+package = "xbanish"

@@ -1,0 +1,5 @@
+name = "perl-module-build"
+provider = "repology"
+
+[source]
+package = "perl:module-build"

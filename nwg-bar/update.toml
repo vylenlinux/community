@@ -1,0 +1,5 @@
+name = "nwg-bar"
+provider = "repology"
+
+[source]
+package = "nwg-bar"

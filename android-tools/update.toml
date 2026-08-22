@@ -1,0 +1,5 @@
+name = "android-tools"
+provider = "repology"
+
+[source]
+package = "android-tools-nmeum"

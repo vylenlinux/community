@@ -1,0 +1,5 @@
+name = "labwc-tweaks"
+provider = "repology"
+
+[source]
+package = "labwc-tweaks"

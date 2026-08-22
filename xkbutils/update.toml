@@ -1,0 +1,5 @@
+name = "xkbutils"
+provider = "repology"
+
+[source]
+package = "xkbutils"

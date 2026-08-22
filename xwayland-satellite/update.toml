@@ -1,0 +1,5 @@
+name = "xwayland-satellite"
+provider = "repology"
+
+[source]
+package = "xwayland-satellite"

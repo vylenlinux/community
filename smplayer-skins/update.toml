@@ -1,0 +1,5 @@
+name = "smplayer-skins"
+provider = "repology"
+
+[source]
+package = "smplayer-skins"

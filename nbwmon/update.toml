@@ -1,0 +1,5 @@
+name = "nbwmon"
+provider = "repology"
+
+[source]
+package = "nbwmon"

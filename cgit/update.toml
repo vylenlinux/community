@@ -1,0 +1,5 @@
+name = "cgit"
+provider = "repology"
+
+[source]
+package = "cgit"

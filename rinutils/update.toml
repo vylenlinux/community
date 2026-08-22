@@ -1,0 +1,5 @@
+name = "rinutils"
+provider = "repology"
+
+[source]
+package = "rinutils"

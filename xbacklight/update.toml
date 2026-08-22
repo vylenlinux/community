@@ -1,0 +1,5 @@
+name = "xbacklight"
+provider = "repology"
+
+[source]
+package = "xbacklight"

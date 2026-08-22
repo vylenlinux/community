@@ -1,0 +1,6 @@
+name = "catch2"
+provider = "github"
+
+[source]
+owner = "catchorg"
+repo = "catch2"

@@ -1,0 +1,5 @@
+name = "ncmpcpp"
+provider = "repology"
+
+[source]
+package = "ncmpcpp"

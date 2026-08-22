@@ -1,0 +1,5 @@
+name = "amf-headers"
+provider = "repology"
+
+[source]
+package = "amf-headers"

@@ -1,0 +1,5 @@
+name = "gtklock-powerbar-module"
+provider = "repology"
+
+[source]
+package = "gtklock-powerbar-module"

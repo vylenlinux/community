@@ -1,0 +1,5 @@
+name = "opusfile"
+provider = "repology"
+
+[source]
+package = "opusfile"

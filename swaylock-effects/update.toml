@@ -1,0 +1,5 @@
+name = "swaylock-effects"
+provider = "repology"
+
+[source]
+package = "swaylock-effects"

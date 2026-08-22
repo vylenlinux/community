@@ -1,0 +1,5 @@
+name = "xpdf"
+provider = "repology"
+
+[source]
+package = "xpdf"

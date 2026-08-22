@@ -1,0 +1,5 @@
+name = "protobuf-c"
+provider = "repology"
+
+[source]
+package = "protobuf-c"

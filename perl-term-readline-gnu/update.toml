@@ -1,0 +1,5 @@
+name = "perl-term-readline-gnu"
+provider = "repology"
+
+[source]
+package = "perl:term-readline-gnu"

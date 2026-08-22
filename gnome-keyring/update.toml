@@ -1,0 +1,5 @@
+name = "gnome-keyring"
+provider = "repology"
+
+[source]
+package = "gnome-keyring"
