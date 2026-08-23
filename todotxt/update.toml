@@ -2,4 +2,4 @@ name = "todotxt"
 provider = "repology"
 
 [source]
-package = "todotxt"
+package = "todo.txt-cli"
