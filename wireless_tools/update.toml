@@ -2,4 +2,4 @@ name = "wireless_tools"
 provider = "repology"
 
 [source]
-package = "wireless_tools"
+package = "wireless-tools"
