@@ -2,4 +2,4 @@ name = "samurai"
 provider = "repology"
 
 [source]
-package = "samurai"
+package = "samurai-build-tool"
