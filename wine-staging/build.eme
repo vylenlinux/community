@@ -6,8 +6,8 @@ homepage="https://www.wine-staging.com"
 maintainer="Vylen Linux Team"
 
 name=wine-staging
-version=11.15
-release=2
+version=11.16
+release=1
 
 vgecko=2.47.4
 vmono=11.3.0
@@ -42,7 +42,8 @@ build() {
         --with-xattr \
         --with-freetype \
         --enable-win64 \
-        --enable-archs=i386,x86_64
+        --enable-archs=i386,x86_64 \
+        --enable-build-id
 
     make depend
     make

@@ -1,4 +1,4 @@
-wine-staging-11.15-2
+wine-staging-11.16-2
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/revdep.d/
 -rw-r--r-- root/root    etc/revdep.d/wine-staging.conf
@@ -2987,6 +2987,7 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-unix/
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/winealsa.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/winebth.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/winebus.so
+-rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/wined3d.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/winedmo.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/winegstreamer.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/wineps.so
