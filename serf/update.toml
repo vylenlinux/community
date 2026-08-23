@@ -2,4 +2,4 @@ name = "serf"
 provider = "repology"
 
 [source]
-package = "serf"
+package = "apache-serf"
