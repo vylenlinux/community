@@ -2,4 +2,4 @@ name = "silversearcher"
 provider = "repology"
 
 [source]
-package = "silversearcher"
+package = "the-silver-searcher"
