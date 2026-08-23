@@ -2,4 +2,4 @@ name = "tesseract"
 provider = "repology"
 
 [source]
-package = "tesseract"
+package = "tesseract-ocr"
