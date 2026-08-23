@@ -2,4 +2,4 @@ name = "twm"
 provider = "repology"
 
 [source]
-package = "twm"
+package = "twm-window-manager"
