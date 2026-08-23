@@ -2,4 +2,4 @@ name = "utf8cpp"
 provider = "repology"
 
 [source]
-package = "utf8cpp"
+package = "utfcpp"
