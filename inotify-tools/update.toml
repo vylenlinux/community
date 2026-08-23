@@ -1,0 +1,5 @@
+name = "inotify-tools"
+provider = "repology"
+
+[source]
+package = "inotify-tools"
