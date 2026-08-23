@@ -50,9 +50,6 @@ build() {
         --enable-rtree \
         --enable-json
 
-    sed -i -e 's/int nKey;/Tcl_Size nKey;/g' src/tclsqlite.c
-    sed -i 's/int nKey;/Tcl_Size nKey;/g' tclsqlite-ex.c
-
     make
     make DESTDIR="${PKG}" install
 
