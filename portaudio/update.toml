@@ -1,5 +1,6 @@
 name = "portaudio"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "portaudio"
+owner = "portaudio"
+repo = "portaudio"
