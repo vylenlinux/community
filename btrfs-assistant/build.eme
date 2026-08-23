@@ -6,7 +6,7 @@ homepage="https://gitlab.com/btrfs-assistant/btrfs-assistant"
 maintainer="Vylen Linux Team"
 
 name=btrfs-assistant
-version=2.3
+version=2.3.1
 release=1
 source="https://gitlab.com/${name}/${name}/-/archive/${version}/${name}-${version}.tar.gz"
 backup="etc/btrfs-assistant.conf"
