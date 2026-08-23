@@ -2,4 +2,4 @@ name = "xtitle"
 provider = "repology"
 
 [source]
-package = "xtitle"
+package = "xtitle-baskerville"
