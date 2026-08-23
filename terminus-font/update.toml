@@ -2,4 +2,4 @@ name = "terminus-font"
 provider = "repology"
 
 [source]
-package = "terminus-font"
+package = "fonts:terminus-ttf"
