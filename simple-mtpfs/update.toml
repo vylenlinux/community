@@ -2,4 +2,4 @@ name = "simple-mtpfs"
 provider = "repology"
 
 [source]
-package = "simple-mtpfs"
+package = "fusefs:simple-mtpfs"
