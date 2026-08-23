@@ -2,4 +2,4 @@ name = "adobe-source-code-pro-fonts"
 provider = "repology"
 
 [source]
-package = "adobe-source-code-pro-fonts"
+package = "fonts:source-code-pro"
