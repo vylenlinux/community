@@ -1,5 +1,0 @@
-name = "motif"
-provider = "repology"
-
-[source]
-package = "motif"
