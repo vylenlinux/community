@@ -1,5 +1,5 @@
 name = "wine"
-provider = "repology"
+provider = "archlinux"
 
 [source]
 package = "wine"
