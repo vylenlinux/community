@@ -2,4 +2,4 @@ name = "signify"
 provider = "repology"
 
 [source]
-package = "signify"
+package = "signify-openbsd"
