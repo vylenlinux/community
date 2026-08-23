@@ -2,4 +2,5 @@ name = "zita-resampler-libs"
 provider = "repology"
 
 [source]
-package = "zita-resampler-libs"
+package = "zita-resampler"
+dedup_key = "zita-resampler"
