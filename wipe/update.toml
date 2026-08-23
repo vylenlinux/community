@@ -2,4 +2,4 @@ name = "wipe"
 provider = "repology"
 
 [source]
-package = "wipe"
+package = "wipe-nester"
