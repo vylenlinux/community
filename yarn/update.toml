@@ -1,5 +1,0 @@
-name = "yarn"
-provider = "repology"
-
-[source]
-package = "yarn"
