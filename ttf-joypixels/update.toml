@@ -2,4 +2,4 @@ name = "ttf-joypixels"
 provider = "repology"
 
 [source]
-package = "ttf-joypixels"
+package = "fonts:joypixels"

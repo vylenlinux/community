@@ -2,4 +2,4 @@ name = "ttf-librebarcode"
 provider = "repology"
 
 [source]
-package = "ttf-librebarcode"
+package = "librebarcode-font"

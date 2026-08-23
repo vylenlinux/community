@@ -2,4 +2,4 @@ name = "ttf-noto-cjk"
 provider = "repology"
 
 [source]
-package = "ttf-noto-cjk"
+package = "fonts:noto-cjk"

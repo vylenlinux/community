@@ -2,4 +2,4 @@ name = "ttf-noto"
 provider = "repology"
 
 [source]
-package = "ttf-noto"
+package = "fonts:noto"

@@ -2,4 +2,4 @@ name = "ttf-bitstream-vera"
 provider = "repology"
 
 [source]
-package = "ttf-bitstream-vera"
+package = "fonts:bitstream-vera"

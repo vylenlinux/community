@@ -2,4 +2,4 @@ name = "ttf-cantarell"
 provider = "repology"
 
 [source]
-package = "ttf-cantarell"
+package = "fonts:cantarell"

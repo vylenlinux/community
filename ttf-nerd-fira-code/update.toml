@@ -2,4 +2,4 @@ name = "ttf-nerd-fira-code"
 provider = "repology"
 
 [source]
-package = "ttf-nerd-fira-code"
+package = "fonts:nerd-fonts"
