@@ -2,4 +2,4 @@ name = "wxgtk3"
 provider = "repology"
 
 [source]
-package = "wxgtk3"
+package = "wxwidgets"
