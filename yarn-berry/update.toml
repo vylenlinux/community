@@ -1,0 +1,5 @@
+name = "yarn-berry"
+provider = "repology"
+
+[source]
+package = "yarn"
