@@ -2,4 +2,4 @@ name = "v4l-utils"
 provider = "repology"
 
 [source]
-package = "v4l-utils"
+package = "v4l-utils-qv4l2"
