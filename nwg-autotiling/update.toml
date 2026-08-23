@@ -2,4 +2,4 @@ name = "nwg-autotiling"
 provider = "repology"
 
 [source]
-package = "nwg-autotiling"
+package = "autotiling"
