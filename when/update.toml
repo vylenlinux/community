@@ -2,4 +2,4 @@ name = "when"
 provider = "repology"
 
 [source]
-package = "when"
+package = "when-calendar"
