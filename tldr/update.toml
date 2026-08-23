@@ -2,4 +2,4 @@ name = "tldr"
 provider = "repology"
 
 [source]
-package = "tldr"
+package = "tldr-c-client"
