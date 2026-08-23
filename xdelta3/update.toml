@@ -2,4 +2,4 @@ name = "xdelta3"
 provider = "repology"
 
 [source]
-package = "xdelta3"
+package = "xdelta"
