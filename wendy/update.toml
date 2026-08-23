@@ -1,5 +1,0 @@
-name = "wendy"
-provider = "repology"
-
-[source]
-package = "wendy"
