@@ -6,13 +6,16 @@ homepage="https://www.zetetic.net/sqlcipher/"
 maintainer="Vylen Linux Team"
 
 name=sqlcipher
-version=4.17.0
+version=4.18.0
 release=1
-source="https://www.zetetic.net/downloads/${name}/verify/${version}/${name}-${version}.zip"
+
+source="https://www.zetetic.net/downloads/${name}/verify/${version}/${name}-${version}.zip
+    ${name}-tcl9.patch"
 
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
+    patch -Np1 -i "${SRC}/${name}-tcl9.patch"
 
     export CPPFLAGS="${CPPFLAGS} \
         -DSQLITE_ENABLE_COLUMN_METADATA=1 \
@@ -46,6 +49,9 @@ build() {
         --enable-fts5 \
         --enable-rtree \
         --enable-json
+
+    sed -i -e 's/int nKey;/Tcl_Size nKey;/g' src/tclsqlite.c
+    sed -i 's/int nKey;/Tcl_Size nKey;/g' tclsqlite-ex.c
 
     make
     make DESTDIR="${PKG}" install

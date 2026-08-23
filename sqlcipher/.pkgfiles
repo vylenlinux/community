@@ -1,4 +1,4 @@
-sqlcipher-4.17.0-1
+sqlcipher-4.18.0-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/sqlcipher
@@ -7,13 +7,13 @@ drwxr-xr-x root/root    usr/include/sqlcipher/
 -rw-r--r-- root/root    usr/include/sqlcipher/sqlite3.h
 -rw-r--r-- root/root    usr/include/sqlcipher/sqlite3ext.h
 drwxr-xr-x root/root    usr/lib/
-lrwxrwxrwx root/root    usr/lib/libsqlcipher.so -> libsqlcipher.so.3.53.3
-lrwxrwxrwx root/root    usr/lib/libsqlcipher.so.0 -> libsqlcipher.so.3.53.3
--rwxr-xr-x root/root    usr/lib/libsqlcipher.so.3.53.3
+lrwxrwxrwx root/root    usr/lib/libsqlcipher.so -> libsqlcipher.so.3.53.4
+lrwxrwxrwx root/root    usr/lib/libsqlcipher.so.0 -> libsqlcipher.so.3.53.4
+-rwxr-xr-x root/root    usr/lib/libsqlcipher.so.3.53.4
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/sqlcipher.pc
-drwxr-xr-x root/root    usr/lib/tcl8.6/
-drwxr-xr-x root/root    usr/lib/tcl8.6/sqlite3/
--rwxr-xr-x root/root    usr/lib/tcl8.6/sqlite3/libtclsqlite3.so
--rw-r--r-- root/root    usr/lib/tcl8.6/sqlite3/pkgIndex.tcl
+drwxr-xr-x root/root    usr/lib/tcl9.0/
+drwxr-xr-x root/root    usr/lib/tcl9.0/sqlite3.53.4/
+-rwxr-xr-x root/root    usr/lib/tcl9.0/sqlite3.53.4/libtcl9sqlite3.53.4.so
+-rw-r--r-- root/root    usr/lib/tcl9.0/sqlite3.53.4/pkgIndex.tcl
 drwxr-xr-x root/root    usr/share/

@@ -1,0 +1,21 @@
+diff '--color=auto' -ruN a/src/tclsqlite.c b/src/tclsqlite.c
+--- a/src/tclsqlite.c	2026-08-14 23:03:39.000000000 +0200
++++ b/src/tclsqlite.c	2026-08-23 13:55:13.559000000 +0200
+@@ -3659,7 +3659,7 @@
+   case DB_REKEY: {
+ /* BEGIN SQLCIPHER */
+ #if defined(SQLITE_HAS_CODEC) && !defined(SQLITE_OMIT_CODEC_FROM_TCL)
+-    int nKey;
++    Tcl_Size nKey;
+     void *pKey;
+ #endif
+ /* END SQLCIPHER */
+@@ -4289,7 +4289,7 @@
+ /* BEGIN SQLCIPHER */
+ #if defined(SQLITE_HAS_CODEC) && !defined(SQLITE_OMIT_CODEC_FROM_TCL)
+   void *pKey = 0;
+-  int nKey = 0;
++  Tcl_Size nKey = 0;
+ #endif
+ /* END SQLCIPHER */
+   int rc;
