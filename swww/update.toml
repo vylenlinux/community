@@ -1,5 +1,6 @@
 name = "swww"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "swww"
+owner = "LGFae"
+repo = "swww"
