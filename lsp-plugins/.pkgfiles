@@ -1,4 +1,4 @@
-lsp-plugins-1.2.34-1
+lsp-plugins-1.2.35-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/xdg/
 drwxr-xr-x root/root    etc/xdg/menus/
@@ -408,21 +408,21 @@ drwxr-xr-x root/root    usr/lib/gstreamer-1.0/
 -rwxr-xr-x root/root    usr/lib/gstreamer-1.0/libgstlsp-plugins-trigger-stereo.so
 drwxr-xr-x root/root    usr/lib/ladspa/
 -rwxr-xr-x root/root    usr/lib/ladspa/lsp-plugins-ladspa.so
--rw-r--r-- root/root    usr/lib/liblsp-audio-jack-lib-1.0.1.a
--rwxr-xr-x root/root    usr/lib/liblsp-audio-jack-lib-1.0.1.so
-lrwxrwxrwx root/root    usr/lib/liblsp-audio-jack-lib.a -> liblsp-audio-jack-lib-1.0.1.a
-lrwxrwxrwx root/root    usr/lib/liblsp-audio-jack-lib.so -> liblsp-audio-jack-lib-1.0.1.so
--rw-r--r-- root/root    usr/lib/liblsp-audio-pipewire-lib-1.0.2.a
--rwxr-xr-x root/root    usr/lib/liblsp-audio-pipewire-lib-1.0.2.so
-lrwxrwxrwx root/root    usr/lib/liblsp-audio-pipewire-lib.a -> liblsp-audio-pipewire-lib-1.0.2.a
-lrwxrwxrwx root/root    usr/lib/liblsp-audio-pipewire-lib.so -> liblsp-audio-pipewire-lib-1.0.2.so
--rw-r--r-- root/root    usr/lib/liblsp-r3d-glx-lib-1.0.30.a
--rwxr-xr-x root/root    usr/lib/liblsp-r3d-glx-lib-1.0.30.so
-lrwxrwxrwx root/root    usr/lib/liblsp-r3d-glx-lib.a -> liblsp-r3d-glx-lib-1.0.30.a
-lrwxrwxrwx root/root    usr/lib/liblsp-r3d-glx-lib.so -> liblsp-r3d-glx-lib-1.0.30.so
+-rw-r--r-- root/root    usr/lib/liblsp-audio-jack-lib-1.0.2.a
+-rwxr-xr-x root/root    usr/lib/liblsp-audio-jack-lib-1.0.2.so
+lrwxrwxrwx root/root    usr/lib/liblsp-audio-jack-lib.a -> liblsp-audio-jack-lib-1.0.2.a
+lrwxrwxrwx root/root    usr/lib/liblsp-audio-jack-lib.so -> liblsp-audio-jack-lib-1.0.2.so
+-rw-r--r-- root/root    usr/lib/liblsp-audio-pipewire-lib-1.0.3.a
+-rwxr-xr-x root/root    usr/lib/liblsp-audio-pipewire-lib-1.0.3.so
+lrwxrwxrwx root/root    usr/lib/liblsp-audio-pipewire-lib.a -> liblsp-audio-pipewire-lib-1.0.3.a
+lrwxrwxrwx root/root    usr/lib/liblsp-audio-pipewire-lib.so -> liblsp-audio-pipewire-lib-1.0.3.so
+-rw-r--r-- root/root    usr/lib/liblsp-r3d-glx-lib-1.0.31.a
+-rwxr-xr-x root/root    usr/lib/liblsp-r3d-glx-lib-1.0.31.so
+lrwxrwxrwx root/root    usr/lib/liblsp-r3d-glx-lib.a -> liblsp-r3d-glx-lib-1.0.31.a
+lrwxrwxrwx root/root    usr/lib/liblsp-r3d-glx-lib.so -> liblsp-r3d-glx-lib-1.0.31.so
 drwxr-xr-x root/root    usr/lib/lsp-plugins/
--rwxr-xr-x root/root    usr/lib/lsp-plugins/liblsp-plugins-gstreamer-1.2.34.so
--rwxr-xr-x root/root    usr/lib/lsp-plugins/liblsp-plugins-standalone-1.2.34.so
+-rwxr-xr-x root/root    usr/lib/lsp-plugins/liblsp-plugins-gstreamer-1.2.35.so
+-rwxr-xr-x root/root    usr/lib/lsp-plugins/liblsp-plugins-standalone-1.2.35.so
 drwxr-xr-x root/root    usr/lib/lv2/
 drwxr-xr-x root/root    usr/lib/lv2/lsp-plugins.lv2/
 -rw-r--r-- root/root    usr/lib/lv2/lsp-plugins.lv2/ab_tester_x2_mono.ttl
