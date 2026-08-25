@@ -6,20 +6,20 @@ homepage="https://design.ubuntu.com/font/"
 maintainer="Vylen Linux Team"
 
 name=ttf-ubuntu-font-family
-version=0.83
+version=0.863
 release=1
 
-source="${name}-${version}.zip::https://assets.ubuntu.com/v1/fad7939b-ubuntu-font-family-${version}.zip
+source="${name}-${version}.tar.gz::https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/fonts-ubuntu/${version}-0ubuntu1/fonts-ubuntu_${version}.orig.tar.gz
     81-ubuntu.conf"
 
 build() {
     # shellcheck disable=SC2164
-    cd "ubuntu-font-family-${version}"
+    cd "fonts-ubuntu-${version}"
 
     # shellcheck disable=SC2035
     install -Dm644 *.ttf -t "${PKG}/usr/share/fonts/ubuntu"
     install -Dm644 "${SRC}/81-ubuntu.conf" -t "${PKG}/usr/share/fontconfig/conf.avail/"
 
     install -dm755 "${PKG}/usr/share/fontconfig/conf.default"
-    ln -s ../conf.avail/81-ubuntu.conf "${PKG}/usr/share/fontconfig/conf.default/81-ubuntu.conf"
+    ln -s ../conf.avail/81-ubuntu.conf -t "${PKG}/usr/share/fontconfig/conf.default/"
 }
