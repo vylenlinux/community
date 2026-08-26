@@ -1,21 +1,29 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="A library that simplifies the interaction with PKCS11 providers for end-user applications using a simple API and optional OpenSSL engine"
 homepage="https://github.com/OpenSC/pkcs11-helper"
 maintainer="Vylen Linux Team"
 
 name=pkcs11-helper
 version=1.31.0
-release=1
-source="https://github.com/OpenSC/pkcs11-helper/archive/pkcs11-helper-${version}.tar.gz"
+release=2
+
+source="https://github.com/OpenSC/${name}/archive/${name}-${version}.tar.gz
+    https://github.com/OpenSC/${name}/commit/59cc22b8d65669da599f1c435fdfe35d4e07db0e.patch"
 
 build() {
-	cd ${name}-${name}-${version}
-	libtoolize
-	aclocal
-	autoheader
-	automake --add-missing
-	autoreconf -v
-	./configure --prefix=/usr
-	make
-	make DESTDIR=${PKG} install
+    # shellcheck disable=SC2164
+    cd "${name}-${name}-${version}"
+    patch -Np1 -i "${SRC}/59cc22b8d65669da599f1c435fdfe35d4e07db0e.patch"
 
+    libtoolize
+    aclocal
+    autoheader
+    automake --add-missing
+    autoreconf
+
+    ./configure --prefix=/usr
+    make
+    make DESTDIR="${PKG}" install
 }
