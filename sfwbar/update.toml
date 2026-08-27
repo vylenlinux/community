@@ -1,5 +1,6 @@
 name = "sfwbar"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "sfwbar"
+owner = "LBCrion"
+repo = "sfwbar"
