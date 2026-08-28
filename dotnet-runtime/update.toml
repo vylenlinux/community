@@ -1,6 +1,6 @@
 name = "dotnet-runtime"
 provider = "repology"
+dedup_key = "dotnet-sdk"
 
 [source]
 package = "dotnet-sdk"
-dedup_key = "dotnet-sdk"
