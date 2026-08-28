@@ -18,14 +18,19 @@ build() {
     export CGO_CFLAGS="${CFLAGS}"
     export CGO_CPPFLAGS="${CPPFLAGS}"
     export CGO_CXXFLAGS="${CXXFLAGS}"
-    export GOFLAGS="-buildmode=pie -trimpath -mod=readonly -modcacherw -ldflags=-linkmode=external"
     export GOPATH="${SRC}/go"
     export PATH="${PATH}:${GOPATH}/bin"
+
+    export GOFLAGS="${GOFLAGS} \
+        -buildmode=pie \
+        -trimpath \
+        -mod=readonly \
+        -modcacherw \
+        -ldflags=-linkmode=external"
 
     # shellcheck disable=SC2035
     go build -o "bin/${name}" *.go
 
-    install -d "${PKG}/usr/share/${name}/desktop-directories"
     install -Dm644 desktop-directories/* -t "${PKG}/usr/share/${name}/desktop-directories/"
     install -Dm644 drawer.css -t "${PKG}/usr/share/${name}"
     install -Dm755 "bin/${name}" -t "${PKG}/usr/bin"
