@@ -17,7 +17,8 @@ build() {
     export CGO_LDFLAGS="${LDFLAGS}"
     export GO111MODULE=on
 
-    export GOFLAGS="-buildmode=pie \
+    export GOFLAGS="${GOFLAGS} \
+        -buildmode=pie \
         -trimpath \
         -mod=readonly \
         -modcacherw"
