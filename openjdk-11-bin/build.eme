@@ -6,7 +6,7 @@ homepage="https://github.com/adoptium/"
 maintainer="Vylen Linux Team"
 
 name=openjdk-11-bin
-version=11.0.32+9
+version=11.0.32.1+1
 release=1
 source="${name}-${version}.tar.gz::https://github.com/adoptium/temurin${version%%.*}-binaries/releases/download/jdk-${version}/OpenJDK${version%%.*}U-jdk_x64_linux_hotspot_$(printf "%s" "${version}" | sed 's/+/_/g').tar.gz"
 
