@@ -1,4 +1,4 @@
-openjdk-21-bin-21.0.12+8-1
+openjdk-21-bin-21.0.12.1+1-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/revdep.d/
 -rw-r--r-- root/root    etc/revdep.d/openjdk-21-bin.conf
