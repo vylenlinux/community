@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="GTK3-based dock for sway Wayland compositor"
 homepage="https://github.com/nwg-piotr/nwg-dock"
 maintainer="Vylen Linux Team"
@@ -5,23 +8,29 @@ maintainer="Vylen Linux Team"
 name=nwg-dock
 version=0.4.3
 release=1
-source="$name-$version.tar.gz::https://github.com/nwg-piotr/$name/archive/v$version.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/nwg-piotr/${name}/archive/v${version}.tar.gz"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	export CGO_LDFLAGS="${LDFLAGS}"
-	export CGO_CFLAGS="${CFLAGS}"
-	export CGO_CPPFLAGS="${CPPFLAGS}"
-	export CGO_CXXFLAGS="${CXXFLAGS}"
-	export GOFLAGS="-buildmode=pie -trimpath -mod=readonly -modcacherw"
-	export GOPATH=$SRC/go
-	export PATH=$PATH:$GOPATH/bin
+    export CGO_LDFLAGS="${LDFLAGS}"
+    export CGO_CFLAGS="${CFLAGS}"
+    export CGO_CPPFLAGS="${CPPFLAGS}"
+    export CGO_CXXFLAGS="${CXXFLAGS}"
+    export GOPATH="${SRC}/go"
+    export PATH="${PATH}:${GOPATH}/bin"
 
-	go build -o bin/$name *.go
+    export GOFLAGS="${GOFLAGS} \
+        -buildmode=pie \
+        -trimpath \
+        -mod=readonly \
+        -modcacherw"
 
-	install -d $PKG/usr/share/$name/images
-	install -Dm644 -t $PKG/usr/share/$name/images/ images/*
-	install -Dm644 -t $PKG/usr/share/$name/ config/*
-	install -Dm755 -t $PKG/usr/bin bin/$name
+    # shellcheck disable=SC2035
+    go build -o "bin/${name}" *.go
+
+    install -Dm644 images/* -t "${PKG}/usr/share/${name}/images/"
+    install -Dm644 config/* -t "${PKG}/usr/share/${name}/"
+    install -Dm755 "bin/${name}" -t "${PKG}/usr/bin/"
 }
