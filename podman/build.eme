@@ -16,7 +16,9 @@ build() {
 
     export GOCACHE="${PWD}/gocache"
     export GOPATH="${PWD}/gopath"
-    export GOFLAGS="-buildmode=pie"
+
+    export GOFLAGS="${GOFLAGS} \
+        -buildmode=pie"
 
     make BUILDTAGS="seccomp exclude_graphdriver_devicemapper exclude_graphdriver_btrfs"
     make install PREFIX=/usr DESTDIR="${PKG}" LIBEXECDIR=/usr/lib
