@@ -1,5 +1,5 @@
 name = "python3-aaf2"
-provider = "repology"
+provider = "pypi"
 
 [source]
-package = "python:pyaaf2"
+package = "pyaaf2"
