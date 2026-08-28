@@ -1,5 +1,5 @@
 name = "wine-staging"
-provider = "repology"
+provider = "archlinux"
 dedup_key = "wine"
 
 [source]
