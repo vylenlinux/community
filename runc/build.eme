@@ -22,7 +22,8 @@ build() {
     export GOPATH="${SRC}"
     export BUILDTAGS="seccomp"
 
-    export GOFLAGS="-trimpath \
+    export GOFLAGS="${GOFLAGS} \
+        -trimpath \
         -mod=readonly \
         -modcacherw"
 
