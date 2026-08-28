@@ -19,7 +19,8 @@ build() {
     export CGO_CPPFLAGS="${CPPFLAGS}"
     export CGO_CXXFLAGS="${CXXFLAGS}"
 
-    export GOFLAGS="-buildmode=pie \
+    export GOFLAGS="${GOFLAGS} \
+        -buildmode=pie \
         -trimpath \
         -mod=readonly \
         -modcacherw \
@@ -29,7 +30,7 @@ build() {
     export PATH="${PATH}:${GOPATH}/bin"
 
     # shellcheck disable=SC2035
-    go build -v -o "${name}" *.go
+    go build -o "${name}" *.go
 
     install -Dm644 stuff/main.glade -t "${PKG}/usr/share/${name}/"
     install -Dm644 langs/* -t "${PKG}/usr/share/${name}/langs/"
