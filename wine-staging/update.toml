@@ -1,6 +1,6 @@
 name = "wine-staging"
 provider = "archlinux"
+dedup_key = "wine"
 
 [source]
 package = "wine"
-dedup_key = "wine"
