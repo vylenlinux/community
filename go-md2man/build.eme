@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Utility to convert markdown to man pages"
 homepage="https://github.com/cpuguy83/go-md2man"
 maintainer="Vylen Linux Team"
@@ -5,18 +8,26 @@ maintainer="Vylen Linux Team"
 name=go-md2man
 version=2.0.7
 release=1
-source="https://github.com/cpuguy83/go-md2man/archive/v$version/$name-$version.tar.gz"
+source="https://github.com/cpuguy83/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	export GOPATH="${PWD}/path"
-        export GOCACHE="${PWD}/cache"
+    export GOPATH="${PWD}/path"
+    export GOCACHE="${PWD}/cache"
+    export CGO_LDFLAGS="${LDFLAGS}"
 
-	export GOFLAGS="-buildmode=pie -trimpath"
-	export CGO_LDFLAGS="$LDFLAGS"
-	go build -o go-md2man .
-	./go-md2man -in=go-md2man.1.md -out=go-md2man.1
-	install -Dm755 go-md2man "$PKG/usr/bin/go-md2man"
-	install -Dm755 go-md2man.1 "$PKG/usr/share/man/man1/go-md2man.1"
+    export GOFLAGS="${GOFLAGS} \
+        -buildmode=pie \
+        -trimpath"
+
+    go build -o go-md2man .
+
+    ./go-md2man \
+        -in=go-md2man.1.md \
+        -out=go-md2man.1
+
+    install -Dm755 "${name}" -t "${PKG}/usr/bin/"
+    install -Dm755 "${name}.1" -t "${PKG}/usr/share/man/man1/"
 }
