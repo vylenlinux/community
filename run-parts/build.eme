@@ -1,16 +1,23 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="run-parts from the debianutils package"
 homepage="https://packages.qa.debian.org/d/debianutils.html"
 maintainer="Vylen Linux Team"
 
 name=run-parts
-version=5.23.2
+version=5.24
 release=1
-source="http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_${version}.tar.xz"
+source="${name}-${version}.tar.xz::http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_${version}.tar.xz"
+
 build() {
-	cd work
-	autoreconf -fi
-	./configure --prefix=/usr
-	make run-parts
-	install -D -m755 run-parts $PKG/bin/run-parts
-	install -D -m644 run-parts.8 $PKG/usr/share/man/man8/run-parts.8
+    # shellcheck disable=SC2164
+    cd "debianutils-${version}"
+    autoreconf -fi
+
+    ./configure --prefix=/usr
+    make run-parts
+
+    install -Dm755 "${name}" -t "${PKG}/usr/bin/"
+    install -Dm644 "${name}.8" -t "${PKG}/usr/share/man/man8/"
 }
