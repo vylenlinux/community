@@ -21,7 +21,8 @@ build() {
     export GOPATH="${SRC}/go"
     export PATH="${PATH}:${GOPATH}/bin"
 
-    export GOFLAGS="-buildmode=pie \
+    export GOFLAGS="${GOFLAGS} \
+        -buildmode=pie \
         -trimpath \
         -mod=readonly \
         -modcacherw"
