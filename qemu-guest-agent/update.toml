@@ -1,6 +1,6 @@
 name = "qemu-guest-agent"
 provider = "repology"
+dedup_key = "qemu"
 
 [source]
 package = "qemu"
-dedup_key = "qemu"
