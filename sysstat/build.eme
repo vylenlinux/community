@@ -1,15 +1,27 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="The sysstat package contains various utilities, common to many commercial Unixes, to monitor system performance and usage activity"
 homepage="https://sysstat.github.io"
 maintainer="Vylen Linux Team"
 
 name=sysstat
-version=12.7.9
+version=12.8.0
 release=1
-source="https://sysstat.github.io/sysstat-packages/$name-$version.tar.gz"
+source="https://sysstat.github.io/sysstat-packages/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
-	./configure --prefix=/usr
-	make
-	make DESTDIR=$PKG install
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    ./configure \
+        --prefix=/usr \
+        --disable-file-attr \
+        --disable-automated-sar-reporting \
+        \
+        conf_dir=/etc/sysconfig \
+        sa_dir=/var/log/sa
+
+    make
+    make DESTDIR="${PKG}" install
 }
