@@ -1,4 +1,4 @@
-sbcl-2.6.7-1
+sbcl-2.6.8-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/sbcl
@@ -58,6 +58,9 @@ drwxr-xr-x root/root    usr/share/info/
 -rw-r--r-- root/root    usr/share/info/sbcl.info-2.gz
 -rw-r--r-- root/root    usr/share/info/sbcl.info-3.gz
 -rw-r--r-- root/root    usr/share/info/sbcl.info.gz
+drwxr-xr-x root/root    usr/share/man/
+drwxr-xr-x root/root    usr/share/man/man1/
+-rw-r--r-- root/root    usr/share/man/man1/sbcl.1.gz
 drwxr-xr-x root/root    usr/share/sbcl-source/
 drwxr-xr-x root/root    usr/share/sbcl-source/contrib/
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/README
@@ -302,6 +305,8 @@ drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-rt/
 drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-simd/
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/CREDITS
 drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-simd/code/
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/arm64-fake-vops.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/arm64-modify-macros.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/constants.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/cpu-identification.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/define-arefs.lisp
@@ -315,7 +320,6 @@ drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-simd/code/
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/define-modify-macros.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/define-reducers.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/define-reffers.lisp
--rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/define-rounders.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/define-scalar-casts.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/define-simd-casts.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/define-types.lisp
@@ -344,6 +348,9 @@ drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-s
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/printable.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/record.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/utilities.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/x86-64-fake-vops.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/x86-64-modify-macros.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/x86-64-rounders.lisp
 drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-simd/examples/
 -rwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-simd/examples/benchmarks.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/examples/simd-dot.lisp
@@ -354,10 +361,16 @@ drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-simd/examples/
 drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/numbers.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/packages.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/test-arefs-arm64.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/test-arefs-x86-64.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/test-arefs.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/test-hairy-simd-functions.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/test-horizontal-functions-arm64.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/test-horizontal-functions-x86-64.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/test-horizontal-functions.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/test-packages.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/test-simple-simd-functions-arm64.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/test-simple-simd-functions-x86-64.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/test-simple-simd-functions.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/test-suite.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/utilities.lisp
