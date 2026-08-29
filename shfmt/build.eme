@@ -6,7 +6,7 @@ homepage="https://github.com/mvdan/sh"
 maintainer="Vylen Linux Team"
 
 name=shfmt
-version=3.13.1
+version=3.14.0
 release=1
 source="${name}-${version}.tar.gz::https://github.com/mvdan/sh/archive/v${version}/${name}-v${version}.tar.gz"
 
@@ -15,6 +15,6 @@ build() {
     cd "sh-${version}"
     go mod tidy
 
-    go build -ldflags "-X main.version=${version}" -v ./cmd/shfmt
-	install -Dm755 "${name}" -t "${PKG}/usr/bin/"
+    go build -ldflags "-X main.version=${version}" ./cmd/shfmt
+    install -Dm755 "${name}" -t "${PKG}/usr/bin/"
 }
