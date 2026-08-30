@@ -8,6 +8,7 @@ maintainer="Vylen Linux Team"
 name=docker
 version=29.7.2
 release=1
+backup="etc/${name}.conf"
 
 source="https://github.com/moby/moby/archive/${name}-v${version}/moby-${version}.tar.gz
     https://github.com/${name}/cli/archive/v${version}/cli-${version}.tar.gz
