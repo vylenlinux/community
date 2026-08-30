@@ -1,5 +1,0 @@
-name = "smplayer"
-provider = "repology"
-
-[source]
-package = "smplayer"
