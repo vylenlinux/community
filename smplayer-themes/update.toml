@@ -1,5 +1,0 @@
-name = "smplayer-themes"
-provider = "repology"
-
-[source]
-package = "smplayer-themes"
