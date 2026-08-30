@@ -1,4 +1,3 @@
-typescript-7.0.2-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 lrwxrwxrwx root/root    usr/bin/tsc -> ../lib/node_modules/typescript/bin/tsc

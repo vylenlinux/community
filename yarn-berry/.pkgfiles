@@ -1,4 +1,3 @@
-yarn-berry-4.18.0-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 lrwxrwxrwx root/root    usr/bin/yarn -> /usr/lib/node_modules/yarn/packages/yarnpkg-cli/bin/yarn.js

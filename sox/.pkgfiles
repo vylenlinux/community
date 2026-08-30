@@ -1,4 +1,3 @@
-sox-14.8.1-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 lrwxrwxrwx root/root    usr/bin/play -> play_ng
