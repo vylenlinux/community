@@ -1,7 +1,7 @@
 spamassassin-4.0.2-1
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/conf.d/
--rw-r--r-- root/root    etc/conf.d/spamd
+-rw-r--r-- root/root    etc/conf.d/spamd.epkgnew
 drwxr-xr-x root/root    etc/init.d/
 -rwxr-xr-x root/root    etc/init.d/spamd
 drwxr-xr-x root/root    etc/spamassassin/
