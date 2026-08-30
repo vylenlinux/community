@@ -1,18 +1,25 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="High performance http c client library"
 homepage="https://serf.apache.org/"
 maintainer="Vylen Linux Team"
 
 name=serf
 version=1.3.10
-release=1
-source="https://www.apache.org/dist/$name/$name-$version.tar.bz2
-        SConstruct"
+release=2
+
+source="https://www.apache.org/dist/${name}/${name}-${version}.tar.bz2
+    SConstruct
+    0001-Fix-build-with-OpenSSL-4.0-use-ASN1_STRING-accessors.patch"
 
 build() {
-    cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-    mv SConstruct SConstruct.bak
-    cp $SRC/SConstruct ./
+    install -Dm644 "${SRC}/SConstruct" -t .
+    patch -Np1 -i "${SRC}/0001-Fix-build-with-OpenSSL-4.0-use-ASN1_STRING-accessors.patch"
+
     scons PREFIX=/usr GSSAPI=/usr/bin/krb5-config
-    scons PREFIX=$PKG/usr install
+    scons PREFIX="${PKG}/usr" install
 }
