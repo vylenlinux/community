@@ -1,4 +1,4 @@
-sox-14.8.0.1-1
+sox-14.8.1-1
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 lrwxrwxrwx root/root    usr/bin/play -> play_ng
@@ -16,16 +16,18 @@ drwxr-xr-x root/root    usr/lib/
 lrwxrwxrwx root/root    usr/lib/libsox.a -> libsox_ng.a
 lrwxrwxrwx root/root    usr/lib/libsox.so -> libsox_ng.so
 -rw-r--r-- root/root    usr/lib/libsox_ng.a
-lrwxrwxrwx root/root    usr/lib/libsox_ng.so -> libsox_ng.so.3.0.0
-lrwxrwxrwx root/root    usr/lib/libsox_ng.so.3 -> libsox_ng.so.3.0.0
--rwxr-xr-x root/root    usr/lib/libsox_ng.so.3.0.0
+lrwxrwxrwx root/root    usr/lib/libsox_ng.so -> libsox_ng.so.5.0.0
+lrwxrwxrwx root/root    usr/lib/libsox_ng.so.5 -> libsox_ng.so.5.0.0
+-rwxr-xr-x root/root    usr/lib/libsox_ng.so.5.0.0
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 lrwxrwxrwx root/root    usr/lib/pkgconfig/sox.pc -> sox_ng.pc
 -rw-r--r-- root/root    usr/lib/pkgconfig/sox_ng.pc
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/man/
 drwxr-xr-x root/root    usr/share/man/man1/
+lrwxrwxrwx root/root    usr/share/man/man1/play.1.gz -> play_ng.1.gz
 lrwxrwxrwx root/root    usr/share/man/man1/play_ng.1.gz -> sox_ng.1.gz
+lrwxrwxrwx root/root    usr/share/man/man1/rec.1.gz -> rec_ng.1.gz
 lrwxrwxrwx root/root    usr/share/man/man1/rec_ng.1.gz -> sox_ng.1.gz
 lrwxrwxrwx root/root    usr/share/man/man1/sox.1.gz -> sox_ng.1.gz
 -rw-r--r-- root/root    usr/share/man/man1/sox_ng.1.gz
