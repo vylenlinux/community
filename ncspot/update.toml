@@ -1,5 +1,5 @@
 name = "ncspot"
-provider = "repology"
+provider = "crates"
 
 [source]
-package = "ncspot"
+crate = "ncspot"
