@@ -1,5 +1,5 @@
 name = "perl-clone"
-provider = "repology"
+provider = "metacpan"
 
 [source]
-package = "perl:clone"
+package = "Clone"

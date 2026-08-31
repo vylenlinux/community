@@ -1,5 +1,5 @@
 name = "perl-html-parser"
-provider = "repology"
+provider = "metacpan"
 
 [source]
-package = "perl:html-parser"
+package = "HTML-Parser"

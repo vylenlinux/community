@@ -1,5 +1,5 @@
 name = "perl-net-ssleay"
-provider = "repology"
+provider = "metacpan"
 
 [source]
-package = "perl:net-ssleay"
+package = "Net-SSLeay"

@@ -1,5 +1,5 @@
 name = "perl-unicode-linebreak"
-provider = "repology"
+provider = "metacpan"
 
 [source]
-package = "perl:unicode-linebreak"
+package = "Unicode-LineBreak"

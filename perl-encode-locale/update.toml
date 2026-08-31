@@ -1,5 +1,5 @@
 name = "perl-encode-locale"
-provider = "repology"
+provider = "metacpan"
 
 [source]
-package = "perl:encode-locale"
+package = "Encode-Locale"

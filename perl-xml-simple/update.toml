@@ -1,5 +1,5 @@
 name = "perl-xml-simple"
-provider = "repology"
+provider = "metacpan"
 
 [source]
-package = "perl:xml-simple"
+package = "XML-Simple"

@@ -1,5 +1,5 @@
 name = "perl-data-dump"
-provider = "repology"
+provider = "metacpan"
 
 [source]
-package = "perl:data-dump"
+package = "Data-Dump"

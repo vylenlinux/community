@@ -1,5 +1,5 @@
 name = "perl-mime-charset"
-provider = "repology"
+provider = "metacpan"
 
 [source]
-package = "perl:mime-charset"
+package = "MIME-Charset"

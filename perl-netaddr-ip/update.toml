@@ -1,5 +1,5 @@
 name = "perl-netaddr-ip"
-provider = "repology"
+provider = "metacpan"
 
 [source]
-package = "perl:netaddr-ip"
+package = "NetAddr-IP"

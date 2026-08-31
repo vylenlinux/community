@@ -1,5 +1,5 @@
 name = "perl-uri"
-provider = "repology"
+provider = "metacpan"
 
 [source]
-package = "perl:uri"
+package = "URI"

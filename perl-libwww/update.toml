@@ -1,5 +1,5 @@
 name = "perl-libwww"
-provider = "repology"
+provider = "metacpan"
 
 [source]
-package = "perl:libwww-perl"
+package = "libwww-perl"

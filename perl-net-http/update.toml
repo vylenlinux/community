@@ -1,5 +1,5 @@
 name = "perl-net-http"
-provider = "repology"
+provider = "metacpan"
 
 [source]
-package = "perl:net-http"
+package = "Net-HTTP"

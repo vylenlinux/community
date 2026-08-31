@@ -1,5 +1,5 @@
 name = "perl-term-readline-gnu"
-provider = "repology"
+provider = "metacpan"
 
 [source]
-package = "perl:term-readline-gnu"
+package = "Term-ReadLine-Gnu"

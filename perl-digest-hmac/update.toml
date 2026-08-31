@@ -1,5 +1,5 @@
 name = "perl-digest-hmac"
-provider = "repology"
+provider = "metacpan"
 
 [source]
-package = "perl:digest-hmac"
+package = "Digest-HMAC"

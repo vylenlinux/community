@@ -1,5 +1,5 @@
 name = "perl-module-build"
-provider = "repology"
+provider = "metacpan"
 
 [source]
-package = "perl:module-build"
+package = "Module-Build"

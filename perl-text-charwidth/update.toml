@@ -1,5 +1,5 @@
 name = "perl-text-charwidth"
-provider = "repology"
+provider = "metacpan"
 
 [source]
-package = "perl:text-charwidth"
+package = "Text-CharWidth"

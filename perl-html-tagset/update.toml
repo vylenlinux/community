@@ -1,5 +1,5 @@
 name = "perl-html-tagset"
-provider = "repology"
+provider = "metacpan"
 
 [source]
-package = "perl:html-tagset"
+package = "HTML-Tagset"

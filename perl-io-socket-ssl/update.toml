@@ -1,5 +1,5 @@
 name = "perl-io-socket-ssl"
-provider = "repology"
+provider = "metacpan"
 
 [source]
-package = "perl:io-socket-ssl"
+package = "IO-Socket-SSL"

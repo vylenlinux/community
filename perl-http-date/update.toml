@@ -1,5 +1,5 @@
 name = "perl-http-date"
-provider = "repology"
+provider = "metacpan"
 
 [source]
-package = "perl:http-date"
+package = "HTTP-Date"

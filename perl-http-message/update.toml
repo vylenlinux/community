@@ -1,5 +1,5 @@
 name = "perl-http-message"
-provider = "repology"
+provider = "metacpan"
 
 [source]
-package = "perl:http-message"
+package = "HTTP-Message"

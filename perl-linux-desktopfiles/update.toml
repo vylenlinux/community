@@ -1,5 +1,5 @@
 name = "perl-linux-desktopfiles"
-provider = "repology"
+provider = "metacpan"
 
 [source]
-package = "perl:linux-desktopfiles"
+package = "Linux-DesktopFiles"
