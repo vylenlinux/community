@@ -1,5 +1,5 @@
 name = "i3status-rust"
-provider = "repology"
+provider = "crates"
 
 [source]
-package = "i3status-rust"
+crate = "i3status-rs"
