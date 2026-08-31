@@ -1,5 +1,5 @@
 name = "caligula"
-provider = "repology"
+provider = "crates"
 
 [source]
-package = "caligula-burning-tool"
+crate = "caligula"
