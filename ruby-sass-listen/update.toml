@@ -1,5 +1,5 @@
 name = "ruby-sass-listen"
-provider = "repology"
+provider = "rubygems"
 
 [source]
-package = "ruby:sass-listen"
+package = "sass-listen"

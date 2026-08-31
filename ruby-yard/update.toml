@@ -1,5 +1,5 @@
 name = "ruby-yard"
-provider = "repology"
+provider = "rubygems"
 
 [source]
-package = "ruby:yard"
+package = "yard"
