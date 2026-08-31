@@ -1,5 +1,5 @@
 name = "libpathrs"
-provider = "repology"
+provider = "crates"
 
 [source]
-package = "libpathrs"
+crate = "pathrs"
