@@ -1,5 +1,5 @@
 name = "matugen"
-provider = "repology"
+provider = "crates"
 
 [source]
-package = "matugen"
+crate = "matugen"
