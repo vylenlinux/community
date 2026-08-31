@@ -1,5 +1,5 @@
 name = "pw-volume"
-provider = "repology"
+provider = "crates"
 
 [source]
-package = "pw-volume"
+crate = "pw-volume"
