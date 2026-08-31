@@ -1,5 +1,5 @@
 name = "amdgpu_top"
-provider = "repology"
+provider = "crates"
 
 [source]
-package = "amdgpu-top"
+crate = "amdgpu_top"
