@@ -1,10 +1,5 @@
 name = "go-mtpfs"
-provider = "github"
+provider = "goproxy"
 
 [source]
-owner = "hanwen"
-repo = "go-mtpfs"
-
-[github]
-use_releases = false
-use_tags = true
+module = "github.com/hanwen/go-mtpfs"

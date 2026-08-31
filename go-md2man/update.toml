@@ -1,5 +1,5 @@
 name = "go-md2man"
-provider = "repology"
+provider = "goproxy"
 
 [source]
-package = "go-md2man"
+module = "github.com/cpuguy83/go-md2man/v2"
