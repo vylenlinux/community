@@ -1,5 +1,5 @@
 name = "alacritty"
-provider = "repology"
+provider = "crates"
 
 [source]
-package = "alacritty"
+crate = "alacritty"
