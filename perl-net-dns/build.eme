@@ -6,7 +6,7 @@ homepage="http://search.cpan.org/~nlnetlabs/Net-DNS/"
 maintainer="Vylen Linux Team"
 
 name=perl-net-dns
-version=1.56
+version=1.57
 release=1
 source="${name}-${version}.tar.gz::http://search.cpan.org/CPAN/authors/id/N/NL/NLNETLABS/Net-DNS-${version}.tar.gz"
 
