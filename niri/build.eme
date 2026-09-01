@@ -7,27 +7,30 @@ homepage="https://github.com/niri-wm/niri"
 
 name=niri
 version=26.04
-release=1
+release=2
 
 source="https://github.com/niri-wm/${name}/archive/v${version}/${name}-${version}.tar.gz
-    ${name}.desktop"
+    ${name}.desktop
+    libdisplay-info-sys-0.3.0-libdisplay-info-0.4.patch"
 
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-    mkdir "${SRC}/rust"
 
-    export CARGO_HOME="${SRC}/rust"
-    export NIRI_BUILD_COMMIT="b35bcae"
+    patch -Np1 -i "${SRC}/libdisplay-info-sys-0.3.0-libdisplay-info-0.4.patch"
+    mkdir -p .cargo
+
+    export CARGO_HOME="${PWD}/.cargo"
+    export NIRI_BUILD_COMMIT=b35bcae
 
     cargo build \
         --release \
         --no-default-features \
         --features dbus,xdp-gnome-screencast
 
-    install -vDm 755 "target/release/${name}" -t "${PKG}/usr/bin/"
-    install -vDm 755 "resources/${name}-session" -t "${PKG}/usr/bin/"
-    install -vDm 644 "${SRC}/${name}.desktop" -t "${PKG}/usr/share/wayland-sessions/"
-    install -vDm 644 "resources/${name}-portals.conf" -t "${PKG}/usr/share/xdg-desktop-portal/"
-    install -vDm 644 resources/default-config.kdl -t "${PKG}/etc/skel/${name}/"
+    install -Dm755 "target/release/${name}" -t "${PKG}/usr/bin/"
+    install -Dm755 "resources/${name}-session" -t "${PKG}/usr/bin/"
+    install -Dm644 "${SRC}/${name}.desktop" -t "${PKG}/usr/share/wayland-sessions/"
+    install -Dm644 "resources/${name}-portals.conf" -t "${PKG}/usr/share/xdg-desktop-portal/"
+    install -Dm644 resources/default-config.kdl -t "${PKG}/etc/skel/${name}/"
 }

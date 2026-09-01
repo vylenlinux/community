@@ -1,0 +1,122 @@
+From 3911e0344bb2db5839f2c646d25e8c2a8b5223d9 Mon Sep 17 00:00:00 2001
+From: Vylen Linux Team <team@vylenlinux.org>
+Date: Tue, 1 Sep 2026 22:05:00 +0200
+Subject: [PATCH] niri: use libdisplay-info-rs 0.4.0 bindings
+
+Description:
+Use the libdisplay-info-rs changes from PR #20, including native
+libdisplay-info 0.4.x support. Update niri to the 0.4.0 git revision,
+regenerate Cargo.lock, disable the obsolete display-info feature in
+smithay-drm-extras, and rename source imports for the dependency alias.
+This prevents Cargo from building libdisplay-info-sys 0.3.0, whose pkg-config
+constraint rejects the installed libdisplay-info 0.4.0.
+---
+diff --git a/Cargo.lock b/Cargo.lock
+index b03ba15..c8c9b57 100644
+--- a/Cargo.lock
++++ b/Cargo.lock
+@@ -1969,9 +1969,8 @@ checksum = "52ff2c0fe9bc6cb6b14a0592c2ff4fa9ceb83eea9db979b0487cd054946a2b8f"
+
+ [[package]]
+ name = "libdisplay-info"
+-version = "0.3.0"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "59fd96dbb2381ff31f314f07accbdf8550febdcc5cd8761ecaf7c1763361c359"
++version = "0.4.0"
++source = "git+https://github.com/Smithay/libdisplay-info-rs.git?rev=3911e0344bb2db5839f2c646d25e8c2a8b5223d9#3911e0344bb2db5839f2c646d25e8c2a8b5223d9"
+ dependencies = [
+  "bitflags 2.11.1",
+  "libc",
+@@ -1983,8 +1982,7 @@ dependencies = [
+ [[package]]
+ name = "libdisplay-info-derive"
+ version = "0.1.1"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "8dc2c710cf5819e91220a446d9e64acc6814386cc22c509c3f0df83c0b874a98"
++source = "git+https://github.com/Smithay/libdisplay-info-rs.git?rev=3911e0344bb2db5839f2c646d25e8c2a8b5223d9#3911e0344bb2db5839f2c646d25e8c2a8b5223d9"
+ dependencies = [
+  "proc-macro2",
+  "quote",
+@@ -1993,9 +1991,8 @@ dependencies = [
+
+ [[package]]
+ name = "libdisplay-info-sys"
+-version = "0.3.0"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "26590d55b8819f9c6b0d95d9d12dc9edbfd1f2413e88814a33b631ac049bb51f"
++version = "0.4.0"
++source = "git+https://github.com/Smithay/libdisplay-info-rs.git?rev=3911e0344bb2db5839f2c646d25e8c2a8b5223d9#3911e0344bb2db5839f2c646d25e8c2a8b5223d9"
+ dependencies = [
+  "semver",
+  "system-deps",
+@@ -3576,7 +3573,6 @@ version = "0.1.0"
+ source = "git+https://github.com/Smithay/smithay.git?rev=ff5fa7df392cecfba049ffed55cdaa4e98a8e7ef#ff5fa7df392cecfba049ffed55cdaa4e98a8e7ef"
+ dependencies = [
+  "drm",
+- "libdisplay-info",
+ ]
+
+ [[package]]
+diff --git a/Cargo.toml b/Cargo.toml
+index fa7164e..94cdc63 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -35,6 +35,7 @@ default-features = false
+ # version = "0.1.0"
+ git = "https://github.com/Smithay/smithay.git"
+ rev = "ff5fa7df392cecfba049ffed55cdaa4e98a8e7ef"
++default-features = false
+ # path = "../smithay/smithay-drm-extras"
+
+ [package]
+@@ -76,7 +77,7 @@ glam = "0.32.1"
+ input = { version = "0.10.0", features = ["libinput_1_21"] }
+ keyframe = { version = "1.1.1", default-features = false }
+ libc = "0.2.185"
+-libdisplay-info = "0.3.0"
++libdisplay-info-pr20 = { git = "https://github.com/Smithay/libdisplay-info-rs.git", rev = "3911e0344bb2db5839f2c646d25e8c2a8b5223d9", package = "libdisplay-info", version = "0.4.0" }
+ log = { version = "0.4.29", features = ["max_level_trace", "release_max_level_debug"] }
+ niri-config = { version = "26.4.0", path = "niri-config" }
+ niri-ipc = { version = "26.4.0", path = "niri-ipc", features = ["clap"] }
+diff --git a/src/backend/tty.rs b/src/backend/tty.rs
+index 5368c7e..2c8ab16 100644
+--- a/src/backend/tty.rs
++++ b/src/backend/tty.rs
+@@ -3064,8 +3064,8 @@ pub fn calculate_mode_cvt(width: u16, height: u16, refresh: f64) -> DrmMode {
+     // Cross-checked with sway's implementation:
+     // https://gitlab.freedesktop.org/wlroots/wlroots/-/blob/22528542970687720556035790212df8d9bb30bb/backend/drm/util.c#L251
+
+-    let options = libdisplay_info::cvt::Options {
+-        red_blank_ver: libdisplay_info::cvt::ReducedBlankingVersion::None,
++    let options = libdisplay_info_pr20::cvt::Options {
++        red_blank_ver: libdisplay_info_pr20::cvt::ReducedBlankingVersion::None,
+         h_pixels: width as i32,
+         v_lines: height as i32,
+         ip_freq_rqd: refresh,
+@@ -3078,7 +3078,7 @@ pub fn calculate_mode_cvt(width: u16, height: u16, refresh: f64) -> DrmMode {
+         int_rqd: false,
+         margins_rqd: false,
+     };
+-    let cvt_timing = libdisplay_info::cvt::Timing::compute(options);
++    let cvt_timing = libdisplay_info_pr20::cvt::Timing::compute(options);
+
+     let hsync_start = width + cvt_timing.h_front_porch as u16;
+     let vsync_start = (cvt_timing.v_lines_rnd + cvt_timing.v_front_porch) as u16;
+@@ -3216,7 +3216,7 @@ fn pick_mode(
+ fn get_edid_info(
+     device: &DrmDevice,
+     connector: connector::Handle,
+-) -> anyhow::Result<libdisplay_info::info::Info> {
++) -> anyhow::Result<libdisplay_info_pr20::info::Info> {
+     let (_, info, value) =
+         find_drm_property(device, connector, "EDID").context("no EDID property")?;
+     let blob = info
+@@ -3227,7 +3227,7 @@ fn get_edid_info(
+     let data = device
+         .get_property_blob(blob)
+         .context("error getting EDID blob value")?;
+-    libdisplay_info::info::Info::parse_edid(&data).context("error parsing EDID")
++    libdisplay_info_pr20::info::Info::parse_edid(&data).context("error parsing EDID")
+ }
+
+ impl<'a> ConnectorProperties<'a> {
