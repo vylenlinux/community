@@ -2,15 +2,6 @@ drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/limine
 drwxr-xr-x root/root    usr/share/
-drwxr-xr-x root/root    usr/share/doc/
-drwxr-xr-x root/root    usr/share/doc/limine/
--rw-r--r-- root/root    usr/share/doc/limine/3RDPARTY.md
--rw-r--r-- root/root    usr/share/doc/limine/CONFIG.md
--rw-r--r-- root/root    usr/share/doc/limine/COPYING
--rw-r--r-- root/root    usr/share/doc/limine/FAQ.md
-drwxr-xr-x root/root    usr/share/doc/limine/LICENSES/
--rw-r--r-- root/root    usr/share/doc/limine/LICENSES/LicenseRef-scancode-bsd-no-disclaimer-unmodified.txt
--rw-r--r-- root/root    usr/share/doc/limine/USAGE.md
 drwxr-xr-x root/root    usr/share/limine/
 -rw-r--r-- root/root    usr/share/limine/BOOTX64.EFI
 -rw-r--r-- root/root    usr/share/limine/limine-bios-cd.bin
