@@ -1,6 +1,6 @@
 name = "papirus-icon-theme-dark"
 provider = "repology"
-dedup = "papirus-icon-theme"
+dedup_key = "papirus-icon-theme"
 
 [source]
 package = "papirus-icon-theme"
