@@ -1,5 +1,0 @@
-name = "todotxt"
-provider = "repology"
-
-[source]
-package = "todo.txt-cli"
