@@ -1,5 +1,6 @@
 name = "niri"
-provider = "crates"
+provider = "github"
 
 [source]
-crate = "niri"
+owner = "niri-wm"
+repo = "niri"
