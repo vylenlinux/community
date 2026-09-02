@@ -1,0 +1,6 @@
+name = "ayugram-desktop"
+provider = "github"
+
+[source]
+owner = "ayugram"
+repo = "ayugramdesktop"

@@ -1,0 +1,38 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
+description="Desktop Telegram client with good customization and Ghost mode."
+maintainer="Vylen Linux Team"
+homepage="https://github.com/AyuGram/AyuGramDesktop"
+
+name=ayugram-desktop
+version=7.0.9
+release=1
+
+tdlib_commit=d1085f9cebc5a62379991ae1652673954f229c1f
+
+source="${name}-${version}.tar.gz::https://github.com/AyuGram/AyuGramDesktop/releases/download/v${version}/AyuGramDesktop-${version}-full.tar.gz
+    https://github.com/tdlib/td/archive/${tdlib_commit}.tar.gz"
+
+build() {
+    cmake -S "td-${tdlib_commit}" -B "td-${tdlib_commit}/build" \
+        -DCMAKE_BUILD_TYPE=None \
+        -DCMAKE_INSTALL_PREFIX="${SRC}/td-${tdlib_commit}/install" \
+        -DTD_E2E_ONLY=ON \
+        -Wno-dev
+
+    cmake --build "td-${tdlib_commit}/build"
+    cmake --install "td-${tdlib_commit}/build"
+
+    cmake -S "AyuGramDesktop-${version}-full" -B build -G Ninja \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_BUILD_TYPE=Release \
+        -Dtde2e_DIR="${SRC}/td-${tdlib_commit}/install/lib/cmake/tde2e" \
+        -DTDESKTOP_API_ID=2040 \
+        -DTDESKTOP_API_HASH=b18441a1ff607e10a989891a5462e627 \
+        -DDESKTOP_APP_DISABLE_AUTOUPDATE=True \
+        -Wno-dev
+
+    cmake --build build
+    DESTDIR="${PKG}" cmake --install build
+}
