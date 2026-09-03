@@ -1,7 +1,7 @@
 extra-cmake-modules
 jansson
 luajit
-mbedtls
+mbedtls3
 nlohmann-json
 pciutils
 pipewire
