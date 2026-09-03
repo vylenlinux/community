@@ -6,21 +6,21 @@ homepage="https://mailfud.org/geoip-legacy/"
 maintainer="Vylen Linux Team"
 
 name=geoip-database
-version=20260808
+version=20260902
 release=1
 
-source="https://mailfud.org/geoip-legacy/GeoIP.dat.gz
-    https://mailfud.org/geoip-legacy/GeoIPv6.dat.gz
-    https://mailfud.org/geoip-legacy/GeoIPCity.dat.gz
-    https://mailfud.org/geoip-legacy/GeoIPCityv6.dat.gz
-    https://mailfud.org/geoip-legacy/GeoIPASNum.dat.gz
-    https://mailfud.org/geoip-legacy/GeoIPASNumv6.dat.gz"
+source="GeoIP-${version}.dat.gz::https://mailfud.org/geoip-legacy/GeoIP.dat.gz
+    GeoIPv6-${version}.dat.gz::https://mailfud.org/geoip-legacy/GeoIPv6.dat.gz
+    GeoIPCity-${version}.dat.gz::https://mailfud.org/geoip-legacy/GeoIPCity.dat.gz
+    GeoIPCityv6-${version}.dat.gz::https://mailfud.org/geoip-legacy/GeoIPCityv6.dat.gz
+    GeoIPASNum-${version}.dat.gz::https://mailfud.org/geoip-legacy/GeoIPASNum.dat.gz
+    GeoIPASNumv6-${version}.dat.gz::https://mailfud.org/geoip-legacy/GeoIPASNumv6.dat.gz"
 
 build() {
     # shellcheck disable=SC2035
     gunzip *.gz
 
     for file in GeoIP GeoIPv6 GeoIPCity GeoIPCityv6 GeoIPASNum GeoIPASNumv6; do
-        install -Dm644 "${file}.dat" -t "${PKG}/usr/share/GeoIP/"
+        install -Dm644 "${file}-${version}.dat" "${PKG}/usr/share/GeoIP/${file}.dat"
     done
 }
