@@ -7,7 +7,7 @@ maintainer="Vylen Linux Team"
 
 name=mbedtls3
 version=3.6.7
-release=1
+release=2
 
 _framework_commit="893ad9e8450a8e7459679d952abd5d6df26c41c4"
 
@@ -20,6 +20,8 @@ build() {
 
     cmake -S "mbedtls-${version}" -B build -G Ninja \
         -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_INSTALL_LIBDIR=lib/mbedtls3 \
+        -DCMAKE_INSTALL_INCLUDEDIR=include/mbedtls3 \
         -DCMAKE_BUILD_TYPE=Release \
         -DCMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
         -DUSE_SHARED_MBEDTLS_LIBRARY=ON \
@@ -31,4 +33,17 @@ build() {
 
     cmake --build build
     DESTDIR="${PKG}" cmake --install build
+
+    # add prefix to binaries
+    for f in "${PKG}/usr/bin"/*; do
+        mv "${f}" "${PKG}/usr/bin/${name}_${f##*/}"
+    done
+
+    # fix static lib perms
+    chmod 644 "${PKG}/usr/lib/mbedtls3"/*.a
+
+    # symlinks for shared libs
+    for lib in "${PKG}/usr/lib/mbedtls3"/lib*.so.*; do
+        ln -sf "mbedtls3/${lib##*/}" "${PKG}/usr/lib/${lib##*/}"
+    done
 }
