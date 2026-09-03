@@ -18,7 +18,11 @@ build() {
     export CFLAGS="${CFLAGS} -Wno-error=deprecated-declarations"
     export QT_QPA_PLATFORMTHEME="qt6ct"
 
-    emerald is-installed ccache && PATH="$(echo "${PATH}" | awk -v RS=: -v ORS=: '/ccache/ {next} {print}' | sed 's/:*$//')"
+    emerald is-installed ccache && PATH="$(printf "%s" "${PATH}" | awk -v RS=: -v ORS=: '/ccache/ {
+        next;
+    } {
+        print;
+    }' | sed 's/:*$//')"
 
     # It's not eought to use -D ENABLE_BROSER...
     touch "${name}-${version}/plugins/obs-browser/CMakeLists.txt"
@@ -38,6 +42,10 @@ build() {
         -DENABLE_PIPEWIRE=ON \
         -DENABLE_PULSEAUDIO=ON \
         -DENABLE_QSV11=OFF \
+        -DMbedTLS_INCLUDE_DIR="/usr/include/mbedtls3" \
+        -DMbedtls_LIBRARY="/usr/lib/mbedtls3/libmbedtls.so" \
+    		-DMbedcrypto_LIBRARY="/usr/lib/mbedtls3/libmbedcrypto.so" \
+    		-DMbedx509_LIBRARY="/usr/lib/mbedtls3/libmbedx509.so" \
         -DENABLE_SCRIPTING_LUA="$(emerald is-installed luajit && printf "ON" || printf "OFF")" \
         -DENABLE_VLC=OFF \
         -DENABLE_VST=OFF \
