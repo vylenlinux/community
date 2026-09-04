@@ -1,5 +1,0 @@
-name = "plasma6-applets-kurve"
-provider = "repology"
-
-[source]
-package = "plasma-kurve"
