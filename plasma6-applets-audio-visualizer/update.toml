@@ -1,0 +1,6 @@
+name = "plasma6-applets-audio-visualizer"
+provider = "github"
+
+[source]
+owner = "luisbocanegra"
+package = "plasma-kurve"
