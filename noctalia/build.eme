@@ -3,18 +3,18 @@
 # shellcheck disable=SC2034
 description="A sleek and minimal desktop shell thoughtfully crafted for Wayland, built with Quickshell."
 maintainer="Vylen Linux Team"
-homepage="https://github.com/noctalia-dev/noctalia-shell"
+homepage="https://github.com/noctalia-dev/noctalia"
 
-name=noctalia-shell
-version=4.7.7
+name=noctalia
+version=5.0.1
 release=1
 source="https://github.com/noctalia-dev/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
-    # shellcheck disable=SC2164
-    cd "${name%-*}-${version}"
+    vylen-meson "${name}-${version}" build \
+        -Db_ndebug=true \
+        -Dtests=disabled
 
-    install -dm755 "${PKG}/etc/xdg/quickshell/${name}"
-    # shellcheck disable=SC2035
-    cp -r * "${PKG}/etc/xdg/quickshell/${name}/"
+    meson compile -C build
+    DESTDIR="${PKG}" meson install --no-rebuild -C build
 }

@@ -1,6 +1,6 @@
-name = "noctalia-shell"
+name = "noctalia"
 provider = "github"
 
 [source]
 owner = "noctalia-dev"
-repo = "noctalia-shell"
+repo = "noctalia"
