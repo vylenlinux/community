@@ -13,21 +13,22 @@ source="https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-rel
 build() {
     for T in i686-w64-mingw32 x86_64-w64-mingw32; do
         mkdir "build-${T}"
+
         # shellcheck disable=SC2164
         cd "build-${T}"
+            [ "${T}" = "i686-w64-mingw32" ] && \
+                OPTS="--disable-lib64 --enable-lib32" || \
+                OPTS="--disable-lib32 --enable-lib64"
 
-        [ "${T}" = "i686-w64-mingw32" ] && \
-            OPTS="--disable-lib64 --enable-lib32" || \
-            OPTS="--disable-lib32 --enable-lib64"
+            # shellcheck disable=SC2086
+            CC="${T}-gcc" "../mingw-w64-v${version}/mingw-w64-crt/configure" \
+                --prefix="/usr/${T}" \
+                --host="${T}" \
+                --enable-wildcard \
+                ${OPTS}
 
-        "../mingw-w64-v${version}/mingw-w64-crt/configure" \
-            --prefix="/usr/${T}" \
-            --host="${T}" \
-            --enable-wildcard "${OPTS}" CC="${T}-gcc"
-
-        make
-        make DESTDIR="${PKG}" install
-
+            make
+            make DESTDIR="${PKG}" install
         # shellcheck disable=SC2103
         cd ..
     done
