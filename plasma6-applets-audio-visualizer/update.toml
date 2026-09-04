@@ -3,4 +3,4 @@ provider = "github"
 
 [source]
 owner = "luisbocanegra"
-package = "plasma-kurve"
+repo = "plasma-audio-visualizer"
