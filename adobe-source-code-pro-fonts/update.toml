@@ -1,5 +1,6 @@
 name = "adobe-source-code-pro-fonts"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "fonts:source-code-pro"
+owner = "adobe-fonts"
+repo = "source-code-pro"
