@@ -1,5 +1,0 @@
-name = "spacefm"
-provider = "repology"
-
-[source]
-package = "spacefm"
