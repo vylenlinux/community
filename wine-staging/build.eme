@@ -9,7 +9,7 @@ name=wine-staging
 version=11.17
 release=1
 
-vgecko=2.47.4-rc1
+vgecko=2.47.4
 vmono=11.3.0
 
 source="https://dl.winehq.org/wine/source/${version%%.*}.x/wine-${version}.tar.xz
