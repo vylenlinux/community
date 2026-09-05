@@ -1,0 +1,10 @@
+name = "md4c"
+provider = "github"
+
+[source]
+owner = "mity"
+repo = "md4c"
+
+[github]
+use_releases = false
+use_tags = true
