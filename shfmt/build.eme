@@ -6,7 +6,7 @@ homepage="https://github.com/mvdan/sh"
 maintainer="Vylen Linux Team"
 
 name=shfmt
-version=3.14.0
+version=3.14.1
 release=1
 source="${name}-${version}.tar.gz::https://github.com/mvdan/sh/archive/v${version}/${name}-v${version}.tar.gz"
 
