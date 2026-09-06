@@ -1,5 +1,0 @@
-name = "ngetty"
-provider = "repology"
-
-[source]
-package = "ngetty"
