@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # shellcheck disable=SC2034
-description="A sleek and minimal desktop shell thoughtfully crafted for Wayland, built with Quickshell."
+description="A sleek and minimal desktop shell thoughtfully crafted for Wayland"
 maintainer="Vylen Linux Team"
 homepage="https://github.com/noctalia-dev/noctalia"
 
