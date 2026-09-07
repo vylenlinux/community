@@ -8,7 +8,7 @@ maintainer="Vylen Linux Team"
 name=mingw-w64-binutils
 version=2.47
 release=1
-source="http://ftp.gnu.org/gnu/binutils/binutils-${version}.tar.xz"
+source="https://ftp.gnu.org/gnu/binutils/binutils-${version}.tar.xz"
 
 build() {
     # shellcheck disable=SC2164
