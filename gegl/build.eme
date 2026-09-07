@@ -6,7 +6,7 @@ homepage="https://www.gegl.org/"
 maintainer="Vylen Linux Team"
 
 name=gegl
-version=0.4.70
+version=0.4.72
 release=1
 source="https://download.gimp.org/pub/${name}/${version%.*}/${name}-${version}.tar.xz"
 
