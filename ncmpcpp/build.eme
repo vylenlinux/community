@@ -1,36 +1,46 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Almost exact clone of ncmpc with some new features"
 homepage="https://rybczak.net/ncmpcpp/"
 maintainer="Vylen Linux Team"
 
 name=ncmpcpp
 version=0.10.1
-release=1
-commit=e8f1c4bd48350789300c5f87c5ea21ea4256cf6f
-source="$name-$version.tar.gz::https://github.com/ncmpcpp/ncmpcpp/archive/$version.tar.gz"
+release=2
+
+source="${name}-${version}.tar.gz::https://github.com/${name}/${name}/archive/refs/tags/${version}.tar.gz
+    fix-boost-system-header-only.patch
+    fix-boost-transform-iterator-sort.patch"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	autoreconf -fiv
+    patch -Np1 -i "${SRC}/fix-boost-system-header-only.patch"
+    patch -Np1 -i "${SRC}/fix-boost-transform-iterator-sort.patch"
 
-	BOOST_LIB_SUFFIX='' ./configure \
-		--prefix=/usr \
-		--enable-shared='yes' \
-		--enable-static='no' \
-		--enable-fast-install='yes' \
-		--enable-clock \
-		--enable-outputs \
-		--enable-visualizer \
-		--with-fftw \
-		--with-taglib
-	make
-	make DESTDIR=$PKG install
+    autoreconf -fi
 
-	mkdir -p $PKG/usr/share/$name
-	mv $PKG/usr/share/doc/$name/config \
-	   $PKG/usr/share/doc/$name/bindings \
-	   $PKG/usr/share/$name
+    BOOST_LIB_SUFFIX='' ./configure \
+        --prefix=/usr \
+        --enable-shared='yes' \
+        --enable-static='no' \
+        --enable-fast-install='yes' \
+        --enable-clock \
+        --enable-outputs \
+        --enable-visualizer \
+        --with-fftw \
+        --with-taglib
 
-	sed -i 's,/usr/share/doc/,/usr/share/,g' \
-	   $PKG/usr/share/man/man1/ncmpcpp.1
+    make
+    make DESTDIR="${PKG}" install
+
+    mkdir -p "${PKG}/usr/share/${name}"
+
+    mv "${PKG}/usr/share/doc/${name}/config" \
+        "${PKG}/usr/share/doc/${name}/bindings" \
+        "${PKG}/usr/share/${name}"
+
+    sed -i 's,/usr/share/doc/,/usr/share/,g' "${PKG}/usr/share/man/man1/${name}.1"
 }

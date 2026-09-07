@@ -1,0 +1,21 @@
+--- ncmpcpp-0.10.1-orig/src/screens/sel_items_adder.cpp
++++ ncmpcpp-0.10.1/src/screens/sel_items_adder.cpp
+@@ -253,8 +253,16 @@
+ 				std::bind(&Self::addToExistingPlaylist, this, it->path())
+ 			));
+ 		};
+-		std::sort(m_playlist_selector.beginV()+begin, m_playlist_selector.endV(),
+-			LocaleBasedSorting(std::locale(), Config.ignore_leading_the));
++		{
++			// Boost's transform_iterator returns a proxy from operator[], which
++			// can't be deduced against LocaleBasedSorting's templated overloads
++			// (needed by e.g. libc++'s heap-based std::sort). Pin the comparator
++			// to a concrete parameter type so it goes through a normal implicit
++			// conversion instead of template argument deduction.
++			LocaleBasedSorting cmp(std::locale(), Config.ignore_leading_the);
++			std::sort(m_playlist_selector.beginV()+begin, m_playlist_selector.endV(),
++				[&cmp](const Entry &a, const Entry &b) { return cmp(a, b); });
++		}
+ 		if (begin < m_playlist_selector.size())
+ 			m_playlist_selector.addSeparator();
+ 	}
