@@ -6,15 +6,15 @@ homepage="http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX"
 maintainer="Vylen Linux Team"
 
 name=epson-inkjet-printer-escpr
-version=1.8.8
+version=1.8.9
 release=1
-source="${name}-${version}.rpm::https://dev.alpinelinux.org/archive/${name}/${name}-${version}-1.src.rpm"
+source="${name}-${version}.rpm::https://master.dl.sourceforge.net/project/mxntrepo/sources/${name}-${version}-1.src.rpm"
 
 build() {
     export CFLAGS="${CFLAGS} \
         -Wno-implicit-function-declaration"
 
-    tar xzf "${name}-${version}-1.tar.gz"
+    tar zxf "${name}-${version}-1.tar.gz"
 
     # shellcheck disable=SC2164
     cd "${name}-${version}"

@@ -476,7 +476,9 @@ drwxr-xr-x root/root    usr/share/ppd/epson-inkjet-printer-escpr/
 -rw-r--r-- root/root    usr/share/ppd/epson-inkjet-printer-escpr/Epson-WF-2870_Series-epson-escpr-en.ppd
 -rw-r--r-- root/root    usr/share/ppd/epson-inkjet-printer-escpr/Epson-WF-2910_Series-epson-escpr-en.ppd
 -rw-r--r-- root/root    usr/share/ppd/epson-inkjet-printer-escpr/Epson-WF-2930_Series-epson-escpr-en.ppd
+-rw-r--r-- root/root    usr/share/ppd/epson-inkjet-printer-escpr/Epson-WF-2940_Series-epson-escpr-en.ppd
 -rw-r--r-- root/root    usr/share/ppd/epson-inkjet-printer-escpr/Epson-WF-2950_Series-epson-escpr-en.ppd
+-rw-r--r-- root/root    usr/share/ppd/epson-inkjet-printer-escpr/Epson-WF-2970_Series-epson-escpr-en.ppd
 -rw-r--r-- root/root    usr/share/ppd/epson-inkjet-printer-escpr/Epson-WF-3010_Series-epson-escpr-en.ppd
 -rw-r--r-- root/root    usr/share/ppd/epson-inkjet-printer-escpr/Epson-WF-3520_Series-epson-escpr-en.ppd
 -rw-r--r-- root/root    usr/share/ppd/epson-inkjet-printer-escpr/Epson-WF-3530_Series-epson-escpr-en.ppd
@@ -597,6 +599,7 @@ drwxr-xr-x root/root    usr/share/ppd/epson-inkjet-printer-escpr/
 -rw-r--r-- root/root    usr/share/ppd/epson-inkjet-printer-escpr/Epson-XP-4200_Series-epson-escpr-en.ppd
 -rw-r--r-- root/root    usr/share/ppd/epson-inkjet-printer-escpr/Epson-XP-420_Series-epson-escpr-en.ppd
 -rw-r--r-- root/root    usr/share/ppd/epson-inkjet-printer-escpr/Epson-XP-422_423_425_Series-epson-escpr-en.ppd
+-rw-r--r-- root/root    usr/share/ppd/epson-inkjet-printer-escpr/Epson-XP-4250_Series-epson-escpr-en.ppd
 -rw-r--r-- root/root    usr/share/ppd/epson-inkjet-printer-escpr/Epson-XP-430_Series-epson-escpr-en.ppd
 -rw-r--r-- root/root    usr/share/ppd/epson-inkjet-printer-escpr/Epson-XP-432_435_Series-epson-escpr-en.ppd
 -rw-r--r-- root/root    usr/share/ppd/epson-inkjet-printer-escpr/Epson-XP-440_Series-epson-escpr-en.ppd
