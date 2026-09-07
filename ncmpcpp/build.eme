@@ -40,7 +40,7 @@ build() {
 
     mv "${PKG}/usr/share/doc/${name}/config" \
         "${PKG}/usr/share/doc/${name}/bindings" \
-    -t "${PKG}/usr/share/${name}"
+    -t "${PKG}/usr/share/${name}/"
 
     sed -i 's,/usr/share/doc/,/usr/share/,g' "${PKG}/usr/share/man/man1/${name}.1"
 }
