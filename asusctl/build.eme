@@ -14,8 +14,9 @@ build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
 
-    export CARGO_HOME="${SRC}/cargo"
-    cargo build --release --locked
+    cargo build \
+        --release \
+        --locked
 
     for bin in "${name}" asusd asusd-user; do
         install -Dm755 "target/release/${bin}" -t "${PKG}/usr/bin/"
