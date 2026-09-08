@@ -14,9 +14,6 @@ build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
 
-    mkdir .cargo
-    export CARGO_HOME="${PWD}/.cargo"
-
     cargo update
     cargo fetch
 
@@ -25,8 +22,8 @@ build() {
         --locked
 
     install -Dm755 "target/release/${name}" -t "${PKG}/usr/bin/"
-
     install -Dm644 "completions/bash/${name}" -t "${PKG}/usr/share/bash-completion/completions/"
+
     emerald is-installed zsh && install -Dm644 "completions/zsh/_${name}" -t "${PKG}/usr/share/zsh/site-functions/"
     emerald is-installed fish && install -Dm644 "completions/fish/${name}.fish" -t "${PKG}/usr/share/fish/vendor_completions.d/"
 }
