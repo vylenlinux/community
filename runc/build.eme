@@ -11,15 +11,8 @@ release=1
 source="https://github.com/opencontainers/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
-    mkdir -p src/github.com/opencontainers
     # shellcheck disable=SC2164
-    cd src/github.com/opencontainers
-
-    ln -sf "${SRC}/${name}-${version}" "${name}"
-    # shellcheck disable=SC2164
-    cd "${name}"
-
-    export GOPATH="${SRC}"
+    cd "${name}-${version}"
     export BUILDTAGS="seccomp"
 
     export GOFLAGS="${GOFLAGS} \
