@@ -13,7 +13,6 @@ source="https://github.com/openSUSE/${name}/archive/v${version}/${name}-${versio
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-    export XML_CATALOG_FILES=/etc/xml/catalog
 
     # rename cron scripts
     sed -i -e 's@suse.de-@@g' scripts/Makefile.am
