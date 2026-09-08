@@ -11,10 +11,8 @@ release=1
 source="https://github.com/docker/buildx/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
-    export CGO_CFLAGS="${CFLAGS}"
-    export CGO_CPPFLAGS="${CPPFLAGS}"
-    export CGO_CXXFLAGS="${CXXFLAGS}"
-    export CGO_LDFLAGS="${LDFLAGS}"
+    # shellcheck disable=SC2164
+    cd "buildx-${version}"
     export GO111MODULE=on
 
     export GOFLAGS="${GOFLAGS} \
@@ -22,9 +20,6 @@ build() {
         -trimpath \
         -mod=readonly \
         -modcacherw"
-
-    # shellcheck disable=SC2164
-    cd "buildx-${version}"
 
     go build -mod=vendor -o docker-buildx -ldflags "-linkmode=external \
         -X github.com/docker/buildx/version.Version=${version} \
