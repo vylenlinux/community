@@ -15,7 +15,6 @@ source="https://git.zx2c4.com/${name}/snapshot/${name}-${version}.tar.xz
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-    export XML_CATALOG_FILES=/etc/xml/catalog
 
     make get-git
     make
