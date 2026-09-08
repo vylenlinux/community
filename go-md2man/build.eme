@@ -14,10 +14,6 @@ build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
 
-    export GOPATH="${PWD}/path"
-    export GOCACHE="${PWD}/cache"
-    export CGO_LDFLAGS="${LDFLAGS}"
-
     export GOFLAGS="${GOFLAGS} \
         -buildmode=pie \
         -trimpath"
