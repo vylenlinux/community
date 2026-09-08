@@ -18,9 +18,6 @@ build() {
     cd "${name}-${version}"
 
     patch -Np1 -i "${SRC}/libdisplay-info-sys-0.3.0-libdisplay-info-0.4.patch"
-    mkdir -p .cargo
-
-    export CARGO_HOME="${PWD}/.cargo"
     export NIRI_BUILD_COMMIT=b35bcae
 
     cargo build \
