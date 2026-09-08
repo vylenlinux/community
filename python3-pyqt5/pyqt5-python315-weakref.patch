@@ -1,0 +1,11 @@
+--- a/qpy/QtCore/qpycore_pyqtslot.cpp
++++ b/qpy/QtCore/qpycore_pyqtslot.cpp
+@@ -219,7 +219,7 @@
+ {
+     // Use the weak reference if possible.
+     if (mself_wr)
+-        return PyWeakref_GetObject(mself_wr);
++        return PyObject_CallNoArgs(mself_wr);
+
+     return mself;
+ }

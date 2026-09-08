@@ -1,1 +1,3 @@
+cb46cc10960b3872360026dd84ee730caa36afd5a39f225cdc8177b73d01ea50  pyqt5-python315-weakref.patch
+952119db2e09992ebfa43b78838b420fe72a53f35b5314ebd1e4ab09d06f9332  pyqt5-sip-abi-12.15.patch
 522fc7b8f43ccf3f2efb79a1a13792026a7ed1ab2b3d0cb00bfce0a089cd1d55  python3-pyqt5-5.15.11.tar.gz
