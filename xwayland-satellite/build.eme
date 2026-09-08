@@ -14,9 +14,6 @@ build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
 
-    mkdir "${SRC}/.cargo"
-    export CARGO_HOME="${SRC}/.cargo"
-
     cargo fetch \
         --locked \
         --target "$(rustc --print host-tuple)"
