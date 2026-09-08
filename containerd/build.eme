@@ -18,8 +18,6 @@ build() {
         -modcacherw \
         -mod=readonly"
 
-    export GOTMPDIR="${GOTMPDIR:-"${SRC}"}"
-    export GOMODCACHE="${GOMODCACHE:-"${SRC}/go"}"
     export GO111MODULE=on
 
     make VERSION="v${version}" REVISION="091922f03c2762540fd057fba91260237ff86acb" BUILDMODE=pie
