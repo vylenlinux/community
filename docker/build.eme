@@ -17,14 +17,9 @@ source="https://github.com/moby/moby/archive/${name}-v${version}/moby-${version}
 
 build() {
     export GO111MODULE=auto
-    export GOPATH="${SRC}"
     export DOCKER_GITCOMMIT=fbf3ed2
     export DOCKER_BUILDTAGS=seccomp
     export DISABLE_WARN_OUTSIDE_CONTAINER=1
-    export CGO_CFLAGS="${CFLAGS}"
-    export CGO_CPPFLAGS="${CPPFLAGS}"
-    export CGO_CXXFLAGS="${CXXFLAGS}"
-    export CGO_LDFLAGS="${LDFLAGS}"
 
     export GOFLAGS="${GOFLAGS} \
         -buildmode=pie \
