@@ -7,13 +7,22 @@ maintainer="Vylen Linux Team"
 
 name=hamlib
 version=4.7.2
-release=1
-source="https://github.com/${name}/${name}/releases/download/${version}/${name}-${version}.tar.gz"
+release=2
+
+source="https://github.com/${name}/${name}/releases/download/${version}/${name}-${version}.tar.gz
+    https://github.com/${name}/${name}/commit/8c008b7c34fc293f44047d2ecc0126922ba325db.patch
+    fix-build-with-lua-5.5.patch"
 
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-    export PYTHON_VERSION="3.14"
+    export PYTHON_VERSION=3
+
+    patch -Np1 -i "${SRC}/fix-build-with-lua-5.5.patch"
+    patch -Np1 -i "${SRC}/8c008b7c34fc293f44047d2ecc0126922ba325db.patch"
+
+    sed -i 's/Hamlib-pl.mk install_site/Hamlib-pl.mk install/g' bindings/Makefile.am
+    autoreconf -fi
 
     ./configure \
         --prefix=/usr \
@@ -22,8 +31,7 @@ build() {
         --with-python-binding \
         --with-tcl-binding \
         --with-lua-binding \
-        --with-xml-support \
-        --disable-uhd
+        --with-xml-support
 
     make
     make DESTDIR="${PKG}" install

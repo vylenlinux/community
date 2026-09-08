@@ -1,0 +1,49 @@
+--- hamlib-4.7.2/configure.ac	2026-06-21 13:15:35.000000000 +0000
++++ hamlib-4.7.2/configure.ac	2026-09-08 20:56:04.018896257 +0000
+@@ -750,7 +750,7 @@
+ dnl AX_LUA_DEVEL from macros/ax_lua_devel.m4
+ AS_IF([test x"${cf_with_lua_binding}" = "xyes"],[
+
+-    AX_PROG_LUA([5.2], [5.5])
++    AX_PROG_LUA([5.2], [5.6])
+     AX_LUA_HEADERS
+     AX_LUA_LIBS
+
+--- hamlib-4.7.2/configure	2026-06-21 13:15:41.000000000 +0000
++++ hamlib-4.7.2/configure	2026-09-08 20:56:04.024810327 +0000
+@@ -25882,7 +25882,7 @@
+ esac
+ fi
+
+-            _ax_check_text="whether $LUA version >= 5.2, < 5.5"
++            _ax_check_text="whether $LUA version >= 5.2, < 5.6"
+       { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking $_ax_check_text" >&5
+ printf %s "checking $_ax_check_text... " >&6; }
+
+@@ -25897,7 +25897,7 @@
+     local minver = verstr2num("5.2")
+     local _, _, trimver = string.find(_VERSION, "^Lua (.*)")
+     local ver = verstr2num(trimver)
+-    local maxver = verstr2num("5.5") or 1e9
++    local maxver = verstr2num("5.6") or 1e9
+     if minver <= ver and ver < maxver then
+       print("yes")
+     else
+@@ -25917,7 +25917,7 @@
+       ax_display_LUA=$LUA
+
+ else case e in #(
+-  e)        _ax_check_text="for a Lua interpreter with version >= 5.2, < 5.5"
++  e)        _ax_check_text="for a Lua interpreter with version >= 5.2, < 5.6"
+       { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking $_ax_check_text" >&5
+ printf %s "checking $_ax_check_text... " >&6; }
+ if test ${ax_cv_pathless_LUA+y}
+@@ -25957,7 +25957,7 @@
+     local minver = verstr2num("5.2")
+     local _, _, trimver = string.find(_VERSION, "^Lua (.*)")
+     local ver = verstr2num(trimver)
+-    local maxver = verstr2num("5.5") or 1e9
++    local maxver = verstr2num("5.6") or 1e9
+     if minver <= ver and ver < maxver then
+       print("yes")
+     else
