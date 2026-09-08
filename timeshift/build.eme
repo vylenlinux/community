@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="A system restore utility for Linux"
 homepage="https://github.com/linuxmint/timeshift"
 maintainer="Vylen Linux Team"
@@ -5,20 +8,10 @@ maintainer="Vylen Linux Team"
 name=timeshift
 version=25.12.4
 release=1
-source="$name-$version.tar.gz::https://github.com/linuxmint/timeshift/archive/refs/tags/$version.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/linuxmint/${name}/archive/refs/tags/${version}.tar.gz"
 
 build() {
-
-	cat > which <<EOF
-#!/bin/sh
-type -p \$1
-EOF
-
-chmod +x which
-export PATH=$PATH:$PWD
-
-	vylen-meson $name-$version build \
-	-D xapp=false 
-	meson compile -C build
-	DESTDIR=$PKG meson install --no-rebuild -C build
+    vylen-meson "${name}-${version}" build
+    meson compile -C build
+    DESTDIR="${PKG}" meson install --no-rebuild -C build
 }
