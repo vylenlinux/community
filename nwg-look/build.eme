@@ -14,20 +14,12 @@ build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
 
-    export CGO_LDFLAGS="${LDFLAGS}"
-    export CGO_CFLAGS="${CFLAGS}"
-    export CGO_CPPFLAGS="${CPPFLAGS}"
-    export CGO_CXXFLAGS="${CXXFLAGS}"
-
     export GOFLAGS="${GOFLAGS} \
         -buildmode=pie \
         -trimpath \
         -mod=readonly \
         -modcacherw \
         -ldflags=-linkmode=external"
-
-    export GOPATH="${SRC}/go"
-    export PATH="${PATH}:${GOPATH}/bin"
 
     # shellcheck disable=SC2035
     go build -o "${name}" *.go
