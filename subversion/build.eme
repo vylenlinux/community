@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="A Modern Concurrent Version Control System"
 homepage="https://subversion.apache.org/"
 maintainer="Vylen Linux Team"
@@ -5,13 +8,22 @@ maintainer="Vylen Linux Team"
 name=subversion
 version=1.14.5
 release=1
-source="https://dlcdn.apache.org/$name/$name-$version.tar.gz"
+source="https://dlcdn.apache.org/${name}/${name}-${version}.tar.gz"
 
 build() {
-    cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
     grep -rl '^#!.*python$' | xargs sed -i '1s/python/&3/'
     ./autogen.sh
-    PYTHON=python3 ./configure --prefix=/usr --disable-static --disable-shared --with-serf --with-gnome-keyring=no
+
+    ./configure \
+        --prefix=/usr \
+        --disable-static \
+        --disable-shared \
+        --with-serf \
+        --with-gnome-keyring=no
+
     make
-    make DESTDIR=$PKG install
+    make DESTDIR="${PKG}" install
 }
