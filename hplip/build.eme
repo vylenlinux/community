@@ -65,14 +65,12 @@ build() {
 
     # for autoreconf
     for file in NEWS README AUTHORS ChangeLog; do
-        if [ ! -r "${file}" ]; then
-            touch "${file}"
-        fi
+        [ -r "${file}" ] || touch "${file}"
     done
 
-    autoreconf -vif
+    autoreconf -fi
 
-    PYTHON=/usr/bin/python3 ./configure \
+    ./configure \
         --prefix=/usr \
         --libdir=/usr/lib \
         --with-cupsbackenddir=/usr/lib/cups/backend \
