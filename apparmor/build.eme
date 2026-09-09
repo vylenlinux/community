@@ -14,10 +14,6 @@ build() {
     # shellcheck disable=SC2164
     cd "${name}-v${version}"
 
-    export PYTHON_VERSION=3
-    export PYTHON_VERSIONS=python3
-    export PYTHON=/usr/bin/python3
-
     # shellcheck disable=SC2164
     cd libraries/libapparmor
         msg_info "Building: libapparmor"
