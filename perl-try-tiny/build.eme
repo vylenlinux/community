@@ -1,17 +1,20 @@
-description="Minimal try/catch with proper localization of $@"
+#!/bin/sh
+
+# shellcheck disable=SC2034
+description="Minimal try/catch with proper localization of \$@"
 homepage="https://search.cpan.org/dist/Try-Tiny"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-try-tiny
 version=0.32
 release=1
-source="$name-$version.tar.gz::https://cpan.metacpan.org/authors/id/E/ET/ETHER/Try-Tiny-$version.tar.gz"
+source="${name}-${version}.tar.gz::https://cpan.metacpan.org/authors/id/E/ET/ETHER/Try-Tiny-${version}.tar.gz"
 
 build() {
-        cd Try-Tiny-$version
-	perl -I. Makefile.PL INSTALLDIRS=vendor
-        make
-        make DESTDIR=$PKG install
+    # shellcheck disable=SC2164
+    cd "Try-Tiny-${version}"
+    perl -I. Makefile.PL INSTALLDIRS=vendor
 
+    make
+    make DESTDIR="${PKG}" install
 }
-

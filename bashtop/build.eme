@@ -1,15 +1,20 @@
-description="Linux resource monitor "
+#!/bin/sh
+
+# shellcheck disable=SC2034
+description="Linux resource monitor"
 homepage="https://github.com/aristocratos/bashtop"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=bashtop
 version=0.9.25
 release=1
-source="https://github.com/aristocratos/${name}/archive/v${version}/$name-$version.tar.gz"
+source="https://github.com/aristocratos/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
-	# disable update check
-	sed -ri 's,^update_check="true"$,update_check="false",' bashtop
-	install -Dm755 bashtop -t "$PKG/usr/bin"
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    # disable update check
+    sed -ri 's,^update_check="true"$,update_check="false",' bashtop
+    install -Dm755 "${name}" -t "${PKG}/usr/bin/"
 }
