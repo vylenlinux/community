@@ -8,7 +8,7 @@ maintainer="Vylen Linux Team"
 name=mingw-w64-gcc
 version=16.2.0
 release=1
-source="http://gcc.gnu.org/pub/gcc/releases/gcc-${version}/gcc-${version}.tar.xz"
+source="https://gcc.gnu.org/pub/gcc/releases/gcc-${version}/gcc-${version}.tar.xz"
 
 build() {
     # shellcheck disable=SC2164

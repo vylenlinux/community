@@ -1,20 +1,24 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Utility for tracing a bitmap (input: PBM,PGM,PPM,BMP; output: EPS,PS,PDF,SVG,DXF,PGM,Gimppath,XFig)"
-homepage="http://potrace.sourceforge.net"
+homepage="https://potrace.sourceforge.net"
 maintainer="Vylen Linux Team"
 
 name=potrace
 version=1.16
 release=1
-source="http://potrace.sourceforge.net/download/$version/$name-$version.tar.gz"
+source="https://potrace.sourceforge.net/download/${version}/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	./configure \
-		--prefix=/usr \
-		--mandir=/usr/share/man \
-		--with-libpotrace
-	make
-	make DESTDIR=$PKG install
+    ./configure \
+        --prefix=/usr \
+        --mandir=/usr/share/man \
+        --with-libpotrace
 
+    make
+    make DESTDIR="${PKG}" install
 }
