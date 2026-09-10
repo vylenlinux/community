@@ -1,1 +1,4 @@
-a2f7884839b0ab8e0772a74fff232da20cc30e84bad053398f9ffaefd9c12ba9  galculator-2.1.4.tar.bz2
+e4152ce9c000407ebffcff4fbcf573c2dd8fdc901f56d1ba39f081390d66210d  0001-Fix-multiple-definition-of-prefs-compile-error-with-.patch
+020767b595a9a9ab9c78226fffb379dd219477714b121a33676733651574c255  0002-Declare-function-parameters-as-required-by-C23.patch
+cc17977cbac2c8207b71062a68d0615cd61e972f96ad9db73b12a0d1cb7f9801  galculator-2.1.4.tar.gz
+9ac82b1d83f93a83a7c2c86b8486dc965b96923bdb98a9d25f236798cc293d27  galculator-sign-accel.patch

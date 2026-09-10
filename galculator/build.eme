@@ -1,17 +1,35 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="GTK+ based scientific calculator"
 homepage="http://galculator.sourceforge.net/"
 maintainer="Vylen Linux Team"
 
 name=galculator
 version=2.1.4
-release=1
-source="http://galculator.mnim.org/downloads/$name-$version.tar.bz2"
+release=2
+
+source="${name}-${version}.tar.gz::https://github.com/${name}/${name}/archive/refs/tags/v${version}.tar.gz
+    0001-Fix-multiple-definition-of-prefs-compile-error-with-.patch
+    0002-Declare-function-parameters-as-required-by-C23.patch
+    galculator-sign-accel.patch"
 
 build() {
-	export CFLAGS="$CFLAGS -fcommon"
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+    export CFLAGS="${CFLAGS} -fcommon"
 
-	cd $name-$version
-	./configure --prefix=/usr
-	make
-	make DESTDIR=$PKG install
+    patch -Np1 -i "${SRC}/0001-Fix-multiple-definition-of-prefs-compile-error-with-.patch"
+    patch -Np1 -i "${SRC}/0002-Declare-function-parameters-as-required-by-C23.patch"
+    patch -Np1 -i "${SRC}/galculator-sign-accel.patch"
+
+    # shellcheck disable=SC2016
+    sed -i 's|$(datadir)/appdata|$(datadir)/metainfo|' Makefile.am
+    sed -i 's/galculator.xpm//' pixmaps/Makefile.am
+
+    autoreconf -fi
+    ./configure --prefix=/usr
+
+    make
+    make DESTDIR="${PKG}" install
 }

@@ -1,0 +1,70 @@
+From: Henrique F. Simoes <henriquesimoes@riseup.net>
+Date: Wed, 15 Oct 2025 21:17:51 -0300
+Subject: [PATCH] Declare function parameters as required by C23
+
+In C23, having no parameter in a function declaration no longer means an
+"unspecified" number of arguments. Declare the missing function arguments,
+so that it compiles with modern compilers such as GCC 15.
+---
+--- a/src/callbacks.c
++++ b/src/callbacks.c
+@@ -262,7 +262,7 @@
+ on_gfunc_button_clicked                (GtkToggleButton       *button,
+                                         gpointer         user_data)
+ {
+-    void    (*func)();
++    void    (*func)(GtkToggleButton *);
+     char     *display_string;
+
+     if (gtk_toggle_button_get_active(button) == FALSE) return;
+--- a/src/galculator.h
++++ b/src/galculator.h
+@@ -180,8 +180,14 @@
+ typedef struct {
+ 	char		*button_name;
+ 	char 		*display_string;
++	void		(*func)(GtkToggleButton *button);
++} s_gfunc_map;
++
++typedef struct {
++	char		*button_name;
++	char 		*display_string;
+ 	void		(*func)();
+-} s_gfunc_map;
++} s_disp_func_map;
+
+ typedef struct {
+ 	char		*button_name;
+--- a/src/ui.c
++++ b/src/ui.c
+@@ -247,1 +247,1 @@
+-	s_gfunc_map map[] = {\
++	s_disp_func_map map[] = {\
+@@ -433,14 +433,14 @@
+ 		button_box_xml = gtk_builder_file_open (BASIC_GLADE_FILE, TRUE);
+         box = GTK_WIDGET(gtk_builder_get_object (view_xml, "classic_view_vbox"));
+ 		ui_pack_from_xml (box, 2, button_box_xml, "button_box", TRUE, TRUE);
+-		set_basic_object_data (button_box_xml);
++		set_basic_object_data ();
+ 		break;
+ 	case SCIENTIFIC_MODE:
+ 		if (button_box_xml) g_object_unref (G_OBJECT(button_box_xml));
+ 		button_box_xml = gtk_builder_file_open (SCIENTIFIC_GLADE_FILE, TRUE);
+         box = GTK_WIDGET(gtk_builder_get_object (view_xml, "classic_view_vbox"));
+ 		ui_pack_from_xml (box, 2, button_box_xml, "button_box", TRUE, TRUE);
+-		set_scientific_object_data (button_box_xml);
++		set_scientific_object_data ();
+ 		break;
+ 	case PAPER_MODE:
+ 		return;
+--- a/src/ui.h
++++ b/src/ui.h
+@@ -74,7 +74,7 @@
+ void ui_formula_entry_set (G_CONST_RETURN gchar *text);
+ void ui_formula_entry_insert (G_CONST_RETURN gchar *text);
+ void ui_formula_entry_backspace ();
+-void ui_formula_entry_state ();
++void ui_formula_entry_state (gboolean error);
+ void ui_button_set_pan ();
+ void ui_button_set_rpn ();
+ void ui_relax_fmod_buttons ();
