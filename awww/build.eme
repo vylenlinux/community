@@ -2,17 +2,17 @@
 
 # shellcheck disable=SC2034
 description="Efficient animated wallpaper daemon for wayland, controlled at runtime"
-homepage="https://github.com/LGFae/swww"
+homepage="https://codeberg.org/LGFae/awww"
 maintainer="Vylen Linux Team"
 
-name=swww
-version=0.11.2
+name=awww
+version=0.12.1
 release=1
-source="${name}-${version}.tar.gz::https://github.com/LGFae/${name}/archive/refs/tags/v${version}.tar.gz"
+source="${name}-${version}.tar.gz::https://codeberg.org/LGFae/${name}/archive/v${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
-    cd "${name}-${version}"
+    cd "${name}"
 
     cargo fetch --locked
     cargo build --release

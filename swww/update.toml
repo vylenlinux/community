@@ -1,6 +1,0 @@
-name = "swww"
-provider = "github"
-
-[source]
-owner = "LGFae"
-repo = "swww"

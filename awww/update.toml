@@ -1,0 +1,6 @@
+name = "awww"
+provider = "codeberg"
+
+[source]
+owner = "LGFae"
+repo = "awww"
