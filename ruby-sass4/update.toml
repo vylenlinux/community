@@ -1,0 +1,5 @@
+name = "ruby-sass4"
+provider = "rubygems"
+
+[source]
+package = "sass4"

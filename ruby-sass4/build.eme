@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
+description="Sass makes CSS fun again"
+homepage="https://sass-lang.com/"
+maintainer="Vylen Linux Team"
+
+name=ruby-sass4
+version=4.0.5
+release=1
+source="https://rubygems.org/downloads/${name#*-}-${version}.gem"
+
+build() {
+    _gem_dir="$(gem env gemdir)"
+
+    gem install \
+        --ignore-dependencies \
+        --no-user-install \
+        --no-document \
+        -i "${PKG}/${_gem_dir}" \
+        -n "${PKG}/usr/bin" \
+        "${name#*-}-${version}.gem"
+
+    rm "${PKG}/${_gem_dir}/cache/${name#*-}-${version}.gem"
+}

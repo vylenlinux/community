@@ -1,5 +1,0 @@
-name = "ruby-sass"
-provider = "rubygems"
-
-[source]
-package = "sass"
