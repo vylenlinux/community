@@ -2,4 +2,4 @@ name = "ttf-ionicons"
 provider = "repology"
 
 [source]
-package = "ttf-ionicons"
+package = "fonts:ionicons"
