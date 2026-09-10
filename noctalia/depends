@@ -9,3 +9,4 @@ power-profiles-daemon
 sdbus-cpp
 libqalculate
 jemalloc
+libsecret
