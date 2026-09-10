@@ -6,7 +6,7 @@ homepage="https://www.rarlab.com/rar_add.htm"
 maintainer="Vylen Linux Team"
 
 name=unrar
-version=7.2.7
+version=7.3.1
 release=1
 source="${name}-${version}.tar.gz::https://www.rarlab.com/rar/unrarsrc-${version}.tar.gz"
 
