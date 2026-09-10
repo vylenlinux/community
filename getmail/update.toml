@@ -1,5 +1,0 @@
-name = "getmail"
-provider = "repology"
-
-[source]
-package = "getmail"

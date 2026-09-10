@@ -5,13 +5,16 @@ description="IMAP and POP3 mail retriever with reliable Maildir and command deli
 homepage="http://pyropus.ca/software/getmail"
 maintainer="Vylen Linux Team"
 
-name=getmail
-version=6.19.12
+name=getmail6
+version=6.20.01
 release=1
-source="https://github.com/getmail6/getmail6/archive/v${version}/${name}-${version}.tar.gz"
+source="https://github.com/${name}/${name}/archive/refs/tags/v${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
-    cd "${name}6-${version}"
-    python3 setup.py install --prefix=/usr --root="${PKG}"
+    cd "${name}-${version}"
+
+    python3 setup.py install \
+        --prefix=/usr \
+        --root="${PKG}"
 }
