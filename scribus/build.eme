@@ -6,11 +6,17 @@ homepage="https://www.scribus.net/"
 maintainer="Vylen Linux Team"
 
 name=scribus
-version=1.7.0
+version=1.7.3
 release=1
-source="https://downloads.sourceforge.net/${name}/${name}-${version}.tar.xz"
+
+source="https://downloads.sourceforge.net/${name}/${name}-${version}.tar.xz
+    https://github.com/scribusproject/${name}/commit/14a287fc1db2a44abfe1743260554447b31b4adf.patch
+    https://github.com/scribusproject/${name}/commit/ba246c3a2dd086b4e84517723beab159736ba9ba.patch"
 
 build() {
+    patch -d "${name}-${version}" -Np1 -i "${SRC}/14a287fc1db2a44abfe1743260554447b31b4adf.patch"
+    patch -d "${name}-${version}" -Np1 -i "${SRC}/ba246c3a2dd086b4e84517723beab159736ba9ba.patch"
+
     sed \
         -e 's|WANT_CPP17|WANT_CPP20|g' \
         -e 's|CMAKE_CXX_STANDARD 17|CMAKE_CXX_STANDARD 20|g' \
@@ -25,8 +31,8 @@ build() {
         -DWITH_PODOFO=Off \
         -DWANT_GRAPHICSMAGICK=On
 
-	make -C build
-	make -C build DESTDIR="${PKG}" install
+    make -C build
+    make -C build DESTDIR="${PKG}" install
 
     find "${PKG}" \( \
         -iname '*changelog*' -o \
@@ -34,5 +40,5 @@ build() {
         -iname '*todo*' -o \
         -iname '*readme*' -o \
         -iname '*copying*' \
-    \) -exec rm -rf '{}' \+
+    \) -exec rm -rf '{}' +
 }
