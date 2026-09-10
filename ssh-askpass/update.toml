@@ -1,5 +1,6 @@
 name = "ssh-askpass"
 provider = "repology"
+dedup_key = "openssh"
 
 [source]
-package = "ssh-askpass"
+package = "openssh"
