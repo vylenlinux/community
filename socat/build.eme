@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="SOcket CAT - netcat-like utility with many enhancements"
 homepage="http://www.dest-unreach.org/socat"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=socat
 version=1.8.1.3

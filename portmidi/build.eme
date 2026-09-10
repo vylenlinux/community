@@ -1,6 +1,6 @@
 description="Portmidi is a cross-platform MIDI input/output library"
 homepage="https://github.com/PortMidi/portmidi"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=portmidi
 version=2.0.8

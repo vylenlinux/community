@@ -1,6 +1,6 @@
 description="Cross-platform community-driven port of Keepass password manager "
 homepage="https://keepassxc.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 		 
 
 name=keepassxc

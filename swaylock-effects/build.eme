@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A fancier screen locker for Wayland."
 homepage="https://github.com/hboetes/swaylock-effects"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=swaylock-effects
 version=1.8.1

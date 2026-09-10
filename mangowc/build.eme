@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Lightweight, high-performance Wayland compositor built on dwl"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://mangowm.github.io/"
 
 name=mangowc

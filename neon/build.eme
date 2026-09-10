@@ -1,6 +1,6 @@
 description="HTTP and WebDAV client library, with a C interface"
 homepage="https://notroj.github.io/neon/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=neon
 version=0.37.1

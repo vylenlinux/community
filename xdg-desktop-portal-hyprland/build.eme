@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="xdg-desktop-portal backend for wlroots"
 homepage="https://github.com/fufexan/xdg-desktop-portal-hyprland"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xdg-desktop-portal-hyprland
 version=1.4.1

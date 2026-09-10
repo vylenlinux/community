@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Configuration GUI for niri Wayland compositor"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://github.com/stefonarch/niri-settings"
 
 name=niri-settings

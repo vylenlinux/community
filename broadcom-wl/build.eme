@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Broadcom Wireless driver for kernel stable"
 homepage="https://docs.broadcom.com/docs/12358410"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=broadcom-wl
 version=6.30.223.271

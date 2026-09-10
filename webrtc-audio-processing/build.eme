@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="a packaging friendly copy of the AudioProcessing module from the WebRTC project "
 homepage="https://freedesktop.org/software/pulseaudio/webrtc-audio-processing/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=webrtc-audio-processing
 version=2.1

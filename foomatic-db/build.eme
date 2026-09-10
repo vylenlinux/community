@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="OpenPrinting printer support database"
 homepage="http://www.linuxprinting.org/foomatic.html"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=foomatic-db
 version=20260904

@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Generic Graphics Library, a graph based image processing format"
 homepage="https://www.gegl.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=gegl
 version=0.4.72

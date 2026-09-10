@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="SQLite extension that provides transparent 256-bit AES encryption of database files"
 homepage="https://www.zetetic.net/sqlcipher/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=sqlcipher
 version=4.19.0

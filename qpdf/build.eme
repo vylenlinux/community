@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A Content-Preserving PDF Transformation System"
 homepage="https://github.com/qpdf/qpdf"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=qpdf
 version=12.4.1

@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A toolkit for manipulation of graphic images"
 homepage="http://netpbm.sourceforge.net/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=netpbm
 version=11.15.7

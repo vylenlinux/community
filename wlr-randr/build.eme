@@ -1,6 +1,6 @@
 description="Utility to manage outputs of a Wayland compositor"
 homepage="https://sr.ht/~emersion/wlr-randr/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=wlr-randr
 version=0.5.0

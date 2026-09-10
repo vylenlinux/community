@@ -1,6 +1,6 @@
 description="An automatic X screen-locker/screen-saver"
 homepage="https://ibiblio.org/pub/Linux/X11/screensavers/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xautolock
 version=2.2

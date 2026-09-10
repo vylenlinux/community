@@ -1,6 +1,6 @@
 description="Compositing manager for X  "
 homepage="http://xorg.freedesktop.org "
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xcompmgr 
 version=1.1.10

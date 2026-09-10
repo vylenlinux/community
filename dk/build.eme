@@ -1,6 +1,6 @@
 description="Tiling window manager taking inspiration from dwm, bspwm, and xmonad"
 homepage="https://bitbucket.org/natemaia/dk"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=dk
 version=2.3

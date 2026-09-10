@@ -1,6 +1,6 @@
 description="Qt5 Configuration Utility "
 homepage="https://qt5ct.sourceforge.io/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=qt5ct
 version=1.9

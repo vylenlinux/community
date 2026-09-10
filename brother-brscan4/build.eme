@@ -1,6 +1,6 @@
 description="SANE drivers from Brother for compatible models"
 homepage="http://support.brother.com"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=brother-brscan4
 version=0.4.11_1

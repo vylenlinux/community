@@ -1,6 +1,6 @@
 description="Font family which aims at metric compatibility with Arial, Times New Roman, and Courier New"
 homepage="https://github.com/liberationfonts/liberation-fonts"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ttf-liberation
 _name=liberation-fonts

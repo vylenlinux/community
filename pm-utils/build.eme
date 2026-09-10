@@ -1,6 +1,6 @@
 description="Utilities and scripts for suspend and hibernate power management"
 homepage="https://pm-utils.freedesktop.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=pm-utils
 version=1.4.1

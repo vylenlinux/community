@@ -1,6 +1,6 @@
 description="Configuration tools for Linux networking"
 homepage="http://net-tools.sourceforge.net/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=net-tools
 version=2.10

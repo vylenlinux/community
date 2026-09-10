@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Strawberry is a music player and music collection organizer."
 homepage="https://www.strawberrymusicplayer.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=strawberry
 version=1.2.29

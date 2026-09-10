@@ -1,6 +1,6 @@
 description="Pure-Ruby Markdown-superset interpreter"
 homepage="https://github.com/bhollis/maruku"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ruby-maruku
 version=0.7.3

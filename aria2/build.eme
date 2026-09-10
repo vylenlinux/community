@@ -1,6 +1,6 @@
 description="Download utility that supports HTTP(S), FTP, Bittorrent and MetaLink"
 homepage="https://aria2.sourceforge.net"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=aria2
 version=1.37.0

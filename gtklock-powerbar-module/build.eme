@@ -1,6 +1,6 @@
 description="gtklock module adding power controls to the lockscreen"
 homepage="https://github.com/jovanlanik/gtklock-powerbar-module"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=gtklock-powerbar-module
 version=4.0.0

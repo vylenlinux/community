@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="S* Floating Window Bar"
 homepage="https://github.com/LBCrion/sfwbar"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=sfwbar
 version=1.0_beta17

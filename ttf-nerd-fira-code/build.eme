@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Patched font Fira (Fura) Code from the nerd-fonts library"
 homepage="https://github.com/ryanoasis/nerd-fonts"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ttf-nerd-fira-code
 version=3.5.1

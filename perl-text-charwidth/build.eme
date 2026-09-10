@@ -1,6 +1,6 @@
 description="Text:CharWidth perl module"
 homepage="https://metacpan.org/pod/Text::CharWidth"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-text-charwidth
 version=0.04

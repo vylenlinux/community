@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A general-purpose command-line fuzzy finder"
 homepage="https://github.com/junegunn/fzf/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=fzf
 version=0.74.3

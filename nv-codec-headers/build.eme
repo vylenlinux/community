@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="FFmpeg nvidia headers"
 homepage="https://git.videolan.org/?p=ffmpeg/nv-codec-headers.git"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=nv-codec-headers
 version=13.1.15.0

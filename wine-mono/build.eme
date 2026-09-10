@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Wine's built-in replacement for Microsoft's .NET Framework"
 homepage="https://github.com/madewokherd/wine-mono"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=wine-mono
 version=11.3.0

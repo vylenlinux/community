@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Cross-platform ncurses Spotify client written in Rust, inspired by ncmpc and the likes"
 homepage="https://github.com/hrkfdn/ncspot"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ncspot
 version=1.4.0

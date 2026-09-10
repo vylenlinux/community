@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Opensource signal processing library for software-defined radios"
 homepage="http://liquidsdr.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=liquid-dsp
 version=1.8.2

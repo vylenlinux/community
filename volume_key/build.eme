@@ -1,6 +1,6 @@
 description="Library for manipulating storage volume encryption keys and storing them separately from volumes to handle forgotten passphrases"
 homepage="https://pagure.io/volume_key"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=volume_key
 version=0.3.12

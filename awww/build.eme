@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Efficient animated wallpaper daemon for wayland, controlled at runtime"
 homepage="https://codeberg.org/LGFae/awww"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=awww
 version=0.12.1

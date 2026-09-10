@@ -1,6 +1,6 @@
 description="A YouTube/Youku/Niconico video downloader written in Python 3"
 homepage="https://github.com/soimort/you-get"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=you-get
 version=0.4.1743

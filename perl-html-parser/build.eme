@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Perl HTML parser class"
 homepage="https://metacpan.org/dist/HTML-Parser"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-html-parser
 version=3.85

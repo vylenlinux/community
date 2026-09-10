@@ -1,6 +1,6 @@
 description="A very fast Perl module for parsing the Linux desktop files"
 homepage="https://metacpan.org/release/Linux-DesktopFiles"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-linux-desktopfiles
 version=0.26

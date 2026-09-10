@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="GTK3-based panel for sway and Hyprland Wayland compositors"
 homepage="https://github.com/nwg-piotr/nwg-panel"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=nwg-panel
 version=0.10.15

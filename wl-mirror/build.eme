@@ -1,6 +1,6 @@
 description="A simple Wayland output mirror client "
 homepage="https://github.com/Ferdi265/wl-mirror"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=wl-mirror
 version=0.18.5

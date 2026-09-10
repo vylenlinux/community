@@ -1,6 +1,6 @@
 description="MPRIS command-line controller for music players"
 homepage="https://github.com/altdesktop/playerctl"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=playerctl
 version=2.4.1

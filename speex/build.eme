@@ -1,6 +1,6 @@
 description="A free codec for free speech"
 homepage="https://gitlab.xiph.org/xiph/speex"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=speex
 version=1.2.1

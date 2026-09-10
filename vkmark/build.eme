@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Vulkan benchmark"
 homepage="https://github.com/vkmark/vkmark"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=vkmark
 version=2025.01

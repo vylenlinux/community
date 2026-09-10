@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Open source photography workflow application"
 homepage="https://www.darktable.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=darktable
 version=5.6.1

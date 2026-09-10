@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Print spooler and associated utilities"
 homepage="https://openprinting.github.io/cups/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=cups
 version=2.4.19

@@ -1,6 +1,6 @@
 description="Viewer for Portable Document Format (PDF) files"
 homepage="https://www.xpdfreader.com"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xpdf
 version=4.06

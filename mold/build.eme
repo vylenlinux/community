@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A Modern Linker"
 homepage="https://github.com/rui314/mold"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=mold
 version=2.42.0

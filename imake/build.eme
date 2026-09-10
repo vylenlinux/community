@@ -1,6 +1,6 @@
 description="X.Org imake program and related utilities"
 homepage="https://xorg.freedesktop.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=imake
 version=1.0.11

@@ -1,6 +1,6 @@
 description="Cantarell font family"
 homepage="https://gitlab.gnome.org/GNOME/cantarell-fonts"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ttf-cantarell
 _name=cantarell-fonts

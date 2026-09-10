@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Protocol Buffers implementation in C"
 homepage="https://github.com/protobuf-c/protobuf-c"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=protobuf-c
 version=1.5.2

@@ -1,6 +1,6 @@
 description="RandR-based backlight control application"
 homepage="https://xorg.freedesktop.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xbacklight
 version=1.2.4

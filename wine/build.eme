@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Implementation of Windows DLL's and core"
 homepage="https://dl.winehq.org/wine"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=wine
 version=11.17

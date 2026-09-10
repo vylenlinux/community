@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A fork of zenity - display graphical dialogs from shell scripts or command line"
 homepage="https://github.com/v1cont/yad"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=yad
 version=15.0

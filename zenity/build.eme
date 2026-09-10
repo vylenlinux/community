@@ -1,6 +1,6 @@
 description="Display graphical dialog boxes from shell scripts"
 homepage="https://gitlab.gnome.org/GNOME/zenity"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=zenity
 version=4.2.2

@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Uncomplicated and easy to use CLI tool for managing a netfilter firewall"
 homepage="https://launchpad.net/ufw"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ufw
 version=0.36.2

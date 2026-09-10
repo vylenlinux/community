@@ -1,6 +1,6 @@
 description="A Free software that gathers information on CPU, motherboard and more"
 homepage="CPU-X is a system profiling and monitoring application"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=cpu-x
 version=5.4.0

@@ -1,6 +1,6 @@
 description="A hand groomed and optically balanced typeface based on Bitstream Vera Mono"
 homepage="https://sourcefoundry.org/hack/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ttf-hack
 version=3.003

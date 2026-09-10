@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="GNU binutils for mingw-w64 toolchain"
 homepage="http://www.gnu.org/software/binutils"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=mingw-w64-binutils
 version=2.47

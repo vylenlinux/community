@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="SSH/SFTP library based on libfilezilla"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://filezilla-project.org"
 
 name=fzssh

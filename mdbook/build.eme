@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Create book from markdown files, like Gitbook but implemented in Rust"
 homepage="https://github.com/rust-lang/mdBook"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=mdbook
 version=0.5.4

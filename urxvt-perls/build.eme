@@ -1,6 +1,6 @@
 description="Perl extensions for the rxvt-unicode terminal emulator "
 homepage="https://github.com/muennich/urxvt-perls"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=urxvt-perls
 version=2.3

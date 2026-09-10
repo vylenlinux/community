@@ -1,6 +1,6 @@
 description="modern alternative to libpng"
 homepage="https://github.com/randy408/libspng"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=libspng
 version=0.7.4

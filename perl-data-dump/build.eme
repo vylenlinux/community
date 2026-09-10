@@ -1,6 +1,6 @@
 description="Pretty printing of data structures"
 homepage="https://metacpan.org/release/Data-Dump"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-data-dump
 version=1.25

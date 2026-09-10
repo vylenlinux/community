@@ -1,6 +1,6 @@
 description="mononoki, a font for programming and code review  "
 homepage="https://madmalik.github.io/mononoki/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ttf-mononoki
 version=1.6

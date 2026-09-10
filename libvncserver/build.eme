@@ -1,6 +1,6 @@
 description="Cross-platform C libraries that allow you to easily implement VNC server or client functionality"
 homepage="https://libvnc.github.io/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=libvncserver
 version=0.9.15

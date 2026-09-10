@@ -1,6 +1,6 @@
 description="SimpleScreenRecorder, a screen recorder for Linux "
 homepage="https://github.com/MaartenBaert/ssr"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=simplescreenrecorder
 version=0.4.4

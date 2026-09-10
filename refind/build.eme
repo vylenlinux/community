@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A fork of the rEFIt boot manager"
 homepage="https://www.rodsbooks.com/refind/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=refind
 version=0.14.2

@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Simple stupid SVG parser"
 homepage="https://github.com/memononen/nanosvg"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=nanosvg
 version=20241219

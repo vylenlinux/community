@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A GTK3 passphrase requester for ssh-add"
 homepage="https://www.openssh.com/portable.html"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ssh-askpass
 version=10.5p1

@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A color image editing tool which features most standard paint program options"
 homepage="http://sourceforge.net/projects/sf-xpaint/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xpaint
 version=3.1.4

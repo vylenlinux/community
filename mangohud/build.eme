@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more"
 homepage="https://github.com/flightlessmango/MangoHud"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=mangohud
 version=0.8.4

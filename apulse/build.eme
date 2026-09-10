@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="PulseAudio emulation for ALSA"
 homepage="https://github.com/i-rinat/apulse"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=apulse
 version=0.1.14

@@ -1,6 +1,6 @@
 description="A spreadsheet program based on SC"
 homepage="https://github.com/andmarti1424/sc-im"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=sc-im
 version=0.8.5

@@ -1,6 +1,6 @@
 description="A C++ library for resampling audio signals (apps)"
 homepage="https://kokkinizita.linuxaudio.org/linuxaudio/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=zita-resampler
 version=1.11.2

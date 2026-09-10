@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Very resourcefriendly and feature-rich replacement for i3status, written in pure Rust "
 homepage="https://github.com/greshake/i3status-rust"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=i3status-rust
 version=0.36.1

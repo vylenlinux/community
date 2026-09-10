@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Docker CLI plugin for extended build capabilities with BuildKit"
 homepage="https://github.com/docker/buildx/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=docker-buildx
 version=0.37.0

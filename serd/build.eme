@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="serd lightweight C library for RDF syntax"
 homepage="https://download.drobilla.net"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=serd
 version=0.32.10

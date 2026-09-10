@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Iconic font designed for Bootstrap"
 homepage="https://fontawesome.com/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ttf-awesome
 version=7.3.1

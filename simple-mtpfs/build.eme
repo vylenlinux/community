@@ -1,6 +1,6 @@
 description="A FUSE filesystem that supports reading/writing from MTP devices "
 homepage="https://github.com/phatina/simple-mtpfs/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=simple-mtpfs
 version=0.4.0

@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Console-based Audio Visualizer for ALSA"
 homepage="https://github.com/karlstav/cava"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=cava
 version=1.0.0

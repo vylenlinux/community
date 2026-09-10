@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Android platform tools"
 homepage="http://tools.android.com/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=android-tools
 version=37.0.0

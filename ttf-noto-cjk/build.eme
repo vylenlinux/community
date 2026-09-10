@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Google Noto CJK fonts"
 homepage="https://www.google.com/get/noto/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ttf-noto-cjk
 version=20240730

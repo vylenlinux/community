@@ -1,6 +1,6 @@
 description="Linux resource monitor "
 homepage="https://github.com/aristocratos/bashtop"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=bashtop
 version=0.9.25

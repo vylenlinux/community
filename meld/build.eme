@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Visual diff and merge tool"
 homepage="https://meldmerge.org"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=meld
 version=3.24.0

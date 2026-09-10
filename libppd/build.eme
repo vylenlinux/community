@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="OpenPrinting - the legacy support library for PPD files"
 homepage="https://github.com/OpenPrinting/libppd"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=libppd
 version=2.1.1

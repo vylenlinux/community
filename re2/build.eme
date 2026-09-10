@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Fast, safe, thread-friendly regular expression engine"
 homepage="https://github.com/google/re2"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=re2
 version=2025.11.05

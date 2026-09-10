@@ -1,6 +1,6 @@
 description="Thorough inotify wrapper for Ruby using FFI"
 homepage="https://github.com/guard/rb-inotify"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ruby-rb-inotify
 version=0.11.1

@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="The World-Wide Web library for Perl"
 homepage="https://metacpan.org/release/libwww-perl/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-libwww
 version=6.83

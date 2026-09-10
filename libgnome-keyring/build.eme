@@ -1,6 +1,6 @@
 description="GNOME keyring client library"
 homepage="https://gitlab.gnome.org/Archive/libgnome-keyring"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=libgnome-keyring
 version=3.12.0

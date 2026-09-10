@@ -1,6 +1,6 @@
 description="obs-studio plugin that allows you to screen capture on wlroots"
 homepage="https://hg.sr.ht/~scoopta/wlrobs"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=wlrobs
 version=1.2

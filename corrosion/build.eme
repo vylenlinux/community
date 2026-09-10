@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Marrying Rust and CMake - Easy Rust and C/C++ Integration"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://github.com/corrosion-rs/corrosion"
 
 name=corrosion

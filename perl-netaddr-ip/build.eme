@@ -1,6 +1,6 @@
 description="Manages IPv4 and IPv6 addresses and subnets"
 homepage="http://search.cpan.org/~miker/NetAddr-IP/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-netaddr-ip
 version=4.079

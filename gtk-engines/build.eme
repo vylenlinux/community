@@ -1,6 +1,6 @@
 description="Contains eight themes/engines and two additional engines for GTK2"
 homepage="http://live.gnome.org/GnomeArt"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=gtk-engines
 version=2.20.2

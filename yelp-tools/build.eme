@@ -1,6 +1,6 @@
 description="Collection of tools for building and converting documentation"
 homepage="https://gitlab.gnome.org/GNOME/yelp-tools"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=yelp-tools
 version=42.1

@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Tools allowing to manipulate the Wireless Extensions"
 homepage="https://hewlettpackard.github.io/wireless-tools/Tools.html"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=wireless_tools
 version=30.pre9

@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Header files for AMD Advanced Media Framework"
 homepage="https://github.com/GPUOpen-LibrariesAndSDKs/AMF/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=amf-headers
 version=1.5.2

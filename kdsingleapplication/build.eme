@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="KDAB's helper class for single-instance policy applications"
 homepage="https://github.com/KDAB/KDSingleApplication"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=kdsingleapplication
 version=1.2.1

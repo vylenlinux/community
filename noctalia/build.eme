@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="A sleek and minimal desktop shell thoughtfully crafted for Wayland"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://github.com/noctalia-dev/noctalia"
 
 name=noctalia

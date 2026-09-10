@@ -1,6 +1,6 @@
 description="Advanced postgres pager"
 homepage="https://github.com/okbob/pspg"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=pspg
 version=5.8.16

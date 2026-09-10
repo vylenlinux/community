@@ -1,6 +1,6 @@
 description="Turns on the numlock key in X11"
 homepage="https://github.com/rg3/numlockx"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=numlockx
 version=1.2

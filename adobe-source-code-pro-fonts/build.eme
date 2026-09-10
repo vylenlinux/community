@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Monospaced font family for user interface and coding environments"
 homepage="https://github.com/adobe-fonts/source-code-pro"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=adobe-source-code-pro-fonts
 version=2.042u+1.062i+1.026vf

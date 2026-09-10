@@ -1,6 +1,6 @@
 description="Extracts and converts images in MS Windows(R) icon and cursor files"
 homepage="https://www.nongnu.org/icoutils/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=icoutils
 version=0.32.3

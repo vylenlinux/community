@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Perl extension for the GNU Readline/History Library"
 homepage="https://metacpan.org/release/Term-ReadLine-Gnu/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-term-readline-gnu
 version=1.47

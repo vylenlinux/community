@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="library for playback of opus streams in the ogg container"
 homepage="https://www.opus-codec.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=opusfile
 version=0.12

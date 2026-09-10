@@ -1,6 +1,6 @@
 description="Scanner Access Now Easy - Scanner driver for Linux "
 homepage="https://gitlab.com/sane-project/backends"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=sane
 version=1.4.0

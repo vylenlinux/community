@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="WINE with staging patches"
 homepage="https://www.wine-staging.com"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=wine-staging
 version=11.17

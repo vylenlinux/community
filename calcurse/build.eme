@@ -1,6 +1,6 @@
 description="A text-based personal organizer"
 homepage="https://calcurse.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=calcurse
 version=4.8.2

@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Extensible Python-based build utility"
 homepage="https://scons.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=scons
 version=4.11.1

@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Small and modern C++ library, offering some basic functionality to build high-performing, platform-independent programs"
 homepage="https://lib.filezilla-project.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=libfilezilla
 version=0.57.0

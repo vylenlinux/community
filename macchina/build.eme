@@ -1,6 +1,6 @@
 description="Fast, minimal and customizable system information frontend."
 homepage="https://github.com/Macchina-CLI/macchina"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=macchina
 version=6.4.0

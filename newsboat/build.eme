@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="An RSS/Atom feed reader for text terminals"
 homepage="https://newsboat.org"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=newsboat
 version=2.44

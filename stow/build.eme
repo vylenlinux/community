@@ -1,6 +1,6 @@
 description="Manage installation of multiple softwares in the same directory tree"
 homepage="https://ftp.gnu.org/gnu/stow"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=stow
 version=2.4.1

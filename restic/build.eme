@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Fast, secure, efficient backup program"
 homepage="https://github.com/restic/restic"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=restic
 version=0.19.1

@@ -1,6 +1,6 @@
 description="Low-level HTTP connection (client)"
 homepage="https://metacpan.org/release/Net-HTTP/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-net-http
 version=6.24

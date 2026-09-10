@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A terminal integrated SSH/Telnet client"
 homepage="https://www.chiark.greenend.org.uk/~sgtatham/putty/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=putty
 version=0.85

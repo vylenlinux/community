@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="An application for managing BTRFS subvolumes and Snapper snapshots"
 homepage="https://gitlab.com/btrfs-assistant/btrfs-assistant"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=btrfs-assistant
 version=2.3.1

@@ -1,6 +1,6 @@
 description="Charset Information for MIME"
 homepage="https://metacpan.org/release/MIME-Charset/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-mime-charset
 version=1.013.1

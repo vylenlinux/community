@@ -1,6 +1,6 @@
 description="Simple X hotkey daemon"
 homepage="https://github.com/baskerville/sxhkd"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=sxhkd
 version=0.6.3

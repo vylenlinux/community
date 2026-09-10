@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="An open platform for distributed applications for developers and sysadmins"
 homepage="https://www.docker.com/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=docker
 version=29.8.0

@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Hyprland GUI utilities"
 homepage="https://github.com/hyprwm/hyprland-guiutils"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=hyprland-guiutils
 version=0.2.2

@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="IMAP and POP3 mail retriever with reliable Maildir and command delivery"
 homepage="http://pyropus.ca/software/getmail"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=getmail6
 version=6.20.01

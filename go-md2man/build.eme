@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Utility to convert markdown to man pages"
 homepage="https://github.com/cpuguy83/go-md2man"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=go-md2man
 version=2.0.7

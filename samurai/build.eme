@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="ninja-compatible build tool written in C"
 homepage="https://github.com/michaelforney/samurai"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=samurai
 version=1.3

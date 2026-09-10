@@ -1,6 +1,6 @@
 description="A simple CD/DVD burning tool based on libburnia libraries"
 homepage="https://docs.xfce.org/apps/xfburn/start"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xfburn
 version=0.8.0

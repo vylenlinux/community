@@ -1,6 +1,6 @@
 description="Command line interface to the X11 clipboard"
 homepage="https://github.com/astrand/xclip"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xclip
 version=0.13

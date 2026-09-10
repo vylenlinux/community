@@ -1,6 +1,6 @@
 description="Modular status bar for somebar, based on dwmblocks.  "
 homepage="https://git.sr.ht/~raphi/someblocks/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=someblocks
 version=1.0.1

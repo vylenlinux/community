@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Light-weight system monitor for X, Wayland, and other things, too"
 homepage="https://github.com/brndnmtthws/conky"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=conky
 version=1.24.2

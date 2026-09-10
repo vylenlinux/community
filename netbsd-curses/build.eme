@@ -1,6 +1,6 @@
 description="Port of NetBSD's curses library for usage on all POSIX systems "
 homepage="https://github.com/sabotage-linux/netbsd-curses"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=netbsd-curses
 version=0.3.2

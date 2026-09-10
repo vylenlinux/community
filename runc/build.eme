@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A lightweight universal runtime container"
 homepage="https://github.com/opencontainers/runc"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=runc
 version=1.5.1

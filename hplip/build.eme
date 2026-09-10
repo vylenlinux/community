@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="HP Linux Imaging and Printing"
 homepage="https://sourceforge.net/projects/hplip"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=hplip
 version=3.26.4

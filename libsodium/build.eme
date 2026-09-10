@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="P(ortable|ackageable) NaCl-based crypto library"
 homepage="https://github.com/jedisct1/libsodium"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=libsodium
 version=1.0.22

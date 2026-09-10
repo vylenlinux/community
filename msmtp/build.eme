@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A mini smtp client"
 homepage="https://marlam.de/msmtp/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=msmtp
 version=1.8.34

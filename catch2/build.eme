@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Modern, C++-native, header-only, test framework for unit-tests, TDD and BDD"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://github.com/catchorg/catch2"
 
 name=catch2

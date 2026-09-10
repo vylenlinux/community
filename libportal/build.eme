@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="libportal provides GIO-style async APIs for most Flatpak portals."
 homepage="https://github.com/flatpak/libportal"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=libportal
 version=0.10.0

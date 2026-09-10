@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Text-mode interface for git"
 homepage="https://jonas.github.io/tig/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=tig
 version=2.6.1

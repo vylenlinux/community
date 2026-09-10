@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="The cross-shell prompt for astronauts"
 homepage="https://starship.rs/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=starship
 version=1.26.0

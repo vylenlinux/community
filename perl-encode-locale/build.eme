@@ -1,6 +1,6 @@
 description="Determine the locale encoding"
 homepage="https://search.cpan.org/dist/Encode-Locale"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-encode-locale
 version=1.05

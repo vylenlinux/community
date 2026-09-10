@@ -1,6 +1,6 @@
 description="MJWM can create JWM's menu from (freedesktop) desktop files and the generated file can be include in the rootmenu section of your jwm config file."
 homepage="https://github.com/chiku/mjwm"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=mjwm
 version=5.1.0

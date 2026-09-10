@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="XKB utility demos"
 homepage="https://xorg.freedesktop.org"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xkbutils
 version=1.0.7

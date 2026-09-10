@@ -1,6 +1,6 @@
 description="Implementation library for the hypr config language"
 homepage="https://github.com/hyprwm/hyprlang"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=hyprlang
 version=0.6.8

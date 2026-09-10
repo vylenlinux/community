@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="GObject-based multi-platform GUI toolkit (legacy)"
 homepage="https://www.gtk.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=gtk2
 version=2.24.33

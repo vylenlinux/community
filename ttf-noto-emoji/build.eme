@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Google Noto emoji fonts"
 homepage="https://fonts.google.com/noto"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ttf-noto-emoji
 version=2.051

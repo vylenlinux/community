@@ -1,6 +1,6 @@
 description="A userspace utility for testing the memory subsystem for faults"
 homepage="http://pyropus.ca/software/memtester/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=memtester
 version=4.7.1

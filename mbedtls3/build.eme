@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Cryptographic library for embedded systems"
 homepage="https://tls.mbed.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=mbedtls3
 version=3.6.7

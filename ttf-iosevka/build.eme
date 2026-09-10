@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Typeface family designed for coding, terminal use and technical documents."
 homepage="https://typeof.net/Iosevka/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ttf-iosevka
 version=34.8.1

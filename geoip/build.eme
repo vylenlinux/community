@@ -1,6 +1,6 @@
 description="Non-DNS IP-to-country resolver C library & utils"
 homepage="https://www.maxmind.com/app/c"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=geoip
 version=1.6.12

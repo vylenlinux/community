@@ -1,6 +1,6 @@
 description="CLI and curses mixer for Pulseaudio"
 homepage="https://github.com/GeorgeFilipkin/pulsemixer"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=pulsemixer
 version=1.5.1

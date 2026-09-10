@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Utility for tracing a bitmap (input: PBM,PGM,PPM,BMP; output: EPS,PS,PDF,SVG,DXF,PGM,Gimppath,XFig)"
 homepage="https://potrace.sourceforge.net"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=potrace
 version=1.16

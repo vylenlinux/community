@@ -1,6 +1,6 @@
 description="Customizable Tetris clone for the terminal"
 homepage="https://github.com/alexdantas/yetris"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=yetris
 version=2.3.0

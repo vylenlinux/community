@@ -1,6 +1,6 @@
 description="Encoding detector library ported from Mozilla"
 homepage="https://www.freedesktop.org/wiki/Software/uchardet/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=uchardet
 version=0.0.8

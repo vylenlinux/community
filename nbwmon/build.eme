@@ -1,6 +1,6 @@
 description="Ncurses bandwidth monitor"
 homepage="https://github.com/causes-/nbwmon"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=nbwmon
 version=0.5.2

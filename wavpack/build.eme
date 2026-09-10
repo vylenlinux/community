@@ -1,6 +1,6 @@
 description="Audio compression format with lossless, lossy, and hybrid compression modes"
 homepage="https://www.wavpack.com/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=wavpack
 version=5.9.0

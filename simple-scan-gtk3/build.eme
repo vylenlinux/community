@@ -1,6 +1,6 @@
 description="Simple Scanning Utility (GTK3 version)"
 homepage="https://github.com/GNOME/simple-scan"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=simple-scan-gtk3
 version=44.0

@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Print plugin and ghostscript/cups driver (formerly called gimp-print)"
 homepage="http://gimp-print.sourceforge.net/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=gutenprint
 version=5.3.5

@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="lightweight Qt5 plain-text editor"
 homepage="https://github.com/tsujan/FeatherPad"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=featherpad
 version=1.6.4

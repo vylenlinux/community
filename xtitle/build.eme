@@ -1,6 +1,6 @@
 description="Outputs X window titles "
 homepage="https://github.com/baskerville/xtitle"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xtitle
 version=0.4.4

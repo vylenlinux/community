@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A high performance Unix-based HTTP server"
 homepage="https://www.apache.org/dist/httpd"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=apache
 version=2.4.68

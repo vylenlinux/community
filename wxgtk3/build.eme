@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="GTK+3 implementation of wxWidgets API for GUI"
 homepage="https://www.wxwidgets.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=wxgtk3
 version=3.2.11

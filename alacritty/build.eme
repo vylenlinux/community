@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A cross-platform, GPU-accelerated terminal emulator"
 homepage="https://github.com/alacritty/alacritty"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=alacritty
 version=0.17.0

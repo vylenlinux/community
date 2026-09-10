@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="MenuStart for sway and other wlroots-based compositors"
 homepage="https://github.com/nwg-piotr/nwg-menu"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=nwg-menu
 version=0.1.9

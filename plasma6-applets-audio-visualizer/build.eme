@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Audio visualizer widget powered by CAVA for the KDE Plasma Desktop"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://github.com/luisbocanegra/plasma-audio-visualizer"
 
 name=plasma6-applets-audio-visualizer

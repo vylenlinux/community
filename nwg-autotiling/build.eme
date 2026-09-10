@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Script for sway and i3 to automatically switch the horizontal / vertical window split orientation"
 homepage="https://github.com/nwg-piotr/autotiling"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=nwg-autotiling
 version=1.9.4

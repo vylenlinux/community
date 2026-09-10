@@ -1,6 +1,6 @@
 description="A multi-purpose WAVE data processing and reporting utility "
 homepage="http://shnutils.freeshell.org/shntool/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=shntool
 version=3.0.10

@@ -1,6 +1,6 @@
 description="Highly customizable Wayland bar for Sway and Wlroots based compositors"
 homepage="https://github.com/Alexays/Waybar"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
  
 
 name=waybar

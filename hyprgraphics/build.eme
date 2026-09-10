@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Hyprland graphics resource utilities"
 homepage="https://github.com/hyprwm/hyprgraphics"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=hyprgraphics
 version=0.5.1

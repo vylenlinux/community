@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Ham radio equipment control libraries"
 homepage="https://hamlib.github.io"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=hamlib
 version=4.7.2

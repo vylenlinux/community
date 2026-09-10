@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Epson Inkjet Printer Driver (ESC/P-R) for Linux"
 homepage="http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=epson-inkjet-printer-escpr
 version=1.8.9

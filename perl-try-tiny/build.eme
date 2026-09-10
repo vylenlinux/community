@@ -1,6 +1,6 @@
 description="Minimal try/catch with proper localization of $@"
 homepage="https://search.cpan.org/dist/Try-Tiny"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-try-tiny
 version=0.32

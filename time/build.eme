@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Utility for monitoring a program's use of system resources"
 homepage="https://www.gnu.org/software/time/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 # shellcheck disable=SC2209
 name=time

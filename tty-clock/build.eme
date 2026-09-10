@@ -1,6 +1,6 @@
 description="Digital clock in ncurses"
 homepage="https://github.com/xorg62/tty-clock"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=tty-clock
 version=2.3

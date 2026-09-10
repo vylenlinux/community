@@ -1,6 +1,6 @@
 description="Simple and lightweight GTK calendar"
 homepage="https://dmedvinsky.github.io/gsimplecal/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=gsimplecal
 version=2.5.2

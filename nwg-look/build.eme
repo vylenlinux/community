@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="GTK3 settings editor adapted to work w/ wlroots-based compositors"
 homepage="https://github.com/nwg-piotr/nwg-look"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=nwg-look
 version=1.1.1

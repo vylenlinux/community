@@ -1,6 +1,6 @@
 description="Monospaced font with programming ligatures"
 homepage="https://github.com/tonsky/FiraCode"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ttf-firacode
 version=6.2

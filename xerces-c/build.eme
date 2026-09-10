@@ -1,6 +1,6 @@
 description="Apache Xerces-C validating XML parser"
 homepage="xerces.apache.org"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xerces-c
 version=3.3.0

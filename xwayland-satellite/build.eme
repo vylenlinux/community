@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Xwayland outside your Wayland"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://github.com/Supreeeme/xwayland-satellite"
 
 name=xwayland-satellite

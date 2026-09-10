@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A system restore utility for Linux"
 homepage="https://github.com/linuxmint/timeshift"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=timeshift
 version=25.12.4

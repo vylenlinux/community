@@ -1,6 +1,6 @@
 description="dwm-like bar for dwl"
 homepage="https://sr.ht/~raphi/somebar/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=somebar
 version=1.0.3

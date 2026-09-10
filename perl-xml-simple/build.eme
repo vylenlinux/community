@@ -1,6 +1,6 @@
 description="Simple XML parser for perl"
 homepage="https://search.cpan.org/dist/XML-Simple/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-xml-simple
 version=2.25

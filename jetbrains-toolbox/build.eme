@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Manage all your JetBrains Projects and Tools"
 homepage="https://www.jetbrains.com/toolbox/"
-maintainer="CELESTIFYX Team <celestifyx@gmail.com>"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=jetbrains-toolbox
 version=3.7.2.87231

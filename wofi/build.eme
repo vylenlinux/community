@@ -1,6 +1,6 @@
 description="Rofi like application launcher written for wayland"
 homepage="https://hg.sr.ht/~scoopta/wofi"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=wofi
 version=1.5.3

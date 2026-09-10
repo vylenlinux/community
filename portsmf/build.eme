@@ -1,6 +1,6 @@
 description="Portsmf is <Port Standard MIDI File>, a cross-platform, C++ library for reading and writing Standard MIDI Files"
 homepage="https://codeberg.org/tenacityteam/portsmf"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=portsmf
 version=239

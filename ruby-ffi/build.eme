@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Ruby FFI"
 homepage="https://github.com/ffi/ffi"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ruby-ffi
 version=1.17.4

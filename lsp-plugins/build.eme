@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Collection of free plugins compatible with LADSPA, LV2 and LinuxVST"
 homepage="https://lsp-plug.in/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=lsp-plugins
 version=1.2.35

@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Binary plugin for HPs hplip printer driver library"
 homepage="https://developers.hp.com/hp-linux-imaging-and-printing/binary_plugin.html"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=hplip-plugin
 version=3.26.4

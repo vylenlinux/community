@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A module dedicated to file loading and saving"
 homepage="https://github.com/gedit-technology/libgedit-gfls"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=libgedit-gfls
 version=0.4.2

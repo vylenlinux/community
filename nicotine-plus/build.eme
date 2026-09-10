@@ -1,6 +1,6 @@
 description="Graphical Soulseek client"
 homepage="https://github.com/Nicotine-Plus/nicotine-plus"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=nicotine-plus
 version=3.3.10

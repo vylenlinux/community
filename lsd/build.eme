@@ -1,6 +1,6 @@
 description="Next-Gen ls command "
 homepage="https://github.com/Peltoche/lsd"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=lsd
 version=1.2.0

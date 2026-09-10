@@ -1,6 +1,6 @@
 description="Monospace bitmap font (for X11 and console)"
 homepage="http://terminus-font.sourceforge.net/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=terminus-font
 version=4.49.1

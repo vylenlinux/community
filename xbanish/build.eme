@@ -1,6 +1,6 @@
 description="Hide the mouse cursor when typing"
 homepage="https://github.com/jcs/xbanish"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xbanish
 version=1.8

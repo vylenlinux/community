@@ -1,6 +1,6 @@
 description="Password generator for creating easily memorable passwords"
 homepage="https://sourceforge.net/projects/pwgen/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=pwgen
 version=2.08

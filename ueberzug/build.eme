@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Command line util which allows to display images in combination with X11"
 homepage="https://github.com/seebye/ueberzug"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ueberzug
 version=18.3.2

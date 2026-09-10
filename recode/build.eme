@@ -1,6 +1,6 @@
 description="Converts files between various character sets and usages"
 homepage="https://github.com/rrthomas/recode"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=recode
 version=3.7.15

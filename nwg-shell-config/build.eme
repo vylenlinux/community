@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="nwg-shell configuration utility"
 homepage="https://github.com/nwg-piotr/nwg-shell-config"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=nwg-shell-config
 version=0.5.65

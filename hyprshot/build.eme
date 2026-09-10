@@ -1,6 +1,6 @@
 description="A utility to easily take screenshots in Hyprland using your mouse"
 homepage="https://github.com/Gustash/Hyprshot"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
  
 
 name=hyprshot

@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Nearly transparent SSL encapsulation for IO::Socket::INET."
 homepage="https://metacpan.org/release/IO-Socket-SSL/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-io-socket-ssl
 version=2.099

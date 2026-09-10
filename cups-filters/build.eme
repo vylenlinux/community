@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Backends and filters for CUPS"
 homepage="https://wiki.linuxfoundation.org/openprinting/cups-filters"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=cups-filters
 version=2.0.1

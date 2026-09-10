@@ -1,6 +1,6 @@
 description="Read and write Advanced Authoring Format (AAF) files"
 homepage="http://pyaaf.readthedocs.io"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=python3-aaf2
 version=1.7.1

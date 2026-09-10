@@ -1,6 +1,6 @@
 description="A terminal emulator based on GTK and VTE"
 homepage="https://launchpad.net/sakura"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=sakura
 version=3.8.9

@@ -1,6 +1,6 @@
 description="C library for encoding data in a QR Code symbol"
 homepage="https://fukuchi.org/works/qrencode/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=qrencode
 version=4.1.1

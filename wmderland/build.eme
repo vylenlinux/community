@@ -1,6 +1,6 @@
 description="X11 tiling window manager using space partitioning trees"
 homepage="https://github.com/aesophor/wmderland"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=wmderland
 version=1.0.5

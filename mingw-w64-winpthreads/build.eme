@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="MinGW-w64 winpthreads library"
 homepage="https://mingw-w64.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=mingw-w64-winpthreads
 version=14.0.0

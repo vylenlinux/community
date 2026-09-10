@@ -1,6 +1,6 @@
 description="Fully featured yet light and fast cross platform word processor"
 homepage="http://www.abisource.com"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=abiword
 version=3.0.8

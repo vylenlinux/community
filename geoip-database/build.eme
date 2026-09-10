@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="GeoIP legacy country database (based on GeoLite2 data created by MaxMind)"
 homepage="https://mailfud.org/geoip-legacy/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=geoip-database
 version=20260902

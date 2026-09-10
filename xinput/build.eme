@@ -1,6 +1,6 @@
 description="Small commandline tool to configure devices"
 homepage="https://xorg.freedesktop.org"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xinput
 version=1.6.4

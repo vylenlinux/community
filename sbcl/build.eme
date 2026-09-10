@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Steel Bank Common Lisp"
 homepage="http://www.sbcl.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=sbcl
 version=2.6.8

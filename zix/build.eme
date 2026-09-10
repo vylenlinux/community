@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A lightweight C library of portability wrappers and data structures"
 homepage="https://github.com/drobilla/zix"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=zix
 version=0.8.2

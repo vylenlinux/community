@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Use any linux distribution inside your terminal"
 homepage="https://github.com/89luca89/distrobox"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=distrobox
 version=1.8.2.5

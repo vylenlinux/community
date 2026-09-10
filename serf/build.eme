@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="High performance http c client library"
 homepage="https://serf.apache.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=serf
 version=1.3.10

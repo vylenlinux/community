@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Good-looking diffs"
 homepage="https://github.com/so-fancy/diff-so-fancy"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=diff-so-fancy
 version=1.4.12

@@ -1,6 +1,6 @@
 description="Barcode fonts for various barcode standards "
 homepage="https://github.com/graphicore/librebarcode"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ttf-librebarcode
 _name=librebarcode

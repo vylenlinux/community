@@ -1,6 +1,6 @@
 description="Library to provide abstract access to various archives."
 homepage="http://icculus.org/physfs/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=physfs
 version=3.2.0

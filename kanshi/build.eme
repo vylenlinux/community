@@ -1,6 +1,6 @@
 description="Dynamic output configuration for Wayland WMs "
 homepage="https://wayland.emersion.fr/kanshi/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=kanshi
 version=1.9.0

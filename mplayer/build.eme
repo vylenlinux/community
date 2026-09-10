@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Media player for Linux"
 homepage="http://www.mplayerhq.hu/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=mplayer
 version=1.5_p20241125

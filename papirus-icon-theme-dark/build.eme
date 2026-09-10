@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Papirus icon theme (Dark)"
 homepage="https://github.com/PapirusDevelopmentTeam"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=papirus-icon-theme-dark
 version=20260801

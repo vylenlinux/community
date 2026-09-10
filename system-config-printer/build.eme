@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Graphical user interface for CUPS administration"
 homepage="https://github.com/OpenPrinting/system-config-printer"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=system-config-printer
 version=1.5.18

@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A set of Python 3.x bindings for the Qt5 toolkit"
 homepage="https://riverbankcomputing.com/software/pyqt/intro"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=python3-pyqt5
 version=5.15.11

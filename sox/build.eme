@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="The Swiss Army knife of sound processing tools"
 homepage="https://sox.sourceforge.net/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=sox
 version=14.8.1

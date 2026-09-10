@@ -1,6 +1,6 @@
 description="A code-searching tool similar to ack, but faster"
 homepage="https://github.com/ggreer/the_silver_searcher"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=silversearcher
 version=2.2.0

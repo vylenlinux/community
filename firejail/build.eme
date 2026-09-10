@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Linux namespaces sandbox program"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://github.com/netblue30/firejail"
 
 name=firejail

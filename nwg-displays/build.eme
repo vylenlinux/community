@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Output management utility for sway and Hyprland Wayland compositors"
 homepage="https://github.com/nwg-piotr/nwg-displays"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=nwg-displays
 version=0.4.4

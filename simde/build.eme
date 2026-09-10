@@ -1,6 +1,6 @@
 description="Implementations of SIMD instruction sets"
 homepage="https://github.com/simd-everywhere/simde"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=simde
 version=0.8.2

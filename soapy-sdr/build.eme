@@ -1,6 +1,6 @@
 description="An opensource API and runtime library for interfacing with SDR devices"
 homepage="http://www.pothosware.com/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=soapy-sdr
 version=0.8.1

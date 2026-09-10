@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Light-weight, simple and fast XML parser for C++ with XPath support"
 homepage="https://pugixml.org"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=pugixml
 version=1.16

@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Almost exact clone of ncmpc with some new features"
 homepage="https://rybczak.net/ncmpcpp/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ncmpcpp
 version=0.10.1

@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Dependency Manager for PHP"
 homepage="https://getcomposer.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=composer
 version=2.10.3

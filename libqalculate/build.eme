@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Multi-purpose desktop calculator"
 homepage="https://qalculate.github.io/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=libqalculate
 version=5.12.0

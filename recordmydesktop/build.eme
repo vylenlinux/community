@@ -1,6 +1,6 @@
 description="Produces a OGG encapsulated Theora/Vorbis recording of your desktop"
 homepage="https://github.com/Enselic/recordmydesktop/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=recordmydesktop
 version=0.4.0

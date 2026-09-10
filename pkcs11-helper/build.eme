@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A library that simplifies the interaction with PKCS11 providers for end-user applications using a simple API and optional OpenSSL engine"
 homepage="https://github.com/OpenSC/pkcs11-helper"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=pkcs11-helper
 version=1.31.0

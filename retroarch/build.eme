@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Reference frontend for the libretro API"
 homepage="http://www.libretro.com/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=retroarch
 version=1.22.2

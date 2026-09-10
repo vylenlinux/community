@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Simple GObject-based library to parse and save a host of playlist formats"
 homepage="https://gitlab.gnome.org/GNOME/totem-pl-parser"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=totem-pl-parser
 version=3.26.7

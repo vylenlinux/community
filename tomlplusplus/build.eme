@@ -1,6 +1,6 @@
 description="Header-only TOML config file parser and serializer for C++17"
 homepage="https://marzer.github.io/tomlplusplus/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=tomlplusplus
 version=3.4.0

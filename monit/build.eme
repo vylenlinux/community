@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Utility for monitoring daemons running on a Unix system"
 homepage="https://mmonit.com/monit/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=monit
 version=6.0.0

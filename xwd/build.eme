@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="X Window System image dumping utility"
 homepage="https://xorg.freedesktop.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xwd
 version=1.0.10

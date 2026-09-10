@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Collection of plugins for the gedit Text Editor"
 homepage="https://wiki.gnome.org/Apps/Gedit/ShippedPlugins"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=gedit-plugins
 version=50.0

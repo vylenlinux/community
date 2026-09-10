@@ -1,6 +1,6 @@
 description="Program for unpacking ms-tnef MIME attachment"
 homepage="https://github.com/verdammelt/tnef"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=tnef
 version=1.4.18

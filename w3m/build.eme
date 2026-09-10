@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Pager that can also be used as a text-based web browser"
 homepage="http://w3m.sourceforge.net/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=w3m
 version=0.5.6

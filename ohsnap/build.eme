@@ -1,6 +1,6 @@
 description="Monospaced font based on Artwiz Snap"
 homepage="https://sourceforge.net/projects/osnapfont"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ohsnap
 version=1.8.0

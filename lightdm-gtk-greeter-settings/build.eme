@@ -1,6 +1,6 @@
 description="Settings editor for the LightDM GTK+ Greeter"
 homepage="https://github.com/xubuntu/lightdm-gtk-greeter-settings"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=lightdm-gtk-greeter-settings
 version=1.2.3

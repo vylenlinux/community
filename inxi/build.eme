@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Script to get system information"
 homepage="https://smxi.org/docs/inxi.htm"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=inxi
 version=3.3.41.1

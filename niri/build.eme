@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="A scrollable-tiling Wayland compositor"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://github.com/niri-wm/niri"
 
 name=niri

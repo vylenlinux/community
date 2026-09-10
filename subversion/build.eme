@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A Modern Concurrent Version Control System"
 homepage="https://subversion.apache.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=subversion
 version=1.14.5

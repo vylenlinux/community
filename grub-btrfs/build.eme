@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Include btrfs snapshots in GRUB boot options"
 homepage="https://github.com/Antynea/grub-btrfs"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=grub-btrfs
 version=4.14

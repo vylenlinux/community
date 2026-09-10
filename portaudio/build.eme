@@ -1,6 +1,6 @@
 description="PortAudio is a cross-platform, open-source C language library for real-time audio input and output"
 homepage="https://github.com/PortAudio/portaudio"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=portaudio
 version=19.7.0

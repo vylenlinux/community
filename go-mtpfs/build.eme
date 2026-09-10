@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Mount MTP devices over FUSE"
 homepage="https://github.com/hanwen/go-mtpfs"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=go-mtpfs
 version=1.0.0

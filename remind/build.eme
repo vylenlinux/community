@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Sophisticated calendar and alarm program"
 homepage="https://dianne.skoll.ca/projects/remind/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=remind
 version=06.03.02

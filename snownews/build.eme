@@ -1,6 +1,6 @@
 description="RSS feed reader for the command-line"
 homepage="https://sourceforge.net/projects/snownews/ "
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=snownews
 version=1.11

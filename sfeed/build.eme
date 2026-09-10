@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="RSS and Atom parser"
 homepage="https://git.codemadness.org/sfeed"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=sfeed
 version=2.4

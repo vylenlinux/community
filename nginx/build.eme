@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Lightweight HTTP server and IMAP/POP3 proxy server"
 homepage="http://nginx.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=nginx
 version=1.31.5

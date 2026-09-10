@@ -1,6 +1,6 @@
 description="C command-line client for tldr pages "
 homepage="https://github.com/tldr-pages/tldr-c-client"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=tldr
 version=1.6.1

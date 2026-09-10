@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="SQL database server, drop-in replacement for MySQL"
 homepage="https://mariadb.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=mariadb
 version=12.3.3

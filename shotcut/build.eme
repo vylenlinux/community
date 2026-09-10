@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Cross-platform video editor"
 homepage="https://www.shotcut.org"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=shotcut
 version=26.9.6

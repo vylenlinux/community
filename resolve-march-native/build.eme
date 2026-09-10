@@ -1,6 +1,6 @@
 description="Tool to determine what GCC flags -march=native would resolve into"
 homepage="https://github.com/hartwork/resolve-march-native"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=resolve-march-native
 version=6.1.0

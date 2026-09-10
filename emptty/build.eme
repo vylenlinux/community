@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Dead simple CLI Display Manager on TTY"
 homepage="https://github.com/tvrzna/emptty"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=emptty
 version=0.16.1

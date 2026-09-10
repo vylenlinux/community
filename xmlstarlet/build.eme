@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A set of tools to transform, query, validate, and edit XML documents"
 homepage="http://xmlstar.sourceforge.net/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xmlstarlet
 version=1.7.0

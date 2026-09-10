@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="TCP/IP swiss army knife. OpenBSD variant."
 homepage="https://salsa.debian.org/debian/netcat-openbsd"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=openbsd-netcat
 version=1.238_1

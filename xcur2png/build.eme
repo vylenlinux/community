@@ -1,6 +1,6 @@
 description="Convert X cursors to PNG images"
 homepage="https://github.com/eworm-de/xcur2png"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xcur2png
 version=0.7.1

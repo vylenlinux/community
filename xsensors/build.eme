@@ -1,6 +1,6 @@
 description="X11 interface to lm_sensors"
 homepage="http://www.linuxhardware.org/xsensors/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xsensors
 version=0.80

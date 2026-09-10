@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Portable command line archive file manager"
 homepage="https://wummel.github.io/patool/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=patool
 version=4.1.0

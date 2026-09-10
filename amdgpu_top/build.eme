@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Tool to display AMDGPU usage"
 homepage="https://github.com/Umio-Yasuno/amdgpu_top"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=amdgpu_top
 version=0.11.5

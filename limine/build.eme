@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Modern, advanced, portable, multiprotocol bootloader."
 homepage="https://limine-bootloader.org"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=limine
 version=12.8.0

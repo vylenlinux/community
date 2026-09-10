@@ -1,6 +1,6 @@
 description="A fast, partitioned convolution engine library"
 homepage="https://kokkinizita.linuxaudio.org/linuxaudio/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=zita-convolver
 version=4.0.3

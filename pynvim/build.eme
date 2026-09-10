@@ -1,6 +1,6 @@
 description="Python client for Neovim"
 homepage="https://github.com/neovim/pynvim"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=pynvim
 version=0.6.0

@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Color Picker"
 homepage="http://www.gpick.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=gpick
 version=0.4

@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Provide https support for LWP::UserAgent"
 homepage="https://metacpan.org/release/LWP-Protocol-https"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-lwp-protocol-https
 version=6.17

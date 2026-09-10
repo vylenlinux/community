@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Lightweight display manager"
 homepage="https://github.com/ubuntu/lightdm"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=lightdm
 version=1.33.1

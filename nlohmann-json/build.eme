@@ -1,6 +1,6 @@
 description="JSON for Modern C++"
 homepage="https://github.com/nlohmann/json"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=nlohmann-json
 version=3.12.0

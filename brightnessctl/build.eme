@@ -1,6 +1,6 @@
 description="Program to read and control device brightness"
 homepage="https://github.com/Hummer12007/brightnessctl"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=brightnessctl
 version=0.5.1

@@ -1,6 +1,6 @@
 description="LPR and CUPS driver for the Brother MFC-L2710DW"
 homepage="http://solutions.brother.com/linux/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=brother-mfc-l2710dw
 version=4.0.0

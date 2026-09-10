@@ -1,6 +1,6 @@
 description="The successor of clalsadrv, provides easy access to ALSA PCM devices"
 homepage="https://kokkinizita.linuxaudio.org/linuxaudio/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=zita-alsa-pcmi
 version=0.6.1

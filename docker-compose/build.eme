@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Compose is a tool for defining and running multi-container Docker applications"
 homepage="https://docs.docker.com/compose/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=docker-compose
 version=5.5.1

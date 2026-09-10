@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A terminal-based tool for monitoring the progress of data through a pipeline"
 homepage="https://www.ivarch.com/programs/pv.shtml"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=pv
 version=1.11.0

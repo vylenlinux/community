@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Uniform Resource Identifiers (absolute and relative)"
 homepage="https://search.cpan.org/dist/URI/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-uri
 version=5.37

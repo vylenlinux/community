@@ -1,6 +1,6 @@
 description="Atlas Engineer Nyxt Browser"
 homepage="https://nyxt.atlas.engineer"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=nyxt
 version=3.12.0

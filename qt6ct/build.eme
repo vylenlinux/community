@@ -1,6 +1,6 @@
 description="Qt 6 Configuration Utility"
 homepage="https://github.com/trialuser02/qt6ct"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=qt6ct
 version=0.11

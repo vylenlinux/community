@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A dead simple tool to sign files and verify digital signatures."
 homepage="https://jedisct1.github.io/minisign/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=minisign
 version=0.12

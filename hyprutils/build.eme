@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Hyprland utilities library used across the ecosystem"
 homepage="https://github.com/hyprwm/hyprutils"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=hyprutils
 version=0.14.2

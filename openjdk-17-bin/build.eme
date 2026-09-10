@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Temurin 17 (OpenJDK 17 Java binaries by Adoptium, formerly AdoptOpenJDK)"
 homepage="https://github.com/adoptium/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=openjdk-17-bin
 version=17.0.20.1+1

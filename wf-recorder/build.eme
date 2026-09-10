@@ -1,6 +1,6 @@
 description="Screen recorder for wlroots-based compositors such as sway"
 homepage="https://github.com/ammen99/wf-recorder"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=wf-recorder
 version=0.6.0

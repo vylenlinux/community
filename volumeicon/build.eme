@@ -1,6 +1,6 @@
 description="Volume control for your system tray"
 homepage="https://github.com/Maato/volumeicon"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=volumeicon
 version=0.5.1

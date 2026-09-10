@@ -1,6 +1,6 @@
 description="Common development macros for GNOME"
 homepage="https://www.gnome.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=gnome-common
 version=3.18.0

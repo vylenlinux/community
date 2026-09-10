@@ -1,6 +1,6 @@
 description="Script to install various redistributable runtime libraries in Wine"
 homepage="https://github.com/Winetricks/winetricks"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=winetricks
 version=20260125

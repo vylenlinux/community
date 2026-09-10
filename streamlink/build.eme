@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="CLI program that launches streams from various streaming services in a custom video player (livestreamer fork)"
 homepage="https://streamlink.github.io/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=streamlink
 version=8.5.0

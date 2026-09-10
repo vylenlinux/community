@@ -1,6 +1,6 @@
 description="Input method user interface and development platform"
 homepage="https://github.com/scim-im/scim"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=scim
 version=1.4.18

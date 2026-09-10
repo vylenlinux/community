@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Document transformations from Yelp"
 homepage="https://gitlab.gnome.org/GNOME/yelp-xsl"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=yelp-xsl
 version=49.0

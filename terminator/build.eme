@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Terminal emulator that supports tabs and grids"
 homepage="https://github.com/gnome-terminator/terminator"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=terminator
 version=2.1.6

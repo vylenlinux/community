@@ -1,6 +1,6 @@
 description="A desktop user interface for managing virtual machines through libvirt"
 homepage="https://virt-manager.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=virt-manager
 version=5.1.0

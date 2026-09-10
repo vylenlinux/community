@@ -1,6 +1,6 @@
 description="GPUs process monitoring for AMD, Intel and NVIDIA"
 homepage="https://github.com/Syllo/nvtop"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=nvtop
 version=3.3.2

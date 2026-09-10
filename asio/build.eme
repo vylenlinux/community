@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="cross-platform c++ library for asynchronous network i/o"
 homepage="https://think-async.com/asio/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=asio
 version=1.38.2

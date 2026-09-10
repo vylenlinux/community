@@ -1,6 +1,6 @@
 description="A utility to accurately report the in core memory usage for a program"
 homepage="https://github.com/pixelb/ps_mem"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ps_mem
 version=3.14

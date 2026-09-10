@@ -1,6 +1,6 @@
 description="Brother HL-L2375DW CUPS driver"
 homepage="http://www.brother.com"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=brother-hll2375dw
 version=4.0.0

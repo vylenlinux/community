@@ -1,6 +1,6 @@
 description="X.org daewoo-misc fonts"
 homepage="https://www.x.org"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=font-daewoo-misc
 version=1.0.4

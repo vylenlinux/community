@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="The RAR uncompression program"
 homepage="https://www.rarlab.com/rar_add.htm"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=unrar
 version=7.3.1

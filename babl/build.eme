@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Dynamic, any to any, pixel format translation library"
 homepage="https://gegl.org/babl/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=babl
 version=0.1.128

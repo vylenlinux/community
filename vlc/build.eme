@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A media player, streamer, and encoder"
 homepage="https://www.videolan.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=vlc
 version=3.0.23

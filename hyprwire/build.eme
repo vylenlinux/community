@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A fast and consistent wire protocol for IPC"
 homepage="https://github.com/hyprwm/hyprwire"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=hyprwire
 version=0.3.1

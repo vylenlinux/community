@@ -1,6 +1,6 @@
 description="Lightweight YouTube client that does not re>"
 homepage="github.com/trizen/pipe-viewer"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-module-build
 version=0.4234

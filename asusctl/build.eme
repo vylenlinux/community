@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A control daemon, CLI tools, and a collection of crates for interacting with ASUS ROG laptops"
 homepage="https://asus-linux.org"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=asusctl
 version=6.4.0

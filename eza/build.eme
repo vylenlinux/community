@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A modern, maintained replacement for ls (maintained fork of exa)"
 homepage="https://github.com/eza-community/eza"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=eza
 version=0.23.5

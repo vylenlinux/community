@@ -1,6 +1,6 @@
 description="A fast and easy-to-use status bar"
 homepage="https://github.com/polybar/polybar"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=polybar
 version=3.7.2

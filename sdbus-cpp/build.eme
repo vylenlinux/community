@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Unofficial, high-level C++ dbus bindings"
 homepage="https://github.com/Kistler-Group/sdbus-cpp/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=sdbus-cpp
 version=2.3.1

@@ -1,6 +1,6 @@
 description="A fast, global-search and tag-based email system"
 homepage="https://notmuchmail.org"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=notmuch
 version=0.40

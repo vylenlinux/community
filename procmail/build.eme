@@ -1,6 +1,6 @@
 description="Mail processing and sorting program"
 homepage="https://github.com/BuGlessRB/procmail"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=procmail
 version=3.24

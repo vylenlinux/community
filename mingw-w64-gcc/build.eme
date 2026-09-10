@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="gcc for mingw-w64 toolchain"
 homepage="https://gcc.gnu.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=mingw-w64-gcc
 version=16.2.0

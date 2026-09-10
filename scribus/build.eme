@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Desktop publishing software"
 homepage="https://www.scribus.net/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=scribus
 version=1.7.3

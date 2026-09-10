@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="nwg-shell wallpapers package"
 homepage="https://github.com/nwg-piotr/nwg-shell-wallpapers"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=nwg-shell-wallpapers
 version=1.5

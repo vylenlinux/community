@@ -1,6 +1,6 @@
 description="Contains an assortment of non-scalable icons of different sizes and themes"
 homepage="https://www.gnome.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=gnome-icon-theme
 version=3.12.0

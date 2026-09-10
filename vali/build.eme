@@ -1,5 +1,5 @@
 description="A C library and code generator for Varlink"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://gitlab.freedesktop.org/emersion/vali"
 
 name=vali

@@ -2,7 +2,7 @@
 
 description="OpenBSD tool to signs and verify signatures on files"
 homepage="https://github.com/aperezdc/signify"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=signify
 version=33

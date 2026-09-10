@@ -1,6 +1,6 @@
 description="Helper application and MIME type associations for file types "
 homepage="https://pagure.io/mailcap"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=mailcap
 version=2.1.54

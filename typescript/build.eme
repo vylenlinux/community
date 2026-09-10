@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="TypeScript is a language for application scale JavaScript development"
 homepage="http://typescriptlang.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=typescript
 version=7.0.2

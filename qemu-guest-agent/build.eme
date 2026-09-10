@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="QEMU guest agent"
 homepage="https://www.qemu.org/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=qemu-guest-agent
 version=11.1.1

@@ -1,6 +1,6 @@
 description="PulseAudio Volume Control"
 homepage="https://gitlab.freedesktop.org/pulseaudio/pavucontrol"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=pavucontrol
 version=6.2

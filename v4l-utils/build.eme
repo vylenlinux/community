@@ -1,6 +1,6 @@
 description="Provides a series of utilities for media devices"
 homepage="https://www.linuxtv.org"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=v4l-utils
 version=1.32.0

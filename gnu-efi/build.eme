@@ -1,6 +1,6 @@
 description="GNU EFI library"
 homepage="https://sourceforge.net/projects/gnu-efi/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=gnu-efi
 version=4.0.4

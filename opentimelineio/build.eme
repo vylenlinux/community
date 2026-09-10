@@ -1,6 +1,6 @@
 description="Open Source API and interchange format for editorial timeline information"
 homepage="http://opentimeline.io"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=opentimelineio
 version=0.18.1

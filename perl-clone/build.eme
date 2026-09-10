@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Recursively copy Perl datatypes"
 homepage="https://github.com/garu/Clone"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-clone
 version=0.50

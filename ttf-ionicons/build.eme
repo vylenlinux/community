@@ -1,6 +1,6 @@
 description="Font from the Ionic mobile framework "
 homepage="https://github.com/ionic-team/ionicons"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ttf-ionicons
 version=7.1.2

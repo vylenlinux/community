@@ -1,6 +1,6 @@
 description="GTK+ greeter for LightDM"
 homepage="https://github.com/Xubuntu/lightdm-gtk-greeter"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=lightdm-gtk-greeter
 version=2.0.9

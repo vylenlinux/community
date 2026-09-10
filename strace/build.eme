@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A diagnostic, debugging and instructional userspace tracer"
 homepage="https://strace.io/"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=strace
 version=7.2

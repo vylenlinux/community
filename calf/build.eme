@@ -1,6 +1,6 @@
 description="LV2/DSSI/LADSPA plug-in suite and standalone Jack host"
 homepage="https://calf-studio-gear.org"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=calf
 version=0.90.9

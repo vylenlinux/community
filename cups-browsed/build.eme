@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Helper daemon to browse the network for remote CUPS queues and IPP network printers"
 homepage="https://github.com/OpenPrinting/cups-browsed"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=cups-browsed
 version=2.1.1

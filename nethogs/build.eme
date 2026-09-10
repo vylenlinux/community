@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A net top tool which displays traffic used per process instead of per IP or interface"
 homepage="https://github.com/raboof/nethogs"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=nethogs
 version=0.9.0

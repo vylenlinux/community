@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="Foomatic - PPDs from printer manufacturers"
 homepage="http://www.linuxprinting.org/foomatic.html"
-maintainer="Vylen Linux Team"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=foomatic-db-ppds
 version=20260904
