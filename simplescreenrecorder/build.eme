@@ -1,24 +1,28 @@
-description="SimpleScreenRecorder, a screen recorder for Linux "
+#!/bin/sh
+
+# shellcheck disable=SC2034
+description="SimpleScreenRecorder, a screen recorder for Linux"
 homepage="https://github.com/MaartenBaert/ssr"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=simplescreenrecorder
 version=0.4.4
 release=1
-source="https://github.com/MaartenBaert/ssr/archive/$version/ssr-$version.tar.gz
-	ffmpeg7.patch"
+
+source="${name}-${version}.tar.gz::https://github.com/MaartenBaert/ssr/archive/${version}/ssr-${version}.tar.gz
+    ffmpeg7.patch"
 
 build() {
-	cd ssr-$version
+    # shellcheck disable=SC2164
+    cd "ssr-${version}"
+    patch -p1 -i "${SRC}/ffmpeg7.patch"
 
-	patch -p1 -i $SRC/ffmpeg7.patch
+    cmake \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_INSTALL_LIBDIR=lib \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DWITH_QT5=on
 
-	cmake -DCMAKE_INSTALL_PREFIX="/usr" \
-		-DCMAKE_BUILD_TYPE=Release \
-		-DWITH_QT5=on \
-		-DCMAKE_INSTALL_LIBDIR='lib'
-	make
-	make DESTDIR="$PKG" install	
-
+    make
+    make DESTDIR="${PKG}" install
 }
-

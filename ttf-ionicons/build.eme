@@ -1,13 +1,15 @@
-description="Font from the Ionic mobile framework "
+#!/bin/sh
+
+# shellcheck disable=SC2034
+description="Font from the Ionic mobile framework"
 homepage="https://github.com/ionic-team/ionicons"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ttf-ionicons
 version=7.1.2
 release=1
-source="$name-$version.tar.gz::https://github.com/ionic-team/ionicons/archive/v$version.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/ionic-team/ionicons/archive/v${version}.tar.gz"
 
 build() {
-	cd "ionicons-$version"
-	install -Dm644 docs/fonts/ionicons.ttf -t "$PKG/usr/share/fonts/TTF/"
+    install -Dm644 "ionicons-${version}/docs/fonts/ionicons.ttf" -t "${PKG}/usr/share/fonts/TTF/"
 }

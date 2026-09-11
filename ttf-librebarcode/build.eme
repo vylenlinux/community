@@ -1,14 +1,15 @@
-description="Barcode fonts for various barcode standards "
+#!/bin/sh
+
+# shellcheck disable=SC2034
+description="Barcode fonts for various barcode standards"
 homepage="https://github.com/graphicore/librebarcode"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ttf-librebarcode
-_name=librebarcode
 version=1.008
 release=1
-source="$_name-$version.tar.gz::https://github.com/graphicore/$_name/archive/pre-v$version.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/graphicore/librebarcode/archive/pre-v${version}.tar.gz"
 
 build() {
-     cd "$_name-pre-v$version"
-    install -Dm644 -t "$PKG/usr/share/fonts/TTF/" fonts/*.ttf
+    install -Dm644 "librebarcode-pre-v${version}/fonts"/*.ttf -t "${PKG}/usr/share/fonts/TTF/"
 }

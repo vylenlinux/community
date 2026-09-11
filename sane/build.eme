@@ -1,31 +1,38 @@
-description="Scanner Access Now Easy - Scanner driver for Linux "
+#!/bin/sh
+
+# shellcheck disable=SC2034
+description="Scanner Access Now Easy - Scanner driver for Linux"
 homepage="https://gitlab.com/sane-project/backends"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=sane
 version=1.4.0
 release=1
-source="$name-$version.tar.gz::https://gitlab.com/sane-project/backends/-/archive/$version/backends-$version.tar.bz2
-	$homepage/-/commit/d04d17b456d9847021b6df6eb08a3419a75172cf.patch"
+
+source="${name}-${version}.tar.gz::https://gitlab.com/sane-project/backends/-/archive/${version}/backends-${version}.tar.bz2
+    https://gitlab.com/sane-project/backends/-/commit/d04d17b456d9847021b6df6eb08a3419a75172cf.patch"
 
 build() {
-	cd backends-$version
-	patch -Np1 -i $SRC/d04d17b456d9847021b6df6eb08a3419a75172cf.patch
-	./autogen.sh
-    	./configure \
-		--prefix=/usr \
-                --localstatedir=/var \
-                --sysconfdir=/etc \
-		--enable-pthread \
-		--disable-translations \
-                --disable-locking \
-                --disable-latex \
-                --with-group=scanner \
-		--with-libcurl \
-                --with-usb    
+    # shellcheck disable=SC2164
+    cd "backends-${version}"
+
+    patch -Np1 -i "${SRC}/d04d17b456d9847021b6df6eb08a3419a75172cf.patch"
+    ./autogen.sh
+
+    ./configure \
+        --prefix=/usr \
+        --localstatedir=/var \
+        --sysconfdir=/etc \
+        --enable-pthread \
+        --disable-translations \
+        --disable-locking \
+        --disable-latex \
+        --with-group=scanner \
+        --with-libcurl \
+        --with-usb
+
 	make
-	make -j1 DESTDIR=$PKG install
+	make -j1 DESTDIR="${PKG}" install
 
-	install -D -m 644 tools/udev/libsane.rules $PKG/etc/udev/rules.d/85-libsane.rules
-
+	install -Dm644 tools/udev/libsane.rules "${PKG}/etc/udev/rules.d/85-libsane.rules"
 }

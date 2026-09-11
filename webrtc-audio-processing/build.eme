@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # shellcheck disable=SC2034
-description="a packaging friendly copy of the AudioProcessing module from the WebRTC project "
+description="a packaging friendly copy of the AudioProcessing module from the WebRTC project"
 homepage="https://freedesktop.org/software/pulseaudio/webrtc-audio-processing/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
@@ -14,8 +14,8 @@ source="https://gitlab.freedesktop.org/pulseaudio/${name}/-/archive/v${version}/
     60.patch"
 
 build() {
-    patch -Np1 -d "${name}-v${version}" -i "${SRC}/58.patch"
-    patch -Np1 -d "${name}-v${version}" -i "${SRC}/60.patch"
+    patch -d "${name}-v${version}" -Np1 -i "${SRC}/58.patch"
+    patch -d "${name}-v${version}" -Np1 -i "${SRC}/60.patch"
 
     vylen-meson "${name}-v${version}" build \
         -Dcpp_std=c++17 \

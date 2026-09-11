@@ -1,15 +1,22 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="RSS feed reader for the command-line"
-homepage="https://sourceforge.net/projects/snownews/ "
+homepage="https://sourceforge.net/projects/snownews/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=snownews
 version=1.11
 release=1
-source="https://sourceforge.net/projects/$name/files/$name-$version.tar.gz"
+source="https://sourceforge.net/projects/${name}/files/${name}-${version}.tar.gz"
 
 build() {
-    cd $name-$version
-	./configure --prefix=/usr
-	make
-	make PREFIX=/usr DESTDIR=$PKG install
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    ./configure --prefix=/usr
+    export PREFIX=/usr
+
+    make
+    make DESTDIR="${PKG}" install
 }
