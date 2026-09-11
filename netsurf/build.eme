@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Lightweight and fast web browser"
 homepage="https://www.netsurf-browser.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,23 +8,23 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=netsurf
 version=3.11
 release=1
-source="http://download.netsurf-browser.org/netsurf/releases/source-full/netsurf-all-$version.tar.gz"
+source="${name}-${version}.tar.gz::https://download.netsurf-browser.org/${name}/releases/source-full/${name}-all-${version}.tar.gz"
 
 build() {
-	cd $name-all-$version
+    # shellcheck disable=SC2164
+    cd "${name}-all-${version}"
 
-	CFLAGS="$CFLAGS -w -Os -funroll-loops" \
-	make \
-		PREFIX=/usr \
-		LIBDIR=lib \
-		INCLUDEDIR=include \
-		NETSURF_GTK_MAJOR=3 \
-		TARGET=gtk3
-	make install \
-		PREFIX=/usr \
-		LIBDIR=lib \
-		INCLUDEDIR=include \
-		DESTDIR=$PKG \
-		NETSURF_GTK_MAJOR=3 \
-		TARGET=gtk3
+    export CFLAGS="${CFLAGS} \
+        -w \
+        -Os \
+        -funroll-loops"
+
+    export PREFIX=/usr
+    export LIBDIR=lib
+    export INCLUDEDIR=include
+    export NETSURF_GTK_MAJOR=3
+    export TARGET=gtk3
+
+    make
+    make DESTDIR="${PKG}" install
 }
