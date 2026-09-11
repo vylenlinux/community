@@ -1,0 +1,52 @@
+Subject: [PATCH] build: support GExiv2 0.16
+
+GIMP 3.2.6 searches for the unversioned `gexiv2` pkg-config module and
+expects the older GExiv2 0.14 API. Vylen Linux provides GExiv2 0.16,
+which installs the versioned `gexiv2-0.16.pc` pkg-config module and the
+GExiv2-0.16 GIR namespace.
+
+Update the Meson dependency and introspection metadata to use GExiv2
+0.16. Remove the obsolete upper version limit for the older API.
+
+This patch is intended for GIMP 3.2.6 and requires gexiv2-0.16 >= 0.16.0.
+
+---
+ libgimp/meson.build | 2 +-
+ meson.build         | 6 ++----
+ 2 files changed, 4 insertions(+), 6 deletions(-)
+
+diff '--color=auto' -ruN a/libgimp/meson.build b/libgimp/meson.build
+--- a/libgimp/meson.build	2026-09-10 13:33:42.000000000 +0200
++++ b/libgimp/meson.build	2026-09-11 17:07:20.471905874 +0200
+@@ -399,7 +399,7 @@
+     { 'gir': 'cairo-1.0',         'vapi': 'cairo-1.0',       },
+     { 'gir': 'GdkPixbuf-2.0',     'vapi': 'gdk-pixbuf-2.0',  },
+     { 'gir': 'Gegl-0.4',          'vapi': 'gegl-0.4',        },
+-    { 'gir': 'GExiv2-0.10',       'vapi': 'gexiv2',          },
++    { 'gir': 'GExiv2-0.16',       'vapi': 'gexiv2-0.16',          },
+     { 'gir': 'Gio-2.0',           'vapi': 'gio-2.0',         },
+     { 'gir': gio_specific_gir,    'vapi': gio_specific_vapi, },
+     { 'gir': 'GLib-2.0',          'vapi': 'glib-2.0',        },
+diff '--color=auto' -ruN a/meson.build b/meson.build
+--- a/meson.build	2026-09-10 13:33:42.000000000 +0200
++++ b/meson.build	2026-09-11 17:07:27.110944317 +0200
+@@ -468,9 +468,8 @@
+ gegl              = dependency('gegl-0.4',           version: '>='+gegl_minver)
+ exiv2_minver      = '0.27.4'
+ exiv2             = dependency('exiv2',              version: '>='+exiv2_minver)
+-gexiv2_minver     = '0.14.0'
+-gexiv2_maxver     = '0.15.0'
+-gexiv2            = dependency('gexiv2',             version: ['>='+gexiv2_minver, '<'+gexiv2_maxver])
++gexiv2_minver     = '0.16.0'
++gexiv2            = dependency('gexiv2-0.16', version: '>='+gexiv2_minver)
+
+ gio               = dependency('gio-2.0')
+ gio_specific_name = platform_windows ? 'gio-windows-2.0' : 'gio-unix-2.0'
+@@ -1821,7 +1820,6 @@
+ install_conf.set('GEGL_REQUIRED_VERSION',         gegl_minver)
+ install_conf.set('EXIV2_REQUIRED_VERSION',        exiv2_minver)
+ install_conf.set('GEXIV2_REQUIRED_VERSION',       gexiv2_minver)
+-install_conf.set('GEXIV2_MAX_VERSION',            gexiv2_maxver)
+ install_conf.set('GLIB_REQUIRED_VERSION',         glib_minver)
+ install_conf.set('GTK_REQUIRED_VERSION',          gtk3_minver)
+ install_conf.set('HARFBUZZ_REQUIRED_VERSION',     harfbuzz_minver)
