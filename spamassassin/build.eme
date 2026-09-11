@@ -15,15 +15,12 @@ build() {
     cd "Mail-SpamAssassin-${version}"
 
     export PERL_USE_UNSAFE_INC=1
-    PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor CONFDIR="/etc/${name}"
+    export CONFDIR="/etc/${name}"
+
+    perl Makefile.PL
 
     make
     make DESTDIR="${PKG}" install
-
-    find "${PKG}/usr/lib" -depth \
-        -type f \( -name .packlist -o -name \*.bs -o -name perllocal.pod \) -delete , \
-        -type f -name autosplit.ix \( -exec grep -q '^[[:space:]]*package' {} \; -o -delete \) , \
-        -type d -empty -exec rmdir {} +
 
     do_service spamd
 }
