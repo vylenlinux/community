@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Text:CharWidth perl module"
 homepage="https://metacpan.org/pod/Text::CharWidth"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,12 +8,13 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=perl-text-charwidth
 version=0.04
 release=1
-source="$name-$version.tar.gz::https://cpan.metacpan.org/authors/id/K/KU/KUBOTA/Text-CharWidth-$version.tar.gz"
+source="${name}-${version}.tar.gz::https://cpan.metacpan.org/authors/id/K/KU/KUBOTA/Text-CharWidth-${version}.tar.gz"
 
 build() {
-	cd Text-CharWidth-$version
-	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
-	make
-	make DESTDIR=$PKG install
-	find $PKG \( -name perllocal.pod -o -name .packlist \) -delete
+    # shellcheck disable=SC2164
+    cd "Text-CharWidth-${version}"
+    perl Makefile.PL
+
+    make
+    make DESTDIR="${PKG}" install
 }

@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Keyed-Hashing for Message Authentication"
 homepage="http://metacpan.org/release/Digest-HMAC"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,16 +8,13 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=perl-digest-hmac
 version=1.05
 release=1
-source="http://search.cpan.org/CPAN/authors/id/A/AR/ARODLAND/Digest-HMAC-$version.tar.gz"
+source="${name}-${version}.tar.gz::http://search.cpan.org/CPAN/authors/id/A/AR/ARODLAND/Digest-HMAC-${version}.tar.gz"
 
 build() {
-	cd Digest-HMAC-$version
+    # shellcheck disable=SC2164
+    cd "Digest-HMAC-${version}"
+    export OPTIMIZE="${CFLAGS}"
 
-	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
-	make OPTIMIZE="$CFLAGS" DESTDIR="$PKG" install
-
-	find "$PKG" -depth \
-		-type f \( -name .packlist -o -name \*.bs -o -name perllocal.pod \) -delete , \
-		-type f -name autosplit.ix \( -exec grep -q '^[[:space:]]*package' {} \; -o -delete \) , \
-		-type d -empty -exec rmdir {} +
+    perl Makefile.PL
+    make DESTDIR="${PKG}" install
 }

@@ -2,6 +2,7 @@ drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/lib/
 drwxr-xr-x root/root    usr/lib/perl5/
 drwxr-xr-x root/root    usr/lib/perl5/5.44/
+drwxr-xr-x root/root    usr/lib/perl5/5.44/x86_64-linux-thread-multi/
 drwxr-xr-x root/root    usr/lib/perl5/site_perl/
 drwxr-xr-x root/root    usr/lib/perl5/site_perl/5.44/
 drwxr-xr-x root/root    usr/lib/perl5/site_perl/5.44/Net/
@@ -99,6 +100,7 @@ drwxr-xr-x root/root    usr/lib/perl5/site_perl/5.44/Net/DNS/Resolver/
 drwxr-xr-x root/root    usr/lib/perl5/site_perl/5.44/x86_64-linux-thread-multi/
 drwxr-xr-x root/root    usr/lib/perl5/site_perl/5.44/x86_64-linux-thread-multi/auto/
 drwxr-xr-x root/root    usr/lib/perl5/site_perl/5.44/x86_64-linux-thread-multi/auto/Net/
+drwxr-xr-x root/root    usr/lib/perl5/site_perl/5.44/x86_64-linux-thread-multi/auto/Net/DNS/
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/man/
 drwxr-xr-x root/root    usr/share/man/man3/

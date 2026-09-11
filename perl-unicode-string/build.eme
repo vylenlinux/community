@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="String of Unicode characters for perl (UCS2/UTF16)"
 homepage="https://metacpan.org/release/Unicode-String"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,12 +8,13 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=perl-unicode-string
 version=2.10
 release=1
-source="$name-$version.tar.gz::https://cpan.metacpan.org/authors/id/G/GA/GAAS/GAAS/Unicode-String-$version.tar.gz"
+source="${name}-${version}.tar.gz::https://cpan.metacpan.org/authors/id/G/GA/GAAS/GAAS/Unicode-String-${version}.tar.gz"
 
 build() {
-	cd Unicode-String-$version
-	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
-	make
-	make DESTDIR=$PKG install
-	find $PKG \( -name perllocal.pod -o -name .packlist \) -delete
+    # shellcheck disable=SC2164
+    cd "Unicode-String-${version}"
+    perl Makefile.PL
+
+    make
+    make DESTDIR="${PKG}" install
 }

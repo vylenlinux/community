@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="A very fast Perl module for parsing the Linux desktop files"
 homepage="https://metacpan.org/release/Linux-DesktopFiles"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,17 +8,13 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=perl-linux-desktopfiles
 version=0.26
 release=1
-source="$name-$version.tar.gz::https://cpan.metacpan.org/authors/id/T/TR/TRIZEN/Linux-DesktopFiles-$version.tar.gz"
+source="${name}-${version}.tar.gz::https://cpan.metacpan.org/authors/id/T/TR/TRIZEN/Linux-DesktopFiles-${version}.tar.gz"
 
 build() {
-	cd Linux-DesktopFiles-$version
+    # shellcheck disable=SC2164
+    cd "Linux-DesktopFiles-${version}"
+    perl Makefile.PL
 
-	PERL_MM_USE_DEFAULT=1 PERL5LIB="" \
-	PERL_AUTOINSTALL=--skipdeps \
-	PERL_MM_OPT="INSTALLDIRS=vendor DESTDIR='$PKG'" \
-	PERL_MB_OPT="--installdirs vendor --destdir '$PKG'" \
-	MODULEBUILDRC=/dev/null \
-	perl Makefile.PL
-	make
-	make install
+    make
+    make DESTDIR="${PKG}" install
 }

@@ -13,13 +13,10 @@ source="${name}-${version}.tar.gz::http://search.cpan.org/CPAN/authors/id/N/NL/N
 build() {
     # shellcheck disable=SC2164
     cd "Net-DNS-${version}"
+    export OPTIMIZE="${CFLAGS}"
 
-    PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
-    make OPTIMIZE="${CFLAGS}" DESTDIR="${PKG}" install
+    perl Makefile.PL
+    make DESTDIR="${PKG}" install
 
-    find "${PKG}" -depth -type f \( \
-        -name .packlist -o \
-        -name \*.bs -o \
-        -name perllocal.pod \
-    \) -delete , -type f -name autosplit.ix \( -exec grep -q '^[[:space:]]*package' {} \; -o -delete \) , -type d -empty -exec rmdir {} +
+    #find "${PKG}" -depth -type f -name \*.bs -delete , -type f -name autosplit.ix \( -exec grep -q '^[[:space:]]*package' {} \; -o -delete \) , -type d -empty -exec rmdir {} +
 }

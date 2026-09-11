@@ -13,7 +13,7 @@ source="${name}-${version}.tar.gz::https://cpan.metacpan.org/authors/id/O/OA/OAL
 build() {
     # shellcheck disable=SC2164
     cd "HTTP-Date-${version}"
-    perl -I. Makefile.PL INSTALLDIRS=vendor
+    perl -I. Makefile.PL
 
     make
     make DESTDIR="${PKG}" install

@@ -16,13 +16,8 @@ build() {
 
     # Use system CA store. Replacing the copy in the source tree so the test suite is actually run against it.
     ln -sf /etc/ssl/certs/ca-certificates.crt lib/Mozilla/CA/cacert.pem
-    PERL_MM_USE_DEFAULT=1 perl -I. Makefile.PL INSTALLDIRS=vendor
+    perl -I. Makefile.PL
 
     make
     make DESTDIR="${PKG}" install
-
-    find "${PKG}" \( \
-        -name perllocal.pod -o \
-        -name .packlist \
-    \) -delete
 }

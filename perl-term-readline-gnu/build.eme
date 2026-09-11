@@ -13,7 +13,7 @@ source="${name}-${version}.tar.gz::https://cpan.metacpan.org/authors/id/H/HA/HAY
 build() {
     # shellcheck disable=SC2164
     cd "Term-ReadLine-Gnu-${version}"
-    perl -I. Makefile.PL INSTALLDIRS=vendor
+    perl -I. Makefile.PL
 
     make
     make DESTDIR="${PKG}" install

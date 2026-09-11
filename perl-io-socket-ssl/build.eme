@@ -11,15 +11,10 @@ release=1
 source="${name}-${version}.tar.gz::https://cpan.metacpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-${version}.tar.gz"
 
 build() {
-	# shellcheck disable=SC2164
-	cd "IO-Socket-SSL-${version}"
-	PERL_MM_USE_DEFAULT=1 perl -I. Makefile.PL INSTALLDIRS=vendor
+    # shellcheck disable=SC2164
+    cd "IO-Socket-SSL-${version}"
+    perl -I. Makefile.PL
 
-	make
-	make DESTDIR="${PKG}" install
-
-	find "${PKG}" \( \
-        -name perllocal.pod -o \
-        -name .packlist \
-    \) -delete
+    make
+    make DESTDIR="${PKG}" install
 }

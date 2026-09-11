@@ -13,11 +13,8 @@ source="${name}-${version}.tar.gz::https://cpan.metacpan.org/authors/id/A/AT/ATO
 build() {
     # shellcheck disable=SC2164
     cd "Clone-${version}"
-    PERL_MM_USE_DEFAULT=1 perl -I. Makefile.PL INSTALLDIRS=vendor
+    perl -I. Makefile.PL
 
     make
     make DESTDIR="${PKG}" install
-
-    # shellcheck disable=SC2038
-    find "${PKG}" -name '.packlist' -or -name '*.pod' | xargs rm
 }

@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="UAX #14 Unicode Line Breaking Algorithm"
 homepage="https://metacpan.org/release/Unicode-LineBreak/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,10 +8,12 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=perl-unicode-linebreak
 version=2019.001
 release=1
-source="$name-$version.tar.gz::https://cpan.metacpan.org/authors/id/N/NE/NEZUMI/Unicode-LineBreak-$version.tar.gz"
+source="${name}-${version}.tar.gz::https://cpan.metacpan.org/authors/id/N/NE/NEZUMI/Unicode-LineBreak-${version}.tar.gz"
 
 build() {
-	cd Unicode-LineBreak-$version
-        perl -I. Makefile.PL INSTALLDIRS=vendor
-	make DESTDIR=$PKG install
+    # shellcheck disable=SC2164
+    cd "Unicode-LineBreak-${version}"
+
+    perl -I. Makefile.PL
+    make DESTDIR="${PKG}" install
 }

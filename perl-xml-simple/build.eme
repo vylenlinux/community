@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Simple XML parser for perl"
 homepage="https://search.cpan.org/dist/XML-Simple/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,15 +8,13 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=perl-xml-simple
 version=2.25
 release=1
-source="$name-$version.tar.gz::http://cpan.org/authors/id/G/GR/GRANTM/XML-Simple-$version.tar.gz"
+source="${name}-${version}.tar.gz::http://cpan.org/authors/id/G/GR/GRANTM/XML-Simple-${version}.tar.gz"
 
 build() {
-	cd XML-Simple-$version
+    # shellcheck disable=SC2164
+    cd "XML-Simple-${version}"
+    perl Makefile.PL
 
-	perl Makefile.PL
-	make
-	make DESTDIR=$PKG install
-
-	find $PKG -name perllocal.pod -delete
+    make
+    make DESTDIR="${PKG}" install
 }
-

@@ -13,11 +13,8 @@ source="${name}-${version}.tar.gz::https://cpan.metacpan.org/authors/id/C/CH/CHR
 build() {
     # shellcheck disable=SC2164
     cd "Net-SSLeay-${version}"
-    PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+    perl Makefile.PL
 
     make
     make DESTDIR="${PKG}" install
-
-    # creates file collision among perl modules
-    find "${PKG}" -name perllocal.pod -delete
 }

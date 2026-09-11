@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Perl interface to the SHA-1 algorithm"
 homepage="https://metacpan.org/release/Digest-SHA1/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,25 +8,18 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=perl-digest-sha1
 version=2.13
 release=1
-source="https://www.cpan.org/modules/by-module/Digest/Digest-SHA1-$version.tar.gz"
+source="${name}-${version}.tar.gz::https://www.cpan.org/modules/by-module/Digest/Digest-SHA1-${version}.tar.gz"
 
 build() {
-	cd Digest-SHA1-$version
+    # shellcheck disable=SC2164
+    cd "Digest-SHA1-${version}"
 
-	perl Makefile.PL
-	make OPTIMIZE="$CFLAGS"
+    export OPTIMIZE="${CFLAGS}"
+    perl Makefile.PL
 
-	make install DESTDIR=$PKG
+    make
+    make DESTDIR="${PKG}" install
 
-	# Remove perlcrap
-	find $PKG -type f \( \
-		-name '.packlist' -or \
-		-name '*.bs' -or \
-		-name 'autosplit.ix' -or \
-		-name 'perllocal.pod' \) -delete
-
-	# Remove empty directories
-	find $PKG -depth -empty -delete
-	# Fix perms
-	find $PKG -type f -a ! -perm -u+w -exec chmod u+w '{}' +
+    # Fix perms
+    find "${PKG}" -type f -a ! -perm -u+w -exec chmod u+w '{}' +
 }
