@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Library implementing a curses-based widget set for text terminals"
 homepage="http://clifford.at/stfl/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,13 +8,15 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=stfl
 version=0.24
 release=1
-source="https://ponce.cc/slackware/sources/repo/$name-$version.tar.gz"
+source="${name}-${version}.tar.gz::https://ponce.cc/slackware/sources/repo/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
-	
-	sed -i 's|ncursesw/||' stfl_internals.h
-	make prefix=/usr FOUND_SWIG=0 DESTDIR=$PKG install
+    # shellcheck disable=SC2164
+    cd "stfl-${version}"
 
-	find $PKG -name perllocal.pod -delete
+    export prefix=/usr
+    export FOUND_SWIG=0
+
+    sed -i 's|ncursesw/||' stfl_internals.h
+    make DESTDIR="${PKG}" install
 }
