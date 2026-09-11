@@ -18,10 +18,10 @@ build() {
     # shellcheck disable=SC2164
     cd "${name}-${commit}"
 
-    export LIB_CUPS="/usr/lib/cups"
+    export LIB_CUPS=/usr/lib/cups
     ./make_configure
 
-    PERL_INSTALLDIRS=vendor ./configure \
+    ./configure \
         --prefix=/usr \
         --sbindir=/usr/bin
 
