@@ -8,7 +8,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=perl-html-parser
 version=3.85
 release=1
-source="${name}-${version}.tar.gz::https://www.cpan.org/modules/by-module/HTML/HTML-Parser-${version}.tar.gz"
+source="${name}-${version}.tar.gz::https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTML-Parser-${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
