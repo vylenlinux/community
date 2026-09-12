@@ -6,13 +6,13 @@ homepage="https://github.com/adoptium/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=openjdk-21-bin
-version=21.0.12.1+1
+version=21.0.12+8
 release=1
 source="${name}-${version}.tar.gz::https://github.com/adoptium/temurin${version%%.*}-binaries/releases/download/jdk-${version}/OpenJDK${version%%.*}U-jdk_x64_linux_hotspot_$(printf "%s" "${version}" | sed 's/+/_/g').tar.gz"
 
 build() {
     install -dm755 "${PKG}/usr/lib/jvm/java-${version%%.*}-openjdk"
-    cp --reflink=auto -a "${SRC}/jdk-${version}"/* "${PKG}/usr/lib/jvm/java-${version%%.*}-openjdk"
+    cp -a --reflink=auto "${SRC}/jdk-${version}"/* -t "${PKG}/usr/lib/jvm/java-${version%%.*}-openjdk/"
 
     VERSION="${version%%.*}" do_revdep
 }
