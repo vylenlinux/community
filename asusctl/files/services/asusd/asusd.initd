@@ -4,7 +4,6 @@
 description="ASUS control daemon"
 
 command=/usr/bin/asusd
-command_args=""
 command_background=yes
 pidfile=/run/asusd.pid
 
