@@ -8,11 +8,13 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=shntool
 version=3.0.10
 release=1
-source="http://shnutils.freeshell.org/${name}/dist/src/${name}-${version}.tar.gz"
+source="${name}-${version}.tar.gz::https://deb.debian.org/debian/pool/main/s/${name}/${name}_${version}.orig.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
+
+    export CFLAGS="${CFLAGS} -std=gnu99"
     ./configure --prefix=/usr
 
     make
