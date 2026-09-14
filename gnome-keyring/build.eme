@@ -1,14 +1,20 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Daemon that keeps passwords and other secrets for users"
 homepage="https://www.gnome.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=gnome-keyring
-version=50.0
+version=51.0
 release=1
-source="https://github.com/GNOME/gnome-keyring/archive/$version/$name-$version.tar.gz"
+source="https://github.com/GNOME/${name}/archive/${version}/${name}-${version}.tar.gz"
 
 build() {
-	vylen-meson $name-$version build -Dselinux=disabled -Dsystemd=disabled
-	meson compile -C build
-	DESTDIR=$PKG meson install -C build
+    vylen-meson "${name}-${version}" build \
+        -Dselinux=disabled \
+        -Dsystemd=disabled
+
+    meson compile -C build
+    DESTDIR="${PKG}" meson install -C build
 }
