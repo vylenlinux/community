@@ -22,6 +22,9 @@ build() {
         --disable-qt5 \
         --enable-qt6
 
-    rake --multitask --jobs="${MAKEFLAGS}"
+    rake \
+        --multitask \
+        --jobs="${MAKEFLAGS}"
+
     rake DESTDIR="${PKG}" install
 }
