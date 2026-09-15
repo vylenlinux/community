@@ -6,7 +6,7 @@ homepage="https://mariadb.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=mariadb
-version=12.3.3
+version=13.0.2
 release=1
 source="https://downloads.mariadb.org/interstitial/${name}-${version}/source/${name}-${version}.tar.gz"
 
