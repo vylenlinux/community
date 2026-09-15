@@ -6,7 +6,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://mangowm.github.io/"
 
 name=mangowc
-version=0.17.0
+version=0.17.1
 release=1
 source="${name}-${version}.tar.gz::https://github.com/DreamMaoMao/${name}/archive/refs/tags/${version}.tar.gz"
 
