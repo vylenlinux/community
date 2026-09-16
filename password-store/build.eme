@@ -13,9 +13,5 @@ source="https://git.zx2c4.com/${name}/snapshot/${name}-${version}.tar.xz"
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-
-    export FORCE_BASHCOMP=1
-    export BASHCOMP_PATH="${PKG}/etc/bash_completion.d"
-
     make DESTDIR="${PKG}" install
 }
