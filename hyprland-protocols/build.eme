@@ -1,14 +1,21 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Wayland protocol extensions for Hyprland"
 homepage="https://github.com/hyprwm/hyprland-protocols"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=hyprland-protocols
-version=0.7.0
+version=0.7.1
 release=1
-source="$name-$version.tar.gz::https://github.com/hyprwm/hyprland-protocols/archive/v$version.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/hyprwm/${name}/archive/v${version}.tar.gz"
 
 build() {
-	vylen-meson $name-$version build
-	meson compile -C build
-	DESTDIR=$PKG meson install --no-rebuild -C build
+    cmake -S "${name}-${version}" -B build \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_BUILD_TYPE=Release \
+        -Wno-dev
+
+    cmake --build build
+    DESTDIR="${PKG}" cmake --install build
 }
