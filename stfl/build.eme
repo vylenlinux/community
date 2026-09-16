@@ -14,9 +14,6 @@ build() {
     # shellcheck disable=SC2164
     cd "stfl-${version}"
 
-    export prefix=/usr
-    export FOUND_SWIG=0
-
     sed -i 's|ncursesw/||' stfl_internals.h
-    make DESTDIR="${PKG}" install
+    make prefix=/usr FOUND_SWIG=0 DESTDIR="${PKG}" install
 }
