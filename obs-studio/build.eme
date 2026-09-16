@@ -8,11 +8,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=obs-studio
 version=32.2.2
 release=1
-
-nv_codec_headers_version="$(emerald info --field=version nv-codec-headers)"
-
-source="https://github.com/obsproject/${name}/archive/${version}/${name}-${version}.tar.gz
-    https://github.com/FFmpeg/nv-codec-headers/releases/download/n${nv_codec_headers_version}/nv-codec-headers-${nv_codec_headers_version}.tar.gz"
+source="https://github.com/obsproject/${name}/archive/${version}/${name}-${version}.tar.gz"
 
 build() {
     touch "${name}-${version}/plugins/obs-browser/CMakeLists.txt"
@@ -41,7 +37,6 @@ build() {
         -DENABLE_VST=OFF \
         -DENABLE_WAYLAND="$(emerald is-installed wayland && printf "ON" || printf "OFF")" \
         -DENABLE_WEBRTC=OFF \
-        -DFFnvcodec_INCLUDE_DIR="nv-codec-headers-${nv_codec_headers_version}/include/" \
         -DOBS_VERSION_OVERRIDE="${version}" \
         -Wno-dev
 
