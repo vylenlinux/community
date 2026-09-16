@@ -15,9 +15,7 @@ build() {
     cd "Mail-SpamAssassin-${version}"
 
     export PERL_USE_UNSAFE_INC=1
-    export CONFDIR="/etc/${name}"
-
-    perl Makefile.PL
+    perl Makefile.PL CONFDIR="/etc/${name}"
 
     make
     make DESTDIR="${PKG}" install
