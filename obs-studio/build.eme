@@ -9,22 +9,12 @@ name=obs-studio
 version=32.2.2
 release=1
 
-nvcdhd=13.0.19.0
+nv_codec_headers_version="$(emerald info --field=version nv-codec-headers)"
 
 source="https://github.com/obsproject/${name}/archive/${version}/${name}-${version}.tar.gz
-    https://github.com/FFmpeg/nv-codec-headers/releases/download/n${nvcdhd}/nv-codec-headers-${nvcdhd}.tar.gz"
+    https://github.com/FFmpeg/nv-codec-headers/releases/download/n${nv_codec_headers_version}/nv-codec-headers-${nv_codec_headers_version}.tar.gz"
 
 build() {
-    export CFLAGS="${CFLAGS} -Wno-error=deprecated-declarations"
-    export QT_QPA_PLATFORMTHEME="qt6ct"
-
-    emerald is-installed ccache && PATH="$(printf "%s" "${PATH}" | awk -v RS=: -v ORS=: '/ccache/ {
-        next;
-    } {
-        print;
-    }' | sed 's/:*$//')"
-
-    # It's not eought to use -D ENABLE_BROSER...
     touch "${name}-${version}/plugins/obs-browser/CMakeLists.txt"
     touch "${name}-${version}/plugins/obs-websocket/CMakeLists.txt"
 
@@ -42,16 +32,16 @@ build() {
         -DENABLE_PIPEWIRE=ON \
         -DENABLE_PULSEAUDIO=ON \
         -DENABLE_QSV11=OFF \
-        -DMbedTLS_INCLUDE_DIR="/usr/include/mbedtls3" \
-        -DMbedtls_LIBRARY="/usr/lib/mbedtls3/libmbedtls.so" \
-    		-DMbedcrypto_LIBRARY="/usr/lib/mbedtls3/libmbedcrypto.so" \
-    		-DMbedx509_LIBRARY="/usr/lib/mbedtls3/libmbedx509.so" \
+        -DMbedTLS_INCLUDE_DIR=/usr/include/mbedtls3 \
+        -DMbedtls_LIBRARY=/usr/lib/mbedtls3/libmbedtls.so \
+        -DMbedcrypto_LIBRARY=/usr/lib/mbedtls3/libmbedcrypto.so \
+        -DMbedx509_LIBRARY=/usr/lib/mbedtls3/libmbedx509.so \
         -DENABLE_SCRIPTING_LUA="$(emerald is-installed luajit && printf "ON" || printf "OFF")" \
         -DENABLE_VLC=OFF \
         -DENABLE_VST=OFF \
         -DENABLE_WAYLAND="$(emerald is-installed wayland && printf "ON" || printf "OFF")" \
         -DENABLE_WEBRTC=OFF \
-        -DFFnvcodec_INCLUDE_DIR="nv-codec-headers-${nvcdhd}/include/" \
+        -DFFnvcodec_INCLUDE_DIR="nv-codec-headers-${nv_codec_headers_version}/include/" \
         -DOBS_VERSION_OVERRIDE="${version}" \
         -Wno-dev
 
@@ -59,5 +49,4 @@ build() {
     DESTDIR="${PKG}" cmake --install build
 
     find "${PKG}" -type d -exec chmod g-w '{}' \;
-    rm -r "${PKG}/usr/share/obs/obs-studio/authors"
 }
