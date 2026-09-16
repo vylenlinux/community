@@ -11,11 +11,9 @@ release=1
 source="https://github.com/${name}/${name}/releases/download/v${version}/${name}-${version}.tar.gz"
 
 build() {
-    # fix bsdtar extract error
-    # 'Pathname can't be converted from UTF-8 to current locale.'
-    export LC_ALL=en_US.utf-8
-
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-    make -f misc/Makefile DESTDIR="${PKG}" PREFIX=/usr install
+
+    export PREFIX=/usr
+    make -f misc/Makefile DESTDIR="${PKG}" install
 }
