@@ -17,9 +17,6 @@ build() {
     # shellcheck disable=SC2164
     cd "${name}-r${_version}"
 
-    export sysconfdir=/etc
-    export mandir=/usr/share/man
-
     make
     make DESTDIR="${PKG}" install
 }
