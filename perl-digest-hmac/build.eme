@@ -13,8 +13,7 @@ source="${name}-${version}.tar.gz::http://search.cpan.org/CPAN/authors/id/A/AR/A
 build() {
     # shellcheck disable=SC2164
     cd "Digest-HMAC-${version}"
-    export OPTIMIZE="${CFLAGS}"
 
     perl Makefile.PL
-    make DESTDIR="${PKG}" install
+    make OPTIMIZE="${CFLAGS}" DESTDIR="${PKG}" install
 }

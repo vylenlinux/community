@@ -13,11 +13,9 @@ source="${name}-${version}.tar.gz::https://www.cpan.org/modules/by-module/Digest
 build() {
     # shellcheck disable=SC2164
     cd "Digest-SHA1-${version}"
-
-    export OPTIMIZE="${CFLAGS}"
     perl Makefile.PL
 
-    make
+    make OPTIMIZE="${CFLAGS}"
     make DESTDIR="${PKG}" install
 
     # Fix perms
