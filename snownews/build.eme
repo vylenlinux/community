@@ -13,9 +13,7 @@ source="https://sourceforge.net/projects/${name}/files/${name}-${version}.tar.gz
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-
     ./configure --prefix=/usr
-    export PREFIX=/usr
 
     make
     make DESTDIR="${PKG}" install
