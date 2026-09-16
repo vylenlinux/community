@@ -6,7 +6,7 @@ homepage="https://sourceforge.net/projects/hplip/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=hpcups
-version=3.26.4
+version=3.26.6
 release=1
 
 source="${name}-${version}.tar.gz::http://downloads.sourceforge.net/project/hplip/hplip/${version}/hplip-${version}.tar.gz
