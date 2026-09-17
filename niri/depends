@@ -3,3 +3,5 @@ libinput
 pipewire
 pango
 seatd
+clang
+rust
