@@ -1,3 +1,4 @@
 ffmpeg
-qt5
+qt6-base
+qt6-tools
 v4l-utils

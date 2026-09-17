@@ -9,20 +9,17 @@ name=simplescreenrecorder
 version=0.4.4
 release=1
 
-source="${name}-${version}.tar.gz::https://github.com/MaartenBaert/ssr/archive/${version}/ssr-${version}.tar.gz
-    ffmpeg7.patch"
+commit=e73e07664121ac30836872bca76194c6570e04c8
+source="${name}-${version}-${commit}.tar.gz::https://github.com/MaartenBaert/ssr/archive/${commit}/ssr-${commit}.tar.gz"
 
 build() {
-    # shellcheck disable=SC2164
-    cd "ssr-${version}"
-    patch -p1 -i "${SRC}/ffmpeg7.patch"
-
-    cmake \
+    cmake -S "ssr-${commit}" -B build \
         -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_INSTALL_LIBDIR=lib \
         -DCMAKE_BUILD_TYPE=Release \
-        -DWITH_QT5=on
+        -DWITH_QT5=FALSE \
+        -DWITH_QT6=TRUE
 
-    make
-    make DESTDIR="${PKG}" install
+    cmake --build build
+    DESTDIR="${PKG}" cmake --install build
 }
