@@ -8,18 +8,18 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=minisign
 version=0.12
 release=1
-source="https://github.com/jedisct1/${name}/releases/download/${version}/${name}-${version}.tar.gz"
+
+commit=e369d9447d7d96b8bbc6a7cd73b6b1e4ccd2f934
+source="${name}-${version}-${commit}.tar.gz::https://github.com/jedisct1/${name}/archive/${commit}/${commit}.tar.gz"
 
 build() {
-    cmake -S "${name}-${version}" -B build -G Ninja \
-        -DCMAKE_INSTALL_PREFIX=/usr \
-        -DCMAKE_INSTALL_LIBDIR=lib \
-        -DCMAKE_INSTALL_LIBEXECDIR=lib \
-        -DCMAKE_BUILD_TYPE=Release \
-        -DCMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
-        -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
-        -Wno-dev
+    # shellcheck disable=SC2164
+    cd "${name}-${commit}"
 
-    cmake --build build
-    DESTDIR="${PKG}" cmake --install build
+    zig build \
+        -Dcpu=baseline \
+        -Doptimize=ReleaseSmall
+
+    install -Dm755 "zig-out/bin/${name}" -t "${PKG}/usr/bin/"
+    install -Dm644 share/man/man1/* -t "${PKG}/usr/share/man/man1/"
 }
