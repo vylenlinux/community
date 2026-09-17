@@ -10,7 +10,6 @@ version=3.26.4
 release=1
 
 source="${name}-${version}.run::https://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/${name%-*}-${version}-plugin.run
-    ${name}-${version}.run.asc::https://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/${name%-*}-${version}-plugin.run.asc
     hplip.state"
 
 backup="var/lib/hp/hplip.state"
@@ -21,14 +20,14 @@ build() {
     sh "${name}-${version}.run" --target . --noexec
 
     install -Dm644 plugin.spec -t "${PKG}/usr/share/hplip/"
-    install -Dm644 hp_laserjet_*.fw.gz -t "$PKG/usr/share/hplip/data/firmware/"
-    install -Dm755 fax_marvell-x86_64.so -t "$PKG/usr/share/hplip/fax/plugins/"
-    install -Dm755 hbpl1-x86_64.so -t "$PKG/usr/share/hplip/prnt/plugins/"
-    install -Dm755 lj-x86_64.so -t "$PKG/usr/share/hplip/prnt/plugins/"
-    install -Dm755 bb_*-x86_64.so -t "$PKG/usr/share/hplip/scan/plugins/"
+    install -Dm644 hp_laserjet_*.fw.gz -t "${PKG}/usr/share/hplip/data/firmware/"
+    install -Dm755 fax_marvell-x86_64.so -t "${PKG}/usr/share/hplip/fax/plugins/"
+    install -Dm755 hbpl1-x86_64.so -t "${PKG}/usr/share/hplip/prnt/plugins/"
+    install -Dm755 lj-x86_64.so -t "${PKG}/usr/share/hplip/prnt/plugins/"
+    install -Dm755 bb_*-x86_64.so -t "${PKG}/usr/share/hplip/scan/plugins/"
 
     sed -i "s/%version%/${version}/g" "${SRC}/hplip.state"
-    install -Dm644 "${SRC}/hplip.state" -t "$PKG/var/lib/hp/"
+    install -Dm644 "${SRC}/hplip.state" -t "${PKG}/var/lib/hp/"
 
     # Create symlinks
     find "${PKG}/usr/share/hplip" -type f -name "*.so" | while read -r f; do
