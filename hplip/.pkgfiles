@@ -42,14 +42,12 @@ lrwxrwxrwx root/root    usr/bin/hp-uninstall -> ../share/hplip/uninstall.py
 lrwxrwxrwx root/root    usr/bin/hp-unload -> ../share/hplip/unload.py
 lrwxrwxrwx root/root    usr/bin/hp-upgrade -> ../share/hplip/upgrade.py
 lrwxrwxrwx root/root    usr/bin/hp-wificonfig -> ../share/hplip/wificonfig.py
--rwxr-xr-x root/root    usr/bin/hpijs
 drwxr-xr-x root/root    usr/lib/
 drwxr-xr-x root/root    usr/lib/cups/
 drwxr-xr-x root/root    usr/lib/cups/backend/
 -rwx------ root/root    usr/lib/cups/backend/hp
 -rwx------ root/root    usr/lib/cups/backend/hpfax
 drwxr-xr-x root/root    usr/lib/cups/filter/
--rwxr-xr-x root/root    usr/lib/cups/filter/foomatic-rip-hplip
 -rwxr-xr-x root/root    usr/lib/cups/filter/hpcdmfax
 -rwxr-xr-x root/root    usr/lib/cups/filter/hpcups
 -rwxr-xr-x root/root    usr/lib/cups/filter/hpcupsfax
@@ -68,6 +66,7 @@ drwxr-xr-x root/root    usr/lib/python3.15/
 drwxr-xr-x root/root    usr/lib/python3.15/site-packages/
 -rwxr-xr-x root/root    usr/lib/python3.15/site-packages/cupsext.so
 -rwxr-xr-x root/root    usr/lib/python3.15/site-packages/hpmudext.so
+-rwxr-xr-x root/root    usr/lib/python3.15/site-packages/pcardext.so
 -rwxr-xr-x root/root    usr/lib/python3.15/site-packages/scanext.so
 drwxr-xr-x root/root    usr/lib/sane/
 lrwxrwxrwx root/root    usr/lib/sane/libsane-hpaio.so -> libsane-hpaio.so.1.0.0
@@ -82,9 +81,8 @@ drwxr-xr-x root/root    usr/share/applications/
 -rw-r--r-- root/root    usr/share/applications/hplip.desktop
 drwxr-xr-x root/root    usr/share/cups/
 drwxr-xr-x root/root    usr/share/cups/drv/
-drwxr-xr-x root/root    usr/share/cups/drv/HP/
--rw-r--r-- root/root    usr/share/cups/drv/HP/hpcups.drv
--rw-r--r-- root/root    usr/share/cups/drv/HP/hpijs.drv
+drwxr-xr-x root/root    usr/share/cups/drv/hp/
+-rw-r--r-- root/root    usr/share/cups/drv/hp/hpcups.drv
 drwxr-xr-x root/root    usr/share/cups/mime/
 -rw-r--r-- root/root    usr/share/cups/mime/pstotiff.convs
 -rw-r--r-- root/root    usr/share/cups/mime/pstotiff.types
@@ -1006,13 +1004,9 @@ drwxr-xr-x root/root    usr/share/ppd/
 drwxr-xr-x root/root    usr/share/ppd/HP/
 -rw-r--r-- root/root    usr/share/ppd/HP/HP-Fax-CDM-hpcups.ppd.gz
 -rw-r--r-- root/root    usr/share/ppd/HP/HP-Fax-hpcups.ppd.gz
--rw-r--r-- root/root    usr/share/ppd/HP/HP-Fax-hpijs.ppd.gz
 -rw-r--r-- root/root    usr/share/ppd/HP/HP-Fax2-hpcups.ppd.gz
--rw-r--r-- root/root    usr/share/ppd/HP/HP-Fax2-hpijs.ppd.gz
 -rw-r--r-- root/root    usr/share/ppd/HP/HP-Fax3-hpcups.ppd.gz
--rw-r--r-- root/root    usr/share/ppd/HP/HP-Fax3-hpijs.ppd.gz
 -rw-r--r-- root/root    usr/share/ppd/HP/HP-Fax4-hpcups.ppd.gz
--rw-r--r-- root/root    usr/share/ppd/HP/HP-Fax4-hpijs.ppd.gz
 -rw-r--r-- root/root    usr/share/ppd/HP/apollo-2100.ppd.gz
 -rw-r--r-- root/root    usr/share/ppd/HP/apollo-2150.ppd.gz
 -rw-r--r-- root/root    usr/share/ppd/HP/apollo-2200.ppd.gz
