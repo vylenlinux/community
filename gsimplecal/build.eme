@@ -1,16 +1,22 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Simple and lightweight GTK calendar"
 homepage="https://dmedvinsky.github.io/gsimplecal/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=gsimplecal
-version=2.5.2
+version=2.5.3
 release=1
-source="$name-$version.tar.gz::https://github.com/dmedvinsky/$name/archive/v$version.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/dmedvinsky/${name}/archive/v${version}.tar.gz"
 
 build() {
-	cd $name-$version
-	./autogen.sh
-	./configure --prefix=/usr
-	make
-	make DESTDIR=$PKG install
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    ./autogen.sh
+    ./configure --prefix=/usr
+
+    make
+    make DESTDIR="${PKG}" install
 }
