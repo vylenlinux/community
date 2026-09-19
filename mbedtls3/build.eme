@@ -29,7 +29,7 @@ build() {
         -DINSTALL_MBEDTLS_HEADERS=ON \
         -DMBEDTLS_FATAL_WARNINGS=OFF \
         -DENABLE_TESTING=OFF \
-        -Wno-dev
+        -Wno-author
 
     cmake --build build
     DESTDIR="${PKG}" cmake --install build

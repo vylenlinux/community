@@ -47,7 +47,7 @@ build() {
         -DWINPR_UTILS_IMAGE_WEBP=ON \
         -DWITH_CLIENT_SDL3=OFF \
         -DWITH_CLIENT_SDL2=ON \
-        -Wno-dev
+        -Wno-author
 
     cmake --build build
     DESTDIR="${PKG}" cmake --install build

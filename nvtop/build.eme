@@ -16,7 +16,7 @@ build() {
 		-DINTEL_SUPPORT=ON \
 		-DMSM_SUPPORT=OFF \
 		-DNVIDIA_SUPPORT=ON \
-		-Wno-dev
+		-Wno-author
 	cmake --build build
         DESTDIR=$PKG cmake --install build
 }

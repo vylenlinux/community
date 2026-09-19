@@ -34,7 +34,7 @@ build() {
 		-DCMAKE_DISABLE_FIND_PACKAGE_Qt6Widgets=1 \
 		-DA4_PAPER=ON \
 		-DCMAKE_BUILD_TYPE=None \
-		-Wno-dev
+		-Wno-author
 	make
 	make DESTDIR=$PKG install
 

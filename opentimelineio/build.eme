@@ -20,7 +20,7 @@ build() {
 		-DOTIO_FIND_IMATH=ON \
 		-DOTIO_AUTOMATIC_SUBMODULES=OFF \
 		-DOTIO_DEPENDENCIES_INSTALL=OFF \
-		-Wno-dev
+		-Wno-author
 	cmake --build build
 
 	# Workaround messy build system

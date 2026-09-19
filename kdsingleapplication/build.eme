@@ -17,7 +17,7 @@ build() {
         -DCMAKE_INSTALL_LIBDIR=lib \
         -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
         -DKDSingleApplication_QT6=ON \
-        -Wno-dev
+        -Wno-author
 
     cmake --build build
     DESTDIR="${PKG}" cmake --install build

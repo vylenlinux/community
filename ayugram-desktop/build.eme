@@ -19,7 +19,7 @@ build() {
         -DCMAKE_BUILD_TYPE=None \
         -DCMAKE_INSTALL_PREFIX="${SRC}/td-${tdlib_commit}/install" \
         -DTD_E2E_ONLY=ON \
-        -Wno-dev
+        -Wno-author
 
     cmake --build "td-${tdlib_commit}/build"
     cmake --install "td-${tdlib_commit}/build"
@@ -31,7 +31,7 @@ build() {
         -DTDESKTOP_API_ID=2040 \
         -DTDESKTOP_API_HASH=b18441a1ff607e10a989891a5462e627 \
         -DDESKTOP_APP_DISABLE_AUTOUPDATE=True \
-        -Wno-dev
+        -Wno-author
 
     cmake --build build
     DESTDIR="${PKG}" cmake --install build

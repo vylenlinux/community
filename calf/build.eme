@@ -16,7 +16,7 @@ build() {
 	        -DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
 		-DWANT_EXPERIMENTAL=ON \
 		-DWANT_GUI=OFF \
-	        -Wno-dev
+	        -Wno-author
 	cmake --build build
 	DESTDIR=$PKG cmake --install build
 }

@@ -23,7 +23,7 @@ build() {
         -DENABLE_EBUR128=OFF \
         -DENABLE_VLC=off \
         -DENABLE_STREAMTAGREADER=OFF \
-        -Wno-dev
+        -Wno-author
 
     cmake --build build
     DESTDIR="${PKG}" cmake --install build

@@ -16,7 +16,7 @@ build() {
 		-D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
 		-D JSON_BuildTests=OFF \
 		-D JSON_MultipleHeaders=ON \
-		-Wno-dev		
+		-Wno-author		
 	cmake --build build
 	DESTDIR=$PKG cmake --install build
 }

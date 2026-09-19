@@ -38,7 +38,7 @@ build() {
         -DENABLE_WAYLAND="$(emerald is-installed wayland && printf "ON" || printf "OFF")" \
         -DENABLE_WEBRTC=OFF \
         -DOBS_VERSION_OVERRIDE="${version}" \
-        -Wno-dev
+        -Wno-author
 
     cmake --build build
     DESTDIR="${PKG}" cmake --install build
