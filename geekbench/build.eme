@@ -6,7 +6,7 @@ homepage="https://www.geekbench.com/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=geekbench
-version=7.0.0
+version=7.1.0
 release=1
 source="${name}-${version}.tar.gz::http://cdn.geekbench.com/Geekbench-${version}-Linux.tar.gz"
 
