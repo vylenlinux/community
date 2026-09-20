@@ -1,5 +1,0 @@
-name = "utf8cpp"
-provider = "repology"
-
-[source]
-package = "utfcpp"
