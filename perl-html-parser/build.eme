@@ -6,7 +6,7 @@ homepage="https://metacpan.org/dist/HTML-Parser"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-html-parser
-version=3.85
+version=3.86
 release=1
 source="${name}-${version}.tar.gz::https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTML-Parser-${version}.tar.gz"
 
