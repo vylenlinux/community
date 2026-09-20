@@ -19,8 +19,6 @@ drwxr-xr-x root/root    usr/lib/libnfsidmap/
 -rwxr-xr-x root/root    usr/lib/libnfsidmap/regex.so
 -rw-r--r-- root/root    usr/lib/libnfsidmap/static.a
 -rwxr-xr-x root/root    usr/lib/libnfsidmap/static.so
--rw-r--r-- root/root    usr/lib/libnfsidmap/umich_ldap.a
--rwxr-xr-x root/root    usr/lib/libnfsidmap/umich_ldap.so
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/libnfsidmap.pc
 drwxr-xr-x root/root    usr/lib/udev/
