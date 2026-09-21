@@ -3,7 +3,7 @@ protobuf
 qt6-tools
 taglib
 fftw
-pulseaudio
+libpulse
 libcdio
 libmtp
 chromaprint
