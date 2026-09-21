@@ -9,7 +9,7 @@ wayland
 ffmpeg
 json-c
 krb5
-pulseaudio
+libpulse
 libwebp
 pkcs11-helper
 sdl2_ttf
