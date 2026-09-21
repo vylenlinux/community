@@ -1,6 +1,6 @@
 gtkmm
 libsigc++2
 libcanberra
-pulseaudio
+libpulse
 json-glib
 lynx
