@@ -1,6 +1,6 @@
 qt5
 openal
-pulseaudio
+libpulse
 dbus
 libusb
 libxv
