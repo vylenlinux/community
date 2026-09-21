@@ -10,11 +10,11 @@ drwxr-xr-x root/root    usr/lib/cmake/md4c/
 -rw-r--r-- root/root    usr/lib/cmake/md4c/md4cConfig-release.cmake
 -rw-r--r-- root/root    usr/lib/cmake/md4c/md4cConfig.cmake
 lrwxrwxrwx root/root    usr/lib/libmd4c-html.so -> libmd4c-html.so.0
-lrwxrwxrwx root/root    usr/lib/libmd4c-html.so.0 -> libmd4c-html.so.0.5.3
--rwxr-xr-x root/root    usr/lib/libmd4c-html.so.0.5.3
+lrwxrwxrwx root/root    usr/lib/libmd4c-html.so.0 -> libmd4c-html.so.0.6.0
+-rwxr-xr-x root/root    usr/lib/libmd4c-html.so.0.6.0
 lrwxrwxrwx root/root    usr/lib/libmd4c.so -> libmd4c.so.0
-lrwxrwxrwx root/root    usr/lib/libmd4c.so.0 -> libmd4c.so.0.5.3
--rwxr-xr-x root/root    usr/lib/libmd4c.so.0.5.3
+lrwxrwxrwx root/root    usr/lib/libmd4c.so.0 -> libmd4c.so.0.6.0
+-rwxr-xr-x root/root    usr/lib/libmd4c.so.0.6.0
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/md4c-html.pc
 -rw-r--r-- root/root    usr/lib/pkgconfig/md4c.pc
