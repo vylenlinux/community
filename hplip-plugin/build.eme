@@ -6,13 +6,12 @@ homepage="https://developers.hp.com/hp-linux-imaging-and-printing/binary_plugin.
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=hplip-plugin
-version=3.26.4
+version=3.26.6
 release=1
+backup="var/lib/hp/hplip.state"
 
 source="${name}-${version}.run::https://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/${name%-*}-${version}-plugin.run
     hplip.state"
-
-backup="var/lib/hp/hplip.state"
 
 build() {
     # shellcheck disable=SC2164
