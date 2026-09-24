@@ -6,7 +6,7 @@ homepage="https://github.com/M0Rf30/android-udev-rules"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=android-udev
-version=20260423
+version=20260922
 release=1
 source="${name}-${version}.zip::https://github.com/M0Rf30/${name}-rules/archive/${version}.zip"
 
