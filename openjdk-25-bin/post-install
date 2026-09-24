@@ -1,0 +1,3 @@
+#!/bin/sh
+
+printf "==> Run 'java-manager help' to switching between JVM\n"
