@@ -1,9 +1,17 @@
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
+-rwxr-xr-x root/root    usr/bin/airbase-ng
 -rwxr-xr-x root/root    usr/bin/aircrack-ng
 -rwxr-xr-x root/root    usr/bin/airdecap-ng
 -rwxr-xr-x root/root    usr/bin/airdecloak-ng
+-rwxr-xr-x root/root    usr/bin/aireplay-ng
+-rwxr-xr-x root/root    usr/bin/airmon-ng
+-rwxr-xr-x root/root    usr/bin/airodump-ng
+-rwxr-xr-x root/root    usr/bin/airodump-ng-oui-update
 -rwxr-xr-x root/root    usr/bin/airolib-ng
+-rwxr-xr-x root/root    usr/bin/airserv-ng
+-rwxr-xr-x root/root    usr/bin/airtun-ng
+-rwxr-xr-x root/root    usr/bin/airventriloquist-ng
 -rwxr-xr-x root/root    usr/bin/buddy-ng
 -rwxr-xr-x root/root    usr/bin/ivstools
 -rwxr-xr-x root/root    usr/bin/kstats
@@ -85,15 +93,6 @@ lrwxrwxrwx root/root    usr/lib/libaircrack-ce-wpa-x86-sse2.so -> libaircrack-ce
 lrwxrwxrwx root/root    usr/lib/libaircrack-ce-wpa.so -> libaircrack-ce-wpa-1.7.0.so
 -rwxr-xr-x root/root    usr/lib/libaircrack-osdep-1.7.0.so
 lrwxrwxrwx root/root    usr/lib/libaircrack-osdep.so -> libaircrack-osdep-1.7.0.so
-drwxr-xr-x root/root    usr/sbin/
--rwxr-xr-x root/root    usr/sbin/airbase-ng
--rwxr-xr-x root/root    usr/sbin/aireplay-ng
--rwxr-xr-x root/root    usr/sbin/airmon-ng
--rwxr-xr-x root/root    usr/sbin/airodump-ng
--rwxr-xr-x root/root    usr/sbin/airodump-ng-oui-update
--rwxr-xr-x root/root    usr/sbin/airserv-ng
--rwxr-xr-x root/root    usr/sbin/airtun-ng
--rwxr-xr-x root/root    usr/sbin/airventriloquist-ng
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/man/
 drwxr-xr-x root/root    usr/share/man/man1/

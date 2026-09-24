@@ -1,10 +1,10 @@
-drwxr-xr-x root/root    lib/
-drwxr-xr-x root/root    lib/udev/
-drwxr-xr-x root/root    lib/udev/rules.d/
--rw-r--r-- root/root    lib/udev/rules.d/90-brightnessctl.rules
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/brightnessctl
+drwxr-xr-x root/root    usr/lib/
+drwxr-xr-x root/root    usr/lib/udev/
+drwxr-xr-x root/root    usr/lib/udev/rules.d/
+-rw-r--r-- root/root    usr/lib/udev/rules.d/90-brightnessctl.rules
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/man/
 drwxr-xr-x root/root    usr/share/man/man1/

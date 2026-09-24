@@ -26,7 +26,6 @@ drwxr-xr-x root/root    etc/sane.d/dll.d/
 -rw-r--r-- root/root    etc/sane.d/epson.conf
 -rw-r--r-- root/root    etc/sane.d/epson2.conf
 -rw-r--r-- root/root    etc/sane.d/epsonds.conf
--rw-r--r-- root/root    etc/sane.d/escl.conf
 -rw-r--r-- root/root    etc/sane.d/fujitsu.conf
 -rw-r--r-- root/root    etc/sane.d/genesys.conf
 -rw-r--r-- root/root    etc/sane.d/gphoto2.conf
@@ -89,6 +88,7 @@ drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/gamma4scanimage
 -rwxr-xr-x root/root    usr/bin/sane-config
 -rwxr-xr-x root/root    usr/bin/sane-find-scanner
+-rwxr-xr-x root/root    usr/bin/saned
 -rwxr-xr-x root/root    usr/bin/scanimage
 -rwxr-xr-x root/root    usr/bin/umax_pp
 drwxr-xr-x root/root    usr/include/
@@ -180,9 +180,6 @@ lrwxrwxrwx root/root    usr/lib/sane/libsane-epson2.so.1 -> libsane-epson2.so.1.
 lrwxrwxrwx root/root    usr/lib/sane/libsane-epsonds.so -> libsane-epsonds.so.1.2.1
 lrwxrwxrwx root/root    usr/lib/sane/libsane-epsonds.so.1 -> libsane-epsonds.so.1.2.1
 -rwxr-xr-x root/root    usr/lib/sane/libsane-epsonds.so.1.2.1
-lrwxrwxrwx root/root    usr/lib/sane/libsane-escl.so -> libsane-escl.so.1.2.1
-lrwxrwxrwx root/root    usr/lib/sane/libsane-escl.so.1 -> libsane-escl.so.1.2.1
--rwxr-xr-x root/root    usr/lib/sane/libsane-escl.so.1.2.1
 lrwxrwxrwx root/root    usr/lib/sane/libsane-fujitsu.so -> libsane-fujitsu.so.1.2.1
 lrwxrwxrwx root/root    usr/lib/sane/libsane-fujitsu.so.1 -> libsane-fujitsu.so.1.2.1
 -rwxr-xr-x root/root    usr/lib/sane/libsane-fujitsu.so.1.2.1
@@ -369,9 +366,92 @@ lrwxrwxrwx root/root    usr/lib/sane/libsane-v4l.so.1 -> libsane-v4l.so.1.2.1
 lrwxrwxrwx root/root    usr/lib/sane/libsane-xerox_mfp.so -> libsane-xerox_mfp.so.1.2.1
 lrwxrwxrwx root/root    usr/lib/sane/libsane-xerox_mfp.so.1 -> libsane-xerox_mfp.so.1.2.1
 -rwxr-xr-x root/root    usr/lib/sane/libsane-xerox_mfp.so.1.2.1
-drwxr-xr-x root/root    usr/sbin/
--rwxr-xr-x root/root    usr/sbin/saned
 drwxr-xr-x root/root    usr/share/
+drwxr-xr-x root/root    usr/share/locale/
+drwxr-xr-x root/root    usr/share/locale/bg/
+drwxr-xr-x root/root    usr/share/locale/bg/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/bg/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/ca/
+drwxr-xr-x root/root    usr/share/locale/ca/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/ca/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/ca@valencia/
+drwxr-xr-x root/root    usr/share/locale/ca@valencia/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/ca@valencia/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/cs/
+drwxr-xr-x root/root    usr/share/locale/cs/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/cs/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/da/
+drwxr-xr-x root/root    usr/share/locale/da/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/da/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/de/
+drwxr-xr-x root/root    usr/share/locale/de/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/de/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/en@boldquot/
+drwxr-xr-x root/root    usr/share/locale/en@boldquot/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/en@boldquot/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/en@quot/
+drwxr-xr-x root/root    usr/share/locale/en@quot/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/en@quot/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/en_GB/
+drwxr-xr-x root/root    usr/share/locale/en_GB/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/en_GB/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/eo/
+drwxr-xr-x root/root    usr/share/locale/eo/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/eo/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/es/
+drwxr-xr-x root/root    usr/share/locale/es/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/es/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/fi/
+drwxr-xr-x root/root    usr/share/locale/fi/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/fi/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/fr/
+drwxr-xr-x root/root    usr/share/locale/fr/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/fr/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/gl/
+drwxr-xr-x root/root    usr/share/locale/gl/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/gl/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/he/
+drwxr-xr-x root/root    usr/share/locale/he/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/he/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/hu/
+drwxr-xr-x root/root    usr/share/locale/hu/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/hu/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/it/
+drwxr-xr-x root/root    usr/share/locale/it/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/it/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/ja/
+drwxr-xr-x root/root    usr/share/locale/ja/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/ja/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/ka/
+drwxr-xr-x root/root    usr/share/locale/ka/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/ka/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/nb/
+drwxr-xr-x root/root    usr/share/locale/nb/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/nb/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/nl/
+drwxr-xr-x root/root    usr/share/locale/nl/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/nl/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/pl/
+drwxr-xr-x root/root    usr/share/locale/pl/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/pl/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/pt/
+drwxr-xr-x root/root    usr/share/locale/pt/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/pt/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/ru/
+drwxr-xr-x root/root    usr/share/locale/ru/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/ru/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/sv/
+drwxr-xr-x root/root    usr/share/locale/sv/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/sv/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/tr/
+drwxr-xr-x root/root    usr/share/locale/tr/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/tr/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/uk/
+drwxr-xr-x root/root    usr/share/locale/uk/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/uk/LC_MESSAGES/sane-backends.mo
+drwxr-xr-x root/root    usr/share/locale/zh_CN/
+drwxr-xr-x root/root    usr/share/locale/zh_CN/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/zh_CN/LC_MESSAGES/sane-backends.mo
 drwxr-xr-x root/root    usr/share/man/
 drwxr-xr-x root/root    usr/share/man/man1/
 -rw-r--r-- root/root    usr/share/man/man1/gamma4scanimage.1.gz
@@ -404,7 +484,6 @@ drwxr-xr-x root/root    usr/share/man/man5/
 -rw-r--r-- root/root    usr/share/man/man5/sane-epson.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/sane-epson2.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/sane-epsonds.5.gz
--rw-r--r-- root/root    usr/share/man/man5/sane-escl.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/sane-fujitsu.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/sane-genesys.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/sane-gphoto2.5.gz

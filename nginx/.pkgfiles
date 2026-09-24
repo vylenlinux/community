@@ -17,8 +17,8 @@ drwxr-xr-x root/root    etc/nginx/html/
 -rw-r--r-- root/root    etc/nginx/uwsgi_params
 -rw-r--r-- root/root    etc/nginx/win-utf
 drwxr-xr-x root/root    usr/
-drwxr-xr-x root/root    usr/sbin/
--rwxr-xr-x root/root    usr/sbin/nginx
+drwxr-xr-x root/root    usr/bin/
+-rwxr-xr-x root/root    usr/bin/nginx
 drwxr-xr-x root/root    var/
 drwxr-xr-x root/root    var/log/
 drwxr-xr-x root/root    var/log/nginx/

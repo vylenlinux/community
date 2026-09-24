@@ -5,9 +5,9 @@
 # 'prefork' model. A thread-based model, 'worker', is also
 # available, but does not work with some modules (such as PHP).
 #
-#HTTPD=/usr/sbin/httpd.worker
+#HTTPD=/usr/bin/httpd.worker
 
-HTTPD="/usr/sbin/httpd"
+HTTPD="/usr/bin/httpd"
 
 #
 # To pass additional options (for instance, -D definitions) to the

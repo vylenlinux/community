@@ -1,4 +1,4 @@
-#!/sbin/openrc-run
+#!/usr/bin/openrc-run
 
 # shellcheck disable=SC2034
 extra_stopped_commands="setup"
@@ -16,16 +16,16 @@ depend() {
 }
 
 start_pre() {
-    required_dirs="$(getconf datadir "/var/lib/mysql")"
+    required_dirs="$(get_conf datadir "/var/lib/mysql")"
 
-    if [ ! -d "${required_dirs}/mysql" ]; then
+    [ -d "${required_dirs}/mysql" ] || {
         eerror "Datadir '${required_dirs}' is empty or invalid."
         eerror "Run '/etc/init.d/mariadb setup' to create new database."
-    fi
+    }
 }
 
 start_post() {
-    ewaitfile 10 "$(getconf socket "/run/mysqld/mysqld.sock")"
+    ewaitfile 10 "$(get_conf socket "/run/mysqld/mysqld.sock")"
 }
 
 setup() {
@@ -38,7 +38,7 @@ setup() {
     eend $?
 }
 
-getconf() {
+get_conf() {
     v="$(my_print_defaults --mysqld | grep ^--"${1}")"
-    [ -z "${v}" ] && echo "${2}" || echo "${v#*=}"
+    [ -z "${v}" ] && printf "%s" "${2}" || printf "%s" "${v#*=}"
 }

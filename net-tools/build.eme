@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Configuration tools for Linux networking"
 homepage="http://net-tools.sourceforge.net/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,16 +8,25 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=net-tools
 version=2.10
 release=1
-source="https://downloads.sourceforge.net/project/net-tools/$name-$version.tar.xz"
+
+source="https://downloads.sourceforge.net/project/${name}/${name}-${version}.tar.xz
+    disable-rose.patch"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+    patch -Np1 -i "${SRC}/disable-rose.patch"
 
-	yes "" | make config
-	make
-	make DESTDIR=$PKG install
-	rm $PKG/bin/hostname
-	rm $PKG/bin/dnsdomainname
-	rm $PKG/usr/share/man/man1/dnsdomainname.1
-	rm $PKG/usr/share/man/man1/hostname.1
+    export BINDIR=/usr/bin
+    export SBINDIR=/usr/bin
+
+    yes "" | make config
+    make
+    make DESTDIR="${PKG}" install
+
+    # fix conflict with inetutils
+    rm "${PKG}/usr/bin/hostname" \
+        "${PKG}/usr/bin/dnsdomainname" \
+        "${PKG}/usr/share/man/man1/dnsdomainname.1" \
+        "${PKG}/usr/share/man/man1/hostname.1"
 }

@@ -1,7 +1,7 @@
-#!/sbin/openrc-run
+#!/usr/bin/openrc-run
 
 # shellcheck disable=SC2034
-command=/usr/sbin/tlp-pd
+command=/usr/bin/tlp-pd
 name="TLP Profile Daemon"
 command_background=true
 pidfile="/run/tlp-pd.pid"

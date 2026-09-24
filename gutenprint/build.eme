@@ -13,10 +13,13 @@ source="http://downloads.sourceforge.net/project/gimp-print/${name}-5.3/${versio
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
+
+    sed -i "s:cups_sbindir=\"\${cups_exec_prefix}\/sbin\":cups_sbindir=\"\${cups_exec_prefix}\/bin\":" m4local/stp_cups.m4
     ./autogen.sh
 
     ./configure \
         --prefix=/usr \
+        --sbindir=/usr/bin \
         --disable-nls \
         --disable-samples \
         --disable-libgutenprintui2 \

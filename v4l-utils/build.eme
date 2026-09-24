@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Provides a series of utilities for media devices"
 homepage="https://www.linuxtv.org"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,15 +8,18 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=v4l-utils
 version=1.32.0
 release=1
-source="https://www.linuxtv.org/downloads/v4l-utils/$name-$version.tar.xz"
+source="https://www.linuxtv.org/downloads/${name}/${name}-${version}.tar.xz"
 
 build() {
+    export CFLAGS="${CFLAGS} -O2 -flto=auto"
+    export CXXFLAGS="${CXXFLAGS} -O2 -flto=auto"
 
-	export CFLAGS="$CFLAGS -O2 -flto=auto"
-	export CXXFLAGS="$CXXFLAGS -O2 -flto=auto"
+    sed -i 's/sbin/bin/' "${name}-${version}/utils/v4l2-dbg/meson.build"
 
-	vylen-meson $name-$version build \
-		    -Dgconv=disabled
-	meson compile -C build
-	DESTDIR=$PKG meson install --no-rebuild -C build
+    vylen-meson "${name}-${version}" build \
+        -Dgconv=disabled \
+        -Dudevdir=/usr/lib/udev
+
+    meson compile -C build
+    DESTDIR="${PKG}" meson install --no-rebuild -C build
 }

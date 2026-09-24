@@ -21,6 +21,7 @@ build() {
 
     ./configure \
         --prefix=/usr \
+        --sbindir=/usr/bin \
         --localstatedir=/var \
         --sysconfdir=/etc \
         --enable-pthread \
@@ -31,8 +32,8 @@ build() {
         --with-libcurl \
         --with-usb
 
-	make
-	make -j1 DESTDIR="${PKG}" install
+    make
+    make -j1 DESTDIR="${PKG}" install
 
-	install -Dm644 tools/udev/libsane.rules "${PKG}/etc/udev/rules.d/85-libsane.rules"
+    install -Dm644 tools/udev/libsane.rules "${PKG}/etc/udev/rules.d/85-libsane.rules"
 }

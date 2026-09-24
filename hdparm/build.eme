@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="A shell utility for manipulating Linux IDE drive/driver parameters"
 homepage="https://sourceforge.net/projects/hdparm/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,10 +8,15 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=hdparm
 version=9.65
 release=1
-source="https://downloads.sourceforge.net/hdparm/$name-$version.tar.gz"
+source="https://downloads.sourceforge.net/${name}/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
-	make
-	make DESTDIR=$PKG install
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    make
+    make DESTDIR="${PKG}" sbindir=/usr/bin install
+
+    install -Dm755 contrib/idectl -t "${PKG}/usr/bin/"
+    install -Dm755 contrib/ultrabayd -t "${PKG}/usr/bin/"
 }

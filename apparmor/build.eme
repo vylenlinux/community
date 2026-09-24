@@ -8,11 +8,14 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=apparmor
 version=5.0.2
 release=1
-source="${name}-${version}.tar.gz::https://gitlab.com/${name}/${name}/-/archive/v${version}/${name}-v${version}.tar.gz"
+
+source="${name}-${version}.tar.gz::https://gitlab.com/${name}/${name}/-/archive/v${version}/${name}-v${version}.tar.gz
+    https://gitlab.com/apparmor/apparmor/-/commit/6b80489953728aab8aeb4f9075283feb26e2e262.patch"
 
 build() {
     # shellcheck disable=SC2164
     cd "${name}-v${version}"
+    patch -Np1 -i "${SRC}/6b80489953728aab8aeb4f9075283feb26e2e262.patch"
 
     # shellcheck disable=SC2164
     cd libraries/libapparmor
@@ -21,6 +24,7 @@ build() {
 
         ./configure \
             --prefix=/usr \
+            --sbindir=/usr/bin \
             --libdir=/usr/lib \
             --libexecdir=/usr/lib \
             --with-python \
@@ -51,20 +55,18 @@ build() {
 
     make -C libraries/libapparmor install DESTDIR="${PKG}"
     make -C changehat/pam_apparmor install DESTDIR="${PKG}"
-    make -C binutils install DESTDIR="${PKG}" BINDIR="${PKG}/usr/bin"
-    make -C parser install DESTDIR="${PKG}" BINDIR="${PKG}/usr/bin"
+    make -C binutils install DESTDIR="${PKG}" SBINDIR="${PKG}/usr/bin" USR_SBINDIR="${PKG}/usr/bin"
+    make -C parser install DESTDIR="${PKG}" SBINDIR="${PKG}/usr/bin" USR_SBINDIR="${PKG}/usr/bin"
     make -C profiles install DESTDIR="${PKG}"
-    VIM_INSTALL_PATH="${PKG}/usr/share/vim/vimfiles/syntax" make -C utils install DESTDIR="${PKG}" BINDIR="${PKG}/usr/bin"
+    make -C utils install DESTDIR="${PKG}" SBINDIR="${PKG}/usr/bin" USR_SBINDIR="${PKG}/usr/bin" BINDIR="${PKG}/usr/bin" VIM_INSTALL_PATH="${PKG}/usr/share/vim/vimfiles/syntax"
+    make -C init DESTDIR="${PKG}" SBINDIR="${PKG}/usr/bin" USR_SBINDIR="${PKG}/usr/bin" APPARMOR_BIN_PREFIX="${PKG}/usr/lib/apparmor" install
 
-    mv "${PKG}/lib" "${PKG}/usr/lib"
-    mkdir -p "${PKG}/usr/lib/apparmor" "${PKG}/lib"
-    mv "${PKG}/usr/lib/lib/security" "${PKG}/lib"
+    mv "${PKG}/lib/security" -t "${PKG}/usr/lib/"
+    rmdir "${PKG}/lib"
 
-    rm -r "${PKG}/usr/lib/lib/"
-    rm -f "${PKG}/etc/apparmor.d/abstractions"/*systemd* "${PKG}/etc/apparmor.d"/systemd*
+    rm -f "${PKG}/etc/apparmor.d/abstractions"/*systemd* \
+        "${PKG}/etc/apparmor.d"/systemd*
 
     install -Dm644 changehat/pam_apparmor/README "${PKG}/usr/share/doc/apparmor/README.pam_apparmor"
-    install -Dm755 init/rc.apparmor.functions -t "${PKG}/usr/lib/apparmor/"
-
     do_service "${name}"
 }

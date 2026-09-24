@@ -1,2 +1,3 @@
-drwxr-xr-x root/root    sbin/
--rwxr-xr-x root/root    sbin/tini
+drwxr-xr-x root/root    usr/
+drwxr-xr-x root/root    usr/bin/
+-rwxr-xr-x root/root    usr/bin/tini

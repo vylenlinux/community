@@ -15,10 +15,11 @@ build() {
     cd "${name}-${version}"
 
     # disable avahi
-    emerald is-installed avahi || OPTS='--disable-avahi'
+    emerald is-installed avahi || OPTS="--disable-avahi"
 
     ./configure \
         --prefix=/usr \
+        --sbindir=/usr/bin \
         --sysconfdir=/etc \
         --runstatedir=/run \
         --with-cups-rundir=/run/cups \

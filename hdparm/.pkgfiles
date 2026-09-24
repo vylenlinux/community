@@ -1,6 +1,8 @@
-drwxr-xr-x root/root    sbin/
--rwxr-xr-x root/root    sbin/hdparm
 drwxr-xr-x root/root    usr/
+drwxr-xr-x root/root    usr/bin/
+-rwxr-xr-x root/root    usr/bin/hdparm
+-rwxr-xr-x root/root    usr/bin/idectl
+-rwxr-xr-x root/root    usr/bin/ultrabayd
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/man/
 drwxr-xr-x root/root    usr/share/man/man8/

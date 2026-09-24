@@ -17,7 +17,6 @@ build() {
     ./configure \
         --prefix=/usr \
         --sysconfdir=/etc \
-        --sbindir=/usr/sbin \
         --disable-nfsv4 \
         --disable-gss
 

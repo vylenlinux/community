@@ -14,10 +14,17 @@ build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
 
+    sed -i "s|sbindir = /sbin|sbindir = /usr/bin|g" utils/*/Makefile.am
+    sed -i "s|sbin|bin|" utils/nfsidmap/id_resolver.conf
+    sed -i "s|libexec|bin|" tools/nfsrahead/99-nfs.rules
+
+    autoreconf -fi
+
     ./configure \
         --prefix=/usr \
+        --sbindir=/usr/bin \
         --sysconfdir=/etc \
-        --libexecdir=/usr/sbin \
+        --libexecdir=/usr/bin \
         --with-statedir=/var/lib/nfs \
         --with-systemd=no \
         --without-tcp-wrappers \

@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="The successor of clalsadrv, provides easy access to ALSA PCM devices"
 homepage="https://kokkinizita.linuxaudio.org/linuxaudio/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,39 +8,46 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=zita-alsa-pcmi
 version=0.6.1
 release=1
-source="http://kokkinizita.linuxaudio.org/linuxaudio/downloads/$name-$version.tar.bz2"
+source="https://kokkinizita.linuxaudio.org/linuxaudio/downloads/${name}-${version}.tar.bz2"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	PATH="$PATH:/sbin:/bin:/usr/sbin:/usr/bin"
+    # remove optimization
+    # call ldconfig in local context
+    # shellcheck disable=SC2016
+    sed \
+        -e '/native/d' \
+        -e 's/ldconfig/& -N $(DESTDIR)\/$(LIBDIR)/' \
+    -i source/Makefile
 
-	# remove optimization
-	# call ldconfig in local context
-	sed -e '/native/d' \
-	    -e 's/ldconfig/& -N $(DESTDIR)\/$(LIBDIR)/' \
-	    -i source/Makefile
-	# fix use of BINDIR without preceeding DESTDIR
-	sed -e 's/\ $(BINDIR)/\ $(DESTDIR)$(BINDIR)/' \
-	    -i apps/Makefile
+    # fix use of BINDIR without preceeding DESTDIR
+    # shellcheck disable=SC2016
+    sed -e 's/\ $(BINDIR)/\ $(DESTDIR)$(BINDIR)/' -i apps/Makefile
 
-	cd source
-	make
+    # shellcheck disable=SC2164
+    cd source
+        make
 
-	# create lib link for building apps
-	ln -sv lib$name.so.$version lib$name.so
+        # create lib link for building apps
+        ln -s "lib${name}.so.${version}" "lib${name}.so"
+    # shellcheck disable=SC2103
+    cd ..
 
-	cd ../apps
-	CXXFLAGS="$CXXFLAGS -fPIC -I../source" \
-	LDFLAGS="$LDFLAGS -L../source" \
-	make
+    # shellcheck disable=SC2164
+    cd apps
+        export CXXFLAGS="${CXXFLAGS} -fPIC -I../source"
+        export LDFLAGS="${LDFLAGS} -L../source"
 
-	rm -v ../source/lib$name.so
+        make
+    cd ..
 
-	cd ..
-	# libs
-	make -C source DESTDIR=$PKG PREFIX=/usr SUFFIX="" install
+    rm -f "source/lib${name}.so"
 
-	# apps
-	make -C apps DESTDIR=$PKG PREFIX=/usr install
+    # libs
+    make -C source DESTDIR="${PKG}" PREFIX=/usr SUFFIX="" install
+
+    # apps
+    make -C apps DESTDIR="${PKG}" PREFIX=/usr install
 }

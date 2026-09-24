@@ -1,8 +1,8 @@
-#!/sbin/openrc-run
+#!/usr/bin/openrc-run
 
 # shellcheck disable=SC2034
 pidfile="/run/cups-browsed.pid"
-command="/usr/sbin/cups-browsed"
+command="/usr/bin/cups-browsed"
 command_background="true"
 
 depend() {

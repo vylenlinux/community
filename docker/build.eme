@@ -58,7 +58,7 @@ build() {
     install -Dm644 "${SRC}/${name}.conf" -t "${PKG}/etc/"
 
     # symlink externally provided tini-static binary
-    ln -sf /sbin/tini "${PKG}/usr/bin/docker-init"
+    ln -sf tini "${PKG}/usr/bin/docker-init"
     ln -s containerd "${PKG}/usr/bin/docker-containerd"
     ln -s containerd-shim "${PKG}/usr/bin/docker-containerd-shim"
     ln -s ctr "${PKG}/usr/bin/docker-containerd-ctr"

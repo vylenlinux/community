@@ -8,7 +8,6 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=ufw
 version=0.36.2
 release=1
-source="https://launchpad.net/${name}/${version%.*}/${version}/+download/${name}-${version}.tar.gz"
 
 backup="etc/${name}/before.rules
     etc/${name}/before6.rules
@@ -20,9 +19,16 @@ backup="etc/${name}/before.rules
     etc/${name}/user6.rules
     etc/default/${name}"
 
+source="https://launchpad.net/${name}/${version%.*}/${version}/+download/${name}-${version}.tar.gz
+    01-move-from-lib-to-usr-lib.patch
+    03-tcp-selective-acks.patch"
+
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
+
+    patch -Np1 -i "${SRC}/01-move-from-lib-to-usr-lib.patch"
+    patch -Np1 -i "${SRC}/03-tcp-selective-acks.patch"
 
     python3 ./setup.py build
     python3 ./setup.py install --root="${PKG}"

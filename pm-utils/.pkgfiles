@@ -6,7 +6,11 @@ drwxr-xr-x root/root    etc/pm/sleep.d/
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/on_ac_power
+lrwxrwxrwx root/root    usr/bin/pm-hibernate -> /usr/lib/pm-utils/bin/pm-action
 -rwxr-xr-x root/root    usr/bin/pm-is-supported
+-rwxr-xr-x root/root    usr/bin/pm-powersave
+lrwxrwxrwx root/root    usr/bin/pm-suspend -> /usr/lib/pm-utils/bin/pm-action
+lrwxrwxrwx root/root    usr/bin/pm-suspend-hybrid -> /usr/lib/pm-utils/bin/pm-action
 drwxr-xr-x root/root    usr/lib/
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/pm-utils.pc
@@ -48,11 +52,6 @@ drwxr-xr-x root/root    usr/lib/pm-utils/sleep.d/
 -rwxr-xr-x root/root    usr/lib/pm-utils/sleep.d/95led
 -rwxr-xr-x root/root    usr/lib/pm-utils/sleep.d/98video-quirk-db-handler
 -rwxr-xr-x root/root    usr/lib/pm-utils/sleep.d/99video
-drwxr-xr-x root/root    usr/sbin/
-lrwxrwxrwx root/root    usr/sbin/pm-hibernate -> /usr/lib/pm-utils/bin/pm-action
--rwxr-xr-x root/root    usr/sbin/pm-powersave
-lrwxrwxrwx root/root    usr/sbin/pm-suspend -> /usr/lib/pm-utils/bin/pm-action
-lrwxrwxrwx root/root    usr/sbin/pm-suspend-hybrid -> /usr/lib/pm-utils/bin/pm-action
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/man/
 drwxr-xr-x root/root    usr/share/man/man1/

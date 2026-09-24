@@ -13,7 +13,12 @@ source="https://github.com/linrunner/${name}/archive/${version}/${name}-${versio
 build() {
     # shellcheck disable=SC2164
     cd "TLP-${version}"
-    make DESTDIR="${PKG}" install
 
+    export TLP_NO_INIT=1
+    export TLP_SBIN=/usr/bin
+    export TLP_WITH_ELOGIND=1
+    export TLP_WITH_SYSTEMD=0
+
+    make DESTDIR="${PKG}" install
     do_service "${name}" "${name}-pd"
 }

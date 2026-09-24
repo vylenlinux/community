@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Program to read and control device brightness"
 homepage="https://github.com/Hummer12007/brightnessctl"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,13 +8,12 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=brightnessctl
 version=0.5.1
 release=1
-source="$name-$version.tar.gz::https://github.com/Hummer12007/brightnessctl/archive/$version.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/Hummer12007/${name}/archive/${version}.tar.gz"
 
 build() {
-        cd  $name-$version
-	make INSTALL_UDEV_RULES=1
-	make install DESTDIR=$PKG INSTALL_UDEV_RULES=1
-	install=$name.post-install
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    make
+    make DESTDIR="${PKG}" INSTALL_UDEV_RULES=1 UDEVDIR=/usr/lib/udev/rules.d install
 }
-
-

@@ -14,9 +14,10 @@ build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
 
-    # NOTE: Don't set --prefix, it should be /.
     ./configure \
-        --libexecdir=/lib/resolvconf \
+        --prefix=/usr \
+        --sbindir=/usr/bin \
+        --libexecdir=/usr/lib/resolvconf \
         --mandir=/usr/share/man \
         --rundir=/run \
         --sysconfdir=/etc
