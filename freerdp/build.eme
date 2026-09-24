@@ -6,7 +6,7 @@ homepage="https://www.freerdp.com/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=freerdp
-version=3.31.1
+version=3.32.0
 release=1
 source="https://github.com/${name}/${name}/archive/${version}/${name}-${version}.tar.gz"
 
