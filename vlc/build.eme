@@ -6,14 +6,14 @@ homepage="https://www.videolan.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=vlc
-version=3.0.23
-release=2
+version=3.0.24
+release=1
 source="https://download.videolan.org/${name}/${version}/${name}-${version}.tar.xz"
 
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-    autoreconf -fv
+    autoreconf -f
 
     ./configure \
         --prefix=/usr \
