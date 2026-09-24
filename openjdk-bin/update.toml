@@ -5,4 +5,4 @@ provider = "repology"
 package = "openjdk"
 
 [repology]
-match_name = "openjdk-25"
+match_name = "openjdk-27"
