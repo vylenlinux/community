@@ -6,23 +6,21 @@ homepage="https://containerd.io/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=containerd
-version=2.4.0
+version=2.4.1
 release=1
 source="${name}-${version}.tar.gz::https://github.com/${name}/${name}/archive/refs/tags/v${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
+    export GO111MODULE=on
 
     export GOFLAGS="${GOFLAGS} \
         -modcacherw \
         -mod=readonly"
 
-    export GO111MODULE=on
-
     make VERSION="v${version}" REVISION="091922f03c2762540fd057fba91260237ff86acb" BUILDMODE=pie
-    mkdir -p "${PKG}/usr/bin"
-
     install -Dm755 ./bin/* -t "${PKG}/usr/bin/"
+
     do_service "${name}"
 }
