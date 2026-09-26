@@ -6,7 +6,7 @@ homepage="https://github.com/opencontainers/runc"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=runc
-version=1.5.1
+version=1.5.2
 release=1
 source="https://github.com/opencontainers/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
