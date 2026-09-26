@@ -6,7 +6,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://github.com/yarnpkg/berry"
 
 name=yarn-berry
-version=4.18.0
+version=4.18.1
 release=1
 source="${name}-${version}.tar.gz::https://github.com/yarnpkg/berry/archive/refs/tags/@yarnpkg/cli/${version}.tar.gz"
 
