@@ -22,9 +22,6 @@ drwxr-xr-x root/root    usr/share/noctalia/assets/fonts/
 -rw-r--r-- root/root    usr/share/noctalia/assets/fonts/tabler.json
 -rw-r--r-- root/root    usr/share/noctalia/assets/noctalia-wallpaper.png
 -rw-r--r-- root/root    usr/share/noctalia/assets/noctalia.svg
-drwxr-xr-x root/root    usr/share/noctalia/assets/sounds/
--rw-r--r-- root/root    usr/share/noctalia/assets/sounds/notification.wav
--rw-r--r-- root/root    usr/share/noctalia/assets/sounds/volume-change.wav
 drwxr-xr-x root/root    usr/share/noctalia/assets/templates/
 drwxr-xr-x root/root    usr/share/noctalia/assets/templates/alacritty/
 -rw-r--r-- root/root    usr/share/noctalia/assets/templates/alacritty/alacritty.toml
@@ -123,6 +120,7 @@ drwxr-xr-x root/root    usr/share/noctalia/assets/translations/
 -rw-r--r-- root/root    usr/share/noctalia/assets/translations/he.json
 -rw-r--r-- root/root    usr/share/noctalia/assets/translations/hu.json
 -rw-r--r-- root/root    usr/share/noctalia/assets/translations/it.json
+-rw-r--r-- root/root    usr/share/noctalia/assets/translations/ja.json
 -rw-r--r-- root/root    usr/share/noctalia/assets/translations/ko.json
 -rw-r--r-- root/root    usr/share/noctalia/assets/translations/ku.json
 -rw-r--r-- root/root    usr/share/noctalia/assets/translations/nl.json
