@@ -6,7 +6,7 @@ homepage="http://liquidsdr.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=liquid-dsp
-version=1.8.2
+version=1.8.3
 release=1
 source="https://github.com/jgaeddert/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
