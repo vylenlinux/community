@@ -211,21 +211,9 @@ drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-manual/doc/
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/external-formats.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/ffi.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/intro.lisp
-lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/networking.lisp -> ../../sb-bsd-sockets/manual.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/package-locks.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/pathnames.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/profiling.lisp
-lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sb-aclrepl.lisp -> ../../sb-aclrepl/manual.lisp
-lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sb-concurrency.lisp -> ../../sb-concurrency/manual.lisp
-lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sb-cover.lisp -> ../../sb-cover/manual.lisp
-lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sb-grovel.lisp -> ../../sb-grovel/manual.lisp
-lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sb-introspect.lisp -> ../../sb-introspect/manual.lisp
-lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sb-md5.lisp -> ../../sb-md5/manual.lisp
-lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sb-posix.lisp -> ../../sb-posix/manual.lisp
-lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sb-queue.lisp -> ../../sb-queue/manual.lisp
-lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sb-rotate-byte.lisp -> ../../sb-rotate-byte/manual.lisp
-lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sb-simd.lisp -> ../../sb-simd/manual.lisp
-lrwxrwxrwx root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sb-simple-streams.lisp -> ../../sb-simple-streams/manual.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sbcl.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/start-stop.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/streams.lisp
@@ -331,7 +319,13 @@ drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-simd/code/
 drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-sets/
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-sets/arm64.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-sets/avx.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-sets/avx10-1.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-sets/avx10-2.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-sets/avx2.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-sets/avx512bw.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-sets/avx512dq.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-sets/avx512f.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-sets/avx512fp16.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-sets/fma.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-sets/neon.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/code/instruction-sets/sb-simd.lisp
@@ -363,6 +357,7 @@ drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/test-arefs-arm64.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/test-arefs-x86-64.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/test-arefs.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/test-arm64-regressions.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/test-hairy-simd-functions.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/test-horizontal-functions-arm64.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-simd/test-suite/test-horizontal-functions-x86-64.lisp
@@ -1005,6 +1000,7 @@ drwxr-xr-x root/root    usr/share/sbcl-source/src/compiler/riscv/
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/riscv/values.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/riscv/vm.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/saptran.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/select-tagging.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/seqtran.lisp
 drwxr-xr-x root/root    usr/share/sbcl-source/src/compiler/sparc/
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/sparc/alloc.lisp
