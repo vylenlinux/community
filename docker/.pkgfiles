@@ -9,7 +9,6 @@ drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/docker
 lrwxrwxrwx root/root    usr/bin/docker-containerd -> containerd
 lrwxrwxrwx root/root    usr/bin/docker-containerd-ctr -> ctr
-lrwxrwxrwx root/root    usr/bin/docker-containerd-shim -> containerd-shim
 lrwxrwxrwx root/root    usr/bin/docker-init -> tini
 -rwxr-xr-x root/root    usr/bin/docker-proxy
 lrwxrwxrwx root/root    usr/bin/docker-runc -> runc

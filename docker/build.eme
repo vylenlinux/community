@@ -17,7 +17,7 @@ source="https://github.com/moby/moby/archive/${name}-v${version}/moby-${version}
 
 build() {
     export GO111MODULE=auto
-    export DOCKER_GITCOMMIT=fbf3ed2
+    export DOCKER_GITCOMMIT=464cd50
     export DOCKER_BUILDTAGS=seccomp
     export DISABLE_WARN_OUTSIDE_CONTAINER=1
 
@@ -40,7 +40,7 @@ build() {
     make VERSION="${version}" GITCOMMIT="${DOCKER_GITCOMMIT}" dynbinary
     make manpages
 
-    install -Dm755 "build/docker-linux-amd64" "${PKG}/usr/bin/${name}"
+    install -Dm755 build/docker-linux-amd64 "${PKG}/usr/bin/${name}"
 
     install -dm755 "${PKG}/usr/share/man"
     cp -r man/man* "${PKG}/usr/share/man"
@@ -60,7 +60,6 @@ build() {
     # symlink externally provided tini-static binary
     ln -sf tini "${PKG}/usr/bin/docker-init"
     ln -s containerd "${PKG}/usr/bin/docker-containerd"
-    ln -s containerd-shim "${PKG}/usr/bin/docker-containerd-shim"
     ln -s ctr "${PKG}/usr/bin/docker-containerd-ctr"
     ln -s runc "${PKG}/usr/bin/docker-runc"
 
