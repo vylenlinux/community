@@ -1,5 +1,6 @@
 name = "conky"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "conky"
+owner = "brndnmtthws"
+repo = "conky"
