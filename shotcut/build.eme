@@ -6,7 +6,7 @@ homepage="https://www.shotcut.org"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=shotcut
-version=26.9.6
+version=26.9.27
 release=1
 source="${name}-${version}.tar.gz::https://github.com/mltframework/${name}/archive/v${version}.tar.gz"
 
