@@ -19,6 +19,4 @@ build() {
 
     make BUILDTAGS="seccomp exclude_graphdriver_devicemapper exclude_graphdriver_btrfs"
     make install PREFIX=/usr DESTDIR="${PKG}" LIBEXECDIR=/usr/lib
-
-    rm -f "${PKG}/usr/share/man"/man*/*systemd*
 }

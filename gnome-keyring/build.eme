@@ -11,10 +11,7 @@ release=1
 source="https://gitlab.gnome.org/GNOME/${name}/-/archive/${version}/${name}-${version}.tar.gz"
 
 build() {
-    vylen-meson "${name}-${version}" build \
-        -Dselinux=disabled \
-        -Dsystemd=disabled
-
+    vylen-meson "${name}-${version}" build -Dselinux=disabled
     meson compile -C build
     DESTDIR="${PKG}" meson install -C build
 }

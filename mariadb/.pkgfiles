@@ -1,7 +1,4 @@
 drwxr-xr-x root/root    etc/
-drwxr-xr-x root/root    etc/init.d/
--rwxr-xr-x root/root    etc/init.d/mariadb
--rwxr-xr-x root/root    etc/init.d/mysql
 -rw-r--r-- root/root    etc/my.cnf
 drwxr-xr-x root/root    etc/my.cnf.d/
 -rw-r--r-- root/root    etc/my.cnf.d/client.cnf
@@ -28,6 +25,7 @@ drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/aria_read_log
 -rwxr-xr-x root/root    usr/bin/aria_s3_copy
 -rwxr-xr-x root/root    usr/bin/galera_new_cluster
+-rwxr-xr-x root/root    usr/bin/galera_recovery
 -rwxr-xr-x root/root    usr/bin/innochecksum
 lrwxrwxrwx root/root    usr/bin/mariabackup -> mariadb-backup
 -rwxr-xr-x root/root    usr/bin/mariadb
@@ -53,6 +51,7 @@ lrwxrwxrwx root/root    usr/bin/mariadb-config -> mariadb_config
 -rwxr-xr-x root/root    usr/bin/mariadb-migrate-config-file
 -rwxr-xr-x root/root    usr/bin/mariadb-plugin
 -rwxr-xr-x root/root    usr/bin/mariadb-secure-installation
+-rwxr-xr-x root/root    usr/bin/mariadb-service-convert
 -rwxr-xr-x root/root    usr/bin/mariadb-setpermission
 -rwxr-xr-x root/root    usr/bin/mariadb-show
 -rwxr-xr-x root/root    usr/bin/mariadb-slap
@@ -723,6 +722,27 @@ drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/mariadb.pc
 drwxr-xr-x root/root    usr/lib/security/
 -rwxr-xr-x root/root    usr/lib/security/pam_user_map.so
+drwxr-xr-x root/root    usr/lib/systemd/
+drwxr-xr-x root/root    usr/lib/systemd/system/
+-rw-r--r-- root/root    usr/lib/systemd/system/mariadb-extra.socket
+-rw-r--r-- root/root    usr/lib/systemd/system/mariadb-extra@.socket
+-rw-r--r-- root/root    usr/lib/systemd/system/mariadb.service
+drwxr-xr-x root/root    usr/lib/systemd/system/mariadb.service.d/
+-rw-r--r-- root/root    usr/lib/systemd/system/mariadb.service.d/Environment-jemalloc.conf
+-rw-r--r-- root/root    usr/lib/systemd/system/mariadb.service.d/PrivateTmp.conf
+-rw-r--r-- root/root    usr/lib/systemd/system/mariadb.service.d/galera.conf
+-rw-r--r-- root/root    usr/lib/systemd/system/mariadb.socket
+-rw-r--r-- root/root    usr/lib/systemd/system/mariadb@.service
+drwxr-xr-x root/root    usr/lib/systemd/system/mariadb@.service.d/
+-rw-r--r-- root/root    usr/lib/systemd/system/mariadb@.service.d/Environment-jemalloc.conf
+-rw-r--r-- root/root    usr/lib/systemd/system/mariadb@.service.d/PrivateTmp.conf
+-rw-r--r-- root/root    usr/lib/systemd/system/mariadb@.socket
+lrwxrwxrwx root/root    usr/lib/systemd/system/mysql.service -> ./mariadb.service
+lrwxrwxrwx root/root    usr/lib/systemd/system/mysqld.service -> ./mariadb.service
+drwxr-xr-x root/root    usr/lib/sysusers.d/
+-rw-r--r-- root/root    usr/lib/sysusers.d/mariadb.conf
+drwxr-xr-x root/root    usr/lib/tmpfiles.d/
+-rw-r--r-- root/root    usr/lib/tmpfiles.d/mariadb.conf
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/aclocal/
 -rw-r--r-- root/root    usr/share/aclocal/mysql.m4

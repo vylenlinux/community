@@ -7,4 +7,3 @@ libappindicator
 libmpdclient
 playerctl
 gtk-layer-shell
-elogind

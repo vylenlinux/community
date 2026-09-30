@@ -26,13 +26,11 @@ build() {
         --sysconfdir=/etc \
         --libexecdir=/usr/bin \
         --with-statedir=/var/lib/nfs \
-        --with-systemd=no \
+        --with-systemd \
         --without-tcp-wrappers \
         --disable-gss \
         --enable-libmount-mount
 
     make
     make PREFIX="${PKG}/usr" DESTDIR="${PKG}" install
-
-    rm -f "${PKG}/usr/share/man/man7/nfs.systemd.7.gz"
 }

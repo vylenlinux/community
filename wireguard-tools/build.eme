@@ -11,7 +11,7 @@ release=1
 source="https://git.zx2c4.com/${name}/snapshot/${name}-${version}.tar.xz"
 
 build() {
-	# shellcheck disable=SC2164
+    # shellcheck disable=SC2164
     cd "${name}-${version}/src"
     make
 
@@ -19,7 +19,7 @@ build() {
         DESTDIR="${PKG}" \
         PREFIX=/usr \
         RUNSTATEDIR=/run \
-        WITH_BASHCOMPLETION="$(emerald is-installed bash-completion && echo "yes" || echo "no")" \
-        WITH_SYSTEMDUNITS=no \
+        WITH_BASHCOMPLETION="$(emerald is-installed bash-completion && printf "yes" || printf "no")" \
+        WITH_SYSTEMDUNITS=yes \
         WITH_WGQUICK=yes
 }

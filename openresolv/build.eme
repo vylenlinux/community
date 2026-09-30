@@ -24,6 +24,4 @@ build() {
 
     make
     make DESTDIR="${PKG}" install
-
-    rm -f "${PKG}/lib/resolvconf/systemd-resolved"
 }

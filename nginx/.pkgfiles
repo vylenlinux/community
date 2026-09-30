@@ -1,8 +1,4 @@
 drwxr-xr-x root/root    etc/
-drwxr-xr-x root/root    etc/conf.d/
--rw-r--r-- root/root    etc/conf.d/nginx.epkgnew
-drwxr-xr-x root/root    etc/init.d/
--rwxr-xr-x root/root    etc/init.d/nginx
 drwxr-xr-x root/root    etc/nginx/
 -rw-r--r-- root/root    etc/nginx/fastcgi.conf
 -rw-r--r-- root/root    etc/nginx/fastcgi_params
@@ -19,6 +15,8 @@ drwxr-xr-x root/root    etc/nginx/html/
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/nginx
+drwxr-xr-x root/root    usr/lib/
+drwxr-xr-x root/root    usr/lib/systemd/
 drwxr-xr-x root/root    var/
 drwxr-xr-x root/root    var/log/
 drwxr-xr-x root/root    var/log/nginx/

@@ -8,7 +8,9 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=cups
 version=2.4.19
 release=1
-source="${name}-${version}.tar.gz::https://github.com/OpenPrinting/${name}/archive/v${version}/${name}-${version}-source.tar.gz"
+
+source="${name}-${version}.tar.gz::https://github.com/OpenPrinting/${name}/archive/v${version}/${name}-${version}-source.tar.gz
+    cups.sysusers"
 
 build() {
     # shellcheck disable=SC2164
@@ -41,8 +43,7 @@ build() {
         --enable-ssl=yes \
         --with-optim="${CFLAGS}" \
         --without-php \
-        --without-rcdir \
-        --without-systemd
+        --without-rcdir
 
     make
     make BUILDROOT="${PKG}" install
@@ -63,5 +64,15 @@ build() {
         "${PKG}/var/spool"
 
     chmod -R +w "${PKG}"
-    do_service cupsd
+
+    # use cups group
+    install -Dm644 "${SRC}/cups.sysusers" "${PKG}/usr/lib/sysusers.d/${name}.conf"
+
+    sed -i "s:#User 209:User 209:" \
+        "${PKG}/etc/cups/cups-files.conf" \
+        "${PKG}/etc/cups/cups-files.conf.default"
+
+    sed -i "s:#Group 209:Group 209:" \
+        "${PKG}/etc/cups/cups-files.conf" \
+        "${PKG}/etc/cups/cups-files.conf.default"
 }

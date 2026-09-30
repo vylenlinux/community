@@ -20,7 +20,8 @@ build() {
         -mod=readonly"
 
     make VERSION="v${version}" REVISION="091922f03c2762540fd057fba91260237ff86acb" BUILDMODE=pie
-    install -Dm755 ./bin/* -t "${PKG}/usr/bin/"
+    install -Dm755 bin/* -t "${PKG}/usr/bin/"
 
-    do_service "${name}"
+    sed -i 's,/sbin,/usr/bin,;s,/usr/local,/usr,' "${name}.service"
+    install -Dm644 "${name}.service" -t "${PKG}/usr/lib/systemd/system/"
 }

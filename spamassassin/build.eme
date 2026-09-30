@@ -8,7 +8,13 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=spamassassin
 version=4.0.2
 release=1
-source="${name}-${version}.tar.bz2::https://www.apache.org/dist/${name}/source/Mail-SpamAssassin-${version}.tar.bz2"
+
+source="${name}-${version}.tar.bz2::https://www.apache.org/dist/${name}/source/Mail-SpamAssassin-${version}.tar.bz2
+    ${name}.service
+    ${name}.sysusers
+    ${name}.tmpfiles
+    ${name}-update.service
+    ${name}-update.timer"
 
 build() {
     # shellcheck disable=SC2164
@@ -20,5 +26,10 @@ build() {
     make
     make DESTDIR="${PKG}" install
 
-    do_service spamd
+    install -Dm644 "${SRC}/${name}.service" -t "${PKG}/usr/lib/systemd/system/"
+    install -Dm644 "${SRC}/${name}-update.service" -t "${PKG}/usr/lib/systemd/system/"
+    install -Dm644 "${SRC}/${name}-update.timer" -t "${PKG}/usr/lib/systemd/system/"
+
+    install -Dm644 "${SRC}/${name}.sysusers" "${PKG}/usr/lib/sysusers.d/${name}.conf"
+    install -Dm644 "${SRC}/${name}.tmpfiles" "${PKG}/usr/lib/tmpfiles.d/${name}.conf"
 }

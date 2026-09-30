@@ -4,8 +4,6 @@ drwxr-xr-x root/root    etc/apparmor.d/abstractions/
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/lightdm
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/lightdm_chromium-browser
 -rw-r--r-- root/root    etc/apparmor.d/lightdm-guest-session
-drwxr-xr-x root/root    etc/init.d/
--rwxr-xr-x root/root    etc/init.d/lightdm
 drwxr-xr-x root/root    etc/lightdm/
 -rwxr-xr-x root/root    etc/lightdm/Xsession
 -rw-r--r-- root/root    etc/lightdm/keys.conf.epkgnew
@@ -54,6 +52,11 @@ drwxr-xr-x root/root    usr/lib/lightdm/
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/liblightdm-gobject-1.pc
 -rw-r--r-- root/root    usr/lib/pkgconfig/liblightdm-qt6-3.pc
+drwxr-xr-x root/root    usr/lib/systemd/
+drwxr-xr-x root/root    usr/lib/systemd/system/
+-rw-r--r-- root/root    usr/lib/systemd/system/lightdm.service
+drwxr-xr-x root/root    usr/lib/sysusers.d/
+-rw-r--r-- root/root    usr/lib/sysusers.d/lightdm.conf
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/accountsservice/
 drwxr-xr-x root/root    usr/share/accountsservice/interfaces/
@@ -69,6 +72,10 @@ drwxr-xr-x root/root    usr/share/dbus-1/system.d/
 -rw-r--r-- root/root    usr/share/dbus-1/system.d/org.freedesktop.DisplayManager.conf
 drwxr-xr-x root/root    usr/share/gir-1.0/
 -rw-r--r-- root/root    usr/share/gir-1.0/LightDM-1.gir
+drwxr-xr-x root/root    usr/share/man/
+drwxr-xr-x root/root    usr/share/man/man1/
+-rw-r--r-- root/root    usr/share/man/man1/dm-tool.1.gz
+-rw-r--r-- root/root    usr/share/man/man1/lightdm.1.gz
 drwxr-xr-x root/root    usr/share/polkit-1/
 drwxr-xr-x root/root    usr/share/polkit-1/actions/
 -rw-r--r-- root/root    usr/share/polkit-1/actions/org.freedesktop.DisplayManager.AccountsService.policy

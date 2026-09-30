@@ -17,9 +17,7 @@ build() {
     cd "${name}-${version}"
 
     make build
-    make DESTDIR="${PKG}" install-all
-    make DESTDIR="${PKG}" install-config
-    make DESTDIR="${PKG}" install-openrc
+    make DESTDIR="${PKG}" install-all install-config install-systemd
 
     # Configure PAM
     do_pam "${name}"

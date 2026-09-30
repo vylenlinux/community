@@ -16,9 +16,8 @@ build() {
 
     export TLP_NO_INIT=1
     export TLP_SBIN=/usr/bin
-    export TLP_WITH_ELOGIND=1
-    export TLP_WITH_SYSTEMD=0
+    export TLP_WITH_ELOGIND=0
+    export TLP_WITH_SYSTEMD=1
 
     make DESTDIR="${PKG}" install
-    do_service "${name}" "${name}-pd"
 }

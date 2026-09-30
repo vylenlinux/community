@@ -10,7 +10,8 @@ version=11.1.1
 release=1
 
 source="https://download.qemu.org/qemu-${version}.tar.xz
-    qemu-ga.conf"
+    qemu-ga.conf
+    99-${name}.rules"
 
 build() {
     # shellcheck disable=SC2164
@@ -27,6 +28,8 @@ build() {
     install -Dm755 build/qga/qemu-ga "${PKG}/usr/bin/qemu-ga"
     install -Dm644 "scripts/${name}/fsfreeze-hook" -t "${PKG}/etc/qemu/"
     install -Dm755 "${SRC}/qemu-ga.conf" -t "${PKG}/etc/qemu/"
+    install -Dm644 "${SRC}/99-${name}.rules" -t "${PKG}/usr/lib/udev/rules.d/"
 
-    do_service "${name}"
+    sed -e 's/multi-user.target/sockets.target/g' -i contrib/systemd/*.socket
+    install -Dm644 contrib/systemd/* -t "${PKG}/usr/lib/systemd/system/"
 }

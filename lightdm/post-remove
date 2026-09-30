@@ -1,4 +1,0 @@
-#!/bin/sh
-
-getent passwd lightdm >/dev/null && userdel lightdm
-getent group lightdm >/dev/null && groupdel lightdm

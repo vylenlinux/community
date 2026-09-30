@@ -36,7 +36,7 @@ build() {
         -DWITH_PULSE=ON \
         -DWITH_SERVER=ON \
         -DWITH_SERVER_CHANNELS=ON \
-        -DWITH_SYSTEMD=OFF \
+        -DWITH_SYSTEMD=ON \
         -DWITH_SWSCALE=ON \
         -DWITH_WAYLAND=ON \
         -DWITH_VERBOSE_WINPR_ASSERT=OFF \

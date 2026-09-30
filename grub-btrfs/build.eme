@@ -14,5 +14,5 @@ backup="etc/default/${name}/config"
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-    OPENRC=true make DESTDIR="${PKG}" install
+    SYSTEMD=true make DESTDIR="${PKG}" install
 }

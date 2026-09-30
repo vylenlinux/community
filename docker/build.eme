@@ -13,7 +13,7 @@ backup="etc/${name}.conf"
 source="https://github.com/moby/moby/archive/${name}-v${version}/moby-${version}.tar.gz
     https://github.com/${name}/cli/archive/v${version}/cli-${version}.tar.gz
     ${name}.conf
-    01-fix-ulimit-errors.patch"
+    ${name}.sysusers"
 
 build() {
     export GO111MODULE=auto
@@ -53,8 +53,8 @@ build() {
     cd "${name}"
     VERSION="${version}" hack/make.sh dynbinary
 
-    install -Dm755 "bundles/dynbinary-daemon/dockerd" -t "${PKG}/usr/bin/"
-    install -Dm755 "bundles/dynbinary-daemon/docker-proxy" -t "${PKG}/usr/bin/"
+    install -Dm755 bundles/dynbinary-daemon/dockerd -t "${PKG}/usr/bin/"
+    install -Dm755 bundles/dynbinary-daemon/docker-proxy -t "${PKG}/usr/bin/"
     install -Dm644 "${SRC}/${name}.conf" -t "${PKG}/etc/"
 
     # symlink externally provided tini-static binary
@@ -73,8 +73,7 @@ build() {
     "${PKG}/usr/bin/${name}" completion zsh > "${PKG}/usr/share/zsh/site-functions/_docker"
     "${PKG}/usr/bin/${name}" completion fish > "${PKG}/usr/share/fish/vendor_completions.d/docker.fish"
 
-    patch -Np1 -i "${SRC}/01-fix-ulimit-errors.patch"
-
-    install -Dm644 "contrib/init/openrc/${name}.confd" "${PKG}/etc/conf.d/${name}"
-    install -Dm755 "contrib/init/openrc/${name}.initd" "${PKG}/etc/init.d/${name}"
+    install -Dm644 "contrib/init/systemd/${name}.service" -t "${PKG}/usr/lib/systemd/system/"
+    install -Dm644 "contrib/init/systemd/${name}.socket" -t "${PKG}/usr/lib/systemd/system/"
+    install -Dm644 "${SRC}/${name}.sysusers" "${PKG}/usr/lib/sysusers.d/${name}.conf"
 }

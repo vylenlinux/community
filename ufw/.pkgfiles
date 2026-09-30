@@ -1,10 +1,6 @@
 drwxr-xr-x root/root    etc/
-drwxr-xr-x root/root    etc/conf.d/
--rw-r--r-- root/root    etc/conf.d/ufw.epkgnew
 drwxr-xr-x root/root    etc/default/
 -rw-rw-r-- root/root    etc/default/ufw.epkgnew
-drwxr-xr-x root/root    etc/init.d/
--rwxr-xr-x root/root    etc/init.d/ufw
 drwxr-xr-x root/root    etc/ufw/
 -rw-r----- root/root    etc/ufw/after.init
 -rw-r----- root/root    etc/ufw/after.rules.epkgnew
@@ -56,6 +52,9 @@ drwxr-xr-x root/root    usr/lib/python3.15/site-packages/ufw/__pycache__/
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/ufw/frontend.py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/ufw/parser.py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/ufw/util.py
+drwxr-xr-x root/root    usr/lib/systemd/
+drwxr-xr-x root/root    usr/lib/systemd/system/
+-rw-r--r-- root/root    usr/lib/systemd/system/ufw.service
 drwxr-xr-x root/root    usr/lib/ufw/
 -rwxrwxr-x root/root    usr/lib/ufw/ufw-init
 -rwxrwxr-x root/root    usr/lib/ufw/ufw-init-functions

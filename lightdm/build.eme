@@ -15,7 +15,9 @@ backup="etc/${name}/keys.conf
 
 source="${name}-${version}.tar.gz::https://github.com/ubuntu/${name}/archive/refs/tags/${version}.tar.gz
     Xsession
-    ${name}.rules"
+    ${name}.rules
+    ${name}.service
+    ${name}.sysusers"
 
 build() {
     # shellcheck disable=SC2164
@@ -45,6 +47,8 @@ build() {
     sed -i 's:#session-wrapper=lightdm-session:session-wrapper=/etc/lightdm/Xsession:' "${PKG}/etc/lightdm/lightdm.conf"
     sed -i 's:minimum-uid=500:minimum-uid=1000:' "${PKG}/etc/lightdm/users.conf"
 
-    do_service "${name}"
+    install -Dm644 "${SRC}/${name}.service" -t "${PKG}/usr/lib/systemd/system/"
+    install -Dm644 "${SRC}/${name}.sysusers" "${PKG}/usr/lib/sysusers.d/${name}.conf"
+
     do_pam "${name}" "${name}-autologin"
 }
