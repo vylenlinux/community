@@ -6,7 +6,7 @@ homepage="https://www.qemu.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=qemu-guest-agent
-version=11.1.1
+version=11.1.2
 release=1
 
 source="https://download.qemu.org/qemu-${version}.tar.xz
@@ -29,7 +29,4 @@ build() {
     install -Dm644 "scripts/${name}/fsfreeze-hook" -t "${PKG}/etc/qemu/"
     install -Dm755 "${SRC}/qemu-ga.conf" -t "${PKG}/etc/qemu/"
     install -Dm644 "${SRC}/99-${name}.rules" -t "${PKG}/usr/lib/udev/rules.d/"
-
-    sed -e 's/multi-user.target/sockets.target/g' -i contrib/systemd/*.socket
-    install -Dm644 contrib/systemd/* -t "${PKG}/usr/lib/systemd/system/"
 }
