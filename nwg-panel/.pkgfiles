@@ -7,13 +7,13 @@ drwxr-xr-x root/root    usr/bin/
 drwxr-xr-x root/root    usr/lib/
 drwxr-xr-x root/root    usr/lib/python3.15/
 drwxr-xr-x root/root    usr/lib/python3.15/site-packages/
-drwxr-xr-x root/root    usr/lib/python3.15/site-packages/nwg_panel-0.11.0-py3.15.egg-info/
--rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel-0.11.0-py3.15.egg-info/PKG-INFO
--rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel-0.11.0-py3.15.egg-info/SOURCES.txt
--rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel-0.11.0-py3.15.egg-info/dependency_links.txt
--rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel-0.11.0-py3.15.egg-info/entry_points.txt
--rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel-0.11.0-py3.15.egg-info/requires.txt
--rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel-0.11.0-py3.15.egg-info/top_level.txt
+drwxr-xr-x root/root    usr/lib/python3.15/site-packages/nwg_panel-0.12.0-py3.15.egg-info/
+-rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel-0.12.0-py3.15.egg-info/PKG-INFO
+-rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel-0.12.0-py3.15.egg-info/SOURCES.txt
+-rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel-0.12.0-py3.15.egg-info/dependency_links.txt
+-rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel-0.12.0-py3.15.egg-info/entry_points.txt
+-rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel-0.12.0-py3.15.egg-info/requires.txt
+-rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel-0.12.0-py3.15.egg-info/top_level.txt
 drwxr-xr-x root/root    usr/lib/python3.15/site-packages/nwg_panel/
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/__about__.py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/__init__.py
@@ -32,6 +32,8 @@ drwxr-xr-x root/root    usr/lib/python3.15/site-packages/nwg_panel/__pycache__/
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/__pycache__/icons.cpython-315.pyc
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/__pycache__/main.cpython-315.opt-1.pyc
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/__pycache__/main.cpython-315.pyc
+-rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/__pycache__/mango_ipc.cpython-315.opt-1.pyc
+-rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/__pycache__/mango_ipc.cpython-315.pyc
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/__pycache__/processes.cpython-315.opt-1.pyc
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/__pycache__/processes.cpython-315.pyc
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/__pycache__/tools.cpython-315.opt-1.pyc
@@ -65,6 +67,7 @@ drwxr-xr-x root/root    usr/lib/python3.15/site-packages/nwg_panel/glade/
 -rw-rw-r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/glade/config_hyprland_workspaces.glade
 -rw-rw-r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/glade/config_keyboard_layout.glade
 -rw-rw-r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/glade/config_main.glade
+-rw-rw-r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/glade/config_mango_tags.glade
 -rw-rw-r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/glade/config_menu_start.glade
 -rw-rw-r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/glade/config_modules.glade
 -rw-rw-r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/glade/config_niri_taskbar.glade
@@ -293,6 +296,7 @@ drwxr-xr-x root/root    usr/lib/python3.15/site-packages/nwg_panel/langs/
 drwxr-xr-x root/root    usr/lib/python3.15/site-packages/nwg_panel/local/
 -rw-rw-r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/local/executors.json
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/main.py
+-rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/mango_ipc.py
 drwxr-xr-x root/root    usr/lib/python3.15/site-packages/nwg_panel/modules/
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/modules/__init__.py
 drwxr-xr-x root/root    usr/lib/python3.15/site-packages/nwg_panel/modules/__pycache__/
@@ -320,6 +324,8 @@ drwxr-xr-x root/root    usr/lib/python3.15/site-packages/nwg_panel/modules/__pyc
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/modules/__pycache__/hyprland_workspaces.cpython-315.pyc
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/modules/__pycache__/keyboard_layout.cpython-315.opt-1.pyc
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/modules/__pycache__/keyboard_layout.cpython-315.pyc
+-rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/modules/__pycache__/mango_tags.cpython-315.opt-1.pyc
+-rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/modules/__pycache__/mango_tags.cpython-315.pyc
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/modules/__pycache__/menu_start.cpython-315.opt-1.pyc
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/modules/__pycache__/menu_start.cpython-315.pyc
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/modules/__pycache__/niri_taskbar.cpython-315.opt-1.pyc
@@ -355,6 +361,7 @@ drwxr-xr-x root/root    usr/lib/python3.15/site-packages/nwg_panel/modules/__pyc
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/modules/hyprland_taskbar.py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/modules/hyprland_workspaces.py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/modules/keyboard_layout.py
+-rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/modules/mango_tags.py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/modules/menu_start.py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/modules/niri_taskbar.py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/modules/niri_workspaces.py
