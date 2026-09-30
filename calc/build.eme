@@ -6,7 +6,7 @@ homepage="http://www.isthe.com/chongo/tech/comp/calc/index.html"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=calc
-version=2.17.0.0
+version=2.17.0.2
 release=1
 source="${name}-${version}.tar.gz::https://github.com/lcn2/${name}/archive/refs/tags/v${version}.tar.gz"
 
