@@ -6,7 +6,7 @@ homepage="https://github.com/nwg-piotr/nwg-look"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=nwg-look
-version=1.1.1
+version=1.1.2
 release=1
 source="${name}-${version}.tar.gz::https://github.com/nwg-piotr/${name}/archive/v${version}.tar.gz"
 
