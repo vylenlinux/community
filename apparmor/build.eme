@@ -59,10 +59,14 @@ build() {
     make -C parser install DESTDIR="${PKG}" SBINDIR="${PKG}/usr/bin" USR_SBINDIR="${PKG}/usr/bin"
     make -C profiles install DESTDIR="${PKG}"
     make -C utils install DESTDIR="${PKG}" SBINDIR="${PKG}/usr/bin" USR_SBINDIR="${PKG}/usr/bin" BINDIR="${PKG}/usr/bin" VIM_INSTALL_PATH="${PKG}/usr/share/vim/vimfiles/syntax"
-    make -C init DESTDIR="${PKG}" SBINDIR="${PKG}/usr/bin" USR_SBINDIR="${PKG}/usr/bin" APPARMOR_BIN_PREFIX="${PKG}/usr/lib/apparmor" install install-systemd
+    make -C init DESTDIR="${PKG}" SBINDIR="${PKG}/usr/bin" USR_SBINDIR="${PKG}/usr/bin" APPARMOR_BIN_PREFIX="${PKG}/usr/lib/apparmor" install
 
     mv "${PKG}/lib/security" -t "${PKG}/usr/lib/"
     rmdir "${PKG}/lib"
 
+    rm -f "${PKG}/etc/apparmor.d/abstractions"/*systemd* \
+        "${PKG}/etc/apparmor.d"/systemd*
+
     install -Dm644 changehat/pam_apparmor/README "${PKG}/usr/share/doc/apparmor/README.pam_apparmor"
+    do_service "${name}"
 }

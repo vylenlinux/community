@@ -43,10 +43,12 @@ build() {
         --with-conf=/etc/conf.d \
         --with-pam-security=/usr/lib/security \
         --disable-zypp \
+        --disable-systemd \
         --disable-silent-rules
 
     make
     make DESTDIR="${PKG}" install
 
     rm -rf "${PKG}/usr/lib/snapper/testsuite/"
+    rm -f "${PKG}/usr/lib/snapper/systemd-helper"
 }

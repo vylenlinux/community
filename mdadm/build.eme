@@ -16,5 +16,6 @@ build() {
 
     make CXFLAGS="${CFLAGS}" BINDIR=/usr/bin UDEVDIR=/usr/lib/udev everything
     make INSTALL=/usr/bin/install BINDIR=/usr/bin DESTDIR="${PKG}" UDEVDIR=/usr/lib/udev install
-    make SYSTEMD_DIR=/usr/lib/systemd/system BINDIR=/usr/bin DESTDIR="${PKG}" install-systemd
+
+    do_service "${name}" mdraid
 }

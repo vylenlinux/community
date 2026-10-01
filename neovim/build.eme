@@ -14,10 +14,8 @@ build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
 
-    make \
-        CMAKE_INSTALL_PREFIX=/usr \
-        CMAKE_BUILD_TYPE=Release \
-        USE_BUNDLED=1
-
+    make CMAKE_INSTALL_PREFIX=/usr USE_BUNDLED=1 CMAKE_BUILD_TYPE=Release
     make DESTDIR="${PKG}" install
+
+    rm -f "${PKG}/usr/share/nvim/runtime"/*/systemd.vim
 }

@@ -1,9 +1,0 @@
-[Unit]
-Description=Update SpamAssassin rules and compile them
-
-[Timer]
-OnCalendar=daily
-Persistent=true
-
-[Install]
-WantedBy=timers.target

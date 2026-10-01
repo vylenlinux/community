@@ -1,4 +1,3 @@
 c39da16351fd6b782fa3fb43c37016ec6b7dedc08f28d12b7eb1cc7f2319bd69  01-move-from-lib-to-usr-lib.patch
 aac9c7ea490f7c28fc468bb4b3cb47aa1b91f938cde71f4f43298b281127c34b  03-tcp-selective-acks.patch
 0eea09dc9a4126fa9fa3fb1b4dee2ad9d91a3061215f7d791439dff197613547  ufw-0.36.2.tar.gz
-36615620cd4c588a7b12e598507d4602963ebd984259fd17451ca0a02e3fb35c  ufw.service

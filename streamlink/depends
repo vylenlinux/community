@@ -6,3 +6,4 @@ python3-requests
 python3-pycryptodome
 python3-isodate
 python3-build
+python3-wheel

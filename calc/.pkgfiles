@@ -47,12 +47,12 @@ drwxr-xr-x root/root    usr/include/calc/custom/
 -r--r--r-- root/root    usr/include/calc/zrand.h
 -r--r--r-- root/root    usr/include/calc/zrandom.h
 drwxr-xr-x root/root    usr/lib/
-lrwxrwxrwx root/root    usr/lib/libcalc.so -> libcalc.so.2.17.0.2
-lrwxrwxrwx root/root    usr/lib/libcalc.so.2.17.0 -> libcalc.so.2.17.0.2
--rw-r--r-- root/root    usr/lib/libcalc.so.2.17.0.2
-lrwxrwxrwx root/root    usr/lib/libcustcalc.so -> libcustcalc.so.2.17.0.2
-lrwxrwxrwx root/root    usr/lib/libcustcalc.so.2.17.0 -> libcustcalc.so.2.17.0.2
--rw-r--r-- root/root    usr/lib/libcustcalc.so.2.17.0.2
+lrwxrwxrwx root/root    usr/lib/libcalc.so -> libcalc.so.2.17.0.0
+lrwxrwxrwx root/root    usr/lib/libcalc.so.2.17.0 -> libcalc.so.2.17.0.0
+-rw-r--r-- root/root    usr/lib/libcalc.so.2.17.0.0
+lrwxrwxrwx root/root    usr/lib/libcustcalc.so -> libcustcalc.so.2.17.0.0
+lrwxrwxrwx root/root    usr/lib/libcustcalc.so.2.17.0 -> libcustcalc.so.2.17.0.0
+-rw-r--r-- root/root    usr/lib/libcustcalc.so.2.17.0.0
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/calc/
 -r--r--r-- root/root    usr/share/calc/README
@@ -551,6 +551,3 @@ drwxr-xr-x root/root    usr/share/calc/help/
 -r--r--r-- root/root    usr/share/calc/write2file.cal
 -r--r--r-- root/root    usr/share/calc/xx_print.cal
 -r--r--r-- root/root    usr/share/calc/zeta2.cal
-drwxr-xr-x root/root    usr/share/man/
-drwxr-xr-x root/root    usr/share/man/man1/
--r--r--r-- root/root    usr/share/man/man1/calc.1.gz

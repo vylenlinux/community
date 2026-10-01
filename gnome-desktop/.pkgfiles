@@ -10,7 +10,6 @@ drwxr-xr-x root/root    usr/include/gnome-desktop-3.0/libgnome-desktop/
 -rw-r--r-- root/root    usr/include/gnome-desktop-3.0/libgnome-desktop/gnome-idle-monitor.h
 -rw-r--r-- root/root    usr/include/gnome-desktop-3.0/libgnome-desktop/gnome-languages.h
 -rw-r--r-- root/root    usr/include/gnome-desktop-3.0/libgnome-desktop/gnome-pnp-ids.h
--rw-r--r-- root/root    usr/include/gnome-desktop-3.0/libgnome-desktop/gnome-systemd.h
 -rw-r--r-- root/root    usr/include/gnome-desktop-3.0/libgnome-desktop/gnome-wall-clock.h
 -rw-r--r-- root/root    usr/include/gnome-desktop-3.0/libgnome-desktop/gnome-xkb-info.h
 drwxr-xr-x root/root    usr/lib/

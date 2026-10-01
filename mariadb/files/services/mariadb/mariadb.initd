@@ -1,0 +1,44 @@
+#!/usr/bin/openrc-run
+
+# shellcheck disable=SC2034
+extra_stopped_commands="setup"
+retry="60"
+pidfile="/run/mysqld/${RC_SVCNAME}.pid"
+command="/usr/bin/mysqld_safe"
+
+command_args="--syslog \
+    --nowatch \
+    --pid-file=${pidfile}"
+
+depend() {
+    use net
+    need localmount
+}
+
+start_pre() {
+    required_dirs="$(get_conf datadir "/var/lib/mysql")"
+
+    [ -d "${required_dirs}/mysql" ] || {
+        eerror "Datadir '${required_dirs}' is empty or invalid."
+        eerror "Run '/etc/init.d/mariadb setup' to create new database."
+    }
+}
+
+start_post() {
+    ewaitfile 10 "$(get_conf socket "/run/mysqld/mysqld.sock")"
+}
+
+setup() {
+    ebegin "Creating a new MySQL database"
+
+    mysql_install_db \
+        --user=mysql \
+        --datadir=/var/lib/mysql
+
+    eend $?
+}
+
+get_conf() {
+    v="$(my_print_defaults --mysqld | grep ^--"${1}")"
+    [ -z "${v}" ] && printf "%s" "${2}" || printf "%s" "${v#*=}"
+}

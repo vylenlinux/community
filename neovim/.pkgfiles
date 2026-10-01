@@ -19,9 +19,6 @@ drwxr-xr-x root/root    usr/share/icons/hicolor/
 drwxr-xr-x root/root    usr/share/icons/hicolor/128x128/
 drwxr-xr-x root/root    usr/share/icons/hicolor/128x128/apps/
 -rw-r--r-- root/root    usr/share/icons/hicolor/128x128/apps/nvim.png
-drwxr-xr-x root/root    usr/share/man/
-drwxr-xr-x root/root    usr/share/man/man1/
--rw-r--r-- root/root    usr/share/man/man1/nvim.1.gz
 drwxr-xr-x root/root    usr/share/nvim/
 drwxr-xr-x root/root    usr/share/nvim/runtime/
 drwxr-xr-x root/root    usr/share/nvim/runtime/autoload/
@@ -798,7 +795,6 @@ drwxr-xr-x root/root    usr/share/nvim/runtime/ftplugin/
 -rw-r--r-- root/root    usr/share/nvim/runtime/ftplugin/swig.vim
 -rw-r--r-- root/root    usr/share/nvim/runtime/ftplugin/sysctl.vim
 -rw-r--r-- root/root    usr/share/nvim/runtime/ftplugin/sysml.vim
--rw-r--r-- root/root    usr/share/nvim/runtime/ftplugin/systemd.vim
 -rw-r--r-- root/root    usr/share/nvim/runtime/ftplugin/systemverilog.vim
 -rw-r--r-- root/root    usr/share/nvim/runtime/ftplugin/tap.vim
 -rw-r--r-- root/root    usr/share/nvim/runtime/ftplugin/tcl.vim
@@ -2086,7 +2082,6 @@ drwxr-xr-x root/root    usr/share/nvim/runtime/syntax/shared/
 -rw-r--r-- root/root    usr/share/nvim/runtime/syntax/synload.vim
 -rw-r--r-- root/root    usr/share/nvim/runtime/syntax/syntax.vim
 -rw-r--r-- root/root    usr/share/nvim/runtime/syntax/sysctl.vim
--rw-r--r-- root/root    usr/share/nvim/runtime/syntax/systemd.vim
 -rw-r--r-- root/root    usr/share/nvim/runtime/syntax/systemverilog.vim
 -rw-r--r-- root/root    usr/share/nvim/runtime/syntax/tads.vim
 -rw-r--r-- root/root    usr/share/nvim/runtime/syntax/tags.vim

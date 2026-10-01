@@ -6,7 +6,7 @@ homepage="https://dianne.skoll.ca/projects/remind/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=remind
-version=06.03.05
+version=06.03.04
 release=1
 source="https://dianne.skoll.ca/projects/${name}/download/${name}-${version}.tar.gz"
 
