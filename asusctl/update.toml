@@ -1,6 +1,0 @@
-name = "asusctl"
-provider = "github"
-
-[source]
-owner = "OpenGamingCollective"
-repo = "asusctl"
