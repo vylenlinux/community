@@ -6,7 +6,7 @@ homepage="http://tcl.sourceforge.net/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=tk
-version=9.0.4
+version=9.1.0
 release=1
 source="${name}-${version}.tar.gz::https://downloads.sourceforge.net/tcl/${name}${version}-src.tar.gz"
 
@@ -30,9 +30,10 @@ build() {
         "${PKG}/usr/share/doc/${name}/examples/"
 
     # remove buildroot traces
-    sed -e "s#${SRC}/${name}${version}/unix#/usr/lib#" \
+    sed \
+        -e "s#${SRC}/${name}${version}/unix#/usr/lib#" \
         -e "s#${SRC}/${name}${version}#/usr/include#" \
-        -i "${PKG}/usr/lib/tkConfig.sh"
+    -i "${PKG}/usr/lib/tkConfig.sh"
 
     # remove unrequired execute permissions (FS#75042)
     # chmod -x "${PKG}/usr/lib/libtkstub.a"
