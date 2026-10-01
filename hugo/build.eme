@@ -6,7 +6,7 @@ homepage="https://gohugo.io/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=hugo
-version=0.166.0
+version=0.167.0
 release=1
 source="https://github.com/gohugoio/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
