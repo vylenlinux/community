@@ -11,9 +11,7 @@ release=1
 
 source="${name}-${version}.tar.bz2::https://archive.apache.org/dist/httpd/httpd-${version}.tar.bz2
     httpd-blfs_layout-1.patch
-    apache2-openssl4-compat.patch
-    hardening.conf
-    httpd.service"
+    apache2-openssl4-compat.patch"
 
 build() {
     # shellcheck disable=SC2164
@@ -28,11 +26,10 @@ build() {
     sed '/dir.*CFG_PREFIX/s@^@#@' -i support/apxs.in
 
     # shellcheck disable=SC2016
-    sed \
-        -e '/HTTPD_ROOT/s:${ap_prefix}:/etc/httpd:' \
+    sed -e '/HTTPD_ROOT/s:${ap_prefix}:/etc/httpd:' \
         -e '/SERVER_CONFIG_FILE/s:${rel_sysconfdir}/::' \
         -e '/AP_TYPES_CONFIG_FILE/s:${rel_sysconfdir}/::' \
-    -i configure
+        -i configure
 
     ./configure \
         --enable-authnz-fcgi \
@@ -55,6 +52,6 @@ build() {
     mv "${PKG}/usr/bin/suexec" -t "${PKG}/usr/lib/httpd/"
     rm -fr "${PKG}/run"
 
-    install -Dm644 "${SRC}/httpd.service" -t "${PKG}/usr/lib/systemd/system/"
-    install -Dm644 "${SRC}/hardening.conf" -t "${PKG}/etc/systemd/system/httpd.service.d/"
+    do_service apache2
+    rm -f "${PKG}/usr/share/httpd/manual/mod"/*systemd*
 }

@@ -627,7 +627,7 @@ drwxr-xr-x root/root    usr/share/pkgconfig/
 -rw-r--r-- root/root    usr/share/pkgconfig/hyprland.pc
 drwxr-xr-x root/root    usr/share/wayland-sessions/
 -rw-r--r-- root/root    usr/share/wayland-sessions/hyprland-uwsm.desktop
--rw-r--r-- root/root    usr/share/wayland-sessions/hyprland-systemd.desktop
+-rw-r--r-- root/root    usr/share/wayland-sessions/hyprland.desktop
 drwxr-xr-x root/root    usr/share/xdg-desktop-portal/
 -rw-r--r-- root/root    usr/share/xdg-desktop-portal/hyprland-portals.conf
 drwxr-xr-x root/root    usr/share/zsh/

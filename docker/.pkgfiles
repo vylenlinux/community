@@ -1,5 +1,9 @@
 drwxr-xr-x root/root    etc/
+drwxr-xr-x root/root    etc/conf.d/
+-rw-r--r-- root/root    etc/conf.d/docker.epkgnew
 -rw-r--r-- root/root    etc/docker.conf.epkgnew
+drwxr-xr-x root/root    etc/init.d/
+-rwxr-xr-x root/root    etc/init.d/docker
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/docker
@@ -9,13 +13,6 @@ lrwxrwxrwx root/root    usr/bin/docker-init -> tini
 -rwxr-xr-x root/root    usr/bin/docker-proxy
 lrwxrwxrwx root/root    usr/bin/docker-runc -> runc
 -rwxr-xr-x root/root    usr/bin/dockerd
-drwxr-xr-x root/root    usr/lib/
-drwxr-xr-x root/root    usr/lib/systemd/
-drwxr-xr-x root/root    usr/lib/systemd/system/
--rw-r--r-- root/root    usr/lib/systemd/system/docker.service
--rw-r--r-- root/root    usr/lib/systemd/system/docker.socket
-drwxr-xr-x root/root    usr/lib/sysusers.d/
--rw-r--r-- root/root    usr/lib/sysusers.d/docker.conf
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/bash-completion/
 drwxr-xr-x root/root    usr/share/bash-completion/completions/

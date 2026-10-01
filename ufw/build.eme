@@ -21,8 +21,7 @@ backup="etc/${name}/before.rules
 
 source="https://launchpad.net/${name}/${version%.*}/${version}/+download/${name}-${version}.tar.gz
     01-move-from-lib-to-usr-lib.patch
-    03-tcp-selective-acks.patch
-    ${name}.service"
+    03-tcp-selective-acks.patch"
 
 build() {
     # shellcheck disable=SC2164
@@ -31,8 +30,8 @@ build() {
     patch -Np1 -i "${SRC}/01-move-from-lib-to-usr-lib.patch"
     patch -Np1 -i "${SRC}/03-tcp-selective-acks.patch"
 
-    python3 setup.py build
-    python3 setup.py install --root="${PKG}"
+    python3 ./setup.py build
+    python3 ./setup.py install --root="${PKG}"
 
-    install -Dm644 "${SRC}/ufw.service" -t "${PKG}/usr/lib/systemd/system/"
+    do_service "${name}"
 }

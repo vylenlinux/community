@@ -19,6 +19,7 @@ build() {
         -Dcpp_std=c++20 \
         -Dexperimental=true \
         -Dcava=disabled \
+        -Dsystemd=disabled \
         -Dtests=disabled
 
     meson compile -C build

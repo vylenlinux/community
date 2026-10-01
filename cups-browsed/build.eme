@@ -29,6 +29,5 @@ build() {
     make
     make DESTDIR="${PKG}" install
 
-    sed -i "s|/usr/sbin/cups-browsed|/usr/bin/cups-browsed|" daemon/cups-browsed.service
-    install -Dm644 daemon/cups-browsed.service -t "${PKG}/usr/lib/systemd/system/"
+    do_service "${name}"
 }

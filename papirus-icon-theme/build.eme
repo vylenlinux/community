@@ -13,5 +13,9 @@ source="https://github.com/PapirusDevelopmentTeam/${name}/archive/${version}/${n
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-    make DESTDIR="${PKG}" ICON_THEMES=Papirus install
+    make DESTDIR="${PKG}" ICON_THEMES="Papirus" install
+
+    rm -f "${PKG}/usr/share/icons/Papirus"/*/mimetypes/text-x-systemd-unit.svg \
+        "${PKG}/usr/share/icons/Papirus"/*/places/folder*systemd.svg \
+        "${PKG}/usr/share/icons/Papirus"/*/symbolic/mimetypes/text-x-systemd-unit-symbolic.svg
 }

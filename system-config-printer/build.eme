@@ -20,7 +20,7 @@ build() {
         --mandir=/usr/share/man \
         --localstatedir=/var \
         --with-cups-serverbin-dir=/usr/lib/cups \
-        --with-systemdsystemunitdir=/usr/lib/systemd/system \
+        --with-systemdsystemunitdir=no \
         --with-udevdir=/usr/lib/udev \
         --with-udev-rules \
         --with-xmlto

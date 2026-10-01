@@ -6,7 +6,7 @@ homepage="https://github.com/GPUOpen-LibrariesAndSDKs/AMF/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=amf-headers
-version=1.5.3
+version=1.5.2
 release=1
 source="https://github.com/GPUOpen-LibrariesAndSDKs/AMF/archive/v${version}/${name}-${version}.tar.gz"
 

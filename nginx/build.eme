@@ -10,8 +10,7 @@ version=1.31.6
 release=1
 
 source="http://nginx.org/download/${name}-${version}.tar.gz
-    ${name}.conf
-    ${name}.service"
+    ${name}.conf"
 
 build() {
     # shellcheck disable=SC2164
@@ -34,8 +33,8 @@ build() {
     make DESTDIR="${PKG}" install
 
     install -Dm644 "${SRC}/${name}.conf" -t "${PKG}/etc/nginx/"
-    install -Dm644 "${SRC}/${name}.service" "${PKG}/usr/lib/systemd/system/"
-
     find "${PKG}/etc/nginx" -name "*.default" -delete
+
     rm -rf "${PKG}/run"
+    do_service "${name}"
 }
