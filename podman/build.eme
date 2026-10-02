@@ -6,19 +6,23 @@ homepage="https://github.com/containers/libpod"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=podman
-version=6.1.2
+version=6.1.3
 release=1
 source="https://github.com/containers/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
+    export GOFLAGS="${GOFLAGS} -buildmode=pie"
 
-    export GOFLAGS="${GOFLAGS} \
-        -buildmode=pie"
+    make BUILDTAGS="seccomp \
+        exclude_graphdriver_devicemapper \
+        exclude_graphdriver_btrfs"
 
-    make BUILDTAGS="seccomp exclude_graphdriver_devicemapper exclude_graphdriver_btrfs"
-    make install PREFIX=/usr DESTDIR="${PKG}" LIBEXECDIR=/usr/lib
+    make install \
+        PREFIX=/usr \
+        LIBEXECDIR=/usr/lib \
+        DESTDIR="${PKG}"
 
     rm -f "${PKG}/usr/share/man"/man*/*systemd*
 }
