@@ -5,10 +5,8 @@ ranlib_mingw_gcc() {
     LIBS='libgcc.a
         libgcc_eh.a'
 
-    GW_GCC="$(emerald info mingw-w64-gcc | awk '/Installed/{print $2;}')"
-
     # shellcheck disable=SC2164
-    cd "/usr/lib/gcc/i686-w64-mingw32/${GW_GCC%-*}"
+    cd "/usr/lib/gcc/i686-w64-mingw32/${1}"
 
     for i in ${LIBS}; do
         i686-w64-mingw32-ranlib "${i}"
@@ -21,9 +19,9 @@ pre_install() {
 }
 
 post_install() {
-    ranlib_mingw_gcc
+    ranlib_mingw_gcc "${1}"
 }
 
 post_upgrade() {
-    ranlib_mingw_gcc
+    ranlib_mingw_gcc "${2}"
 }
