@@ -1,0 +1,15 @@
+#!/bin/sh
+
+update_vlc_plugins_cache() {
+    printf ':: Generating VLC plugins cache...\n'
+    /usr/lib/vlc/vlc-cache-gen /usr/lib/vlc/plugins/
+    printf 'VLC plugins cache generated.\n'
+}
+
+post_install() {
+    update_vlc_plugins_cache
+}
+
+post_upgrade() {
+    update_vlc_plugins_cache
+}

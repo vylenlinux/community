@@ -1,4 +1,0 @@
-#!/bin/sh
-
-getent passwd lp >/dev/null && userdel lp
-getent group lp >/dev/null && groupdel lp

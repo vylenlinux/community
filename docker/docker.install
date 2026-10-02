@@ -1,0 +1,9 @@
+#!/bin/sh
+
+pre_install() {
+    getent group docker >/dev/null || groupadd --system docker
+}
+
+post_remove() {
+    getent group docker >/dev/null && groupdel docker
+}

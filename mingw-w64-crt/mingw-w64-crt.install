@@ -1,0 +1,39 @@
+#!/bin/sh
+
+update_mingw_archives() {
+    # These libraries need to be run ranlib for fine building of winpthreads
+    LIBS='libmingw32.a
+        libmingwex.a
+        libmoldname.a
+        libmingwthrd.a
+        libmsvcrt.a
+        libkernel32.a
+        libadvapi32.a
+        libshell32.a
+        libuser32.a
+        libuserenv.a
+        libgcc_s.a'
+
+    # shellcheck disable=SC2164
+    cd /usr/i686-w64-mingw32/lib
+
+    for i in ${LIBS}; do
+        i686-w64-mingw32-ranlib "${i}"
+    done
+}
+
+pre_install() {
+    # The port 'mingw-w64-gcc-base' is a temporary requirement to compile 'mingw-w64-crt',
+    # before 'mingw-w64-gcc' installation it will be removed
+    emerald is-installed mingw-w64-gcc || \
+        emerald is-installed mingw-w64-gcc-base || \
+            emerald install -y mingw-w64-gcc-base
+}
+
+post_install() {
+    update_mingw_archives
+}
+
+post_upgrade() {
+    update_mingw_archives
+}

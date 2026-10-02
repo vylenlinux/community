@@ -1,7 +1,0 @@
-#!/bin/sh
-
-printf '%s\n' "Generating VLC plugins cache..."
-
-/usr/lib/vlc/vlc-cache-gen  /usr/lib/vlc/plugins/
-
-printf '%s\n' "VLC cache plugins generated."

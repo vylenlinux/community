@@ -1,0 +1,11 @@
+#!/bin/sh
+
+pre_install() {
+    getent group nginx >/dev/null || groupadd -g 26 nginx
+    getent passwd nginx >/dev/null || useradd -r -M -g nginx -G nginx -c "Nginx Server" -d /var/www -s /usr/bin/nologin -u 26 nginx
+}
+
+post_remove() {
+    getent passwd nginx >/dev/null && userdel nginx
+    getent group nginx >/dev/null && groupdel nginx
+}

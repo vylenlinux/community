@@ -1,0 +1,29 @@
+#!/bin/sh
+
+ranlib_mingw_gcc() {
+    # These libraries need to be run ranlib for fine building of wine
+    LIBS='libgcc.a
+        libgcc_eh.a'
+
+    GW_GCC="$(emerald info mingw-w64-gcc | awk '/Installed/{print $2;}')"
+
+    # shellcheck disable=SC2164
+    cd "/usr/lib/gcc/i686-w64-mingw32/${GW_GCC%-*}"
+
+    for i in ${LIBS}; do
+        i686-w64-mingw32-ranlib "${i}"
+    done
+}
+
+pre_install() {
+    # The port 'mingw-w64-gcc-base' conflicts with 'mingw-w64-gcc', remove 'mingw-w64-gcc-base' before installing 'mingw-w64-gcc'
+    emerald is-installed mingw-w64-gcc-base && emerald remove -y mingw-w64-gcc-base
+}
+
+post_install() {
+    ranlib_mingw_gcc
+}
+
+post_upgrade() {
+    ranlib_mingw_gcc
+}

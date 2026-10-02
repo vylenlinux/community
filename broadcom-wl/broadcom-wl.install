@@ -1,0 +1,13 @@
+#!/bin/sh
+
+post_install() {
+    sh /var/lib/dkms/buildmodules-broadcom-wl.sh
+}
+
+post_upgrade() {
+    sh /var/lib/dkms/buildmodules-broadcom-wl.sh
+}
+
+pre_remove() {
+    sh /var/lib/dkms/buildmodules-broadcom-wl.sh remove
+}

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+pre_install() {
+    getent group nm-openvpn >/dev/null || groupadd nm-openvpn
+    getent passwd nm-openvpn >/dev/null || useradd -r -M -g nm-openvpn -G nm-openvpn -c "NM-openvpn Daemon" -d /dev/null -s /usr/bin/nologin nm-openvpn
+}
+
+post_remove() {
+    getent passwd nm-openvpn >/dev/null && userdel nm-openvpn
+    getent group nm-openvpn >/dev/null && groupdel nm-openvpn
+}

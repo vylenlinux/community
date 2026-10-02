@@ -1,4 +1,0 @@
-#!/bin/sh
-
-# libgedit-amtk is amtk replacement
-emerald is-installed amtk && emerald remove -y amtk

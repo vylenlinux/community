@@ -1,0 +1,13 @@
+#!/bin/sh
+
+update_gtk2_immodules() {
+    gtk-query-immodules-2.0 --update-cache
+}
+
+post_install() {
+    update_gtk2_immodules
+}
+
+post_upgrade() {
+    update_gtk2_immodules
+}
