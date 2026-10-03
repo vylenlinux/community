@@ -10,26 +10,21 @@ version=0.5.65
 release=1
 
 source="${name}-${version}.tar.gz::https://github.com/nwg-piotr/${name}/archive/v${version}.tar.gz
-    vylenupdates
-    add_support_for_emerald.patch"
+    ${name}-add-support-for-vylen-linux.patch::https://patch-diff.githubusercontent.com/raw/nwg-piotr/nwg-shell-config/pull/96.patch"
 
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-    patch -p1 < "${SRC}/add_support_for_emerald.patch"
+    patch -Np1 -i "${SRC}/${name}-add-support-for-vylen-linux.patch"
 
     python3 setup.py install \
         --root="${PKG}" \
         --optimize=1
 
-    install -Dm644 nwg-shell-config.svg     -t "${PKG}/usr/share/pixmaps/"
-    install -Dm644 nwg-shell-update.svg     -t "${PKG}/usr/share/pixmaps/"
-    install -Dm644 nwg-shell-translate.svg  -t "${PKG}/usr/share/pixmaps/"
-    install -Dm644 nwg-update-noupdate.svg  -t "${PKG}/usr/share/pixmaps/"
-    install -Dm644 nwg-update-available.svg -t "${PKG}/usr/share/pixmaps/"
-    install -Dm644 nwg-update-checking.svg  -t "${PKG}/usr/share/pixmaps/"
-    install -Dm755 nwg-shell-config.desktop -t "${PKG}/usr/share/applications/"
+    for pixmap in nwg-shell-config nwg-shell-update nwg-shell-translate nwg-update-noupdate nwg-update-available nwg-update-checking; do
+        install -Dm644 "${pixmap}.svg" -t "${PKG}/usr/share/pixmaps/"
+    done
 
-    install -Dm755 nwg-system-update     -t "${PKG}/usr/bin/"
-    install -Dm755 "${SRC}/vylenupdates" -t "${PKG}/usr/bin/"
+    install -Dm755 nwg-shell-config.desktop -t "${PKG}/usr/share/applications/"
+    install -Dm755 nwg-system-update vylenupdates -t "${PKG}/usr/bin/"
 }
