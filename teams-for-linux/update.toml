@@ -1,5 +1,6 @@
 name = "teams-for-linux"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "teams-for-linux"
+owner = "IsmaelMartinez"
+repo = "teams-for-linux"
