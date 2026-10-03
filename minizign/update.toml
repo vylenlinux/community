@@ -1,0 +1,6 @@
+name = "minizign"
+provider = "github"
+
+[source]
+owner = "jedisct1"
+package = "zig-minisign"

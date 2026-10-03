@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
+description="Minisign reimplemented in Zig."
+homepage="https://github.com/jedisct1/zig-minisign/"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
+
+name=minizign
+version=0.1.14
+release=1
+source="${name}-${version}.tar.gz::https://github.com/jedisct1/zig-minisign/archive/refs/tags/${version}.tar.gz"
+
+build() {
+    # shellcheck disable=SC2164
+    cd "zig-minisign-${version}"
+
+    zig build \
+        -Dcpu=baseline \
+        -Doptimize=ReleaseSmall
+
+    install -Dm755 "zig-out/bin/${name}" -t "${PKG}/usr/bin/"
+}
