@@ -6,7 +6,7 @@ homepage="https://github.com/so-fancy/diff-so-fancy"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=diff-so-fancy
-version=1.4.12
+version=1.4.14
 release=1
 source="https://github.com/so-fancy/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
@@ -15,6 +15,6 @@ build() {
     cd "${name}-${version}"
     sed -i 's|^use lib .*$|use lib "/usr/share/diff-so-fancy";|g' diff-so-fancy
 
-    install -Dm755 diff-so-fancy        -t "${PKG}/usr/bin/"
+    install -Dm755 diff-so-fancy -t "${PKG}/usr/bin/"
     install -Dm755 lib/DiffHighlight.pm -t "${PKG}/usr/share/diff-so-fancy/"
 }
