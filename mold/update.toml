@@ -1,5 +1,6 @@
 name = "mold"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "mold"
+owner = "rui314"
+repo = "mold"

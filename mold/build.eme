@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # shellcheck disable=SC2034
 description="A Modern Linker"
@@ -6,20 +6,22 @@ homepage="https://github.com/rui314/mold"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=mold
-version=2.42.1
+version=3.0.0
 release=1
 source="${name}-${version}.tar.gz::https://github.com/rui314/${name}/archive/v${version}.tar.gz"
 
 build() {
-    cmake -S "${name}-${version}" -B build -G Ninja \
-        -DCMAKE_INSTALL_PREFIX=/usr \
-        -DCMAKE_INSTALL_LIBDIR=/usr/lib \
-        -DCMAKE_INSTALL_LIBEXECDIR=/usr/lib \
-        -DMOLD_USE_SYSTEM_MIMALLOC=OFF \
-        -DMOLD_USE_SYSTEM_TBB=ON \
-        -DMOLD_LTO=ON \
-        -DMOLD_USE_MOLD="$(emerald is-installed mold && printf "ON" || printf "OFF")"
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-    cmake --build build
-    DESTDIR="${PKG}" cmake --install build
+    cargo fetch \
+        --locked \
+        --target host-tuple
+
+    cargo build \
+        --frozen \
+        --release \
+        --package mold-cli
+
+    DESTDIR="${PKG}" PREFIX=/usr ./install-mold.sh
 }
