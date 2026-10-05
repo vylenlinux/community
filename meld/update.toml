@@ -1,5 +1,6 @@
 name = "meld"
-provider = "repology"
+provider = "gitlab"
 
 [source]
-package = "meld"
+instance = "https://gitlab.gnome.org/"
+project = "gnome/meld"
