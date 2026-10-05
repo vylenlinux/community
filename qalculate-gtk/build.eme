@@ -13,7 +13,7 @@ source="${name}-${version}.tar.gz::https://github.com/Qalculate/${name}/archive/
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-    autoreconf -fvi
+    autoreconf -fi
 
     ./configure \
         --prefix=/usr \
