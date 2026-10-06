@@ -3,4 +3,4 @@ provider = "github"
 
 [source]
 owner = "jedisct1"
-package = "zig-minisign"
+repo = "zig-minisign"
