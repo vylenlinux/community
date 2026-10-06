@@ -7,7 +7,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=broadcom-wl
 version=6.30.223.271
-release=2
+release=3
 
 source="${name}-${version}.tar.gz::https://docs.broadcom.com/docs-and-downloads/docs/linux_sta/hybrid-v35_64-nodebug-pcoem-$(printf '%s' "${version}" | tr '.' '_').tar.gz
     broadcom-wl-kernel.conf
@@ -34,14 +34,15 @@ source="${name}-${version}.tar.gz::https://docs.broadcom.com/docs-and-downloads/
     016-linux601.patch
     018-linux613.patch
     020-linux615.patch
-    022-linux701.patch"
+    022-linux701.patch
+    023-linux702.patch"
 
 build() {
     for s in $source; do
         case "${s}" in
             *.patch)
                 msg_info "Applying patch ${s}..."
-                patch -Np1 --no-backup-if-mismatch < "${SRC}/${s}"
+                patch -Np1 --no-backup-if-mismatch -i "${SRC}/${s}"
             ;;
         esac
     done
