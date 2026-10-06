@@ -8,11 +8,14 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=mold
 version=3.0.0
 release=1
-source="${name}-${version}.tar.gz::https://github.com/rui314/${name}/archive/v${version}.tar.gz"
+
+source="${name}-${version}.tar.gz::https://github.com/rui314/${name}/archive/v${version}.tar.gz
+    use-lib-without-libexec.patch"
 
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
+    patch -Np1 -i "${SRC}/use-lib-without-libexec.patch"
 
     cargo fetch \
         --locked \
