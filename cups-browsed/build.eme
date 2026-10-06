@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # shellcheck disable=SC2034
 description="Helper daemon to browse the network for remote CUPS queues and IPP network printers"

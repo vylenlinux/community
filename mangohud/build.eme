@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # shellcheck disable=SC2034
 description="Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more"

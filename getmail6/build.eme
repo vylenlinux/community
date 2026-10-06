@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # shellcheck disable=SC2034
 description="IMAP and POP3 mail retriever with reliable Maildir and command delivery"

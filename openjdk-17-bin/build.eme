@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # shellcheck disable=SC2034
 description="Temurin 17 (OpenJDK 17 Java binaries by Adoptium, formerly AdoptOpenJDK)"

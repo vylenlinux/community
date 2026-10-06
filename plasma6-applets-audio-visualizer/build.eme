@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # shellcheck disable=SC2034
 description="Audio visualizer widget powered by CAVA for the KDE Plasma Desktop"

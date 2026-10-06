@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # shellcheck disable=SC2034
 description="Collection of free plugins compatible with LADSPA, LV2 and LinuxVST"

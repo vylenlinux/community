@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # shellcheck disable=SC2034
 description="GeoIP legacy country database (based on GeoLite2 data created by MaxMind)"

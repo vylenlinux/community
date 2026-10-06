@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # shellcheck disable=SC2034
 description="Very resourcefriendly and feature-rich replacement for i3status, written in pure Rust"

@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # shellcheck disable=SC2034
 description="SQLite extension that provides transparent 256-bit AES encryption of database files"

@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # shellcheck disable=SC2034
 description="CLI program that launches streams from various streaming services in a custom video player (livestreamer fork)"

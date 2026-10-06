@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # shellcheck disable=SC2034
 description="a packaging friendly copy of the AudioProcessing module from the WebRTC project"
