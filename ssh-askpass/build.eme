@@ -6,7 +6,7 @@ homepage="https://www.openssh.com/portable.html"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ssh-askpass
-version=10.5p1
+version=10.6p1
 release=1
 source="http://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-${version}.tar.gz"
 
