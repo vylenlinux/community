@@ -1,5 +1,6 @@
 name = "recode"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "recode"
+owner = "rrthomas"
+repo = "recode"
