@@ -6,7 +6,7 @@ homepage="https://github.com/docker/buildx/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=docker-buildx
-version=0.37.2
+version=0.38.0
 release=1
 source="https://github.com/docker/buildx/archive/v${version}/${name}-${version}.tar.gz"
 
@@ -24,7 +24,8 @@ build() {
     go build -mod=vendor -o docker-buildx -ldflags "-linkmode=external \
         -X github.com/docker/buildx/version.Version=${version} \
         -X github.com/docker/buildx/version.Revision=1c1dbb2e4cb5363110f42102744a08d034c2300d \
-        -X github.com/docker/buildx/version.Package=github.com/docker/buildx" ./cmd/buildx
+        -X github.com/docker/buildx/version.Package=github.com/docker/buildx \
+    " ./cmd/buildx
 
     install -Dm755 "${name}" -t "${PKG}/usr/lib/docker/cli-plugins/"
 }
