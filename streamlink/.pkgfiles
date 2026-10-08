@@ -4,12 +4,12 @@ drwxr-xr-x root/root    usr/bin/
 drwxr-xr-x root/root    usr/lib/
 drwxr-xr-x root/root    usr/lib/python3.15/
 drwxr-xr-x root/root    usr/lib/python3.15/site-packages/
-drwxr-xr-x root/root    usr/lib/python3.15/site-packages/streamlink-8.6.1.dist-info/
--rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink-8.6.1.dist-info/METADATA
--rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink-8.6.1.dist-info/RECORD
--rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink-8.6.1.dist-info/WHEEL
--rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink-8.6.1.dist-info/entry_points.txt
--rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink-8.6.1.dist-info/top_level.txt
+drwxr-xr-x root/root    usr/lib/python3.15/site-packages/streamlink-8.6.2.dist-info/
+-rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink-8.6.2.dist-info/METADATA
+-rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink-8.6.2.dist-info/RECORD
+-rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink-8.6.2.dist-info/WHEEL
+-rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink-8.6.2.dist-info/entry_points.txt
+-rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink-8.6.2.dist-info/top_level.txt
 drwxr-xr-x root/root    usr/lib/python3.15/site-packages/streamlink/
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/__init__.py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/__main__.py
@@ -104,6 +104,7 @@ drwxr-xr-x root/root    usr/lib/python3.15/site-packages/streamlink/plugins/__py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/__pycache__/drdk.cpython-315.pyc
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/__pycache__/earthcam.cpython-315.pyc
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/__pycache__/euronews.cpython-315.pyc
+-rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/__pycache__/facebook.cpython-315.pyc
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/__pycache__/filmon.cpython-315.pyc
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/__pycache__/goltelevision.cpython-315.pyc
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/__pycache__/goodgame.cpython-315.pyc
@@ -194,6 +195,7 @@ drwxr-xr-x root/root    usr/lib/python3.15/site-packages/streamlink/plugins/__py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/__pycache__/welt.cpython-315.pyc
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/__pycache__/wwenetwork.cpython-315.pyc
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/__pycache__/youtube.cpython-315.pyc
+-rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/__pycache__/youtvua.cpython-315.pyc
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/__pycache__/yupptv.cpython-315.pyc
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/__pycache__/zattoo.cpython-315.pyc
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/__pycache__/zdf_mediathek.cpython-315.pyc
@@ -238,6 +240,7 @@ drwxr-xr-x root/root    usr/lib/python3.15/site-packages/streamlink/plugins/__py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/drdk.py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/earthcam.py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/euronews.py
+-rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/facebook.py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/filmon.py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/goltelevision.py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/goodgame.py
@@ -328,6 +331,7 @@ drwxr-xr-x root/root    usr/lib/python3.15/site-packages/streamlink/plugins/__py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/welt.py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/wwenetwork.py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/youtube.py
+-rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/youtvua.py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/yupptv.py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/zattoo.py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/streamlink/plugins/zdf_mediathek.py
