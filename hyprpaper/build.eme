@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="A blazing fast wayland wallpaper utility with IPC controls"
-homepage="https://github.com/hyprwm/hyprpaper hyprgraphics"
+homepage="https://github.com/hyprwm/hyprpaper"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=hyprpaper
