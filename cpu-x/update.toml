@@ -1,5 +1,0 @@
-name = "cpu-x"
-provider = "repology"
-
-[source]
-package = "cpu-x"
