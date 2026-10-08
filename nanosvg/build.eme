@@ -6,7 +6,7 @@ homepage="https://github.com/memononen/nanosvg"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=nanosvg
-version=20241219
+version=20260709
 release=1
 
 commit=239e102ec2c691f2902e20ace2ed36ee4a35cfe6
