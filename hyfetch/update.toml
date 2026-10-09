@@ -1,0 +1,6 @@
+name = "hyfetch"
+provider = "github"
+
+[source]
+owner = "hykilpikonna"
+repo = "%(name)"
