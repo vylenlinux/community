@@ -1,5 +1,8 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Apache Xerces-C validating XML parser"
-homepage="xerces.apache.org"
+homepage="https://xerces.apache.org"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xerces-c
@@ -8,9 +11,13 @@ release=1
 source="https://archive.apache.org/dist/xerces/c/3/sources/${name}-${version}.tar.gz"
 
 build() {
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-	cd $name-$version
-	./configure --prefix=/usr --sysconfdir=/etc
-	make
-	make DESTDIR=$PKG install
+    ./configure \
+        --prefix=/usr \
+        --sysconfdir=/etc
+
+    make
+    make DESTDIR="${PKG}" install
 }
