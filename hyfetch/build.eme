@@ -1,0 +1,30 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
+description="Neofetch with LGBTQ+ pride flags!"
+homepage="https://github.com/hykilpikonna/hyfetch"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
+
+name=hyfetch
+version=2.1.0
+release=1
+source="https://github.com/hykilpikonna/${name}/releases/download/${version}/${name}-${version}.tar.gz"
+
+build() {
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    cargo fetch \
+        --locked \
+        --target "$(rustc --print host-tuple)"
+
+    cargo build \
+        --frozen \
+        --release \
+        --all-features
+
+    install -Dm755 "target/release/${name}" -t "${PKG}/usr/bin/"
+    install -Dm644 "docs/${name}.1" -t "${PKG}/usr/share/man/man1/"
+    install -Dm644 "${name}/scripts/autocomplete.bash" "${PKG}/usr/share/bash-completion/completions/${name}"
+    install -Dm644 "${name}/scripts/autocomplete.zsh" "${PKG}/usr/share/zsh/site-functions/_${name}"
+}
