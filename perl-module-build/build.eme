@@ -1,15 +1,20 @@
-description="Lightweight YouTube client that does not re>"
-homepage="github.com/trizen/pipe-viewer"
+#!/bin/sh
+
+# shellcheck disable=SC2034
+description="Build, test, and install Perl modules"
+homepage="https://search.cpan.org/dist/Module-Build"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-module-build
 version=0.4234
 release=1
-source="$name-$version.tar.gz::https://cpan.metacpan.org/authors/id/L/LE/LEONT/Module-Build-$version.tar.gz"
+source="${name}-${version}.tar.gz::https://cpan.metacpan.org/authors/id/L/LE/LEONT/Module-Build-${version}.tar.gz"
 
 build() {
-	cd Module-Build-$version
-	perl Build.PL --installdirs=vendor
-	./Build
- 	./Build install --destdir=$PKG 
+    # shellcheck disable=SC2164
+    cd "Module-Build-${version}"
+    perl Build.PL --installdirs=vendor
+
+    ./Build
+    ./Build install --destdir="${PKG}"
 }
