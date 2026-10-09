@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="A command line parser for C++11 and beyond"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
-homepage="ttps://github.com/CLIUtils/CLI11"
+homepage="https://github.com/CLIUtils/CLI11"
 
 name=cli11
 version=2.7.2
