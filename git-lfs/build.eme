@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Git extension for versioning large files"
-homepage="https://git-lfs.github.com"
+homepage="https://git-lfs.com"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=git-lfs
