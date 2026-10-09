@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Rofi like application launcher written for wayland"
 homepage="https://hg.sr.ht/~scoopta/wofi"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,12 +8,10 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=wofi
 version=1.5.3
 release=1
-source="$name-$version.tar.gz::https://hg.sr.ht/~scoopta/wofi/archive/v$version.tar.gz"
+source="${name}-${version}.tar.gz::https://hg.sr.ht/~scoopta/${name}/archive/v${version}.tar.gz"
 
 build() {
-  ls /usr/include/gtk-3.0/gdk/gdkwayland.h || (printf '\e[1;31m%-6s\e[m\n' "gtk3 is missing wayland libraries, rebuild mesa, then gtk3 to install $name" ; exit 1)
-
-  vylen-meson  $name-v$version build
-  meson compile -C build
-  DESTDIR=$PKG meson install --no-rebuild -C build
+    vylen-meson "${name}-v${version}" build
+    meson compile -C build
+    DESTDIR="${PKG}" meson install --no-rebuild -C build
 }
