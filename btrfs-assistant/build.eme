@@ -6,10 +6,10 @@ homepage="https://gitlab.com/btrfs-assistant/btrfs-assistant"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=btrfs-assistant
-version=2.3.1
+version=2.3.2
 release=1
-source="https://gitlab.com/${name}/${name}/-/archive/${version}/${name}-${version}.tar.gz"
 backup="etc/btrfs-assistant.conf"
+source="https://gitlab.com/${name}/${name}/-/archive/${version}/${name}-${version}.tar.gz"
 
 build() {
     cmake -S "${name}-${version}" -B build -G Ninja \
