@@ -66,7 +66,7 @@ index a323a0d..3cca0ca 100644
 -EXTRA_LDFLAGS      := $(src)/lib/wlc_hybrid.o_shipped
 +ldflags-y          := $(src)/lib/wlc_hybrid.o_shipped
  
- KBASE              ?= /lib/modules/`uname -r`
+ KBASE              ?= /usr/lib/modules/`uname -r`
  KBUILD_DIR         ?= $(KBASE)/build
 @@ -155,6 +155,21 @@ MDEST_DIR          ?= $(KBASE)/kernel/drivers/net/wireless
  CROSS_TOOLS        = /path/to/tools
