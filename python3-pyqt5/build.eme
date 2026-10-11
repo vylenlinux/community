@@ -11,14 +11,13 @@ release=1
 
 source="${name}-${version}.tar.gz::https://pypi.python.org/packages/source/P/PyQt5/PyQt5-${version}.tar.gz
     pyqt5-sip-abi-12.15.patch
-    pyqt5-python315-weakref.patch"
+    pyqt5-python315-weakref.patch
+    pyqt5-python-3.15.patch"
 
 build() {
     # shellcheck disable=SC2164
     cd "PyQt5-${version}"
-
-    patch -Np1 -i "${SRC}/pyqt5-sip-abi-12.15.patch"
-    patch -Np1 -i "${SRC}/pyqt5-python315-weakref.patch"
+    patch -Np1 -i "${SRC}/pyqt5-python-3.15.patch"
 
     sip-build \
         --confirm-license \
