@@ -6,7 +6,7 @@ homepage="https://www.wxwidgets.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=wxgtk3
-version=3.2.11
+version=3.2.12
 release=1
 source="${name}-${version}.tar.gz::https://github.com/wxWidgets/wxWidgets/archive/refs/tags/v${version}.tar.gz"
 
@@ -22,7 +22,7 @@ build() {
         -DwxBUILD_TOOLKIT=gtk3 \
         -DwxBUILD_TESTS=OFF \
         -DwxUSE_OPENGL=ON \
-        -DwxUSE_REGEX=sys\
+        -DwxUSE_REGEX=sys \
         -DwxUSE_ZLIB=sys \
         -DwxUSE_EXPAT=sys \
         -DwxUSE_LIBJPEG=sys \
