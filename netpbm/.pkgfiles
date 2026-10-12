@@ -79,6 +79,7 @@ lrwxrwxrwx root/root    usr/bin/icontopbm -> sunicontopnm
 -rwxr-xr-x root/root    usr/bin/pammixinterlace
 -rwxr-xr-x root/root    usr/bin/pammixmulti
 -rwxr-xr-x root/root    usr/bin/pammosaicknit
+-rwxr-xr-x root/root    usr/bin/pamnoise
 -rwxr-xr-x root/root    usr/bin/pamoil
 -rwxr-xr-x root/root    usr/bin/pampaintspill
 -rwxr-xr-x root/root    usr/bin/pamperspective
@@ -409,8 +410,8 @@ drwxr-xr-x root/root    usr/include/netpbm/
 -rw-r--r-- root/root    usr/include/netpbm/shhopt.h
 drwxr-xr-x root/root    usr/lib/
 lrwxrwxrwx root/root    usr/lib/libnetpbm.so -> /usr/lib/libnetpbm.so.11
-lrwxrwxrwx root/root    usr/lib/libnetpbm.so.11 -> libnetpbm.so.11.115
--rwxr-xr-x root/root    usr/lib/libnetpbm.so.11.115
+lrwxrwxrwx root/root    usr/lib/libnetpbm.so.11 -> libnetpbm.so.11.116
+-rwxr-xr-x root/root    usr/lib/libnetpbm.so.11.116
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/netpbm/
 -rw-r--r-- root/root    usr/share/netpbm/palmcolor8.map
