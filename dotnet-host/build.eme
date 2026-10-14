@@ -6,7 +6,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://www.microsoft.com/net/core"
 
 name=dotnet-host
-version=10.0.401
+version=10.0.402
 release=1
 
 source="dotnet-${version}.tar.gz::https://builds.dotnet.microsoft.com/dotnet/Sdk/${version}/dotnet-sdk-${version}-linux-x64.tar.gz
@@ -17,11 +17,11 @@ build() {
         install -dm755 "${PKG}/usr/${dir}"
     done
 
-    cp -dr --no-preserve=ownership dotnet host dnx "${PKG}/usr/share/dotnet/"
+    cp -dr --no-preserve=ownership dotnet host dnx -t "${PKG}/usr/share/dotnet/"
 
-    ln -sf /usr/share/dotnet/dotnet "${PKG}"/usr/bin/dotnet
-    ln -sf /usr/share/dotnet/dnx "${PKG}/usr/bin/dnx"
-    ln -sf "/usr/share/dotnet/host/fxr/${version}/libhostfxr.so" "${PKG}/usr/lib/libhostfxr.so"
+    ln -sf /usr/share/dotnet/dotnet -t "${PKG}/usr/bin/"
+    ln -sf /usr/share/dotnet/dnx -t "${PKG}/usr/bin/"
+    ln -sf "/usr/share/dotnet/host/fxr/${version}/libhostfxr.so" -t "${PKG}/usr/lib/"
 
     install -Dm644 "${SRC}/dotnet.sh" -t "${PKG}/etc/profile.d/"
 }

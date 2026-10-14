@@ -6,7 +6,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://www.microsoft.com/net/core"
 
 name=dotnet-targeting-pack
-version=10.0.401
+version=10.0.402
 release=1
 source="dotnet-${version}.tar.gz::https://builds.dotnet.microsoft.com/dotnet/Sdk/${version}/dotnet-sdk-${version}-linux-x64.tar.gz"
 
@@ -14,6 +14,6 @@ build() {
     install -dm755 "${PKG}/usr/share/dotnet/packs"
 
     for f in Host.linux-x64 Ref; do
-        cp -dr --no-preserve=ownership "packs/Microsoft.NETCore.App.${f}" "${PKG}/usr/share/dotnet/packs/"
+        cp -dr --no-preserve=ownership "packs/Microsoft.NETCore.App.${f}" -t "${PKG}/usr/share/dotnet/packs/"
     done
 }

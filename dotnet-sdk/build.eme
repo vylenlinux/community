@@ -6,11 +6,11 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://www.microsoft.com/net/core"
 
 name=dotnet-sdk
-version=10.0.401
+version=10.0.402
 release=1
 source="dotnet-${version}.tar.gz::https://builds.dotnet.microsoft.com/dotnet/Sdk/${version}/${name}-${version}-linux-x64.tar.gz"
 
 build() {
     install -dm755 "${PKG}/usr/share/dotnet"
-    cp -dr --no-preserve=ownership sdk sdk-manifests templates "${PKG}/usr/share/dotnet/"
+    cp -dr --no-preserve=ownership sdk sdk-manifests templates -t "${PKG}/usr/share/dotnet/"
 }
