@@ -13,11 +13,9 @@ _version=$(printf "%s" "${version}" | sed 's/_/-/g')
 source="${name}-${version}.rpm::https://download.brother.com/welcome/dlf105203/brscan4-${_version}.x86_64.rpm"
 
 build() {
-    mkdir -p "${PKG}/etc"
-    cp -r "${SRC}/etc/opt/brother" -t "${PKG}/etc/"
-
-    cp -r "${SRC}/opt" "${PKG}"
-    cp -r "${SRC}/usr" "${PKG}"
+    for x in etc opt usr; do
+        cp -r "${x}" -t "${PKG}"
+    done
 
     mv "${PKG}/usr/lib64" "${PKG}/usr/lib"
 

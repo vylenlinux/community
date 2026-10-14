@@ -1,10 +1,11 @@
 drwxr-xr-x root/root    etc/
-drwxr-xr-x root/root    etc/brother/
-drwxr-xr-x root/root    etc/brother/scanner/
-drwxr-xr-x root/root    etc/brother/scanner/brscan4/
-lrwxrwxrwx root/root    etc/brother/scanner/brscan4/Brsane4.ini -> /opt/brother/scanner/brscan4/Brsane4.ini
-lrwxrwxrwx root/root    etc/brother/scanner/brscan4/brsanenetdevice4.cfg -> /opt/brother/scanner/brscan4/brsanenetdevice4.cfg
-lrwxrwxrwx root/root    etc/brother/scanner/brscan4/models4 -> /opt/brother/scanner/brscan4/models4
+drwxr-xr-x root/root    etc/opt/
+drwxr-xr-x root/root    etc/opt/brother/
+drwxr-xr-x root/root    etc/opt/brother/scanner/
+drwxr-xr-x root/root    etc/opt/brother/scanner/brscan4/
+lrwxrwxrwx root/root    etc/opt/brother/scanner/brscan4/Brsane4.ini -> /opt/brother/scanner/brscan4/Brsane4.ini
+lrwxrwxrwx root/root    etc/opt/brother/scanner/brscan4/brsanenetdevice4.cfg -> /opt/brother/scanner/brscan4/brsanenetdevice4.cfg
+lrwxrwxrwx root/root    etc/opt/brother/scanner/brscan4/models4 -> /opt/brother/scanner/brscan4/models4
 drwxr-xr-x root/root    opt/
 drwxr-xr-x root/root    opt/brother/
 drwxr-xr-x root/root    opt/brother/scanner/
