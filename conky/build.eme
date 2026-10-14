@@ -15,7 +15,6 @@ build() {
         -DCMAKE_BUILD_TYPE=Release \
         -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
         -DCMAKE_INSTALL_PREFIX=/usr \
-        -DSYSTEM_CONFIG_FILE=/usr/etc/conky.conf \
         -DBUILD_DOCS=OFF \
         -DBUILD_WAYLAND="$(emerald is-installed wayland && printf "ON" || printf "OFF")" \
         -DBUILD_I18N=OFF \
