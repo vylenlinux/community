@@ -6,7 +6,7 @@ homepage="https://discordapp.com/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=discord
-version=1.0.161
+version=1.0.162
 release=1
 source="https://dl.discordapp.net/apps/linux/${version}/${name}-${version}.tar.gz"
 
