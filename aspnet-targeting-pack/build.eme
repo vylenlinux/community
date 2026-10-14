@@ -12,5 +12,5 @@ source="dotnet-${version}.tar.gz::https://builds.dotnet.microsoft.com/dotnet/Sdk
 
 build() {
     install -dm755 "${PKG}/usr/share/dotnet/packs"
-    cp -dr --no-preserve=ownership packs/Microsoft.AspNetCore.App.Ref "${PKG}/usr/share/dotnet/packs/"
+    cp -dr --no-preserve=ownership packs/Microsoft.AspNetCore.App.Ref -t "${PKG}/usr/share/dotnet/packs/"
 }
