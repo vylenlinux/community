@@ -1,6 +1,6 @@
-pango
 gdk-pixbuf
-startup-notification
 libxkbcommon
-xcb-util-wm
+pango
+startup-notification
 xcb-util-cursor
+xcb-util-wm

@@ -1,10 +1,10 @@
 ffmpeg
-libexif
 flac
-taglib
+libexif
 libid3tag
 libjpeg-turbo
-libvorbis
-x264
-opus
 libmatroska
+libvorbis
+opus
+taglib
+x264

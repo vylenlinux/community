@@ -1,7 +1,7 @@
+clang
 libdisplay-info
 libinput
-pipewire
 pango
-seatd
-clang
+pipewire
 rust
+seatd

@@ -1,7 +1,7 @@
 dbus
-openvpn
 glib
 gtk3
 intltool
 libnma
 libsecret
+openvpn

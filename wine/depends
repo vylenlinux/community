@@ -2,6 +2,7 @@ gst-plugins-bad
 gst-plugins-good
 gst-plugins-ugly
 lcms2
+libpulse
 libunwind
 libva
 libxcomposite
@@ -11,7 +12,6 @@ libxkbcommon
 mingw-w64-gcc
 mpg123
 opencl-headers
-libpulse
 v4l-utils
 vkd3d
 x265

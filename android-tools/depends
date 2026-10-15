@@ -1,6 +1,6 @@
-protobuf
-brotli
 android-udev
+brotli
+fmt
 go
 gtest
-fmt
+protobuf

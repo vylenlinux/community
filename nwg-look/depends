@@ -1,4 +1,4 @@
-gtk3
-glib
 cairo
+glib
+gtk3
 xcur2png

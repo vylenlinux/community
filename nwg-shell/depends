@@ -1,7 +1,7 @@
 azote
 foot
-gopsuinfo
 gnome-themes-extra
+gopsuinfo
 grim
 imagemagick
 jq
@@ -24,8 +24,8 @@ swayidle
 swaylock
 swaync
 ttf-dejavu
+wl-clipboard
 wlsunset
 xdg-user-dirs
 xdg-utils
 xwayland
-wl-clipboard

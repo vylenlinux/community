@@ -1,6 +1,6 @@
-lua
-tcl
-libxml2
-libusb-compat
 boost
+libusb-compat
+libxml2
+lua
 swig
+tcl

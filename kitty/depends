@@ -1,10 +1,10 @@
-libcanberra
-imagemagick
-python3-pygments
-libxkbcommon
-librsync
 go
-xxhash
+imagemagick
+libcanberra
+librsync
+libxkbcommon
+python3-pygments
+shader-slang
 simde
 ttf-nerd-fonts-symbols
-shader-slang
+xxhash

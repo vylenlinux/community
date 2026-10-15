@@ -1,6 +1,6 @@
 gtkmm
-libsigc++2
+json-glib
 libcanberra
 libpulse
-json-glib
+libsigc++2
 lynx

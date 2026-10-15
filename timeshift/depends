@@ -1,6 +1,6 @@
 cronie
-libgee
-vte3
 json-glib
+libgee
 rsync
+vte3
 xapp

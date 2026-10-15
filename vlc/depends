@@ -1,6 +1,6 @@
-ffmpeg
 a52dec
+ffmpeg
 libgcrypt
+libidn
 libmad
 lua
-libidn

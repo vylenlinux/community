@@ -1,8 +1,8 @@
 hyprutils
 hyprwayland-scanner
 libdisplay-info
-pixman
-mesa
-wayland
-seatd
 libinput
+mesa
+pixman
+seatd
+wayland

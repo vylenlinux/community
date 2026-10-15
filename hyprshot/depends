@@ -1,6 +1,6 @@
-jq
 grim
+imagemagick
+jq
+libnotify
 slurp
 wl-clipboard
-libnotify
-imagemagick

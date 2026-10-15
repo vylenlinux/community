@@ -1,8 +1,8 @@
-qt5
-openal
-libpulse
 dbus
+ffmpeg
+libpulse
 libusb
 libxv
+openal
+qt5
 v4l-utils
-ffmpeg

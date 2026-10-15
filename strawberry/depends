@@ -1,11 +1,11 @@
 boost
-protobuf
-qt6-tools
-taglib
+chromaprint
 fftw
-libpulse
+kdsingleapplication
 libcdio
 libmtp
-chromaprint
-kdsingleapplication
+libpulse
+protobuf
+qt6-tools
 sparsehash
+taglib

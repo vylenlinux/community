@@ -3,12 +3,12 @@ jansson
 luajit
 mbedtls3
 nlohmann-json
+nv-codec-headers
 pciutils
 pipewire
 qt6-svg
+simde
 speexdsp
 swig
 uthash
 v4l-utils
-simde
-nv-codec-headers

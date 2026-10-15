@@ -1,6 +1,6 @@
-libgcrypt
-polkit
-libxklavier
-itstool
-vala
 gtk-doc
+itstool
+libgcrypt
+libxklavier
+polkit
+vala

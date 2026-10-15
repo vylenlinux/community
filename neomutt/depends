@@ -1,4 +1,4 @@
-lua
-libidn
-krb5
 gpgme
+krb5
+libidn
+lua

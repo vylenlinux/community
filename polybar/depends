@@ -1,6 +1,6 @@
-cmake
 cairo
+cmake
+python3-babel
+python3-sphinx
 xcb-util-image
 xcb-util-wm
-python3-sphinx
-python3-babel

@@ -1,10 +1,10 @@
+elogind
+gtk-layer-shell
 gtkmm3
 jsoncpp
-spdlog
-libpulse
-libnl
 libappindicator
 libmpdclient
+libnl
+libpulse
 playerctl
-gtk-layer-shell
-elogind
+spdlog

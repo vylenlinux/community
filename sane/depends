@@ -1,4 +1,4 @@
-libusb
-libtiff
-libpng
 autoconf-archive
+libpng
+libtiff
+libusb

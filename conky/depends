@@ -1,6 +1,6 @@
-lua
 imlib2
-wireless_tools
 libxdamage
 libxft
 libxinerama
+lua
+wireless_tools
