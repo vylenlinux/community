@@ -6,21 +6,19 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://wiki.gnome.org/Apps/Gedit"
 
 name=gedit
-version=50.0
+version=51.0
 release=1
-
-libgd_commit="3cccf99234288a6121b3945a25cd4ec3b7445c74"
-
-source="https://gitlab.gnome.org/World/${name}/${name}/-/archive/${version}/${name}-${version}.tar.gz
-    https://gitlab.gnome.org/GNOME/libgd/-/archive/${libgd_commit}/libgd-${libgd_commit}.tar.gz"
+source="https://gitlab.gnome.org/World/${name}/${name}/-/archive/${version}/${name}-${version}.tar.gz"
 
 build() {
-    rm -r "${name}-${version}/subprojects/libgd"
-    mv "${SRC}/libgd-${libgd_commit}" "${name}-${version}/subprojects/libgd"
-
     vylen-meson "${name}-${version}" build -Dgtk_doc=false
     meson compile -C build
     DESTDIR="${PKG}" meson install --no-rebuild -C build
+
+    rm -rf "${PKG}/usr/lib/gedit/plugins"
+
+    rm -f "${PKG}/usr/share/glib-2.0/schemas/org.gnome.gedit.plugins.wordcompletion.gschema.xml" \
+        "${PKG}/usr/share/glib-2.0/schemas/org.gnome.gedit.plugins.drawspaces.gschema.xml"
 
     do_revdep
 }
