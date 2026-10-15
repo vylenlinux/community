@@ -6,7 +6,7 @@ homepage="http://nginx.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=nginx
-version=1.31.6
+version=1.31.7
 release=1
 
 source="http://nginx.org/download/${name}-${version}.tar.gz
