@@ -1,5 +1,6 @@
 name = "shotcut"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "shotcut"
+owner = "mltframework"
+repo = "%(name)"
