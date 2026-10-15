@@ -1,14 +1,17 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Simple Scanning Utility (GTK3 version)"
 homepage="https://github.com/GNOME/simple-scan"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=simple-scan-gtk3
-version=44.0
+version=46.0
 release=1
-source="http://packages.linuxmint.com/pool/upstream/s/${name%-*}/${name%-*}_${version}-${release}+wilma.tar.xz"
+source="${name}-${version}.tar.xz::https://github.com/GNOME/simple-scan/archive/refs/tags/${version}.tar.gz"
 
 build() {
-	vylen-meson ${name%-*} build 
-	meson compile -C build
-	DESTDIR=$PKG meson install --no-rebuild -C build 
+    vylen-meson "simple-scan-${version}" build
+    meson compile -C build
+    DESTDIR="${PKG}" meson install --no-rebuild -C build
 }
