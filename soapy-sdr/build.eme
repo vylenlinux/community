@@ -1,22 +1,25 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="An opensource API and runtime library for interfacing with SDR devices"
 homepage="http://www.pothosware.com/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=soapy-sdr
-version=0.8.1
+version=0.9.0
 release=1
-source="https://github.com/pothosware/SoapySDR/archive/$name-$version.tar.gz"
+source="https://github.com/pothosware/SoapySDR/archive/${name}-${version}.tar.gz"
 
 build() {
-	cmake -S  SoapySDR-$name-$version -B build -G Ninja \
-		-DCMAKE_INSTALL_PREFIX=/usr \
-		-DCMAKE_INSTALL_LIBDIR=lib \
-		-DCMAKE_INSTALL_LIBEXECDIR=lib \
-		-DCMAKE_BUILD_TYPE=Release \
-		-DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
-		-DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
-		-Wno-author 
-	cmake --build build
-	DESTDIR=$PKG cmake --install build
-}
+    cmake -S "SoapySDR-${name}-${version}" -B build -G Ninja \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_INSTALL_LIBDIR=lib \
+        -DCMAKE_INSTALL_LIBEXECDIR=lib \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
+        -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
+        -Wno-author
 
+    cmake --build build
+    DESTDIR="${PKG}" cmake --install build
+}
