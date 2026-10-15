@@ -3,8 +3,12 @@ drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/btrfs-assistant
--rwxr-xr-x root/root    usr/bin/btrfs-assistant-bin
--rwxr-xr-x root/root    usr/bin/btrfs-assistant-launcher
+drwxr-xr-x root/root    usr/lib/
+drwxr-xr-x root/root    usr/lib/btrfs-assistant/
+-rwxr-xr-x root/root    usr/lib/btrfs-assistant/btrfs-assistant-helper
+drwxr-xr-x root/root    usr/lib/systemd/
+drwxr-xr-x root/root    usr/lib/systemd/system/
+-rw-r--r-- root/root    usr/lib/systemd/system/btrfs-assistant-helper.service
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/applications/
 -rw-r--r-- root/root    usr/share/applications/btrfs-assistant.desktop
@@ -14,6 +18,11 @@ drwxr-xr-x root/root    usr/share/btrfs-assistant/translations/
 -rw-r--r-- root/root    usr/share/btrfs-assistant/translations/btrfsassistant_ja.qm
 -rw-r--r-- root/root    usr/share/btrfs-assistant/translations/btrfsassistant_ru.qm
 -rw-r--r-- root/root    usr/share/btrfs-assistant/translations/btrfsassistant_zh_CN.qm
+drwxr-xr-x root/root    usr/share/dbus-1/
+drwxr-xr-x root/root    usr/share/dbus-1/system-services/
+-rw-r--r-- root/root    usr/share/dbus-1/system-services/org.btrfsassistant.Helper1.service
+drwxr-xr-x root/root    usr/share/dbus-1/system.d/
+-rw-r--r-- root/root    usr/share/dbus-1/system.d/org.btrfsassistant.Helper1.conf
 drwxr-xr-x root/root    usr/share/icons/
 drwxr-xr-x root/root    usr/share/icons/hicolor/
 drwxr-xr-x root/root    usr/share/icons/hicolor/scalable/
@@ -23,4 +32,4 @@ drwxr-xr-x root/root    usr/share/metainfo/
 -rw-r--r-- root/root    usr/share/metainfo/btrfs-assistant.metainfo.xml
 drwxr-xr-x root/root    usr/share/polkit-1/
 drwxr-xr-x root/root    usr/share/polkit-1/actions/
--rw-r--r-- root/root    usr/share/polkit-1/actions/org.btrfs-assistant.pkexec.policy
+-rw-r--r-- root/root    usr/share/polkit-1/actions/org.btrfsassistant.policy
