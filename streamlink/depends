@@ -1,6 +1,6 @@
 python3-build
-python3-iso-639
 python3-iso3166
+python3-iso-639
 python3-isodate
 python3-pycryptodome
 python3-pysocks

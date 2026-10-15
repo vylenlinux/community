@@ -1,5 +1,5 @@
 perl-digest-sha1
 perl-html-parser
 perl-libwww
-perl-net-dns
 perl-netaddr-ip
+perl-net-dns

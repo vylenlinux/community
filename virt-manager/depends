@@ -1,7 +1,7 @@
 dmidecode
 dnsmasq
-gtk-vnc
 gtksourceview4
+gtk-vnc
 iptables
 libosinfo
 libvirt-glib
