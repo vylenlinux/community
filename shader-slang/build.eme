@@ -6,7 +6,7 @@ homepage="https://shader-slang.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=shader-slang
-version=2026.19
+version=2026.20
 release=1
 source="https://downloads.sourceforge.net/project/vylen/sources/${name}/${name}-${version}.tar.xz"
 
@@ -16,7 +16,6 @@ build() {
         -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_INSTALL_LIBDIR=lib \
         -DCMAKE_INSTALL_INCLUDEDIR="include/${name}" \
-        -DCMAKE_CXX_FLAGS="-I/usr/include/glslang" \
         \
         -DSLANG_USE_SYSTEM_GLSLANG=yes \
         -DSLANG_USE_SYSTEM_MINIZ=yes \
