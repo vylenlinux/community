@@ -5,10 +5,10 @@ description="Lightweight, high-performance Wayland compositor built on dwl"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://mangowm.github.io/"
 
-name=mangowc
+name=mangowm
 version=0.18.1
 release=1
-source="${name}-${version}.tar.gz::https://github.com/DreamMaoMao/${name}/archive/refs/tags/${version}.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/${name}/mango/archive/refs/tags/${version}.tar.gz"
 
 build() {
     vylen-meson "mango-${version}" build -Dxwayland="$(emerald is-installed xwayland && printf "enabled" || printf "disabled")"
