@@ -1,1 +1,4 @@
+66f573749a5a649ccfbafd78e704c56d32c30606053ce284ed3d4524a91142b0  0001-Fix-SSLv3-in-OpenSSL-4.0.0.patch
+d0b02b6769bb7670f3c789387aa5ae6c447dfeaabb085e152a22fbbf66015b66  0002-OpenSSL-4.0.0-remove-support-for-some-TLS-functions.patch
+31ca8046bae3474050995e6b86a2d24aaeaa421fd7e7ff87569058958a931c48  0003-Fix-Net-SSLeay-to-support-opaque-ASN1_STRING.patch
 d6dbd7187ed0221b05ae874e9af774ffdcd04312e60855fa09358b256ec5e5b1  perl-net-ssleay-1.96.tar.gz

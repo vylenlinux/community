@@ -8,11 +8,20 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=perl-net-ssleay
 version=1.96
 release=1
-source="${name}-${version}.tar.gz::https://cpan.metacpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-${version}.tar.gz"
+
+source="${name}-${version}.tar.gz::https://cpan.metacpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-${version}.tar.gz
+    0001-Fix-SSLv3-in-OpenSSL-4.0.0.patch
+    0002-OpenSSL-4.0.0-remove-support-for-some-TLS-functions.patch
+    0003-Fix-Net-SSLeay-to-support-opaque-ASN1_STRING.patch"
 
 build() {
     # shellcheck disable=SC2164
     cd "Net-SSLeay-${version}"
+
+    patch -Np1 -i "${SRC}/0001-Fix-SSLv3-in-OpenSSL-4.0.0.patch"
+    patch -Np1 -i "${SRC}/0002-OpenSSL-4.0.0-remove-support-for-some-TLS-functions.patch"
+    patch -Np1 -i "${SRC}/0003-Fix-Net-SSLeay-to-support-opaque-ASN1_STRING.patch"
+
     perl Makefile.PL
 
     make
