@@ -6,25 +6,27 @@ homepage="http://www.mplayerhq.hu/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=mplayer
-version=1.5_p20241125
+version=1.5
 release=2
 
-source="https://dev.gentoo.org/~sam/distfiles/media-video/${name}/${name}-${version}.tar.xz
+_version=1.5_p20241125
+
+source="${name}-${version}.tar.xz::https://dev.gentoo.org/~sam/distfiles/media-video/${name}/${name}-${_version}.tar.xz
     ffmpeg-7.patch
     ffmpeg-8.patch
     mplayer-c99.patch"
 
 build() {
     # shellcheck disable=SC2164
-    cd "${name}-${version}"
+    cd "${name}-${_version}"
 
     export CFLAGS="${CFLAGS} \
         -Wno-incompatible-pointer-types \
         -Wno-implicit-function-declaration \
         -Wno-int-conversion"
 
-    patch -p0 -i "${SRC}/ffmpeg-7.patch"
-    patch -p0 -i "${SRC}/ffmpeg-8.patch"
+    patch -Np0 -i "${SRC}/ffmpeg-7.patch"
+    patch -Np0 -i "${SRC}/ffmpeg-8.patch"
     patch -Np1 -i "${SRC}/mplayer-c99.patch"
 
     ./configure \
