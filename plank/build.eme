@@ -6,7 +6,7 @@ homepage="https://plankreloaded.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=plank
-version=0.11.172
+version=0.11.175
 release=1
 source="${name}-${version}.tar.gz::https://github.com/zquestz/plank-reloaded/archive/${version}/plank-reloaded-${version}.tar.gz"
 
