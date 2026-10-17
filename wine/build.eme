@@ -6,7 +6,7 @@ homepage="https://dl.winehq.org/wine"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=wine
-version=11.19
+version=11.20
 release=1
 source="https://dl.winehq.org/${name}/source/${version%%.*}.x/${name}-${version}.tar.xz"
 
