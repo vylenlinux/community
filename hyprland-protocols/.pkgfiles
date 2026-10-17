@@ -10,5 +10,6 @@ drwxr-xr-x root/root    usr/share/hyprland-protocols/protocols/
 -rw-r--r-- root/root    usr/share/hyprland-protocols/protocols/hyprland-surface-v1.xml
 -rw-r--r-- root/root    usr/share/hyprland-protocols/protocols/hyprland-toplevel-export-v1.xml
 -rw-r--r-- root/root    usr/share/hyprland-protocols/protocols/hyprland-toplevel-mapping-v1.xml
+-rw-r--r-- root/root    usr/share/hyprland-protocols/protocols/hyprland-workspace-image-capture-source-v1.xml
 drwxr-xr-x root/root    usr/share/pkgconfig/
 -rw-r--r-- root/root    usr/share/pkgconfig/hyprland-protocols.pc
