@@ -6,7 +6,7 @@ homepage="https://mkvtoolnix.download/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=mkvtoolnix
-version=102.0
+version=103.0
 release=1
 source="https://mkvtoolnix.download/sources/${name}-${version}.tar.xz"
 
