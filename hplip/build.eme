@@ -18,7 +18,6 @@ source="http://downloads.sourceforge.net/project/${name}/${name}/${version}/${na
     0024-fix-hp-scanui-desktop-file.patch
     disable_upgrade.patch
     fix-hp-scan-size-crash.patch
-    hplip-1_3_23_12-4-python3_12-fix.patch
     hplip-configure-python.patch
     hplip-gcc15-stdc23.patch
     hplip-hpaio-gcc14.patch
