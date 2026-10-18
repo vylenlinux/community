@@ -10,7 +10,6 @@ version=1.0.1
 release=1
 
 source="${name}-${version}.tar.gz::https://git.sr.ht/~raphi/${name}/archive/${version}.tar.gz
-    blocks.h
     someblocks-1.0.1-c23.patch"
 
 build() {
