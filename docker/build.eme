@@ -12,8 +12,7 @@ backup="etc/${name}.conf"
 
 source="https://github.com/moby/moby/archive/${name}-v${version}/moby-${version}.tar.gz
     https://github.com/${name}/cli/archive/v${version}/cli-${version}.tar.gz
-    ${name}.conf
-    01-fix-ulimit-errors.patch"
+    ${name}.conf"
 
 build() {
     export GO111MODULE=auto
@@ -69,12 +68,12 @@ build() {
         "${PKG}/usr/share/zsh/site-functions/" \
         "${PKG}/usr/share/fish/vendor_completions.d/"
 
-    "${PKG}/usr/bin/${name}" completion bash > "${PKG}/usr/share/bash-completion/completions/docker"
-    "${PKG}/usr/bin/${name}" completion zsh > "${PKG}/usr/share/zsh/site-functions/_docker"
-    "${PKG}/usr/bin/${name}" completion fish > "${PKG}/usr/share/fish/vendor_completions.d/docker.fish"
+    "${PKG}/usr/bin/${name}" completion bash > "${PKG}/usr/share/bash-completion/completions/${name}"
+    "${PKG}/usr/bin/${name}" completion zsh > "${PKG}/usr/share/zsh/site-functions/_${name}"
+    "${PKG}/usr/bin/${name}" completion fish > "${PKG}/usr/share/fish/vendor_completions.d/${name}.fish"
 
-    patch -Np1 -i "${SRC}/01-fix-ulimit-errors.patch"
+    install -Dm644 "contrib/init/systemd/${name}.service" -t "${PKG}/usr/lib/systemd/system/"
+    install -Dm644 "contrib/init/systemd/${name}.socket" -t "${PKG}/usr/lib/systemd/system/"
 
-    install -Dm644 "contrib/init/openrc/${name}.confd" "${PKG}/etc/conf.d/${name}"
-    install -Dm755 "contrib/init/openrc/${name}.initd" "${PKG}/etc/init.d/${name}"
+    do_sysusers "${name}"
 }

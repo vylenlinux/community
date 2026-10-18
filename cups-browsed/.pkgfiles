@@ -1,8 +1,6 @@
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/cups/
 -rw-r--r-- root/root    etc/cups/cups-browsed.conf
-drwxr-xr-x root/root    etc/init.d/
--rwxr-xr-x root/root    etc/init.d/cups-browsed
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/cups-browsed
@@ -10,6 +8,9 @@ drwxr-xr-x root/root    usr/lib/
 drwxr-xr-x root/root    usr/lib/cups/
 drwxr-xr-x root/root    usr/lib/cups/backend/
 -rwx------ root/root    usr/lib/cups/backend/implicitclass
+drwxr-xr-x root/root    usr/lib/systemd/
+drwxr-xr-x root/root    usr/lib/systemd/system/
+-rw-r--r-- root/root    usr/lib/systemd/system/cups-browsed.service
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/man/
 drwxr-xr-x root/root    usr/share/man/man5/

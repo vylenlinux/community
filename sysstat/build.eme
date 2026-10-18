@@ -17,10 +17,10 @@ build() {
     ./configure \
         --prefix=/usr \
         --disable-file-attr \
-        --disable-automated-sar-reporting \
+        --disable-compress-manpg \
+        --enable-copy-only \
         \
-        conf_dir=/etc/sysconfig \
-        sa_dir=/var/log/sa
+        conf_dir="/etc/${name}"
 
     make
     make DESTDIR="${PKG}" install

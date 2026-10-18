@@ -7,7 +7,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=protobuf-c
 version=1.5.2
-release=2
+release=1
 
 source="https://github.com/${name}/${name}/releases/download/v${version}/${name}-${version}.tar.gz
     https://github.com/strophy/protobuf-c/commit/d39f001b4578966600de0aaf7fc665eec6e057e5.diff"

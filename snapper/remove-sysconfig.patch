@@ -1,0 +1,97 @@
+diff '--color=auto' -ruN --no-dereference a/client/installation-helper/installation-helper.cc b/client/installation-helper/installation-helper.cc
+--- a/client/installation-helper/installation-helper.cc	2026-09-07 09:54:13.000000000 +0200
++++ b/client/installation-helper/installation-helper.cc	2026-10-15 14:15:50.415000000 +0200
+@@ -386,13 +386,12 @@
+     cout << "creating directories in /<root-prefix>" << endl;
+ 
+     mkdir(prepend_root_prefix(root_prefix, "/etc").c_str(), 0777);
+-    mkdir(prepend_root_prefix(root_prefix, "/etc/sysconfig").c_str(), 0777);
+     mkdir(prepend_root_prefix(root_prefix, "/etc/snapper").c_str(), 0777);
+     mkdir(prepend_root_prefix(root_prefix, "/etc/snapper/configs").c_str(), 0777);
+ 
+     // create snapper sysconfig /<root-prefix>/etc/sysconfig/snapper
+ 
+-    cout << "creating snapper sysconfig /<root-prefix>/etc/sysconfig/snapper" << endl;
++    cout << "creating snapper configuration /<root-prefix>/etc/snapper/snapper" << endl;
+ 
+     try
+     {
+@@ -414,7 +413,7 @@
+     }
+     catch (const Exception& e)
+     {
+-	cerr << "setup of /<root-prefix>/etc/sysconfig/snapper failed, "
++	cerr << "setup of /<root-prefix>/etc/snapper/snapper failed, "
+ 	     << e.what() << endl;
+ 
+ 	return false;
+diff '--color=auto' -ruN --no-dereference a/configure.ac b/configure.ac
+--- a/configure.ac	2026-09-07 09:54:13.000000000 +0200
++++ b/configure.ac	2026-10-15 14:12:44.671000000 +0200
+@@ -65,9 +65,9 @@
+ CFLAGS="${CFLAGS} -std=c99 -Wall -Wextra -Wformat -Wmissing-prototypes -Wno-unused-parameter"
+ CXXFLAGS="${CXXFLAGS} -std=c++17 -Wall -Wextra -Wformat -Wnon-virtual-dtor -Wno-unused-parameter -Wsuggest-override"
+ 
+-SYSCONFIG=/etc/sysconfig
++SYSCONFIG=/etc/snapper
+ 
+-AC_ARG_WITH([conf], AS_HELP_STRING([--with-conf], [Use a custom sysconfig directory (default is /etc/sysconfig)]),
++AC_ARG_WITH([conf], AS_HELP_STRING([--with-conf], [Use a custom sysconfig directory (default is /etc/snapper)]),
+ 	[with_conf=$withval], [with_conf=no])
+ AS_IF([test "x$with_conf" != xno], [SYSCONFIG="${with_conf}"])
+ 
+diff '--color=auto' -ruN --no-dereference a/po/ar.po b/po/ar.po
+--- a/po/ar.po	2026-09-07 09:54:13.000000000 +0200
++++ b/po/ar.po	2026-10-15 14:13:39.873000000 +0200
+@@ -1535,8 +1535,8 @@
+ #~ msgid "undoing change..."
+ #~ msgstr "تم التراجع عن التغييرات"
+ 
+-#~ msgid "File /etc/sysconfig/snapper is not available."
+-#~ msgstr "الملف /etc/sysconfig/snapper غير متوفر."
++#~ msgid "File /etc/snapper/snapper is not available."
++#~ msgstr "الملف /etc/snapper/snapper غير متوفر."
+ 
+ #~ msgid "Reason not known."
+ #~ msgstr "السبب غير معروف."
+diff '--color=auto' -ruN --no-dereference a/scripts/snapper-hourly b/scripts/snapper-hourly
+--- a/scripts/snapper-hourly	2026-09-07 09:54:13.000000000 +0200
++++ b/scripts/snapper-hourly	2026-10-15 14:09:50.189000000 +0200
+@@ -9,10 +9,10 @@
+ 
+ 
+ #
+-# get information from /etc/sysconfig/snapper
++# get information from /etc/snapper/snapper
+ #
+-if [ -f /etc/sysconfig/snapper ] ; then
+-    . /etc/sysconfig/snapper
++if [ -f /etc/snapper/snapper ] ; then
++    . /etc/snapper/snapper
+ fi
+ 
+ 
+diff '--color=auto' -ruN --no-dereference a/snapper.spec.in b/snapper.spec.in
+--- a/snapper.spec.in	2026-09-07 09:54:13.000000000 +0200
++++ b/snapper.spec.in	2026-10-15 14:13:01.882000000 +0200
+@@ -155,7 +155,7 @@
+ %if 0%{?suse_version}
+ install -D -m 644 data/sysconfig.snapper "%{buildroot}%{_fillupdir}/sysconfig.snapper"
+ %else
+-install -D -m 644 data/sysconfig.snapper "%{buildroot}/etc/sysconfig/snapper"
++install -D -m 644 data/sysconfig.snapper "%{buildroot}/etc/snapper/snapper"
+ %endif
+ 
+ # move logrotate files from /etc/logrotate.d to /usr/etc/logrotate.d
+diff '--color=auto' -ruN --no-dereference a/testsuite-real/setup-and-run-all b/testsuite-real/setup-and-run-all
+--- a/testsuite-real/setup-and-run-all	2026-09-07 09:54:13.000000000 +0200
++++ b/testsuite-real/setup-and-run-all	2026-10-15 14:13:59.519000000 +0200
+@@ -20,7 +20,7 @@
+ IMG="$MNT"-of-snapper.img
+ 
+ forget_config() {
+-    sed -i -e "/^SNAPPER_CONFIGS=/s/\b${CFG}\b//" /etc/sysconfig/snapper
++    sed -i -e "/^SNAPPER_CONFIGS=/s/\b${CFG}\b//" /etc/snapper/snapper
+ }
+ 
+ setup() {

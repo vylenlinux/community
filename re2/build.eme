@@ -7,7 +7,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=re2
 version=2025.11.05
-release=2
+release=1
 
 _version=$(printf '%s' "${version}" | sed 's/\./-/g')
 source="https://github.com/google/${name}/archive/${_version}/${name}-${_version}.tar.gz"

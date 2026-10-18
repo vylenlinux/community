@@ -27,6 +27,8 @@ build() {
     install -Dm755 build/qga/qemu-ga -t "${PKG}/usr/bin/"
     install -Dm644 "scripts/${name}/fsfreeze-hook" -t "${PKG}/etc/qemu/"
     install -Dm755 "${SRC}/qemu-ga.conf" -t "${PKG}/etc/qemu/"
+    install -Dm644 "contrib/systemd/${name}.service" -t "${PKG}/usr/lib/systemd/system/"
 
-    do_service "${name}"
+    do_udev_rules "99-${name}"
+    install -dm755 "${PKG}/etc/qemu/fsfreeze-hook.d"
 }

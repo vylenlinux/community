@@ -71,6 +71,7 @@ drwxr-xr-x root/root    etc/apparmor.d/abstractions/apparmor_api/
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/kerberosclient
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/ldapclient
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/libnuma
+-rw-r--r-- root/root    etc/apparmor.d/abstractions/libpam-systemd
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/likewise
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/mdns
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/mesa
@@ -80,6 +81,7 @@ drwxr-xr-x root/root    etc/apparmor.d/abstractions/apparmor_api/
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/nameservice
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/nameservice-strict
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/nis
+-rw-r--r-- root/root    etc/apparmor.d/abstractions/nss-systemd
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/nvidia
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/opencl
 -rw-r--r-- root/root    etc/apparmor.d/abstractions/opencl-common
@@ -293,6 +295,8 @@ drwxr-xr-x root/root    etc/apparmor.d/local/
 -rw-r--r-- root/root    etc/apparmor.d/steam
 -rw-r--r-- root/root    etc/apparmor.d/stress-ng
 -rw-r--r-- root/root    etc/apparmor.d/surfshark
+-rw-r--r-- root/root    etc/apparmor.d/systemd-coredump
+-rw-r--r-- root/root    etc/apparmor.d/systemd-detect-virt
 -rw-r--r-- root/root    etc/apparmor.d/tar
 -rw-r--r-- root/root    etc/apparmor.d/thunderbird
 -rw-r--r-- root/root    etc/apparmor.d/tinyproxy
@@ -388,8 +392,6 @@ drwxr-xr-x root/root    etc/apparmor/
 -rw-r--r-- root/root    etc/apparmor/notify.conf
 -rw-r--r-- root/root    etc/apparmor/parser.conf
 -rw-r--r-- root/root    etc/apparmor/severity.db
-drwxr-xr-x root/root    etc/init.d/
--rwxr-xr-x root/root    etc/init.d/apparmor
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/aa-audit
@@ -411,6 +413,7 @@ drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/aa-remove-unknown
 -rwxr-xr-x root/root    usr/bin/aa-show-usage
 -rwxr-xr-x root/root    usr/bin/aa-status
+-rwxr-xr-x root/root    usr/bin/aa-teardown
 -rwxr-xr-x root/root    usr/bin/aa-unconfined
 -rwxr-xr-x root/root    usr/bin/apparmor_parser
 lrwxrwxrwx root/root    usr/bin/apparmor_status -> aa-status
@@ -421,9 +424,7 @@ drwxr-xr-x root/root    usr/include/sys/
 -rw-r--r-- root/root    usr/include/sys/apparmor.h
 -rw-r--r-- root/root    usr/include/sys/apparmor_private.h
 drwxr-xr-x root/root    usr/lib/
-drwxr-xr-x root/root    usr/lib/apparmor/
--rwxr-xr-x root/root    usr/lib/apparmor/profile-load
--rwxr-xr-x root/root    usr/lib/apparmor/rc.apparmor.functions
+-rwxr-xr-x root/root    usr/lib/apparmor
 -rw-r--r-- root/root    usr/lib/libapparmor.a
 lrwxrwxrwx root/root    usr/lib/libapparmor.so -> libapparmor.so.1.30.7
 lrwxrwxrwx root/root    usr/lib/libapparmor.so.1 -> libapparmor.so.1.30.7
@@ -546,6 +547,9 @@ drwxr-xr-x root/root    usr/lib/python3.15/site-packages/apparmor/rule/__pycache
 -rwxr-xr-x root/root    usr/lib/python3.15/site-packages/apparmor/update_profile.py
 drwxr-xr-x root/root    usr/lib/security/
 -rwxr-xr-x root/root    usr/lib/security/pam_apparmor.so
+drwxr-xr-x root/root    usr/lib/systemd/
+drwxr-xr-x root/root    usr/lib/systemd/system/
+-rw-r--r-- root/root    usr/lib/systemd/system/apparmor.service
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/apparmor/
 drwxr-xr-x root/root    usr/share/apparmor/easyprof/
@@ -975,7 +979,6 @@ drwxr-xr-x root/root    usr/share/man/man8/
 -rw-r--r-- root/root    usr/share/man/man8/aa-remove-unknown.8.gz
 -rw-r--r-- root/root    usr/share/man/man8/aa-show-usage.8.gz
 -rw-r--r-- root/root    usr/share/man/man8/aa-status.8.gz
--rw-r--r-- root/root    usr/share/man/man8/aa-teardown.8.gz
 -rw-r--r-- root/root    usr/share/man/man8/aa-unconfined.8.gz
 -rw-r--r-- root/root    usr/share/man/man8/apparmor_parser.8.gz
 lrwxrwxrwx root/root    usr/share/man/man8/apparmor_status.8.gz -> aa-status.8.gz

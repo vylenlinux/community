@@ -7,7 +7,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=mbedtls3
 version=3.6.7
-release=2
+release=1
 
 _framework_commit="893ad9e8450a8e7459679d952abd5d6df26c41c4"
 

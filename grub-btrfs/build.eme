@@ -8,11 +8,11 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=grub-btrfs
 version=4.14
 release=1
-source="${name}-${version}.tar.gz::https://github.com/Antynea/${name}/archive/refs/tags/v${version}.tar.gz"
 backup="etc/default/${name}/config"
+source="${name}-${version}.tar.gz::https://github.com/Antynea/${name}/archive/refs/tags/v${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-    OPENRC=true make DESTDIR="${PKG}" install
+    make DESTDIR="${PKG}" install
 }

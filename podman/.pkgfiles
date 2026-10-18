@@ -7,6 +7,30 @@ drwxr-xr-x root/root    usr/lib/
 drwxr-xr-x root/root    usr/lib/podman/
 -rwxr-xr-x root/root    usr/lib/podman/quadlet
 -rwxr-xr-x root/root    usr/lib/podman/rootlessport
+drwxr-xr-x root/root    usr/lib/systemd/
+drwxr-xr-x root/root    usr/lib/systemd/system-generators/
+lrwxrwxrwx root/root    usr/lib/systemd/system-generators/podman-system-generator -> ../../podman/quadlet
+drwxr-xr-x root/root    usr/lib/systemd/system/
+-rw-r--r-- root/root    usr/lib/systemd/system/podman-auto-update.service
+-rw-r--r-- root/root    usr/lib/systemd/system/podman-auto-update.timer
+-rw-r--r-- root/root    usr/lib/systemd/system/podman-clean-transient.service
+-rw-r--r-- root/root    usr/lib/systemd/system/podman-kube@.service
+-rw-r--r-- root/root    usr/lib/systemd/system/podman-restart.service
+-rw-r--r-- root/root    usr/lib/systemd/system/podman.service
+-rw-r--r-- root/root    usr/lib/systemd/system/podman.socket
+drwxr-xr-x root/root    usr/lib/systemd/user-generators/
+lrwxrwxrwx root/root    usr/lib/systemd/user-generators/podman-user-generator -> ../../podman/quadlet
+drwxr-xr-x root/root    usr/lib/systemd/user/
+-rw-r--r-- root/root    usr/lib/systemd/user/podman-auto-update.service
+-rw-r--r-- root/root    usr/lib/systemd/user/podman-auto-update.timer
+-rw-r--r-- root/root    usr/lib/systemd/user/podman-clean-transient.service
+-rw-r--r-- root/root    usr/lib/systemd/user/podman-kube@.service
+-rw-r--r-- root/root    usr/lib/systemd/user/podman-restart.service
+-rw-r--r-- root/root    usr/lib/systemd/user/podman-user-wait-network-online.service
+-rw-r--r-- root/root    usr/lib/systemd/user/podman.service
+-rw-r--r-- root/root    usr/lib/systemd/user/podman.socket
+drwxr-xr-x root/root    usr/lib/tmpfiles.d/
+-rw-r--r-- root/root    usr/lib/tmpfiles.d/podman.conf
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/man/
 drwxr-xr-x root/root    usr/share/man/man1/
@@ -76,6 +100,7 @@ drwxr-xr-x root/root    usr/share/man/man1/
 -rw-r--r-- root/root    usr/share/man/man1/podman-farm.1.gz
 -rw-r--r-- root/root    usr/share/man/man1/podman-generate-kube.1.gz
 -rw-r--r-- root/root    usr/share/man/man1/podman-generate-spec.1.gz
+-rw-r--r-- root/root    usr/share/man/man1/podman-generate-systemd.1.gz
 -rw-r--r-- root/root    usr/share/man/man1/podman-generate.1.gz
 -rw-r--r-- root/root    usr/share/man/man1/podman-healthcheck-run.1.gz
 -rw-r--r-- root/root    usr/share/man/man1/podman-healthcheck.1.gz
@@ -253,6 +278,7 @@ drwxr-xr-x root/root    usr/share/man/man5/
 -rw-r--r-- root/root    usr/share/man/man5/podman-kube.unit.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/podman-network.unit.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/podman-pod.unit.5.gz
+-rw-r--r-- root/root    usr/share/man/man5/podman-systemd.unit.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/podman-volume.unit.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/quadlet.5.gz
 drwxr-xr-x root/root    usr/share/man/man7/

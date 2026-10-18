@@ -30,10 +30,27 @@ build() {
         --disable-latex \
         --with-group=scanner \
         --with-libcurl \
-        --with-usb
+        --with-usb \
+        --with-systemd
 
     make
-    make -j1 DESTDIR="${PKG}" install
+    make DESTDIR="${PKG}" install
 
-    install -Dm644 tools/udev/libsane.rules "${PKG}/etc/udev/rules.d/85-libsane.rules"
+    install -dm755 "${PKG}/usr/lib/udev/rules.d/" \
+        "${PKG}/usr/lib/udev/hwdb.d/"
+
+    # generate udev udev+hwdb
+    tools/sane-desc -m udev+hwdb -s doc/descriptions/ > "${PKG}/usr/lib/udev/rules.d/65-${name}.rules"
+    tools/sane-desc -m udev+hwdb -s doc/descriptions-external/ >> "${PKG}/usr/lib/udev/rules.d/65-${name}.rules"
+
+    # generate udev hwdb
+    tools/sane-desc -m hwdb -s doc/descriptions/ > "${PKG}/usr/lib/udev/hwdb.d/20-${name}.hwdb"
+
+    # NOTE: an empty new line is required between the two .desc collections
+    printf "\n" >> "${PKG}/usr/lib/udev/hwdb.d/20-${name}.hwdb"
+    tools/sane-desc -m hwdb -s doc/descriptions-external/ >> "${PKG}/usr/lib/udev/hwdb.d/20-${name}.hwdb"
+
+    do_service saned
+    do_sysusers "${name}"
+    do_udev_rules 66-saned
 }

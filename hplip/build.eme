@@ -94,7 +94,7 @@ build() {
         --disable-network-build \
         --enable-pp-build
 
-    make -j1 rulesdir=/usr/lib/udev/rules.d DESTDIR="${PKG}" install
+    make rulesdir=/usr/lib/udev/rules.d DESTDIR="${PKG}" install
 
     # remove config provided by sane and autostart of hp-daemon
     # remove HAL .fdi file because HAL is no longer used

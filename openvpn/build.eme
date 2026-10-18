@@ -24,8 +24,12 @@ build() {
         --enable-iproute2 \
         --enable-plugins \
         --enable-pkcs11 \
-        --disable-systemd
+        --enable-systemd \
+        --enable-x509-alt-username
 
     make
     make DESTDIR="${PKG}" install
+
+    do_sysusers "${name}"
+    do_tmpfiles "${name}"
 }

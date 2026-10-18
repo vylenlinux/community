@@ -20,5 +20,7 @@ build() {
     make
     make DESTDIR="${PKG}" install
 
-    do_service spamd
+    do_service "${name}" "${name}-update"
+    do_sysusers "${name}"
+    do_tmpfiles "${name}"
 }

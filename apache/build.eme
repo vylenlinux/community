@@ -11,7 +11,7 @@ release=1
 
 source="${name}-${version}.tar.bz2::https://archive.apache.org/dist/httpd/httpd-${version}.tar.bz2
     httpd-blfs_layout-1.patch
-    apache2-openssl4-compat.patch"
+    hardening.conf"
 
 build() {
     # shellcheck disable=SC2164
@@ -19,9 +19,6 @@ build() {
 
     # Forces the apxs utility to use absolute pathnames for modules, when instructed to do so
     patch -Np1 -i "${SRC}/httpd-blfs_layout-1.patch"
-
-    # fix build with openssl4
-    patch -Np1 -i "${SRC}/apache2-openssl4-compat.patch"
 
     sed '/dir.*CFG_PREFIX/s@^@#@' -i support/apxs.in
 
@@ -51,8 +48,10 @@ build() {
     make DESTDIR="${PKG}" install
 
     mv "${PKG}/usr/bin/suexec" -t "${PKG}/usr/lib/httpd/"
-    rm -fr "${PKG}/run"
+    rm -rf "${PKG}/run"
 
-    do_service apache2
-    rm -f "${PKG}/usr/share/httpd/manual/mod"/*systemd*
+    do_service httpd
+    do_tmpfiles "${name}"
+
+    install -Dm644 "${SRC}/hardening.conf" -t "${PKG}/usr/lib/systemd/system/httpd.service.d/"
 }

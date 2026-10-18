@@ -2703,6 +2703,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/places/folder-sound.s
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/places/folder-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/places/folder-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/places/folder-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/places/folder-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/places/folder-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus-Dark/16x16/places/folder-teal.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus-Dark/16x16/places/folder-temp.svg -> folder-recent.svg

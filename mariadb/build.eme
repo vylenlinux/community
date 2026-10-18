@@ -8,10 +8,12 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=mariadb
 version=13.0.2
 release=1
+backup="etc/security/user_map.conf"
 source="https://downloads.mariadb.org/interstitial/${name}-${version}/source/${name}-${version}.tar.gz"
 
 build() {
     cmake -S "${name}-${version}" -B build -G Ninja \
+        -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_BUILD_TYPE=Release \
         -DINSTALL_LAYOUT=RPM \
         -DINSTALL_LIBDIR=lib \
@@ -19,7 +21,10 @@ build() {
         -DINSTALL_SCRIPTDIR=bin \
         -DINSTALL_PLUGINDIR=lib/mysql/plugin \
         -DINSTALL_PCDIR=/usr/lib/pkgconfig \
-        -DINSTALL_PAMDIR=/lib/security \
+        -DINSTALL_PAMDIR=lib/security \
+        -DINSTALL_SYSTEMD_UNITDIR=lib/systemd/system/ \
+        -DINSTALL_SYSTEMD_SYSUSERSDIR=lib/sysusers.d/ \
+        -DINSTALL_SYSTEMD_TMPFILESDIR=lib/tmpfiles.d/ \
         -DMYSQL_DATADIR=/var/lib/mysql \
         -DMYSQL_UNIX_ADDR=/run/mysqld/mysqld.sock \
         -DWITH_READLINE=ON \
@@ -28,30 +33,27 @@ build() {
         -DWITH_SSL=system \
         -DWITH_PCRE=system \
         -DWITH_LIBFMT=system \
-        -DWITH_SYSTEMD=no \
+        -DWITH_SYSTEMD=yes \
         -DWITH_EXTRA_CHARSETS=complex \
         -DWITH_EMBEDDED_SERVER=ON \
-        -DWITH_UNIT_TESTS=OFF
+        -DWITH_UNIT_TESTS=OFF \
+        -DCOMPILATION_COMMENT="Vylen GNU/Linux" \
+        -Wno-author
 
     cmake --build build
     DESTDIR="${PKG}" cmake --install build
 
     rm -rf "${PKG}/etc/logrotate.d" \
         "${PKG}/usr/share/mariadb-test" \
-        "${PKG}/usr/share"/groonga*
+        "${PKG}/usr/share"/groonga* \
+        "${PKG}/usr/share/mariadb/systemd" \
+        "${PKG}/usr/lib/systemd/system/mariadb@bootstrap.service.d"
 
     rm -f "${PKG}/usr/bin/rcmysql" \
-        "${PKG}/usr/share/man/man1/mysql-test-run.pl.1"
+        "${PKG}/usr/share/man/man1/mysql-test-run.pl.1" \
+        "${PKG}/usr/share/${name}/binary-configure" \
+        "${PKG}/usr/share/${name}/mysql.server" \
+        "${PKG}/usr/share/${name}/mysqld_multi.server"
 
-    # shellcheck disable=SC2038
-    find "${PKG}/usr/share/mariadb"/* -type d \
-        ! -name english \
-        ! -name charsets \
-    | xargs rm -rf {} \;
-
-    mv "${PKG}/lib/security" -t "${PKG}/usr/lib/"
-    rmdir "${PKG}/lib"
-
-    do_service "${name}"
     do_pam mysql
 }
