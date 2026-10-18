@@ -6,7 +6,7 @@ homepage="https://github.com/greshake/i3status-rust"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=i3status-rust
-version=0.36.1
+version=0.36.2
 release=1
 source="${name}-${version}.tar.gz::https://github.com/greshake/${name}/archive/refs/tags/v${version}.tar.gz"
 

@@ -1,5 +1,6 @@
 name = "i3status-rust"
-provider = "crates"
+provider = "github"
 
 [source]
-crate = "i3status-rs"
+owner = "greshake"
+repo = "%(name)"
