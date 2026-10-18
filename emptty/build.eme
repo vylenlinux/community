@@ -8,18 +8,15 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=emptty
 version=0.16.1
 release=1
-
-source="${name}-${version}.tar.gz::https://github.com/tvrzna/${name}/archive/v${version}.tar.gz"
 backup="etc/${name}/conf"
+source="${name}-${version}.tar.gz::https://github.com/tvrzna/${name}/archive/v${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
 
     make build
-    make DESTDIR="${PKG}" install-all
-    make DESTDIR="${PKG}" install-config
-    make DESTDIR="${PKG}" install-openrc
+    make DESTDIR="${PKG}" install-all install-config install-systemd
 
     # Configure PAM
     do_pam "${name}"

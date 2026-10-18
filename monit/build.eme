@@ -8,11 +8,14 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=monit
 version=6.0.0
 release=1
-source="http://mmonit.com/${name}/dist/${name}-${version}.tar.gz"
+
+source="https://mmonit.com/${name}/dist/${name}-${version}.tar.gz
+    fix-paths-in-systemd-service.patch"
 
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
+    patch -Np1 -i "${SRC}/fix-paths-in-systemd-service.patch"
 
     ./configure \
         --prefix=/usr \
@@ -22,4 +25,5 @@ build() {
     make DESTDIR="${PKG}" install
 
     install -Dm700 monitrc -t "${PKG}/etc/"
+    install -Dm644 "system/startup/${name}.service" -t "${PKG}/usr/lib/systemd/system/"
 }

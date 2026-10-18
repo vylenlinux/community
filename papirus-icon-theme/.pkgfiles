@@ -12024,6 +12024,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/16x16/mimetypes/text-x-sql.svg -
 lrwxrwxrwx root/root    usr/share/icons/Papirus/16x16/mimetypes/text-x-ssa.svg -> application-x-srt.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/16x16/mimetypes/text-x-stylus.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/16x16/mimetypes/text-x-subviewer.svg -> application-x-srt.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/16x16/mimetypes/text-x-systemd-unit.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/16x16/mimetypes/text-x-tcl.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/16x16/mimetypes/text-x-tex.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/16x16/mimetypes/text-x-texinfo.svg -> text-x-tex.svg
@@ -14595,6 +14596,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/16x16/places/folder-sound.svg ->
 -rw-r--r-- root/root    usr/share/icons/Papirus/16x16/places/folder-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/16x16/places/folder-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/16x16/places/folder-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/16x16/places/folder-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/16x16/places/folder-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/16x16/places/folder-teal.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/16x16/places/folder-temp.svg -> folder-recent.svg
@@ -15562,6 +15564,7 @@ drwxr-xr-x root/root    usr/share/icons/Papirus/16x16/symbolic/mimetypes/
 -rw-r--r-- root/root    usr/share/icons/Papirus/16x16/symbolic/mimetypes/playlist-symbolic.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/16x16/symbolic/mimetypes/text-html-symbolic.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/16x16/symbolic/mimetypes/text-x-generic-symbolic.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/16x16/symbolic/mimetypes/text-x-systemd-unit-symbolic.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/16x16/symbolic/mimetypes/video-x-generic-symbolic.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/16x16/symbolic/mimetypes/x-office-address-book-symbolic.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/16x16/symbolic/mimetypes/x-office-calendar-symbolic.svg
@@ -28136,6 +28139,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/mimetypes/text-x-sql.svg -
 lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/mimetypes/text-x-ssa.svg -> application-x-srt.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/mimetypes/text-x-stylus.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/mimetypes/text-x-subviewer.svg -> application-x-srt.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/mimetypes/text-x-systemd-unit.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/mimetypes/text-x-tcl.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/mimetypes/text-x-tex.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/mimetypes/text-x-texinfo.svg -> text-x-tex.svg
@@ -30770,6 +30774,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-adwaita-publ
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-adwaita-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-adwaita-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-adwaita-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-adwaita-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-adwaita-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-adwaita-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-adwaita-templates.svg
@@ -30852,6 +30857,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-black-public
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-black-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-black-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-black-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-black-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-black-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-black-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-black-templates.svg
@@ -30929,6 +30935,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-blue-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-blue-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-blue-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-blue-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-blue-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-blue-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-blue-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-blue-templates.svg
@@ -31006,6 +31013,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-bluegrey-pub
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-bluegrey-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-bluegrey-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-bluegrey-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-bluegrey-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-bluegrey-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-bluegrey-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-bluegrey-templates.svg
@@ -31086,6 +31094,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-breeze-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-breeze-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-breeze-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-breeze-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-breeze-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-breeze-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-breeze-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-breeze-templates.svg
@@ -31163,6 +31172,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-brown-public
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-brown-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-brown-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-brown-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-brown-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-brown-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-brown-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-brown-templates.svg
@@ -31241,6 +31251,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-carmine-publ
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-carmine-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-carmine-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-carmine-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-carmine-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-carmine-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-carmine-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-carmine-templates.svg
@@ -31321,6 +31332,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-cyan-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-cyan-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-cyan-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-cyan-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-cyan-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-cyan-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-cyan-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-cyan-templates.svg
@@ -31398,6 +31410,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-darkcyan-pub
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-darkcyan-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-darkcyan-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-darkcyan-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-darkcyan-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-darkcyan-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-darkcyan-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-darkcyan-templates.svg
@@ -31476,6 +31489,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-deeporange-p
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-deeporange-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-deeporange-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-deeporange-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-deeporange-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-deeporange-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-deeporange-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-deeporange-templates.svg
@@ -31572,6 +31586,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-green-public
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-green-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-green-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-green-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-green-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-green-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-green-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-green-templates.svg
@@ -31649,6 +31664,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-grey-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-grey-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-grey-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-grey-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-grey-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-grey-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-grey-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-grey-templates.svg
@@ -31732,6 +31748,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-indigo-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-indigo-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-indigo-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-indigo-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-indigo-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-indigo-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-indigo-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-indigo-templates.svg
@@ -31813,6 +31830,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-magenta-publ
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-magenta-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-magenta-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-magenta-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-magenta-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-magenta-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-magenta-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-magenta-templates.svg
@@ -31898,6 +31916,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-nordic-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-nordic-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-nordic-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-nordic-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-nordic-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-nordic-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-nordic-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-nordic-templates.svg
@@ -31979,6 +31998,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-orange-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-orange-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-orange-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-orange-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-orange-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-orange-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-orange-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-orange-templates.svg
@@ -32057,6 +32077,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-palebrown-pu
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-palebrown-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-palebrown-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-palebrown-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-palebrown-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-palebrown-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-palebrown-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-palebrown-templates.svg
@@ -32134,6 +32155,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-paleorange-p
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-paleorange-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-paleorange-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-paleorange-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-paleorange-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-paleorange-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-paleorange-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-paleorange-templates.svg
@@ -32217,6 +32239,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-pink-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-pink-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-pink-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-pink-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-pink-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-pink-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-pink-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-pink-templates.svg
@@ -32301,6 +32324,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-red-public.s
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-red-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-red-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-red-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-red-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-red-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-red-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-red-templates.svg
@@ -32325,6 +32349,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-sound.svg ->
 lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-steam.svg -> folder-blue-steam.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-sync.svg -> folder-blue-sync.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-syncthing.svg -> folder-blue-syncthing.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-systemd.svg -> folder-blue-systemd.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-tar.svg -> folder-blue-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-teal-activities.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-teal-android.svg
@@ -32388,6 +32413,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-teal-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-teal-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-teal-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-teal-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-teal-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-teal-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-teal-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-teal-templates.svg
@@ -32477,6 +32503,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-violet-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-violet-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-violet-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-violet-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-violet-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-violet-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-violet-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-violet-templates.svg
@@ -32556,6 +32583,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-white-public
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-white-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-white-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-white-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-white-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-white-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-white-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-white-templates.svg
@@ -32636,6 +32664,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-yaru-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-yaru-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-yaru-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-yaru-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-yaru-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-yaru-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-yaru-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-yaru-templates.svg
@@ -32713,6 +32742,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/22x22/places/folder-yellow-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-yellow-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-yellow-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-yellow-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-yellow-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-yellow-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-yellow-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/places/folder-yellow-templates.svg
@@ -33749,6 +33779,7 @@ drwxr-xr-x root/root    usr/share/icons/Papirus/22x22/symbolic/mimetypes/
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/symbolic/mimetypes/playlist-symbolic.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/symbolic/mimetypes/text-html-symbolic.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/symbolic/mimetypes/text-x-generic-symbolic.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/22x22/symbolic/mimetypes/text-x-systemd-unit-symbolic.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/symbolic/mimetypes/video-x-generic-symbolic.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/symbolic/mimetypes/x-office-address-book-symbolic.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/22x22/symbolic/mimetypes/x-office-calendar-symbolic.svg
@@ -46252,6 +46283,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/mimetypes/text-x-sql.svg -
 lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/mimetypes/text-x-ssa.svg -> application-x-srt.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/mimetypes/text-x-stylus.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/mimetypes/text-x-subviewer.svg -> application-x-srt.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/mimetypes/text-x-systemd-unit.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/mimetypes/text-x-tcl.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/mimetypes/text-x-tex.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/mimetypes/text-x-texinfo.svg -> text-x-tex.svg
@@ -48788,6 +48820,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-adwaita-publ
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-adwaita-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-adwaita-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-adwaita-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-adwaita-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-adwaita-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-adwaita-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-adwaita-templates.svg
@@ -48870,6 +48903,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-black-public
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-black-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-black-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-black-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-black-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-black-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-black-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-black-templates.svg
@@ -48947,6 +48981,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-blue-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-blue-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-blue-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-blue-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-blue-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-blue-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-blue-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-blue-templates.svg
@@ -49024,6 +49059,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-bluegrey-pub
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-bluegrey-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-bluegrey-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-bluegrey-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-bluegrey-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-bluegrey-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-bluegrey-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-bluegrey-templates.svg
@@ -49104,6 +49140,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-breeze-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-breeze-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-breeze-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-breeze-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-breeze-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-breeze-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-breeze-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-breeze-templates.svg
@@ -49181,6 +49218,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-brown-public
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-brown-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-brown-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-brown-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-brown-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-brown-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-brown-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-brown-templates.svg
@@ -49259,6 +49297,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-carmine-publ
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-carmine-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-carmine-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-carmine-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-carmine-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-carmine-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-carmine-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-carmine-templates.svg
@@ -49339,6 +49378,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-cyan-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-cyan-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-cyan-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-cyan-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-cyan-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-cyan-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-cyan-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-cyan-templates.svg
@@ -49416,6 +49456,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-darkcyan-pub
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-darkcyan-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-darkcyan-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-darkcyan-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-darkcyan-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-darkcyan-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-darkcyan-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-darkcyan-templates.svg
@@ -49494,6 +49535,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-deeporange-p
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-deeporange-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-deeporange-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-deeporange-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-deeporange-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-deeporange-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-deeporange-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-deeporange-templates.svg
@@ -49590,6 +49632,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-green-public
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-green-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-green-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-green-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-green-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-green-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-green-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-green-templates.svg
@@ -49667,6 +49710,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-grey-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-grey-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-grey-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-grey-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-grey-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-grey-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-grey-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-grey-templates.svg
@@ -49750,6 +49794,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-indigo-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-indigo-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-indigo-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-indigo-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-indigo-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-indigo-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-indigo-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-indigo-templates.svg
@@ -49831,6 +49876,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-magenta-publ
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-magenta-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-magenta-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-magenta-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-magenta-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-magenta-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-magenta-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-magenta-templates.svg
@@ -49916,6 +49962,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-nordic-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-nordic-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-nordic-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-nordic-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-nordic-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-nordic-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-nordic-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-nordic-templates.svg
@@ -49997,6 +50044,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-orange-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-orange-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-orange-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-orange-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-orange-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-orange-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-orange-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-orange-templates.svg
@@ -50075,6 +50123,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-palebrown-pu
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-palebrown-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-palebrown-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-palebrown-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-palebrown-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-palebrown-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-palebrown-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-palebrown-templates.svg
@@ -50152,6 +50201,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-paleorange-p
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-paleorange-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-paleorange-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-paleorange-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-paleorange-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-paleorange-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-paleorange-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-paleorange-templates.svg
@@ -50235,6 +50285,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-pink-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-pink-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-pink-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-pink-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-pink-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-pink-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-pink-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-pink-templates.svg
@@ -50319,6 +50370,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-red-public.s
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-red-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-red-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-red-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-red-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-red-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-red-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-red-templates.svg
@@ -50343,6 +50395,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-sound.svg ->
 lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-steam.svg -> folder-blue-steam.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-sync.svg -> folder-blue-sync.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-syncthing.svg -> folder-blue-syncthing.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-systemd.svg -> folder-blue-systemd.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-tar.svg -> folder-blue-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-teal-activities.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-teal-android.svg
@@ -50406,6 +50459,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-teal-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-teal-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-teal-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-teal-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-teal-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-teal-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-teal-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-teal-templates.svg
@@ -50495,6 +50549,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-violet-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-violet-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-violet-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-violet-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-violet-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-violet-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-violet-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-violet-templates.svg
@@ -50574,6 +50629,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-white-public
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-white-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-white-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-white-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-white-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-white-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-white-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-white-templates.svg
@@ -50654,6 +50710,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-yaru-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-yaru-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-yaru-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-yaru-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-yaru-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-yaru-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-yaru-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-yaru-templates.svg
@@ -50731,6 +50788,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/24x24/places/folder-yellow-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-yellow-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-yellow-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-yellow-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-yellow-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-yellow-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-yellow-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/places/folder-yellow-templates.svg
@@ -51746,6 +51804,7 @@ drwxr-xr-x root/root    usr/share/icons/Papirus/24x24/symbolic/mimetypes/
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/symbolic/mimetypes/playlist-symbolic.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/symbolic/mimetypes/text-html-symbolic.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/symbolic/mimetypes/text-x-generic-symbolic.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/24x24/symbolic/mimetypes/text-x-systemd-unit-symbolic.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/symbolic/mimetypes/video-x-generic-symbolic.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/symbolic/mimetypes/x-office-address-book-symbolic.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/24x24/symbolic/mimetypes/x-office-calendar-symbolic.svg
@@ -61793,6 +61852,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/mimetypes/text-x-sql.svg -
 lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/mimetypes/text-x-ssa.svg -> application-x-srt.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/mimetypes/text-x-stylus.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/mimetypes/text-x-subviewer.svg -> application-x-srt.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/mimetypes/text-x-systemd-unit.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/mimetypes/text-x-tcl.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/mimetypes/text-x-tex.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/mimetypes/text-x-texinfo.svg -> text-x-tex.svg
@@ -61954,6 +62014,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-adwaita-publ
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-adwaita-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-adwaita-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-adwaita-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-adwaita-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-adwaita-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-adwaita-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-adwaita-templates.svg
@@ -62036,6 +62097,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-black-public
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-black-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-black-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-black-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-black-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-black-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-black-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-black-templates.svg
@@ -62113,6 +62175,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-blue-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-blue-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-blue-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-blue-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-blue-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-blue-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-blue-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-blue-templates.svg
@@ -62190,6 +62253,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-bluegrey-pub
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-bluegrey-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-bluegrey-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-bluegrey-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-bluegrey-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-bluegrey-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-bluegrey-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-bluegrey-templates.svg
@@ -62270,6 +62334,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-breeze-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-breeze-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-breeze-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-breeze-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-breeze-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-breeze-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-breeze-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-breeze-templates.svg
@@ -62347,6 +62412,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-brown-public
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-brown-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-brown-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-brown-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-brown-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-brown-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-brown-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-brown-templates.svg
@@ -62425,6 +62491,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-carmine-publ
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-carmine-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-carmine-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-carmine-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-carmine-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-carmine-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-carmine-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-carmine-templates.svg
@@ -62505,6 +62572,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-cyan-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-cyan-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-cyan-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-cyan-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-cyan-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-cyan-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-cyan-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-cyan-templates.svg
@@ -62582,6 +62650,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-darkcyan-pub
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-darkcyan-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-darkcyan-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-darkcyan-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-darkcyan-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-darkcyan-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-darkcyan-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-darkcyan-templates.svg
@@ -62660,6 +62729,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-deeporange-p
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-deeporange-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-deeporange-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-deeporange-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-deeporange-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-deeporange-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-deeporange-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-deeporange-templates.svg
@@ -62756,6 +62826,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-green-public
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-green-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-green-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-green-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-green-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-green-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-green-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-green-templates.svg
@@ -62833,6 +62904,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-grey-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-grey-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-grey-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-grey-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-grey-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-grey-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-grey-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-grey-templates.svg
@@ -62916,6 +62988,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-indigo-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-indigo-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-indigo-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-indigo-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-indigo-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-indigo-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-indigo-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-indigo-templates.svg
@@ -62997,6 +63070,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-magenta-publ
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-magenta-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-magenta-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-magenta-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-magenta-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-magenta-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-magenta-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-magenta-templates.svg
@@ -63082,6 +63156,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-nordic-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-nordic-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-nordic-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-nordic-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-nordic-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-nordic-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-nordic-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-nordic-templates.svg
@@ -63163,6 +63238,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-orange-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-orange-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-orange-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-orange-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-orange-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-orange-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-orange-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-orange-templates.svg
@@ -63241,6 +63317,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-palebrown-pu
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-palebrown-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-palebrown-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-palebrown-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-palebrown-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-palebrown-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-palebrown-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-palebrown-templates.svg
@@ -63318,6 +63395,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-paleorange-p
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-paleorange-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-paleorange-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-paleorange-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-paleorange-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-paleorange-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-paleorange-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-paleorange-templates.svg
@@ -63401,6 +63479,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-pink-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-pink-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-pink-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-pink-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-pink-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-pink-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-pink-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-pink-templates.svg
@@ -63485,6 +63564,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-red-public.s
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-red-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-red-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-red-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-red-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-red-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-red-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-red-templates.svg
@@ -63509,6 +63589,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-sound.svg ->
 lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-steam.svg -> folder-blue-steam.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-sync.svg -> folder-blue-sync.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-syncthing.svg -> folder-blue-syncthing.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-systemd.svg -> folder-blue-systemd.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-tar.svg -> folder-blue-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-teal-activities.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-teal-android.svg
@@ -63572,6 +63653,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-teal-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-teal-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-teal-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-teal-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-teal-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-teal-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-teal-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-teal-templates.svg
@@ -63661,6 +63743,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-violet-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-violet-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-violet-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-violet-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-violet-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-violet-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-violet-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-violet-templates.svg
@@ -63740,6 +63823,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-white-public
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-white-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-white-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-white-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-white-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-white-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-white-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-white-templates.svg
@@ -63820,6 +63904,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-yaru-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-yaru-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-yaru-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-yaru-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-yaru-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-yaru-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-yaru-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-yaru-templates.svg
@@ -63897,6 +63982,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/32x32/places/folder-yellow-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-yellow-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-yellow-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-yellow-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-yellow-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-yellow-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-yellow-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/32x32/places/folder-yellow-templates.svg
@@ -74186,6 +74272,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/mimetypes/text-x-sql.svg -
 lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/mimetypes/text-x-ssa.svg -> application-x-srt.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/mimetypes/text-x-stylus.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/mimetypes/text-x-subviewer.svg -> application-x-srt.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/mimetypes/text-x-systemd-unit.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/mimetypes/text-x-tcl.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/mimetypes/text-x-tex.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/mimetypes/text-x-texinfo.svg -> text-x-tex.svg
@@ -74347,6 +74434,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-adwaita-publ
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-adwaita-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-adwaita-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-adwaita-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-adwaita-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-adwaita-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-adwaita-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-adwaita-templates.svg
@@ -74429,6 +74517,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-black-public
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-black-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-black-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-black-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-black-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-black-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-black-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-black-templates.svg
@@ -74506,6 +74595,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-blue-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-blue-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-blue-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-blue-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-blue-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-blue-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-blue-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-blue-templates.svg
@@ -74583,6 +74673,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-bluegrey-pub
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-bluegrey-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-bluegrey-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-bluegrey-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-bluegrey-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-bluegrey-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-bluegrey-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-bluegrey-templates.svg
@@ -74663,6 +74754,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-breeze-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-breeze-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-breeze-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-breeze-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-breeze-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-breeze-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-breeze-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-breeze-templates.svg
@@ -74740,6 +74832,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-brown-public
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-brown-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-brown-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-brown-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-brown-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-brown-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-brown-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-brown-templates.svg
@@ -74818,6 +74911,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-carmine-publ
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-carmine-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-carmine-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-carmine-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-carmine-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-carmine-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-carmine-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-carmine-templates.svg
@@ -74898,6 +74992,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-cyan-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-cyan-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-cyan-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-cyan-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-cyan-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-cyan-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-cyan-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-cyan-templates.svg
@@ -74975,6 +75070,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-darkcyan-pub
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-darkcyan-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-darkcyan-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-darkcyan-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-darkcyan-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-darkcyan-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-darkcyan-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-darkcyan-templates.svg
@@ -75053,6 +75149,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-deeporange-p
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-deeporange-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-deeporange-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-deeporange-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-deeporange-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-deeporange-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-deeporange-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-deeporange-templates.svg
@@ -75149,6 +75246,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-green-public
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-green-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-green-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-green-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-green-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-green-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-green-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-green-templates.svg
@@ -75226,6 +75324,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-grey-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-grey-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-grey-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-grey-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-grey-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-grey-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-grey-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-grey-templates.svg
@@ -75309,6 +75408,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-indigo-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-indigo-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-indigo-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-indigo-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-indigo-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-indigo-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-indigo-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-indigo-templates.svg
@@ -75390,6 +75490,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-magenta-publ
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-magenta-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-magenta-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-magenta-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-magenta-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-magenta-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-magenta-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-magenta-templates.svg
@@ -75475,6 +75576,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-nordic-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-nordic-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-nordic-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-nordic-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-nordic-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-nordic-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-nordic-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-nordic-templates.svg
@@ -75556,6 +75658,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-orange-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-orange-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-orange-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-orange-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-orange-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-orange-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-orange-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-orange-templates.svg
@@ -75634,6 +75737,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-palebrown-pu
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-palebrown-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-palebrown-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-palebrown-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-palebrown-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-palebrown-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-palebrown-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-palebrown-templates.svg
@@ -75711,6 +75815,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-paleorange-p
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-paleorange-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-paleorange-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-paleorange-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-paleorange-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-paleorange-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-paleorange-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-paleorange-templates.svg
@@ -75794,6 +75899,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-pink-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-pink-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-pink-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-pink-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-pink-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-pink-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-pink-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-pink-templates.svg
@@ -75878,6 +75984,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-red-public.s
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-red-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-red-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-red-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-red-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-red-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-red-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-red-templates.svg
@@ -75902,6 +76009,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-sound.svg ->
 lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-steam.svg -> folder-blue-steam.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-sync.svg -> folder-blue-sync.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-syncthing.svg -> folder-blue-syncthing.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-systemd.svg -> folder-blue-systemd.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-tar.svg -> folder-blue-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-teal-activities.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-teal-android.svg
@@ -75965,6 +76073,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-teal-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-teal-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-teal-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-teal-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-teal-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-teal-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-teal-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-teal-templates.svg
@@ -76054,6 +76163,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-violet-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-violet-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-violet-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-violet-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-violet-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-violet-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-violet-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-violet-templates.svg
@@ -76133,6 +76243,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-white-public
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-white-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-white-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-white-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-white-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-white-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-white-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-white-templates.svg
@@ -76213,6 +76324,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-yaru-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-yaru-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-yaru-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-yaru-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-yaru-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-yaru-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-yaru-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-yaru-templates.svg
@@ -76290,6 +76402,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/48x48/places/folder-yellow-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-yellow-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-yellow-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-yellow-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-yellow-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-yellow-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-yellow-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/48x48/places/folder-yellow-templates.svg
@@ -86025,6 +86138,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/mimetypes/text-x-sql.svg -
 lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/mimetypes/text-x-ssa.svg -> application-x-srt.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/mimetypes/text-x-stylus.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/mimetypes/text-x-subviewer.svg -> application-x-srt.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/mimetypes/text-x-systemd-unit.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/mimetypes/text-x-tcl.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/mimetypes/text-x-tex.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/mimetypes/text-x-texinfo.svg -> text-x-tex.svg
@@ -86186,6 +86300,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-adwaita-publ
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-adwaita-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-adwaita-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-adwaita-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-adwaita-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-adwaita-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-adwaita-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-adwaita-templates.svg
@@ -86268,6 +86383,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-black-public
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-black-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-black-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-black-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-black-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-black-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-black-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-black-templates.svg
@@ -86345,6 +86461,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-blue-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-blue-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-blue-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-blue-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-blue-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-blue-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-blue-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-blue-templates.svg
@@ -86422,6 +86539,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-bluegrey-pub
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-bluegrey-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-bluegrey-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-bluegrey-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-bluegrey-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-bluegrey-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-bluegrey-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-bluegrey-templates.svg
@@ -86502,6 +86620,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-breeze-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-breeze-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-breeze-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-breeze-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-breeze-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-breeze-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-breeze-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-breeze-templates.svg
@@ -86579,6 +86698,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-brown-public
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-brown-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-brown-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-brown-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-brown-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-brown-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-brown-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-brown-templates.svg
@@ -86657,6 +86777,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-carmine-publ
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-carmine-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-carmine-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-carmine-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-carmine-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-carmine-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-carmine-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-carmine-templates.svg
@@ -86737,6 +86858,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-cyan-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-cyan-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-cyan-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-cyan-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-cyan-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-cyan-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-cyan-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-cyan-templates.svg
@@ -86814,6 +86936,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-darkcyan-pub
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-darkcyan-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-darkcyan-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-darkcyan-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-darkcyan-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-darkcyan-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-darkcyan-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-darkcyan-templates.svg
@@ -86892,6 +87015,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-deeporange-p
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-deeporange-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-deeporange-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-deeporange-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-deeporange-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-deeporange-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-deeporange-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-deeporange-templates.svg
@@ -86988,6 +87112,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-green-public
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-green-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-green-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-green-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-green-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-green-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-green-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-green-templates.svg
@@ -87065,6 +87190,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-grey-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-grey-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-grey-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-grey-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-grey-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-grey-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-grey-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-grey-templates.svg
@@ -87148,6 +87274,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-indigo-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-indigo-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-indigo-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-indigo-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-indigo-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-indigo-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-indigo-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-indigo-templates.svg
@@ -87229,6 +87356,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-magenta-publ
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-magenta-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-magenta-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-magenta-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-magenta-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-magenta-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-magenta-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-magenta-templates.svg
@@ -87314,6 +87442,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-nordic-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-nordic-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-nordic-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-nordic-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-nordic-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-nordic-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-nordic-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-nordic-templates.svg
@@ -87395,6 +87524,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-orange-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-orange-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-orange-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-orange-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-orange-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-orange-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-orange-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-orange-templates.svg
@@ -87473,6 +87603,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-palebrown-pu
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-palebrown-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-palebrown-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-palebrown-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-palebrown-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-palebrown-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-palebrown-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-palebrown-templates.svg
@@ -87550,6 +87681,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-paleorange-p
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-paleorange-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-paleorange-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-paleorange-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-paleorange-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-paleorange-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-paleorange-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-paleorange-templates.svg
@@ -87633,6 +87765,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-pink-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-pink-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-pink-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-pink-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-pink-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-pink-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-pink-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-pink-templates.svg
@@ -87717,6 +87850,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-red-public.s
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-red-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-red-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-red-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-red-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-red-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-red-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-red-templates.svg
@@ -87741,6 +87875,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-sound.svg ->
 lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-steam.svg -> folder-blue-steam.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-sync.svg -> folder-blue-sync.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-syncthing.svg -> folder-blue-syncthing.svg
+lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-systemd.svg -> folder-blue-systemd.svg
 lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-tar.svg -> folder-blue-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-teal-activities.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-teal-android.svg
@@ -87804,6 +87939,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-teal-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-teal-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-teal-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-teal-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-teal-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-teal-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-teal-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-teal-templates.svg
@@ -87893,6 +88029,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-violet-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-violet-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-violet-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-violet-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-violet-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-violet-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-violet-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-violet-templates.svg
@@ -87972,6 +88109,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-white-public
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-white-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-white-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-white-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-white-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-white-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-white-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-white-templates.svg
@@ -88052,6 +88190,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-yaru-public.
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-yaru-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-yaru-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-yaru-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-yaru-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-yaru-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-yaru-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-yaru-templates.svg
@@ -88129,6 +88268,7 @@ lrwxrwxrwx root/root    usr/share/icons/Papirus/64x64/places/folder-yellow-publi
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-yellow-steam.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-yellow-sync.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-yellow-syncthing.svg
+-rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-yellow-systemd.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-yellow-tar.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-yellow-templates-open.svg
 -rw-r--r-- root/root    usr/share/icons/Papirus/64x64/places/folder-yellow-templates.svg

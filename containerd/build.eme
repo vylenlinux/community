@@ -15,12 +15,26 @@ build() {
     cd "${name}-${version}"
     export GO111MODULE=on
 
+    # fix paths in service
+    sed -i 's,/sbin,/usr/bin,;s,/usr/local,/usr,' "${name}.service"
+
     export GOFLAGS="${GOFLAGS} \
         -modcacherw \
         -mod=readonly"
 
-    make VERSION="v${version}" REVISION="b7a25261e029d68978bbf290df0a62fc819b3c51" BUILDMODE=pie
-    install -Dm755 ./bin/* -t "${PKG}/usr/bin/"
+    make \
+        VERSION="v${version}" \
+        REVISION="b7a25261e029d68978bbf290df0a62fc819b3c51" \
+        BUILDMODE=pie
 
-    do_service "${name}"
+    make VERSION="v${version}" man
+    make PREFIX=/usr DESTDIR="${PKG}" install
+
+    install -Dm644 man/*.8 -t "${PKG}/usr/share/man/man8/"
+    install -Dm644 man/*.5 -t "${PKG}/usr/share/man/man5/"
+
+    install -Dm644 "${name}.service" -t "${PKG}/usr/lib/systemd/system/"
+
+    install -Dm644 contrib/autocomplete/ctr -t "${PKG}/usr/share/bash-completion/completions/"
+    install -Dm644 contrib/autocomplete/zsh_autocomplete "${PKG}/usr/share/zsh/site-functions/_ctr"
 }

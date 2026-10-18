@@ -8,17 +8,17 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=snapper
 version=0.13.2
 release=1
-source="https://github.com/openSUSE/${name}/archive/v${version}/${name}-${version}.tar.gz"
+
+source="https://github.com/openSUSE/${name}/archive/v${version}/${name}-${version}.tar.gz
+    remove-sysconfig.patch"
 
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
+    patch -Np1 -i "${SRC}/remove-sysconfig.patch"
 
     # rename cron scripts
     sed -i -e 's@suse.de-@@g' scripts/Makefile.am
-
-    # fix config location in cron scripts
-    sed -i -e 's@/etc/sysconfig/@/etc/conf.d/@g' scripts/snapper-hourly
 
     # fix pam plugin install location
     sed -i -e 's@shell echo /@shell echo /usr/@g' pam/Makefile.am
@@ -43,12 +43,10 @@ build() {
         --with-conf=/etc/conf.d \
         --with-pam-security=/usr/lib/security \
         --disable-zypp \
-        --disable-systemd \
         --disable-silent-rules
 
     make
     make DESTDIR="${PKG}" install
 
     rm -rf "${PKG}/usr/lib/snapper/testsuite/"
-    rm -f "${PKG}/usr/lib/snapper/systemd-helper"
 }

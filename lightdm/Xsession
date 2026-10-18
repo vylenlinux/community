@@ -2,12 +2,12 @@
 #
 # LightDM wrapper to run around X sessions.
 
-echo "Running X session wrapper"
+printf "Running X session wrapper\n"
 
 # Load profile
-for file in /etc/profile "${HOME}/.profile" /etc/xprofile "${HOME}/.xprofile"; do
+for file in /etc/profile "${HOME}/.profile" /etc/xprofile "${HOME}/.xprofile" /usr/local/etc/xprofile; do
     if [ -f "${file}" ]; then
-        echo "Loading profile from ${file}";
+        printf "Loading profile from %s\n" "${file}"
         # shellcheck source=$file
         . "${file}"
     fi
@@ -16,7 +16,7 @@ done
 # Load resources
 for file in /etc/X11/Xresources "${HOME}/.Xresources"; do
     if [ -f "${file}" ]; then
-        echo "Loading resource: ${file}"
+        printf "Loading resource: %s\n" "${file}"
         xrdb -merge "${file}"
     fi
 done
@@ -24,7 +24,7 @@ done
 # Load keymaps
 for file in /etc/X11/Xkbmap "${HOME}/.Xkbmap"; do
     if [ -f "${file}" ]; then
-        echo "Loading keymap: ${file}"
+        printf "Loading keymap: %s\n" "${file}"
         setxkbmap "$(cat "${file}")"
 
         XKB_IN_USE=yes
@@ -35,7 +35,7 @@ done
 if [ -z "${XKB_IN_USE}" ]; then
     for file in /etc/X11/Xmodmap "${HOME}/.Xmodmap"; do
         if [ -f "${file}" ]; then
-           echo "Loading modmap: ${file}"
+           printf "Loading modmap: %s\n" "${file}"
            xmodmap "${file}"
         fi
     done
@@ -44,11 +44,11 @@ fi
 unset XKB_IN_USE
 
 # Run all system xinitrc shell scripts
-xinitdir="/etc/X11/app-defaults/xinitrc.d"
+xinitdir=/etc/X11/xinit/xinitrc.d
 
 if [ -d "${xinitdir}" ]; then
     for script in "${xinitdir}"/*; do
-        echo "Loading xinit script ${script}"
+        printf "Loading xinit script %s\n" "${script}"
 
         if [ -x "${script}" ] && [ ! -d "${script}" ]; then
             # shellcheck source=$script
@@ -61,15 +61,10 @@ fi
 script="${HOME}/.xsession"
 
 if [ -x "${script}" ] && [ ! -d "${script}" ]; then
-    echo "Loading xsession script ${script}"
+    printf "Loading xsession script %s\n" "${script}"
     # shellcheck source=$script
     . "${script}"
 fi
 
-if which dbus-launch >/dev/null && test -z "${DBUS_SESSION_BUS_ADDRESS}"; then
-    eval "$(dbus-launch --sh-syntax --exit-with-session)"
-fi
-
-# shellcheck disable=SC2145
-echo "X session wrapper complete, running session ${@}"
+printf "X session wrapper complete, running session %s\n" "${@}"
 exec "${@}"

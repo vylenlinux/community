@@ -21,5 +21,7 @@ build() {
         -modcacherw"
 
     go build -ldflags "-linkmode external -extldflags '${LDFLAGS}'" -o "${name}"
+
     install -Dm0755 "${name}" -t "${PKG}/usr/bin/"
+    install -Dm644 "contrib/${name}.service" -t "${PKG}/usr/lib/systemd/user/"
 }

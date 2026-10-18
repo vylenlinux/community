@@ -7,7 +7,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=mplayer
 version=1.5
-release=2
+release=1
 
 _version=1.5_p20241125
 

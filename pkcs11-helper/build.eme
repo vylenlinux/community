@@ -7,7 +7,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=pkcs11-helper
 version=1.31.0
-release=2
+release=1
 
 source="https://github.com/OpenSC/${name}/archive/${name}-${version}.tar.gz
     https://github.com/OpenSC/${name}/commit/59cc22b8d65669da599f1c435fdfe35d4e07db0e.patch"

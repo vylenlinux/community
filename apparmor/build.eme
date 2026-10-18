@@ -10,7 +10,7 @@ version=5.0.2
 release=1
 
 source="${name}-${version}.tar.gz::https://gitlab.com/${name}/${name}/-/archive/v${version}/${name}-v${version}.tar.gz
-    https://gitlab.com/apparmor/apparmor/-/commit/6b80489953728aab8aeb4f9075283feb26e2e262.patch"
+    https://gitlab.com/${name}/${name}/-/commit/6b80489953728aab8aeb4f9075283feb26e2e262.patch"
 
 build() {
     # shellcheck disable=SC2164
@@ -59,14 +59,9 @@ build() {
     make -C parser install DESTDIR="${PKG}" SBINDIR="${PKG}/usr/bin" USR_SBINDIR="${PKG}/usr/bin"
     make -C profiles install DESTDIR="${PKG}"
     make -C utils install DESTDIR="${PKG}" SBINDIR="${PKG}/usr/bin" USR_SBINDIR="${PKG}/usr/bin" BINDIR="${PKG}/usr/bin" VIM_INSTALL_PATH="${PKG}/usr/share/vim/vimfiles/syntax"
-    make -C init DESTDIR="${PKG}" SBINDIR="${PKG}/usr/bin" USR_SBINDIR="${PKG}/usr/bin" APPARMOR_BIN_PREFIX="${PKG}/usr/lib/apparmor" install
+    make -C init DESTDIR="${PKG}" SBINDIR="${PKG}/usr/bin" USR_SBINDIR="${PKG}/usr/bin" APPARMOR_BIN_PREFIX="${PKG}/usr/lib/apparmor" install install-systemd
 
+    # backport
     mv "${PKG}/lib/security" -t "${PKG}/usr/lib/"
     rmdir "${PKG}/lib"
-
-    rm -f "${PKG}/etc/apparmor.d/abstractions"/*systemd* \
-        "${PKG}/etc/apparmor.d"/systemd*
-
-    install -Dm644 changehat/pam_apparmor/README "${PKG}/usr/share/doc/apparmor/README.pam_apparmor"
-    do_service "${name}"
 }

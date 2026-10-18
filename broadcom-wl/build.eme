@@ -7,7 +7,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=broadcom-wl
 version=6.30.223.271
-release=3
+release=1
 
 source="${name}-${version}.tar.gz::https://docs.broadcom.com/docs-and-downloads/docs/linux_sta/hybrid-v35_64-nodebug-pcoem-$(printf '%s' "${version}" | tr '.' '_').tar.gz
     broadcom-wl-kernel.conf

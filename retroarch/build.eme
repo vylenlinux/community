@@ -7,7 +7,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=retroarch
 version=1.22.2
-release=2
+release=1
 
 source="https://github.com/libretro/${name}/archive/v${version}/${name}-${version}.tar.gz
     ffmpeg-9.patch"

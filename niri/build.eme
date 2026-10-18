@@ -7,10 +7,9 @@ homepage="https://github.com/niri-wm/niri"
 
 name=niri
 version=26.04
-release=2
+release=1
 
 source="https://github.com/niri-wm/${name}/archive/v${version}/${name}-${version}.tar.gz
-    ${name}.desktop
     libdisplay-info-sys-0.3.0-libdisplay-info-0.4.patch"
 
 build() {
@@ -22,12 +21,23 @@ build() {
 
     cargo build \
         --release \
-        --no-default-features \
-        --features dbus,xdp-gnome-screencast
+        --features default
+
+    # generate shell completions
+    for shell in bash fish zsh; do
+        cargo run --frozen --release --bin niri -- completions "${shell}" > "${shell}-completions"
+    done
 
     install -Dm755 "target/release/${name}" -t "${PKG}/usr/bin/"
     install -Dm755 "resources/${name}-session" -t "${PKG}/usr/bin/"
-    install -Dm644 "${SRC}/${name}.desktop" -t "${PKG}/usr/share/wayland-sessions/"
+    install -Dm644 "resources/${name}.service" -t "${PKG}/usr/lib/systemd/user/"
+    install -Dm644 "resources/${name}-shutdown.target" -t "${PKG}/usr/lib/systemd/user/"
+    install -Dm644 "resources/${name}.desktop" -t "${PKG}/usr/share/wayland-sessions/"
     install -Dm644 "resources/${name}-portals.conf" -t "${PKG}/usr/share/xdg-desktop-portal/"
-    install -Dm644 resources/default-config.kdl -t "${PKG}/etc/skel/${name}/"
+    install -Dm644 resources/default-config.kdl -t "${PKG}/usr/share/doc/${name}/"
+
+    # shell auto-completions
+    install -Dm644 bash-completions "${PKG}/usr/share/bash-completion/completions/${name}"
+    install -Dm644 fish-completions "${PKG}/usr/share/fish/vendor_completions.d/${name}.fish"
+    install -Dm644 zsh-completions "${PKG}/usr/share/zsh/site-functions/_${name}"
 }

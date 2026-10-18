@@ -29,5 +29,9 @@ build() {
     make
     make DESTDIR="${PKG}" install
 
+    do_pam "${name}"
+    do_tmpfiles "${name}"
+
+    chmod 755 "${PKG}/usr/bin/screen-${version}"
     install -Dm644 etc/etcscreenrc "${PKG}/etc/screenrc"
 }

@@ -7,7 +7,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ttf-noto-emoji
 version=2.051
-release=2
+release=1
 source="${name}-${version}.tar.gz::https://github.com/googlefonts/noto-emoji/archive/refs/tags/v${version}.tar.gz"
 
 build() {

@@ -8,7 +8,10 @@ homepage="http://neil.brown.name/blog/mdadm"
 name=mdadm
 version=4.6
 release=1
-source="https://git.kernel.org/pub/scm/utils/${name}/${name}.git/snapshot/${name}-${version}.tar.gz"
+backup="etc/${name}.conf"
+
+source="https://git.kernel.org/pub/scm/utils/${name}/${name}.git/snapshot/${name}-${version}.tar.gz
+    ${name}.conf"
 
 build() {
     # shellcheck disable=SC2164
@@ -16,6 +19,9 @@ build() {
 
     make CXFLAGS="${CFLAGS}" BINDIR=/usr/bin UDEVDIR=/usr/lib/udev everything
     make INSTALL=/usr/bin/install BINDIR=/usr/bin DESTDIR="${PKG}" UDEVDIR=/usr/lib/udev install
+    make SYSTEMD_DIR=/usr/lib/systemd/system BINDIR=/usr/bin DESTDIR="${PKG}" install-systemd
 
-    do_service "${name}" mdraid
+    install -Dm644 "${SRC}/${name}.conf" -t "${PKG}/etc/"
+    install -Dm644 raid6check.8 -t "${PKG}/usr/share/man/man8/"
+    install -Dm755 raid6check -t "${PKG}/usr/bin/"
 }

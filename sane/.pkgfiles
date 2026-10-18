@@ -26,6 +26,7 @@ drwxr-xr-x root/root    etc/sane.d/dll.d/
 -rw-r--r-- root/root    etc/sane.d/epson.conf
 -rw-r--r-- root/root    etc/sane.d/epson2.conf
 -rw-r--r-- root/root    etc/sane.d/epsonds.conf
+-rw-r--r-- root/root    etc/sane.d/escl.conf
 -rw-r--r-- root/root    etc/sane.d/fujitsu.conf
 -rw-r--r-- root/root    etc/sane.d/genesys.conf
 -rw-r--r-- root/root    etc/sane.d/gphoto2.conf
@@ -80,9 +81,6 @@ drwxr-xr-x root/root    etc/sane.d/dll.d/
 -rw-r--r-- root/root    etc/sane.d/umax_pp.conf
 -rw-r--r-- root/root    etc/sane.d/v4l.conf
 -rw-r--r-- root/root    etc/sane.d/xerox_mfp.conf
-drwxr-xr-x root/root    etc/udev/
-drwxr-xr-x root/root    etc/udev/rules.d/
--rw-r--r-- root/root    etc/udev/rules.d/85-libsane.rules
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/gamma4scanimage
@@ -180,6 +178,9 @@ lrwxrwxrwx root/root    usr/lib/sane/libsane-epson2.so.1 -> libsane-epson2.so.1.
 lrwxrwxrwx root/root    usr/lib/sane/libsane-epsonds.so -> libsane-epsonds.so.1.2.1
 lrwxrwxrwx root/root    usr/lib/sane/libsane-epsonds.so.1 -> libsane-epsonds.so.1.2.1
 -rwxr-xr-x root/root    usr/lib/sane/libsane-epsonds.so.1.2.1
+lrwxrwxrwx root/root    usr/lib/sane/libsane-escl.so -> libsane-escl.so.1.2.1
+lrwxrwxrwx root/root    usr/lib/sane/libsane-escl.so.1 -> libsane-escl.so.1.2.1
+-rwxr-xr-x root/root    usr/lib/sane/libsane-escl.so.1.2.1
 lrwxrwxrwx root/root    usr/lib/sane/libsane-fujitsu.so -> libsane-fujitsu.so.1.2.1
 lrwxrwxrwx root/root    usr/lib/sane/libsane-fujitsu.so.1 -> libsane-fujitsu.so.1.2.1
 -rwxr-xr-x root/root    usr/lib/sane/libsane-fujitsu.so.1.2.1
@@ -366,6 +367,18 @@ lrwxrwxrwx root/root    usr/lib/sane/libsane-v4l.so.1 -> libsane-v4l.so.1.2.1
 lrwxrwxrwx root/root    usr/lib/sane/libsane-xerox_mfp.so -> libsane-xerox_mfp.so.1.2.1
 lrwxrwxrwx root/root    usr/lib/sane/libsane-xerox_mfp.so.1 -> libsane-xerox_mfp.so.1.2.1
 -rwxr-xr-x root/root    usr/lib/sane/libsane-xerox_mfp.so.1.2.1
+drwxr-xr-x root/root    usr/lib/systemd/
+drwxr-xr-x root/root    usr/lib/systemd/system/
+-rw-r--r-- root/root    usr/lib/systemd/system/saned.socket
+-rw-r--r-- root/root    usr/lib/systemd/system/saned@.service
+drwxr-xr-x root/root    usr/lib/sysusers.d/
+-rw-r--r-- root/root    usr/lib/sysusers.d/sane.conf
+drwxr-xr-x root/root    usr/lib/udev/
+drwxr-xr-x root/root    usr/lib/udev/hwdb.d/
+-rw-r--r-- root/root    usr/lib/udev/hwdb.d/20-sane.hwdb
+drwxr-xr-x root/root    usr/lib/udev/rules.d/
+-rw-r--r-- root/root    usr/lib/udev/rules.d/65-sane.rules
+-rw-r--r-- root/root    usr/lib/udev/rules.d/66-saned.rules
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/locale/
 drwxr-xr-x root/root    usr/share/locale/bg/
@@ -484,6 +497,7 @@ drwxr-xr-x root/root    usr/share/man/man5/
 -rw-r--r-- root/root    usr/share/man/man5/sane-epson.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/sane-epson2.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/sane-epsonds.5.gz
+-rw-r--r-- root/root    usr/share/man/man5/sane-escl.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/sane-fujitsu.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/sane-genesys.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/sane-gphoto2.5.gz

@@ -20,5 +20,4 @@ build() {
         CMAKE_BUILD_TYPE=Release
 
     make DESTDIR="${PKG}" install
-    rm -f "${PKG}/usr/share/nvim/runtime"/*/systemd.vim
 }

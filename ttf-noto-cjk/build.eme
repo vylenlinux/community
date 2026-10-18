@@ -7,7 +7,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ttf-noto-cjk
 version=20240730
-release=2
+release=1
 
 _sans_version=2.004
 _serif_version=2.003

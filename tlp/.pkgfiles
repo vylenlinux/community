@@ -1,7 +1,4 @@
 drwxr-xr-x root/root    etc/
-drwxr-xr-x root/root    etc/init.d/
--rwxr-xr-x root/root    etc/init.d/tlp
--rwxr-xr-x root/root    etc/init.d/tlp-pd
 -rw-r--r-- root/root    etc/tlp.conf
 drwxr-xr-x root/root    etc/tlp.d/
 -rw-r--r-- root/root    etc/tlp.d/00-template.conf
@@ -23,9 +20,12 @@ drwxr-xr-x root/root    usr/lib/
 drwxr-xr-x root/root    usr/lib/NetworkManager/
 drwxr-xr-x root/root    usr/lib/NetworkManager/dispatcher.d/
 -rwxr-xr-x root/root    usr/lib/NetworkManager/dispatcher.d/99tlp-rdw-nm
-drwxr-xr-x root/root    usr/lib/elogind/
-drwxr-xr-x root/root    usr/lib/elogind/system-sleep/
--rwxr-xr-x root/root    usr/lib/elogind/system-sleep/49-tlp-sleep
+drwxr-xr-x root/root    usr/lib/systemd/
+drwxr-xr-x root/root    usr/lib/systemd/system-sleep/
+-rwxr-xr-x root/root    usr/lib/systemd/system-sleep/tlp
+drwxr-xr-x root/root    usr/lib/systemd/system/
+-rw-r--r-- root/root    usr/lib/systemd/system/tlp-pd.service
+-rw-r--r-- root/root    usr/lib/systemd/system/tlp.service
 drwxr-xr-x root/root    usr/lib/udev/
 drwxr-xr-x root/root    usr/lib/udev/rules.d/
 -rw-r--r-- root/root    usr/lib/udev/rules.d/85-tlp-rdw.rules

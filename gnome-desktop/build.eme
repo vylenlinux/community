@@ -17,11 +17,8 @@ build() {
     vylen-meson "${name}-${version}" build \
         -Ddesktop_docs=false \
         -Ddebug_tools=false \
-        -Dsystemd=disabled \
         -Dbuild_gtk4=false
 
     meson compile -C build
     DESTDIR="${PKG}" meson install --no-rebuild -C build
-
-    rm -f "${PKG}/usr/include/gnome-desktop-3.0/libgnome-desktop/gnome-systemd.h"
 }

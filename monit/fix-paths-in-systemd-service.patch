@@ -1,0 +1,24 @@
+diff '--color=auto' -ruN --no-dereference a/system/startup/monit.service b/system/startup/monit.service
+--- a/system/startup/monit.service	2026-06-15 10:41:00.000000000 +0200
++++ b/system/startup/monit.service	2026-10-16 22:30:48.897000000 +0200
+@@ -1,6 +1,6 @@
+ # This file is systemd template for monit service. To
+ # register monit with systemd, place the monit.service file
+-# to the /lib/systemd/system/ directory and then start it
++# to the /usr/lib/systemd/system/ directory and then start it
+ # using systemctl (see bellow).
+ #
+ # Enable monit to start on boot:
+@@ -23,9 +23,9 @@
+ [Service]
+ Type=simple
+ KillMode=process
+-ExecStart=/usr/local/bin/monit -I
+-ExecStop=/usr/local/bin/monit quit
+-ExecReload=/usr/local/bin/monit reload
++ExecStart=/usr/bin/monit -I
++ExecStop=/usr/bin/monit quit
++ExecReload=/usr/bin/monit reload
+ Restart=on-abnormal
+ StandardOutput=null
+ 

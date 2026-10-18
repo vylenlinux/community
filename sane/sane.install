@@ -1,9 +1,0 @@
-#!/bin/sh
-
-pre_install() {
-    getent group scanner >/dev/null || groupadd -g 70 scanner
-}
-
-post_remove() {
-    getent group scanner >/dev/null && groupdel scanner
-}

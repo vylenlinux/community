@@ -2,30 +2,20 @@
 
 # shellcheck disable=SC2034
 description="xdg-desktop-portal backend for wlroots"
-homepage="https://github.com/fufexan/xdg-desktop-portal-hyprland"
+homepage="https://github.com/hyprwm/xdg-desktop-portal-hyprland"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xdg-desktop-portal-hyprland
 version=1.4.1
 release=1
-
-_protocol_version=4d29e48433270a2af06b8bc711ca1fe5109746cd
-
-source="${name}-${version}.tar.gz::https://github.com/hyprwm/${name}/archive/v${version}/${name}-${version}.tar.gz
-    https://github.com/hyprwm/hyprland-protocols/archive/${_protocol_version}.tar.gz"
+source="https://downloads.sourceforge.net/project/vylen/sources/${name}/${name}-${version}.tar.xz"
 
 build() {
-    # shellcheck disable=SC2164
-    cd "${name}-${version}/subprojects"
-        rm -rf hyprland-protocols sdbus-cpp
-        ln -sfT "${SRC}/hyprland-protocols-${_protocol_version}" hyprland-protocols
-    # shellcheck disable=SC2103
-    cd ..
-
-    cmake -B build \
+    cmake -S "${name}-${version}" -B build \
         -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_INSTALL_LIBEXECDIR=/usr/lib \
-        -DCMAKE_BUILD_TYPE=Release
+        -DCMAKE_BUILD_TYPE=Release \
+        -Wno-author
 
     cmake --build build
     DESTDIR="${PKG}" cmake --install build

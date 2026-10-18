@@ -8,9 +8,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=nginx
 version=1.31.7
 release=1
-
-source="http://nginx.org/download/${name}-${version}.tar.gz
-    ${name}.conf"
+source="http://nginx.org/download/${name}-${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
@@ -26,15 +24,23 @@ build() {
         --lock-path=/var/lock/nginx.pid \
         --with-http_ssl_module \
         --with-pcre \
-        --user=nginx \
-        --group=nginx
+        --user=http \
+        --group=http
 
     make
     make DESTDIR="${PKG}" install
 
-    install -Dm644 "${SRC}/${name}.conf" -t "${PKG}/etc/nginx/"
-    find "${PKG}/etc/nginx" -name "*.default" -delete
+    sed \
+        -e 's|\<user\s\+\w\+;|user http;|g' \
+        -e '/^\s\+root/s|html|/usr/share/nginx/html|' \
+        -e '/^events {/ i # Load all installed modules\ninclude modules.d/*.conf;\n' \
+    -i "${PKG}/etc/nginx/nginx.conf"
 
-    rm -rf "${PKG}/run"
+    rm -f "${PKG}/etc/nginx"/*.default \
+        "${PKG}/etc/nginx/mime.types"
+
+    install -d "${PKG}/usr/share/nginx"
+    mv "${PKG}/etc/nginx/html" -t "${PKG}/usr/share/nginx/"
+
     do_service "${name}"
 }
