@@ -1,7 +1,7 @@
+dbus-python
 desktop-file-utils
 libnotify
 libsecret
-python3-dbus
 python3-gobject3
 python3-pycups
 python3-pycurl
