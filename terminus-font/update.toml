@@ -1,5 +1,0 @@
-name = "terminus-font"
-provider = "repology"
-
-[source]
-package = "fonts:terminus-ttf"
