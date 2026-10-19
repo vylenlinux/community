@@ -6,7 +6,7 @@ homepage="https://www.jetbrains.com/toolbox/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=jetbrains-toolbox
-version=3.8.1.88030
+version=3.9.0.88839
 release=1
 
 source="https://download.jetbrains.com/toolbox/${name}-${version}.tar.gz
