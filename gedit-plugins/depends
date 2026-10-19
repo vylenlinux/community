@@ -1,5 +1,5 @@
 appstream-glib
+dbus-python
 gedit
-python3-dbus
 vte3
 yelp-tools
