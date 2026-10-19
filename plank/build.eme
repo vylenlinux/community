@@ -14,7 +14,7 @@ build() {
     vylen-meson "plank-reloaded-${version}" build \
         -Denable-apport=false \
         -Denable-dbusmenu=yes \
-        -Dproduction-release=1true \
+        -Dproduction-release=true \
         -Denable-docs=false
 
     meson compile -C build
