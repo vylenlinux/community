@@ -6,7 +6,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://github.com/IsmaelMartinez/teams-for-linux"
 
 name=teams-for-linux
-version=2.25.0
+version=2.26.0
 release=1
 
 source="${name}-${version}.tar.gz::https://github.com/IsmaelMartinez/${name}/archive/v${version}.tar.gz
@@ -21,7 +21,8 @@ build() {
         --x64 \
         --linux dir
 
-    install -dm755 "${PKG}/opt" "${PKG}/usr/bin"
+    install -dm755 "${PKG}/opt" \
+        "${PKG}/usr/bin"
 
     cp -r --preserve=mode dist/linux-unpacked "${PKG}/opt/${name}"
     install -Dm644 "${SRC}/${name}.desktop" -t "${PKG}/usr/share/applications/"
@@ -31,5 +32,5 @@ build() {
         install -Dm644 "${_icon}" "${PKG}/usr/share/icons/hicolor/${_filename%.png}/apps/${name}.png"
     done
 
-    ln -sf "/opt/${name}/${name}" -t "${PKG}/usr/bin/"
+    ln -s "/opt/${name}/${name}" -t "${PKG}/usr/bin/"
 }
