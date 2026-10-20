@@ -6,7 +6,7 @@ homepage="https://search.cpan.org/dist/URI/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-uri
-version=5.38
+version=5.40
 release=1
 source="${name}-${version}.tar.gz::https://cpan.metacpan.org/authors/id/O/OA/OALDERS/URI-${version}.tar.gz"
 
