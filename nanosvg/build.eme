@@ -6,14 +6,12 @@ homepage="https://github.com/memononen/nanosvg"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=nanosvg
-version=20260709
+version=239e102
 release=1
-
-commit=239e102ec2c691f2902e20ace2ed36ee4a35cfe6
-source="${name}-${version}.tar.gz::https://github.com/memononen/${name}/archive/${commit}.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/memononen/${name}/archive/${version}.tar.gz"
 
 build() {
-    cmake -S "${name}-${commit}" -B build \
+    cmake -S "${name}-${version}"* -B build \
         -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_INSTALL_LIBDIR=lib \
         -DCMAKE_BUILD_TYPE=Release \

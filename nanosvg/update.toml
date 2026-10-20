@@ -1,5 +1,8 @@
 name = "nanosvg"
-provider = "repology"
+provider = "git"
 
 [source]
-package = "nanosvg"
+url = "https://github.com/memononen/nanosvg"
+
+[git]
+field = "version"
