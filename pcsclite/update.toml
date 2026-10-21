@@ -1,0 +1,6 @@
+name = "pcsclite"
+provider = "github"
+
+[source]
+owner = "LudovicRousseau"
+repo = "PCSC"

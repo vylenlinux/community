@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
+description="PC/SC Architecture smartcard middleware library"
+homepage="https://pcsclite.apdu.fr/"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
+
+name=pcsclite
+version=2.5.3
+release=1
+source="${name}-${version}.tar.xz::https://github.com/LudovicRousseau/PCSC/archive/refs/tags/${version}.tar.gz"
+
+build() {
+    vylen-meson "PCSC-${version}" build \
+        -Dlibsystemd=true \
+        -Dlibudev=true \
+        -Dpolkit=true \
+        -Dserial=true \
+        -Dsystemdunit=system
+
+    meson compile -C build
+    DESTDIR="${PKG}" meson install --no-rebuild -C build
+
+    install -Dm644 "PCSC-${version}/doc/org.debian.pcsc-lite.policy" -t "${PKG}/usr/share/polkit-1/actions/"
+    install -d "${PKG}/usr/lib/pcsc/drivers"
+}
