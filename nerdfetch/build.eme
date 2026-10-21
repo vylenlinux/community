@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
+description="A POSIX fetch using NerdFonts"
+homepage="https://github.com/thatonecalculator/NerdFetch"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
+
+name=nerdfetch
+version=8.5.5
+release=1
+source="${name}-${version}.tar.gz::https://github.com/ThatOneCalculator/${name}/archive/refs/tags/v${version}.tar.gz"
+
+build() {
+    install -Dm755 "NerdFetch-${version}/${name}" -t "${PKG}/usr/bin/"
+}

@@ -1,0 +1,6 @@
+name = "nerdfetch"
+provider = "github"
+
+[source]
+owner = "thatonecalculator"
+repo = "%(name)"
