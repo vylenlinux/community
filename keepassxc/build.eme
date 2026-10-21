@@ -6,9 +6,9 @@ homepage="https://keepassxc.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=keepassxc
-version=2.7.12
+version=2.8.0
 release=1
-source="${name}-${version}.tar.xz::https://github.com/keepassxreboot/${name}/releases/download/${version}/${name}-${version}-src.tar.xz"
+source="${name}-${version}.tar.xz::https://github.com/keepassxreboot/${name}/archive/refs/tags/${version}.tar.gz"
 
 build() {
     cmake -S "${name}-${version}" -B build \
@@ -18,9 +18,13 @@ build() {
         -DCMAKE_BUILD_TYPE=Release \
         -DCMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
         -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
-        -DWITH_XC_UPDATECHECK=OFF \
-        -DWITH_XC_DOCS=OFF \
-        -DWITH_XC_YUBIKEY=OFF \
+        -DWITH_GUI_TESTS=OFF \
+        -DKPXC_FEATURE_BROWSER=ON \
+        -DKPXC_FEATURE_NETWORK=ON \
+        -DKPXC_FEATURE_SSHAGENT=ON \
+        -DKPXC_FEATURE_FDOSECRETS=ON \
+        -DKPXC_FEATURE_DOCS=ON \
+        -DKPXC_FEATURE_UPDATES=OFF \
         -Wno-author
 
     cmake --build build

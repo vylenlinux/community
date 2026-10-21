@@ -1,5 +1,10 @@
 name = "keepassxc"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "keepassxc"
+owner = "keepassxreboot"
+repo = "%(name)"
+
+[github]
+use_releases = false
+use_tags = true
