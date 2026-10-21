@@ -6,7 +6,7 @@ homepage="https://www.docker.com/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=docker
-version=29.9.1
+version=29.9.2
 release=1
 backup="etc/${name}.conf"
 
@@ -16,7 +16,7 @@ source="https://github.com/moby/moby/archive/${name}-v${version}/moby-${version}
 
 build() {
     export GO111MODULE=auto
-    export DOCKER_GITCOMMIT=b26fb77
+    export DOCKER_GITCOMMIT=0367cbe
     export DOCKER_BUILDTAGS=seccomp
     export DISABLE_WARN_OUTSIDE_CONTAINER=1
 
@@ -27,10 +27,10 @@ build() {
         -modcacherw \
         -ldflags=-linkmode=external"
 
-    mkdir -p src/github.com/docker
+    mkdir -p "src/github.com/${name}"
 
     # shellcheck disable=SC2164
-    cd src/github.com/docker
+    cd "src/github.com/${name}"
     ln -s "${SRC}/cli-${version}" cli
 
     # shellcheck disable=SC2164
@@ -39,7 +39,7 @@ build() {
     make VERSION="${version}" GITCOMMIT="${DOCKER_GITCOMMIT}" dynbinary
     make manpages
 
-    install -Dm755 build/docker-linux-amd64 "${PKG}/usr/bin/${name}"
+    install -Dm755 "build/${name}-linux-amd64" "${PKG}/usr/bin/${name}"
 
     install -dm755 "${PKG}/usr/share/man"
     cp -r man/man* -t "${PKG}/usr/share/man/"
@@ -52,15 +52,15 @@ build() {
     cd "${name}"
     VERSION="${version}" hack/make.sh dynbinary
 
-    install -Dm755 "bundles/dynbinary-daemon/dockerd" -t "${PKG}/usr/bin/"
-    install -Dm755 "bundles/dynbinary-daemon/docker-proxy" -t "${PKG}/usr/bin/"
+    install -Dm755 bundles/dynbinary-daemon/dockerd -t "${PKG}/usr/bin/"
+    install -Dm755 "bundles/dynbinary-daemon/${name}-proxy" -t "${PKG}/usr/bin/"
     install -Dm644 "${SRC}/${name}.conf" -t "${PKG}/etc/"
 
     # symlink externally provided tini-static binary
-    ln -sf tini "${PKG}/usr/bin/docker-init"
-    ln -s containerd "${PKG}/usr/bin/docker-containerd"
-    ln -s ctr "${PKG}/usr/bin/docker-containerd-ctr"
-    ln -s runc "${PKG}/usr/bin/docker-runc"
+    ln -sf tini "${PKG}/usr/bin/${name}-init"
+    ln -s containerd "${PKG}/usr/bin/${name}-containerd"
+    ln -s ctr "${PKG}/usr/bin/${name}-containerd-ctr"
+    ln -s runc "${PKG}/usr/bin/${name}-runc"
 
     install -Dm755 contrib/check-config.sh -t "${PKG}/usr/share/${name}/"
 
