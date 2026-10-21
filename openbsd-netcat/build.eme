@@ -6,22 +6,22 @@ homepage="https://salsa.debian.org/debian/netcat-openbsd"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=openbsd-netcat
-version=1.238_1
+version=1.239_1
 release=1
 
-source_version="$(printf '%s' "${version}" | awk '{sub("_", "-"); print;}')"
-source="${name}-${version}.tar.gz::https://salsa.debian.org/debian/netcat-openbsd/-/archive/debian/${source_version}/netcat-openbsd-debian-${source_version}.tar.gz"
+_version="$(printf '%s' "${version}" | tr '_' '-')"
+source="${name}-${version}.tar.gz::https://salsa.debian.org/debian/netcat-openbsd/-/archive/debian/${_version}/netcat-openbsd-debian-${_version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
-    cd "netcat-openbsd-debian-${source_version}"
+    cd "netcat-openbsd-debian-${_version}"
 
     while read -r patch; do
         patch -Np1 -i "debian/patches/${patch}"
     done < debian/patches/series
 
     make \
-        CFLAGS="${CFLAGS} -DDEBIAN_VERSION=\"\\\"${source_version}\\\"\" -I/usr/include/libbsd" \
+        CFLAGS="${CFLAGS} -DDEBIAN_VERSION=\"\\\"${_version}\\\"\" -I/usr/include/libbsd" \
         LDFLAGS="${LDFLAGS} -lbsd"
 
     install -Dm755 nc -t "${PKG}/usr/bin/"
