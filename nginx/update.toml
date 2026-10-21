@@ -1,5 +1,6 @@
 name = "nginx"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "nginx"
+[ftp]
+url = "https://nginx.org/download/"
+filename = "%(name)-%(version).tar.gz"

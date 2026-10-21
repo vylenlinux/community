@@ -2,13 +2,13 @@
 
 # shellcheck disable=SC2034
 description="Lightweight HTTP server and IMAP/POP3 proxy server"
-homepage="http://nginx.org/"
+homepage="https://nginx.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=nginx
-version=1.31.7
+version=1.31.8
 release=1
-source="http://nginx.org/download/${name}-${version}.tar.gz"
+source="https://nginx.org/download/${name}-${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
