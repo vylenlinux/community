@@ -28,6 +28,5 @@ build() {
         install -Dm644 "${app}.desktop" -t "${PKG}/usr/share/applications/"
     done
 
-    python_version="$(python3 -c 'import sys; print(".".join(map(str, sys.version_info[:2])))')"
-    install -Dm644 "${SRC}/config" -t "${PKG}/usr/lib/python${python_version}/site-packages/nwg_panel/config/"
+    install -Dm644 "${SRC}/config" -t "${PKG}/${PYTHON_SITE_PACKAGES}/nwg_panel/config/"
 }
