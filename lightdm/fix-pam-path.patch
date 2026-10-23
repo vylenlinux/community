@@ -1,0 +1,12 @@
+diff '--color=auto' -ruN --no-dereference a/data/Makefile.am b/data/Makefile.am
+--- a/data/Makefile.am	2026-08-16 18:54:11.000000000 +0200
++++ b/data/Makefile.am	2026-10-23 16:53:21.179000000 +0200
+@@ -7,7 +7,7 @@
+ dbusconfdir = $(datadir)/dbus-1/system.d
+ dist_dbusconf_DATA = org.freedesktop.DisplayManager.conf
+ 
+-pamdir = $(sysconfdir)/pam.d
++pamdir = $(prefix)/lib/pam.d
+ dist_pam_DATA = pam/lightdm \
+                 pam/lightdm-autologin \
+                 pam/lightdm-greeter

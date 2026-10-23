@@ -1,0 +1,16 @@
+diff '--color=auto' -ruN --no-dereference a/meson.build b/meson.build
+--- a/meson.build	2024-10-21 22:29:53.000000000 +0200
++++ b/meson.build	2026-10-23 16:47:20.136000000 +0200
+@@ -57,5 +57,5 @@
+ 
+ install_data(
+   'pam/gtklock',
+-  install_dir : get_option('sysconfdir') / 'pam.d'
++  install_dir : get_option('prefix') / 'lib/pam.d'
+ )
+diff '--color=auto' -ruN --no-dereference a/pam/gtklock b/pam/gtklock
+--- a/pam/gtklock	2024-10-21 22:29:53.000000000 +0200
++++ b/pam/gtklock	2026-10-23 16:47:20.133000000 +0200
+@@ -1 +1 @@
+-auth include login
++auth include system-auth

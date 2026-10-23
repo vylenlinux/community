@@ -1,0 +1,30 @@
+diff '--color=auto' -ruN --no-dereference a/Makefile b/Makefile
+--- a/Makefile	2026-03-30 07:17:59.000000000 +0200
++++ b/Makefile	2026-10-23 17:21:13.499000000 +0200
+@@ -47,7 +47,7 @@
+ 
+ install-pam:
+ 	@echo "Installing pam file..."
+-	@install -DZ res/pam -m 644 -T ${DESTDIR}/etc/pam.d/${DISTFILE}
++	@install -DZ res/pam -m 644 -T ${DESTDIR}/usr/lib/pam.d/${DISTFILE}
+ 	@echo "Done"
+ 
+ install-pam-alt:
+diff '--color=auto' -ruN --no-dereference a/res/pam b/res/pam
+--- a/res/pam	2026-03-30 07:17:59.000000000 +0200
++++ b/res/pam	2026-10-23 17:21:13.494000000 +0200
+@@ -1,10 +1,10 @@
+ #%PAM-1.0
+ auth            sufficient      pam_succeed_if.so user ingroup nopasswdlogin
+-auth            include         system-login
++auth            include         system-auth
+ -auth           optional        pam_gnome_keyring.so
+ -auth           optional        pam_kwallet5.so
+-account         include         system-login
+-password        include         system-login
+-session         include         system-login
++account         include         system-account
++password        include         system-password
++session         include         system-session
+ -session        optional        pam_gnome_keyring.so auto_start
+ -session        optional        pam_kwallet5.so auto_start force_run

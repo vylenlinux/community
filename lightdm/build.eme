@@ -16,13 +16,16 @@ backup="etc/${name}/keys.conf
 source="${name}-${version}.tar.gz::https://github.com/ubuntu/${name}/archive/refs/tags/${version}.tar.gz
     Xsession
     ${name}.rules
-    ${name}-default-config.patch"
+    ${name}-default-config.patch
+    fix-pam-path.patch"
 
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
 
     patch -Np1 -i "${SRC}/${name}-default-config.patch"
+    patch -Np1 -i "${SRC}/fix-pam-path.patch"
+
     ./autogen.sh
 
     ./configure \
@@ -51,5 +54,4 @@ build() {
     do_service "${name}"
     do_sysusers "${name}"
     do_tmpfiles "${name}"
-    do_pam "${name}" "${name}-autologin"
 }

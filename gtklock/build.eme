@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="GTK-based lockscreen for Wayland"
 homepage="https://github.com/jovanlanik/gtklock"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,10 +8,14 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=gtklock
 version=4.0.0
 release=1
-source="$name-$version.tar.gz::https://github.com/jovanlanik/gtklock/archive/refs/tags/v$version.tar.gz"
+
+source="${name}-${version}.tar.gz::https://github.com/jovanlanik/${name}/archive/refs/tags/v${version}.tar.gz
+    pam-config.patch"
 
 build() {
-	vylen-meson $name-$version build
-	meson compile -C build
-        DESTDIR=$PKG meson install -C build
+    patch -d "${name}-${version}" -Np1 -i "${SRC}/pam-config.patch"
+
+    vylen-meson "${name}-${version}" build
+    meson compile -C build
+    DESTDIR="${PKG}" meson install -C build
 }
