@@ -52,13 +52,14 @@ drwxr-xr-x root/root    usr/include/hyprutils/string/
 -rw-r--r-- root/root    usr/include/hyprutils/string/ConstVarList.hpp
 -rw-r--r-- root/root    usr/include/hyprutils/string/Numeric.hpp
 -rw-r--r-- root/root    usr/include/hyprutils/string/String.hpp
+-rw-r--r-- root/root    usr/include/hyprutils/string/UTF8.hpp
 -rw-r--r-- root/root    usr/include/hyprutils/string/VarList.hpp
 -rw-r--r-- root/root    usr/include/hyprutils/string/VarList2.hpp
 drwxr-xr-x root/root    usr/include/hyprutils/utils/
 -rw-r--r-- root/root    usr/include/hyprutils/utils/ScopeGuard.hpp
 drwxr-xr-x root/root    usr/lib/
 lrwxrwxrwx root/root    usr/lib/libhyprutils.so -> libhyprutils.so.13
--rwxr-xr-x root/root    usr/lib/libhyprutils.so.0.14.2
-lrwxrwxrwx root/root    usr/lib/libhyprutils.so.13 -> libhyprutils.so.0.14.2
+-rwxr-xr-x root/root    usr/lib/libhyprutils.so.0.14.3
+lrwxrwxrwx root/root    usr/lib/libhyprutils.so.13 -> libhyprutils.so.0.14.3
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/hyprutils.pc
