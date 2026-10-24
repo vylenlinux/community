@@ -1,0 +1,6 @@
+name = "kkfetch"
+provider = "github"
+
+[source]
+owner = "kk376"
+repo = "%(name)"

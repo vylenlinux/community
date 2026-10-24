@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
+description="A fast, lightweight Linux system information fetch tool written in Rust"
+homepage="https://github.com/kk376/kkfetch"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
+
+name=kkfetch
+version=0.22.0
+release=1
+source="https://github.com/kk376/${name}/archive/refs/tags/v${version}.tar.gz"
+
+build() {
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    cargo build \
+        --release \
+        --locked
+
+    install -Dm755 "target/release/${name}" -t "${PKG}/usr/bin/"
+    install -Dm644 "completions/${name}.bash" "${PKG}/usr/share/bash-completion/completions/${name}"
+    install -Dm644 "completions/_${name}" -t "${PKG}/usr/share/zsh/site-functions/"
+    install -Dm644 "completions/${name}.fish" -t "${PKG}/usr/share/fish/vendor_completions.d/"
+    install -Dm644 "docs/${name}.1" -t "${PKG}/usr/share/man/man1/"
+}
