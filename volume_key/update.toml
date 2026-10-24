@@ -1,5 +1,0 @@
-name = "volume_key"
-provider = "repology"
-
-[source]
-package = "volume-key"
