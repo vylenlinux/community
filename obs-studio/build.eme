@@ -6,7 +6,7 @@ homepage="https://obsproject.com/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=obs-studio
-version=32.2.2
+version=33.0.0
 release=1
 source="https://github.com/obsproject/${name}/archive/${version}/${name}-${version}.tar.gz"
 
