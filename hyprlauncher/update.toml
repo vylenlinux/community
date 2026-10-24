@@ -1,0 +1,6 @@
+name = "hyprlauncher"
+provider = "github"
+
+[source]
+owner = "hyprwm"
+repo = "%(name)"
