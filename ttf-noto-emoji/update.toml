@@ -1,5 +1,13 @@
 name = "ttf-noto-emoji"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "fonts:noto-emoji"
+owner = "googlefonts"
+repo = "noto-emoji"
+
+[github]
+use_releases = false
+use_tags = true
+
+[version]
+include = ["v2.*"]
