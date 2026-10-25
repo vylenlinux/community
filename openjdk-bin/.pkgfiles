@@ -1,469 +1,469 @@
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/lib/
 drwxr-xr-x root/root    usr/lib/jvm/
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/NOTICE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/jar
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/jarsigner
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/java
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/javac
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/javadoc
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/javap
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/jcmd
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/jconsole
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/jdb
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/jdeprscan
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/jdeps
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/jfr
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/jhsdb
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/jimage
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/jinfo
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/jlink
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/jmap
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/jmod
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/jnativescan
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/jpackage
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/jps
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/jshell
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/jstack
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/jstat
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/jstatd
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/jwebserver
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/keytool
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/rmiregistry
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/bin/serialver
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/conf/
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/conf/bash-completion/
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/conf/bash-completion/jcmd
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/conf/jaxp-strict.properties.template
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/conf/jaxp.properties
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/conf/logging.properties
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/conf/management/
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/conf/management/jmxremote.access
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/conf/management/jmxremote.password.template
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/conf/management/management.properties
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/conf/net.properties
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/conf/security/
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/conf/security/java.security
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/conf/security/policy/
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/conf/security/policy/README.txt
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/conf/security/policy/limited/
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/conf/security/policy/limited/default_US_export.policy
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/conf/security/policy/limited/default_local.policy
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/conf/security/policy/limited/exempt_local.policy
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/conf/security/policy/unlimited/
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/conf/security/policy/unlimited/default_US_export.policy
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/conf/security/policy/unlimited/default_local.policy
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/conf/sound.properties
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/include/
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/include/classfile_constants.h
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/include/jawt.h
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/include/jdwpTransport.h
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/include/jni.h
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/include/jvmti.h
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/include/jvmticmlr.h
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/include/linux/
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/include/linux/jawt_md.h
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/include/linux/jni_md.h
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/java.base/
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.base/ADDITIONAL_LICENSE_INFO
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.base/ASSEMBLY_EXCEPTION
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.base/LICENSE
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.base/c-libutl.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.base/cldr.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.base/gcc.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.base/icu.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.base/public_suffix.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.base/siphash.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.base/unicode.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.base/zlib.md
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/java.compiler/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.compiler/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.compiler/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.compiler/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/java.datatransfer/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.datatransfer/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.datatransfer/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.datatransfer/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/java.desktop/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.desktop/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.desktop/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.desktop/LICENSE -> ../java.base/LICENSE
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.desktop/colorimaging.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.desktop/freetype.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.desktop/giflib.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.desktop/harfbuzz.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.desktop/jpeg.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.desktop/lcms.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.desktop/libpng.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.desktop/mesa3d.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.desktop/pipewire.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.desktop/xwd.md
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/java.instrument/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.instrument/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.instrument/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.instrument/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/java.logging/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.logging/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.logging/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.logging/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/java.management.rmi/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.management.rmi/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.management.rmi/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.management.rmi/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/java.management/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.management/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.management/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.management/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/java.naming/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.naming/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.naming/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.naming/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/java.net.http/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.net.http/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.net.http/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.net.http/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/java.prefs/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.prefs/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.prefs/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.prefs/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/java.rmi/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.rmi/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.rmi/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.rmi/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/java.scripting/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.scripting/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.scripting/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.scripting/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/java.se/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.se/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.se/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.se/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/java.security.jgss/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.security.jgss/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.security.jgss/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.security.jgss/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/java.security.sasl/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.security.sasl/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.security.sasl/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.security.sasl/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/java.smartcardio/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.smartcardio/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.smartcardio/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.smartcardio/LICENSE -> ../java.base/LICENSE
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.smartcardio/pcsclite.md
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/java.sql.rowset/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.sql.rowset/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.sql.rowset/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.sql.rowset/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/java.sql/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.sql/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.sql/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.sql/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/java.transaction.xa/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.transaction.xa/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.transaction.xa/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.transaction.xa/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/java.xml.crypto/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.xml.crypto/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.xml.crypto/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.xml.crypto/LICENSE -> ../java.base/LICENSE
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.xml.crypto/santuario.md
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/java.xml/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.xml/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.xml/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/java.xml/LICENSE -> ../java.base/LICENSE
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.xml/bcel.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.xml/dom.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.xml/jcup.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.xml/schema10part1.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.xml/schema10part2.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.xml/xalan.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.xml/xerces.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.xml/xhtml10.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.xml/xhtml10schema.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.xml/xhtml11.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.xml/xhtml11schema.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.xml/xmlspec.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/java.xml/xmlxsd.md
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.accessibility/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.accessibility/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.accessibility/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.accessibility/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.attach/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.attach/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.attach/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.attach/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.charsets/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.charsets/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.charsets/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.charsets/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.compiler/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.compiler/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.compiler/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.compiler/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.crypto.cryptoki/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.crypto.cryptoki/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.crypto.cryptoki/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.crypto.cryptoki/LICENSE -> ../java.base/LICENSE
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.crypto.cryptoki/pkcs11cryptotoken.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.crypto.cryptoki/pkcs11wrapper.md
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.crypto.ec/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.crypto.ec/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.crypto.ec/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.crypto.ec/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.dynalink/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.dynalink/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.dynalink/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.dynalink/LICENSE -> ../java.base/LICENSE
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.dynalink/dynalink.md
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.editpad/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.editpad/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.editpad/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.editpad/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.hotspot.agent/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.hotspot.agent/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.hotspot.agent/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.hotspot.agent/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.httpserver/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.httpserver/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.httpserver/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.httpserver/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.incubator.vector/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.incubator.vector/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.incubator.vector/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.incubator.vector/LICENSE -> ../java.base/LICENSE
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.incubator.vector/sleef.md
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.internal.ed/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.internal.ed/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.internal.ed/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.internal.ed/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.internal.jvmstat/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.internal.jvmstat/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.internal.jvmstat/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.internal.jvmstat/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.internal.le/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.internal.le/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.internal.le/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.internal.le/LICENSE -> ../java.base/LICENSE
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.internal.le/jline.md
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.internal.md/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.internal.md/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.internal.md/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.internal.md/LICENSE -> ../java.base/LICENSE
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.internal.md/commonmark.md
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.internal.opt/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.internal.opt/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.internal.opt/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.internal.opt/LICENSE -> ../java.base/LICENSE
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.internal.opt/jopt-simple.md
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jartool/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jartool/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jartool/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jartool/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.javadoc/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.javadoc/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.javadoc/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.javadoc/LICENSE -> ../java.base/LICENSE
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.javadoc/dejavufonts.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.javadoc/highlightjs.md
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jcmd/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jcmd/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jcmd/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jcmd/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jconsole/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jconsole/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jconsole/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jconsole/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jdeps/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jdeps/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jdeps/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jdeps/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jdi/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jdi/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jdi/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jdi/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jdwp.agent/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jdwp.agent/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jdwp.agent/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jdwp.agent/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jfr/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jfr/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jfr/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jfr/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jlink/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jlink/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jlink/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jlink/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jpackage/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jpackage/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jpackage/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jpackage/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jshell/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jshell/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jshell/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jshell/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jstatd/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jstatd/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jstatd/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.jstatd/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.localedata/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.localedata/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.localedata/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.localedata/LICENSE -> ../java.base/LICENSE
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.localedata/cldr.md -> ../java.base/cldr.md
--r--r--r-- root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.localedata/thaidict.md
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.management.agent/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.management.agent/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.management.agent/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.management.agent/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.management.jfr/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.management.jfr/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.management.jfr/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.management.jfr/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.management/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.management/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.management/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.management/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.naming.dns/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.naming.dns/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.naming.dns/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.naming.dns/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.naming.rmi/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.naming.rmi/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.naming.rmi/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.naming.rmi/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.net/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.net/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.net/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.net/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.nio.mapmode/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.nio.mapmode/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.nio.mapmode/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.nio.mapmode/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.sctp/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.sctp/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.sctp/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.sctp/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.security.auth/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.security.auth/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.security.auth/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.security.auth/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.security.jgss/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.security.jgss/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.security.jgss/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.security.jgss/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.unsupported.desktop/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.unsupported.desktop/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.unsupported.desktop/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.unsupported.desktop/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.unsupported/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.unsupported/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.unsupported/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.unsupported/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.xml.dom/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.xml.dom/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.xml.dom/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.xml.dom/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.zipfs/
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.zipfs/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.zipfs/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
-lrwxrwxrwx root/root    usr/lib/jvm/java-27-openjdk/legal/jdk.zipfs/LICENSE -> ../java.base/LICENSE
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/lib/
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/classlist
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/ct.sym
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/lib/jexec
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/lib/jfr/
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/jfr/default.jfc
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/jfr/profile.jfc
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/jrt-fs.jar
--rwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/lib/jspawnhelper
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/jvm.cfg
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libattach.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libawt.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libawt_headless.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libawt_xawt.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libdt_socket.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libextnet.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libfontmanager.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libfreetype.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libinstrument.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libj2gss.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libj2pcsc.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libj2pkcs11.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libjava.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libjavajpeg.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libjawt.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libjdwp.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libjimage.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libjli.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libjsig.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libjsound.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libjsvml.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/liblcms.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libmanagement.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libmanagement_agent.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libmanagement_ext.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libmlib_image.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libnet.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libnio.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libprefs.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/librmi.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libsaproc.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libsctp.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libsimdsort.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libsplashscreen.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libsyslookup.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libverify.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/libzip.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/modules
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/psfont.properties.ja
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/psfontj2d.properties
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/lib/security/
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/security/blocked.certs
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/security/cacerts
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/security/public_suffix_list.dat
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/lib/server/
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/server/classes.jsa
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/server/classes_nocoh.jsa
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/server/classes_nocoops.jsa
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/server/classes_nocoops_nocoh.jsa
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/server/libjsig.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/server/libjvm.so
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/src.zip
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/lib/tzdb.dat
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/man/
-drwxr-xr-x root/root    usr/lib/jvm/java-27-openjdk/man/man1/
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/jar.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/jarsigner.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/java.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/javac.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/javadoc.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/javap.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/jcmd.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/jconsole.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/jdb.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/jdeprscan.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/jdeps.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/jfr.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/jhsdb.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/jinfo.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/jlink.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/jmap.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/jmod.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/jnativescan.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/jpackage.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/jps.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/jshell.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/jstack.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/jstat.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/jstatd.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/jwebserver.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/keytool.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/rmiregistry.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/man/man1/serialver.1
--rw-r--r-- root/root    usr/lib/jvm/java-27-openjdk/release
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/NOTICE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/jar
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/jarsigner
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/java
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/javac
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/javadoc
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/javap
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/jcmd
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/jconsole
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/jdb
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/jdeprscan
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/jdeps
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/jfr
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/jhsdb
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/jimage
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/jinfo
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/jlink
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/jmap
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/jmod
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/jnativescan
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/jpackage
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/jps
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/jshell
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/jstack
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/jstat
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/jstatd
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/jwebserver
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/keytool
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/rmiregistry
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/bin/serialver
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/conf/
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/conf/bash-completion/
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/conf/bash-completion/jcmd
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/conf/jaxp-strict.properties.template
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/conf/jaxp.properties
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/conf/logging.properties
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/conf/management/
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/conf/management/jmxremote.access
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/conf/management/jmxremote.password.template
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/conf/management/management.properties
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/conf/net.properties
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/conf/security/
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/conf/security/java.security
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/conf/security/policy/
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/conf/security/policy/README.txt
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/conf/security/policy/limited/
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/conf/security/policy/limited/default_US_export.policy
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/conf/security/policy/limited/default_local.policy
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/conf/security/policy/limited/exempt_local.policy
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/conf/security/policy/unlimited/
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/conf/security/policy/unlimited/default_US_export.policy
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/conf/security/policy/unlimited/default_local.policy
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/conf/sound.properties
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/include/
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/include/classfile_constants.h
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/include/jawt.h
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/include/jdwpTransport.h
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/include/jni.h
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/include/jvmti.h
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/include/jvmticmlr.h
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/include/linux/
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/include/linux/jawt_md.h
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/include/linux/jni_md.h
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.base/
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.base/ADDITIONAL_LICENSE_INFO
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.base/ASSEMBLY_EXCEPTION
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.base/LICENSE
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.base/c-libutl.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.base/cldr.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.base/gcc.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.base/icu.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.base/public_suffix.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.base/siphash.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.base/unicode.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.base/zlib.md
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.compiler/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.compiler/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.compiler/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.compiler/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.datatransfer/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.datatransfer/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.datatransfer/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.datatransfer/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.desktop/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.desktop/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.desktop/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.desktop/LICENSE -> ../java.base/LICENSE
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.desktop/colorimaging.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.desktop/freetype.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.desktop/giflib.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.desktop/harfbuzz.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.desktop/jpeg.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.desktop/lcms.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.desktop/libpng.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.desktop/mesa3d.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.desktop/pipewire.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.desktop/xwd.md
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.instrument/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.instrument/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.instrument/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.instrument/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.logging/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.logging/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.logging/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.logging/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.management.rmi/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.management.rmi/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.management.rmi/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.management.rmi/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.management/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.management/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.management/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.management/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.naming/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.naming/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.naming/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.naming/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.net.http/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.net.http/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.net.http/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.net.http/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.prefs/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.prefs/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.prefs/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.prefs/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.rmi/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.rmi/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.rmi/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.rmi/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.scripting/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.scripting/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.scripting/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.scripting/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.se/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.se/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.se/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.se/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.security.jgss/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.security.jgss/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.security.jgss/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.security.jgss/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.security.sasl/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.security.sasl/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.security.sasl/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.security.sasl/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.smartcardio/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.smartcardio/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.smartcardio/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.smartcardio/LICENSE -> ../java.base/LICENSE
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.smartcardio/pcsclite.md
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.sql.rowset/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.sql.rowset/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.sql.rowset/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.sql.rowset/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.sql/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.sql/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.sql/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.sql/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.transaction.xa/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.transaction.xa/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.transaction.xa/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.transaction.xa/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.xml.crypto/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.xml.crypto/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.xml.crypto/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.xml.crypto/LICENSE -> ../java.base/LICENSE
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.xml.crypto/santuario.md
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.xml/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.xml/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.xml/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.xml/LICENSE -> ../java.base/LICENSE
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.xml/bcel.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.xml/dom.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.xml/jcup.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.xml/schema10part1.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.xml/schema10part2.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.xml/xalan.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.xml/xerces.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.xml/xhtml10.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.xml/xhtml10schema.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.xml/xhtml11.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.xml/xhtml11schema.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.xml/xmlspec.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/java.xml/xmlxsd.md
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.accessibility/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.accessibility/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.accessibility/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.accessibility/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.attach/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.attach/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.attach/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.attach/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.charsets/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.charsets/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.charsets/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.charsets/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.compiler/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.compiler/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.compiler/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.compiler/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.crypto.cryptoki/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.crypto.cryptoki/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.crypto.cryptoki/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.crypto.cryptoki/LICENSE -> ../java.base/LICENSE
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.crypto.cryptoki/pkcs11cryptotoken.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.crypto.cryptoki/pkcs11wrapper.md
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.crypto.ec/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.crypto.ec/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.crypto.ec/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.crypto.ec/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.dynalink/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.dynalink/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.dynalink/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.dynalink/LICENSE -> ../java.base/LICENSE
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.dynalink/dynalink.md
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.editpad/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.editpad/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.editpad/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.editpad/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.hotspot.agent/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.hotspot.agent/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.hotspot.agent/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.hotspot.agent/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.httpserver/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.httpserver/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.httpserver/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.httpserver/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.incubator.vector/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.incubator.vector/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.incubator.vector/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.incubator.vector/LICENSE -> ../java.base/LICENSE
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.incubator.vector/sleef.md
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.internal.ed/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.internal.ed/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.internal.ed/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.internal.ed/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.internal.jvmstat/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.internal.jvmstat/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.internal.jvmstat/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.internal.jvmstat/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.internal.le/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.internal.le/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.internal.le/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.internal.le/LICENSE -> ../java.base/LICENSE
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.internal.le/jline.md
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.internal.md/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.internal.md/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.internal.md/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.internal.md/LICENSE -> ../java.base/LICENSE
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.internal.md/commonmark.md
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.internal.opt/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.internal.opt/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.internal.opt/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.internal.opt/LICENSE -> ../java.base/LICENSE
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.internal.opt/jopt-simple.md
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jartool/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jartool/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jartool/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jartool/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.javadoc/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.javadoc/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.javadoc/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.javadoc/LICENSE -> ../java.base/LICENSE
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.javadoc/dejavufonts.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.javadoc/highlightjs.md
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jcmd/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jcmd/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jcmd/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jcmd/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jconsole/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jconsole/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jconsole/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jconsole/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jdeps/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jdeps/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jdeps/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jdeps/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jdi/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jdi/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jdi/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jdi/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jdwp.agent/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jdwp.agent/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jdwp.agent/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jdwp.agent/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jfr/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jfr/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jfr/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jfr/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jlink/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jlink/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jlink/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jlink/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jpackage/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jpackage/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jpackage/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jpackage/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jshell/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jshell/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jshell/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jshell/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jstatd/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jstatd/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jstatd/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.jstatd/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.localedata/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.localedata/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.localedata/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.localedata/LICENSE -> ../java.base/LICENSE
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.localedata/cldr.md -> ../java.base/cldr.md
+-r--r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.localedata/thaidict.md
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.management.agent/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.management.agent/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.management.agent/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.management.agent/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.management.jfr/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.management.jfr/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.management.jfr/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.management.jfr/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.management/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.management/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.management/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.management/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.naming.dns/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.naming.dns/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.naming.dns/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.naming.dns/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.naming.rmi/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.naming.rmi/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.naming.rmi/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.naming.rmi/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.net/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.net/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.net/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.net/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.nio.mapmode/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.nio.mapmode/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.nio.mapmode/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.nio.mapmode/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.sctp/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.sctp/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.sctp/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.sctp/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.security.auth/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.security.auth/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.security.auth/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.security.auth/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.security.jgss/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.security.jgss/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.security.jgss/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.security.jgss/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.unsupported.desktop/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.unsupported.desktop/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.unsupported.desktop/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.unsupported.desktop/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.unsupported/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.unsupported/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.unsupported/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.unsupported/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.xml.dom/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.xml.dom/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.xml.dom/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.xml.dom/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.zipfs/
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.zipfs/ADDITIONAL_LICENSE_INFO -> ../java.base/ADDITIONAL_LICENSE_INFO
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.zipfs/ASSEMBLY_EXCEPTION -> ../java.base/ASSEMBLY_EXCEPTION
+lrwxrwxrwx root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/legal/jdk.zipfs/LICENSE -> ../java.base/LICENSE
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/classlist
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/ct.sym
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/jexec
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/jfr/
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/jfr/default.jfc
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/jfr/profile.jfc
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/jrt-fs.jar
+-rwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/jspawnhelper
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/jvm.cfg
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libattach.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libawt.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libawt_headless.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libawt_xawt.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libdt_socket.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libextnet.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libfontmanager.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libfreetype.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libinstrument.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libj2gss.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libj2pcsc.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libj2pkcs11.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libjava.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libjavajpeg.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libjawt.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libjdwp.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libjimage.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libjli.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libjsig.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libjsound.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libjsvml.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/liblcms.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libmanagement.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libmanagement_agent.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libmanagement_ext.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libmlib_image.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libnet.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libnio.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libprefs.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/librmi.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libsaproc.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libsctp.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libsimdsort.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libsplashscreen.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libsyslookup.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libverify.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/libzip.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/modules
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/psfont.properties.ja
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/psfontj2d.properties
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/security/
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/security/blocked.certs
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/security/cacerts
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/security/public_suffix_list.dat
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/server/
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/server/classes.jsa
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/server/classes_nocoh.jsa
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/server/classes_nocoops.jsa
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/server/classes_nocoops_nocoh.jsa
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/server/libjsig.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/server/libjvm.so
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/src.zip
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/lib/tzdb.dat
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/
+drwxr-xr-x root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/jar.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/jarsigner.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/java.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/javac.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/javadoc.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/javap.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/jcmd.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/jconsole.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/jdb.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/jdeprscan.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/jdeps.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/jfr.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/jhsdb.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/jinfo.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/jlink.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/jmap.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/jmod.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/jnativescan.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/jpackage.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/jps.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/jshell.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/jstack.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/jstat.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/jstatd.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/jwebserver.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/keytool.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/rmiregistry.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/man/man1/serialver.1
+-rw-r--r-- root/root    usr/lib/jvm/java-27.0.1.0.2-openjdk/release
 drwxr-xr-x root/root    usr/lib/revdep.d/
 -rw-r--r-- root/root    usr/lib/revdep.d/openjdk-bin.conf

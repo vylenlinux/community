@@ -6,9 +6,9 @@ homepage="https://github.com/adoptium/temurin27-binaries"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=openjdk-bin
-version=27+35
+version=27.0.1.0.2+1
 release=1
-source="${name}-${version}.tar.gz::https://github.com/adoptium/temurin${version%%+*}-binaries/releases/download/jdk-${version}/OpenJDK${version%%+*}U-jdk_x64_linux_hotspot_$(printf "%s" "${version}" | sed 's/+/_/g').tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/adoptium/temurin${version%%.*}-binaries/releases/download/jdk-${version}/OpenJDK${version%%.*}U-jdk_x64_linux_hotspot_$(printf "%s" "${version}" | sed 's/+/_/g').tar.gz"
 
 build() {
     install -dm755 "${PKG}/usr/lib/jvm/java-${version%%+*}-openjdk"
