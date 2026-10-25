@@ -1,6 +1,6 @@
 boost
-cups
 harfbuzz-icu
 hunspell
+libcups
 poppler
 qt5
