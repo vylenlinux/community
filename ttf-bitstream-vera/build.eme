@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Bitstream Vera fonts"
-homepage="https://www-old.gnome.org/fonts/"
+homepage="https://launchpad.net/ttf-bitstream-vera/main"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ttf-bitstream-vera
