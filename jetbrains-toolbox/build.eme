@@ -24,7 +24,7 @@ build() {
     install -Dm644 "${SRC}/${name}.desktop" -t "${PKG}/usr/share/applications/"
     install -Dm644 "${SRC}/icon.svg" "${PKG}/usr/share/icons/hicolor/scalable/apps/${name}.svg"
 
-    mv bin/* "${PKG}/opt/${name}"
+    mv bin/* -t "${PKG}/opt/${name}/"
     rm -rf "${PKG}/opt/${name}/jetbrainsd"
-    ln -s "${PKG}/${name}/${name}" "${PKG}/usr/bin/${name}"
+    ln -s "/opt/${name}/${name}" -t "${PKG}/usr/bin/"
 }
