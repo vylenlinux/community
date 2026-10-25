@@ -7,8 +7,6 @@ drwxr-xr-x root/root    opt/teams-for-linux/
 -rw-r--r-- root/root    opt/teams-for-linux/chrome_200_percent.pak
 -rwxr-xr-x root/root    opt/teams-for-linux/chrome_crashpad_handler
 -rw-r--r-- root/root    opt/teams-for-linux/icudtl.dat
--rwxr-xr-x root/root    opt/teams-for-linux/libEGL.so
--rwxr-xr-x root/root    opt/teams-for-linux/libGLESv2.so
 -rwxr-xr-x root/root    opt/teams-for-linux/libffmpeg.so
 -rwxr-xr-x root/root    opt/teams-for-linux/libvk_swiftshader.so
 -rwxr-xr-x root/root    opt/teams-for-linux/libvulkan.so.1
