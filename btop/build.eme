@@ -6,7 +6,7 @@ homepage="https://github.com/aristocratos/btop"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=btop
-version=1.4.7
+version=1.4.8
 release=1
 source="${name}-${version}.tar.gz::https://github.com/aristocratos/${name}/archive/refs/tags/v${version}.tar.gz"
 
@@ -15,5 +15,5 @@ build() {
     cd "${name}-${version}"
 
     make PREFIX=/usr
-    make DESTDIR="${PKG}" PREFIX=/usr install
+    make PREFIX=/usr DESTDIR="${PKG}" install
 }
