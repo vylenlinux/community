@@ -15,7 +15,7 @@ source="${name}-${version}.tar.gz::https://github.com/IsmaelMartinez/${name}/arc
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-    npm_config_cache="${SRC}/package-cache" npm install
+    npm install
 
     npx electron-builder build \
         --x64 \
