@@ -8,7 +8,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=archey4
 version=4.15.0.0
 release=1
-source="https://github.com/HorlogeSkynet/${name}/archive/refs/tags/v${version}.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/HorlogeSkynet/${name}/archive/refs/tags/v${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
