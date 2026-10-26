@@ -1,0 +1,27 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
+description="Animated system fetch that stays pinned above your shell while you work."
+homepage="https://github.com/Andrew-Velox/animfetch"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
+
+name=animfetch
+version=0.2.0
+release=1
+source="${name}-${version}.tar.gz::https://github.com/Andrew-Velox/${name}/archive/refs/tags/v${version}.tar.gz"
+
+build() {
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    cargo fetch \
+        --locked \
+        --target host-tuple
+
+    cargo build \
+        --frozen \
+        --release
+
+    install -Dm755 "target/release/${name}" -t "${PKG}/usr/bin/"
+    install -Dm644 config.example.toml -t "${PKG}/usr/share/${name}/"
+}

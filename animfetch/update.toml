@@ -1,0 +1,6 @@
+name = "animfetch"
+provider = "github"
+
+[source]
+owner = "Andrew-Velox"
+repo = "%(name)"
