@@ -1,0 +1,6 @@
+name = "archey4"
+provider = "github"
+
+[source]
+owner = "HorlogeSkynet"
+repo = "%(name)"
