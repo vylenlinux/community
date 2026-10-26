@@ -3,6 +3,7 @@ drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/noctalia
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/applications/
+-rw-r--r-- root/root    usr/share/applications/dev.noctalia.Noctalia.Annotator.desktop
 -rw-r--r-- root/root    usr/share/applications/dev.noctalia.Noctalia.desktop
 drwxr-xr-x root/root    usr/share/icons/
 drwxr-xr-x root/root    usr/share/icons/hicolor/
@@ -90,10 +91,6 @@ drwxr-xr-x root/root    usr/share/noctalia/assets/templates/scroll/
 -rw-r--r-- root/root    usr/share/noctalia/assets/templates/scroll/apply.sh
 -rw-r--r-- root/root    usr/share/noctalia/assets/templates/scroll/scroll
 -rw-r--r-- root/root    usr/share/noctalia/assets/templates/scroll/undo.sh
-drwxr-xr-x root/root    usr/share/noctalia/assets/templates/starship/
--rwxr-xr-x root/root    usr/share/noctalia/assets/templates/starship/apply.sh
--rw-r--r-- root/root    usr/share/noctalia/assets/templates/starship/starship.toml
--rw-r--r-- root/root    usr/share/noctalia/assets/templates/starship/undo.sh
 drwxr-xr-x root/root    usr/share/noctalia/assets/templates/sway/
 -rw-r--r-- root/root    usr/share/noctalia/assets/templates/sway/apply.sh
 -rw-r--r-- root/root    usr/share/noctalia/assets/templates/sway/sway
@@ -113,6 +110,7 @@ drwxr-xr-x root/root    usr/share/noctalia/assets/translations/
 -rw-r--r-- root/root    usr/share/noctalia/assets/translations/ca.json
 -rw-r--r-- root/root    usr/share/noctalia/assets/translations/cs.json
 -rw-r--r-- root/root    usr/share/noctalia/assets/translations/de.json
+-rw-r--r-- root/root    usr/share/noctalia/assets/translations/en-GB.json
 -rw-r--r-- root/root    usr/share/noctalia/assets/translations/en.json
 -rw-r--r-- root/root    usr/share/noctalia/assets/translations/es.json
 -rw-r--r-- root/root    usr/share/noctalia/assets/translations/fr.json
