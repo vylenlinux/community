@@ -8,24 +8,9 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=mbedtls
 version=4.2.0
 release=1
-
-_framework_commit=3c8347750791cfca9a755971847dc2a5e0fa785b
-_tf_psa_crypto_commit=c5467adc07919647186572fe631b54868b588b7e
-
-source="https://github.com/ARMmbed/${name}/archive/v${version}/${name}-${version}.tar.gz
-    https://github.com/Mbed-TLS/${name}-framework/archive/${_framework_commit}/${name}-framework-${_framework_commit}.tar.gz
-    https://github.com/Mbed-TLS/TF-PSA-Crypto/archive/${_tf_psa_crypto_commit}/TF-PSA-Crypto-${_tf_psa_crypto_commit}.tar.gz"
+source="https://downloads.sourceforge.net/project/vylen/sources/${name}/${name}-${version}.tar.xz"
 
 build() {
-    rm -rf "${name}-${version}/framework"
-    rm -rf "${name}-${version}/tf-psa-crypto"
-
-    mkdir -p "${name}-${version}/tf-psa-crypto"
-
-    cp -r "${name}-framework-${_framework_commit}/." "${name}-${version}/framework"
-    cp -r "${name}-framework-${_framework_commit}/." "${name}-${version}/tf-psa-crypto/framework"
-    cp -r "TF-PSA-Crypto-${_tf_psa_crypto_commit}/." "${name}-${version}/tf-psa-crypto/"
-
     cmake -S "${name}-${version}" -B build -G Ninja \
         -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_BUILD_TYPE=Release \
