@@ -6,12 +6,12 @@ drwxr-xr-x root/root    usr/bin/
 lrwxrwxrwx root/root    usr/bin/dnx -> /usr/share/dotnet/dnx
 lrwxrwxrwx root/root    usr/bin/dotnet -> /usr/share/dotnet/dotnet
 drwxr-xr-x root/root    usr/lib/
-lrwxrwxrwx root/root    usr/lib/libhostfxr.so -> /usr/share/dotnet/host/fxr/10.0.402/libhostfxr.so
+lrwxrwxrwx root/root    usr/lib/libhostfxr.so -> /usr/share/dotnet/host/fxr/10.0.403/libhostfxr.so
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/dotnet/
 -rwxr-xr-x root/root    usr/share/dotnet/dnx
 -rwxr-xr-x root/root    usr/share/dotnet/dotnet
 drwxr-xr-x root/root    usr/share/dotnet/host/
 drwxr-xr-x root/root    usr/share/dotnet/host/fxr/
-drwxr-xr-x root/root    usr/share/dotnet/host/fxr/10.0.13/
--rwxr-xr-x root/root    usr/share/dotnet/host/fxr/10.0.13/libhostfxr.so
+drwxr-xr-x root/root    usr/share/dotnet/host/fxr/10.0.14/
+-rwxr-xr-x root/root    usr/share/dotnet/host/fxr/10.0.14/libhostfxr.so
