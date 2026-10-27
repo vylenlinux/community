@@ -1,5 +1,13 @@
 name = "sqlcipher"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "sqlcipher"
+owner = "%(name)"
+repo = "%(name)"
+
+[github]
+use_releases = false
+use_tags = true
+
+[version]
+exclude = ["v*-beta*"]
