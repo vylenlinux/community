@@ -1,8 +1,6 @@
 name = "openjdk-11-bin"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "openjdk"
-
-[repology]
-match_name = "openjdk-11"
+owner = "adoptium"
+repo = "temurin11-binaries"

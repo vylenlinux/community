@@ -1,8 +1,6 @@
 name = "openjdk-17-bin"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "openjdk"
-
-[repology]
-match_name = "openjdk-17"
+owner = "adoptium"
+repo = "temurin17-binaries"
