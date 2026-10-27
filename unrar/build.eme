@@ -6,20 +6,23 @@ homepage="https://www.rarlab.com/rar_add.htm"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=unrar
-version=7.3.1
+version=7.3.2
 release=1
 source="${name}-${version}.tar.gz::https://www.rarlab.com/rar/unrarsrc-${version}.tar.gz"
 
 build() {
     cp -a unrar libunrar
-
-    sed -e '/CXXFLAGS=/d' -e '/LDFLAGS=/d' -i unrar/makefile
     export LDFLAGS="${LDFLAGS} -pthread"
+
+    sed \
+        -e '/CXXFLAGS=/d' \
+        -e '/LDFLAGS=/d' \
+    -i unrar/makefile
 
     make -C libunrar lib
     make -C unrar -j1
 
-    install -Dm755 unrar/unrar -t "${PKG}/usr/bin/"
+    install -Dm755 "${name}/${name}" -t "${PKG}/usr/bin/"
     install -Dm755 libunrar/libunrar.so -t "${PKG}/usr/lib/"
-    install -Dm644 libunrar/dll.hpp -t "${PKG}/usr/include/unrar/"
+    install -Dm644 libunrar/dll.hpp -t "${PKG}/usr/include/${name}/"
 }
