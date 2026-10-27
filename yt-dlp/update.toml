@@ -1,5 +1,6 @@
 name = "yt-dlp"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "yt-dlp"
+owner = "%(name)"
+repo = "%(name)"
