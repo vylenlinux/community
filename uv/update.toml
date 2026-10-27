@@ -1,5 +1,6 @@
 name = "uv"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "uv"
+owner = "astral-sh"
+repo = "%(name)"
