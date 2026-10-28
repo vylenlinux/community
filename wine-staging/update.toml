@@ -6,5 +6,4 @@ instance = "https://gitlab.winehq.org"
 project = "wine/wine-staging"
 
 [gitlab]
-use_releases = false
 use_tags = true

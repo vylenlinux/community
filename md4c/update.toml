@@ -6,5 +6,4 @@ owner = "mity"
 repo = "md4c"
 
 [github]
-use_releases = false
 use_tags = true
