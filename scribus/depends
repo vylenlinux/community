@@ -3,4 +3,5 @@ harfbuzz-icu
 hunspell
 libcups
 poppler
-qt5
+qt6-5compat
+qt6-tools

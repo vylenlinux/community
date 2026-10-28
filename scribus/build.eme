@@ -6,26 +6,19 @@ homepage="https://www.scribus.net/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=scribus
-version=1.7.3
+version=1.7.4
 release=1
-
-source="https://downloads.sourceforge.net/${name}/${name}-${version}.tar.xz
-    https://github.com/scribusproject/${name}/commit/14a287fc1db2a44abfe1743260554447b31b4adf.patch
-    https://github.com/scribusproject/${name}/commit/ba246c3a2dd086b4e84517723beab159736ba9ba.patch
-    https://github.com/scribusproject/${name}/commit/2b9405a00a96a09e0183190ddc9f83d44963d4e0.patch"
+source="https://downloads.sourceforge.net/${name}/${name}-${version}.tar.xz"
 
 build() {
-    patch -d "${name}-${version}" -Np1 -i "${SRC}/14a287fc1db2a44abfe1743260554447b31b4adf.patch"
-    patch -d "${name}-${version}" -Np1 -i "${SRC}/ba246c3a2dd086b4e84517723beab159736ba9ba.patch"
-    patch -d "${name}-${version}" -Np1 -i "${SRC}/2b9405a00a96a09e0183190ddc9f83d44963d4e0.patch"
-
     cmake -S "${name}-${version}" -B build \
         -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_BUILD_TYPE=None \
         -DCMAKE_SKIP_RPATH=On \
         -DWANT_CPP20=ON \
         -DWITH_PODOFO=Off \
-        -DWANT_GRAPHICSMAGICK=On
+        -DWANT_GRAPHICSMAGICK=On \
+        -Wno-author
 
     make -C build
     make -C build DESTDIR="${PKG}" install
