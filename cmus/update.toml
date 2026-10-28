@@ -1,5 +1,6 @@
 name = "cmus"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "cmus"
+owner = "%(name)"
+repo = "%(name)"
