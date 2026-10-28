@@ -6,7 +6,7 @@ homepage="https://github.com/hyprwm/xdg-desktop-portal-hyprland"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xdg-desktop-portal-hyprland
-version=1.4.1
+version=1.5.0
 release=1
 source="https://downloads.sourceforge.net/project/vylen/sources/${name}/${name}-${version}.tar.xz"
 
