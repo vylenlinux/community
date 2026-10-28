@@ -1,5 +1,6 @@
 name = "glaze"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "glaze"
+owner = "stephenberry"
+repo = "%(name)"
