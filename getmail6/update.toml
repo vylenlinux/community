@@ -1,5 +1,9 @@
 name = "getmail6"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "getmail6"
+owner = "%(name)"
+repo = "%(name)"
+
+[github]
+use_tags = true
