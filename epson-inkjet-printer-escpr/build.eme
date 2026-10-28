@@ -6,9 +6,9 @@ homepage="http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=epson-inkjet-printer-escpr
-version=1.8.9
+version=1.8.10
 release=1
-source="${name}-${version}.rpm::https://master.dl.sourceforge.net/project/mxntrepo/sources/${name}-${version}-1.src.rpm"
+source="${name}-${version}.rpm::https://download-center.epson.com/f/module/d3003be6-1230-4495-a683-b627604d565c/${name}-${version}-1.src.rpm"
 
 build() {
     export CFLAGS="${CFLAGS} \
@@ -18,7 +18,7 @@ build() {
 
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-    autoreconf -vif
+    autoreconf -fi
 
     ./configure \
         --prefix=/usr \
