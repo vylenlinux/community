@@ -1,5 +1,12 @@
 name = "gtklock-powerbar-module"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "gtklock-powerbar-module"
+owner = "jovanlanik"
+repo = "%(name)"
+
+[github]
+use_tags = true
+
+[version]
+exclude = ["202*"]
