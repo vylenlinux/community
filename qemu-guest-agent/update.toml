@@ -1,6 +1,10 @@
 name = "qemu-guest-agent"
-provider = "repology"
+provider = "github"
 dedup_key = "qemu"
 
 [source]
-package = "qemu"
+owner = "qemu"
+repo = "qemu"
+
+[github]
+use_tags = true
