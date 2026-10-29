@@ -1,5 +1,6 @@
 name = "composer"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "php:composer"
+owner = "%(name)"
+repo = "%(name)"
