@@ -1,5 +1,6 @@
 name = "pdfio"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "pdfio"
+owner = "michaelrsweet"
+repo = "%(name)"
