@@ -210,6 +210,8 @@ drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-manual/doc/
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/efficiency.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/external-formats.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/ffi.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/further-resources.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/getting-started.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/intro.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/package-locks.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/pathnames.lisp
@@ -217,7 +219,6 @@ drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-manual/doc/
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/sbcl.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/start-stop.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/streams.lisp
--rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/support-and-bugs.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/threading.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/doc/timers.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-manual/docstring.lisp
@@ -402,6 +403,7 @@ drwxr-xr-x root/root    usr/share/sbcl-source/contrib/sb-sprof/
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-sprof/report.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-sprof/sb-sprof.asd
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-sprof/sb-sprof.texinfo
+-rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-sprof/stack-profile.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/sb-sprof/test.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/contrib/stale-symbols.lisp
 drwxr-xr-x root/root    usr/share/sbcl-source/src/
@@ -793,6 +795,7 @@ drwxr-xr-x root/root    usr/share/sbcl-source/src/compiler/arm64/
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/callable-args.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/checkgen.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/codegen.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/combination-match.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/compiler-error.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/constantp.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/constraint-back.lisp
@@ -822,9 +825,9 @@ drwxr-xr-x root/root    usr/share/sbcl-source/src/compiler/generic/
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/generic/core.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/generic/early-objdef.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/generic/early-vm.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/generic/generic-vops.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/generic/genesis.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/generic/interr.lisp
--rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/generic/late-nlx.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/generic/late-objdef.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/generic/layout-ids.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/generic/objdef.lisp
@@ -921,6 +924,7 @@ drwxr-xr-x root/root    usr/share/sbcl-source/src/compiler/mips/
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/pack-iterative.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/pack.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/parse-lambda-list.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/perfect-hash.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/policies.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/policy.lisp
 drwxr-xr-x root/root    usr/share/sbcl-source/src/compiler/ppc/
@@ -1030,6 +1034,7 @@ drwxr-xr-x root/root    usr/share/sbcl-source/src/compiler/sparc/
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/srctran.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/sset.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/stack.lisp
+-rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/struct-flags.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/sxhash.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/target-disassem.lisp
 -rw-r--r-- root/root    usr/share/sbcl-source/src/compiler/target-dstate.lisp
@@ -1370,10 +1375,6 @@ drwxr-xr-x root/root    usr/share/sbcl-source/src/runtime/genesis/
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/parse.c
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/parse.d
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/parse.h
--rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/perfecthash.c
--rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/perfecthash.d
--rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/perfecthash.h
--rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/perfecthex.inc
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/pmrgc-impl.h
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/pmrgc.c
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/ppc-arch.c
@@ -1396,7 +1397,6 @@ drwxr-xr-x root/root    usr/share/sbcl-source/src/runtime/genesis/
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/print.h
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/private-cons.inc
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/pseudo-atomic.h
--rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/pthreads_win32.h
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/purify.c
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/purify.h
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/queue-suballocator.h
@@ -1460,9 +1460,6 @@ lrwxrwxrwx root/root    usr/share/sbcl-source/src/runtime/target-os.h -> linux-o
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/traceroot.c
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/traceroot.d
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/trymap.c
--rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/validate.c
--rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/validate.d
--rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/validate.h
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/var-io.c
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/var-io.d
 -rw-r--r-- root/root    usr/share/sbcl-source/src/runtime/var-io.h

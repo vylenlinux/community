@@ -6,7 +6,7 @@ homepage="http://www.sbcl.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=sbcl
-version=2.6.9
+version=2.6.10
 release=1
 
 source="${name}-${version}.tar.bz2::https://sourceforge.net/projects/${name}/files/${name}/${version}/${name}-${version}-source.tar.bz2
@@ -21,7 +21,7 @@ build() {
     export CFLAGS="${CFLAGS} \
         -D_GNU_SOURCE \
         -fno-omit-frame-pointer \
-        -DSBCL_HOME=/usr/lib/sbcl"
+        -DSBCL_HOME=/usr/lib/${name}"
 
     # build system uses LINKFLAGS and OS_LIBS to build LDFLAGS
     export LINKFLAGS="${LDFLAGS}"
