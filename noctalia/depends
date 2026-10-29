@@ -5,6 +5,7 @@ libqalculate
 libsecret
 libsodium
 md4c
+nlohmann-json
 power-profiles-daemon
 sdbus-cpp
 stb
