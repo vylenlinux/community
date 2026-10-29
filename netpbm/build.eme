@@ -6,7 +6,7 @@ homepage="http://netpbm.sourceforge.net/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=netpbm
-version=11.16.1
+version=11.16.2
 release=1
 
 source="https://github.com/ceamac/${name}-make-dist/releases/download/v${version}/${name}-${version}.tar.xz
@@ -28,7 +28,5 @@ build() {
     make pkgdir="${PKG}/usr" PKGMANDIR=share/man install-run install-dev
 
     install -Dm755 "${SRC}/pgmtopbm" -t "${PKG}/usr/bin/"
-
-    # Add libnetpbm.so symlink
     ln -s /usr/lib/libnetpbm.so.11 "${PKG}/usr/lib/libnetpbm.so"
 }
