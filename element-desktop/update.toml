@@ -1,0 +1,6 @@
+name = "element-desktop"
+provider = "ftp"
+
+[ftp]
+url = "https://packages.element.io/debian/pool/main/e/%(name)/"
+filename = "%(name)_%(version)_amd64.deb"

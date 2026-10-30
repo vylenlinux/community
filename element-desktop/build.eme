@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
+description="All-in-one secure chat app for teams, friends and organisations"
+homepage="https://element.io/"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
+
+name=element-desktop
+version=1.12.33
+release=1
+
+source="${name}-${version}.deb::https://packages.element.io/debian/pool/main/e/${name}/${name}_${version}_amd64.deb
+    ${name}"
+
+build() {
+    bsdtar -xf "${SRC}/${name}-${version}.deb"
+    bsdtar -xf data.tar.xz -C "${PKG}"
+
+    install -Dm755 "${SRC}/${name}" -t "${PKG}/usr/bin/"
+    sed -i 's|^Exec=.*|Exec=/usr/bin/element-desktop %U|' "${PKG}/usr/share/applications/${name}.desktop"
+}
