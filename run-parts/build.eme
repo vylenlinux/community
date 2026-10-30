@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="run-parts from the debianutils package"
-homepage="https://packages.qa.debian.org/d/debianutils.html"
+homepage="https://tracker.debian.org/pkg/debianutils"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=run-parts

@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Emoji as a Service (formerly EmojiOne)"
-homepage="https://www.joypixels.com/download"
+homepage="https://app.joypixels.com/files"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ttf-joypixels

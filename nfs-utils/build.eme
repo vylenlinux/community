@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Support programs for Network File Systems"
-homepage="http://nfs.sourceforge.net/"
+homepage="https://nfs.sourceforge.net/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=nfs-utils

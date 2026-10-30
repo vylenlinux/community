@@ -1,5 +1,5 @@
 description="xman manual page browser"
-homepage="https://www.x.org/releases/individual/app/"
+homepage="https://xorg.freedesktop.org/archive/individual/app/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xman

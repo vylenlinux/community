@@ -1,5 +1,5 @@
 description="Library to provide abstract access to various archives."
-homepage="http://icculus.org/physfs/"
+homepage="https://icculus.org/physfs/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=physfs

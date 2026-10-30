@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Portable bandwidth monitor and rate estimator"
-homepage="https://github.com/tgraf/bmon/"
+homepage="https://github.com/Jafaral/bmon"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=bmon

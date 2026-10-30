@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="List available X fonts"
-homepage="https://xorg.freedesktop.org"
+homepage="https://www.x.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xlsfonts

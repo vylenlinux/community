@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="An easy-to-use, robust and highly configurable VPN (Virtual Private Network)"
-homepage="https://openvpn.net/index.php/open-source.html"
+homepage="https://openvpn.net/community/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=openvpn

@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Point and click selection of X11 font names"
-homepage="https://xorg.freedesktop.org"
+homepage="https://www.x.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xfontsel

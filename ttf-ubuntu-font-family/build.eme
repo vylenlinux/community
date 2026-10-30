@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Ubuntu font family"
-homepage="https://design.ubuntu.com/font/"
+homepage="https://design.ubuntu.com/font"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ttf-ubuntu-font-family

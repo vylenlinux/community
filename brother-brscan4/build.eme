@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="SANE drivers from Brother for compatible models"
-homepage="http://support.brother.com"
+homepage="https://support.brother.com/g/b/index.aspx"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=brother-brscan4

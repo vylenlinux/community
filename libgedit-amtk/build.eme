@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Basic GTKUIManager replacement based on GAction"
-homepage="https://gedit-technology.net/"
+homepage="https://www.gedit-technology.net/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=libgedit-amtk

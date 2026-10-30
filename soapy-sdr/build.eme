@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="An opensource API and runtime library for interfacing with SDR devices"
-homepage="http://www.pothosware.com/"
+homepage="https://www.pothosware.com/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=soapy-sdr

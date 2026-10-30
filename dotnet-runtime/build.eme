@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 description="The .NET Core runtime"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
-homepage="https://www.microsoft.com/net/core"
+homepage="https://dotnet.microsoft.com/en-us/download"
 
 name=dotnet-runtime
 version=10.0.403

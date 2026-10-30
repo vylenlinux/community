@@ -1,5 +1,5 @@
 description="Display a message or query in a window"
-homepage="https://xorg.freedesktop.org"
+homepage="https://www.x.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xmessage

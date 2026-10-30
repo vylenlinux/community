@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Mail filter to identify spam"
-homepage="http://www.spamassassin.org"
+homepage="https://spamassassin.apache.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=spamassassin

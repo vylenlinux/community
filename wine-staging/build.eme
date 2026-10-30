@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="WINE with staging patches"
-homepage="https://www.wine-staging.com"
+homepage="https://gitlab.winehq.org/wine/wine/-/wikis/home"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=wine-staging

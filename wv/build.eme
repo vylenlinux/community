@@ -1,5 +1,5 @@
 description="Command line utilities to convert Microsoft Word documents."
-homepage="http://wvware.sourceforge.net/"
+homepage="https://wvware.sourceforge.net/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=wv

@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Secure file wiping utility"
-homepage="http://wipe.sourceforge.net/"
+homepage="https://wipe.sourceforge.net/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=wipe

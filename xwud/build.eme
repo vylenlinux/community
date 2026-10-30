@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="X Window System image undumping utility"
-homepage="https://xorg.freedesktop.org/"
+homepage="https://www.x.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xwud

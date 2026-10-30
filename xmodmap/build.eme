@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Utility for modifying keymaps and button mappings"
-homepage="https://xorg.freedesktop.org/"
+homepage="https://www.x.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xmodmap

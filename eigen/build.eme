@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Eigen is a C++ template library for linear algebra: matrices, vectors, numerical solvers, and related algorithms."
-homepage="https://eigen.tuxfamily.org/"
+homepage="https://libeigen.gitlab.io/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=eigen

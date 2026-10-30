@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Keyed-Hashing for Message Authentication"
-homepage="http://metacpan.org/release/Digest-HMAC"
+homepage="https://metacpan.org/release/Digest-HMAC"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-digest-hmac

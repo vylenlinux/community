@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Next-Gen ls command"
-homepage="https://github.com/Peltoche/lsd"
+homepage="https://github.com/lsd-rs/lsd"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=lsd

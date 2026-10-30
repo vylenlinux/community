@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Tool and library for running OCI-based containers in pods"
-homepage="https://github.com/containers/libpod"
+homepage="https://github.com/podman-container-tools/podman"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=podman

@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Simple clock application which is used in the default xinit configuration"
-homepage="https://xorg.freedesktop.org/"
+homepage="https://www.x.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xclock

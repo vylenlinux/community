@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Diff utility for binary files"
-homepage="http://xdelta.org/"
+homepage="https://xdelta.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xdelta3

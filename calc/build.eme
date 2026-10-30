@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="C-style arbitrary precision calculator"
-homepage="http://www.isthe.com/chongo/tech/comp/calc/index.html"
+homepage="https://www.isthe.com/chongo/tech/comp/calc/index.html"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=calc

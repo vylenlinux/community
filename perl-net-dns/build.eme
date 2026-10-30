@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Perl Interface to the Domain Name System"
-homepage="http://search.cpan.org/~nlnetlabs/Net-DNS/"
+homepage="https://metacpan.org/release/Net-DNS"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-net-dns

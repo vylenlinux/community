@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="ReadyMedia (formerly known as MiniDLNA) is a simple media server software"
-homepage="http://sourceforge.net/projects/minidlna/"
+homepage="https://sourceforge.net/projects/minidlna/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=minidlna

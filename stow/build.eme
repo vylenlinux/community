@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Manage installation of multiple softwares in the same directory tree"
-homepage="https://ftp.gnu.org/gnu/stow"
+homepage="https://ftp.gnu.org/gnu/stow/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=stow

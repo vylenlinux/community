@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="headers for mingw-w64 toolchain"
-homepage="http://mingw-w64.org/"
+homepage="https://www.mingw-w64.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=mingw-w64-headers

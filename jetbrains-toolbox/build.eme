@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Manage all your JetBrains Projects and Tools"
-homepage="https://www.jetbrains.com/toolbox/"
+homepage="https://www.jetbrains.com/toolbox-app/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=jetbrains-toolbox

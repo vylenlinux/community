@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Configuration tools for Linux networking"
-homepage="http://net-tools.sourceforge.net/"
+homepage="https://net-tools.sourceforge.io/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=net-tools

@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Library implementing a curses-based widget set for text terminals"
-homepage="http://clifford.at/stfl/"
+homepage="https://clifford.at/stfl"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=stfl

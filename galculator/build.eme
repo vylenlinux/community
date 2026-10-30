@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="GTK+ based scientific calculator"
-homepage="http://galculator.sourceforge.net/"
+homepage="https://sourceforge.net/projects/galculator/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=galculator

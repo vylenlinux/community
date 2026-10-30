@@ -1,5 +1,5 @@
 description="Manage EFI boot loader entries with this simple GUI."
-homepage="https://github.com/Elinvention/efibootmgr-gui"
+homepage="https://github.com/Elinvention/efiboots"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=efibootmgr-gui

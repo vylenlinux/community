@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Minimal try/catch with proper localization of \$@"
-homepage="https://search.cpan.org/dist/Try-Tiny"
+homepage="https://metacpan.org/release/Try-Tiny"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-try-tiny

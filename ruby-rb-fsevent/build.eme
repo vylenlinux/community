@@ -1,5 +1,5 @@
 description="FSEvents API with signals handled (without RubyCocoa)"
-homepage="https://github.com/thibaudgg/rb-fsevent"
+homepage="https://github.com/guard/rb-fsevent"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ruby-rb-fsevent

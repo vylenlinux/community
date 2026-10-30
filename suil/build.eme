@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="suil library for loading and wrapping lv2 plugins UIs"
-homepage="https://drobilla.net/software/suil.html"
+homepage="https://gitlab.com/lv2/suil"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=suil

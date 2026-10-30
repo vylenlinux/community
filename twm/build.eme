@@ -1,5 +1,5 @@
 description="Tom's or Tab Window Manager for the X Window System"
-homepage="https://www.x.org/archive/X11R6.8.1/doc/twm.1.html"
+homepage="https://xorg.freedesktop.org/archive/X11R6.8.1/doc/twm.1.html"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=twm

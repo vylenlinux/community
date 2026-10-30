@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Perl extensions for the rxvt-unicode terminal emulator"
-homepage="https://github.com/muennich/urxvt-perls"
+homepage="https://github.com/xyb3rt/urxvt-perls"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=urxvt-perls

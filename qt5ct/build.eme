@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Qt5 Configuration Utility"
-homepage="https://qt5ct.sourceforge.io/"
+homepage="https://sourceforge.net/projects/qt5ct/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=qt5ct

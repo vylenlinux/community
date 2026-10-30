@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Command-line utility to print information about windows on an X server"
-homepage="https://xorg.freedesktop.org/"
+homepage="https://www.x.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=xwininfo

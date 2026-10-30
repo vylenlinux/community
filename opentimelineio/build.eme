@@ -1,5 +1,5 @@
 description="Open Source API and interchange format for editorial timeline information"
-homepage="http://opentimeline.io"
+homepage="https://github.com/AcademySoftwareFoundation/OpenTimelineIO"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=opentimelineio
