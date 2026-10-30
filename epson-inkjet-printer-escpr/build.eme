@@ -10,6 +10,8 @@ version=1.8.10
 release=1
 source="${name}-${version}.rpm::https://download-center.epson.com/f/module/d3003be6-1230-4495-a683-b627604d565c/${name}-${version}-1.src.rpm"
 
+CURL_OPTS="-L -A Firefox"
+
 build() {
     export CFLAGS="${CFLAGS} \
         -Wno-implicit-function-declaration"
