@@ -4,3 +4,6 @@ provider = "github"
 [source]
 owner = "mltframework"
 repo = "%(name)"
+
+[github]
+use_tags = true
