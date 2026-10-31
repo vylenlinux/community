@@ -4,7 +4,3 @@ provider = "github"
 [source]
 owner = "Elinvention"
 repo = "efiboots"
-
-[github]
-use_release = false
-use_tags = true

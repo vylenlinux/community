@@ -5,8 +5,5 @@ provider = "github"
 owner = "%(name)"
 repo = "%(name)"
 
-[github]
-use_tags = true
-
 [version]
 exclude = ["v*-beta*"]

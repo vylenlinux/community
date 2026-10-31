@@ -4,6 +4,3 @@ provider = "github"
 [source]
 owner = "mity"
 repo = "md4c"
-
-[github]
-use_tags = true

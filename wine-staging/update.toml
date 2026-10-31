@@ -4,6 +4,3 @@ provider = "gitlab"
 [source]
 instance = "https://gitlab.winehq.org"
 project = "wine/wine-staging"
-
-[gitlab]
-use_tags = true

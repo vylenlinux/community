@@ -5,6 +5,3 @@ dedup_key = "qemu"
 [source]
 owner = "qemu"
 repo = "qemu"
-
-[github]
-use_tags = true

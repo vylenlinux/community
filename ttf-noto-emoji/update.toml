@@ -5,8 +5,5 @@ provider = "github"
 owner = "googlefonts"
 repo = "noto-emoji"
 
-[github]
-use_tags = true
-
 [version]
 include = ["v2.*"]
