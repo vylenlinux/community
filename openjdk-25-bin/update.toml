@@ -4,3 +4,9 @@ provider = "github"
 [source]
 owner = "adoptium"
 repo = "temurin25-binaries"
+
+[github]
+use_releases = true
+
+[version]
+strip_prefix = "jdk-"
