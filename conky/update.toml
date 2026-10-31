@@ -7,3 +7,6 @@ repo = "conky"
 
 [github]
 use_tags = true
+
+[version]
+exclude = ["1.999"]
