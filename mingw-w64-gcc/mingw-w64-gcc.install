@@ -13,11 +13,6 @@ ranlib_mingw_gcc() {
     done
 }
 
-pre_install() {
-    # The port 'mingw-w64-gcc-base' conflicts with 'mingw-w64-gcc', remove 'mingw-w64-gcc-base' before installing 'mingw-w64-gcc'
-    emerald is-installed mingw-w64-gcc-base && emerald remove -y mingw-w64-gcc-base
-}
-
 post_install() {
     ranlib_mingw_gcc "${1}"
 }
