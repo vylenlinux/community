@@ -1,5 +1,0 @@
-name = "corrosion"
-provider = "repology"
-
-[source]
-package = "corrosion"
