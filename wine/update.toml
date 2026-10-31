@@ -1,5 +1,9 @@
 name = "wine"
-provider = "archlinux"
+provider = "gitlab"
 
 [source]
-package = "wine"
+instance = "https://gitlab.winehq.org/"
+project = "%(name)/%(name)"
+
+[version]
+strip_prefix = "wine-"
