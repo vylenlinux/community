@@ -6,7 +6,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://github.com/labwc/labwc-tweaks"
 
 name=labwc-tweaks
-version=0.1.0
+version=0.2.0
 release=1
 source="https://github.com/labwc/${name}/archive/${version}/${name}-${version}.tar.gz"
 
@@ -16,7 +16,6 @@ build() {
         -DCMAKE_INSTALL_LIBDIR=lib \
         -DCMAKE_BUILD_TYPE=None \
         -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
-        -DCMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
         -Wno-author
 
     cmake --build build

@@ -31,6 +31,7 @@ drwxr-xr-x root/root    usr/share/labwc-tweaks/translations/
 -rw-r--r-- root/root    usr/share/labwc-tweaks/translations/labwc-tweaks_hr.qm
 -rw-r--r-- root/root    usr/share/labwc-tweaks/translations/labwc-tweaks_hu.qm
 -rw-r--r-- root/root    usr/share/labwc-tweaks/translations/labwc-tweaks_it.qm
+-rw-r--r-- root/root    usr/share/labwc-tweaks/translations/labwc-tweaks_ja.qm
 -rw-r--r-- root/root    usr/share/labwc-tweaks/translations/labwc-tweaks_ka.qm
 -rw-r--r-- root/root    usr/share/labwc-tweaks/translations/labwc-tweaks_kab.qm
 -rw-r--r-- root/root    usr/share/labwc-tweaks/translations/labwc-tweaks_kk.qm
@@ -47,6 +48,7 @@ drwxr-xr-x root/root    usr/share/labwc-tweaks/translations/
 -rw-r--r-- root/root    usr/share/labwc-tweaks/translations/labwc-tweaks_sk.qm
 -rw-r--r-- root/root    usr/share/labwc-tweaks/translations/labwc-tweaks_sl.qm
 -rw-r--r-- root/root    usr/share/labwc-tweaks/translations/labwc-tweaks_tr.qm
+-rw-r--r-- root/root    usr/share/labwc-tweaks/translations/labwc-tweaks_uk.qm
 -rw-r--r-- root/root    usr/share/labwc-tweaks/translations/labwc-tweaks_vi.qm
 -rw-r--r-- root/root    usr/share/labwc-tweaks/translations/labwc-tweaks_zh_CN.qm
 -rw-r--r-- root/root    usr/share/labwc-tweaks/translations/labwc-tweaks_zh_TW.qm
