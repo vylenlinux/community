@@ -6,7 +6,7 @@ homepage="https://github.com/jovanlanik/gtklock-powerbar-module"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=gtklock-powerbar-module
-version=5.0.0
+version=5.0.1
 release=1
 source="${name}-${version}.tar.gz::https://github.com/jovanlanik/${name}/archive/refs/tags/v${version}.tar.gz"
 
