@@ -6,7 +6,7 @@ homepage="https://gitlab.winehq.org/wine/wine/-/wikis/home"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=wine-staging
-version=11.20
+version=11.21
 release=1
 
 vgecko=2.47.4

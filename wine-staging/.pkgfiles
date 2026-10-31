@@ -2158,6 +2158,7 @@ drwxr-xr-x root/root    usr/lib/wine/i386-windows/
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/libwininet.a
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/libwinmm.a
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/libwinnls32.a
+-rw-r--r-- root/root    usr/lib/wine/i386-windows/libwinscard.a
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/libwinspool.a
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/libwinsqlite3.a
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/libwintab32.a
@@ -2204,6 +2205,7 @@ drwxr-xr-x root/root    usr/lib/wine/i386-windows/
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/mfplay.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/mfreadwrite.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/mfsrcsnk.dll
+-rw-r--r-- root/root    usr/lib/wine/i386-windows/mfwmaaec.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/mgmtapi.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/midimap.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/mlang.dll
@@ -2624,6 +2626,7 @@ drwxr-xr-x root/root    usr/lib/wine/i386-windows/
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/winnls32.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/winoldap.mod16
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/winprint.dll
+-rw-r--r-- root/root    usr/lib/wine/i386-windows/winscard.dll
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/winsock.dll16
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/winspool.drv
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/winsqlite3.dll
@@ -2956,6 +2959,7 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-unix/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libwininet.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libwinmm.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libwinnls32.a
+-rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libwinscard.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libwinspool.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libwinsqlite3.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-unix/libwintab32.a
@@ -3003,6 +3007,7 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-unix/
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/winevulkan.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/winewayland.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/winex11.so
+-rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/winscard.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/winspool.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/wpcap.so
 -rwxr-xr-x root/root    usr/lib/wine/x86_64-unix/ws2_32.so
@@ -3514,6 +3519,7 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-windows/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/libwininet.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/libwinmm.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/libwinnls32.a
+-rw-r--r-- root/root    usr/lib/wine/x86_64-windows/libwinscard.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/libwinspool.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/libwinsqlite3.a
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/libwintab32.a
@@ -3560,6 +3566,7 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-windows/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/mfplay.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/mfreadwrite.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/mfsrcsnk.dll
+-rw-r--r-- root/root    usr/lib/wine/x86_64-windows/mfwmaaec.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/mgmtapi.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/midimap.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/mlang.dll
@@ -3929,6 +3936,7 @@ drwxr-xr-x root/root    usr/lib/wine/x86_64-windows/
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/winmm.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/winnls32.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/winprint.dll
+-rw-r--r-- root/root    usr/lib/wine/x86_64-windows/winscard.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/winspool.drv
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/winsqlite3.dll
 -rw-r--r-- root/root    usr/lib/wine/x86_64-windows/winsta.dll
