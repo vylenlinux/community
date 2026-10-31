@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="A tool for managing BTRFS and LVM snapshots. It can create, diff and restore snapshots and provides timelined auto-snapping."
-homepage="http://snapper.io"
+homepage="https://github.com/openSUSE/snapper/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=snapper
