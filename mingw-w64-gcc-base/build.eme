@@ -53,5 +53,6 @@ build() {
         cd ..
     done
 
-    rm -r "${PKG}/usr/share/info"
+    # shellcheck disable=SC2115
+    rm -rf "${PKG}/usr/share"
 }
