@@ -4,3 +4,6 @@ provider = "github"
 [source]
 owner = "portaudio"
 repo = "portaudio"
+
+[version]
+exclude = ["v19p-2008-03-20"]
