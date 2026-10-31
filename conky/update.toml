@@ -4,3 +4,6 @@ provider = "github"
 [source]
 owner = "brndnmtthws"
 repo = "conky"
+
+[github]
+use_tags = true
