@@ -54,5 +54,6 @@ build() {
     done
 
     # shellcheck disable=SC2115
+    # fix conflict with gcc
     rm -rf "${PKG}/usr/share"
 }
