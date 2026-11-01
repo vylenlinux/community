@@ -1,5 +1,6 @@
 name = "fluidsynth"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "fluidsynth"
+owner = "%(name)"
+repo = "%(name)"
