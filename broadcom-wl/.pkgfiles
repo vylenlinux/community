@@ -62,4 +62,4 @@ drwxrwxrwx root/root    usr/src/broadcom-wl-6.30.223.271/src/wl/sys/
 drwxr-xr-x root/root    var/
 drwxr-xr-x root/root    var/lib/
 drwxr-xr-x root/root    var/lib/dkms/
--rw-r--r-- root/root    var/lib/dkms/buildmodules-broadcom-wl.sh
+-rwxr-xr-x root/root    var/lib/dkms/buildmodules-broadcom-wl.sh

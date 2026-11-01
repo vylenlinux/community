@@ -12,7 +12,6 @@ release=1
 source="${name}-${version}.tar.gz::https://docs.broadcom.com/docs-and-downloads/docs/linux_sta/hybrid-v35_64-nodebug-pcoem-$(printf '%s' "${version}" | tr '.' '_').tar.gz
     broadcom-wl-kernel.conf
     dkms.conf.in
-    buildmodules-broadcom-wl.sh
     001-null-pointer-fix.patch
     003-linux407.patch
     005-debian-fix-kernel-warnings.patch
@@ -47,22 +46,18 @@ build() {
         esac
     done
 
-    sed -e "s/@PACKAGE_VERSION@/${version}/" dkms.conf.in > dkms.conf
-    sed -i -e '/BRCM_WLAN_IFNAME/s/eth/wlan/' src/wl/sys/wl_linux.c
-    sed -i -e "/ldflags-y/s|\$(src)/lib|/usr/lib/${name}|;/GE_49 :=/s|:= .*|:= 1|" Makefile
+    sed "s/@PACKAGE_VERSION@/${version}/" dkms.conf.in > dkms.conf
+    sed '/BRCM_WLAN_IFNAME/s/eth/wlan/' -i src/wl/sys/wl_linux.c
+    sed "/ldflags-y/s|\$(src)/lib|/usr/lib/${name}|;/GE_49 :=/s|:= .*|:= 1|" -i Makefile
 
-    dest_dir="${PKG}/usr/src/${name}-${version}"
+    install -d "${PKG}/usr/src/${name}-${version}"
+    cp -a src -t "${PKG}/usr/src/${name}-${version}/"
 
-    install -d "${dest_dir}"
-    cp -a src "${dest_dir}"
-
-    install -Dm644 Makefile "${dest_dir}/Makefile"
-    install -Dm644 dkms.conf "${dest_dir}/dkms.conf"
+    install -Dm644 Makefile "${PKG}/usr/src/${name}-${version}/Makefile"
+    install -Dm644 dkms.conf "${PKG}/usr/src/${name}-${version}/dkms.conf"
 
     install -Dm644 lib/wlc_hybrid.o_shipped "${PKG}/usr/lib/${name}/wlc_hybrid.o_shipped"
     install -Dm644 "${SRC}/broadcom-wl-kernel.conf" -t "${PKG}/etc/modprobe.d/"
 
-    # dkms build modules script
-    mkdir -p "${PKG}/var/lib/dkms"
-    sed -e "s/@name@/${name}/g" -e "s/@version@/${version}/g" "${SRC}/buildmodules-${name}.sh" > "${PKG}/var/lib/dkms/buildmodules-${name}.sh"
+    do_dkms
 }
