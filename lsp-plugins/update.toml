@@ -1,5 +1,6 @@
 name = "lsp-plugins"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "lsp-plugins"
+owner = "%(name)"
+repo = "%(name)"
