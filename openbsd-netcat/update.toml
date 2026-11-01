@@ -1,5 +1,10 @@
 name = "openbsd-netcat"
-provider = "repology"
+provider = "gitlab"
 
 [source]
-package = "netcat-openbsd"
+instance = "https://salsa.debian.org/"
+project = "debian/netcat-openbsd"
+
+[version]
+include = ["*-*"]
+strip_prefix = "debian/"
