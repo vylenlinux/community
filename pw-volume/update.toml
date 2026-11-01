@@ -1,5 +1,6 @@
 name = "pw-volume"
-provider = "crates"
+provider = "github"
 
 [source]
-crate = "pw-volume"
+owner = "smasher164"
+repo = "%(name)"
