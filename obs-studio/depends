@@ -1,6 +1,6 @@
 extra-cmake-modules
 jansson
-luajit
+luajit-openresty
 mbedtls3
 nlohmann-json
 nv-codec-headers
