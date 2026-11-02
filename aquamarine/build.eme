@@ -6,14 +6,15 @@ homepage="https://github.com/hyprwm/aquamarine"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=aquamarine
-version=0.15.1
+version=0.16.0
 release=1
 source="https://github.com/hyprwm/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
     cmake -S "${name}-${version}" -B build \
         -DCMAKE_INSTALL_PREFIX=/usr \
-        -DCMAKE_BUILD_TYPE=Release
+        -DCMAKE_BUILD_TYPE=Release \
+        -Wno-author
 
     cmake --build build
     DESTDIR="${PKG}" cmake --install build

@@ -1,5 +1,6 @@
 name = "aquamarine"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "aquamarine-rendering-backend"
+owner = "hyprwm"
+repo = "%(name)"
