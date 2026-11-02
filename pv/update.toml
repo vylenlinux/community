@@ -1,5 +1,6 @@
 name = "pv"
-provider = "repology"
+provider = "codeberg"
 
 [source]
-package = "pv"
+owner = "ivarch"
+repo = "%(name)"
