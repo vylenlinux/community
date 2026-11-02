@@ -1,5 +1,6 @@
 name = "docker-compose"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "docker-compose"
+owner = "docker"
+repo = "compose"
