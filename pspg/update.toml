@@ -1,5 +1,6 @@
 name = "pspg"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "pspg"
+owner = "okbob"
+repo = "%(name)"
