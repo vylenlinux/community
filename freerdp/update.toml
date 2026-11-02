@@ -1,5 +1,6 @@
 name = "freerdp"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "freerdp"
+owner = "%(name)"
+repo = "%(name)"
