@@ -6,7 +6,7 @@ homepage="https://github.com/hyprwm/hyprpaper"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=hyprpaper
-version=0.8.4
+version=0.8.5
 release=1
 source="${name}-${version}.tar.gz::https://github.com/hyprwm/${name}/archive/v${version}.tar.gz"
 

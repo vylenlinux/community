@@ -1,5 +1,6 @@
 name = "hyprpaper"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "hyprpaper"
+owner = "hyprwm"
+repo = "%(name)"
