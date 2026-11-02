@@ -20,6 +20,9 @@ drwxr-xr-x root/root    etc/firejail/
 -rw-r--r-- root/root    etc/firejail/Books.profile
 -rw-r--r-- root/root    etc/firejail/Builder.profile
 -rw-r--r-- root/root    etc/firejail/Cheese.profile
+-rw-r--r-- root/root    etc/firejail/ChiPass-cli.profile
+-rw-r--r-- root/root    etc/firejail/ChiPass-proxy.profile
+-rw-r--r-- root/root    etc/firejail/ChiPass.profile
 -rw-r--r-- root/root    etc/firejail/Cryptocat.profile
 -rw-r--r-- root/root    etc/firejail/Cyberfox.profile
 -rw-r--r-- root/root    etc/firejail/Discord.profile
@@ -223,6 +226,7 @@ drwxr-xr-x root/root    etc/firejail/
 -rw-r--r-- root/root    etc/firejail/clamdtop.profile
 -rw-r--r-- root/root    etc/firejail/clamscan.profile
 -rw-r--r-- root/root    etc/firejail/clamtk.profile
+-rw-r--r-- root/root    etc/firejail/claude.profile
 -rw-r--r-- root/root    etc/firejail/claws-mail.profile
 -rw-r--r-- root/root    etc/firejail/clawsker.profile
 -rw-r--r-- root/root    etc/firejail/clementine.profile
@@ -347,6 +351,7 @@ drwxr-xr-x root/root    etc/firejail/
 -rw-r--r-- root/root    etc/firejail/eog.profile
 -rw-r--r-- root/root    etc/firejail/eom.profile
 -rw-r--r-- root/root    etc/firejail/ephemeral.profile
+-rw-r--r-- root/root    etc/firejail/ephoto.profile
 -rw-r--r-- root/root    etc/firejail/epiphany.profile
 -rw-r--r-- root/root    etc/firejail/equalx.profile
 -rw-r--r-- root/root    etc/firejail/erd.profile
@@ -442,6 +447,7 @@ drwxr-xr-x root/root    etc/firejail/firecfg.d/
 -rw-r--r-- root/root    etc/firejail/geeqie.profile
 -rw-r--r-- root/root    etc/firejail/geki2.profile
 -rw-r--r-- root/root    etc/firejail/geki3.profile
+-rw-r--r-- root/root    etc/firejail/gemini.profile
 -rw-r--r-- root/root    etc/firejail/gfeeds.profile
 -rw-r--r-- root/root    etc/firejail/gget.profile
 -rw-r--r-- root/root    etc/firejail/gh.profile
@@ -450,6 +456,7 @@ drwxr-xr-x root/root    etc/firejail/firecfg.d/
 -rw-r--r-- root/root    etc/firejail/gimp-2.10.profile
 -rw-r--r-- root/root    etc/firejail/gimp-2.8.profile
 -rw-r--r-- root/root    etc/firejail/gimp-3.0.profile
+-rw-r--r-- root/root    etc/firejail/gimp-3.2.profile
 -rw-r--r-- root/root    etc/firejail/gimp.profile
 -rw-r--r-- root/root    etc/firejail/gist-paste.profile
 -rw-r--r-- root/root    etc/firejail/gist.profile
@@ -677,6 +684,7 @@ drwxr-xr-x root/root    etc/firejail/firecfg.d/
 -rw-r--r-- root/root    etc/firejail/links2.profile
 -rw-r--r-- root/root    etc/firejail/linphone.profile
 -rw-r--r-- root/root    etc/firejail/linuxqq.profile
+-rw-r--r-- root/root    etc/firejail/llm-agent-common.profile
 -rw-r--r-- root/root    etc/firejail/lmms.profile
 -rw-r--r-- root/root    etc/firejail/lobase.profile
 -rw-r--r-- root/root    etc/firejail/lobster.profile
@@ -729,6 +737,7 @@ drwxr-xr-x root/root    etc/firejail/firecfg.d/
 -rw-r--r-- root/root    etc/firejail/make.profile
 -rw-r--r-- root/root    etc/firejail/makedeb.profile
 -rw-r--r-- root/root    etc/firejail/makepkg.profile
+-rw-r--r-- root/root    etc/firejail/maki.profile
 -rw-r--r-- root/root    etc/firejail/man.profile
 -rw-r--r-- root/root    etc/firejail/manaplus.profile
 -rw-r--r-- root/root    etc/firejail/marker.profile
@@ -885,6 +894,7 @@ drwxr-xr-x root/root    etc/firejail/firecfg.d/
 -rw-r--r-- root/root    etc/firejail/openbox.profile
 -rw-r--r-- root/root    etc/firejail/opencity.profile
 -rw-r--r-- root/root    etc/firejail/openclonk.profile
+-rw-r--r-- root/root    etc/firejail/opencode.profile
 -rw-r--r-- root/root    etc/firejail/openmw-launcher.profile
 -rw-r--r-- root/root    etc/firejail/openmw.profile
 -rw-r--r-- root/root    etc/firejail/openoffice.org.profile
@@ -921,6 +931,7 @@ drwxr-xr-x root/root    etc/firejail/firecfg.d/
 -rw-r--r-- root/root    etc/firejail/peek.profile
 -rw-r--r-- root/root    etc/firejail/penguin-command.profile
 -rw-r--r-- root/root    etc/firejail/photoflare.profile
+-rw-r--r-- root/root    etc/firejail/pi.profile
 -rw-r--r-- root/root    etc/firejail/picard.profile
 -rw-r--r-- root/root    etc/firejail/pidgin.profile
 -rw-r--r-- root/root    etc/firejail/pinball-wrapper.profile
@@ -1109,6 +1120,7 @@ drwxr-xr-x root/root    etc/firejail/firecfg.d/
 -rw-r--r-- root/root    etc/firejail/sysprof.profile
 -rw-r--r-- root/root    etc/firejail/system-log-common.profile
 -rw-r--r-- root/root    etc/firejail/tar.profile
+-rw-r--r-- root/root    etc/firejail/tasks-org.profile
 -rw-r--r-- root/root    etc/firejail/tb-starter-wrapper.profile
 -rw-r--r-- root/root    etc/firejail/tcpdump.profile
 -rw-r--r-- root/root    etc/firejail/tcpserver.net
@@ -1134,6 +1146,7 @@ drwxr-xr-x root/root    etc/firejail/firecfg.d/
 -rw-r--r-- root/root    etc/firejail/tilp.profile
 -rw-r--r-- root/root    etc/firejail/tin.profile
 -rw-r--r-- root/root    etc/firejail/tiny-rdm.profile
+-rw-r--r-- root/root    etc/firejail/tldr.profile
 -rw-r--r-- root/root    etc/firejail/tmux.profile
 -rw-r--r-- root/root    etc/firejail/tor-browser-ar.profile
 -rw-r--r-- root/root    etc/firejail/tor-browser-ca.profile
@@ -1405,13 +1418,11 @@ drwxr-xr-x root/root    usr/lib/firejail/
 -rwxr-xr-x root/root    usr/lib/firejail/fbuilder
 -rwxr-xr-x root/root    usr/lib/firejail/fbwrap
 -rwx--x--x root/root    usr/lib/firejail/fcopy
--rwxr-xr-x root/root    usr/lib/firejail/firejail-welcome.sh
 -rwxr-xr-x root/root    usr/lib/firejail/fix_private-bin.py
 -rwxr-xr-x root/root    usr/lib/firejail/fj-mkdeb.py
 -rwxr-xr-x root/root    usr/lib/firejail/fjclip.py
 -rwxr-xr-x root/root    usr/lib/firejail/fjdisplay.py
 -rwxr-xr-x root/root    usr/lib/firejail/fjresize.py
--rwx--x--x root/root    usr/lib/firejail/fldd
 -rwx--x--x root/root    usr/lib/firejail/fnet
 -rwx--x--x root/root    usr/lib/firejail/fnetfilter
 -rwx--x--x root/root    usr/lib/firejail/fnetlock
@@ -1422,14 +1433,11 @@ drwxr-xr-x root/root    usr/lib/firejail/
 -rwx--x--x root/root    usr/lib/firejail/fsec-optimize
 -rwx--x--x root/root    usr/lib/firejail/fsec-print
 -rwx--x--x root/root    usr/lib/firejail/fseccomp
--rwx--x--x root/root    usr/lib/firejail/fshaper.sh
 -rwxr-xr-x root/root    usr/lib/firejail/ftee
--rwx--x--x root/root    usr/lib/firejail/fzenity
 -rwxr-xr-x root/root    usr/lib/firejail/gdb-firejail.sh
 -rwxr-xr-x root/root    usr/lib/firejail/jail_prober.py
 -rw-r--r-- root/root    usr/lib/firejail/libpostexecseccomp.so
 -rw-r--r-- root/root    usr/lib/firejail/libtrace.so
--rw-r--r-- root/root    usr/lib/firejail/libtracelog.so
 -rwxr-xr-x root/root    usr/lib/firejail/profstats
 -rw-r--r-- root/root    usr/lib/firejail/seccomp
 -rw-r--r-- root/root    usr/lib/firejail/seccomp.32
@@ -1459,7 +1467,6 @@ drwxr-xr-x root/root    usr/share/man/man1/
 -rw-r--r-- root/root    usr/share/man/man1/firemon.1.gz
 -rw-r--r-- root/root    usr/share/man/man1/jailcheck.1.gz
 drwxr-xr-x root/root    usr/share/man/man5/
--rw-r--r-- root/root    usr/share/man/man5/firejail-login.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/firejail-profile.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/firejail-users.5.gz
 drwxr-xr-x root/root    usr/share/vim/
@@ -1470,3 +1477,6 @@ drwxr-xr-x root/root    usr/share/vim/vimfiles/ftplugin/
 -rw-r--r-- root/root    usr/share/vim/vimfiles/ftplugin/firejail.vim
 drwxr-xr-x root/root    usr/share/vim/vimfiles/syntax/
 -rw-r--r-- root/root    usr/share/vim/vimfiles/syntax/firejail.vim
+drwxr-xr-x root/root    usr/share/zsh/
+drwxr-xr-x root/root    usr/share/zsh/site-functions/
+-rw-r--r-- root/root    usr/share/zsh/site-functions/_firejail

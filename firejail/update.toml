@@ -1,5 +1,6 @@
 name = "firejail"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "firejail"
+owner = "netblue30"
+repo = "%(name)"
