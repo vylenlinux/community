@@ -6,7 +6,7 @@ homepage="https://github.com/hyprwm/hyprgraphics"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=hyprgraphics
-version=0.5.1
+version=0.6.0
 release=1
 source="${name}-${version}.tar.gz::https://github.com/hyprwm/${name}/archive/v${version}.tar.gz"
 
