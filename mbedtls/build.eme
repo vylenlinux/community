@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Cryptographic library for embedded systems"
-homepage="https://github.com/ArmMbed"
+homepage="https://tls.mbed.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=mbedtls
