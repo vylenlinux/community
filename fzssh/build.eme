@@ -3,10 +3,10 @@
 # shellcheck disable=SC2034
 description="SSH/SFTP library based on libfilezilla"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
-homepage="https://filezilla-project.org"
+homepage="https://fzssh.filezilla-project.org"
 
 name=fzssh
-version=1.5.0
+version=1.5.1
 release=1
 source="https://downloads.sourceforge.net/project/vylen/sources/${name}/${name}-${version}.tar.xz"
 
