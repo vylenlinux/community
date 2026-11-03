@@ -6,12 +6,10 @@ homepage="https://fonts.google.com/noto"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ttf-noto-emoji
-version=3.006
+version=2.051
 release=1
-
-_version=2.051
-source="${name}-${version}.tar.gz::https://github.com/googlefonts/noto-emoji/archive/refs/tags/v${_version}.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/googlefonts/noto-emoji/archive/refs/tags/v${version}.tar.gz"
 
 build() {
-    install -Dm644 "noto-emoji-${_version}/fonts/NotoColorEmoji.ttf" -t "${PKG}/usr/share/fonts/noto/"
+    install -Dm644 "noto-emoji-${version}/fonts/NotoColorEmoji.ttf" -t "${PKG}/usr/share/fonts/noto/"
 }
