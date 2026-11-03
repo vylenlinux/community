@@ -665,8 +665,6 @@ drwxr-xr-x root/root    usr/lib/gimp/3.0/plug-ins/file-xbm/
 -rwxr-xr-x root/root    usr/lib/gimp/3.0/plug-ins/file-xbm/file-xbm
 drwxr-xr-x root/root    usr/lib/gimp/3.0/plug-ins/file-xmc/
 -rwxr-xr-x root/root    usr/lib/gimp/3.0/plug-ins/file-xmc/file-xmc
-drwxr-xr-x root/root    usr/lib/gimp/3.0/plug-ins/file-xpm/
--rwxr-xr-x root/root    usr/lib/gimp/3.0/plug-ins/file-xpm/file-xpm
 drwxr-xr-x root/root    usr/lib/gimp/3.0/plug-ins/file-xwd/
 -rwxr-xr-x root/root    usr/lib/gimp/3.0/plug-ins/file-xwd/file-xwd
 drwxr-xr-x root/root    usr/lib/gimp/3.0/plug-ins/film/
@@ -778,35 +776,35 @@ drwxr-xr-x root/root    usr/lib/girepository-1.0/
 -rw-r--r-- root/root    usr/lib/girepository-1.0/Gimp-3.0.typelib
 -rw-r--r-- root/root    usr/lib/girepository-1.0/GimpUi-3.0.typelib
 lrwxrwxrwx root/root    usr/lib/libgimp-3.0.so -> libgimp-3.0.so.0
-lrwxrwxrwx root/root    usr/lib/libgimp-3.0.so.0 -> libgimp-3.0.so.0.206.0
--rwxr-xr-x root/root    usr/lib/libgimp-3.0.so.0.206.0
+lrwxrwxrwx root/root    usr/lib/libgimp-3.0.so.0 -> libgimp-3.0.so.0.206.2
+-rwxr-xr-x root/root    usr/lib/libgimp-3.0.so.0.206.2
 lrwxrwxrwx root/root    usr/lib/libgimp-scriptfu-3.0.so -> libgimp-scriptfu-3.0.so.0
-lrwxrwxrwx root/root    usr/lib/libgimp-scriptfu-3.0.so.0 -> libgimp-scriptfu-3.0.so.0.206.0
--rwxr-xr-x root/root    usr/lib/libgimp-scriptfu-3.0.so.0.206.0
+lrwxrwxrwx root/root    usr/lib/libgimp-scriptfu-3.0.so.0 -> libgimp-scriptfu-3.0.so.0.206.2
+-rwxr-xr-x root/root    usr/lib/libgimp-scriptfu-3.0.so.0.206.2
 lrwxrwxrwx root/root    usr/lib/libgimpbase-3.0.so -> libgimpbase-3.0.so.0
-lrwxrwxrwx root/root    usr/lib/libgimpbase-3.0.so.0 -> libgimpbase-3.0.so.0.206.0
--rwxr-xr-x root/root    usr/lib/libgimpbase-3.0.so.0.206.0
+lrwxrwxrwx root/root    usr/lib/libgimpbase-3.0.so.0 -> libgimpbase-3.0.so.0.206.2
+-rwxr-xr-x root/root    usr/lib/libgimpbase-3.0.so.0.206.2
 lrwxrwxrwx root/root    usr/lib/libgimpcolor-3.0.so -> libgimpcolor-3.0.so.0
-lrwxrwxrwx root/root    usr/lib/libgimpcolor-3.0.so.0 -> libgimpcolor-3.0.so.0.206.0
--rwxr-xr-x root/root    usr/lib/libgimpcolor-3.0.so.0.206.0
+lrwxrwxrwx root/root    usr/lib/libgimpcolor-3.0.so.0 -> libgimpcolor-3.0.so.0.206.2
+-rwxr-xr-x root/root    usr/lib/libgimpcolor-3.0.so.0.206.2
 lrwxrwxrwx root/root    usr/lib/libgimpconfig-3.0.so -> libgimpconfig-3.0.so.0
-lrwxrwxrwx root/root    usr/lib/libgimpconfig-3.0.so.0 -> libgimpconfig-3.0.so.0.206.0
--rwxr-xr-x root/root    usr/lib/libgimpconfig-3.0.so.0.206.0
+lrwxrwxrwx root/root    usr/lib/libgimpconfig-3.0.so.0 -> libgimpconfig-3.0.so.0.206.2
+-rwxr-xr-x root/root    usr/lib/libgimpconfig-3.0.so.0.206.2
 lrwxrwxrwx root/root    usr/lib/libgimpmath-3.0.so -> libgimpmath-3.0.so.0
-lrwxrwxrwx root/root    usr/lib/libgimpmath-3.0.so.0 -> libgimpmath-3.0.so.0.206.0
--rwxr-xr-x root/root    usr/lib/libgimpmath-3.0.so.0.206.0
+lrwxrwxrwx root/root    usr/lib/libgimpmath-3.0.so.0 -> libgimpmath-3.0.so.0.206.2
+-rwxr-xr-x root/root    usr/lib/libgimpmath-3.0.so.0.206.2
 lrwxrwxrwx root/root    usr/lib/libgimpmodule-3.0.so -> libgimpmodule-3.0.so.0
-lrwxrwxrwx root/root    usr/lib/libgimpmodule-3.0.so.0 -> libgimpmodule-3.0.so.0.206.0
--rwxr-xr-x root/root    usr/lib/libgimpmodule-3.0.so.0.206.0
+lrwxrwxrwx root/root    usr/lib/libgimpmodule-3.0.so.0 -> libgimpmodule-3.0.so.0.206.2
+-rwxr-xr-x root/root    usr/lib/libgimpmodule-3.0.so.0.206.2
 lrwxrwxrwx root/root    usr/lib/libgimpthumb-3.0.so -> libgimpthumb-3.0.so.0
-lrwxrwxrwx root/root    usr/lib/libgimpthumb-3.0.so.0 -> libgimpthumb-3.0.so.0.206.0
--rwxr-xr-x root/root    usr/lib/libgimpthumb-3.0.so.0.206.0
+lrwxrwxrwx root/root    usr/lib/libgimpthumb-3.0.so.0 -> libgimpthumb-3.0.so.0.206.2
+-rwxr-xr-x root/root    usr/lib/libgimpthumb-3.0.so.0.206.2
 lrwxrwxrwx root/root    usr/lib/libgimpui-3.0.so -> libgimpui-3.0.so.0
-lrwxrwxrwx root/root    usr/lib/libgimpui-3.0.so.0 -> libgimpui-3.0.so.0.206.0
--rwxr-xr-x root/root    usr/lib/libgimpui-3.0.so.0.206.0
+lrwxrwxrwx root/root    usr/lib/libgimpui-3.0.so.0 -> libgimpui-3.0.so.0.206.2
+-rwxr-xr-x root/root    usr/lib/libgimpui-3.0.so.0.206.2
 lrwxrwxrwx root/root    usr/lib/libgimpwidgets-3.0.so -> libgimpwidgets-3.0.so.0
-lrwxrwxrwx root/root    usr/lib/libgimpwidgets-3.0.so.0 -> libgimpwidgets-3.0.so.0.206.0
--rwxr-xr-x root/root    usr/lib/libgimpwidgets-3.0.so.0.206.0
+lrwxrwxrwx root/root    usr/lib/libgimpwidgets-3.0.so.0 -> libgimpwidgets-3.0.so.0.206.2
+-rwxr-xr-x root/root    usr/lib/libgimpwidgets-3.0.so.0.206.2
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/gimp-3.0.pc
 -rw-r--r-- root/root    usr/lib/pkgconfig/gimpthumb-3.0.pc

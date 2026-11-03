@@ -6,7 +6,7 @@ homepage="https://www.gimp.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=gimp
-version=3.2.6
+version=3.2.8
 release=1
 
 source="https://download.gimp.org/pub/${name}/v${version%.*}/${name}-${version}.tar.xz
