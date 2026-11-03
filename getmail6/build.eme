@@ -6,7 +6,7 @@ homepage="http://pyropus.ca/software/getmail"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=getmail6
-version=6.21.00
+version=6.21.01
 release=1
 source="${name}-${version}.tar.gz::https://github.com/${name}/${name}/archive/refs/tags/v${version}.tar.gz"
 
