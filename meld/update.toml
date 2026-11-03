@@ -1,6 +1,5 @@
 name = "meld"
-provider = "gitlab"
+provider = "gnome"
 
 [source]
-instance = "https://gitlab.gnome.org/"
-project = "gnome/meld"
+package = "%(name)"
