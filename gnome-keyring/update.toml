@@ -1,6 +1,5 @@
 name = "gnome-keyring"
-provider = "gitlab"
+provider = "gnome"
 
 [source]
-instance = "https://gitlab.gnome.org/"
-project = "gnome/gnome-keyring"
+package = "%(name)"
