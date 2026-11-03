@@ -1,5 +1,6 @@
 name = "kitty"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "kitty-terminal"
+owner = "kovidgoyal"
+repo = "kitty"
