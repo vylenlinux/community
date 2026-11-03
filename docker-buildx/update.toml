@@ -1,5 +1,6 @@
 name = "docker-buildx"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "docker-buildx"
+owner = "docker"
+repo = "buildx"
