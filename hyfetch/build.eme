@@ -6,7 +6,7 @@ homepage="https://github.com/hykilpikonna/hyfetch"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=hyfetch
-version=2.1.0
+version=2.1.1
 release=1
 source="https://github.com/hykilpikonna/${name}/releases/download/${version}/${name}-${version}.tar.gz"
 
