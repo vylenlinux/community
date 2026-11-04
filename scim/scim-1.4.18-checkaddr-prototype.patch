@@ -1,0 +1,43 @@
+From: Vylen Linux Team <wonkru-dev@proton.me>
+Date: Wed, 04 Nov 2026 22:14:42 +0100
+Subject: [PATCH] scim: fix IMdkit checkAddr callback types
+
+--- a/modules/FrontEnd/IMdkit/Xi18n.h
++++ b/modules/FrontEnd/IMdkit/Xi18n.h
+@@ -69,12 +69,14 @@
+ #define I18N_SET	1
+ #define I18N_GET	2
+
+-typedef struct
++typedef struct _Xi18nCore *Xi18n;
++typedef struct _TransportSW TransportSW;
++struct _TransportSW
+ {
+     char        *transportname;
+     int         namelen;
+-    Bool        (*checkAddr) ();
+-} TransportSW;
++    Bool        (*checkAddr) (Xi18n, TransportSW *, char *);
++};
+
+ typedef struct _XIMPending
+ {
+@@ -168,7 +170,6 @@
+     struct _Xi18nClient *next;
+ } Xi18nClient;
+
+-typedef struct _Xi18nCore *Xi18n;
+
+ /*
+  * Callback Struct for XIM Protocol
+--- a/modules/FrontEnd/IMdkit/i18nMethod.c
++++ b/modules/FrontEnd/IMdkit/i18nMethod.c
+@@ -89,7 +89,7 @@
+ #ifdef DNETCONN
+     {"decnet",          6, _Xi18nCheckTransAddress},
+ #endif
+-    {(char *) NULL,     0, (Bool (*) ()) NULL}
++    {(char *) NULL,     0, (Bool (*)(Xi18n, TransportSW *, char *)) NULL}
+ };
+
+ static Bool GetInputStyles (Xi18n i18n_core, XIMStyles **p_style)

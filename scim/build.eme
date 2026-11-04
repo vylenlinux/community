@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Input method user interface and development platform"
 homepage="https://github.com/scim-im/scim"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,12 +8,21 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=scim
 version=1.4.18
 release=1
-source="$name-$version.tar.gz::https://github.com/scim-im/scim/archive/$version.tar.gz"
+
+source="${name}-${version}.tar.gz::https://github.com/${name}-im/${name}/archive/${version}.tar.gz
+    ${name}-${version}-checkaddr-prototype.patch"
 
 build() {
-	cd $name-$version
-        ./bootstrap
-	./configure --prefix=/usr
-	make
-	make DESTDIR=$PKG install
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    patch -Np1 -i "${SRC}/${name}-${version}-checkaddr-prototype.patch"
+    ./bootstrap
+
+    ./configure \
+        --prefix=/usr \
+        --sysconfdir=/etc
+
+    make
+    make DESTDIR="${PKG}" install
 }
