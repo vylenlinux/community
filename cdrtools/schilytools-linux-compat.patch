@@ -1,0 +1,63 @@
+From: Vylen Linux Team <wonkru-dev@proton.me>
+Subject: [PATCH] schilytools: fix Linux and C23 build compatibility
+Date: Wed, 04 Nov 2026 18:42:46 +0100
+
+Fix the Linux signal-handler return type, remove the obsolete ctags ftell
+prototype, avoid the C23 bool typedef conflict, and install rscsi under bin
+for compatibility with the cdrtools package layout.
+
+---
+diff --git a/ctags/ctags.c b/ctags/ctags.c
+--- a/ctags/ctags.c	2024-03-21 14:19:57.000000000 +0100
++++ b/ctags/ctags.c	2026-11-04 18:41:08.158000000 +0100
+@@ -50,7 +50,6 @@
+ 	struct	nd_st	*left, *right;	/* left and right sons		*/
+ };
+
+-long	ftell();
+ typedef	struct	nd_st	NODE;
+
+ static bool	number,			/* T if on line starting with #	*/
+diff --git a/include/schily/mconfig.h b/include/schily/mconfig.h
+--- a/include/schily/mconfig.h	2024-03-21 14:19:57.000000000 +0100
++++ b/include/schily/mconfig.h	2026-11-04 18:41:08.168000000 +0100
+@@ -56,6 +56,12 @@
+  */
+ #include <schily/xconfig.h>
+
++/* POSIX signal handlers return void on Linux. */
++#ifdef __linux__
++    #undef RETSIGTYPE
++    #define RETSIGTYPE void
++#endif
++
+ /*
+  * Make sure that neither HAVE_LARGEFILES nor USE_LARGEFILES is defined
+  * if the platform does not support large files.
+diff --git a/patch/common.h b/patch/common.h
+--- a/patch/common.h	2024-03-21 14:19:57.000000000 +0100
++++ b/patch/common.h	2026-11-04 18:41:08.165000000 +0100
+@@ -109,7 +109,10 @@
+
+ /* typedefs */
+
+-typedef int	bool;
++#if !defined(__cplusplus) && (!defined(__STDC_VERSION__) || (__STDC_VERSION__ < 202000L))
++    typedef int bool;
++#endif
++
+ typedef off_t	LINENUM;		/* must be signed */
+ typedef unsigned MEM;			/* what to feed malloc */
+
+diff --git a/rscsi/Makefile b/rscsi/Makefile
+--- a/rscsi/Makefile	2024-03-21 14:19:57.000000000 +0100
++++ b/rscsi/Makefile	2026-11-04 18:41:08.162000000 +0100
+@@ -6,7 +6,7 @@
+ include		$(SRCROOT)/$(RULESDIR)/rules.top
+ ###########################################################################
+ 
+-INSDIR=		sbin
++INSDIR=		bin
+ TARGET=		rscsi
+ INSMODE=	4711
+ INSUSR=		root

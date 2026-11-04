@@ -1,0 +1,471 @@
+From: Vylen Linux Team <wonkru-dev@proton.me>
+Subject: [PATCH] install siconv tables under /usr/lib/siconv
+
+Keep the historical cdrtools package path under /usr/lib/siconv and make
+Schilytools search the same directory at runtime. Update each per-table
+makefile, which has its own INSDIR setting.
+
+--- a/libsiconv/tables/Makefile
++++ b/libsiconv/tables/Makefile
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		iso8859-1
+ XMK_FILE=	\
+--- a/libsiconv/tables/cp10000.mk
++++ b/libsiconv/tables/cp10000.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp10000
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp10006.mk
++++ b/libsiconv/tables/cp10006.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp10006
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp10007.mk
++++ b/libsiconv/tables/cp10007.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp10007
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp10029.mk
++++ b/libsiconv/tables/cp10029.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp10029
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp10079.mk
++++ b/libsiconv/tables/cp10079.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp10079
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp10081.mk
++++ b/libsiconv/tables/cp10081.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp10081
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp1250.mk
++++ b/libsiconv/tables/cp1250.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp1250
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp1251.mk
++++ b/libsiconv/tables/cp1251.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp1251
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp1252.mk
++++ b/libsiconv/tables/cp1252.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp1252
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp1253.mk
++++ b/libsiconv/tables/cp1253.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp1253
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp1254.mk
++++ b/libsiconv/tables/cp1254.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp1254
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp1255.mk
++++ b/libsiconv/tables/cp1255.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp1255
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp1256.mk
++++ b/libsiconv/tables/cp1256.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp1256
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp1257.mk
++++ b/libsiconv/tables/cp1257.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp1257
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp1258.mk
++++ b/libsiconv/tables/cp1258.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp1258
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp437.mk
++++ b/libsiconv/tables/cp437.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp437
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp737.mk
++++ b/libsiconv/tables/cp737.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp737
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp775.mk
++++ b/libsiconv/tables/cp775.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp775
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp850.mk
++++ b/libsiconv/tables/cp850.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp850
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp852.mk
++++ b/libsiconv/tables/cp852.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp852
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp855.mk
++++ b/libsiconv/tables/cp855.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp855
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp857.mk
++++ b/libsiconv/tables/cp857.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp857
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp860.mk
++++ b/libsiconv/tables/cp860.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp860
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp861.mk
++++ b/libsiconv/tables/cp861.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp861
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp862.mk
++++ b/libsiconv/tables/cp862.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp862
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp863.mk
++++ b/libsiconv/tables/cp863.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp863
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp864.mk
++++ b/libsiconv/tables/cp864.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp864
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp865.mk
++++ b/libsiconv/tables/cp865.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp865
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp866.mk
++++ b/libsiconv/tables/cp866.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp866
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp869.mk
++++ b/libsiconv/tables/cp869.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp869
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/cp874.mk
++++ b/libsiconv/tables/cp874.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		cp874
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/iso8859-1.mk
++++ b/libsiconv/tables/iso8859-1.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		iso8859-1
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/iso8859-10.mk
++++ b/libsiconv/tables/iso8859-10.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		iso8859-10
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/iso8859-11.mk
++++ b/libsiconv/tables/iso8859-11.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		iso8859-11
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/iso8859-13.mk
++++ b/libsiconv/tables/iso8859-13.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		iso8859-13
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/iso8859-14.mk
++++ b/libsiconv/tables/iso8859-14.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		iso8859-14
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/iso8859-15.mk
++++ b/libsiconv/tables/iso8859-15.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		iso8859-15
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/iso8859-16.mk
++++ b/libsiconv/tables/iso8859-16.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		iso8859-16
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/iso8859-2.mk
++++ b/libsiconv/tables/iso8859-2.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		iso8859-2
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/iso8859-3.mk
++++ b/libsiconv/tables/iso8859-3.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		iso8859-3
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/iso8859-4.mk
++++ b/libsiconv/tables/iso8859-4.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		iso8859-4
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/iso8859-5.mk
++++ b/libsiconv/tables/iso8859-5.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		iso8859-5
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/iso8859-6.mk
++++ b/libsiconv/tables/iso8859-6.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		iso8859-6
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/iso8859-7.mk
++++ b/libsiconv/tables/iso8859-7.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		iso8859-7
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/iso8859-8.mk
++++ b/libsiconv/tables/iso8859-8.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		iso8859-8
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/iso8859-9.mk
++++ b/libsiconv/tables/iso8859-9.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		iso8859-9
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/koi8-r.mk
++++ b/libsiconv/tables/koi8-r.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		koi8-r
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/tables/koi8-u.mk
++++ b/libsiconv/tables/koi8-u.mk
+@@ -8,5 +8,5 @@
+ ###########################################################################
+
+-INSDIR=		share/lib/siconv
++INSDIR=		lib/siconv
+ TARGET=		koi8-u
+ #XMK_FILE=	Makefile.man
+--- a/libsiconv/sic_nls.c
++++ b/libsiconv/sic_nls.c
+@@ -187,5 +187,5 @@
+ {
+ 	if (ins_base == NULL) {
+-		ins_base = searchfileinpath("share/lib/siconv/iso8859-1", R_OK,
++		ins_base = searchfileinpath("lib/siconv/iso8859-1", R_OK,
+ 					SIP_PLAIN_FILE, NULL);
+ 		if (ins_base != NULL) {
+@@ -245,5 +245,5 @@
+ 		snprintf(path, sizeof (path), "%s", ins_base);
+ 	else
+-		snprintf(path, sizeof (path), "%s/share/lib/siconv/", INS_BASE);
++		snprintf(path, sizeof (path), "%s/lib/siconv/", INS_BASE);
+ 	if ((d = opendir(path)) == NULL)
+ 		return (-1);
+@@ -301,5 +301,5 @@
+ 		return (fopen(path, "r"));
+ 	}
+-	snprintf(path, sizeof (path), "%s/share/lib/siconv/%s", INS_BASE, name);
++	snprintf(path, sizeof (path), "%s/lib/siconv/%s", INS_BASE, name);
+ 	return (fopen(path, "r"));
+ }

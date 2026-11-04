@@ -1,42 +1,64 @@
 #!/bin/sh
 
 # shellcheck disable=SC2034
-description="Original cdrtools supporting CD, DVD and BluRay burning"
-homepage="https://sourceforge.net/projects/cdrtools/"
+description="CD/DVD/Blu-ray burning tools from the Schilytools project"
+homepage="https://codeberg.org/schilytools/schilytools"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=cdrtools
-version=3.02a09
+version=2024.03.21
 release=1
-source="https://downloads.sourceforge.net/${name}/alpha/${name}-${version}.tar.bz2"
+
+_version="$(printf '%s' "${version}" | tr '.' '-')"
+
+source="${name}-${version}.tar.gz::https://codeberg.org/schilytools/schilytools/archive/${_version}.tar.gz
+    schilytools-linux-compat.patch
+    siconv-libdir.patch"
 
 build() {
     # shellcheck disable=SC2164
-    cd "${name}-${version%%a*}"
-
-    sed -i 's|INSDIR=\s*sbin|INSDIR=bin|' rscsi/Makefile
+    cd schilytools
     export GMAKE_NOWARN=true
 
-    export CFLAGS="${CFLAGS} \
-        -std=gnu89 \
-        -fno-strict-aliasing"
+    patch -Np1 -i "${SRC}/schilytools-linux-compat.patch"
+    patch -Np1 -i "${SRC}/siconv-libdir.patch"
 
-    make -j1 INS_BASE=/usr DEFINSUSR=root DEFINSGRP=root
-    make -j1 INS_BASE=/usr DEFINSUSR=root DEFINSGRP=root DESTDIR="${PKG}" install
+    ./Gmake.linux INS_BASE=/usr DEFINSUSR=root DEFINSGRP=root
+    ./Gmake.linux INS_BASE=/usr DEFINSUSR=root DEFINSGRP=root DESTDIR="${PWD}/DESTDIR" install
+    ./Gmake.linux INS_BASE=/usr DEFINSUSR=root DEFINSGRP=root DESTDIR="${PWD}/DESTDIR" -C scgcheck install
+    ./Gmake.linux INS_BASE=/usr DEFINSUSR=root DEFINSGRP=root DESTDIR="${PWD}/DESTDIR" -C scgskeleton install
+    ./Gmake.linux INS_BASE=/usr DEFINSUSR=root DEFINSGRP=root DESTDIR="${PWD}/DESTDIR" -C man/man5 install
 
-    # remove unneeded files that may cause conflicts
-    rm "${PKG}/usr/lib"/*.a
+    for conf in cdrecord rscsi; do
+        install -Dm644 "DESTDIR/etc/default/${conf}" -t "${PKG}/etc/default/"
+    done
 
-    rm -rf "${PKG}/usr/include" \
-        "${PKG}/usr/lib/profiled" \
-        "${PKG}/usr/share/man/man3"
+    for bin in btcflash cdda2mp3 cdda2ogg cdda2wav cdrecord readcd rscsi scgcheck scgskeleton devdump isodebug isodump isoinfo isovfy mkisofs; do
+        install -Dm755 "DESTDIR/usr/bin/${bin}" -t "${PKG}/usr/bin/"
+    done
 
-    # Patch binary permissions, by default it's swx--x--x
-    chmod a+rx "${PKG}/usr/bin"/*
+    install -Dm444 DESTDIR/usr/lib/siconv/* -t "${PKG}/usr/lib/siconv/"
 
-    # create symlinks for cdrkit compatibility
+    for man1_file in btcflash cdda2mp3 cdda2ogg cdda2wav cdrecord readcd rscsi scgcheck scgskeleton; do
+        install -Dm644 "DESTDIR/usr/share/man/man1/${man1_file}.1" -t "${PKG}/usr/share/man/man1/"
+    done
+
+    for man5_file in makefiles makerules; do
+        install -Dm644 "DESTDIR/usr/share/man/man5/${man5_file}.5" -t "${PKG}/usr/share/man/man5/"
+    done
+
+    for man8_file in devdump isodebug isodump isoinfo isovfy mkhybrid mkisofs; do
+        install -Dm644 "DESTDIR/usr/share/man/man8/${man8_file}.8" -t "${PKG}/usr/share/man/man8/"
+    done
+
     ln -s cdrecord "${PKG}/usr/bin/wodim"
     ln -s readcd "${PKG}/usr/bin/readom"
     ln -s mkisofs "${PKG}/usr/bin/genisoimage"
+    ln -s mkisofs "${PKG}/usr/bin/mkhybrid"
     ln -s cdda2wav "${PKG}/usr/bin/icedax"
+
+    chmod u+s "${PKG}/usr/bin/cdda2wav" \
+        "${PKG}/usr/bin/cdrecord" \
+        "${PKG}/usr/bin/readcd" \
+        "${PKG}/usr/bin/rscsi"
 }
