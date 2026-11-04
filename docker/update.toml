@@ -1,5 +1,12 @@
 name = "docker"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "docker-cli"
+owner = "moby"
+repo = "moby"
+
+[github]
+use_releases = true
+
+[version]
+strip_prefix = "%(name)-v"

@@ -6,17 +6,17 @@ homepage="https://www.docker.com/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=docker
-version=29.9.2
+version=29.9.3
 release=1
 backup="etc/${name}.conf"
 
-source="https://github.com/moby/moby/archive/${name}-v${version}/moby-${version}.tar.gz
-    https://github.com/${name}/cli/archive/v${version}/cli-${version}.tar.gz
+source="${name}-${version}.tar.gz::https://github.com/moby/moby/archive/${name}-v${version}/moby-${version}.tar.gz
+    ${name}-cli-${version}.tar.gz::https://github.com/${name}/cli/archive/v${version}/cli-${version}.tar.gz
     ${name}.conf"
 
 build() {
     export GO111MODULE=auto
-    export DOCKER_GITCOMMIT=0367cbe
+    export DOCKER_GITCOMMIT=70efc0e
     export DOCKER_BUILDTAGS=seccomp
     export DISABLE_WARN_OUTSIDE_CONTAINER=1
 
