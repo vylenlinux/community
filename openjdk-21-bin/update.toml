@@ -10,3 +10,4 @@ use_releases = true
 
 [version]
 strip_prefix = "jdk-"
+field = "_version"
