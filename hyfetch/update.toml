@@ -4,3 +4,6 @@ provider = "github"
 [source]
 owner = "hykilpikonna"
 repo = "%(name)"
+
+[version]
+exclude = ["*-rc*"]
