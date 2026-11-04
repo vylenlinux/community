@@ -1,5 +1,0 @@
-#!/bin/sh
-
-post_install() {
-    printf "==> Run 'java-manager help' to switching between JVM\n"
-}
