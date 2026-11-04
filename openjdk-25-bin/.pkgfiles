@@ -488,4 +488,4 @@ drwxr-xr-x root/root    usr/lib/jvm/java-25-openjdk/man/man1/
 -rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/man/man1/serialver.1
 -rw-r--r-- root/root    usr/lib/jvm/java-25-openjdk/release
 drwxr-xr-x root/root    usr/lib/revdep.d/
--rw-r--r-- root/root    usr/lib/revdep.d/openjdk-bin.conf
+-rw-r--r-- root/root    usr/lib/revdep.d/openjdk-25-bin.conf
