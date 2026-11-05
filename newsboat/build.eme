@@ -6,18 +6,15 @@ homepage="https://newsboat.org"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=newsboat
-version=2.45
+version=2.45.1
 release=1
-
-source="https://newsboat.org/releases/${version}/${name}-${version}.tar.xz
-    ${name}.1
-    podboat.1"
+source="https://newsboat.org/releases/${version}/${name}-${version}.tar.xz"
 
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-    make prefix=/usr newsboat podboat
+    make prefix=/usr "${name}" podboat
 
-    install -Dm755 newsboat podboat -t "${PKG}/usr/bin/"
-    install -Dm644 "${SRC}"/*.1 -t "${PKG}/usr/share/man/man1/"
+    install -Dm755 "${name}" podboat -t "${PKG}/usr/bin/"
+    do_man "${name}" podboat
 }

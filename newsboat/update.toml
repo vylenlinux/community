@@ -1,5 +1,9 @@
 name = "newsboat"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "newsboat"
+owner = "%(name)"
+repo = "%(name)"
+
+[version]
+strip_prefix = "r"
