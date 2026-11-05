@@ -1,5 +1,5 @@
 name = "gtk-vnc"
-provider = "repology"
+provider = "gnome"
 
 [source]
 package = "gtk-vnc"
