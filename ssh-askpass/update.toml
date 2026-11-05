@@ -3,5 +3,5 @@ provider = "ftp"
 dedup_key = "openssh"
 
 [ftp]
-url = "http://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/"
+url = "https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/"
 filename = "openssh-%(version).tar.gz"
