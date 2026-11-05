@@ -1,5 +1,6 @@
 name = "perl-mozilla-ca"
-provider = "metacpan"
+provider = "github"
 
 [source]
-package = "Mozilla-CA"
+owner = "libwww-perl"
+repo = "Mozilla-CA"
