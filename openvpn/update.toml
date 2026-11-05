@@ -1,5 +1,6 @@
 name = "openvpn"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "openvpn"
+owner = "%(name)"
+repo = "%(name)"
