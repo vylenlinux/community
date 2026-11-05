@@ -4,3 +4,6 @@ provider = "github"
 [source]
 owner = "docker"
 repo = "buildx"
+
+[version]
+exclude = ["*-rc*"]
