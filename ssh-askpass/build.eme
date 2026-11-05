@@ -8,7 +8,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=ssh-askpass
 version=10.6p2
 release=1
-source="http://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-${version}.tar.gz"
+source="http://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
