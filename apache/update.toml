@@ -1,5 +1,6 @@
 name = "apache"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "apache"
+[ftp]
+url = "https://archive.apache.org/dist/httpd/"
+filename = "httpd-%(version).tar.bz2"
