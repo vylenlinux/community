@@ -35,6 +35,11 @@ drwxr-xr-x root/root    usr/share/man/man5/
 -rw-r--r-- root/root    usr/share/man/man5/waybar-inhibitor.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/waybar-jack.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/waybar-keyboard-state.5.gz
+-rw-r--r-- root/root    usr/share/man/man5/waybar-mango-keymode.5.gz
+-rw-r--r-- root/root    usr/share/man/man5/waybar-mango-language.5.gz
+-rw-r--r-- root/root    usr/share/man/man5/waybar-mango-layout.5.gz
+-rw-r--r-- root/root    usr/share/man/man5/waybar-mango-window.5.gz
+-rw-r--r-- root/root    usr/share/man/man5/waybar-mango-workspaces.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/waybar-memory.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/waybar-menu.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/waybar-mpd.5.gz
@@ -61,5 +66,14 @@ drwxr-xr-x root/root    usr/share/man/man5/
 -rw-r--r-- root/root    usr/share/man/man5/waybar-systemd-failed-units.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/waybar-temperature.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/waybar-tray.5.gz
+-rw-r--r-- root/root    usr/share/man/man5/waybar-umbriel-layout.5.gz
+-rw-r--r-- root/root    usr/share/man/man5/waybar-umbriel-window.5.gz
+-rw-r--r-- root/root    usr/share/man/man5/waybar-umbriel-workspaces.5.gz
+-rw-r--r-- root/root    usr/share/man/man5/waybar-upower.5.gz
+-rw-r--r-- root/root    usr/share/man/man5/waybar-user.5.gz
+-rw-r--r-- root/root    usr/share/man/man5/waybar-wayfire-window.5.gz
+-rw-r--r-- root/root    usr/share/man/man5/waybar-wayfire-workspaces.5.gz
+-rw-r--r-- root/root    usr/share/man/man5/waybar-wireplumber.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/waybar-wlr-taskbar.5.gz
+-rw-r--r-- root/root    usr/share/man/man5/waybar-wwan.5.gz
 -rw-r--r-- root/root    usr/share/man/man5/waybar.5.gz

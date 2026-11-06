@@ -1,5 +1,6 @@
 name = "waybar"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "waybar"
+owner = "Alexays"
+repo = "%(name)"
