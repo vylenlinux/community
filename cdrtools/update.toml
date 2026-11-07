@@ -4,3 +4,6 @@ provider = "codeberg"
 [source]
 owner = "schilytools"
 repo = "schilytools"
+
+[version]
+replace = { - = "." }
