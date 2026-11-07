@@ -4,3 +4,6 @@ provider = "github"
 [source]
 owner = "adobe-fonts"
 repo = "source-code-pro"
+
+[version]
+field = "_version"
