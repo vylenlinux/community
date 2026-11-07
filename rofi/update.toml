@@ -1,5 +1,6 @@
 name = "rofi"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "rofi"
+owner = "davatorium"
+repo = "%(name)"
