@@ -1,0 +1,8 @@
+name = "jakt"
+provider = "git"
+
+[source]
+url = "https://github.com/SerenityOS/%(name)"
+
+[git]
+field = "version"

@@ -1,0 +1,156 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 5c1d6ba..8458b15 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -61,7 +61,6 @@ if (Clang_FOUND)
+ endif()
+
+ include(GNUInstallDirs)
+-include("cmake/symlink.cmake")
+
+ set(FINAL_STAGE "1" CACHE STRING "Compiler stage to stop at, either 1 (default) or 2)")
+ set(CPP_AUTO_IMPORT_PROCESSOR "${JAKT_CPP_AUTO_IMPORT_PROCESSOR_DEFAULT}" CACHE STRING "'import extern' processor to use (default=none/clang/libcpp/none)")
+@@ -294,23 +293,30 @@ if (FINAL_STAGE GREATER_EQUAL 2)
+   endif()
+ endif()
+
+-# Link runtime into build directory(ies) for relative pathing usage
+-#    Note: "If a sequential execution of multiple commands is required, use multiple execute_process() calls with a single COMMAND argument."
++# Copy the runtime into the build tree so this works without symlink support.
+ if (CMAKE_CONFIGURATION_TYPES)
+   foreach (build_type IN LISTS CMAKE_CONFIGURATION_TYPES)
+-    execute_process(COMMAND "${CMAKE_COMMAND}" -E make_directory "${CMAKE_CURRENT_BINARY_DIR}/${build_type}/include")
+-    create_symlink("${CMAKE_CURRENT_SOURCE_DIR}/runtime" "${CMAKE_CURRENT_BINARY_DIR}/${build_type}/include/runtime" DIRECTORY)
++    set(runtime_include_dir "${CMAKE_CURRENT_BINARY_DIR}/${build_type}/include")
++    file(MAKE_DIRECTORY "${runtime_include_dir}")
++    file(REMOVE_RECURSE "${runtime_include_dir}/runtime")
++    file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/runtime" DESTINATION "${runtime_include_dir}")
+   endforeach()
+ else()
+-  execute_process(COMMAND "${CMAKE_COMMAND}" -E make_directory "${CMAKE_CURRENT_BINARY_DIR}/include")
+-  create_symlink("${CMAKE_CURRENT_SOURCE_DIR}/runtime" "${CMAKE_CURRENT_BINARY_DIR}/include/runtime" DIRECTORY)
++  set(runtime_include_dir "${CMAKE_CURRENT_BINARY_DIR}/include")
++  file(MAKE_DIRECTORY "${runtime_include_dir}")
++  file(REMOVE_RECURSE "${runtime_include_dir}/runtime")
++  file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/runtime" DESTINATION "${runtime_include_dir}")
+ endif()
+
+-add_symlink_command(
+-  "$<SHELL_PATH:$<TARGET_FILE:jakt_stage${FINAL_STAGE}>>"
+-  "$<SHELL_PATH:$<PATH:REPLACE_FILENAME,$<TARGET_FILE:jakt_stage${FINAL_STAGE}>,jakt${CMAKE_EXECUTABLE_SUFFIX}>>"
+-  TARGET "jakt_stage${FINAL_STAGE}"
++# Keep the convenient build/bin/jakt command as a regular copy of the final stage.
++add_custom_command(
++  TARGET jakt_stage${FINAL_STAGE}
+   POST_BUILD
++  COMMAND "${CMAKE_COMMAND}" -E rm -f
++    "$<TARGET_FILE_DIR:jakt_stage${FINAL_STAGE}>/jakt${CMAKE_EXECUTABLE_SUFFIX}"
++  COMMAND "${CMAKE_COMMAND}" -E copy_if_different
++    "$<TARGET_FILE:jakt_stage${FINAL_STAGE}>"
++    "$<TARGET_FILE_DIR:jakt_stage${FINAL_STAGE}>/jakt${CMAKE_EXECUTABLE_SUFFIX}"
+   VERBATIM
+ )
+ add_executable(Jakt::jakt ALIAS jakt_stage${FINAL_STAGE})
+diff --git a/cmake/install-rules.cmake b/cmake/install-rules.cmake
+index b434b25..df7be66 100644
+--- a/cmake/install-rules.cmake
++++ b/cmake/install-rules.cmake
+@@ -103,10 +103,18 @@ install(
+     COMPONENT Jakt_Development
+ )
+
+-# Make a symlink bin/jakt to the final compiler we created, but install it after the real targets
+-# to make sure that if we're using hardlinks, the link can actually be created
++# Install a regular copy under the convenient `jakt` command name.
+ set(final_stage_target "jakt_stage${FINAL_STAGE}")
+-set(final_stage_install_target "${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_BINDIR}/$<TARGET_FILE_NAME:${final_stage_target}>")
+-
+-install(CODE "include(\"${CMAKE_CURRENT_LIST_DIR}/symlink.cmake\")")
+-install(CODE "create_symlink(\"${final_stage_install_target}\" \"${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_BINDIR}/jakt${CMAKE_EXECUTABLE_SUFFIX}\")")
++install(CODE "
++  set(_jakt_install_dir \"\$ENV{DESTDIR}\${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_BINDIR}\")
++  file(REMOVE \"\${_jakt_install_dir}/jakt${CMAKE_EXECUTABLE_SUFFIX}\")
++  execute_process(
++    COMMAND \"${CMAKE_COMMAND}\" -E copy_if_different
++      \"\${_jakt_install_dir}/${final_stage_target}${CMAKE_EXECUTABLE_SUFFIX}\"
++      \"\${_jakt_install_dir}/jakt${CMAKE_EXECUTABLE_SUFFIX}\"
++    RESULT_VARIABLE _jakt_copy_result
++  )
++  if(NOT _jakt_copy_result EQUAL 0)
++    message(FATAL_ERROR \"Failed to copy the final Jakt compiler to the jakt command\")
++  endif()
++")
+diff --git a/cmake/symlink.cmake b/cmake/symlink.cmake
+index bda870d..be6a2f9 100644
+--- a/cmake/symlink.cmake
++++ b/cmake/symlink.cmake
+@@ -1,47 +1,2 @@
+-# On windows, use `mklink /J` to create a junction point for directories, and `mklink /H` for files.
+-# because literally everything else is broken one way or another.
+-# Everywhere else, just ask cmake.
+-if (WIN32)
+-    function(create_symlink source target)
+-        cmake_parse_arguments(CSL "DIRECTORY" "" "" ${ARGN})
+-        set(LINK_FLAG "/H")
+-        if (CSL_DIRECTORY)
+-            set(LINK_FLAG "/J")
+-        endif()
+-        cmake_path(NATIVE_PATH source NORMALIZE source_native)
+-        cmake_path(NATIVE_PATH target NORMALIZE target_native)
+-        execute_process(COMMAND cmd /c ${CMAKE_COMMAND} -E rm -f ${target_native} && mklink ${LINK_FLAG} ${target_native} ${source_native} RESULT_VARIABLE result)
+-        if (NOT ${result} EQUAL 0)
+-            message(FATAL_ERROR "Failed to create symlink ${target} -> ${source}")
+-        endif()
+-    endfunction()
+-    function(add_symlink_command source target)
+-        cmake_parse_arguments(ASL "DIRECTORY" "" "" ${ARGN})
+-        set(LINK_FLAG "/H")
+-        if (ASL_DIRECTORY)
+-            set(LINK_FLAG "/J")
+-        endif()
+-        cmake_path(NATIVE_PATH source NORMALIZE source_native)
+-        cmake_path(NATIVE_PATH target NORMALIZE target_native)
+-        add_custom_command(
+-            COMMAND cmd /c ${CMAKE_COMMAND} -E rm -f ${target_native} && mklink ${LINK_FLAG} ${target_native} ${source_native}
+-            DEPENDS ${source}
+-            ${ASL_UNPARSED_ARGUMENTS}
+-        )
+-    endfunction()
+-else()
+-    function(create_symlink source target)
+-        execute_process(COMMAND ${CMAKE_COMMAND} -E create_symlink ${source} ${target} RESULT_VARIABLE result)
+-        if (NOT ${result} EQUAL 0)
+-            message(FATAL_ERROR "Failed to create symlink ${target} -> ${source}")
+-        endif()
+-    endfunction()
+-    function(add_symlink_command source target)
+-        cmake_parse_arguments(ASL "DIRECTORY" "" "" ${ARGN})
+-        add_custom_command(
+-            COMMAND ${CMAKE_COMMAND} -E create_symlink ${source} ${target}
+-            DEPENDS ${source}
+-            ${ASL_UNPARSED_ARGUMENTS}
+-        )
+-    endfunction()
+-endif()
++# Symbolic links are intentionally avoided in Jakt's build and install rules.
++# Runtime and compiler aliases are regular file/directory copies instead.
+diff --git a/runtime/CMakeLists.txt b/runtime/CMakeLists.txt
+index 01bc343..d474299 100644
+--- a/runtime/CMakeLists.txt
++++ b/runtime/CMakeLists.txt
+@@ -24,12 +24,11 @@ if (NOT serenity_POPULATED)
+     FetchContent_Populate(Serenity)
+ endif()
+
+-file(REMOVE_RECURSE ${CMAKE_CURRENT_SOURCE_DIR}/AK)
+-file(MAKE_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/AK)
++file(REMOVE_RECURSE "${CMAKE_CURRENT_SOURCE_DIR}/AK")
++file(MAKE_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/AK")
+ file(GLOB serenity_AK_FILES "${serenity_SOURCE_DIR}/AK/*")
+ foreach(file IN LISTS serenity_AK_FILES)
+-    get_filename_component(name ${file} NAME)
+-    create_symlink(${file} ${CMAKE_CURRENT_SOURCE_DIR}/AK/${name})
++    file(COPY "${file}" DESTINATION "${CMAKE_CURRENT_SOURCE_DIR}/AK")
+ endforeach()
+
+ configure_file("AK/Debug.h.in" "${CMAKE_CURRENT_SOURCE_DIR}/AK/Debug.h")
