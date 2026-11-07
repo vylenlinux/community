@@ -3,3 +3,6 @@ provider = "repology"
 
 [source]
 package = "wireless-tools"
+
+[repology]
+include_devel = true
