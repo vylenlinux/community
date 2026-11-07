@@ -1,5 +1,6 @@
 name = "nwg-bar"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "nwg-bar"
+owner = "nwg-piotr"
+repo = "%(name)"

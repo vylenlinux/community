@@ -1,5 +1,6 @@
 name = "nwg-shell-config"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "nwg-shell-config"
+owner = "nwg-piotr"
+repo = "%(name)"

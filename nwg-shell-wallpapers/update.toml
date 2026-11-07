@@ -1,5 +1,6 @@
 name = "nwg-shell-wallpapers"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "nwg-shell-wallpapers"
+owner = "nwg-piotr"
+repo = "%(name)"

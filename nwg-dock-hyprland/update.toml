@@ -1,5 +1,6 @@
 name = "nwg-dock-hyprland"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "nwg-dock-hyprland"
+owner = "nwg-piotr"
+repo = "%(name)"
