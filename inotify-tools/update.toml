@@ -1,5 +1,6 @@
 name = "inotify-tools"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "inotify-tools"
+owner = "%(name)"
+repo = "%(name)"

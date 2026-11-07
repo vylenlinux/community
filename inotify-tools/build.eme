@@ -6,7 +6,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://github.com/inotify-tools/inotify-tools"
 
 name=inotify-tools
-version=4.26.270
+version=4.26.272
 release=1
 source="${name}-${version}.tar.gz::https://github.com/${name}/${name}/archive/refs/tags/${version}.tar.gz"
 
@@ -15,5 +15,5 @@ build() {
     cd "${name}-${version}"
 
     make prefix=/usr
-    make DESTDIR="${PKG}" prefix=/usr install install-doc
+    make prefix=/usr DESTDIR="${PKG}" install install-doc
 }
