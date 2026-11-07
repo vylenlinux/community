@@ -8,3 +8,4 @@ project = "debian/netcat-openbsd"
 [version]
 include = ["*-*"]
 strip_prefix = "debian/"
+replace = { - = "_" }
