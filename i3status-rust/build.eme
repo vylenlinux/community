@@ -6,7 +6,7 @@ homepage="https://github.com/greshake/i3status-rust"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=i3status-rust
-version=0.40.0
+version=0.40.1
 release=1
 source="${name}-${version}.tar.gz::https://github.com/greshake/${name}/archive/refs/tags/v${version}.tar.gz"
 
@@ -17,19 +17,11 @@ build() {
     cargo build \
         --release \
         --locked \
-        --features "pulseaudio maildir pipewire"
+        --features "pipewire pulseaudio maildir"
 
     install -Dm755 target/release/i3status-rs -t "${PKG}/usr/bin/"
 
-    for icon_set in files/icons/*.toml; do
-        install -Dm644 "${icon_set}" -t "${PKG}/usr/share/${name}/icons/"
-    done
-
-    for theme in files/themes/*.toml; do
-        install -Dm644 "${theme}" -t "${PKG}/usr/share/${name}/themes/"
-    done
-
-    for example_config in examples/*.toml; do
-        install -Dm644 "${example_config}" -t "${PKG}/usr/share/doc/${name}/examples/"
-    done
+    install -Dm644 files/icons/*.toml -t "${PKG}/usr/share/${name}/icons/"
+    install -Dm644 files/themes/*.toml -t "${PKG}/usr/share/${name}/themes/"
+    install -Dm644 examples/*.toml -t "${PKG}/usr/share/doc/${name}/examples/"
 }
