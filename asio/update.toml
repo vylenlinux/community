@@ -1,5 +1,10 @@
 name = "asio"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "asio"
+owner = "chriskohlhoff"
+repo = "%(name)"
+
+[version]
+strip_prefix = "%(name)-"
+replace = { - = "." }

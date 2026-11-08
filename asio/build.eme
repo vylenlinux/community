@@ -6,13 +6,16 @@ homepage="http://think-async.com/Asio/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=asio
-version=1.38.2
+version=1.39.0
 release=1
-source="https://downloads.sourceforge.net/project/${name}/${name}/${version}%20%28Stable%29/${name}-${version}.zip"
+
+_version="$(printf '%s' "${version}" | tr '.' '-')"
+source="${name}-${version}.tar.gz::https://github.com/chriskohlhoff/${name}/archive/refs/tags/${name}-${_version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
-    cd "${name}-${version}"
+    cd "${name}-${name}-${_version}"
+    ./autogen.sh
 
     ./configure \
         --prefix=/usr \
