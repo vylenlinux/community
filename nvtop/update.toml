@@ -1,5 +1,6 @@
 name = "nvtop"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "nvtop"
+owner = "Syllo"
+repo = "%(name)"
