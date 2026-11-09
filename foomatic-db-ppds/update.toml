@@ -1,6 +1,6 @@
 name = "foomatic-db-ppds"
-provider = "repology"
+provider = "git"
 dedup_key = "foomatic-db"
 
 [source]
-package = "foomatic-db"
+url = "https://github.com/OpenPrinting/foomatic-db"
