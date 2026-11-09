@@ -6,7 +6,7 @@ homepage="https://github.com/hanwen/go-mtpfs"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=go-mtpfs
-version=1.0.0
+version=1.0.1
 release=1
 source="https://github.com/hanwen/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
