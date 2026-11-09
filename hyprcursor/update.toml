@@ -1,5 +1,6 @@
 name = "hyprcursor"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "hyprcursor"
+owner = "hyprwm"
+repo = "%(name)"
