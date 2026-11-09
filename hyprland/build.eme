@@ -6,7 +6,7 @@ homepage="https://github.com/hyprwm/Hyprland"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=hyprland
-version=0.57.1
+version=0.57.2
 release=1
 source="${name}-${version}.tar.gz::https://github.com/hyprwm/${name}/releases/download/v${version}/source-v${version}.tar.gz"
 
