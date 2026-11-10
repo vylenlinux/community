@@ -1,5 +1,0 @@
-name = "libqalculate"
-provider = "repology"
-
-[source]
-package = "libqalculate"
