@@ -13,29 +13,23 @@ source="${name}-${version}.tar.gz::https://github.com/astral-sh/${name}/archive/
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-    tripple="$(rustc --print host-tuple)"
-
-    cargo fetch \
-        --locked \
-        --target "${tripple}"
+    cargo fetch --locked
 
     # Note: do not use --all-features as in enables a self-updater
     maturin build \
         --locked \
         --release \
-        --target "${tripple}" \
         --strip \
         --compatibility linux
 
     maturin build \
         --locked \
         --release \
-        --target "${tripple}" \
         --strip \
         --compatibility linux \
         -m crates/uv-build/Cargo.toml
 
-    _target="target/${tripple}/release/${name}"
+    _target="target/x86_64-unknown-linux-gnu/release/${name}"
 
     install -Dm755 "${_target}" -t "${PKG}/usr/bin/"
     install -Dm755 "${_target}x" -t "${PKG}/usr/bin/"
