@@ -1,6 +1,0 @@
-name = "mold"
-provider = "github"
-
-[source]
-owner = "rui314"
-repo = "mold"
