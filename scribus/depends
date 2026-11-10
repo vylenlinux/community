@@ -1,7 +1,6 @@
 boost
 harfbuzz-icu
 hunspell
-libcups
 poppler
 qt6-5compat
 qt6-tools

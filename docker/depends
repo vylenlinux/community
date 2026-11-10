@@ -1,6 +1,5 @@
 cgroupfs-mount
 containerd
 iptables
-nftables
 runc
 tini

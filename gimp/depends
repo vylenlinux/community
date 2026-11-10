@@ -2,8 +2,5 @@ appstream
 appstream-glib
 gegl
 gexiv2
-libexif
 libgudev
-libjxl
-libwebp
 mypaint-brushes

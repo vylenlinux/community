@@ -4,7 +4,4 @@ libexif
 libid3tag
 libjpeg-turbo
 libmatroska
-libvorbis
-opus
 taglib
-x264

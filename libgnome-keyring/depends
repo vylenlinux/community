@@ -2,5 +2,4 @@ dbus
 gobject-introspection
 intltool
 libgcrypt
-libgpg-error
 vala

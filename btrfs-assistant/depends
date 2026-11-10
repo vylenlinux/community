@@ -1,5 +1,3 @@
 btrfs-progs
-cmake
 polkit
-qt6-base
 qt6-svg

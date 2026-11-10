@@ -3,10 +3,8 @@ foot
 gnome-themes-extra
 gopsuinfo
 grim
-imagemagick
 jq
 l3afpad
-libappindicator
 network-manager-applet
 nwg-displays
 nwg-dock
@@ -23,9 +21,7 @@ sway
 swayidle
 swaylock
 swaync
-ttf-dejavu
 wl-clipboard
 wlsunset
 xdg-user-dirs
-xdg-utils
 xwayland

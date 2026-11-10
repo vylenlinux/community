@@ -1,6 +1,4 @@
 glslang
 libunwind
 miniz
-spirv-headers
-spirv-tools
 vulkan-headers

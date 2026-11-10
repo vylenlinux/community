@@ -5,11 +5,6 @@ krb5
 libcups
 libpulse
 libwebp
-libxcursor
 libxdamage
-libxinerama
-libxkbcommon
-libxtst
 pkcs11-helper
 sdl2_ttf
-wayland

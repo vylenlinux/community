@@ -3,10 +3,8 @@ jansson
 luajit-openresty
 mbedtls3
 nlohmann-json
-nv-codec-headers
 pciutils
 pipewire
-qt6-svg
 simde
 speexdsp
 swig

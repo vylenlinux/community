@@ -1,7 +1,5 @@
 dbus-python
-python3-ply
 python3-pyqt-builder
-python3-sip
 python3-sip-pyqt5
 python3-tomli
 qt5

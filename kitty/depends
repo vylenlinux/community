@@ -2,7 +2,6 @@ go
 imagemagick
 libcanberra
 librsync
-libxkbcommon
 python3-pygments
 shader-slang
 simde

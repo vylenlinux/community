@@ -10,7 +10,6 @@ libxcursor
 libxinerama
 libxkbcommon
 mingw-w64-gcc
-mpg123
 opencl-headers
 v4l-utils
 vkd3d

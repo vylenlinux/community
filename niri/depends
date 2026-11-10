@@ -1,7 +1,5 @@
-clang
 libdisplay-info
 libinput
 pango
 pipewire
-rust
 seatd

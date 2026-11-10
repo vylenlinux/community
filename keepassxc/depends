@@ -3,7 +3,6 @@ asciidoctor
 botan
 hicolor-icon-theme
 libsodium
-libxtst
 pcsclite
 qrencode
 quazip
