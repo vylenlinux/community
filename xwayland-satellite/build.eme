@@ -13,10 +13,7 @@ source="https://github.com/Supreeeme/${name}/archive/v${version}/${name}-${versi
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-
-    cargo fetch \
-        --locked \
-        --target "$(rustc --print host-tuple)"
+    cargo fetch --locked
 
     cargo build \
         --frozen \
