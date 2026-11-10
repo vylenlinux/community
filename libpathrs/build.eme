@@ -15,12 +15,14 @@ source="https://github.com/cyphar/${name}/releases/download/v${version}/${name}-
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
+
     export RUSTUP_TOOLCHAIN=stable
+    export RUSTFLAGS="-C panic=abort"
 
     patch -Np1 -i "${SRC}/crate-type.patch"
-    cargo fetch --locked --target host-tuple
+    cargo fetch --locked
 
-    RUSTFLAGS="-C panic=abort" cargo build \
+    cargo build \
         --frozen \
         --release \
         --features=capi
