@@ -14,10 +14,7 @@ source="${name}-${version}.tar.gz::https://git.sr.ht/~kennylevinsen/${name}/arch
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-
-    cargo fetch \
-        --locked \
-        --target "$(rustc --print host-tuple)"
+    cargo fetch --locked
 
     cargo build \
         --frozen \
