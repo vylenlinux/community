@@ -6,7 +6,7 @@ homepage="https://github.com/podman-container-tools/podman"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=podman
-version=6.1.4
+version=6.2.0
 release=1
 source="https://github.com/containers/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
