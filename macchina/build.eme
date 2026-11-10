@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Fast, minimal and customizable system information frontend."
 homepage="https://github.com/Macchina-CLI/macchina"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,18 +8,16 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=macchina
 version=6.4.0
 release=1
-source="$name-$version.tar.gz::https://github.com/Macchina-CLI/$name/archive/v$version.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/Macchina-CLI/${name}/archive/v${version}.tar.gz"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+    cargo build --release
 
-	cargo build --release --target-dir=target
+    install -Dm755 "target/release/${name}" -t "${PKG}/usr/bin/"
 
-	install -D -m 755 target/release/$name -t $PKG/usr/bin
-
-	install -D -m 644 doc/$name.1 -t $PKG/usr/share/man/man1
-	install -D -m 644 doc/$name.7 -t $PKG/usr/share/man/man7
-
-	install -d $PKG/usr/share/$name/themes
-	install -m 644 contrib/themes/* $PKG/usr/share/$name/themes
+    install -Dm644 "doc/${name}.1" -t "${PKG}/usr/share/man/man1/"
+    install -Dm644 "doc/${name}.7" -t "${PKG}/usr/share/man/man7/"
+    install -Dm644 contrib/themes/* "${PKG}/usr/share/${name}/themes/"
 }
