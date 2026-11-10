@@ -84,9 +84,6 @@ drwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_mod
 -rw-r--r-- root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/LICENSE
 drwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/bin/
 -rwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/bin/download-prebuilds.js
-drwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/build/
-drwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/build/Release/
--rwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/build/Release/extract.node
 -rw-r--r-- root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/index.js
 -rw-r--r-- root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/package.json
 drwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/src/

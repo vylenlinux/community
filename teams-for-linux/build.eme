@@ -3,10 +3,10 @@
 # shellcheck disable=SC2034
 description="Unofficial Microsoft Teams client for Linux using Electron."
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
-homepage="https://github.com/IsmaelMartinez/teams-for-linux"
+homepage="https://ismaelmartinez.github.io/teams-for-linux/"
 
 name=teams-for-linux
-version=2.30.0
+version=2.31.0
 release=1
 
 source="${name}-${version}.tar.gz::https://github.com/IsmaelMartinez/${name}/archive/v${version}.tar.gz
