@@ -3,3 +3,9 @@ provider = "repology"
 
 [source]
 package = "putty"
+
+[repology]
+ignore_versions = [
+    "1.0", # fake version
+    "9999"
+]
