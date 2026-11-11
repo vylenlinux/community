@@ -80,14 +80,6 @@ drwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_mod
 -rwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/@cbor-extract/cbor-extract-linux-x64/node.napi.glibc.node
 -rwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/@cbor-extract/cbor-extract-linux-x64/node.napi.musl.node
 -rw-r--r-- root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/@cbor-extract/cbor-extract-linux-x64/package.json
-drwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/
--rw-r--r-- root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/LICENSE
-drwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/bin/
--rwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/bin/download-prebuilds.js
--rw-r--r-- root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/index.js
--rw-r--r-- root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/package.json
-drwxr-xr-x root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/src/
--rw-r--r-- root/root    opt/teams-for-linux/resources/app.asar.unpacked/node_modules/cbor-extract/src/extract.cpp
 drwxr-xr-x root/root    opt/teams-for-linux/resources/assets/
 drwxr-xr-x root/root    opt/teams-for-linux/resources/assets/sounds/
 -rw-rw-r-- root/root    opt/teams-for-linux/resources/assets/sounds/meeting_started.wav
