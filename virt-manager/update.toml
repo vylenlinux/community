@@ -1,5 +1,6 @@
 name = "virt-manager"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "virt-manager"
+owner = "%(name)"
+repo = "%(name)"
