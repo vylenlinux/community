@@ -10,17 +10,13 @@ version=20261110
 release=1
 
 source="GeoIP-${version}.dat.gz::https://mailfud.org/geoip-legacy/GeoIP.dat.gz
-    GeoIPv6-${version}.dat.gz::https://mailfud.org/geoip-legacy/GeoIPv6.dat.gz
-    GeoIPCity-${version}.dat.gz::https://mailfud.org/geoip-legacy/GeoIPCity.dat.gz
-    GeoIPCityv6-${version}.dat.gz::https://mailfud.org/geoip-legacy/GeoIPCityv6.dat.gz
-    GeoIPASNum-${version}.dat.gz::https://mailfud.org/geoip-legacy/GeoIPASNum.dat.gz
-    GeoIPASNumv6-${version}.dat.gz::https://mailfud.org/geoip-legacy/GeoIPASNumv6.dat.gz"
+    GeoIPv6-${version}.dat.gz::https://mailfud.org/geoip-legacy/GeoIPv6.dat.gz"
 
 build() {
     # shellcheck disable=SC2035
     gunzip *.gz
+    rename -- "-${version}" '' *.dat
 
-    for file in GeoIP GeoIPv6 GeoIPCity GeoIPCityv6 GeoIPASNum GeoIPASNumv6; do
-        install -Dm644 "${file}-${version}.dat" "${PKG}/usr/share/GeoIP/${file}.dat"
-    done
+    install -Dm644 GeoIP.dat -t "${PKG}/usr/share/GeoIP/"
+    install -Dm644 GeoIPv6.dat -t "${PKG}/usr/share/GeoIP/"
 }

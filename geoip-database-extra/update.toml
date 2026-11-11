@@ -1,0 +1,6 @@
+name = "geoip-database-extra"
+provider = "repology"
+dedup_key = "geoip-database"
+
+[source]
+package = "geoip-database"

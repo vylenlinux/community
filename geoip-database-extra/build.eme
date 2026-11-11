@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
+description="GeoIP legacy city/ASN databases (based on GeoLite2 data created by MaxMind)"
+homepage="https://mailfud.org/geoip-legacy/"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
+
+name=geoip-database-extra
+version=20261110
+release=1
+
+source="GeoIPCity-${version}.dat.gz::https://mailfud.org/geoip-legacy/GeoIPCity.dat.gz
+    GeoIPCityv6-${version}.dat.gz::https://mailfud.org/geoip-legacy/GeoIPCityv6.dat.gz
+    GeoIPASNum-${version}.dat.gz::https://mailfud.org/geoip-legacy/GeoIPASNum.dat.gz
+    GeoIPASNumv6-${version}.dat.gz::https://mailfud.org/geoip-legacy/GeoIPASNumv6.dat.gz"
+
+build() {
+    # shellcheck disable=SC2035
+    gunzip *.gz
+    rename -- "-${version}" '' *.dat
+
+    install -Dm644 GeoIPCity.dat -t "${PKG}/usr/share/GeoIP/"
+    install -Dm644 GeoIPCityv6.dat -t "${PKG}/usr/share/GeoIP/"
+    install -Dm644 GeoIPASNum.dat -t "${PKG}/usr/share/GeoIP/"
+    install -Dm644 GeoIPASNumv6.dat -t "${PKG}/usr/share/GeoIP/"
+}
