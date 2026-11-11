@@ -6,7 +6,7 @@ homepage="https://github.com/docker/buildx/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=docker-buildx
-version=0.38.2
+version=0.39.0
 release=1
 source="https://github.com/docker/buildx/archive/v${version}/${name}-${version}.tar.gz"
 
