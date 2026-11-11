@@ -2,6 +2,7 @@ gtk-layer-shell
 gtkmm3
 jsoncpp
 libappindicator
+libmm-glib
 libmpdclient
 libnl
 libpulse
