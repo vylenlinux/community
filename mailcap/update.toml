@@ -1,5 +1,10 @@
 name = "mailcap"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "mailcap"
+owner = "InfrastructureServices"
+repo = "%(name)"
+
+[version]
+strip_prefix = "r"
+replace = { - = "." }

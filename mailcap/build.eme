@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Helper application and MIME type associations for file types"
-homepage="https://pagure.io/mailcap"
+homepage="https://github.com/InfrastructureServices/mailcap"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=mailcap
