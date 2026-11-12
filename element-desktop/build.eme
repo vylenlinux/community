@@ -6,7 +6,7 @@ homepage="https://element.io/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=element-desktop
-version=1.12.34
+version=1.12.35
 release=1
 
 source="${name}-${version}.deb::https://packages.element.io/debian/pool/main/e/${name}/${name}_${version}_amd64.deb
