@@ -1,10 +1,10 @@
 extra-cmake-modules
 jansson
+libpipewire
 luajit-openresty
 mbedtls3
 nlohmann-json
 pciutils
-pipewire
 simde
 speexdsp
 swig
