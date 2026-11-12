@@ -6,7 +6,7 @@ diff '--color=auto' -ruN --no-dereference a/meson.build b/meson.build
  install_data(
    'pam/gtklock',
 -  install_dir : get_option('sysconfdir') / 'pam.d'
-+  install_dir : get_option('prefix') / 'lib/pam.d'
++  install_dir : get_option('libdir') / 'pam.d'
  )
 diff '--color=auto' -ruN --no-dereference a/pam/gtklock b/pam/gtklock
 --- a/pam/gtklock	2024-10-21 22:29:53.000000000 +0200
