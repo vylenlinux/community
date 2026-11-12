@@ -2,5 +2,5 @@ name = "noctalia"
 provider = "github"
 
 [source]
-owner = "noctalia-dev"
-repo = "noctalia"
+owner = "%(name)-dev"
+repo = "%(name)"

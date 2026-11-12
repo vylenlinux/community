@@ -6,9 +6,9 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://github.com/noctalia-dev/noctalia"
 
 name=noctalia
-version=5.4.1
+version=5.5.0
 release=1
-source="https://github.com/noctalia-dev/${name}/archive/v${version}/${name}-${version}.tar.gz"
+source="https://github.com/${name}-dev/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
     vylen-meson "${name}-${version}" build \

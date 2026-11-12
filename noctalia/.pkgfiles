@@ -22,6 +22,7 @@ drwxr-xr-x root/root    usr/share/noctalia/assets/fonts/
 -rw-r--r-- root/root    usr/share/noctalia/assets/fonts/tabler-icons-license.txt
 -rw-r--r-- root/root    usr/share/noctalia/assets/fonts/tabler.json
 -rw-r--r-- root/root    usr/share/noctalia/assets/noctalia-wallpaper.png
+-rw-r--r-- root/root    usr/share/noctalia/assets/noctalia.service
 -rw-r--r-- root/root    usr/share/noctalia/assets/noctalia.svg
 drwxr-xr-x root/root    usr/share/noctalia/assets/templates/
 drwxr-xr-x root/root    usr/share/noctalia/assets/templates/alacritty/
@@ -58,6 +59,7 @@ drwxr-xr-x root/root    usr/share/noctalia/assets/templates/gtk/
 -rw-r--r-- root/root    usr/share/noctalia/assets/templates/gtk/undo-gtk3.sh
 -rw-r--r-- root/root    usr/share/noctalia/assets/templates/gtk/undo-gtk4.sh
 drwxr-xr-x root/root    usr/share/noctalia/assets/templates/helix/
+-rwxr-xr-x root/root    usr/share/noctalia/assets/templates/helix/apply.sh
 -rw-r--r-- root/root    usr/share/noctalia/assets/templates/helix/helix.toml
 -rw-r--r-- root/root    usr/share/noctalia/assets/templates/helix/undo.sh
 drwxr-xr-x root/root    usr/share/noctalia/assets/templates/hyprland/
