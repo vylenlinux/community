@@ -3,4 +3,4 @@ provider = "repology"
 dedup_key = "dotnet-sdk"
 
 [source]
-package = "dotnet-sdk"
+package = "dotnet"
