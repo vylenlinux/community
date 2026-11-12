@@ -1,5 +1,9 @@
 name = "runc"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "runc"
+owner = "opencontainers"
+repo = "%(name)"
+
+[version]
+exclude = ["*-rc*"]
