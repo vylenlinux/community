@@ -2,7 +2,4 @@ name = "nanosvg"
 provider = "git"
 
 [source]
-url = "https://github.com/memononen/nanosvg"
-
-[git]
-field = "version"
+url = "https://github.com/memononen/%(name)"
