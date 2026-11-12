@@ -1,2 +1,4 @@
 drwxr-xr-x root/root    etc/
--rw-r--r-- root/root    etc/asound.conf.epkgnew
+drwxr-xr-x root/root    etc/alsa/
+drwxr-xr-x root/root    etc/alsa/conf.d/
+lrwxrwxrwx root/root    etc/alsa/conf.d/99-pulseaudio-default.conf -> /usr/share/alsa/alsa.conf.d/99-pulseaudio-default.conf

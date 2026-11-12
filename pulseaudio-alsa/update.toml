@@ -1,2 +1,7 @@
 name = "pulseaudio-alsa"
-provider = "manual"
+provider = "github"
+dedup_key = "alsa-plugins"
+
+[source]
+owner = "alsa-project"
+repo = "alsa-plugins"
