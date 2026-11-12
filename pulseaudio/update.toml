@@ -1,5 +1,5 @@
 name = "pulseaudio"
-provider = "repology"
+provider = "freedesktop"
 
 [source]
-package = "pulseaudio"
+project = "%(name)/%(name)"
