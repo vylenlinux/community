@@ -1,0 +1,6 @@
+name = "zeptofetch"
+provider = "github"
+
+[source]
+owner = "Gur0v"
+repo = "%(name)"
