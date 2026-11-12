@@ -6,19 +6,21 @@ homepage="https://github.com/SerenityOS/jakt"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=jakt
-version=14c980b
+version=20260821+1
 release=1
 
-source="https://github.com/SerenityOS/${name}/archive/${version}/${name}-${version}.tar.gz
-    jakt-destdir-symlink.patch"
+commit=14c980b0f16d9cbe9136818302fb504e26583416
+
+source="https://github.com/SerenityOS/${name}/archive/${commit}/${name}-${version}.tar.gz
+    ${name}-destdir-symlink.patch"
 
 build() {
     export CC=clang
     export CXX=clang++
 
-    patch -d "${name}-${version}"* -Np1 -i "${SRC}/jakt-destdir-symlink.patch"
+    patch -d "${name}-${commit}" -Np1 -i "${SRC}/${name}-destdir-symlink.patch"
 
-    cmake -S "${name}-${version}"* -B build \
+    cmake -S "${name}-${commit}" -B build \
         -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_INSTALL_LIBDIR=lib \
         -DCMAKE_INSTALL_LIBEXECDIR=lib \
