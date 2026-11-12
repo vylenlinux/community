@@ -1,5 +1,6 @@
 name = "geany"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "geany"
+[ftp]
+url = "https://download.geany.org/"
+filename = "%(name)-%(version).tar.bz2"
