@@ -5,6 +5,6 @@ provider = "github"
 owner = "chriskohlhoff"
 repo = "%(name)"
 
-[version]
+[version.normalize]
 strip_prefix = "%(name)-"
-replace = { - = "." }
+replace = { "-" = "." }

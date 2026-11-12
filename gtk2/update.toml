@@ -6,4 +6,6 @@ package = "gtk"
 
 [repology]
 match_name = "gtk2"
-ignore_versions = ["2.24.33-3"]
+
+[version.filter]
+exclude = ['^2\.24\.33-3$']

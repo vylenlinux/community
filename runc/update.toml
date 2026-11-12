@@ -5,5 +5,5 @@ provider = "github"
 owner = "opencontainers"
 repo = "%(name)"
 
-[version]
-exclude = ["*-rc*"]
+[version.filter]
+exclude = ['^.*-rc.*$']

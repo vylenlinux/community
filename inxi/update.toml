@@ -4,5 +4,5 @@ provider = "repology"
 [source]
 package = "inxi"
 
-[version]
-replace = { - = "." }
+[version.normalize]
+replace = { "-" = "." }

@@ -5,7 +5,9 @@ provider = "gitlab"
 instance = "https://salsa.debian.org/"
 project = "debian/netcat-openbsd"
 
-[version]
-include = ["*-*"]
+[version.normalize]
 strip_prefix = "debian/"
-replace = { - = "_" }
+replace = { "-" = "_" }
+
+[version.filter]
+include = ['^.*-.*$']

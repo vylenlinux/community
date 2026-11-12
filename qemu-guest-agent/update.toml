@@ -6,5 +6,5 @@ dedup_key = "qemu"
 owner = "qemu"
 repo = "qemu"
 
-[version]
-exclude = ["*-rc*"]
+[version.filter]
+exclude = ['^.*-rc.*$']

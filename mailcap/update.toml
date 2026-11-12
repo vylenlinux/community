@@ -5,6 +5,6 @@ provider = "github"
 owner = "InfrastructureServices"
 repo = "%(name)"
 
-[version]
+[version.normalize]
 strip_prefix = "r"
-replace = { - = "." }
+replace = { "-" = "." }

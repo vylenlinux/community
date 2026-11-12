@@ -5,5 +5,5 @@ provider = "github"
 owner = "brndnmtthws"
 repo = "conky"
 
-[version]
-exclude = ["1.999"]
+[version.filter]
+exclude = ["^1\\.999$"]

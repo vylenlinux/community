@@ -5,5 +5,5 @@ provider = "github"
 owner = "richgel999"
 repo = "miniz"
 
-[version]
-exclude = ["v*"]
+[version.filter]
+exclude = ['^v.*$']

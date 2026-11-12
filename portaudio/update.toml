@@ -5,5 +5,5 @@ provider = "github"
 owner = "portaudio"
 repo = "portaudio"
 
-[version]
-exclude = ["v19p-2008-03-20"]
+[version.filter]
+exclude = ['^v19p-2008-03-20$']

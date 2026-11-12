@@ -5,5 +5,5 @@ provider = "codeberg"
 owner = "schilytools"
 repo = "schilytools"
 
-[version]
-replace = { - = "." }
+[version.normalize]
+replace = { "-" = "." }

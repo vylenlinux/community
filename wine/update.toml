@@ -5,5 +5,5 @@ provider = "gitlab"
 instance = "https://gitlab.winehq.org/"
 project = "%(name)/%(name)"
 
-[version]
+[version.normalize]
 strip_prefix = "wine-"

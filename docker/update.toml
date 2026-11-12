@@ -8,5 +8,5 @@ repo = "moby"
 [github]
 use_releases = true
 
-[version]
+[version.normalize]
 strip_prefix = "%(name)-v"

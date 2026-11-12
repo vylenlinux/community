@@ -4,5 +4,5 @@ provider = "repology"
 [source]
 package = "re2"
 
-[version]
-replace = { - = "." }
+[version.normalize]
+replace = { "-" = "." }
