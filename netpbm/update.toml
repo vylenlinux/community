@@ -1,5 +1,6 @@
 name = "netpbm"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "netpbm"
+owner = "ceamac"
+repo = "%(name)-make-dist"
