@@ -1,5 +1,6 @@
 name = "jetbrains-toolbox"
-provider = "repology"
+provider = "json"
 
-[source]
-package = "jetbrains-toolbox"
+[json]
+url = "https://data.services.jetbrains.com/products/releases?code=TBA&latest=true&type=release"
+pointer = "/TBA/0/build"
