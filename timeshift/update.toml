@@ -1,5 +1,5 @@
 name = "timeshift"
-provider = "repology"
+provider = "linuxmint"
 
 [source]
-package = "timeshift"
+package = "%(name)"

@@ -6,7 +6,7 @@ homepage="https://github.com/linuxmint/timeshift"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=timeshift
-version=26.09.0
+version=26.11.0
 release=1
 source="${name}-${version}.tar.gz::https://github.com/linuxmint/${name}/archive/refs/tags/${version}.tar.gz"
 
