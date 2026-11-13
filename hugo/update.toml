@@ -1,5 +1,6 @@
 name = "hugo"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "hugo-sitegen"
+owner = "gohugoio"
+repo = "%(name)"
