@@ -1,9 +1,5 @@
-name = "ca-certificates"
-provider = "html"
+name = "geoip-database-extra"
+provider = "repology"
 
-[html]
-url = "https://mailfud.org/geoip-legacy/"
-selector = "table.indent tr td:nth-child(3) b"
-version_regex = '^([0-9]{1,2} (?:January|February|March|April|May|June|July|August|September|October|November|December) [0-9]{4})$'
-date_format = "%d %B %Y"
-date_output_format = "%Y%m%d"
+[source]
+package = "%(name)"
