@@ -1,5 +1,0 @@
-name = "gnu-efi"
-provider = "repology"
-
-[source]
-package = "gnu-efi"
