@@ -2,8 +2,8 @@
 
 # shellcheck disable=SC2034
 description="A scrollable-tiling Wayland compositor"
-maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://github.com/niri-wm/niri"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=niri
 version=26.04
@@ -15,9 +15,10 @@ source="https://github.com/niri-wm/${name}/archive/v${version}/${name}-${version
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
+    export NIRI_BUILD_COMMIT=b35bcae
 
     patch -Np1 -i "${SRC}/libdisplay-info-sys-0.3.0-libdisplay-info-0.4.patch"
-    export NIRI_BUILD_COMMIT=b35bcae
+    cargo fetch --locked
 
     cargo build \
         --release \
