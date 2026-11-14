@@ -13,17 +13,14 @@ source="${name}-${version}.tar.gz::https://github.com/eza-community/${name}/arch
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-
-    cargo update
-    cargo fetch
+    cargo fetch --locked
 
     cargo build \
         --release \
-        --locked
+        --frozen
 
     install -Dm755 "target/release/${name}" -t "${PKG}/usr/bin/"
     install -Dm644 "completions/bash/${name}" -t "${PKG}/usr/share/bash-completion/completions/"
-
-    emerald is-installed zsh && install -Dm644 "completions/zsh/_${name}" -t "${PKG}/usr/share/zsh/site-functions/"
-    emerald is-installed fish && install -Dm644 "completions/fish/${name}.fish" -t "${PKG}/usr/share/fish/vendor_completions.d/"
+    install -Dm644 "completions/zsh/_${name}" -t "${PKG}/usr/share/zsh/site-functions/"
+    install -Dm644 "completions/fish/${name}.fish" -t "${PKG}/usr/share/fish/vendor_completions.d/"
 }
