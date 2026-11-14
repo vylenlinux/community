@@ -13,7 +13,11 @@ source="${name}-${version}.tar.gz::https://github.com/${name}/${name}/archive/re
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-    CARGO_INCREMENTAL=0 cargo build --release --locked
+    cargo fetch --locked
+
+    CARGO_INCREMENTAL=0 cargo build \
+        --release \
+        --frozen
 
     # binary
     install -Dm755 "target/release/${name}" -t "$PKG/usr/bin/"
