@@ -13,9 +13,11 @@ source="${name}-${version}.tar.gz::https://codeberg.org/LGFae/${name}/archive/v$
 build() {
     # shellcheck disable=SC2164
     cd "${name}"
-
     cargo fetch --locked
-    cargo build --release
+
+    cargo build \
+        --release \
+        --frozen
 
     install -Dm755 "target/release/${name}" "target/release/${name}-daemon" -t "${PKG}/usr/bin/"
 }
