@@ -13,10 +13,11 @@ source="${name}-${version}.tar.gz::https://github.com/greshake/${name}/archive/r
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
+    cargo fetch --locked
 
     cargo build \
         --release \
-        --locked \
+        --frozen \
         --features "pipewire pulseaudio maildir"
 
     install -Dm755 target/release/i3status-rs -t "${PKG}/usr/bin/"
