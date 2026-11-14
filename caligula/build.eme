@@ -13,7 +13,11 @@ source="https://github.com/ifd3f/${name}/archive/v${version}/${name}-${version}.
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
+    cargo fetch --locked
 
-    cargo build --release
+    cargo build \
+        --release \
+        --frozen
+
     install -Dm755 "target/release/${name}" -t "${PKG}/usr/bin/"
 }
