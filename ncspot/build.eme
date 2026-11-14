@@ -17,7 +17,7 @@ build() {
 
     cargo build \
         --release \
-        --locked
+        --frozen
 
     install -Dm755 "target/release/${name}" -t "${PKG}/usr/bin/"
 }
