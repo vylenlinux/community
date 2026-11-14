@@ -8,12 +8,16 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=mdbook
 version=0.5.4
 release=1
-source="https://github.com/rust-lang-nursery/${name}/archive/v${version}/${name}-${version}.tar.gz"
+source="https://github.com/rust-lang/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
     cd "mdBook-${version}"
+    cargo fetch --locked
 
-    cargo build --release
+    cargo build \
+        --release \
+        --frozen
+
     install -Dm755 "target/release/${name}" -t "${PKG}/usr/bin/"
 }
