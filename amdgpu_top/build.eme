@@ -13,11 +13,11 @@ source="https://github.com/Umio-Yasuno/${name}/archive/v${version}/${name}-${ver
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
+    cargo fetch --locked
 
     cargo build \
         --release \
-        --features="tui" \
-        --manifest-path
+        --frozen
 
     install -Dm755 "target/release/${name}" -t "${PKG}/usr/bin"
     install -Dm644 assets/amdgpu_top.desktop -t "${PKG}/usr/share/applications/"
