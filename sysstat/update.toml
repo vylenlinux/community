@@ -1,5 +1,6 @@
 name = "sysstat"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "sysstat"
+owner = "%(name)"
+repo = "%(name)"
