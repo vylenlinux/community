@@ -27,11 +27,7 @@ build() {
     cd build
 
     make
-    make INSTALL_ROOT="${PKG}" install -j1
-
-    # compile Python bytecode
-    python3 -m compileall -d / "${PKG}/usr/lib"
-    python3 -O -m compileall -d / "${PKG}/usr/lib"
+    make INSTALL_ROOT="${PKG}" install
 
     # cleanup
     find "${PKG}" -iname "*INSTALLER*" -delete
