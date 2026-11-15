@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="PortAudio is a cross-platform, open-source C language library for real-time audio input and output"
 homepage="https://github.com/PortAudio/portaudio"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,11 +8,17 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=portaudio
 version=19.7.0
 release=1
-source="$name-$version.tar.gz::https://github.com/PortAudio/portaudio/archive/refs/tags/v$version.tar.gz"
+source="${name}-${version}.tar.gz::https://github.com/${name}/${name}/archive/refs/tags/v${version}.tar.gz"
 
 build() {
-	cd $name-$version
-    ./configure --prefix=/usr --enable-cxx --enable-static=no
-    make -j1
-	make DESTDIR=$PKG install
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    ./configure \
+        --prefix=/usr \
+        --enable-cxx \
+        --enable-static=no
+
+    make
+    make DESTDIR="${PKG}" install
 }
