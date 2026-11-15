@@ -32,7 +32,4 @@ build() {
 
     make
     make DESTDIR="${PKG}" install
-
-    # Exclude libraries for revdep
-    do_revdep
 }

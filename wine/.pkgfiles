@@ -1606,8 +1606,6 @@ drwxr-xr-x root/root    usr/include/wine/windows/winsqlite/
 -rw-r--r-- root/root    usr/include/wine/windows/xpsobjectmodel_1.idl
 -rw-r--r-- root/root    usr/include/wine/windows/zmouse.h
 drwxr-xr-x root/root    usr/lib/
-drwxr-xr-x root/root    usr/lib/revdep.d/
--rw-r--r-- root/root    usr/lib/revdep.d/wine.conf
 drwxr-xr-x root/root    usr/lib/wine/
 drwxr-xr-x root/root    usr/lib/wine/i386-windows/
 -rw-r--r-- root/root    usr/lib/wine/i386-windows/acledit.dll
