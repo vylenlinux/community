@@ -19,6 +19,4 @@ build() {
 
     rm -f "${PKG}/usr/share/glib-2.0/schemas/org.gnome.gedit.plugins.wordcompletion.gschema.xml" \
         "${PKG}/usr/share/glib-2.0/schemas/org.gnome.gedit.plugins.drawspaces.gschema.xml"
-
-    do_revdep
 }

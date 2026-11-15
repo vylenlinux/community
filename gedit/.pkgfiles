@@ -27,8 +27,6 @@ drwxr-xr-x root/root    usr/lib/gedit/girepository-1.0/
 -rwxr-xr-x root/root    usr/lib/gedit/libgedit-51.so
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/gedit.pc
-drwxr-xr-x root/root    usr/lib/revdep.d/
--rw-r--r-- root/root    usr/lib/revdep.d/gedit.conf
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/applications/
 -rw-r--r-- root/root    usr/share/applications/org.gnome.gedit.desktop
