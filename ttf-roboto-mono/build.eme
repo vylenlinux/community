@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
+description="A monospaced addition to the Roboto type family."
+homepage="https://fonts.google.com/specimen/Roboto+Mono"
+maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
+
+name=ttf-roboto-mono
+version=3.001
+release=1
+source="${name}-${version}.tar.gz::https://github.com/googlefonts/RobotoMono/archive/refs/tags/v${version}.tar.gz"
+
+build() {
+    install -Dm644 "RobotoMono-${version}/fonts/ttf"/*.ttf -t "${PKG}/usr/share/fonts/TTF/"
+}
