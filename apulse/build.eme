@@ -13,13 +13,10 @@ source="${name}-${version}.tar.gz::https://github.com/i-rinat/${name}/archive/v$
 build() {
     cmake -S "${name}-${version}" -B build -G Ninja \
         -DCMAKE_INSTALL_PREFIX=/usr \
-        -DCMAKE_INSTALL_LIBDIR=/usr/lib \
-        -DCMAKE_INSTALL_LIBEXECDIR=/usr/lib \
         -DCMAKE_BUILD_TYPE=Release \
-        -DCMAKE_C_FLAGS_RELEASE="${CFLAGS}"
+        -DCMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
+        -Wno-author
 
     cmake --build build
     DESTDIR="${PKG}" cmake --install build
-
-    do_revdep
 }
