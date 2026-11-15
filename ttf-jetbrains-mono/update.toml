@@ -1,0 +1,6 @@
+name = "ttf-jetbrains-mono"
+provider = "github"
+
+[source]
+owner = "JetBrains"
+repo = "JetBrainsMono"
