@@ -43,7 +43,7 @@ drwxr-xr-x root/root    usr/lib/python3.15/site-packages/nwg_panel/__pycache__/
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/common.py
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/config.py
 drwxr-xr-x root/root    usr/lib/python3.15/site-packages/nwg_panel/config/
--rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/config/config
+-rw-rw-r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/config/config
 -rw-rw-r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/config/style.css
 -rw-r--r-- root/root    usr/lib/python3.15/site-packages/nwg_panel/dwl_interface.py
 drwxr-xr-x root/root    usr/lib/python3.15/site-packages/nwg_panel/executors/

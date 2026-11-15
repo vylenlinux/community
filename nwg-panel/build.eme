@@ -8,9 +8,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=nwg-panel
 version=0.12.4
 release=1
-
-source="${name}-${version}.tar.gz::https://github.com/nwg-piotr/${name}/archive/refs/tags/v${version}.tar.gz
-    config"
+source="${name}-${version}.tar.gz::https://github.com/nwg-piotr/${name}/archive/refs/tags/v${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
@@ -27,6 +25,4 @@ build() {
     for app in nwg-panel-config nwg-processes; do
         install -Dm644 "${app}.desktop" -t "${PKG}/usr/share/applications/"
     done
-
-    install -Dm644 "${SRC}/config" -t "${PKG}/${PYTHON_SITE_PACKAGES}/nwg_panel/config/"
 }
