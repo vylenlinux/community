@@ -23,5 +23,5 @@ build() {
         conf_dir="/etc/${name}"
 
     make
-    make DESTDIR="${PKG}" install
+    make DESTDIR="${PKG}" SA_LIB_DIR=/usr/lib/sa install
 }

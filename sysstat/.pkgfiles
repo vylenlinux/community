@@ -12,6 +12,10 @@ drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/sar
 -rwxr-xr-x root/root    usr/bin/tapestat
 drwxr-xr-x root/root    usr/lib/
+drwxr-xr-x root/root    usr/lib/sa/
+-rwxr-xr-x root/root    usr/lib/sa/sa1
+-rwxr-xr-x root/root    usr/lib/sa/sa2
+-rwxr-xr-x root/root    usr/lib/sa/sadc
 drwxr-xr-x root/root    usr/lib/systemd/
 drwxr-xr-x root/root    usr/lib/systemd/system-sleep/
 -rwxr-xr-x root/root    usr/lib/systemd/system-sleep/sysstat.sleep
@@ -23,11 +27,6 @@ drwxr-xr-x root/root    usr/lib/systemd/system/
 -rw-r--r-- root/root    usr/lib/systemd/system/sysstat-summary.service
 -rw-r--r-- root/root    usr/lib/systemd/system/sysstat-summary.timer
 -rw-r--r-- root/root    usr/lib/systemd/system/sysstat.service
-drwxr-xr-x root/root    usr/lib64/
-drwxr-xr-x root/root    usr/lib64/sa/
--rwxr-xr-x root/root    usr/lib64/sa/sa1
--rwxr-xr-x root/root    usr/lib64/sa/sa2
--rwxr-xr-x root/root    usr/lib64/sa/sadc
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/locale/
 drwxr-xr-x root/root    usr/share/locale/af/
