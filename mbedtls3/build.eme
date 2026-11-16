@@ -6,7 +6,7 @@ homepage="https://tls.mbed.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=mbedtls3
-version=3.6.7
+version=3.6.8
 release=1
 source="https://downloads.sourceforge.net/project/vylen/sources/${name}/${name}-${version}.tar.xz"
 

@@ -1,8 +1,9 @@
 name = "mbedtls3"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "mbedtls"
+owner = "Mbed-TLS"
+repo = "mbedtls"
 
-[repology]
-match_name = "mbedtls3"
+[version.filter]
+include = ['^v3.*$']
