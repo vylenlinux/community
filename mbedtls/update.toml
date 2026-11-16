@@ -1,5 +1,6 @@
 name = "mbedtls"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "mbedtls"
+owner = "Mbed-TLS"
+repo = "%(name)"

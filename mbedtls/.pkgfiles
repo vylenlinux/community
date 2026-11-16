@@ -151,6 +151,7 @@ drwxr-xr-x root/root    usr/include/tf-psa-crypto/private/everest/kremlin/intern
 drwxr-xr-x root/root    usr/include/tf-psa-crypto/private/everest/vs2013/
 -rw-r--r-- root/root    usr/include/tf-psa-crypto/private/everest/vs2013/Hacl_Curve25519.h
 -rw-r--r-- root/root    usr/include/tf-psa-crypto/private/everest/x25519.h
+-rw-r--r-- root/root    usr/include/tf-psa-crypto/private/mldsa.h
 -rw-r--r-- root/root    usr/include/tf-psa-crypto/version.h
 drwxr-xr-x root/root    usr/lib/
 drwxr-xr-x root/root    usr/lib/cmake/
@@ -166,20 +167,20 @@ drwxr-xr-x root/root    usr/lib/cmake/TF-PSA-Crypto/
 -rw-r--r-- root/root    usr/lib/cmake/TF-PSA-Crypto/TF-PSA-CryptoTargets.cmake
 -rw-r--r-- root/root    usr/lib/libmbedcrypto.a
 lrwxrwxrwx root/root    usr/lib/libmbedcrypto.so -> libmbedcrypto.so.18
-lrwxrwxrwx root/root    usr/lib/libmbedcrypto.so.18 -> libmbedcrypto.so.4.2.0
--rw-r--r-- root/root    usr/lib/libmbedcrypto.so.4.2.0
+lrwxrwxrwx root/root    usr/lib/libmbedcrypto.so.18 -> libmbedcrypto.so.4.3.0
+-rw-r--r-- root/root    usr/lib/libmbedcrypto.so.4.3.0
 -rw-r--r-- root/root    usr/lib/libmbedtls.a
-lrwxrwxrwx root/root    usr/lib/libmbedtls.so -> libmbedtls.so.23
-lrwxrwxrwx root/root    usr/lib/libmbedtls.so.23 -> libmbedtls.so.4.2.0
--rwxr-xr-x root/root    usr/lib/libmbedtls.so.4.2.0
+lrwxrwxrwx root/root    usr/lib/libmbedtls.so -> libmbedtls.so.24
+lrwxrwxrwx root/root    usr/lib/libmbedtls.so.24 -> libmbedtls.so.4.3.0
+-rwxr-xr-x root/root    usr/lib/libmbedtls.so.4.3.0
 -rw-r--r-- root/root    usr/lib/libmbedx509.a
 lrwxrwxrwx root/root    usr/lib/libmbedx509.so -> libmbedx509.so.9
--rwxr-xr-x root/root    usr/lib/libmbedx509.so.4.2.0
-lrwxrwxrwx root/root    usr/lib/libmbedx509.so.9 -> libmbedx509.so.4.2.0
+-rwxr-xr-x root/root    usr/lib/libmbedx509.so.4.3.0
+lrwxrwxrwx root/root    usr/lib/libmbedx509.so.9 -> libmbedx509.so.4.3.0
 -rw-r--r-- root/root    usr/lib/libtfpsacrypto.a
 lrwxrwxrwx root/root    usr/lib/libtfpsacrypto.so -> libtfpsacrypto.so.2
--rwxr-xr-x root/root    usr/lib/libtfpsacrypto.so.1.2.0
-lrwxrwxrwx root/root    usr/lib/libtfpsacrypto.so.2 -> libtfpsacrypto.so.1.2.0
+-rwxr-xr-x root/root    usr/lib/libtfpsacrypto.so.1.3.0
+lrwxrwxrwx root/root    usr/lib/libtfpsacrypto.so.2 -> libtfpsacrypto.so.1.3.0
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/mbedcrypto.pc
 -rw-r--r-- root/root    usr/lib/pkgconfig/mbedtls.pc
