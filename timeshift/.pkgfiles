@@ -1,6 +1,6 @@
 drwxr-xr-x root/root    etc/
 drwxr-xr-x root/root    etc/timeshift/
--rw-r--r-- root/root    etc/timeshift/default.json
+-rw-r--r-- root/root    etc/timeshift/default.json.epkgnew
 drwxr-xr-x root/root    usr/
 drwxr-xr-x root/root    usr/bin/
 -rwxr-xr-x root/root    usr/bin/timeshift
@@ -36,6 +36,9 @@ drwxr-xr-x root/root    usr/share/icons/hicolor/96x96/
 drwxr-xr-x root/root    usr/share/icons/hicolor/96x96/apps/
 -rw-r--r-- root/root    usr/share/icons/hicolor/96x96/apps/timeshift.png
 drwxr-xr-x root/root    usr/share/locale/
+drwxr-xr-x root/root    usr/share/locale/af/
+drwxr-xr-x root/root    usr/share/locale/af/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/af/LC_MESSAGES/timeshift.mo
 drwxr-xr-x root/root    usr/share/locale/am/
 drwxr-xr-x root/root    usr/share/locale/am/LC_MESSAGES/
 -rw-r--r-- root/root    usr/share/locale/am/LC_MESSAGES/timeshift.mo
@@ -75,6 +78,9 @@ drwxr-xr-x root/root    usr/share/locale/de/LC_MESSAGES/
 drwxr-xr-x root/root    usr/share/locale/el/
 drwxr-xr-x root/root    usr/share/locale/el/LC_MESSAGES/
 -rw-r--r-- root/root    usr/share/locale/el/LC_MESSAGES/timeshift.mo
+drwxr-xr-x root/root    usr/share/locale/en_CA/
+drwxr-xr-x root/root    usr/share/locale/en_CA/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/en_CA/LC_MESSAGES/timeshift.mo
 drwxr-xr-x root/root    usr/share/locale/en_GB/
 drwxr-xr-x root/root    usr/share/locale/en_GB/LC_MESSAGES/
 -rw-r--r-- root/root    usr/share/locale/en_GB/LC_MESSAGES/timeshift.mo
@@ -105,6 +111,9 @@ drwxr-xr-x root/root    usr/share/locale/fr/LC_MESSAGES/
 drwxr-xr-x root/root    usr/share/locale/fr_CA/
 drwxr-xr-x root/root    usr/share/locale/fr_CA/LC_MESSAGES/
 -rw-r--r-- root/root    usr/share/locale/fr_CA/LC_MESSAGES/timeshift.mo
+drwxr-xr-x root/root    usr/share/locale/gl/
+drwxr-xr-x root/root    usr/share/locale/gl/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/gl/LC_MESSAGES/timeshift.mo
 drwxr-xr-x root/root    usr/share/locale/he/
 drwxr-xr-x root/root    usr/share/locale/he/LC_MESSAGES/
 -rw-r--r-- root/root    usr/share/locale/he/LC_MESSAGES/timeshift.mo
@@ -141,6 +150,9 @@ drwxr-xr-x root/root    usr/share/locale/ka/LC_MESSAGES/
 drwxr-xr-x root/root    usr/share/locale/kab/
 drwxr-xr-x root/root    usr/share/locale/kab/LC_MESSAGES/
 -rw-r--r-- root/root    usr/share/locale/kab/LC_MESSAGES/timeshift.mo
+drwxr-xr-x root/root    usr/share/locale/kk/
+drwxr-xr-x root/root    usr/share/locale/kk/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/kk/LC_MESSAGES/timeshift.mo
 drwxr-xr-x root/root    usr/share/locale/ko/
 drwxr-xr-x root/root    usr/share/locale/ko/LC_MESSAGES/
 -rw-r--r-- root/root    usr/share/locale/ko/LC_MESSAGES/timeshift.mo
@@ -159,6 +171,9 @@ drwxr-xr-x root/root    usr/share/locale/lt/LC_MESSAGES/
 drwxr-xr-x root/root    usr/share/locale/lv/
 drwxr-xr-x root/root    usr/share/locale/lv/LC_MESSAGES/
 -rw-r--r-- root/root    usr/share/locale/lv/LC_MESSAGES/timeshift.mo
+drwxr-xr-x root/root    usr/share/locale/mi/
+drwxr-xr-x root/root    usr/share/locale/mi/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/mi/LC_MESSAGES/timeshift.mo
 drwxr-xr-x root/root    usr/share/locale/mk/
 drwxr-xr-x root/root    usr/share/locale/mk/LC_MESSAGES/
 -rw-r--r-- root/root    usr/share/locale/mk/LC_MESSAGES/timeshift.mo
@@ -225,6 +240,9 @@ drwxr-xr-x root/root    usr/share/locale/th/LC_MESSAGES/
 drwxr-xr-x root/root    usr/share/locale/tr/
 drwxr-xr-x root/root    usr/share/locale/tr/LC_MESSAGES/
 -rw-r--r-- root/root    usr/share/locale/tr/LC_MESSAGES/timeshift.mo
+drwxr-xr-x root/root    usr/share/locale/ug/
+drwxr-xr-x root/root    usr/share/locale/ug/LC_MESSAGES/
+-rw-r--r-- root/root    usr/share/locale/ug/LC_MESSAGES/timeshift.mo
 drwxr-xr-x root/root    usr/share/locale/uk/
 drwxr-xr-x root/root    usr/share/locale/uk/LC_MESSAGES/
 -rw-r--r-- root/root    usr/share/locale/uk/LC_MESSAGES/timeshift.mo
