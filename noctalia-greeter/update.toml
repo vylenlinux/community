@@ -1,0 +1,6 @@
+name = "noctalia-greeter"
+provider = "github"
+
+[source]
+owner = "noctalia-dev"
+repo = "%(name)"
