@@ -5,7 +5,9 @@ drwxr-xr-x root/root    usr/bin/
 -rws--x--x root/root    usr/bin/mount.nfs
 lrwxrwxrwx root/root    usr/bin/mount.nfs4 -> mount.nfs
 -rwxr-xr-x root/root    usr/bin/mountstats
+-rwxr-xr-x root/root    usr/bin/nfs-fh-verify
 -rwxr-xr-x root/root    usr/bin/nfsconf
+-rwxr-xr-x root/root    usr/bin/nfsd-iomode-advisor
 -rwxr-xr-x root/root    usr/bin/nfsdcld
 -rwxr-xr-x root/root    usr/bin/nfsdclddb
 -rwxr-xr-x root/root    usr/bin/nfsdclnts
@@ -85,7 +87,9 @@ drwxr-xr-x root/root    usr/share/man/man8/
 -rw-r--r-- root/root    usr/share/man/man8/mount.nfs.8.gz
 -rw-r--r-- root/root    usr/share/man/man8/mountd.8.gz
 -rw-r--r-- root/root    usr/share/man/man8/mountstats.8.gz
+-rw-r--r-- root/root    usr/share/man/man8/nfs-fh-verify.8.gz
 -rw-r--r-- root/root    usr/share/man/man8/nfsconf.8.gz
+-rw-r--r-- root/root    usr/share/man/man8/nfsd-iomode-advisor.8.gz
 -rw-r--r-- root/root    usr/share/man/man8/nfsd.8.gz
 -rw-r--r-- root/root    usr/share/man/man8/nfsdcld.8.gz
 -rw-r--r-- root/root    usr/share/man/man8/nfsdclddb.8.gz
