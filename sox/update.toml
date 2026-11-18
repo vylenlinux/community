@@ -1,5 +1,9 @@
 name = "sox"
-provider = "repology"
+provider = "codeberg"
 
 [source]
-package = "sox"
+owner = "%(name)_ng"
+repo = "%(name)_ng"
+
+[version.normalize]
+strip_prefix = "%(name)_ng-"
