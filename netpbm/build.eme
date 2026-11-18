@@ -6,23 +6,20 @@ homepage="https://netpbm.sourceforge.net/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=netpbm
-version=11.16.2
+version=11.16.5
 release=1
 
-source="https://github.com/ceamac/${name}-make-dist/releases/download/v${version}/${name}-${version}.tar.xz
+source="https://downloads.sourceforge.net/project/vylen/sources/${name}/${name}-${version}.tar.xz
     pgmtopbm
     config.mk"
 
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-
     cp config.mk.in config.mk
-    cat "${SRC}/config.mk" >> config.mk
 
-    sed -i 's|misc|share/netpbm|' common.mk
-    sed -i 's|/link|/lib|' lib/Makefile
-    sed -i 's|install.manwebmain install.manweb install.man|install.man|' GNUmakefile
+    cat "${SRC}/config.mk" >> config.mk
+    sed 's|misc|share/netpbm|' -i common.mk
 
     make
     make pkgdir="${PKG}/usr" PKGMANDIR=share/man install-run install-dev

@@ -1,6 +1,8 @@
 name = "netpbm"
-provider = "github"
+provider = "repology"
 
 [source]
-owner = "ceamac"
-repo = "%(name)-make-dist"
+package = "%(name)"
+
+[version.filter]
+exclude = ['[0-9]+\.[0-9]+\.0[0-9]+']
