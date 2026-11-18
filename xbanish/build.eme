@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Hide the mouse cursor when typing"
 homepage="https://github.com/jcs/xbanish"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,10 +8,12 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=xbanish
 version=1.8
 release=1
-source="$name-$version.zip::https://github.com/jcs/xbanish/archive/v${version}.zip"
+source="https://github.com/jcs/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
-	cd $name-$version
-	make
-	make PREFIX=/usr DESTDIR=$PKG install
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+
+    make
+    make PREFIX=/usr MANDIR=/usr/share/man/man1 DESTDIR="${PKG}" install
 }
