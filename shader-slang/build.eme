@@ -22,6 +22,7 @@ build() {
         -DSLANG_USE_SYSTEM_SPIRV_HEADERS=yes \
         -DSLANG_USE_SYSTEM_SPIRV_TOOLS=yes \
         -DSLANG_USE_SYSTEM_VULKAN_HEADERS=yes \
+        -DSLANG_USE_SYSTEM_LZ4=yes \
         \
         -DSLANG_SLANG_LLVM_FLAVOR=DISABLE \
         -DSLANG_ENABLE_PCH=no \

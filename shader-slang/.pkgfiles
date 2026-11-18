@@ -66,6 +66,16 @@ drwxr-xr-x root/root    usr/lib/slang-standard-module-2026.22/slang/numerics/
 -rw-r--r-- root/root    usr/lib/slang-standard-module-2026.22/slang/numerics/__builtin_differentiable.slang-module
 -rw-r--r-- root/root    usr/lib/slang-standard-module-2026.22/slang/numerics/differentiable.slang-module
 -rw-r--r-- root/root    usr/lib/slang-standard-module-2026.22/slang/permuto-encoder.slang
+drwxr-xr-x root/root    usr/lib/slang-standard-module-2026.22/slang/raytracing/
+-rw-r--r-- root/root    usr/lib/slang-standard-module-2026.22/slang/raytracing/contexts.slang
+-rw-r--r-- root/root    usr/lib/slang-standard-module-2026.22/slang/raytracing/descriptor.slang
+-rw-r--r-- root/root    usr/lib/slang-standard-module-2026.22/slang/raytracing/portable.slang
+-rw-r--r-- root/root    usr/lib/slang-standard-module-2026.22/slang/raytracing/portable.slang-module
+-rw-r--r-- root/root    usr/lib/slang-standard-module-2026.22/slang/raytracing/program-schema.slang
+-rw-r--r-- root/root    usr/lib/slang-standard-module-2026.22/slang/raytracing/ray-types.slang
+-rw-r--r-- root/root    usr/lib/slang-standard-module-2026.22/slang/raytracing/stage-contracts.slang
+-rw-r--r-- root/root    usr/lib/slang-standard-module-2026.22/slang/raytracing/stage-inputs.slang
+-rw-r--r-- root/root    usr/lib/slang-standard-module-2026.22/slang/raytracing/trace.slang
 -rw-r--r-- root/root    usr/lib/slang-standard-module-2026.22/slang/shared-memory-pool.slang
 -rw-r--r-- root/root    usr/lib/slang-standard-module-2026.22/slang/vectorized-reader.slang
 drwxr-xr-x root/root    usr/share/
