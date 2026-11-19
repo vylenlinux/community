@@ -1,5 +1,6 @@
 name = "restic"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "restic"
+owner = "%(name)"
+repo = "%(name)"
