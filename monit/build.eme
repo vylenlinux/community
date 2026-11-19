@@ -6,16 +6,13 @@ homepage="https://mmonit.com/monit/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=monit
-version=6.0.0
+version=6.1.0
 release=1
-
-source="https://mmonit.com/${name}/dist/${name}-${version}.tar.gz
-    fix-paths-in-systemd-service.patch"
+source="https://mmonit.com/${name}/dist/${name}-${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
     cd "${name}-${version}"
-    patch -Np1 -i "${SRC}/fix-paths-in-systemd-service.patch"
 
     ./configure \
         --prefix=/usr \

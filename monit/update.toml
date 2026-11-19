@@ -1,5 +1,6 @@
 name = "monit"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "monit"
+[ftp]
+url = "https://mmonit.com/%(name)/dist/"
+filename = "%(name)-%(version).tar.gz"
