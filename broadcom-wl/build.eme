@@ -10,7 +10,7 @@ version=6.30.223.271
 release=1
 
 source="${name}-${version}.tar.gz::https://docs.broadcom.com/docs-and-downloads/docs/linux_sta/hybrid-v35_64-nodebug-pcoem-$(printf '%s' "${version}" | tr '.' '_').tar.gz
-    broadcom-wl-kernel.conf
+    ${name}-kernel.conf
     dkms.conf.in
     001-null-pointer-fix.patch
     003-linux407.patch
@@ -41,7 +41,7 @@ build() {
         case "${s}" in
             *.patch)
                 msg_info "Applying patch ${s}..."
-                patch -Np1 --no-backup-if-mismatch -i "${SRC}/${s}"
+                patch -Np1 --no-backup-if-mismatch -i "${s}"
             ;;
         esac
     done
@@ -56,8 +56,8 @@ build() {
     install -Dm644 Makefile "${PKG}/usr/src/${name}-${version}/Makefile"
     install -Dm644 dkms.conf "${PKG}/usr/src/${name}-${version}/dkms.conf"
 
-    install -Dm644 lib/wlc_hybrid.o_shipped "${PKG}/usr/lib/${name}/wlc_hybrid.o_shipped"
-    install -Dm644 "${SRC}/broadcom-wl-kernel.conf" -t "${PKG}/etc/modprobe.d/"
+    install -Dm644 lib/wlc_hybrid.o_shipped -t "${PKG}/usr/lib/${name}/"
+    install -Dm644 "${name}-kernel.conf" -t "${PKG}/etc/modprobe.d/"
 
     do_dkms
 }

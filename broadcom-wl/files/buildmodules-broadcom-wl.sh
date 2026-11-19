@@ -8,19 +8,13 @@ dkms_install() {
     [ -n "${kernel_version}" ] || kernel_version="$(uname -r)"
     printf "dkms: building broadcom-wl modules for kernel %s...\n" "${kernel_version}"
 
-    dkms add     -m broadcom-wl -v %version% -k "${kernel_version}" >/dev/null 2>&1
-    dkms build   -m broadcom-wl -v %version% -k "${kernel_version}" >/dev/null 2>&1
-    dkms install -m broadcom-wl -v %version% -k "${kernel_version}" >/dev/null 2>&1
+    dkms add     -m broadcom-wl/%version%
+    dkms build   -m broadcom-wl/%version% -k "${kernel_version}"
+    dkms install -m broadcom-wl/%version% -k "${kernel_version}"
 }
 
 dkms_remove() {
-    dkms status -m broadcom-wl | while read -r line; do
-        module="$(printf "%s\n" "${line}" | sed 's/,//g' | awk '{print $1;}')"
-        kernel_version="$(printf "%s\n" "${line}" | sed 's/,//g' | awk '{print $2;}')"
-
-        printf "dkms: remove broadcom-wl modules for kernel %s...\n" "${kernel_version}"
-        dkms remove -m "${module}" -k "${kernel_version}" >/dev/null 2>&1
-    done
+    dkms remove -m broadcom-wl --all
 }
 
 case "${1}" in
