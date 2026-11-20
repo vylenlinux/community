@@ -6,7 +6,7 @@ homepage="https://metacpan.org/release/Net-DNS"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=perl-net-dns
-version=1.57
+version=1.58
 release=1
 source="${name}-${version}.tar.gz::http://search.cpan.org/CPAN/authors/id/N/NL/NLNETLABS/Net-DNS-${version}.tar.gz"
 
