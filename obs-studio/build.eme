@@ -6,7 +6,7 @@ homepage="https://obsproject.com/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=obs-studio
-version=33.0.1
+version=33.0.2
 release=1
 source="https://github.com/obsproject/${name}/archive/${version}/${name}-${version}.tar.gz"
 
@@ -28,10 +28,7 @@ build() {
         -DENABLE_PIPEWIRE=ON \
         -DENABLE_PULSEAUDIO=ON \
         -DENABLE_QSV11=OFF \
-        -DMbedTLS_INCLUDE_DIR=/usr/include/mbedtls3 \
-        -DMbedtls_LIBRARY=/usr/lib/mbedtls3/libmbedtls.so \
-        -DMbedcrypto_LIBRARY=/usr/lib/mbedtls3/libmbedcrypto.so \
-        -DMbedx509_LIBRARY=/usr/lib/mbedtls3/libmbedx509.so \
+        -DMbedTLS_DIR=/usr/lib/mbedtls3/cmake/MbedTLS \
         -DENABLE_SCRIPTING_LUA="$(emerald is-installed luajit && printf "ON" || printf "OFF")" \
         -DENABLE_VLC=OFF \
         -DENABLE_VST=OFF \
