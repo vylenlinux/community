@@ -6,7 +6,7 @@ homepage="https://dianne.skoll.ca/projects/remind/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=remind
-version=06.03.06
+version=06.03.07
 release=1
 source="https://dianne.skoll.ca/projects/${name}/download/${name}-${version}.tar.gz"
 
@@ -15,6 +15,6 @@ build() {
     cd "${name}-${version}"
     ./configure
 
-    sed -i 's|prefix=/usr/local|prefix=/usr|' src/Makefile
+    sed 's|prefix=/usr/local|prefix=/usr|' -i src/Makefile
     make DESTDIR="${PKG}" install
 }

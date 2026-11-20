@@ -1,5 +1,6 @@
 name = "remind"
-provider = "repology"
+provider = "gitlab"
 
 [source]
-package = "remind"
+instance = "https://salsa.debian.org/"
+project = "dskoll/%(name)"
