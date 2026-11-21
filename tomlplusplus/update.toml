@@ -1,5 +1,6 @@
 name = "tomlplusplus"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "tomlplusplus"
+owner = "marzer"
+repo = "%(name)"

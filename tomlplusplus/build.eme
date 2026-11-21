@@ -1,14 +1,17 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Header-only TOML config file parser and serializer for C++17"
 homepage="https://marzer.github.io/tomlplusplus/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=tomlplusplus
-version=3.4.0
+version=3.5.0
 release=1
-source="$name-$version.tar.gz::https://github.com/marzer/$name/archive/refs/tags/v$version.tar.gz"
+source="https://github.com/marzer/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
-	vylen-meson $name-$version build
-	meson compile -C build
-	DESTDIR=$PKG meson install --no-rebuild -C build
+    vylen-meson "${name}-${version}" build
+    meson compile -C build
+    DESTDIR="${PKG}" meson install --no-rebuild -C build
 }
