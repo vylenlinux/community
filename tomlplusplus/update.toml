@@ -4,3 +4,6 @@ provider = "github"
 [source]
 owner = "marzer"
 repo = "%(name)"
+
+[version.filter]
+exclude = ['^v3\.5\.0$'] # marked as disposable
