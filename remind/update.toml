@@ -4,3 +4,6 @@ provider = "gitlab"
 [source]
 instance = "https://salsa.debian.org/"
 project = "dskoll/%(name)"
+
+[version.filter]
+exclude = ['.*-BETA-.*']
