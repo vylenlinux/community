@@ -1,5 +1,9 @@
 name = "distrobox"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "distrobox"
+owner = "89luca89"
+repo = "%(name)"
+
+[version.filter]
+exclude = ['.*-rc\..*']

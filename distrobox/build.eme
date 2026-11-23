@@ -6,9 +6,9 @@ homepage="https://github.com/89luca89/distrobox"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=distrobox
-version=1.8.2.5
+version=1.8.2.6
 release=1
-source="${name}-${version}.tar.gz::https://github.com/89luca89/${name}/archive/${version}.tar.gz"
+source="https://github.com/89luca89/${name}/archive/${version}/${name}-${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
