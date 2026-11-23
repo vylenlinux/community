@@ -6,7 +6,7 @@ homepage="https://github.com/brndnmtthws/conky"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=conky
-version=1.26.1
+version=1.26.2
 release=1
 source="https://github.com/brndnmtthws/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
@@ -21,6 +21,8 @@ build() {
         -DBUILD_I18N=OFF \
         -DBUILD_CURL=ON \
         -DBUILD_RSS=ON \
+        -DBUILD_JOURNAL=ON \
+        -DBUILD_SHARED_LIBS=ON \
         \
         -DRELEASE=TRUE \
         \
