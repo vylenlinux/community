@@ -6,7 +6,7 @@ homepage="https://mkvtoolnix.download/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=mkvtoolnix
-version=103.0
+version=104.0
 release=1
 source="https://mkvtoolnix.download/sources/${name}-${version}.tar.xz"
 
@@ -16,10 +16,12 @@ build() {
 
     ./configure \
         --prefix=/usr \
+        \
         --disable-precompiled-headers \
         --disable-update-check \
-        --enable-gui \
         --disable-qt5 \
+        \
+        --enable-gui \
         --enable-qt6
 
     rake \

@@ -1,5 +1,6 @@
 name = "mkvtoolnix"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "mkvtoolnix"
+[ftp]
+url = "https://mkvtoolnix.download/sources/"
+filename = "%(name)-%(version).tar.xz"
