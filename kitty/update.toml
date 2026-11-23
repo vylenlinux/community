@@ -3,4 +3,4 @@ provider = "github"
 
 [source]
 owner = "kovidgoyal"
-repo = "kitty"
+repo = "%(name)"
