@@ -1,5 +1,9 @@
 name = "vkd3d"
-provider = "repology"
+provider = "gitlab"
 
 [source]
-package = "vkd3d"
+instance = "https://gitlab.winehq.org/"
+project = "wine/%(name)"
+
+[version.normalize]
+strip_prefix = "%(name)-"
