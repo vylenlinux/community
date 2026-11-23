@@ -1,5 +1,5 @@
 name = "libgedit-gfls"
-provider = "repology"
+provider = "gnome"
 
 [source]
-package = "libgedit-gfls"
+package = "world/gedit/%(name)"
