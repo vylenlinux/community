@@ -1,5 +1,12 @@
 name = "yarn-berry"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "yarn"
+owner = "yarnpkg"
+repo = "berry"
+
+[version.normalize]
+strip_prefix = "@yarnpkg/cli/"
+
+[version.filter]
+include = ['^@yarnpkg/cli/.*$']

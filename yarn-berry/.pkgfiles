@@ -208,6 +208,9 @@ drwxr-xr-x root/root    usr/lib/node_modules/yarn/packages/acceptance-tests/pkg-
 -rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/acceptance-tests/pkg-tests-fixtures/packages/has-bin-entries-2.0.0/index.js
 -rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/acceptance-tests/pkg-tests-fixtures/packages/has-bin-entries-2.0.0/package.json
 -rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/acceptance-tests/pkg-tests-fixtures/packages/has-bin-entries-2.0.0/secret.js
+drwxr-xr-x root/root    usr/lib/node_modules/yarn/packages/acceptance-tests/pkg-tests-fixtures/packages/has-bin-peer-deps-1.0.0/
+-rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/acceptance-tests/pkg-tests-fixtures/packages/has-bin-peer-deps-1.0.0/bin.js
+-rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/acceptance-tests/pkg-tests-fixtures/packages/has-bin-peer-deps-1.0.0/package.json
 drwxr-xr-x root/root    usr/lib/node_modules/yarn/packages/acceptance-tests/pkg-tests-fixtures/packages/has-symlinks-1.0.0/
 -rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/acceptance-tests/pkg-tests-fixtures/packages/has-symlinks-1.0.0/index.js
 -rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/acceptance-tests/pkg-tests-fixtures/packages/has-symlinks-1.0.0/package.json
@@ -1571,6 +1574,8 @@ drwxr-xr-x root/root    usr/lib/node_modules/yarn/packages/plugin-npm/tests/
 -rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/plugin-npm/tests/NpmSemverResolver.test.ts
 -rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/plugin-npm/tests/_makeConfiguration.js
 -rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/plugin-npm/tests/npmHttpUtils.test.ts
+-rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/plugin-npm/tests/npmMetadataCache.test.ts
+-rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/plugin-npm/tests/npmProvenance.test.ts
 drwxr-xr-x root/root    usr/lib/node_modules/yarn/packages/plugin-pack/
 -rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/plugin-pack/README.md
 -rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/plugin-pack/package.json
@@ -1603,12 +1608,6 @@ drwxr-xr-x root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/__
 -rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/__snapshots__/parsePatchFile.test.ts.snap
 -rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/diffFolders.test.ts
 drwxr-xr-x root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/fixtures/
-drwxr-xr-x root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/fixtures/\346\265\213\350\257\225/
-drwxr-xr-x root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/fixtures/\346\265\213\350\257\225/a/
--rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/fixtures/\346\265\213\350\257\225/a/.gitkeep
-drwxr-xr-x root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/fixtures/\346\265\213\350\257\225/b/
--rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/fixtures/\346\265\213\350\257\225/b/.gitkeep
--rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/fixtures/\346\265\213\350\257\225/b/foo.txt
 drwxr-xr-x root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/fixtures/create/
 drwxr-xr-x root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/fixtures/create/a/
 -rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/fixtures/create/a/.gitkeep
@@ -1631,6 +1630,12 @@ drwxr-xr-x root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/fi
 -rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/fixtures/update/a/foo.txt
 drwxr-xr-x root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/fixtures/update/b/
 -rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/fixtures/update/b/foo.txt
+drwxr-xr-x root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/fixtures/测试/
+drwxr-xr-x root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/fixtures/测试/a/
+-rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/fixtures/测试/a/.gitkeep
+drwxr-xr-x root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/fixtures/测试/b/
+-rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/fixtures/测试/b/.gitkeep
+-rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/fixtures/测试/b/foo.txt
 -rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/plugin-patch/tests/parsePatchFile.test.ts
 drwxr-xr-x root/root    usr/lib/node_modules/yarn/packages/plugin-pnp/
 -rw-r--r-- root/root    usr/lib/node_modules/yarn/packages/plugin-pnp/README.md

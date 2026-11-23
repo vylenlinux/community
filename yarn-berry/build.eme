@@ -6,20 +6,21 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://github.com/yarnpkg/berry"
 
 name=yarn-berry
-version=4.18.1
+version=4.19.0
 release=1
-source="${name}-${version}.tar.gz::https://github.com/yarnpkg/berry/archive/refs/tags/@yarnpkg/cli/${version}.tar.gz"
+source="https://github.com/yarnpkg/berry/archive/@yarnpkg/cli/${version}/${name}-${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
     cd "berry--yarnpkg-cli-${version}"
-    install -dm755 "${PKG}/usr/lib/node_modules/yarn"
+
+    install -dm755 "${PKG}/usr/lib/node_modules/yarn" \
+        "${PKG}/usr/bin"
 
     # shellcheck disable=SC2035
     cp -R * -t "${PKG}/usr/lib/node_modules/yarn/"
     chmod +x "${PKG}/usr/lib/node_modules/yarn/packages/yarnpkg-cli/bin/yarn.js"
 
-    install -dm755 "${PKG}/usr/bin"
     ln -s /usr/lib/node_modules/yarn/packages/yarnpkg-cli/bin/yarn.js "${PKG}/usr/bin/yarn"
     ln -s /usr/lib/node_modules/yarn/packages/yarnpkg-cli/bin/yarn.js "${PKG}/usr/bin/yarnpkg"
 }
