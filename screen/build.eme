@@ -6,13 +6,14 @@ homepage="https://www.gnu.org/software/screen/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=screen
-version=5.0.2
+version=5.0.3
 release=1
-source="https://ftp.gnu.org/gnu/${name}/${name}-${version}.tar.gz"
+backup="etc/screenrc"
+source="https://downloads.sourceforge.net/project/vylen/sources/${name}/${name}-${version}.tar.xz"
 
 build() {
     # shellcheck disable=SC2164
-    cd "${name}-${version}"
+    cd "${name}-${version}/src"
     NOCONFIGURE=1 ./autogen.sh
 
     ./configure \
@@ -23,8 +24,8 @@ build() {
         --with-pty-group=5 \
         --with-sys-screenrc=/etc/screenrc
 
-    sed -i -e "s%/usr/local/etc/screenrc%/etc/screenrc%" etc/*
-    sed -i -e "s%/usr/local/etc/screenrc%/etc/screenrc%" doc/*
+    sed "s%/usr/local/etc/screenrc%/etc/screenrc%" -i etc/*
+    sed "s%/usr/local/etc/screenrc%/etc/screenrc%" -i doc/*
 
     make
     make DESTDIR="${PKG}" install
