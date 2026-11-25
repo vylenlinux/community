@@ -2,4 +2,4 @@ name = "libgnome-keyring"
 provider = "gnome"
 
 [source]
-project = "Archive/%(name)"
+package = "Archive/%(name)"
