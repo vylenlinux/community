@@ -2,7 +2,7 @@ name = "babl"
 provider = "gnome"
 
 [source]
-project = "GNOME/%(name)"
+package = "%(name)"
 
 [version.normalize]
 strip_prefix = "BABL_"
