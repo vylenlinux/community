@@ -8,4 +8,4 @@ package = "wireless-tools"
 include_devel = true
 
 [version.normalize]
-replace = { "~" = "." }
+replace = { "~" = ".", "_" = "." }
