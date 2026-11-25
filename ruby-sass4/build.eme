@@ -6,7 +6,7 @@ homepage="https://sass-lang.com/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ruby-sass4
-version=4.0.5
+version=4.0.6
 release=1
 source="https://rubygems.org/downloads/${name#*-}-${version}.gem"
 
