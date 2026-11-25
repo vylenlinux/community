@@ -2,7 +2,7 @@ name = "abiword"
 provider = "gnome"
 
 [source]
-project = "World/%(name)"
+package = "World/%(name)"
 
 [version.normalize]
 strip_prefix = "release-"
