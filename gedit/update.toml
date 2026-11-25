@@ -2,4 +2,4 @@ name = "gedit"
 provider = "gnome"
 
 [source]
-package = "world/%(name)/%(name)"
+package = "World/%(name)/%(name)"
