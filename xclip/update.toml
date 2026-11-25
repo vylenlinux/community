@@ -1,5 +1,6 @@
 name = "xclip"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "xclip"
+owner = "astrand"
+repo = "%(name)"

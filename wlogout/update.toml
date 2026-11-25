@@ -1,5 +1,6 @@
 name = "wlogout"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "wlogout"
+owner = "ArtsyMacaw"
+repo = "%(name)"

@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Simple Scanning Utility"
-homepage="https://github.com/GNOME/simple-scan"
+homepage="https://gitlab.gnome.org/GNOME/simple-scan"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=simple-scan

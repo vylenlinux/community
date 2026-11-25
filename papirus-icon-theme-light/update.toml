@@ -1,6 +1,6 @@
 name = "papirus-icon-theme-light"
-provider = "repology"
-dedup_key = "papirus-icon-theme"
+provider = "github"
 
 [source]
-package = "papirus-icon-theme"
+owner = "PapirusDevelopmentTeam"
+repo = "papirus-icon-theme"

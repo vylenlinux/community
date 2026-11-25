@@ -1,5 +1,6 @@
 name = "bmon"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "bmon"
+owner = "Jafaral"
+repo = "%(name)"

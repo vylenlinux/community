@@ -1,5 +1,9 @@
 name = "soapy-sdr"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "soapy-sdr"
+owner = "pothosware"
+repo = "SoapySDR"
+
+[version.normalize]
+strip_prefix = "%(name)-"

@@ -1,5 +1,6 @@
 name = "opentimelineio"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "opentimelineio"
+owner = "AcademySoftwareFoundation"
+repo = "OpenTimelineIO"

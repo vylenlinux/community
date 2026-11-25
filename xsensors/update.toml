@@ -1,5 +1,6 @@
 name = "xsensors"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "xsensors"
+owner = "Mystro256"
+repo = "%(name)"

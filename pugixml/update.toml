@@ -1,5 +1,6 @@
 name = "pugixml"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "pugixml"
+owner = "zeux"
+repo = "%(name)"

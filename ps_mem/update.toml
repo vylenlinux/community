@@ -1,5 +1,6 @@
 name = "ps_mem"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "ps-mem"
+owner = "pixelb"
+repo = "%(name)"

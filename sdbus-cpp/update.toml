@@ -1,5 +1,6 @@
 name = "sdbus-cpp"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "sdbus-cpp"
+owner = "Kistler-Group"
+repo = "%(name)"

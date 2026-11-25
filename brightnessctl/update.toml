@@ -1,5 +1,6 @@
 name = "brightnessctl"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "brightnessctl"
+owner = "Hummer12007"
+repo = "%(name)"

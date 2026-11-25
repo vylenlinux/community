@@ -1,5 +1,6 @@
 name = "nyxt"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "nyxt"
+owner = "atlas-engineer"
+repo = "%(name)"

@@ -1,5 +1,6 @@
 name = "urxvt-perls"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "urxvt-perls"
+owner = "xyb3rt"
+repo = "%(name)"

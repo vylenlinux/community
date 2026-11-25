@@ -1,5 +1,6 @@
 name = "cups-browsed"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "cups-browsed"
+owner = "OpenPrinting"
+repo = "%(name)"

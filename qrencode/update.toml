@@ -1,5 +1,6 @@
 name = "qrencode"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "qrencode"
+owner = "fukuchi"
+repo = "libqrencode"

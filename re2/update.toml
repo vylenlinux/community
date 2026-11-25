@@ -1,8 +1,9 @@
 name = "re2"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "re2"
+owner = "google"
+repo = "%(name)"
 
 [version.normalize]
 replace = { "-" = "." }

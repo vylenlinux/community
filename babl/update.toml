@@ -1,5 +1,12 @@
 name = "babl"
-provider = "repology"
+provider = "gnome"
 
 [source]
-package = "babl"
+project = "GNOME/%(name)"
+
+[version.normalize]
+strip_prefix = "BABL_"
+replace = { "_" = "." }
+
+[version.filter]
+include = ['^BABL_.*$']

@@ -1,5 +1,9 @@
 name = "reaver"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "reaver"
+owner = "t6x"
+repo = "reaver-wps-fork-t6x"
+
+[version.filter]
+exclude = ['^1\.6b$']

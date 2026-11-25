@@ -1,5 +1,9 @@
 name = "simde"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "simde"
+owner = "simd-everywhere"
+repo = "%(name)"
+
+[version.filter]
+exclude = ['.*-rc.*']

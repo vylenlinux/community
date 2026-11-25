@@ -1,5 +1,6 @@
 name = "wbg"
-provider = "repology"
+provider = "codeberg"
 
 [source]
-package = "wbg"
+owner = "dnkl"
+repo = "%(name)"

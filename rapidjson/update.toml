@@ -1,5 +1,6 @@
 name = "rapidjson"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "rapidjson"
+owner = "Tencent"
+repo = "%(name)"

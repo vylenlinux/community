@@ -1,5 +1,5 @@
 name = "libgnome-keyring"
-provider = "repology"
+provider = "gnome"
 
 [source]
-package = "libgnome-keyring"
+project = "Archive/%(name)"

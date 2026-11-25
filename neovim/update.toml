@@ -1,5 +1,6 @@
 name = "neovim"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "neovim"
+owner = "%(name)"
+repo = "%(name)"

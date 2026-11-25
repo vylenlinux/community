@@ -1,5 +1,6 @@
 name = "somebar"
-provider = "repology"
+provider = "sourcehut"
 
 [source]
-package = "somebar"
+owner = "raphi"
+repo = "%(name)"

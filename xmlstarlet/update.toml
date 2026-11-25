@@ -1,5 +1,6 @@
 name = "xmlstarlet"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "xmlstarlet"
+owner = "%(name)"
+repo = "%(name)"

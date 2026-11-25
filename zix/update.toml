@@ -1,5 +1,6 @@
 name = "zix"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "zix"
+owner = "drobilla"
+repo = "%(name)"

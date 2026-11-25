@@ -1,5 +1,6 @@
 name = "hyprwayland-scanner"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "hyprwayland-scanner"
+owner = "hyprwm"
+repo = "%(name)"

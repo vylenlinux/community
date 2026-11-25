@@ -1,5 +1,6 @@
 name = "nethogs"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "nethogs"
+owner = "raboof"
+repo = "%(name)"

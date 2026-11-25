@@ -1,5 +1,6 @@
 name = "vkmark"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "vkmark"
+owner = "%(name)"
+repo = "%(name)"

@@ -1,5 +1,6 @@
 name = "simple-mtpfs"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "fusefs:simple-mtpfs"
+owner = "phatina"
+repo = "%(name)"

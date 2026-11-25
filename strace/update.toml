@@ -1,5 +1,6 @@
 name = "strace"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "strace"
+owner = "%(name)"
+repo = "%(name)"

@@ -1,5 +1,6 @@
 name = "hyprshot"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "hyprshot"
+owner = "Gustash"
+repo = "Hyprshot"

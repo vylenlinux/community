@@ -1,5 +1,5 @@
 name = "webrtc-audio-processing"
-provider = "repology"
+provider = "freedesktop"
 
 [source]
-package = "webrtc-audio-processing"
+project = "pulseaudio/%(name)"

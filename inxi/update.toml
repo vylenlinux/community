@@ -1,8 +1,9 @@
 name = "inxi"
-provider = "repology"
+provider = "codeberg"
 
 [source]
-package = "inxi"
+owner = "smxi"
+repo = "%(name)"
 
 [version.normalize]
 replace = { "-" = "." }

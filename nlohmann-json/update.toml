@@ -1,5 +1,6 @@
 name = "nlohmann-json"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "nlohmann-json"
+owner = "nlohmann"
+repo = "json"

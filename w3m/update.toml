@@ -1,5 +1,6 @@
 name = "w3m"
-provider = "repology"
+provider = "sourcehut"
 
 [source]
-package = "w3m"
+owner = "rkta"
+repo = "%(name)"

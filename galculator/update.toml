@@ -1,5 +1,6 @@
 name = "galculator"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "galculator"
+owner = "%(name)"
+repo = "%(name)"

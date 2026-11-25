@@ -1,5 +1,6 @@
 name = "hyprland-guiutils"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "hyprland-guiutils"
+owner = "hyprwm"
+repo = "%(name)"

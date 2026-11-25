@@ -1,5 +1,6 @@
 name = "qutebrowser"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "qutebrowser"
+owner = "%(name)"
+repo = "%(name)"

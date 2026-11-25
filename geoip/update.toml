@@ -1,5 +1,6 @@
 name = "geoip"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "geoip"
+owner = "maxmind"
+repo = "geoip-api-c"

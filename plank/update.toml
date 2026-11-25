@@ -1,5 +1,6 @@
 name = "plank"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "plank"
+owner = "zquestz"
+repo = "plank-reloaded"

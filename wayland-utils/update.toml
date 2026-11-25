@@ -1,5 +1,5 @@
 name = "wayland-utils"
-provider = "repology"
+provider = "freedesktop"
 
 [source]
-package = "wayland-utils"
+project = "wayland/%(name)"

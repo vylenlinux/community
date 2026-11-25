@@ -1,5 +1,6 @@
 name = "wlopm"
-provider = "repology"
+provider = "sourcehut"
 
 [source]
-package = "wlopm"
+owner = "leon_plickat"
+repo = "%(name)"

@@ -1,5 +1,6 @@
 name = "streamlink"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "streamlink"
+owner = "%(name)"
+repo = "%(name)"

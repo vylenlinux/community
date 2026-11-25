@@ -2,13 +2,13 @@
 
 # shellcheck disable=SC2034
 description="Simple Scanning Utility (GTK3 version)"
-homepage="https://github.com/GNOME/simple-scan"
+homepage="https://gitlab.gnome.org/GNOME/simple-scan"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=simple-scan-gtk3
 version=46.0
 release=1
-source="${name}-${version}.tar.xz::https://github.com/GNOME/simple-scan/archive/refs/tags/${version}.tar.gz"
+source="${name}-${version}.tar.xz::https://gitlab.gnome.org/GNOME/simple-scan/archive/refs/tags/${version}.tar.gz"
 
 build() {
     vylen-meson "simple-scan-${version}" build

@@ -1,5 +1,6 @@
 name = "android-tools"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "android-tools-nmeum"
+owner = "nmeum"
+repo = "%(name)"

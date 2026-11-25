@@ -1,5 +1,6 @@
 name = "hyprwire"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "hyprwire"
+owner = "hyprwm"
+repo = "%(name)"

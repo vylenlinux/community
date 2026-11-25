@@ -1,5 +1,6 @@
 name = "xwallpaper"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "xwallpaper"
+owner = "stoeckmann"
+repo = "%(name)"

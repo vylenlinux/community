@@ -1,5 +1,6 @@
 name = "libportal"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "libportal"
+owner = "flatpak"
+repo = "%(name)"

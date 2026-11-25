@@ -1,5 +1,6 @@
 name = "numlockx"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "numlockx"
+owner = "rg3"
+repo = "%(name)"

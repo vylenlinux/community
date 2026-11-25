@@ -1,5 +1,5 @@
 name = "pavucontrol"
-provider = "repology"
+provider = "freedesktop"
 
 [source]
-package = "pavucontrol"
+project = "pulseaudio/%(name)"

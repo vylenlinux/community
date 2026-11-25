@@ -1,5 +1,6 @@
 name = "tnef"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "tnef"
+owner = "verdammelt"
+repo = "%(name)"

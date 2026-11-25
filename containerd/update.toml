@@ -1,5 +1,6 @@
 name = "containerd"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "containerd"
+owner = "%(name)"
+repo = "%(name)"

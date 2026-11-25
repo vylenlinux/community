@@ -1,5 +1,6 @@
 name = "scons"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "scons"
+owner = "%(name)"
+repo = "%(name)"

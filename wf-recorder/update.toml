@@ -1,5 +1,6 @@
 name = "wf-recorder"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "wf-recorder"
+owner = "ammen99"
+repo = "%(name)"

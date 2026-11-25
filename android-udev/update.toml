@@ -1,5 +1,6 @@
 name = "android-udev"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "android-udev-rules"
+owner = "M0Rf30"
+repo = "android-udev-rules"

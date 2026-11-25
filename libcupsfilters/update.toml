@@ -1,5 +1,6 @@
 name = "libcupsfilters"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "libcupsfilters"
+owner = "OpenPrinting"
+repo = "%(name)"

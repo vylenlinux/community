@@ -1,5 +1,6 @@
 name = "ttf-hack"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "fonts:hack"
+owner = "source-foundry"
+repo = "Hack"

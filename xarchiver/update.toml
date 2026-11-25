@@ -1,5 +1,6 @@
 name = "xarchiver"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "xarchiver"
+owner = "ib"
+repo = "%(name)"

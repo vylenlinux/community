@@ -1,5 +1,6 @@
 name = "nbwmon"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "nbwmon"
+owner = "causes-"
+repo = "%(name)"

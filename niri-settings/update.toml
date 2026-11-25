@@ -1,5 +1,5 @@
 name = "niri-settings"
-provider = "repology"
+provider = "git"
 
 [source]
-package = "niri-settings"
+url = "https://github.com/stefonarch/%(name).git"

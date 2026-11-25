@@ -1,5 +1,6 @@
 name = "papirus-icon-theme"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "papirus-icon-theme"
+owner = "PapirusDevelopmentTeam"
+repo = "%(name)"

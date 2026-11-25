@@ -1,5 +1,6 @@
 name = "patool"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "patool"
+owner = "wummel"
+repo = "%(name)"

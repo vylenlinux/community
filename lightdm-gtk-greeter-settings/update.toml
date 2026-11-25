@@ -1,5 +1,9 @@
 name = "lightdm-gtk-greeter-settings"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "lightdm-gtk-greeter-settings"
+owner = "xubuntu"
+repo = "%(name)"
+
+[version.normalize]
+strip_prefix = "%(name)-"

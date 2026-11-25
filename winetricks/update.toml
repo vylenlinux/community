@@ -1,5 +1,6 @@
 name = "winetricks"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "winetricks"
+owner = "Winetricks"
+repo = "%(name)"

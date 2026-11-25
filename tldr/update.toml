@@ -1,5 +1,6 @@
 name = "tldr"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "tldr-c-client"
+owner = "tldr-pages"
+repo = "tldr-c-client"

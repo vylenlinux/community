@@ -1,5 +1,6 @@
 name = "recordmydesktop"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "recordmydesktop"
+owner = "Enselic"
+repo = "%(name)"

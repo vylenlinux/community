@@ -1,5 +1,6 @@
 name = "wxgtk3"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "wxwidgets"
+owner = "wxWidgets"
+repo = "wxWidgets"

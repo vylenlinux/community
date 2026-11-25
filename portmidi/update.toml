@@ -1,5 +1,6 @@
 name = "portmidi"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "portmidi"
+owner = "PortMidi"
+repo = "%(name)"

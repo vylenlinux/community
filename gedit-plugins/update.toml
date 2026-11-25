@@ -1,5 +1,5 @@
 name = "gedit-plugins"
-provider = "repology"
+provider = "gnome"
 
 [source]
-package = "gedit-plugins"
+project = "World/gedit/%(name)"

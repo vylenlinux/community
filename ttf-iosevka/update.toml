@@ -1,5 +1,6 @@
 name = "ttf-iosevka"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "fonts:iosevka"
+owner = "be5invis"
+repo = "Iosevka"

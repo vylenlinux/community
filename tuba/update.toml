@@ -1,5 +1,6 @@
 name = "tuba"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "tuba"
+owner = "GeopJr"
+repo = "%(name)"

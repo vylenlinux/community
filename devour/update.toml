@@ -1,5 +1,6 @@
 name = "devour"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "devour"
+owner = "salman-abedin"
+repo = "%(name)"

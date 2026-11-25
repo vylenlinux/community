@@ -1,5 +1,6 @@
 name = "scenefx"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "scenefx"
+owner = "wlrfx"
+repo = "%(name)"

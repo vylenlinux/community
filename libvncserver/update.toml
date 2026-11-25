@@ -1,5 +1,12 @@
 name = "libvncserver"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "libvncserver"
+owner = "LibVNC"
+repo = "%(name)"
+
+[version.normalize]
+strip_prefix = "LibVNCServer-"
+
+[version.filter]
+include = ['^LibVNCServer-.*$']

@@ -1,5 +1,5 @@
 name = "totem-pl-parser"
-provider = "repology"
+provider = "gnome"
 
 [source]
-package = "totem-pl-parser"
+project = "GNOME/%(name)"

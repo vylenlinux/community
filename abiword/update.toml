@@ -1,5 +1,11 @@
 name = "abiword"
-provider = "repology"
+provider = "gnome"
 
 [source]
-package = "abiword"
+project = "World/%(name)"
+
+[version.normalize]
+strip_prefix = "release-"
+
+[version.filter]
+include = ['^release-.*$']

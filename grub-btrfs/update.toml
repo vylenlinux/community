@@ -1,5 +1,6 @@
 name = "grub-btrfs"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "grub-btrfs"
+owner = "Antynea"
+repo = "%(name)"

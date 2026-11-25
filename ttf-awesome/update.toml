@@ -1,5 +1,6 @@
 name = "ttf-awesome"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "fonts:fontawesome"
+owner = "FortAwesome"
+repo = "Font-Awesome"

@@ -1,5 +1,6 @@
 name = "wlsunset"
-provider = "repology"
+provider = "sourcehut"
 
 [source]
-package = "wlsunset"
+owner = "kennylevinsen"
+repo = "%(name)"

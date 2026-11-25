@@ -1,5 +1,6 @@
 name = "qpdf"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "qpdf"
+owner = "%(name)"
+repo = "%(name)"

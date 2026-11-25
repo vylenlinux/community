@@ -1,5 +1,6 @@
 name = "ttf-nerd-jetbrains-mono"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "fonts:nerd-fonts"
+owner = "ryanoasis"
+repo = "nerd-fonts"

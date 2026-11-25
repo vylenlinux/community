@@ -1,5 +1,6 @@
 name = "leptonica"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "leptonica"
+owner = "DanBloomberg"
+repo = "%(name)"

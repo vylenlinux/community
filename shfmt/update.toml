@@ -1,5 +1,6 @@
 name = "shfmt"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "shfmt"
+owner = "mvdan"
+repo = "sh"

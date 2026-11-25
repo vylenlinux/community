@@ -1,5 +1,6 @@
 name = "bashtop"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "bashtop"
+owner = "aristocratos"
+repo = "%(name)"

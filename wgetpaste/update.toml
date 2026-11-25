@@ -1,5 +1,6 @@
 name = "wgetpaste"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "wgetpaste"
+owner = "zlin"
+repo = "%(name)"

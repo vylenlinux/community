@@ -1,5 +1,6 @@
 name = "polybar"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "polybar"
+owner = "%(name)"
+repo = "%(name)"

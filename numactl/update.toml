@@ -1,5 +1,6 @@
 name = "numactl"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "numactl"
+owner = "%(name)"
+repo = "%(name)"

@@ -1,5 +1,6 @@
 name = "ncmpcpp"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "ncmpcpp"
+owner = "%(name)"
+repo = "%(name)"

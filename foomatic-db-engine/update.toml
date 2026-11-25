@@ -1,5 +1,5 @@
 name = "foomatic-db-engine"
-provider = "repology"
+provider = "git"
 
 [source]
-package = "foomatic-db-engine"
+url = "https://github.com/OpenPrinting/%(name).git"

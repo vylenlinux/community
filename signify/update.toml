@@ -1,5 +1,6 @@
 name = "signify"
-provider = "repology"
+provider = "codeberg"
 
 [source]
-package = "signify-openbsd"
+owner = "aperezdc"
+repo = "%(name)"

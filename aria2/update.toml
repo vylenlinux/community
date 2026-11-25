@@ -1,5 +1,9 @@
 name = "aria2"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "aria2"
+owner = "%(name)"
+repo = "%(name)"
+
+[version.normalize]
+strip_prefix = "release-"

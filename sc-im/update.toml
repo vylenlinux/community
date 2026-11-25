@@ -1,5 +1,6 @@
 name = "sc-im"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "sc-im"
+owner = "andmarti1424"
+repo = "%(name)"

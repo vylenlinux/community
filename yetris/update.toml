@@ -1,5 +1,6 @@
 name = "yetris"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "yetris"
+owner = "alexdantas"
+repo = "%(name)"

@@ -1,5 +1,6 @@
 name = "snapper"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "snapper"
+owner = "openSUSE"
+repo = "%(name)"

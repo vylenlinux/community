@@ -1,5 +1,6 @@
 name = "gsimplecal"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "gsimplecal"
+owner = "dmedvinsky"
+repo = "%(name)"

@@ -1,5 +1,9 @@
 name = "mangohud"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "mangohud"
+owner = "flightlessmango"
+repo = "%(name)"
+
+[version.filter]
+exclude = ['.*-rc.*']

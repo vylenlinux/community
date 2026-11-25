@@ -1,5 +1,5 @@
 name = "yelp-xsl"
-provider = "repology"
+provider = "gnome"
 
 [source]
-package = "yelp-xsl"
+project = "GNOME/%(name)"

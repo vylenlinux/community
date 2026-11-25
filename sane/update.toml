@@ -1,5 +1,5 @@
 name = "sane"
-provider = "repology"
+provider = "gitlab"
 
 [source]
-package = "sane-backends"
+project = "sane-project/backends"

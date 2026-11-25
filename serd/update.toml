@@ -1,5 +1,5 @@
 name = "serd"
-provider = "repology"
+provider = "gitlab"
 
 [source]
-package = "serd"
+project = "drobilla/%(name)"

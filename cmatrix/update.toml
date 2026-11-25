@@ -1,5 +1,6 @@
 name = "cmatrix"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "cmatrix"
+owner = "abishekvashok"
+repo = "%(name)"

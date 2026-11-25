@@ -1,5 +1,6 @@
 name = "xdelta3"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "xdelta"
+owner = "jmacd"
+repo = "xdelta"

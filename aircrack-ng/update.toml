@@ -1,5 +1,6 @@
 name = "aircrack-ng"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "aircrack-ng"
+owner = "%(name)"
+repo = "%(name)"

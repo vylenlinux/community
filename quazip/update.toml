@@ -1,5 +1,6 @@
 name = "quazip"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "quazip"
+owner = "stachenov"
+repo = "%(name)"

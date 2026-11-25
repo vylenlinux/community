@@ -1,5 +1,5 @@
 name = "libgedit-gtksourceview"
-provider = "repology"
+provider = "gnome"
 
 [source]
-package = "libgedit-gtksourceview"
+project = "World/gedit/%(name)"

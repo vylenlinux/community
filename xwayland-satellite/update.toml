@@ -1,5 +1,6 @@
 name = "xwayland-satellite"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "xwayland-satellite"
+owner = "Supreeeme"
+repo = "%(name)"

@@ -1,5 +1,6 @@
 name = "mediawriter"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "mediawriter"
+owner = "FedoraQt"
+repo = "MediaWriter"

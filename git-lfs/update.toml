@@ -1,5 +1,6 @@
 name = "git-lfs"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "git-lfs"
+owner = "%(name)"
+repo = "%(name)"

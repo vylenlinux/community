@@ -1,5 +1,6 @@
 name = "emptty"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "emptty"
+owner = "tvrzna"
+repo = "%(name)"

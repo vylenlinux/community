@@ -1,5 +1,6 @@
 name = "ttf-liberation"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "fonts:liberation"
+owner = "liberationfonts"
+repo = "liberation-fonts"

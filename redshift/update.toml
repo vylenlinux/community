@@ -1,5 +1,6 @@
 name = "redshift"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "redshift"
+owner = "sharpbracket"
+repo = "%(name)"

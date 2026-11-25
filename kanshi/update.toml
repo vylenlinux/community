@@ -1,5 +1,5 @@
 name = "kanshi"
-provider = "repology"
+provider = "freedesktop"
 
 [source]
-package = "kanshi"
+project = "emersion/%(name)"

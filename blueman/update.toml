@@ -1,5 +1,6 @@
 name = "blueman"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "blueman"
+owner = "blueman-project"
+repo = "%(name)"

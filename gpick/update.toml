@@ -1,5 +1,6 @@
 name = "gpick"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "gpick"
+owner = "thezbyg"
+repo = "%(name)"

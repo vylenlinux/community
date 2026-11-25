@@ -1,5 +1,6 @@
 name = "qalculate-gtk"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "qalculate-gtk"
+owner = "Qalculate"
+repo = "%(name)"

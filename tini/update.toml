@@ -1,5 +1,6 @@
 name = "tini"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "tini"
+owner = "krallin"
+repo = "%(name)"

@@ -1,5 +1,6 @@
 name = "diff-so-fancy"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "diff-so-fancy"
+owner = "so-fancy"
+repo = "%(name)"

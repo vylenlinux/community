@@ -1,5 +1,6 @@
 name = "calf"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "calf"
+owner = "calf-studio-gear"
+repo = "%(name)"

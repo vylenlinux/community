@@ -1,5 +1,5 @@
 name = "ttf-cantarell"
-provider = "repology"
+provider = "gnome"
 
 [source]
-package = "fonts:cantarell"
+project = "GNOME/cantarell-fonts"

@@ -1,5 +1,5 @@
 name = "libgedit-amtk"
-provider = "repology"
+provider = "gnome"
 
 [source]
-package = "libgedit-amtk"
+project = "World/gedit/%(name)"

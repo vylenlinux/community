@@ -1,5 +1,5 @@
 name = "wlr-randr"
-provider = "repology"
+provider = "freedesktop"
 
 [source]
-package = "wlr-randr"
+project = "emersion/%(name)"

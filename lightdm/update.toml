@@ -1,5 +1,6 @@
 name = "lightdm"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "lightdm"
+owner = "ubuntu"
+repo = "%(name)"

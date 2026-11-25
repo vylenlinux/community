@@ -1,5 +1,6 @@
 name = "pfetch"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "pfetch"
+owner = "Un1q32"
+repo = "%(name)"

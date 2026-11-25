@@ -1,5 +1,6 @@
 name = "amf-headers"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "amf"
+owner = "GPUOpen-LibrariesAndSDKs"
+repo = "AMF"

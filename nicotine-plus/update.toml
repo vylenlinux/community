@@ -1,5 +1,6 @@
 name = "nicotine-plus"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "nicotine+"
+owner = "Nicotine-Plus"
+repo = "%(name)"

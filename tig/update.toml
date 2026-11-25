@@ -1,5 +1,9 @@
 name = "tig"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "tig"
+owner = "jonas"
+repo = "%(name)"
+
+[version.normalize]
+strip_prefix = "%(name)-"

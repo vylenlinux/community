@@ -1,5 +1,6 @@
 name = "apulse"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "apulse"
+owner = "i-rinat"
+repo = "%(name)"

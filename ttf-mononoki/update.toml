@@ -1,5 +1,6 @@
 name = "ttf-mononoki"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "fonts:mononoki"
+owner = "madmalik"
+repo = "mononoki"

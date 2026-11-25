@@ -1,5 +1,6 @@
 name = "playerctl"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "playerctl"
+owner = "altdesktop"
+repo = "%(name)"

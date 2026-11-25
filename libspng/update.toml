@@ -1,5 +1,6 @@
 name = "libspng"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "libspng"
+owner = "randy408"
+repo = "%(name)"

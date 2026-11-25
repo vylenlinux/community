@@ -1,5 +1,6 @@
 name = "protobuf-c"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "protobuf-c"
+owner = "%(name)"
+repo = "%(name)"

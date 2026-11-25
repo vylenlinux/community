@@ -1,5 +1,6 @@
 name = "xcur2png"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "xcur2png"
+owner = "eworm-de"
+repo = "%(name)"

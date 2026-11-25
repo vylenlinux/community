@@ -1,5 +1,6 @@
 name = "uthash"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "uthash"
+owner = "troydhanson"
+repo = "%(name)"

@@ -1,5 +1,6 @@
 name = "libppd"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "libppd"
+owner = "OpenPrinting"
+repo = "%(name)"

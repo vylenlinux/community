@@ -1,5 +1,6 @@
 name = "tty-clock"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "tty-clock"
+owner = "xorg62"
+repo = "%(name)"

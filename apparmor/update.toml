@@ -1,5 +1,8 @@
 name = "apparmor"
-provider = "repology"
+provider = "gitlab"
 
 [source]
-package = "apparmor"
+project = "%(name)/%(name)"
+
+[version.filter]
+exclude = ['.*-alpha.*']

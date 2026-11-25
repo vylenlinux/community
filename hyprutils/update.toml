@@ -1,5 +1,6 @@
 name = "hyprutils"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "hyprutils"
+owner = "hyprwm"
+repo = "%(name)"

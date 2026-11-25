@@ -1,5 +1,6 @@
 name = "pulsemixer"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "pulsemixer"
+owner = "GeorgeFilipkin"
+repo = "%(name)"

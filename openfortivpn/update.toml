@@ -1,5 +1,6 @@
 name = "openfortivpn"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "openfortivpn"
+owner = "adrienverge"
+repo = "%(name)"

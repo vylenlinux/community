@@ -1,5 +1,6 @@
 name = "cli11"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "cli11"
+owner = "CLIUtils"
+repo = "CLI11"

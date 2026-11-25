@@ -1,5 +1,6 @@
 name = "neomutt"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "neomutt"
+owner = "%(name)"
+repo = "%(name)"

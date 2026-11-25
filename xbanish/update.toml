@@ -1,5 +1,6 @@
 name = "xbanish"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "xbanish"
+owner = "jcs"
+repo = "%(name)"

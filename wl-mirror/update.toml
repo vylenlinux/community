@@ -1,5 +1,6 @@
 name = "wl-mirror"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "wl-mirror"
+owner = "Ferdi265"
+repo = "%(name)"

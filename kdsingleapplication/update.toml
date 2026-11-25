@@ -1,5 +1,6 @@
 name = "kdsingleapplication"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "kdsingleapplication"
+owner = "KDAB"
+repo = "KDSingleApplication"

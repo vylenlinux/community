@@ -1,5 +1,6 @@
 name = "retroarch"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "retroarch"
+owner = "libretro"
+repo = "%(name)"

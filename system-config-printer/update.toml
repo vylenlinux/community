@@ -1,5 +1,6 @@
 name = "system-config-printer"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "system-config-printer"
+owner = "OpenPrinting"
+repo = "%(name)"

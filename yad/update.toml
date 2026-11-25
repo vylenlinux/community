@@ -1,5 +1,6 @@
 name = "yad"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "yad"
+owner = "v1cont"
+repo = "%(name)"

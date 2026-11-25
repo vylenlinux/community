@@ -1,5 +1,6 @@
 name = "simplescreenrecorder"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "simplescreenrecorder"
+owner = "MaartenBaert"
+repo = "ssr"

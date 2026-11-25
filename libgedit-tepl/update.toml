@@ -1,5 +1,5 @@
 name = "libgedit-tepl"
-provider = "repology"
+provider = "gnome"
 
 [source]
-package = "libgedit-tepl"
+project = "World/gedit/%(name)"

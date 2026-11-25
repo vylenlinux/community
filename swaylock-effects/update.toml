@@ -1,5 +1,6 @@
 name = "swaylock-effects"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "swaylock-effects"
+owner = "hboetes"
+repo = "%(name)"

@@ -1,5 +1,6 @@
 name = "ddcutil"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "ddcutil"
+owner = "rockowitz"
+repo = "%(name)"

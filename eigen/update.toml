@@ -1,5 +1,5 @@
 name = "eigen"
-provider = "repology"
+provider = "gitlab"
 
 [source]
-package = "eigen"
+project = "libeigen/%(name)"

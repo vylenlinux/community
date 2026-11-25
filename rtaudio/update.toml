@@ -1,5 +1,6 @@
 name = "rtaudio"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "rtaudio"
+owner = "thestk"
+repo = "%(name)"

@@ -1,5 +1,6 @@
 name = "portsmf"
-provider = "repology"
+provider = "codeberg"
 
 [source]
-package = "portsmf"
+owner = "tenacityteam"
+repo = "%(name)"

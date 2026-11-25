@@ -1,5 +1,6 @@
 name = "terminator"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "terminator"
+owner = "gnome-terminator"
+repo = "%(name)"

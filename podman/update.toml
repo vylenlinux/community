@@ -1,5 +1,6 @@
 name = "podman"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "podman"
+owner = "podman-container-tools"
+repo = "%(name)"

@@ -1,5 +1,6 @@
 name = "silversearcher"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "the-silver-searcher"
+owner = "ggreer"
+repo = "the_silver_searcher"

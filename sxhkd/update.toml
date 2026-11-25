@@ -1,5 +1,6 @@
 name = "sxhkd"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "sxhkd"
+owner = "baskerville"
+repo = "%(name)"

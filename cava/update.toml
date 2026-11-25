@@ -1,5 +1,6 @@
 name = "cava"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "cava"
+owner = "karlstav"
+repo = "%(name)"
