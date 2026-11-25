@@ -2,4 +2,4 @@ name = "simple-scan"
 provider = "gnome"
 
 [source]
-project = "%(name)"
+package = "%(name)"
