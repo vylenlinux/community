@@ -6,9 +6,9 @@ homepage="https://github.com/podman-container-tools/podman"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=podman
-version=6.2.0
+version=6.2.1
 release=1
-source="https://github.com/containers/${name}/archive/v${version}/${name}-${version}.tar.gz"
+source="https://github.com/${name}-container-tools/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164

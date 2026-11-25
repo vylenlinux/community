@@ -2,5 +2,5 @@ name = "podman"
 provider = "github"
 
 [source]
-owner = "podman-container-tools"
+owner = "%(name)-container-tools"
 repo = "%(name)"
