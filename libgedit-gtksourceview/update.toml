@@ -2,4 +2,4 @@ name = "libgedit-gtksourceview"
 provider = "gnome"
 
 [source]
-project = "World/gedit/%(name)"
+package = "World/gedit/%(name)"
