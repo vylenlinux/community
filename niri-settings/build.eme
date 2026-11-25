@@ -6,11 +6,11 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://github.com/stefonarch/niri-settings"
 
 name=niri-settings
-version=20260326
+version=20261125
 release=1
 
-commit=d745e7845f69371089542b461a9a8e691655b131
-source="${name}-${version}.tar.gz::https://github.com/stefonarch/${name}/archive/${commit}.tar.gz"
+commit=a018163bff22bab40eab1ebee1ab9118a0143a04
+source="https://github.com/stefonarch/${name}/archive/${commit}/${name}-${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
