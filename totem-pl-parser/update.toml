@@ -2,4 +2,4 @@ name = "totem-pl-parser"
 provider = "gnome"
 
 [source]
-project = "GNOME/%(name)"
+package = "%(name)"
