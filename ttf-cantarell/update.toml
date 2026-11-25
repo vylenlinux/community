@@ -2,4 +2,4 @@ name = "ttf-cantarell"
 provider = "gnome"
 
 [source]
-project = "GNOME/cantarell-fonts"
+package = "cantarell-fonts"
