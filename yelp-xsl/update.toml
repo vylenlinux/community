@@ -2,4 +2,4 @@ name = "yelp-xsl"
 provider = "gnome"
 
 [source]
-project = "GNOME/%(name)"
+package = "%(name)"
