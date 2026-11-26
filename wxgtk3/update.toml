@@ -1,6 +1,0 @@
-name = "wxgtk3"
-provider = "github"
-
-[source]
-owner = "wxWidgets"
-repo = "wxWidgets"
