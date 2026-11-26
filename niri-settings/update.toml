@@ -1,5 +1,6 @@
 name = "niri-settings"
-provider = "git"
+provider = "github"
 
 [source]
-url = "https://github.com/stefonarch/%(name).git"
+owner = "stefonarch"
+repo = "%(name)"
