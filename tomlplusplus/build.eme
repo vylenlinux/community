@@ -7,11 +7,11 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=tomlplusplus
 version=3.5.1
-release=1
+release=2
 source="https://github.com/marzer/${name}/archive/v${version}/${name}-${version}.tar.gz"
 
 build() {
-    vylen-meson "${name}-${version}" build
+    vylen-meson "${name}-${version}" build -Dbuild_lib=true
     meson compile -C build
     DESTDIR="${PKG}" meson install --no-rebuild -C build
 }
