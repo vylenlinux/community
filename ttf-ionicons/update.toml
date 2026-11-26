@@ -1,5 +1,2 @@
 name = "ttf-ionicons"
-provider = "repology"
-
-[source]
-package = "fonts:ionicons"
+provider = "manual"
