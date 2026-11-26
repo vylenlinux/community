@@ -15,8 +15,11 @@ drwxr-xr-x root/root    usr/share/applications/
 drwxr-xr-x root/root    usr/share/btrfs-assistant/
 drwxr-xr-x root/root    usr/share/btrfs-assistant/translations/
 -rw-r--r-- root/root    usr/share/btrfs-assistant/translations/btrfsassistant_de_DE.qm
+-rw-r--r-- root/root    usr/share/btrfs-assistant/translations/btrfsassistant_fr_FR.qm
 -rw-r--r-- root/root    usr/share/btrfs-assistant/translations/btrfsassistant_ja.qm
+-rw-r--r-- root/root    usr/share/btrfs-assistant/translations/btrfsassistant_pt_BR.qm
 -rw-r--r-- root/root    usr/share/btrfs-assistant/translations/btrfsassistant_ru.qm
+-rw-r--r-- root/root    usr/share/btrfs-assistant/translations/btrfsassistant_uk.qm
 -rw-r--r-- root/root    usr/share/btrfs-assistant/translations/btrfsassistant_zh_CN.qm
 drwxr-xr-x root/root    usr/share/dbus-1/
 drwxr-xr-x root/root    usr/share/dbus-1/system-services/
