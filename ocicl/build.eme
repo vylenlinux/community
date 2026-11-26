@@ -21,8 +21,8 @@ build() {
     install -dm755 "${PKG}/usr/share/sbom"
 
     # generate SBOMs
-    ./ocicl create-sbom cyclonedx "${PKG}/usr/share/sbom/${name}-sbom.json"
-    ./ocicl create-sbom spdx "${PKG}/usr/share/sbom/${name}-sbom.spdx.json"
+    ./ocicl create-sbom cyclonedx "${PKG}/usr/share/sbom/${name}-${version}.json"
+    ./ocicl create-sbom spdx "${PKG}/usr/share/sbom/${name}-${version}.spdx.json"
 
     install -Dm755 "${name}" -t "${PKG}/usr/bin/"
 }
