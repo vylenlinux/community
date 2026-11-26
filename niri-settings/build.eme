@@ -6,15 +6,13 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://github.com/stefonarch/niri-settings"
 
 name=niri-settings
-version=20261125
+version=26.09
 release=1
-
-commit=a018163bff22bab40eab1ebee1ab9118a0143a04
-source="https://github.com/stefonarch/${name}/archive/${commit}/${name}-${version}.tar.gz"
+source="https://github.com/stefonarch/${name}/archive/${version}/${name}-${version}.tar.gz"
 
 build() {
     # shellcheck disable=SC2164
-    cd "${name}-${commit}"
+    cd "${name}-${version}"
 
     install -Dm755 "${name}" -t "${PKG}/usr/bin/"
     install -Dm644 "${name}.desktop" -t "${PKG}/usr/share/applications/"
