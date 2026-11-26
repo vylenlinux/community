@@ -1,5 +1,2 @@
 name = "simple-scan-gtk3"
-provider = "repology"
-
-[source]
-package = "simple-scan-gtk3"
+provider = "manual"
