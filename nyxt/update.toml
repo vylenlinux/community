@@ -1,6 +1,0 @@
-name = "nyxt"
-provider = "github"
-
-[source]
-owner = "atlas-engineer"
-repo = "%(name)"
