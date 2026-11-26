@@ -15,8 +15,9 @@ build() {
     cd "${name}-${version}"
 
     sbcl \
-        --load setup.lisp \
-        --eval "(sb-ext:quit)"
+        --noinform \
+        --no-userinit \
+        --load setup.lisp
 
     install -dm755 "${PKG}/usr/share/sbom"
 
