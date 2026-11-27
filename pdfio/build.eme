@@ -6,7 +6,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 homepage="https://github.com/michaelrsweet/pdfio"
 
 name=pdfio
-version=1.6.6
+version=1.6.7
 release=1
 source="https://github.com/michaelrsweet/${name}/releases/download/v${version}/${name}-${version}.tar.gz"
 
@@ -16,7 +16,8 @@ build() {
 
     ./configure \
         --prefix=/usr \
-        --enable-shared
+        --enable-shared \
+        --disable-static
 
     make
     make DESTDIR="${PKG}" install
