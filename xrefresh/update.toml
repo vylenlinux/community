@@ -1,5 +1,6 @@
 name = "xrefresh"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "xrefresh"
+[ftp]
+url = "http://ftp.x.org/pub/individual/app/"
+filename = "%(name)-%(version).tar.xz"

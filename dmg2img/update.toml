@@ -1,5 +1,6 @@
 name = "dmg2img"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "dmg2img"
+[ftp]
+url = "https://archive.ubuntu.com/ubuntu/pool/universe/d/%(name)/"
+filename = "%(name)_%(version)+git20201227.a3e4134.orig.tar.xz"

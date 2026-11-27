@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Compiles finite state machines from regular languages into executable C, C++, Objective-C, or D code"
-homepage="http://www.complang.org/ragel/"
+homepage="https://github.com/adrian-thurston/colm-suite"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=ragel

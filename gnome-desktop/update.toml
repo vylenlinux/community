@@ -1,5 +1,5 @@
 name = "gnome-desktop"
-provider = "repology"
+provider = "gnome"
 
 [source]
-package = "gnome-desktop"
+package = "%(name)"

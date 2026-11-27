@@ -1,5 +1,6 @@
 name = "xcursor-themes"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "xcursor-themes"
+[ftp]
+url = "https://xorg.freedesktop.org/archive/individual/data/"
+filename = "%(name)-%(version).tar.xz"

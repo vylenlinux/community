@@ -1,5 +1,5 @@
 name = "gnome-common"
-provider = "repology"
+provider = "gnome"
 
 [source]
-package = "gnome-common"
+package = "Archive/%(name)"

@@ -1,5 +1,6 @@
 name = "xfontsel"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "xfontsel"
+[ftp]
+url = "https://xorg.freedesktop.org/archive/individual/app/"
+filename = "%(name)-%(version).tar.gz"

@@ -1,5 +1,6 @@
 name = "spamassassin"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "spamassassin"
+[ftp]
+url = "https://downloads.apache.org/%(name)/source/"
+filename = "Mail-SpamAssassin-%(version).tar.bz2"

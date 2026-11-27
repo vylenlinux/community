@@ -1,5 +1,2 @@
 name = "cli-visualizer"
-provider = "repology"
-
-[source]
-package = "cli-visualizer"
+provider = "manual" # upstream repository was deleted

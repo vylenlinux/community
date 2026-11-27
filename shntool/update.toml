@@ -1,5 +1,6 @@
 name = "shntool"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "shntool"
+[ftp]
+url = "https://deb.debian.org/debian/pool/main/s/%(name)/"
+filename = "%(name)_%(version).orig.tar.gz"

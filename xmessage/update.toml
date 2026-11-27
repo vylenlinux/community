@@ -1,5 +1,6 @@
 name = "xmessage"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "xmessage"
+[ftp]
+url = "http://ftp.x.org/pub/individual/app/"
+filename = "%(name)-%(version).tar.xz"

@@ -2,5 +2,8 @@ name = "wine-staging"
 provider = "gitlab"
 
 [source]
-instance = "https://gitlab.winehq.org"
-project = "wine/wine-staging"
+instance = "https://gitlab.winehq.org/"
+project = "wine/%(name)"
+
+[version.normalize]
+strip_prefix = "%(name)-"

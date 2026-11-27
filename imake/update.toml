@@ -1,5 +1,6 @@
 name = "imake"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "imake"
+[ftp]
+url = "https://xorg.freedesktop.org/archive/individual/util/"
+filename = "%(name)-%(version).tar.xz"

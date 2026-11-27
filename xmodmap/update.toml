@@ -1,5 +1,6 @@
 name = "xmodmap"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "xmodmap"
+[ftp]
+url = "http://ftp.x.org/pub/individual/app/"
+filename = "%(name)-%(version).tar.gz"

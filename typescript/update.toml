@@ -1,5 +1,9 @@
 name = "typescript"
-provider = "repology"
+provider = "github"
 
 [source]
-package = "typescript"
+owner = "microsoft"
+repo = "%(name)"
+
+[version.filter]
+exclude = ['.*-beta$']

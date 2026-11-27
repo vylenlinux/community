@@ -1,5 +1,6 @@
 name = "vlc"
-provider = "repology"
+provider = "gitlab"
 
 [source]
-package = "vlc"
+instance = "https://code.videolan.org/"
+project = "videolan/%(name)"

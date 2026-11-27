@@ -1,5 +1,6 @@
 name = "subversion"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "subversion"
+[ftp]
+url = "https://dlcdn.apache.org/%(name)/"
+filename = "%(name)-%(version).tar.gz"

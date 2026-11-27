@@ -1,5 +1,6 @@
 name = "libsodium"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "libsodium"
+[ftp]
+url = "https://download.libsodium.org/%(name)/releases/"
+filename = "%(name)-%(version).tar.gz"

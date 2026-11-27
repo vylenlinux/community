@@ -1,5 +1,6 @@
 name = "xerces-c"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "xerces-c"
+[ftp]
+url = "https://archive.apache.org/dist/xerces/c/3/sources/"
+filename = "%(name)-%(version).tar.gz"

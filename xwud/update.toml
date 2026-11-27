@@ -1,5 +1,6 @@
 name = "xwud"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "xwud"
+[ftp]
+url = "http://ftp.x.org/pub/individual/app/"
+filename = "%(name)-%(version).tar.gz"

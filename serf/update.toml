@@ -1,5 +1,6 @@
 name = "serf"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "apache-serf"
+[ftp]
+url = "https://downloads.apache.org/%(name)/"
+filename = "%(name)-%(version).tar.bz2"

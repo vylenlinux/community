@@ -1,8 +1,7 @@
 name = "putty"
-provider = "repology"
+provider = "ftp"
+ignore_redirects = true
 
-[source]
-package = "putty"
-
-[version.filter]
-exclude = ['^9999$']
+[ftp]
+url = "https://the.earth.li/~sgtatham/%(name)/latest/"
+filename = "%(name)-%(version).tar.gz"

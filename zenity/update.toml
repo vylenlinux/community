@@ -1,5 +1,8 @@
 name = "zenity"
-provider = "repology"
+provider = "gnome"
 
 [source]
-package = "zenity"
+package = "%(name)"
+
+[version.filter]
+exclude = ['.*\.beta$']

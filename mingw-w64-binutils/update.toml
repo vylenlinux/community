@@ -1,5 +1,6 @@
 name = "mingw-w64-binutils"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "mingw-w64-binutils"
+[ftp]
+url = "https://ftp.gnu.org/gnu/binutils/"
+filename = "binutils-%(version).tar.xz"

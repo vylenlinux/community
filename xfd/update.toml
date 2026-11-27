@@ -1,5 +1,6 @@
 name = "xfd"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "xfd"
+[ftp]
+url = "https://xorg.freedesktop.org/archive/individual/app/"
+filename = "%(name)-%(version).tar.xz"

@@ -1,5 +1,2 @@
 name = "gnome-icon-theme"
-provider = "repology"
-
-[source]
-package = "gnome-icon-theme"
+provider = "manual" # upstream is archived and no longer maintained

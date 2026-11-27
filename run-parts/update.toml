@@ -1,5 +1,6 @@
 name = "run-parts"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "run-parts"
+[ftp]
+url = "http://deb.debian.org/debian/pool/main/d/debianutils/"
+filename = "debianutils_%(version).tar.xz"

@@ -1,5 +1,5 @@
 name = "yelp-tools"
-provider = "repology"
+provider = "gnome"
 
 [source]
-package = "yelp-tools"
+package = "%(name)"

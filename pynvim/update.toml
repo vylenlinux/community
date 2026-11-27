@@ -1,5 +1,5 @@
 name = "pynvim"
-provider = "repology"
+provider = "pypi"
 
 [source]
 package = "pynvim"

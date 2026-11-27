@@ -1,5 +1,7 @@
 name = "procmail"
-provider = "repology"
+provider = "ftp"
+ignore_redirects = true
 
-[source]
-package = "procmail"
+[ftp]
+url = "https://ftp.osuosl.org/pub/blfs/conglomeration/%(name)/"
+filename = "%(name)-%(version).tar.gz"

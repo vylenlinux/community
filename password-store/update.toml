@@ -1,5 +1,5 @@
 name = "password-store"
-provider = "repology"
+provider = "cgit"
 
 [source]
-package = "password-store"
+url = "https://git.zx2c4.com/%(name)/"

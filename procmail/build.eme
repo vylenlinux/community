@@ -5,7 +5,7 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=procmail
 version=3.24
 release=1
-source="http://ftp.osuosl.org/pub/blfs/conglomeration/${name}/${name}-${version}.tar.gz
+source="https://ftp.osuosl.org/pub/blfs/conglomeration/${name}/${name}-${version}.tar.gz
 	gcc14.patch"
 
 build() {

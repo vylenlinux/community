@@ -1,5 +1,6 @@
 name = "opusfile"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "opusfile"
+[ftp]
+url = "https://ftp.osuosl.org/pub/xiph/releases/opus/"
+filename = "%(name)-%(version).tar.gz"

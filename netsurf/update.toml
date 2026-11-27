@@ -1,5 +1,6 @@
 name = "netsurf"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "netsurf"
+[ftp]
+url = "https://download.netsurf-browser.org/%(name)/releases/source-full/"
+filename = "%(name)-all-%(version).tar.gz"

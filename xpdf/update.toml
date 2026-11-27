@@ -1,5 +1,7 @@
 name = "xpdf"
-provider = "repology"
+provider = "html"
 
-[source]
-package = "xpdf"
+[html]
+url = "http://www.xpdfreader.com/download.html"
+selector = "div.content > p:first-of-type"
+version_regex = 'Current version:\s*([0-9]+\.[0-9]+)'

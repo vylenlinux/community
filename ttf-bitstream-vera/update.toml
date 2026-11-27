@@ -1,5 +1,12 @@
 name = "ttf-bitstream-vera"
-provider = "repology"
+provider = "gitlab"
 
 [source]
-package = "fonts:bitstream-vera"
+instance = "https://salsa.debian.org/"
+project = "debian/%(name)"
+
+[version.filter]
+exclude = [
+    '^debian/.*$',
+    '^.*-.*$'
+]

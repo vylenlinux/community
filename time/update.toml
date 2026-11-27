@@ -1,5 +1,6 @@
 name = "time"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "time"
+[ftp]
+url = "https://ftp.gnu.org/gnu/%(name)/"
+filename = "%(name)-%(version).tar.gz"

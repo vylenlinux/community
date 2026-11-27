@@ -1,5 +1,6 @@
 name = "stfl"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "stfl"
+[ftp]
+url = "https://ponce.cc/slackware/sources/repo/"
+filename = "%(name)-%(version).tar.gz"

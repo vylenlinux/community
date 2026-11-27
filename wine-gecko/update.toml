@@ -1,5 +1,9 @@
 name = "wine-gecko"
-provider = "repology"
+provider = "gitlab"
 
 [source]
-package = "wine-gecko"
+instance = "https://gitlab.winehq.org/"
+project = "wine/%(name)"
+
+[version.normalize]
+strip_prefix = "%(name)-"

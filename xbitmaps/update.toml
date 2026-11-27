@@ -1,5 +1,6 @@
 name = "xbitmaps"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "xbitmaps"
+[ftp]
+url = "https://xorg.freedesktop.org/archive/individual/data/"
+filename = "%(name)-%(version).tar.xz"

@@ -1,5 +1,8 @@
 name = "wireguard-tools"
-provider = "repology"
+provider = "cgit"
 
 [source]
-package = "wireguard-tools"
+url = "https://git.zx2c4.com/wireguard-tools/"
+
+[cgit]
+tag_prefix = "v"

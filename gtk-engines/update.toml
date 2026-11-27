@@ -1,5 +1,2 @@
 name = "gtk-engines"
-provider = "repology"
-
-[source]
-package = "gtk-engines"
+provider = "manual" # upstream is archived and no longer maintained

@@ -1,5 +1,6 @@
 name = "strawberry"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "strawberry"
+[ftp]
+url = "https://files.strawberrymusicplayer.org/"
+filename = "%(name)-%(version).tar.xz"

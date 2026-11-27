@@ -1,5 +1,5 @@
 name = "polkit-gnome"
-provider = "repology"
+provider = "gnome"
 
 [source]
-package = "polkit-gnome"
+package = "Archive/policykit-gnome"

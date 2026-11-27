@@ -1,5 +1,6 @@
 name = "smproxy"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "smproxy"
+[ftp]
+url = "https://xorg.freedesktop.org/archive/individual/app/"
+filename = "%(name)-%(version).tar.xz"

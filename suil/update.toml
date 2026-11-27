@@ -1,5 +1,6 @@
 name = "suil"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "suil"
+[ftp]
+url = "https://download.drobilla.net/"
+filename = "%(name)-%(version).tar.xz"

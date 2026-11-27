@@ -1,5 +1,13 @@
 name = "gegl"
-provider = "repology"
+provider = "gnome"
 
 [source]
-package = "gegl"
+package = "%(name)"
+
+[version.normalize]
+strip_prefix = "GEGL_"
+replace = { "_" = "." }
+
+[version.filter]
+include = ['^GEGL_.*$']
+exclude = ['^GEGL_20001120_v002$']

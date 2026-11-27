@@ -1,5 +1,6 @@
 name = "mesa-demos"
-provider = "repology"
+provider = "ftp"
 
-[source]
-package = "mesa-demos"
+[ftp]
+url = "https://archive.mesa3d.org/demos/"
+filename = "%(name)-%(version).tar.xz"

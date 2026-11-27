@@ -1,5 +1,5 @@
 name = "gnome-themes-extra"
-provider = "repology"
+provider = "gnome"
 
 [source]
-package = "gnome-themes-extra"
+package = "Archive/%(name)"

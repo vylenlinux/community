@@ -1,5 +1,13 @@
 name = "gimp"
-provider = "repology"
+provider = "gnome"
 
 [source]
-package = "gimp"
+package = "%(name)"
+
+[version.normalize]
+strip_prefix = "GIMP_"
+replace = { "_" = "." }
+
+[version.filter]
+include = ['^GIMP_.*$']
+exclude = ['^TEST_TAG$']
