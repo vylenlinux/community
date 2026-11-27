@@ -14,6 +14,7 @@ drwxr-xr-x root/root    usr/include/sdbus-c++/
 -rw-r--r-- root/root    usr/include/sdbus-c++/MethodResult.h
 -rw-r--r-- root/root    usr/include/sdbus-c++/ProxyInterfaces.h
 -rw-r--r-- root/root    usr/include/sdbus-c++/StandardInterfaces.h
+-rw-r--r-- root/root    usr/include/sdbus-c++/Track.h
 -rw-r--r-- root/root    usr/include/sdbus-c++/TypeTraits.h
 -rw-r--r-- root/root    usr/include/sdbus-c++/Types.h
 -rw-r--r-- root/root    usr/include/sdbus-c++/VTableItems.h
@@ -27,8 +28,8 @@ drwxr-xr-x root/root    usr/lib/cmake/sdbus-c++/
 -rw-r--r-- root/root    usr/lib/cmake/sdbus-c++/sdbus-c++-targets-release.cmake
 -rw-r--r-- root/root    usr/lib/cmake/sdbus-c++/sdbus-c++-targets.cmake
 lrwxrwxrwx root/root    usr/lib/libsdbus-c++.so -> libsdbus-c++.so.2
-lrwxrwxrwx root/root    usr/lib/libsdbus-c++.so.2 -> libsdbus-c++.so.2.3.1
--rwxr-xr-x root/root    usr/lib/libsdbus-c++.so.2.3.1
+lrwxrwxrwx root/root    usr/lib/libsdbus-c++.so.2 -> libsdbus-c++.so.2.4.0
+-rwxr-xr-x root/root    usr/lib/libsdbus-c++.so.2.4.0
 drwxr-xr-x root/root    usr/lib/pkgconfig/
 -rw-r--r-- root/root    usr/lib/pkgconfig/sdbus-c++.pc
 drwxr-xr-x root/root    usr/share/
