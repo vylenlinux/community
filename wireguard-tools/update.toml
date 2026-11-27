@@ -2,7 +2,4 @@ name = "wireguard-tools"
 provider = "cgit"
 
 [source]
-url = "https://git.zx2c4.com/wireguard-tools/"
-
-[cgit]
-tag_prefix = "v"
+url = "https://git.zx2c4.com/%(name)/"
