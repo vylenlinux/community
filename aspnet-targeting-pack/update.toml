@@ -1,6 +1,7 @@
 name = "aspnet-targeting-pack"
 provider = "repology"
 dedup_key = "dotnet-sdk"
+skip_update = true # Repology is the only reliable version source
 
 [source]
 package = "dotnet"
