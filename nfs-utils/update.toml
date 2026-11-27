@@ -1,5 +1,6 @@
 name = "nfs-utils"
 provider = "repology"
+skip_update = true # Repology is the only reliable version source
 
 [source]
-package = "nfs-utils"
+package = "%(name)"
