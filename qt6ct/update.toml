@@ -1,5 +1,6 @@
 name = "qt6ct"
 provider = "repology"
+skip_update = true # Repology is the only reliable version source
 
 [source]
-package = "qt6ct"
+package = "%(name)"
