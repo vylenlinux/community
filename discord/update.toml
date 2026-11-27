@@ -1,5 +1,6 @@
 name = "discord"
 provider = "repology"
+skip_update = true # Repology is the only reliable version source
 
 [source]
-package = "discord-linux"
+package = "%(name)-linux"
