@@ -1,11 +1,12 @@
 name = "gtk2"
 provider = "repology"
+skip_update = true # Repology is the only reliable version source
 
 [source]
 package = "gtk"
 
 [repology]
-match_name = "gtk2"
+match_name = "%(name)"
 
 [version.filter]
 exclude = ['^2\.24\.33-3$']
