@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2034
 description="Wine's built-in replacement for Microsoft's Internet Explorer"
-homepage="https://gitlab.winehq.org/wine/wine-gecko/-/wikis/Gecko"
+homepage="https://gitlab.winehq.org/wine/wine/-/wikis/Gecko"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=wine-gecko
