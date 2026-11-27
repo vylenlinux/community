@@ -1,5 +1,6 @@
 name = "dotnet-sdk"
 provider = "repology"
+skip_update = true # Repology is the only reliable version source
 
 [source]
 package = "dotnet"
