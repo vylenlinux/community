@@ -1,6 +1,2 @@
 name = "dmg2img"
-provider = "ftp"
-
-[ftp]
-url = "https://archive.ubuntu.com/ubuntu/pool/universe/d/%(name)/"
-filename = "%(name)_%(version)+git20201227.a3e4134.orig.tar.xz"
+provider = "manual" # upstream is abandoned
