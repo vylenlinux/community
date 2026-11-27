@@ -6,7 +6,7 @@ homepage="https://dl.winehq.org/wine"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=wine
-version=11.22
+version=11.23
 release=1
 source="https://dl.winehq.org/${name}/source/${version%%.*}.x/${name}-${version}.tar.xz"
 
@@ -21,14 +21,17 @@ build() {
     ../configure \
         --prefix=/usr \
         --libdir=/usr/lib \
+        \
         --with-x \
         --with-wayland \
         --with-gstreamer \
         --with-freetype \
+        \
         --enable-win64 \
         --enable-archs=i386,x86_64 \
-        --disable-tests \
-        --enable-build-id
+        --enable-build-id \
+        \
+        --disable-tests
 
     make
     make DESTDIR="${PKG}" install
