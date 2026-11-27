@@ -11,9 +11,5 @@ release=1
 source="https://ftp.gnome.org/pub/GNOME/sources/${name}/${version}/${name}-${version}.tar.gz"
 
 build() {
-    # shellcheck disable=SC2164
-    cd "${name}-${version}"
-
-    # shellcheck disable=SC2035
-    install -m644 *.ttf -t "${PKG}/usr/share/fonts/TTF/"
+    install -Dm644 "${name}-${version}"/*.ttf -t "${PKG}/usr/share/fonts/TTF/"
 }
