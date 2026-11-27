@@ -1,5 +1,6 @@
 name = "ttf-ubuntu-font-family"
 provider = "repology"
+skip_update = true # Repology is the only reliable version source
 
 [source]
 package = "fonts:ubuntu"
