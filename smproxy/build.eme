@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Allows X applications that do not support X11R6 session management to participate in an X11R6 session"
 homepage="https://www.x.org/"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,17 +8,18 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=smproxy
 version=1.0.8
 release=1
-source="http://ftp.x.org/pub/individual/app/smproxy-$version.tar.xz"
+source="https://xorg.freedesktop.org/archive/individual/app/${name}-${version}.tar.xz"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
 
-  	./configure \
-		--prefix=/usr \
-		--sysconfdir=/etc \
-		--localstatedir=/var \
-		--disable-static
-	make
-	make DESTDIR=$PKG install
+    ./configure \
+        --prefix=/usr \
+        --sysconfdir=/etc \
+        --localstatedir=/var \
+        --disable-static
+
+    make
+    make DESTDIR="${PKG}" install
 }
-
