@@ -1,5 +1,0 @@
-name = "gnome-common"
-provider = "gnome"
-
-[source]
-package = "Archive/%(name)"
