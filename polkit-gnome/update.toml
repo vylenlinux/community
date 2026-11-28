@@ -1,5 +1,0 @@
-name = "polkit-gnome"
-provider = "gnome"
-
-[source]
-package = "Archive/policykit-gnome"
