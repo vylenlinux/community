@@ -6,7 +6,7 @@ homepage="https://gitlab.winehq.org/wine/wine/-/wikis/home"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 
 name=wine-staging
-version=11.22
+version=11.23
 release=1
 
 vgecko=2.47.4
@@ -19,15 +19,8 @@ source="https://dl.winehq.org/wine/source/${version%%.*}.x/wine-${version}.tar.x
     https://dl.winehq.org/wine/wine-mono/${vmono}/wine-mono-${vmono}-x86.msi"
 
 build() {
-    # shellcheck disable=SC2164
-    cd "${name%-*}-${version}"
-        # apply staging patches
-        "../wine-staging-v${version}/staging/patchinstall.py" DESTDIR="../wine-${version}" --all
-    # shellcheck disable=SC2103
-    cd ..
-
-    export CPPFLAGS="${CPPFLAGS} \
-        -D_FORTIFY_SOURCE=0"
+    (cd "wine-${version}" && "../${name}-v${version}/staging/patchinstall.py" DESTDIR="${PWD}" --all)
+    export CPPFLAGS="${CPPFLAGS} -D_FORTIFY_SOURCE=0"
 
     mkdir wine64
     # shellcheck disable=SC2164
@@ -36,11 +29,13 @@ build() {
     "../wine-${version}/configure" \
         --prefix=/usr \
         --libdir=/usr/lib \
+        \
         --with-x \
         --with-wayland \
         --with-gstreamer \
         --with-xattr \
         --with-freetype \
+        \
         --enable-win64 \
         --enable-archs=i386,x86_64 \
         --enable-build-id
@@ -49,10 +44,6 @@ build() {
     make
     make DESTDIR="${PKG}" install
 
-    for dir in gecko mono; do
-        install -d "${PKG}/usr/share/wine/${dir}"
-    done
-
-    install "${SRC}/wine-gecko-${vgecko}-x86.msi" "${SRC}/wine-gecko-${vgecko}-x86_64.msi" -t "${PKG}/usr/share/wine/gecko/"
-    install "${SRC}/wine-mono-${vmono}-x86.msi" -t "${PKG}/usr/share/wine/mono/"
+    install -Dm755 "${SRC}/wine-gecko-${vgecko}-x86.msi" "${SRC}/wine-gecko-${vgecko}-x86_64.msi" -t "${PKG}/usr/share/wine/gecko/"
+    install -Dm755 "${SRC}/wine-mono-${vmono}-x86.msi" -t "${PKG}/usr/share/wine/mono/"
 }
