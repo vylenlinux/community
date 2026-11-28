@@ -1,5 +1,0 @@
-name = "yelp-tools"
-provider = "gnome"
-
-[source]
-package = "%(name)"
