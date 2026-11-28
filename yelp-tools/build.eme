@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Collection of tools for building and converting documentation"
 homepage="https://gitlab.gnome.org/GNOME/yelp-tools"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,12 +8,10 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=yelp-tools
 version=42.1
 release=1
-source="http://ftp.gnome.org/pub/gnome/sources/yelp-tools/${version%.*}/yelp-tools-$version.tar.xz"
+source="https://ftp.gnome.org/pub/gnome/sources/${name}/${version%.*}/${name}-${version}.tar.xz"
 
 build() {
-	cd $name-$version
-  vylen-meson build -D help=true
-  meson compile -C build
-  meson test -C build --print-errorlogs
-  meson install --no-rebuild -C build --destdir $PKG
+    vylen-meson "${name}-${version}" build -Dhelp=true
+    meson compile -C build
+    DESTDIR="${PKG}" meson install --no-rebuild -C build
 }

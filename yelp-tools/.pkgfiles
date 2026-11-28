@@ -6,14 +6,6 @@ drwxr-xr-x root/root    usr/bin/
 drwxr-xr-x root/root    usr/share/
 drwxr-xr-x root/root    usr/share/aclocal/
 -rw-r--r-- root/root    usr/share/aclocal/yelp.m4
-drwxr-xr-x root/root    usr/share/help/
-drwxr-xr-x root/root    usr/share/help/C/
-drwxr-xr-x root/root    usr/share/help/C/yelp-tools/
--rw-r--r-- root/root    usr/share/help/C/yelp-tools/index.page
--rw-r--r-- root/root    usr/share/help/C/yelp-tools/yelp-build.page
--rw-r--r-- root/root    usr/share/help/C/yelp-tools/yelp-check.page
--rw-r--r-- root/root    usr/share/help/C/yelp-tools/yelp-new.page
--rw-r--r-- root/root    usr/share/help/C/yelp-tools/yelp.m4.page
 drwxr-xr-x root/root    usr/share/yelp-tools/
 drwxr-xr-x root/root    usr/share/yelp-tools/templates/
 -rw-r--r-- root/root    usr/share/yelp-tools/templates/concept.duck
