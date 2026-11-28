@@ -1,5 +1,0 @@
-name = "socat"
-provider = "repology"
-
-[source]
-package = "socat"
