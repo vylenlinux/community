@@ -1,5 +1,0 @@
-name = "gnome-menus"
-provider = "gnome"
-
-[source]
-package = "%(name)"
