@@ -18,7 +18,9 @@ build() {
         --prefix=/usr \
         --sysconfdir=/etc \
         --localstatedir=/var \
+        \
         --enable-replace \
+        \
         --with-distro="Vylen Linux" \
         --with-ffmpeg
 
