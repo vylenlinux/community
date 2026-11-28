@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="Tom's or Tab Window Manager for the X Window System"
 homepage="https://xorg.freedesktop.org/archive/X11R6.8.1/doc/twm.1.html"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,18 +8,20 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=twm
 version=1.0.13.1
 release=1
-source="https://www.x.org/pub/individual/app/$name-$version.tar.xz"
+source="https://xorg.freedesktop.org/archive/individual/app/${name}-${version}.tar.xz"
 
 build() {
-	cd $name-$version
+    # shellcheck disable=SC2164
+    cd "${name}-${version}"
+    # shellcheck disable=SC2317
+    sed '/^rcdir =/s,^\(rcdir = \).*,\1/etc/X11/app-defaults,' -i src/Makefile.in
 
-	sed -i -e '/^rcdir =/s,^\(rcdir = \).*,\1/etc/X11/app-defaults,' src/Makefile.in
-	./configure \
-		--prefix=/usr \
-		--sysconfdir=/etc \
-		--localstatedir=/var \
-		--disable-static
-	make
-	make DESTDIR=$PKG install
+    ./configure \
+        --prefix=/usr \
+        --sysconfdir=/etc \
+        --localstatedir=/var \
+        --disable-static
+
+    make
+    make DESTDIR="${PKG}" install
 }
-
