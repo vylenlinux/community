@@ -1,5 +1,0 @@
-name = "yelp-xsl"
-provider = "gnome"
-
-[source]
-package = "%(name)"
