@@ -1,5 +1,0 @@
-name = "totem-pl-parser"
-provider = "gnome"
-
-[source]
-package = "%(name)"
