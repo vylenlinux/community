@@ -1,5 +1,0 @@
-name = "gnome-keyring"
-provider = "gnome"
-
-[source]
-package = "%(name)"
