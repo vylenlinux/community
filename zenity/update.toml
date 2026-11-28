@@ -1,8 +1,0 @@
-name = "zenity"
-provider = "gnome"
-
-[source]
-package = "%(name)"
-
-[version.filter]
-exclude = ['.*\.beta$']
