@@ -1,3 +1,6 @@
+#!/bin/sh
+
+# shellcheck disable=SC2034
 description="PulseAudio Volume Control"
 homepage="https://gitlab.freedesktop.org/pulseaudio/pavucontrol"
 maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
@@ -5,10 +8,10 @@ maintainer="Vylen Linux Team <wonkru-dev@proton.me>"
 name=pavucontrol
 version=6.2
 release=1
-source="https://gitlab.freedesktop.org/pulseaudio/pavucontrol/-/archive/v$version/$name-v$version.tar.gz"
+source="${name}-${version}.tar.gz::https://gitlab.freedesktop.org/pulseaudio/${name}/-/archive/v${version}/${name}-v${version}.tar.gz"
 
 build() {
-	vylen-meson $name-v$version build -Dlynx=disabled
-	meson compile -C build
-	meson install -C build --destdir $PKG
+    vylen-meson "${name}-v${version}" build -Dlynx=disabled
+    meson compile -C build
+    DESTDIR="${PKG}" meson install --no-rebuild -C build
 }
